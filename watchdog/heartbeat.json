@@ -11,16 +11,16 @@
   "delivery_start_utc": "2026-10-14T01:58:22Z",
   "delivery_reserve_minutes": 10,
   "status": "running",
-  "last_heartbeat_utc": "2026-10-13T23:16:13.474Z",
-  "current_assignment": "Bootstrap verified; prepare two isolated C3 mechanism-screen assignments.",
+  "last_heartbeat_utc": "2026-10-13T23:19:30.893Z",
+  "current_assignment": "C3-DIRECT-1 and C3-ALTERNATIVE-1 isolated screens active; no new promotion.",
   "last_safe_frontier": "Inherited cubical8-proper-boundary-v1 exact partial promotion; C3/B_H and relative L3 unresolved.",
-  "first_unfinished_action": "C3 mechanism gate by 2026-10-13T23:28:22Z.",
+  "first_unfinished_action": "Reconcile complete screen returns by mechanism gate 2026-10-13T23:28:22Z",
   "watchdog_recovery_armed": true,
   "ownership_exclusion_available": true,
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
-  "latest_verified_dropbox_generation": "C3-initial--continuation6-c3-20261013T230954Z-6bf5b0d61b3d--g3.json",
-  "latest_verified_dropbox_generation_sha256": "173165ec59ac5c4ca4594a539905dd375a5c1d044a3717b83674d0c825363736",
+  "latest_verified_dropbox_generation": "C3-screens-active--continuation6-c3-20261013T230954Z-6bf5b0d61b3d--g3.json",
+  "latest_verified_dropbox_generation_sha256": "013cbd95e8b331899a54844f3a6690c0259dce4c32bc6737f6a7088b06ebeca6",
   "latest_verified_dropbox_capsule": "C3-initial--continuation6-c3-20261013T230954Z-6bf5b0d61b3d--g3--RESUME_CAPSULE.zip",
   "latest_verified_dropbox_capsule_sha256": "0160f43bbe03233fc10ff059ee0da8651df644936de8c9b58c5404a8b44ca0ef",
   "source_predecessor_generation_sha256": "f67018ce3707d049887c9221087b90d2ce52e987e5d2079dd9a9ecd56d3c5461",
@@ -30,11 +30,15 @@
     "MT-OBSTRUCT": 2
   },
   "new_search_wave_credit": 0,
-  "active_workers": [],
+  "active_workers": [
+    "/root/c3_direct",
+    "/root/c3_alternative"
+  ],
   "clock_reset": false,
   "recovery_directive": "Keep this authorization and all immutable clocks. Finish required bootstrap first, then exact TASK_CONTRACT only. At or after delivery reserve finalize existing material only. No repeated predecessor gates.",
   "infrastructure_verification_level": "Owner/readback + raw-byte-verified Dropbox generation/capsule + heartbeat/start readback + actual Actions job in_progress with regression step success; no demonstrated end-to-end crash recovery.",
   "supervisor_actions_run_id": 38483076439,
   "supervisor_actions_job_id": 115590081033,
-  "supervisor_start_commit": "f4a7e3c7bb981183c60f6056fb8597872a8efc46"
+  "supervisor_start_commit": "f4a7e3c7bb981183c60f6056fb8597872a8efc46",
+  "latest_verified_dropbox_heartbeat": "HEARTBEAT--continuation6-c3-20261013T230954Z-6bf5b0d61b3d--g3-armed.json"
 }
