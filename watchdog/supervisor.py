@@ -1,0 +1,237 @@
+#!/usr/bin/env python3
+"""Bounded, fail-closed supervisor. It requests recovery; it never owns research."""
+import argparse
+import base64
+from dataclasses import dataclass
+from datetime import datetime, timedelta, timezone
+import hashlib
+import json
+import os
+import re
+import sys
+import time
+from urllib.error import HTTPError
+from urllib.parse import quote, urlencode
+from urllib.request import Request, urlopen
+
+CAMPAIGN = "delta14-mixed-tate-20261012T210157Z"
+STALE_SECONDS = 1200
+POLL_SECONDS = 60
+
+
+def timestamp(value):
+    if not isinstance(value, str):
+        raise ValueError("Missing timestamp")
+    parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
+    if parsed.tzinfo is None:
+        raise ValueError("Timestamp has no timezone")
+    return parsed.astimezone(timezone.utc)
+
+
+@dataclass(frozen=True)
+class Decision:
+    action: str
+    reason: str
+    mode: str = ""
+
+
+def decide(hb, owner, now):
+    """Pure function. Unknown/conflicting state never authorizes a takeover."""
+    if not isinstance(hb, dict) or not isinstance(owner, dict):
+        return Decision("wait", "Invalid state objects")
+    if hb.get("campaign_id") != CAMPAIGN:
+        return Decision("wait", "Campaign mismatch")
+    status = hb.get("status")
+    if status in ("inactive", "cancelled", "canceled") or hb.get("user_stop_requested") is True:
+        return Decision("stop", "Inactive or explicitly cancelled")
+    delivered = (hb.get("terminal_delivery_complete") is True
+                 and hb.get("dropbox_final_status_verified") is True)
+    terminal = status in ("completed", "paused", "expired", "interrupted", "blocked")
+    if terminal and delivered:
+        return Decision("stop", "Verified terminal delivery recorded")
+    if status == "paused" and not any(k in hb for k in
+                                      ("terminal_delivery_complete", "dropbox_final_status_verified")):
+        return Decision("stop", "Legacy deliberate pause; no incomplete-delivery signal")
+    if status not in ("running", "checkpointed", "interrupted", "blocked", "completed", "paused", "expired"):
+        return Decision("wait", "Unknown status")
+    if status in ("running", "checkpointed") and hb.get("watchdog_recovery_armed") is not True:
+        return Decision("wait", "Running execution has not armed automatic recovery")
+    run_id = hb.get("run_id")
+    if not isinstance(run_id, str) or not run_id or run_id == "inactive":
+        return Decision("wait", "Missing run identity")
+    if owner.get("campaign_id") != CAMPAIGN or owner.get("owner_run_id") != run_id:
+        return Decision("wait", "Owner/heartbeat mismatch; possibly handover in progress")
+    generation = owner.get("generation")
+    if type(generation) is not int or generation < 1 or hb.get("lease_generation") != generation:
+        return Decision("wait", "Missing or mismatched ownership generation")
+    if owner.get("status") not in ("active", "inactive"):
+        return Decision("wait", "Unknown lease status")
+    try:
+        lease_end = timestamp(owner.get("lease_expires_utc"))
+        last = timestamp(hb.get("last_heartbeat_utc"))
+        deadline = timestamp(hb.get("hard_deadline_utc"))
+        reserve = timestamp(hb["delivery_start_utc"]) if hb.get("delivery_start_utc") else deadline - timedelta(minutes=10)
+    except (TypeError, ValueError, OverflowError):
+        return Decision("wait", "Invalid or missing clock/lease; never invent authorization")
+    if reserve > deadline or last > now + timedelta(seconds=120):
+        return Decision("wait", "Inconsistent clock")
+    if now < lease_end:
+        return Decision("wait", "Ownership lease has not expired")
+    if owner.get("status") == "inactive" and not terminal:
+        return Decision("wait", "Running heartbeat with released ownership needs reconciliation")
+    if status in ("running", "checkpointed") and (now - last).total_seconds() < STALE_SECONDS:
+        return Decision("wait", "Heartbeat is not stale")
+    text = " ".join(str(hb.get(k, "")) for k in
+                    ("recovery_directive", "current_assignment", "recovery_classification")).lower()
+    final_only = (status in ("completed", "paused", "expired") or now >= reserve
+                  or hb.get("recovery_mode") == "finalize_only"
+                  or "do not resume substantive mathematics" in text
+                  or "no new mathematics" in text
+                  or "complete-but-undelivered" in text
+                  or "terminal persistence" in text)
+    mode = "finalize_only" if final_only else "resume_within_original_scope"
+    reason = "Explicit interruption/incomplete delivery; expired lease" if terminal else "Stale heartbeat; expired lease"
+    return Decision("trigger", reason, mode)
+
+
+class APIError(RuntimeError):
+    def __init__(self, status, message):
+        super().__init__(message)
+        self.status = status
+
+
+class GitHubAPI:
+    def __init__(self, repo, token):
+        if not re.fullmatch(r"[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+", repo):
+            raise ValueError("Invalid repository identity")
+        self.repo, self.token = repo, token
+
+    def request(self, method, endpoint, payload=None, missing_ok=False):
+        raw = None if payload is None else json.dumps(payload).encode()
+        req = Request("https://api.github.com/repos/" + self.repo + endpoint,
+                      data=raw, method=method,
+                      headers={"Authorization": "Bearer " + self.token,
+                               "Accept": "application/vnd.github+json",
+                               "Content-Type": "application/json",
+                               "X-GitHub-Api-Version": "2022-11-28",
+                               "User-Agent": "delta14-watchdog"})
+        try:
+            with urlopen(req, timeout=30) as response:
+                return json.load(response)
+        except HTTPError as error:
+            if missing_ok and error.code == 404:
+                return None
+            raise APIError(error.code, "GitHub HTTP %d on %s %s: %s" %
+                           (error.code, method, endpoint, error.read(1200).decode(errors="replace"))) from error
+
+    def file(self, path, ref):
+        record = self.request("GET", "/contents/" + path + "?" + urlencode({"ref": ref}))
+        return json.loads(base64.b64decode(record["content"]).decode())
+
+    def snapshot(self):
+        sha = self.request("GET", "/git/ref/heads/main")["object"]["sha"]
+        return sha, self.file("watchdog/heartbeat.json", sha), self.file("watchdog/owner.json", sha)
+
+
+def incident_identity(hb, owner):
+    value = "%s\0%s\0%s" % (CAMPAIGN, hb["run_id"], owner["generation"])
+    return hashlib.sha256(value.encode()).hexdigest()[:24]
+
+
+def emit_recovery(api, snapshot, decision):
+    sha, hb, owner = snapshot
+    incident = incident_identity(hb, owner)
+    branch = "watchdog-recovery-" + incident
+    query = urlencode({"state": "all", "head": api.repo.split("/")[0] + ":" + branch, "per_page": 100})
+    existing = api.request("GET", "/pulls?" + query)
+    if existing:
+        print("Recovery signal already exists: " + existing[0]["html_url"], flush=True)
+        return "done"
+    marker_path = "watchdog/events/" + incident + ".json"
+    marker = {"campaign_id": CAMPAIGN, "run_id": hb["run_id"],
+              "lease_generation": owner["generation"], "incident_id": incident,
+              "recovery_mode": decision.mode, "reason": decision.reason,
+              "hard_deadline_utc": hb["hard_deadline_utc"], "snapshot_commit": sha}
+    ref = api.request("GET", "/git/ref/heads/" + branch, missing_ok=True)
+    if ref is None:
+        commit = api.request("GET", "/git/commits/" + sha)
+        tree = api.request("POST", "/git/trees", {"base_tree": commit["tree"]["sha"], "tree": [
+            {"path": marker_path, "mode": "100644", "type": "blob", "content": json.dumps(marker, indent=2) + "\n"}]})
+        new_commit = api.request("POST", "/git/commits", {"message": "Request delta14 recovery " + incident,
+                                  "tree": tree["sha"], "parents": [sha]})
+        try:
+            api.request("POST", "/git/refs", {"ref": "refs/heads/" + branch, "sha": new_commit["sha"]})
+        except APIError as error:
+            if error.status != 422:
+                raise
+            # A same-incident racer may have created the deterministic branch.
+            api.request("GET", "/git/ref/heads/" + branch)
+    saved_marker = api.file(marker_path, branch)
+    if any(saved_marker.get(k) != marker[k] for k in ("campaign_id", "run_id", "lease_generation", "incident_id")):
+        raise ValueError("Existing incident branch has conflicting provenance")
+    fresh = api.snapshot()
+    current = decide(fresh[1], fresh[2], datetime.now(timezone.utc))
+    if current.action != "trigger" or incident_identity(fresh[1], fresh[2]) != incident:
+        print("State advanced during preparation; no recovery PR opened", flush=True)
+        return "changed"
+    # Recompute mode: the delivery reserve/deadline may have arrived meanwhile.
+    title = "DELTA14_WORKFLOW_STALE " + current.mode + " " + hb["run_id"]
+    body = ("Recovery request only, not permission to skip checks.\n\n"
+            + "Incident: `" + incident + "`; generation: `" + str(owner["generation"]) + "`.\n"
+            + "Requested mode: `" + current.mode + "`.\n"
+            + "Preserve original hard deadline: `" + hb["hard_deadline_utc"] + "`.\n\n"
+            + "Read live GitHub ownership/heartbeat and the newest coherent Dropbox frontier. "
+            + "Do not take over an unexpired or changed owner. Claim and verify the lease conditionally before any authorized work. "
+            + "At or after the delivery reserve, or when recovery_mode is finalize_only, perform only reconciliation, "
+            + "persistence and delivery of existing results: no new mathematics, repeated gates, deadline extension or successor. "
+            + "A hash or PASS attestation is not a replacement for missing proof/audit bytes; disclose missing artifacts. "
+            + "Ignore this request if verified terminal delivery has since completed. "
+            + "Re-arm a resumed execution only after publishing coherent ownership and heartbeats.\n")
+    try:
+        pr = api.request("POST", "/pulls", {"title": title, "body": body, "head": branch, "base": "main"})
+    except APIError as error:
+        if error.status != 422:
+            raise
+        found = api.request("GET", "/pulls?" + query)
+        if not found:
+            raise
+        pr = found[0]
+    print("Recovery PR created/verified: " + pr["html_url"], flush=True)
+    return "done"
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--once", action="store_true", help="Evaluate once without waiting")
+    parser.add_argument("--dry-run", action="store_true", help="Read/evaluate only; never mutate GitHub")
+    args = parser.parse_args()
+    api = GitHubAPI(os.environ["GITHUB_REPOSITORY"], os.environ["GH_TOKEN"])
+    failures, previous = 0, None
+    stop_at = time.monotonic() + 235 * 60
+    while time.monotonic() < stop_at:
+        try:
+            snapshot = api.snapshot()
+            decision = decide(snapshot[1], snapshot[2], datetime.now(timezone.utc))
+            if decision != previous:
+                print(json.dumps(decision.__dict__), flush=True)
+                previous = decision
+            if args.dry_run or decision.action == "stop":
+                return
+            if decision.action == "trigger" and emit_recovery(api, snapshot, decision) == "done":
+                return
+            failures = 0
+        except (APIError, OSError, ValueError, KeyError) as error:
+            failures += 1
+            print("Supervisor check error (%d/3): %s" % (failures, error), file=sys.stderr, flush=True)
+            if isinstance(error, APIError) and error.status in (401, 403):
+                raise  # Permission failure is actionable, not an automatic retry loop.
+            if failures >= 3 or args.once:
+                raise
+        if args.once:
+            return
+        time.sleep(POLL_SECONDS)
+    raise RuntimeError("Supervisor timebox reached; no further monitoring was scheduled")
+
+
+if __name__ == "__main__":
+    main()
