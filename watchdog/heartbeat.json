@@ -11,7 +11,7 @@
   "delivery_start_utc": "2026-10-14T01:58:22Z",
   "delivery_reserve_minutes": 10,
   "status": "running",
-  "last_heartbeat_utc": "2026-10-13T23:53:51.646Z",
+  "last_heartbeat_utc": "2026-10-13T23:58:28.602Z",
   "current_assignment": "Fresh proof-blind reconstruction of c3-nonfree-locus-v1; leakage and hostile PASS reports externally verified.",
   "last_safe_frontier": "Inherited cubical8-proper-boundary-v1 exact partial promotion; C3/B_H and relative L3 unresolved.",
   "first_unfinished_action": "Reconcile reconstruction, persist complete report/manifest before fresh comparison.",
