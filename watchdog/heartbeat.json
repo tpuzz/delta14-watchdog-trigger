@@ -8,16 +8,91 @@
   "delivery_start_utc": "2026-10-13T20:52:18Z",
   "delivery_reserve_minutes": 10,
   "epoch_boundary_utc": "2026-10-13T20:02:18Z",
-  "status": "running",
-  "last_heartbeat_utc": "2026-10-13T20:03:03.364009Z",
-  "current_assignment": "All four gates returned; boundary reconciliation and exact promotion next",
-  "last_safe_frontier": "leakage PASS, hostile PASS, reconstruction complete, comparison PASS; all hashes reconciled",
-  "first_unfinished_action": "verify boundary checkpoint, then record exact scoped promotion and deliver",
-  "watchdog_recovery_armed": true,
+  "status": "interrupted",
+  "last_heartbeat_utc": "2026-10-13T20:09:45.763Z",
+  "current_assignment": "STOPPED: coordinator exec-server transport failure after all four verification returns were reconciled",
+  "last_safe_frontier": "Locally reconciled leakage PASS, hostile PASS, complete reconstruction, comparison PASS for cubical8-proper-boundary-v1/contract-v1/brief-v1; unchanged checklist r2. No promotion record or terminal bundle successfully published.",
+  "first_unfinished_action": "Recover and persist the already-complete comparison files and local STATE-continuation5-comppass-epoch1.json, then finalize exact promotion, closure map and delivery only; do not repeat completed verification.",
+  "watchdog_recovery_armed": false,
   "ownership_exclusion_available": true,
   "recovery_precondition": "Independent interruption evidence and reliable cross-session ownership exclusion required before any recovered mathematics; stale age alone is not proof.",
   "source_precedence": "Newest coherent generation in Dropbox, with embedded hashes verified, supersedes historical standing-file headers.",
   "lease_generation": 1,
-  "lease_expires_utc": "2026-10-13T20:14:57.767Z",
-  "ownership_protocol": "tpuzz/delta14-watchdog-trigger/watchdog/OWNERSHIP_PROTOCOL.md; atomic claim/readback before all substantive work; renew before each heartbeat; clean release after terminal persistence"
+  "lease_expires_utc": "2026-10-13T20:21:39.603Z",
+  "ownership_protocol": "tpuzz/delta14-watchdog-trigger/watchdog/OWNERSHIP_PROTOCOL.md; atomic claim/readback before all substantive work; renew before each heartbeat; clean release after terminal persistence",
+  "terminal_status": "blocked",
+  "terminal_delivery_complete": false,
+  "dropbox_final_status_verified": false,
+  "dropbox_terminal_heartbeat_updated": false,
+  "clean_release_permitted": false,
+  "ownership_released": false,
+  "stop_reason": "Checkpoint upload failed with exec-server transport closed. A bounded local diagnostic and FINAL_STATUS write could not regain filesystem control; both hanging cells were terminated. No further mathematics after the epoch boundary.",
+  "deadline_expired": false,
+  "clock_reset": false,
+  "latest_verified_dropbox_generation": "STATE-continuation5-compactive.json",
+  "latest_verified_dropbox_capsule": "delta14-mixed-tate-20261012T210157Z--CUBICAL8-VERIFY-compactive-RESUME_CAPSULE.zip",
+  "local_unpublished_generation": "STATE-continuation5-comppass-epoch1.json",
+  "local_unpublished_capsule": "delta14-mixed-tate-20261012T210157Z--CUBICAL8-VERIFY-comppass-epoch1-RESUME_CAPSULE.zip",
+  "comparison_completed_at_utc": "2026-10-13T20:00:44.914056Z",
+  "all_returns_locally_reconciled_at_utc": "2026-10-13T20:02:57.502505Z",
+  "comparison_report_sha256": "fd1751f3f52eb5a28e6803c84cb0e07c3feea93f1daa624a0546409e86ea9b54",
+  "comparison_manifest_sha256": "6b9d27b568d45394e2cab7a364a3edc0ce797ec22a555b931b21fbfc6eb76d6d",
+  "proof_sha256": "9913c72dff2848e365a0b7f7d1c7a935dd53ec2ee68fc156568306a11a123a3b",
+  "contract_sha256": "5ada2a5d8ae14be890060781ee2a095583a7521a665c42132a47adf0b3a4722f",
+  "brief_sha256": "0dcc003f3b927ecb57b63a166fa4e035c4445ba9e7dbfc1b013d879f39a26bf2",
+  "audit_checklist_sha256": "66951cc884e86f4d34a3cee6b41b4ed8eb73628b41cbe683b4e6f82574473137",
+  "new_search_wave_credit": 0,
+  "wave_counts": {
+    "MT-STRUCT": 2,
+    "MT-OBSTRUCT": 2
+  },
+  "active_workers": [],
+  "closure_map": [
+    {
+      "edge": "Original free diagonal mu2 cover to [U/F_W] = B_W, all sixteen actual W",
+      "status": "verifier-backed locally; formal promotion recording pending"
+    },
+    {
+      "edge": "All toric boundary strata and [D/F_W], all sixteen W",
+      "status": "verifier-backed locally; formal promotion recording pending"
+    },
+    {
+      "edge": "Compact [X/F_W] and B_W, all fifteen proper W",
+      "status": "verifier-backed locally; formal promotion recording pending"
+    },
+    {
+      "edge": "Fifteen proper W to transitive H",
+      "status": "no implication"
+    },
+    {
+      "edge": "Transitive compact [X/F_H] and B_H",
+      "status": "unresolved; localization equivalence conditional on admission of verified boundary result"
+    },
+    {
+      "edge": "Generic residual degree-eight cover, degree-four/two branch strata and all-diagonal BC2 correction",
+      "status": "candidate-only presentation data; no new evaluation or separate promotion"
+    },
+    {
+      "edge": "All sixteen absolute bases to actual relative Q3 fibre L3",
+      "status": "no automatic implication; separate relative construction unstarted"
+    },
+    {
+      "edge": "Width4 absolute bases plus genuine L3 to BG4",
+      "status": "conditional; unmet"
+    },
+    {
+      "edge": "Further actual relative/base steps through widths5-7 to BG7/BDelta14",
+      "status": "conditional and unresolved; unstarted here"
+    },
+    {
+      "edge": "Imported BG_m integral mixed-Tateness, 0<=m<=3",
+      "status": "promoted, unchanged"
+    },
+    {
+      "edge": "Exact Grothendieck class",
+      "status": "unresolved and separate"
+    }
+  ],
+  "recovery_directive": "Do not resume substantive mathematics. Reconciliation and delivery of existing complete returns only. No automatic successor, repeated gate, transitive search or relative/higher-width task. FINAL_STATUS must be verified in Dropbox before any clean lease release.",
+  "lease_stop_behavior": "Lease intentionally remains active because the required Dropbox FINAL_STATUS write could not be verified; it must expire naturally if no authorized recovery completes terminal persistence."
 }
