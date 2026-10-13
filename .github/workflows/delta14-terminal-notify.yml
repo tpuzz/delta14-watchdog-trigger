@@ -1,0 +1,77 @@
+name: Delta14 terminal notifier
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "watchdog/heartbeat.json"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  notify-terminal:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Open terminal notification PR
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          status="$(jq -r '.status // "inactive"' watchdog/heartbeat.json)"
+          run_id="$(jq -r '.run_id // "unknown"' watchdog/heartbeat.json)"
+          campaign="$(jq -r '.campaign_id // "unknown"' watchdog/heartbeat.json)"
+          last="$(jq -r '.last_heartbeat_utc // empty' watchdog/heartbeat.json)"
+
+          case "$status" in
+            completed|paused|expired|blocked|interrupted)
+              ;;
+            *)
+              echo "Non-terminal status $status; nothing to notify."
+              exit 0
+              ;;
+          esac
+
+          title="DELTA14_WORKFLOW_TERMINAL $status $run_id"
+
+          if gh pr list --state all --limit 100 --json title --jq '.[].title' | grep -Fxq "$title"; then
+            echo "Terminal notification PR already exists."
+            exit 0
+          fi
+
+          stamp="$(date -u +%Y%m%dT%H%M%SZ)"
+          safe_run="$(printf '%s' "$run_id" | tr -cd 'A-Za-z0-9._-' | cut -c1-40)"
+          safe_status="$(printf '%s' "$status" | tr -cd 'A-Za-z0-9._-' | cut -c1-20)"
+          branch="watchdog-terminal-${safe_status:-state}-${safe_run:-run}-$stamp"
+          marker="watchdog/terminal-$stamp.txt"
+
+          git config user.name "delta14-watchdog"
+          git config user.email "actions@users.noreply.github.com"
+          git checkout -b "$branch"
+
+          cat > "$marker" <<EOF
+DELTA14_WORKFLOW_TERMINAL
+campaign=$campaign
+run_id=$run_id
+status=$status
+last_heartbeat_utc=$last
+detected_utc=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+EOF
+
+          git add "$marker"
+          git commit -m "$title"
+          git push origin "$branch"
+
+          gh pr create \
+            --base main \
+            --head "$branch" \
+            --title "$title" \
+            --body "Automatic terminal notification. The authoritative result is in Dropbox at /ChatGPT-Research-State/delta14-mixed-tate/FINAL_STATUS.md."
