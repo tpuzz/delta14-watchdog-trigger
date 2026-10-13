@@ -1,0 +1,88 @@
+name: Delta14 watchdog
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "watchdog/start.signal"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: delta14-watchdog
+  cancel-in-progress: true
+
+jobs:
+  supervise:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Supervise heartbeat
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          while true; do
+            git fetch origin main
+            git checkout -B main origin/main
+
+            if [ ! -f watchdog/heartbeat.json ]; then
+              echo "No heartbeat file; exiting."
+              exit 0
+            fi
+
+            status="$(jq -r '.status // "inactive"' watchdog/heartbeat.json)"
+            run_id="$(jq -r '.run_id // "inactive"' watchdog/heartbeat.json)"
+            last="$(jq -r '.last_heartbeat_utc // "1970-01-01T00:00:00Z"' watchdog/heartbeat.json)"
+            deadline="$(jq -r '.hard_deadline_utc // empty' watchdog/heartbeat.json)"
+
+            case "$status" in
+              completed|paused|interrupted|inactive)
+                echo "Run status is $status; supervisor exiting."
+                exit 0
+                ;;
+            esac
+
+            now_epoch="$(date -u +%s)"
+            last_epoch="$(date -u -d "$last" +%s 2>/dev/null || echo 0)"
+            age="$(( now_epoch - last_epoch ))"
+
+            if [ -n "$deadline" ] && [ "$deadline" != "null" ]; then
+              deadline_epoch="$(date -u -d "$deadline" +%s 2>/dev/null || echo 0)"
+              if [ "$deadline_epoch" -gt 0 ] && [ "$now_epoch" -ge "$deadline_epoch" ]; then
+                echo "Hard deadline reached; supervisor exiting without recovery trigger."
+                exit 0
+              fi
+            fi
+
+            if [ "$age" -ge 900 ]; then
+              stamp="$(date -u +%Y%m%dT%H%M%SZ)"
+              safe_run="$(printf '%s' "$run_id" | tr -cd 'A-Za-z0-9._-' | cut -c1-40)"
+              branch="watchdog-stale-${safe_run:-run}-$stamp"
+              marker="watchdog/stale-$stamp.txt"
+
+              git config user.name "delta14-watchdog"
+              git config user.email "actions@users.noreply.github.com"
+              git checkout -b "$branch"
+              printf 'DELTA14_WORKFLOW_STALE\ncampaign=delta14-mixed-tate-20261012T210157Z\nrun_id=%s\nlast_heartbeat_utc=%s\ndetected_utc=%s\n'                 "$run_id" "$last" "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > "$marker"
+              git add "$marker"
+              git commit -m "DELTA14_WORKFLOW_STALE $run_id"
+              git push origin "$branch"
+
+              gh pr create                 --base main                 --head "$branch"                 --title "DELTA14_WORKFLOW_STALE $run_id"                 --body "Automatic watchdog trigger. The recovery Work task must verify staleness independently from Dropbox before resuming anything."
+
+              echo "Stale PR opened; supervisor exiting."
+              exit 0
+            fi
+
+            sleep 60
+          done
