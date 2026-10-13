@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
     paths:
-      - "watchdog/heartbeat.json"
+      - "watchdog/terminal.signal"
 
 permissions:
   contents: write
