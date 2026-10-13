@@ -9,12 +9,15 @@
   "delivery_reserve_minutes": 10,
   "epoch_boundary_utc": "2026-10-13T20:02:18Z",
   "status": "running",
-  "last_heartbeat_utc": "2026-10-13T19:08:41.835928Z",
-  "current_assignment": "CUBICAL8-LEAK-v1 active",
+  "last_heartbeat_utc": "2026-10-13T19:11:29.317Z",
+  "current_assignment": "leakage returned PASS protocol-only; reconciliation pending",
   "last_safe_frontier": "four imported promotions; candidate frozen, no new gate passed",
-  "first_unfinished_action": "await isolated leakage verdict",
+  "first_unfinished_action": "reconcile leakage and launch fresh hostile audit after ownership arming",
   "watchdog_recovery_armed": false,
-  "ownership_exclusion_available": false,
+  "ownership_exclusion_available": true,
   "recovery_precondition": "Independent interruption evidence and reliable cross-session ownership exclusion required before any recovered mathematics; stale age alone is not proof.",
-  "source_precedence": "Newest coherent generation in Dropbox, with embedded hashes verified, supersedes historical standing-file headers."
+  "source_precedence": "Newest coherent generation in Dropbox, with embedded hashes verified, supersedes historical standing-file headers.",
+  "lease_generation": 1,
+  "lease_expires_utc": "2026-10-13T19:23:21.998Z",
+  "arming_state": "awaiting_fresh_start_signal_readback"
 }
