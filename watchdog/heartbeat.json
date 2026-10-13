@@ -39,13 +39,22 @@
   "contract_sha256": "5ada2a5d8ae14be890060781ee2a095583a7521a665c42132a47adf0b3a4722f",
   "brief_sha256": "0dcc003f3b927ecb57b63a166fa4e035c4445ba9e7dbfc1b013d879f39a26bf2",
   "audit_checklist_sha256": "66951cc884e86f4d34a3cee6b41b4ed8eb73628b41cbe683b4e6f82574473137",
-  "gates": {"leakage": "PASS", "hostile": "PASS", "reconstruction": "COMPLETE", "comparison": "PASS"},
+  "gates": {
+    "leakage": "PASS",
+    "hostile": "PASS",
+    "reconstruction": "COMPLETE",
+    "comparison": "PASS"
+  },
   "promoted_result": "cubical8-proper-boundary-v1 / contract-v1",
   "promoted_scope": "Original quotient equivalence and all boundary quotients for all sixteen W<=F2^3; compact/open integral mixed-Tateness for all fifteen proper W<H.",
   "residual_gap": "Transitive compact [X/F_H] and B_H; relative L3; BG4; widths5-7; BG7/BDelta14; exact Grothendieck class.",
   "new_search_wave_credit": 0,
-  "wave_counts": {"MT-STRUCT": 2, "MT-OBSTRUCT": 2},
+  "wave_counts": {
+    "MT-STRUCT": 2,
+    "MT-OBSTRUCT": 2
+  },
   "active_workers": [],
-  "ownership_released": false,
-  "recovery_directive": "Do not resume substantive mathematics or repeat completed gates. A successor requires fresh explicit authorization."
+  "ownership_released": true,
+  "recovery_directive": "Do not resume substantive mathematics or repeat completed gates. A successor requires fresh explicit authorization.",
+  "ownership_released_at_utc": "2026-10-13T20:30:36.027Z"
 }
