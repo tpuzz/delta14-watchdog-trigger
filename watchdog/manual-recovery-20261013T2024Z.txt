@@ -1,0 +1,5 @@
+DELTA14_WORKFLOW_STALE
+campaign=delta14-mixed-tate-20261012T210157Z
+reason=manual trigger after original Work run recorded infrastructure interruption
+source_heartbeat_commit=c7b46e897f819e89798aed324c6f639742c307fb
+directive=reconcile and persist already-complete verification only; do not repeat mathematics
