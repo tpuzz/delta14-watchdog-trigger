@@ -9,15 +9,15 @@
   "delivery_reserve_minutes": 10,
   "epoch_boundary_utc": "2026-10-13T20:02:18Z",
   "status": "running",
-  "last_heartbeat_utc": "2026-10-13T19:11:29.317Z",
-  "current_assignment": "leakage returned PASS protocol-only; reconciliation pending",
-  "last_safe_frontier": "four imported promotions; candidate frozen, no new gate passed",
-  "first_unfinished_action": "reconcile leakage and launch fresh hostile audit after ownership arming",
-  "watchdog_recovery_armed": false,
+  "last_heartbeat_utc": "2026-10-13T19:13:39.600972Z",
+  "current_assignment": "CUBICAL8-LEAK-v1 reconciled; hostile next",
+  "last_safe_frontier": "four imported promotions unchanged; leakage PASS only",
+  "first_unfinished_action": "fresh hostile audit of frozen v1 at checklist revision2",
+  "watchdog_recovery_armed": true,
   "ownership_exclusion_available": true,
   "recovery_precondition": "Independent interruption evidence and reliable cross-session ownership exclusion required before any recovered mathematics; stale age alone is not proof.",
   "source_precedence": "Newest coherent generation in Dropbox, with embedded hashes verified, supersedes historical standing-file headers.",
   "lease_generation": 1,
-  "lease_expires_utc": "2026-10-13T19:23:21.998Z",
-  "arming_state": "awaiting_fresh_start_signal_readback"
+  "lease_expires_utc": "2026-10-13T19:25:32.384Z",
+  "ownership_protocol": "tpuzz/delta14-watchdog-trigger/watchdog/OWNERSHIP_PROTOCOL.md; atomic claim/readback before all substantive work; renew before each heartbeat; clean release after terminal persistence"
 }
