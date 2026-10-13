@@ -1,0 +1,8 @@
+{
+  "campaign_id": "delta14-mixed-tate-20261012T210157Z",
+  "run_id": "inactive",
+  "status": "inactive",
+  "last_heartbeat_utc": "1970-01-01T00:00:00Z",
+  "hard_deadline_utc": null,
+  "delivery_start_utc": null
+}
