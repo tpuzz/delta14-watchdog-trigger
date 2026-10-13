@@ -9,12 +9,12 @@
   "delivery_reserve_minutes": 10,
   "epoch_boundary_utc": "2026-10-13T20:02:18Z",
   "status": "running",
-  "last_heartbeat_utc": "2026-10-13T19:06:07.443236Z",
-  "current_assignment": "intake/publication; no mathematical role yet",
-  "last_safe_frontier": "four exact imported promotions; candidate cubical8-proper-boundary-v1 frozen, all gates unrun",
-  "first_unfinished_action": "fresh leakage check of cubical8-proper-boundary-v1/contract-v1/brief-v1",
+  "last_heartbeat_utc": "2026-10-13T19:08:41.835928Z",
+  "current_assignment": "CUBICAL8-LEAK-v1 active",
+  "last_safe_frontier": "four imported promotions; candidate frozen, no new gate passed",
+  "first_unfinished_action": "await isolated leakage verdict",
   "watchdog_recovery_armed": false,
   "ownership_exclusion_available": false,
-  "recovery_precondition": "Independent interruption evidence, current coherent state and reliable cross-session owner exclusion are mandatory. A stale signal alone must not launch mathematics.",
-  "dropbox_generation_precedence": "Newest coherent STATE/TERMINAL generation and its embedded hashes supersede older standing headers."
+  "recovery_precondition": "Independent interruption evidence and reliable cross-session ownership exclusion required before any recovered mathematics; stale age alone is not proof.",
+  "source_precedence": "Newest coherent generation in Dropbox, with embedded hashes verified, supersedes historical standing-file headers."
 }
