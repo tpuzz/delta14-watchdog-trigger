@@ -11,16 +11,16 @@
   "delivery_start_utc": "2026-10-14T01:58:22Z",
   "delivery_reserve_minutes": 10,
   "status": "running",
-  "last_heartbeat_utc": "2026-10-13T23:45:59.957Z",
-  "current_assignment": "Fresh hostile audit of c3-nonfree-locus-v1; leakage PASS externally durable.",
+  "last_heartbeat_utc": "2026-10-13T23:49:18.880Z",
+  "current_assignment": "Fresh proof-blind reconstruction of c3-nonfree-locus-v1; leakage and hostile PASS reports externally verified.",
   "last_safe_frontier": "Inherited cubical8-proper-boundary-v1 exact partial promotion; C3/B_H and relative L3 unresolved.",
-  "first_unfinished_action": "Reconcile hostile return, persist full report/manifest before proof-blind reconstruction.",
+  "first_unfinished_action": "Reconcile reconstruction, persist complete report/manifest before fresh comparison.",
   "watchdog_recovery_armed": true,
   "ownership_exclusion_available": true,
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
-  "latest_verified_dropbox_generation": "C3-leakage-returned--continuation6-c3-20261013T230954Z-6bf5b0d61b3d--g3.json",
-  "latest_verified_dropbox_generation_sha256": "b193e80218b131b1bf1fe97aec0c060f5235bcb41c40fc98ce31de2d7672668f",
+  "latest_verified_dropbox_generation": "C3-hostile-returned--continuation6-c3-20261013T230954Z-6bf5b0d61b3d--g3.json",
+  "latest_verified_dropbox_generation_sha256": "b50d1607788a41c13d3341a57841412fd780eb19d1a14fec8781fdffe4c9631c",
   "latest_verified_dropbox_capsule": "C3-leakage-returned--continuation6-c3-20261013T230954Z-6bf5b0d61b3d--g3--RESUME_CAPSULE.zip",
   "latest_verified_dropbox_capsule_sha256": "a1ec0fd78f5e88496223fb511b251ce83f34e282238d69cd0fcdd566e408f86d",
   "source_predecessor_generation_sha256": "f67018ce3707d049887c9221087b90d2ce52e987e5d2079dd9a9ecd56d3c5461",
@@ -31,7 +31,7 @@
   },
   "new_search_wave_credit": 1,
   "active_workers": [
-    "/root/c3_nonfree_hostile_v1"
+    "/root/c3_nonfree_recon_v1"
   ],
   "clock_reset": false,
   "recovery_directive": "Keep this authorization and all immutable clocks. Finish required bootstrap first, then exact TASK_CONTRACT only. At or after delivery reserve finalize existing material only. No repeated predecessor gates.",
@@ -39,7 +39,7 @@
   "supervisor_actions_run_id": 38483076439,
   "supervisor_actions_job_id": 115590081033,
   "supervisor_start_commit": "f4a7e3c7bb981183c60f6056fb8597872a8efc46",
-  "latest_verified_dropbox_heartbeat": "HEARTBEAT--continuation6-c3-20261013T230954Z-6bf5b0d61b3d--g3-armed.json",
+  "latest_verified_dropbox_heartbeat": "HEARTBEAT--continuation6-c3-20261013T230954Z-6bf5b0d61b3d--g3-2345.json",
   "mechanism_gate_outcome": "GO_PARTIAL_ONLY",
   "new_search_wave_scope": "C3/COINCIDENCE leaf only; parent counts preserved"
 }
