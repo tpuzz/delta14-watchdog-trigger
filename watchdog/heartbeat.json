@@ -1,38 +1,31 @@
 {
   "campaign_id": "delta14-mixed-tate-20261012T210157Z",
-  "run_id": "continuation_5_cubical8_verification-20261013T190218Z-dc31e1271ab0",
+  "run_id": "continuation_5_terminal_recovery-20261013T202321Z-9b87a01c8656",
+  "recovery_of_run_id": "continuation_5_cubical8_verification-20261013T190218Z-dc31e1271ab0",
   "authorization_launch_utc": "2026-10-13T19:02:18Z",
-  "started_at_utc": "2026-10-13T19:02:18Z",
-  "start_rule": "Platform-provided user launch time; conservatively includes all intake. First machine-observed intake time 19:03:07Z. No later reset.",
+  "started_at_utc": "2026-10-13T20:23:37.805Z",
   "hard_deadline_utc": "2026-10-13T21:02:18Z",
   "delivery_start_utc": "2026-10-13T20:52:18Z",
   "delivery_reserve_minutes": 10,
-  "epoch_boundary_utc": "2026-10-13T20:02:18Z",
-  "status": "interrupted",
-  "last_heartbeat_utc": "2026-10-13T20:09:45.763Z",
-  "current_assignment": "STOPPED: coordinator exec-server transport failure after all four verification returns were reconciled",
-  "last_safe_frontier": "Locally reconciled leakage PASS, hostile PASS, complete reconstruction, comparison PASS for cubical8-proper-boundary-v1/contract-v1/brief-v1; unchanged checklist r2. No promotion record or terminal bundle successfully published.",
-  "first_unfinished_action": "Recover and persist the already-complete comparison files and local STATE-continuation5-comppass-epoch1.json, then finalize exact promotion, closure map and delivery only; do not repeat completed verification.",
+  "status": "running",
+  "last_heartbeat_utc": "2026-10-13T20:23:37.805Z",
+  "current_assignment": "Terminal persistence and reconciliation only; no new mathematics and no repeated verification.",
+  "recovery_classification": "COMPLETE-BUT-UNDELIVERED",
+  "last_safe_frontier": "Leakage PASS, hostile PASS, proof-blind reconstruction complete, comparison PASS for cubical8-proper-boundary-v1/contract-v1/brief-v1; unchanged checklist r2. Formal persistence and promotion remain.",
+  "first_unfinished_action": "Persist the already-complete comparison attestations and coherent terminal generation, then record exact promotion, closure map, FINAL_STATUS.md, and delivery.",
   "watchdog_recovery_armed": false,
   "ownership_exclusion_available": true,
-  "recovery_precondition": "Independent interruption evidence and reliable cross-session ownership exclusion required before any recovered mathematics; stale age alone is not proof.",
-  "source_precedence": "Newest coherent generation in Dropbox, with embedded hashes verified, supersedes historical standing-file headers.",
-  "lease_generation": 1,
-  "lease_expires_utc": "2026-10-13T20:21:39.603Z",
-  "ownership_protocol": "tpuzz/delta14-watchdog-trigger/watchdog/OWNERSHIP_PROTOCOL.md; atomic claim/readback before all substantive work; renew before each heartbeat; clean release after terminal persistence",
-  "terminal_status": "blocked",
+  "lease_generation": 2,
+  "lease_expires_utc": "2026-10-13T20:35:37.805Z",
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
-  "dropbox_terminal_heartbeat_updated": false,
   "clean_release_permitted": false,
-  "ownership_released": false,
-  "stop_reason": "Checkpoint upload failed with exec-server transport closed. A bounded local diagnostic and FINAL_STATUS write could not regain filesystem control; both hanging cells were terminated. No further mathematics after the epoch boundary.",
   "deadline_expired": false,
   "clock_reset": false,
   "latest_verified_dropbox_generation": "STATE-continuation5-compactive.json",
   "latest_verified_dropbox_capsule": "delta14-mixed-tate-20261012T210157Z--CUBICAL8-VERIFY-compactive-RESUME_CAPSULE.zip",
-  "local_unpublished_generation": "STATE-continuation5-comppass-epoch1.json",
-  "local_unpublished_capsule": "delta14-mixed-tate-20261012T210157Z--CUBICAL8-VERIFY-comppass-epoch1-RESUME_CAPSULE.zip",
+  "unavailable_local_generation": "STATE-continuation5-comppass-epoch1.json",
+  "unavailable_local_capsule": "delta14-mixed-tate-20261012T210157Z--CUBICAL8-VERIFY-comppass-epoch1-RESUME_CAPSULE.zip",
   "comparison_completed_at_utc": "2026-10-13T20:00:44.914056Z",
   "all_returns_locally_reconciled_at_utc": "2026-10-13T20:02:57.502505Z",
   "comparison_report_sha256": "fd1751f3f52eb5a28e6803c84cb0e07c3feea93f1daa624a0546409e86ea9b54",
@@ -42,57 +35,7 @@
   "brief_sha256": "0dcc003f3b927ecb57b63a166fa4e035c4445ba9e7dbfc1b013d879f39a26bf2",
   "audit_checklist_sha256": "66951cc884e86f4d34a3cee6b41b4ed8eb73628b41cbe683b4e6f82574473137",
   "new_search_wave_credit": 0,
-  "wave_counts": {
-    "MT-STRUCT": 2,
-    "MT-OBSTRUCT": 2
-  },
+  "wave_counts": {"MT-STRUCT": 2, "MT-OBSTRUCT": 2},
   "active_workers": [],
-  "closure_map": [
-    {
-      "edge": "Original free diagonal mu2 cover to [U/F_W] = B_W, all sixteen actual W",
-      "status": "verifier-backed locally; formal promotion recording pending"
-    },
-    {
-      "edge": "All toric boundary strata and [D/F_W], all sixteen W",
-      "status": "verifier-backed locally; formal promotion recording pending"
-    },
-    {
-      "edge": "Compact [X/F_W] and B_W, all fifteen proper W",
-      "status": "verifier-backed locally; formal promotion recording pending"
-    },
-    {
-      "edge": "Fifteen proper W to transitive H",
-      "status": "no implication"
-    },
-    {
-      "edge": "Transitive compact [X/F_H] and B_H",
-      "status": "unresolved; localization equivalence conditional on admission of verified boundary result"
-    },
-    {
-      "edge": "Generic residual degree-eight cover, degree-four/two branch strata and all-diagonal BC2 correction",
-      "status": "candidate-only presentation data; no new evaluation or separate promotion"
-    },
-    {
-      "edge": "All sixteen absolute bases to actual relative Q3 fibre L3",
-      "status": "no automatic implication; separate relative construction unstarted"
-    },
-    {
-      "edge": "Width4 absolute bases plus genuine L3 to BG4",
-      "status": "conditional; unmet"
-    },
-    {
-      "edge": "Further actual relative/base steps through widths5-7 to BG7/BDelta14",
-      "status": "conditional and unresolved; unstarted here"
-    },
-    {
-      "edge": "Imported BG_m integral mixed-Tateness, 0<=m<=3",
-      "status": "promoted, unchanged"
-    },
-    {
-      "edge": "Exact Grothendieck class",
-      "status": "unresolved and separate"
-    }
-  ],
-  "recovery_directive": "Do not resume substantive mathematics. Reconciliation and delivery of existing complete returns only. No automatic successor, repeated gate, transitive search or relative/higher-width task. FINAL_STATUS must be verified in Dropbox before any clean lease release.",
-  "lease_stop_behavior": "Lease intentionally remains active because the required Dropbox FINAL_STATUS write could not be verified; it must expire naturally if no authorized recovery completes terminal persistence."
+  "recovery_directive": "Do not resume substantive mathematics. Reconciliation and delivery of existing complete returns only."
 }
