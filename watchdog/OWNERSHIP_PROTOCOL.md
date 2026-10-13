@@ -2,16 +2,21 @@
 
 Campaign: `delta14-mixed-tate-20261012T210157Z`
 
-Purpose: prevent two Work sessions from performing substantive campaign work concurrently.
+Purpose: cooperative single-owner coordination for campaign work and publication. A lease is not a server-enforced fence on Dropbox writes or proof that a suspended process has terminated. Every participating session must obey the ownership checks, and recovery must independently verify the current frontier and interruption evidence.
 
-## Lease parameters
+## Lease parameters and recovery decisions
 
 - Heartbeat target cadence: approximately 5 minutes.
 - Ownership lease duration: 12 minutes.
-- Watchdog stale threshold: 20 minutes.
-- A recovery trigger is permitted only when both:
-  1. the heartbeat is at least 20 minutes old; and
-  2. the current ownership lease has expired.
+- Supervisor polling interval while its GitHub Actions job is active: 60 seconds.
+- For a `running` or `checkpointed` execution, request recovery only after a 20-minute stale heartbeat AND expiry of the matching ownership lease.
+- For `interrupted` or `blocked` with unverified/incomplete terminal delivery, request recovery after expiry of the matching lease, WITHOUT an additional 20-minute wait. An interrupted run setting `watchdog_recovery_armed=false` does not erase this explicit failure signal.
+- A terminal status with BOTH `terminal_delivery_complete=true` and `dropbox_final_status_verified=true` is left stopped.
+- Cancellation, explicit user stop, inactivity and a deliberate legacy pause are not invitations to resume research.
+- Missing clocks, missing ownership, mismatched run IDs or mismatched generations never authorize takeover.
+- Recovery requests are deduplicated by campaign/run/generation. A new ownership generation has a distinct incident identity.
+
+The implementation and regression tests are `watchdog/supervisor.py` and `watchdog/test_supervisor.py`.
 
 ## Invariant
 
@@ -22,15 +27,18 @@ A session holds the lease exactly when all of the following are true:
 - `owner_run_id` equals that session's exact `run_id`;
 - `status` is `active`;
 - `lease_expires_utc` is later than the current UTC time;
+- its recorded generation equals the current generation;
 - the session has read back the written file and verified those fields.
+
+Recheck ownership before publishing a shared checkpoint and after returning from a long operation. A session waking after lease expiry must not publish under its old generation. Preserve uncommitted work in a run-specific location instead of overwriting another owner's frontier.
 
 ## Atomic claim
 
-Before substantive work:
+Before substantive work or mutation of shared campaign state:
 
 1. Fetch `watchdog/owner.json` from `main`, including its current blob SHA.
 2. If it contains an unexpired active lease owned by another run, STOP. Do not overwrite it.
-3. If the lease is inactive or expired, prepare a replacement with:
+3. If the lease is inactive or expired and takeover is otherwise authorized, prepare a replacement with:
    - the same campaign ID;
    - `owner_run_id` = this session's exact run ID;
    - `generation` = previous generation + 1;
@@ -38,10 +46,10 @@ Before substantive work:
    - `last_renewed_utc` = now;
    - `lease_expires_utc` = now + 12 minutes.
 4. Update the file using the exact blob SHA fetched in step 1.
-5. If that conditional update fails because the file changed, another session may have raced for ownership. Re-fetch and STOP unless the refreshed file proves this same run owns the lease.
-6. Read the file back and verify ownership before any substantive work.
+5. If that conditional update fails because the file changed, re-fetch and STOP unless the refreshed file proves this same run owns the lease.
+6. Read the file back and verify ownership before proceeding.
 
-The blob-SHA precondition is the cross-session compare-and-swap primitive. Never claim ownership by writing without the exact previously fetched SHA.
+The blob-SHA precondition protects this ownership-file update against conflicting versions. It does not make independent Dropbox writes atomic with the lease.
 
 ## Heartbeat / renewal
 
@@ -50,68 +58,47 @@ Approximately every 5 minutes while control is available:
 1. Fetch `watchdog/owner.json` and verify this run still owns an unexpired active lease.
 2. Renew the lease to now + 12 minutes using the exact fetched blob SHA.
 3. Read it back and verify.
-4. Only after successful lease renewal, update `watchdog/heartbeat.json` and the Dropbox `HEARTBEAT.json`.
-5. If lease renewal fails or ownership has changed, STOP substantive work immediately and checkpoint only what can safely be attributed to this run.
+4. Only after successful lease renewal, update `watchdog/heartbeat.json` and the Dropbox `HEARTBEAT.json`, including `lease_generation`.
+5. If lease renewal fails or ownership has changed, STOP substantive work and do not overwrite the shared frontier.
 
 ## Recovery claim
 
-A recovered session does not inherit the old run's ownership.
+A recovered session does not inherit the old run's ownership. It must independently execute the Atomic claim procedure. It may claim an expired lease only after checking the incident and current state, and must never steal an unexpired lease.
 
-It must independently execute the Atomic claim procedure above. It may claim an expired lease, incrementing `generation`, but must never steal an unexpired lease.
+After a successful claim:
 
-After a successful claim it should:
+1. Update `watchdog/heartbeat.json` to the new run ID, generation and status `running`, preserving the original authorization/deadline.
+2. Verify that heartbeat and the corresponding Dropbox state.
+3. Update `watchdog/start.signal` with the run ID and current UTC time to launch a fresh watchdog instance.
+4. Verify the start signal and inspect the actual Actions run. File existence alone does not prove the supervisor is operating.
+5. Record the exact infrastructure verification level. Do not infer successful end-to-end Work recovery merely from a heartbeat's `watchdog_recovery_armed` field.
 
-1. update `watchdog/heartbeat.json` to its new run ID and status `running`;
-2. verify that heartbeat;
-3. update `watchdog/start.signal` with its run ID and current UTC time to launch a fresh watchdog instance;
-4. verify the start signal;
-5. only then declare automatic recovery armed.
-
-## Clean release
-
-Before a normal completion or pause:
-
-1. persist the newest coherent Dropbox frontier;
-2. write terminal heartbeat status;
-3. fetch `watchdog/owner.json` and verify this run owns it;
-4. conditionally update it, preserving owner_run_id and generation, with:
-   - `status` = `inactive`;
-   - `last_renewed_utc` = now;
-   - `lease_expires_utc` = now.
-5. read back the release.
-
-If the run crashes, it cannot release; the lease expires naturally after 12 minutes. The watchdog still waits for the 20-minute heartbeat-stale threshold before opening a recovery PR.
+Recovery PRs are requests for independent verification, not authority to skip lease checks, extend deadlines, reopen paused scope or trust missing audit artifacts. Re-read current state: a fresh owner or verified completed delivery supersedes an old PR.
 
 ## Deadline rule
 
-Ownership does not grant or extend mathematical authorization. Every recovered run preserves the campaign's existing hard deadline. If that deadline has expired, no substantive research may resume even if ownership can be claimed.
+Ownership does not grant or extend mathematical authorization. Every recovered run preserves the existing hard deadline and delivery reserve.
 
+At or after the delivery-reserve start, or whenever the saved directive forbids further mathematics, the only permitted recovery mode is `finalize_only`: reconcile, persist and deliver existing results. Deadline expiry must not suppress a request to finish this administrative finalization, but it never authorizes new mathematics, repeated gates or a successor campaign. If the saved deadline is missing or invalid, do not invent one.
 
 ## Terminal status contract
 
-Every clean terminal state, including `completed`, `paused`, `expired`, or `blocked`, must write
+Before a clean completion, pause, expiry stop or blocked stop, write and verify:
 
 `/ChatGPT-Research-State/delta14-mixed-tate/FINAL_STATUS.md`
 
-before releasing ownership.
+Include campaign ID; terminal status; terminal UTC timestamp; proved/disproved/unresolved conclusion; exact earned verification labels; residual gaps; last safe frontier; first unfinished action; stop reason; unchanged deadline; relevant artifact names; and recommended next step.
 
-`FINAL_STATUS.md` must be concise and self-contained, and must include:
+A hash or PASS attestation does not replace missing proof/audit bytes. Preserve any recorded verdict without inventing its report and disclose artifact-recovery limitations explicitly.
 
-- campaign ID;
-- terminal status: exactly one of `completed`, `paused`, `expired`, or `blocked`;
-- terminal UTC timestamp;
-- final mathematical conclusion, explicitly distinguishing proved / disproved / unresolved;
-- promoted or verifier-backed results reached in this run;
-- unresolved claims or gaps;
-- last safe frontier;
-- exact first unfinished action, if any;
-- reason for stopping;
-- current hard deadline and whether it expired;
-- newest relevant recovery/resume artifact names;
-- recommended next step.
+## Clean terminal publication and release
 
-A run must not describe itself as cleanly completed or release its ownership lease until the Dropbox `FINAL_STATUS.md` write has succeeded and been read back or otherwise verified.
+1. Persist the newest coherent Dropbox frontier, terminal capsule and `FINAL_STATUS.md`; verify their writes.
+2. Publish a terminal GitHub heartbeat with the correct status and truthful `terminal_delivery_complete` and `dropbox_final_status_verified` booleans.
+3. Write `watchdog/terminal.signal` ONCE for this run/status, containing run ID, generation, terminal status and UTC timestamp. Verify the write. Ordinary heartbeat updates must not touch this signal. The terminal notifier watches this dedicated signal, not heartbeat changes.
+4. Fetch ownership, verify this run/generation still owns it, and conditionally release using the current SHA: preserve owner_run_id/generation; set `status=inactive`, `last_renewed_utc=now`, `lease_expires_utc=now`.
+5. Read back the release. An external terminal notification is not proof of a mathematical result.
 
-If writing `FINAL_STATUS.md` fails, record that terminal delivery is incomplete, preserve ownership long enough to make one bounded retry if allowed by the infrastructure-failure rules, and otherwise stop with status `blocked` or `interrupted` as appropriate. Never fabricate terminal delivery.
+If terminal persistence fails, record `interrupted` or `blocked` with `terminal_delivery_complete=false` and `dropbox_final_status_verified=false`, save whatever exact evidence remains accessible, and follow the bounded infrastructure-stop rules. Do not fabricate delivery or silently convert the failure into a clean stop. Do not renew ownership indefinitely after stopping; expiry permits a separately checked finalization recovery.
 
-Future recovery sessions should treat a verified `FINAL_STATUS.md` with status `completed` or `expired` as strong evidence that no further substantive continuation should begin unless the user explicitly authorizes new work.
+The supervisor requests recovery but does not itself claim the lease or modify research results. It runs only when started by the configured Actions trigger; it is not an always-on service, and its bounded job can itself fail. Such failures must be reported rather than hidden or retried without limit.
