@@ -11,16 +11,16 @@
   "delivery_start_utc": "2026-10-14T01:58:22Z",
   "delivery_reserve_minutes": 10,
   "status": "running",
-  "last_heartbeat_utc": "2026-10-13T23:32:01.270Z",
-  "current_assignment": "GO_PARTIAL_ONLY: freeze and verify exact nonfree-locus theorem; other screen stopped.",
+  "last_heartbeat_utc": "2026-10-13T23:38:03.965Z",
+  "current_assignment": "Frozen c3-nonfree-locus-v1: fresh leakage checker active; all preceding complete reports externally verified.",
   "last_safe_frontier": "Inherited cubical8-proper-boundary-v1 exact partial promotion; C3/B_H and relative L3 unresolved.",
-  "first_unfinished_action": "Freeze exact candidate and externally persist before leakage.",
+  "first_unfinished_action": "Reconcile leakage, externally persist complete report/manifest, then fresh hostile audit.",
   "watchdog_recovery_armed": true,
   "ownership_exclusion_available": true,
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
-  "latest_verified_dropbox_generation": "C3-direct-returned--continuation6-c3-20261013T230954Z-6bf5b0d61b3d--g3.json",
-  "latest_verified_dropbox_generation_sha256": "c48b8bfe43ac3c58f6dde22f48b5738b0a317b7582cb4792b1cc2048386e5571",
+  "latest_verified_dropbox_generation": "C3-nonfree-frozen--continuation6-c3-20261013T230954Z-6bf5b0d61b3d--g3.json",
+  "latest_verified_dropbox_generation_sha256": "91f582b59294b4da4e12f923849578ddeb5fba182775bdb4cb9e3fd0d2ec9b38",
   "latest_verified_dropbox_capsule": "C3-initial--continuation6-c3-20261013T230954Z-6bf5b0d61b3d--g3--RESUME_CAPSULE.zip",
   "latest_verified_dropbox_capsule_sha256": "0160f43bbe03233fc10ff059ee0da8651df644936de8c9b58c5404a8b44ca0ef",
   "source_predecessor_generation_sha256": "f67018ce3707d049887c9221087b90d2ce52e987e5d2079dd9a9ecd56d3c5461",
@@ -29,8 +29,10 @@
     "MT-STRUCT": 2,
     "MT-OBSTRUCT": 2
   },
-  "new_search_wave_credit": 0,
-  "active_workers": [],
+  "new_search_wave_credit": 1,
+  "active_workers": [
+    "/root/c3_nonfree_leak_v1"
+  ],
   "clock_reset": false,
   "recovery_directive": "Keep this authorization and all immutable clocks. Finish required bootstrap first, then exact TASK_CONTRACT only. At or after delivery reserve finalize existing material only. No repeated predecessor gates.",
   "infrastructure_verification_level": "Owner/readback + raw-byte-verified Dropbox generation/capsule + heartbeat/start readback + actual Actions job in_progress with regression step success; no demonstrated end-to-end crash recovery.",
@@ -38,5 +40,6 @@
   "supervisor_actions_job_id": 115590081033,
   "supervisor_start_commit": "f4a7e3c7bb981183c60f6056fb8597872a8efc46",
   "latest_verified_dropbox_heartbeat": "HEARTBEAT--continuation6-c3-20261013T230954Z-6bf5b0d61b3d--g3-armed.json",
-  "mechanism_gate_outcome": "GO_PARTIAL_ONLY"
+  "mechanism_gate_outcome": "GO_PARTIAL_ONLY",
+  "new_search_wave_scope": "C3/COINCIDENCE leaf only; parent counts preserved"
 }
