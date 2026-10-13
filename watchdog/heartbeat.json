@@ -1,8 +1,20 @@
 {
   "campaign_id": "delta14-mixed-tate-20261012T210157Z",
-  "run_id": "inactive",
-  "status": "inactive",
-  "last_heartbeat_utc": "1970-01-01T00:00:00Z",
-  "hard_deadline_utc": null,
-  "delivery_start_utc": null
+  "run_id": "continuation_5_cubical8_verification-20261013T190218Z-dc31e1271ab0",
+  "authorization_launch_utc": "2026-10-13T19:02:18Z",
+  "started_at_utc": "2026-10-13T19:02:18Z",
+  "start_rule": "Platform-provided user launch time; conservatively includes all intake. First machine-observed intake time 19:03:07Z. No later reset.",
+  "hard_deadline_utc": "2026-10-13T21:02:18Z",
+  "delivery_start_utc": "2026-10-13T20:52:18Z",
+  "delivery_reserve_minutes": 10,
+  "epoch_boundary_utc": "2026-10-13T20:02:18Z",
+  "status": "running",
+  "last_heartbeat_utc": "2026-10-13T19:06:07.443236Z",
+  "current_assignment": "intake/publication; no mathematical role yet",
+  "last_safe_frontier": "four exact imported promotions; candidate cubical8-proper-boundary-v1 frozen, all gates unrun",
+  "first_unfinished_action": "fresh leakage check of cubical8-proper-boundary-v1/contract-v1/brief-v1",
+  "watchdog_recovery_armed": false,
+  "ownership_exclusion_available": false,
+  "recovery_precondition": "Independent interruption evidence, current coherent state and reliable cross-session owner exclusion are mandatory. A stale signal alone must not launch mathematics.",
+  "dropbox_generation_precedence": "Newest coherent STATE/TERMINAL generation and its embedded hashes supersede older standing headers."
 }
