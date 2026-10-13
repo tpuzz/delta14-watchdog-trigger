@@ -85,3 +85,33 @@ If the run crashes, it cannot release; the lease expires naturally after 12 minu
 ## Deadline rule
 
 Ownership does not grant or extend mathematical authorization. Every recovered run preserves the campaign's existing hard deadline. If that deadline has expired, no substantive research may resume even if ownership can be claimed.
+
+
+## Terminal status contract
+
+Every clean terminal state, including `completed`, `paused`, `expired`, or `blocked`, must write
+
+`/ChatGPT-Research-State/delta14-mixed-tate/FINAL_STATUS.md`
+
+before releasing ownership.
+
+`FINAL_STATUS.md` must be concise and self-contained, and must include:
+
+- campaign ID;
+- terminal status: exactly one of `completed`, `paused`, `expired`, or `blocked`;
+- terminal UTC timestamp;
+- final mathematical conclusion, explicitly distinguishing proved / disproved / unresolved;
+- promoted or verifier-backed results reached in this run;
+- unresolved claims or gaps;
+- last safe frontier;
+- exact first unfinished action, if any;
+- reason for stopping;
+- current hard deadline and whether it expired;
+- newest relevant recovery/resume artifact names;
+- recommended next step.
+
+A run must not describe itself as cleanly completed or release its ownership lease until the Dropbox `FINAL_STATUS.md` write has succeeded and been read back or otherwise verified.
+
+If writing `FINAL_STATUS.md` fails, record that terminal delivery is incomplete, preserve ownership long enough to make one bounded retry if allowed by the infrastructure-failure rules, and otherwise stop with status `blocked` or `interrupted` as appropriate. Never fabricate terminal delivery.
+
+Future recovery sessions should treat a verified `FINAL_STATUS.md` with status `completed` or `expired` as strong evidence that no further substantive continuation should begin unless the user explicitly authorizes new work.
