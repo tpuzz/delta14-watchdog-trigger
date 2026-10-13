@@ -8,12 +8,12 @@
   "delivery_start_utc": "2026-10-13T20:52:18Z",
   "delivery_reserve_minutes": 10,
   "status": "running",
-  "last_heartbeat_utc": "2026-10-13T20:23:37.805Z",
+  "last_heartbeat_utc": "2026-10-13T20:24:30.000Z",
   "current_assignment": "Terminal persistence and reconciliation only; no new mathematics and no repeated verification.",
   "recovery_classification": "COMPLETE-BUT-UNDELIVERED",
   "last_safe_frontier": "Leakage PASS, hostile PASS, proof-blind reconstruction complete, comparison PASS for cubical8-proper-boundary-v1/contract-v1/brief-v1; unchanged checklist r2. Formal persistence and promotion remain.",
   "first_unfinished_action": "Persist the already-complete comparison attestations and coherent terminal generation, then record exact promotion, closure map, FINAL_STATUS.md, and delivery.",
-  "watchdog_recovery_armed": false,
+  "watchdog_recovery_armed": true,
   "ownership_exclusion_available": true,
   "lease_generation": 2,
   "lease_expires_utc": "2026-10-13T20:35:37.805Z",
@@ -35,7 +35,10 @@
   "brief_sha256": "0dcc003f3b927ecb57b63a166fa4e035c4445ba9e7dbfc1b013d879f39a26bf2",
   "audit_checklist_sha256": "66951cc884e86f4d34a3cee6b41b4ed8eb73628b41cbe683b4e6f82574473137",
   "new_search_wave_credit": 0,
-  "wave_counts": {"MT-STRUCT": 2, "MT-OBSTRUCT": 2},
+  "wave_counts": {
+    "MT-STRUCT": 2,
+    "MT-OBSTRUCT": 2
+  },
   "active_workers": [],
   "recovery_directive": "Do not resume substantive mathematics. Reconciliation and delivery of existing complete returns only."
 }
