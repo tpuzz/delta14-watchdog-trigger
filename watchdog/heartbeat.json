@@ -9,7 +9,7 @@
   "delivery_reserve_minutes": 10,
   "epoch_boundary_utc": "2026-10-13T20:02:18Z",
   "status": "running",
-  "last_heartbeat_utc": "2026-10-13T19:49:51.817416Z",
+  "last_heartbeat_utc": "2026-10-13T19:54:44.352583Z",
   "current_assignment": "CUBICAL8-COMP-v1 active",
   "last_safe_frontier": "leakage and hostile PASS; complete reconstruction reconciled; candidate unpromoted",
   "first_unfinished_action": "await complete fresh comparison",
@@ -18,6 +18,6 @@
   "recovery_precondition": "Independent interruption evidence and reliable cross-session ownership exclusion required before any recovered mathematics; stale age alone is not proof.",
   "source_precedence": "Newest coherent generation in Dropbox, with embedded hashes verified, supersedes historical standing-file headers.",
   "lease_generation": 1,
-  "lease_expires_utc": "2026-10-13T20:01:21.683Z",
+  "lease_expires_utc": "2026-10-13T20:06:39.002Z",
   "ownership_protocol": "tpuzz/delta14-watchdog-trigger/watchdog/OWNERSHIP_PROTOCOL.md; atomic claim/readback before all substantive work; renew before each heartbeat; clean release after terminal persistence"
 }
