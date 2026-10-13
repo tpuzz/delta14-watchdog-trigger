@@ -64,7 +64,7 @@ jobs:
               fi
             fi
 
-            if [ "$age" -ge 900 ]; then
+            if [ "$age" -ge 1200 ]; then
               stamp="$(date -u +%Y%m%dT%H%M%SZ)"
               safe_run="$(printf '%s' "$run_id" | tr -cd 'A-Za-z0-9._-' | cut -c1-40)"
               branch="watchdog-stale-${safe_run:-run}-$stamp"
