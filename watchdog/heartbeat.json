@@ -11,11 +11,11 @@
   "delivery_start_utc": "2026-10-14T01:58:22Z",
   "delivery_reserve_minutes": 10,
   "status": "running",
-  "last_heartbeat_utc": "2026-10-13T23:14:30.944Z",
-  "current_assignment": "Bootstrap: verified predecessor sources and initial external generation; actual supervisor verification next. No mathematical role launched.",
+  "last_heartbeat_utc": "2026-10-13T23:16:13.474Z",
+  "current_assignment": "Bootstrap verified; prepare two isolated C3 mechanism-screen assignments.",
   "last_safe_frontier": "Inherited cubical8-proper-boundary-v1 exact partial promotion; C3/B_H and relative L3 unresolved.",
-  "first_unfinished_action": "Verify actual GitHub Actions supervisor run for new start.signal commit before mathematics.",
-  "watchdog_recovery_armed": false,
+  "first_unfinished_action": "C3 mechanism gate by 2026-10-13T23:28:22Z.",
+  "watchdog_recovery_armed": true,
   "ownership_exclusion_available": true,
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
@@ -32,5 +32,9 @@
   "new_search_wave_credit": 0,
   "active_workers": [],
   "clock_reset": false,
-  "recovery_directive": "Keep this authorization and all immutable clocks. Finish required bootstrap first, then exact TASK_CONTRACT only. At or after delivery reserve finalize existing material only. No repeated predecessor gates."
+  "recovery_directive": "Keep this authorization and all immutable clocks. Finish required bootstrap first, then exact TASK_CONTRACT only. At or after delivery reserve finalize existing material only. No repeated predecessor gates.",
+  "infrastructure_verification_level": "Owner/readback + raw-byte-verified Dropbox generation/capsule + heartbeat/start readback + actual Actions job in_progress with regression step success; no demonstrated end-to-end crash recovery.",
+  "supervisor_actions_run_id": 38483076439,
+  "supervisor_actions_job_id": 115590081033,
+  "supervisor_start_commit": "f4a7e3c7bb981183c60f6056fb8597872a8efc46"
 }
