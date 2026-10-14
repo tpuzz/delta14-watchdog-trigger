@@ -13,7 +13,7 @@ Purpose: cooperative single-owner coordination for campaign work and publication
 - For `interrupted` or `blocked` with unverified/incomplete terminal delivery, request recovery after expiry of the matching lease, WITHOUT an additional 20-minute wait. An interrupted run setting `watchdog_recovery_armed=false` does not erase this explicit failure signal.
 - A terminal status with BOTH `terminal_delivery_complete=true` and `dropbox_final_status_verified=true` is left stopped.
 - Cancellation, explicit user stop, inactivity and a deliberate legacy pause are not invitations to resume research.
-- Missing clocks, missing ownership, mismatched run IDs or mismatched generations never authorize takeover.
+- Missing clocks or missing ownership never authorize takeover. A mismatched run ID/generation normally forbids takeover, except for the narrow orphaned-handover case: the owner is exactly one generation ahead of the last coherent heartbeat, the owner lease has expired, the old heartbeat is stale by the normal threshold, and no matching successor heartbeat was ever published. In that case a checked recovery may claim the expired lease and continue/finalize under the unchanged authorization and deadline.
 - Recovery requests are deduplicated by campaign/run/generation. A new ownership generation has a distinct incident identity.
 
 The implementation and regression tests are `watchdog/supervisor.py` and `watchdog/test_supervisor.py`.
