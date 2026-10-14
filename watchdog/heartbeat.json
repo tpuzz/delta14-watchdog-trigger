@@ -8,27 +8,26 @@
   "authorization_start_utc": "2026-10-14T19:27:19Z",
   "delivery_start_utc": "2026-10-14T23:17:19Z",
   "hard_deadline_utc": "2026-10-14T23:27:19Z",
-  "last_heartbeat_utc": "2026-10-14T19:45:59.333Z",
+  "last_heartbeat_utc": "2026-10-14T19:56:41.969Z",
   "research_started": true,
-  "active_math_elapsed_seconds": 0,
-  "math_segment_start_utc": "2026-10-14T19:35:00.602655Z",
-  "current_assignment": "J-W1 exact J screen active; checking signed-diagonal quotient lemma and intersections",
+  "active_math_elapsed_seconds": 826.110084,
+  "math_segment_start_utc": null,
+  "current_assignment": "exact-j-v1 leakage check",
   "active_workers": [
     {
-      "assignment_id": "J-W1",
-      "agent": "/root/j_w1",
-      "status": "running",
-      "automatic_replacement_attempts": 0
+      "assignment_id": "J-LEAK-v1",
+      "agent": "/root/j_leak_v1",
+      "state": "running"
     }
   ],
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
   "watchdog_recovery_armed": true,
-  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation9-autonomous-20261014T193034Z-0599f2e47215--g12--math-start.json",
-  "latest_verified_dropbox_generation_sha256": "f38934f279959d2bd90a9189f2a978c72a48b4891bf477c4493161435248214a",
-  "latest_verified_dropbox_capsule": "AUTONOMOUS--continuation8-finalization-20261014T191755Z-9b87a01c8656--g11--terminal--RESUME_CAPSULE.zip",
-  "latest_verified_dropbox_capsule_sha256": "8d6a1f9bc2c97d203732220a02a0275efa38ff79fcccacb15f2c371fedafca73",
-  "capsule_scope": "Inherited exact terminal capsule plus minimal new generation contains current authorization and exact own-route packet",
+  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation9-autonomous-20261014T193034Z-0599f2e47215--g12--exact-j-candidate-v1.json",
+  "latest_verified_dropbox_generation_sha256": "8196f57195a2e94f4bfb396f3d6211b1318bece981719d0e652450819fbcb0f4",
+  "latest_verified_dropbox_capsule": "AUTONOMOUS--continuation9-autonomous-20261014T193034Z-0599f2e47215--g12--exact-j-candidate-v1--RESUME_CAPSULE.zip",
+  "latest_verified_dropbox_capsule_sha256": "8d92fb568685d9a9c503db397126d53a04c33bb421fb48bea6a723c5565a047b",
+  "capsule_scope": "Current generation12 complete fresh J return, manifest, candidate and exact inherited premises; no nested old archives",
   "source_generation": "AUTONOMOUS--continuation8-finalization-20261014T191755Z-9b87a01c8656--g11--terminal.json",
   "source_generation_sha256": "cdaf3aee22a6d96f9a6b1dac0e2993384034a0b6e61f1efa6420fdcaf57b290f",
   "promoted_results": {
@@ -57,17 +56,7 @@
       "scope": "Coupled T42 is integral mixed Tate; specified compact block quotients except the transitive discrete eight-label case are mixed Tate; all at-most-seven-block distinct opens and proper collision filtration are mixed Tate; T42 boundary and E42 are mixed Tate; localization gives C3 mixed Tate iff E8 mixed Tate. Neither is decided."
     }
   },
-  "pending_unverified_result": {
-    "assignment": "COINCIDENCE-W3 exact J mechanism screen",
-    "status": "GO_CANDIDATE_REPORTED_ONLY",
-    "promotion_credit": 0,
-    "verification_credit": 0,
-    "wave_credit": 0,
-    "missing": [
-      "complete return bytes",
-      "actual manifest bytes"
-    ]
-  },
+  "pending_unverified_result": "exact-j-v1 candidate; all verification gates pending",
   "wave_counts": {
     "MT-STRUCT": 2,
     "MT-OBSTRUCT": 2,
@@ -76,11 +65,13 @@
   "historical_missing_evidence": "Continuation5 original cubical comparison report and actual manifest bytes remain lost; recorded PASS/hashes preserved, not reconstructed.",
   "policy_sha": "ffb5dc24643d747482e2f1ab94040431b7e46361",
   "ownership_protocol_sha": "4bb548d2a8a8772dc2a1d0e3271c84825856d584",
-  "latest_verified_dropbox_heartbeat": "AUTONOMOUS--continuation9-autonomous-20261014T193034Z-0599f2e47215--g12--heartbeat-j-w1-02.json",
+  "latest_verified_dropbox_heartbeat": "AUTONOMOUS--continuation9-autonomous-20261014T193034Z-0599f2e47215--g12--heartbeat-j-leak-start.json",
   "math_start_utc": "2026-10-14T19:35:00.602655Z",
   "mathematical_work_authorized": true,
   "infrastructure_verification_level": "Actual supervisor run38624747502 job116061193283 running; regression preflight succeeded. End-to-end crash recovery not tested by this bootstrap.",
   "supervisor_actions_run_id": 38624747502,
   "supervisor_actions_job_id": 116061193283,
-  "current_checklist_revision": 8
+  "current_checklist_revision": 8,
+  "new_independent_wave_credit": 1,
+  "execution_epoch": 2
 }
