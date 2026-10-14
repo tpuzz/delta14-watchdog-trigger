@@ -10,26 +10,26 @@
   "authorization_start_utc": "2026-10-14T19:27:19Z",
   "delivery_start_utc": "2026-10-14T23:17:19Z",
   "hard_deadline_utc": "2026-10-14T23:27:19Z",
-  "last_heartbeat_utc": "2026-10-14T21:56:12.817Z",
+  "last_heartbeat_utc": "2026-10-14T22:02:35.460Z",
   "research_started": true,
   "mathematical_work_authorized": true,
   "active_workers": [
     {
-      "assignment_id": "REL-V2-HOSTILE",
-      "agent": "/root/rel_v2_hostile",
+      "assignment_id": "REL-PRODUCT-W1",
+      "agent": "/root/rel_product_w1",
       "state": "running",
       "replacement_number": 0
     }
   ],
-  "current_assignment": "Fresh isolated hostile audit for relative-toric-boundary-v2",
-  "first_unfinished_action": "Receive complete v2 hostile report plus actual manifest; externally persist and raw-byte verify before any reconstruction gate.",
+  "current_assignment": "Bounded product-totalization repair screen REL-PRODUCT-W1",
+  "first_unfinished_action": "Receive complete GO/NO_GO return plus actual manifest; externally persist and raw-byte verify before freezing any v3 candidate.",
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
   "watchdog_recovery_armed": true,
   "recovery_mode": "DIRECT-RESUME",
   "recovery_classification": "INCOMPLETE",
-  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation9-recovery-20261014T212819Z-9b87a01c8656--g13--rel-v2-leak.json",
-  "latest_verified_dropbox_generation_sha256": "f0b97cebc6b58552bde58ac78ea307e8a48a13ccd2c5295f3087f0b722dc5d39",
+  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation9-recovery-20261014T212819Z-9b87a01c8656--g13--rel-v2-hostile-nonpass.json",
+  "latest_verified_dropbox_generation_sha256": "5a14adf3a8e5848a6a48055d5c1604f64350496f24e230f4cbf51c4ec309bd1c",
   "recovery_bootstrap_raw_readback_equal": true,
   "source_generation": "AUTONOMOUS--continuation9-autonomous-20261014T193034Z-0599f2e47215--g12--fc-recon-v1.json",
   "source_generation_sha256": "7b6c2984ed7a67995b927b4765c0e301ef23ad8319ecf2f2e97fcfe2ee03b885",
@@ -85,25 +85,7 @@
       "promotion_record_sha256": "bb6d10ffb62478439bafcf09e910b915b3c8e02985f203624f3e9952780a7f19"
     }
   },
-  "candidate_statuses": {
-    "relative-toric-boundary-v2": {
-      "status": "candidate",
-      "contract": "claim-contract-v1",
-      "proof_sha256": "16a484dae15b5223fd74db3ded25fefbccc4e793b87bd0058ea275f7d5e6cf0e",
-      "author_manifest_sha256": "67ae4681f1e3bf2997cec252bf13204ad32648f6e78b52e44dd3670a5c2313f8",
-      "frozen_manifest_sha256": "c59810bc6fab82dbd7a599137b320ff2626fafc902a24b0d68c9bf7bde667aee",
-      "gates": {
-        "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED",
-        "hostile": "RUNNING",
-        "reconstruction": "NOT_RUN",
-        "comparison": "NOT_RUN"
-      },
-      "packet_allowlist_sha256": "ce4d7662d91d606adb6c20d36ac87446f74d5b72e4075efdcb52ba3309352f97",
-      "leakage_report_sha256": "16a0f1559a1c197e54202f195fdda36e99a6c85c1d4a0a662004e6e2d1e59771",
-      "leakage_manifest_sha256": "83c50307e7fb0717e04117288e1daf988bc1f52aca4e5e9a0efe9110fe693146",
-      "hostile_packet_allowlist_sha256": "50e81ed344973d8bd25f7f4c0f9708f98e60e0ae76436b12f4b77b4b408eb85f"
-    }
-  },
+  "candidate_statuses": {},
   "wave_counts": {
     "MT-STRUCT": 2,
     "MT-OBSTRUCT": 2,
@@ -131,8 +113,32 @@
       "hostile_manifest_sha256": "ca9c84bd43aa38cfee5515c8d80a598519346e24d7efc5ad3a322a138a088038",
       "blocking_defect": "Missing motive-level product comparison for B(G_h x C2^(4-h)); six-support induction and downstream boundary comparison not proved.",
       "unchanged_retry_forbidden": true
+    },
+    "relative-toric-boundary-v2": {
+      "status": "failed_hostile_nonpass",
+      "contract": "claim-contract-v1",
+      "gates": {
+        "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED",
+        "hostile": "NONPASS_EXTERNALLY_BYTE_VERIFIED",
+        "reconstruction": "NOT_RUN",
+        "comparison": "NOT_RUN"
+      },
+      "proof_sha256": "16a484dae15b5223fd74db3ded25fefbccc4e793b87bd0058ea275f7d5e6cf0e",
+      "hostile_report_sha256": "c926c7d272d622477ad20d2522c58cf16a4b4897b932f7a6a4a5087bb5c91257",
+      "hostile_manifest_sha256": "5fe552248da62bcdbde9fa799f60035989dd7aa3572f7abf73564d81aa0a3e45",
+      "blocking_defect": "Unjustified interchange of separate Sella totalizations with derived tensor product.",
+      "unchanged_retry_forbidden": true
     }
   },
-  "strategy_epoch": 4,
-  "strategy_decision": "Repair the isolated v1 stack-product defect as a genuinely new v2 candidate; if complete, require the full four-gate cadence."
+  "strategy_epoch": 5,
+  "strategy_decision": "One bounded product-totalization repair screen; GO only with a complete construction, otherwise close this relative repair.",
+  "mechanism_screens": {
+    "REL-PRODUCT-W1": {
+      "status": "RUNNING",
+      "math_start_utc": "2026-10-14T22:02:35.460Z",
+      "active_math_elapsed_seconds": 0,
+      "cap_seconds": 1200,
+      "independent_wave_credit": 0
+    }
+  }
 }
