@@ -8,23 +8,23 @@
   "authorization_start_utc": "2026-10-14T19:27:19Z",
   "delivery_start_utc": "2026-10-14T23:17:19Z",
   "hard_deadline_utc": "2026-10-14T23:27:19Z",
-  "last_heartbeat_utc": "2026-10-14T20:31:18.424Z",
+  "last_heartbeat_utc": "2026-10-14T20:36:30.644Z",
   "research_started": true,
   "active_math_elapsed_seconds": 826.110084,
   "math_segment_start_utc": null,
-  "current_assignment": "exact-j-v1 reconstruction proof closed in draft; complete immutable return pending",
+  "current_assignment": "exact-j-v1 final comparison",
   "active_workers": [
     {
-      "assignment_id": "J-RECON-v1",
-      "agent": "/root/j_recon_v1",
-      "state": "finalizing complete proof and actual manifest"
+      "assignment_id": "J-COMP-v1",
+      "agent": "/root/j_comp_v1",
+      "state": "running"
     }
   ],
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
   "watchdog_recovery_armed": true,
-  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation9-autonomous-20261014T193034Z-0599f2e47215--g12--j-hostile-v1.json",
-  "latest_verified_dropbox_generation_sha256": "c099d3913b7c28b51028b28e95e195004a46856ac3ef97e80fb34870cd058457",
+  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation9-autonomous-20261014T193034Z-0599f2e47215--g12--j-recon-v1.json",
+  "latest_verified_dropbox_generation_sha256": "ed37f31b3870fcab918513c3af538c5cc42b5585ae1600e08dbc145ee41a5008",
   "latest_verified_dropbox_capsule": "AUTONOMOUS--continuation9-autonomous-20261014T193034Z-0599f2e47215--g12--exact-j-candidate-v1--RESUME_CAPSULE.zip",
   "latest_verified_dropbox_capsule_sha256": "8d92fb568685d9a9c503db397126d53a04c33bb421fb48bea6a723c5565a047b",
   "capsule_scope": "Current generation12 complete fresh J return, manifest, candidate and exact inherited premises; no nested old archives",
@@ -56,7 +56,7 @@
       "scope": "Coupled T42 is integral mixed Tate; specified compact block quotients except the transitive discrete eight-label case are mixed Tate; all at-most-seven-block distinct opens and proper collision filtration are mixed Tate; T42 boundary and E42 are mixed Tate; localization gives C3 mixed Tate iff E8 mixed Tate. Neither is decided."
     }
   },
-  "pending_unverified_result": "exact-j-v1 candidate; leakage and hostile PASS externally byte-verified; reconstruction running; comparison not run",
+  "pending_unverified_result": "exact-j-v1 candidate; leakage and hostile PASS, reconstruction COMPLETE externally byte-verified; comparison running",
   "wave_counts": {
     "MT-STRUCT": 2,
     "MT-OBSTRUCT": 2,
@@ -65,7 +65,7 @@
   "historical_missing_evidence": "Continuation5 original cubical comparison report and actual manifest bytes remain lost; recorded PASS/hashes preserved, not reconstructed.",
   "policy_sha": "ffb5dc24643d747482e2f1ab94040431b7e46361",
   "ownership_protocol_sha": "4bb548d2a8a8772dc2a1d0e3271c84825856d584",
-  "latest_verified_dropbox_heartbeat": "AUTONOMOUS--continuation9-autonomous-20261014T193034Z-0599f2e47215--g12--heartbeat-j-recon-03.json",
+  "latest_verified_dropbox_heartbeat": "AUTONOMOUS--continuation9-autonomous-20261014T193034Z-0599f2e47215--g12--heartbeat-j-comp-start.json",
   "math_start_utc": "2026-10-14T19:35:00.602655Z",
   "mathematical_work_authorized": true,
   "infrastructure_verification_level": "Actual supervisor run38624747502 job116061193283 running; regression preflight succeeded. End-to-end crash recovery not tested by this bootstrap.",
