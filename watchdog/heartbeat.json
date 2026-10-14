@@ -8,10 +8,10 @@
   "delivery_start_utc": "2026-10-14T10:45:47Z",
   "hard_deadline_utc": "2026-10-14T10:55:47Z",
   "delivery_reserve_minutes": 10,
-  "status": "running",
-  "authorization_status": "reopened_exact_unfinished_task_by_explicit_user",
-  "current_assignment": "VFRAME-COMP-v1 replacement1 active",
-  "first_unfinished_action": "Receive complete fresh comparison report and actual manifest; externally byte-verify before reconciliation/promotion.",
+  "status": "completed",
+  "authorization_status": "completed_bounded_method_test",
+  "current_assignment": "Completed; no active mathematical assignment",
+  "first_unfinished_action": "None within this bounded authorization; any new mathematical task requires explicit authorization.",
   "active_math_elapsed_seconds": 635.248,
   "math_segment_start_utc": null,
   "math_segment_status": "closed_at_early_GO_METHOD_TEST",
@@ -33,46 +33,36 @@
     "C3/COINCIDENCE": 1
   },
   "new_independent_wave_credit": 0,
-  "verification_credit": 0,
-  "comparison_artifact_bytes_recovered": false,
-  "active_workers": [
-    {
-      "agent": "/root/vframe_comp_replacement1",
-      "assignment": "VFRAME-COMP-v1-replacement1",
-      "state": "active",
-      "automatic_replacement_count": 1,
-      "independent_wave_credit": 0
-    }
-  ],
-  "global_campaign_status": "INCOMPLETE",
-  "bounded_task_status": "INCOMPLETE_INFRASTRUCTURE_INTERRUPTION",
-  "terminal_delivery_complete": false,
-  "dropbox_final_status_verified": false,
+  "verification_credit": "Exact candidate promoted after four gates; zero independent-wave credit",
+  "comparison_artifact_bytes_recovered": true,
+  "active_workers": [],
+  "global_campaign_status": "INCOMPLETE_PAUSED",
+  "bounded_task_status": "COMPLETE_PROMOTED_METHOD_OBSTRUCTION",
+  "terminal_delivery_complete": true,
+  "dropbox_final_status_verified": true,
   "watchdog_recovery_armed": true,
   "recovery_mode": "DIRECT-RESUME",
   "policy_sha": "4e513d633bd406adf6d034f67df3dbc06bb415d7",
   "ownership_protocol_sha": "0b30e411cb93251224e73361ed929d65c4eecb0b",
-  "generation_utc": "2026-10-14T09:32:45.479393Z",
-  "latest_verified_dropbox_generation": "VGENERIC--continuation7-recovery-20261014T092953Z-633119efb02d--g8--comparison-active.json",
-  "latest_verified_dropbox_generation_sha256": "fc560c74e425c7df667b5270e2905a3e147df7e60d1a6f2049f1fef3a27c2cfa",
-  "latest_verified_dropbox_capsule": "VGENERIC--continuation7-recovery-20261014T082546Z-3b5772664498--g6--candidate-ready--RESUME_CAPSULE.zip",
-  "latest_verified_dropbox_capsule_sha256": "87ba1647c66a2714115935d7f3f5871f7d0efed610daf95748f6cfe603714589",
+  "generation_utc": "2026-10-14T09:42:42.634076Z",
+  "latest_verified_dropbox_generation": "VGENERIC--continuation7-recovery-20261014T092953Z-633119efb02d--g8--terminal.json",
+  "latest_verified_dropbox_capsule": "VGENERIC--continuation7-recovery-20261014T092953Z-633119efb02d--g8--terminal--RESUME_CAPSULE.zip",
   "capsule_scope": "current coherent continuation7 verification frontier",
-  "last_heartbeat_utc": "2026-10-14T09:32:45.479393Z",
-  "last_safe_frontier": "vframe-brauer-v1 candidate; leakage/hostile PASS and complete reconstruction externally byte-verified; comparison pending",
-  "recovery_directive": "Automatic fresh-Work recovery of ONLY unfinished VFRAME-COMP-v1 after checked lease expiry; if actual complete report and manifest bytes exist, inspect/persist them before promotion rather than redoing the role. Otherwise fresh isolated comparator with identical allowed inputs; no credit for tentative verbal PASS. Original reserve/deadline unchanged. At/after10:45:47Z finalize-only.",
+  "last_heartbeat_utc": "2026-10-14T09:44:35.251749Z",
+  "last_safe_frontier": "Exactly outputs 1–6 of vframe-brauer-v1 / claim-contract-v1: actual free all-distinct quotient and degree-32 torsor, exact normalization/canonical-conic identity, nonzero generic Brauer class, no GL2 lift/projective-bundle realization of this same conic on any nonempty open, the specified 4+2 diagnostic, and the limited relative Pauli interface. No mixed-Tate or exact-class decision.",
+  "recovery_directive": "No mathematics or takeover of this completed bounded authorization. If terminal persistence/delivery is interrupted, reconcile existing results only.",
   "infrastructure_verification_level": "generation8 conditional ownership and minimal immutable state/heartbeat verified; actual supervisor preflight success and supervising step observed in_progress",
-  "latest_verified_dropbox_heartbeat": "VGENERIC--continuation7-recovery-20261014T092953Z-633119efb02d--g8--comparison-active-heartbeat.json",
+  "latest_verified_dropbox_heartbeat": "VGENERIC--continuation7-recovery-20261014T092953Z-633119efb02d--g8--terminal-heartbeat.json",
   "supervisor_actions_run_id": 38542939032,
   "supervisor_actions_job_id": 115781888992,
   "candidate": "vframe-brauer-v1",
-  "candidate_label": "candidate",
+  "candidate_label": "promoted",
   "proof_and_manifest_external_bytes_verified": true,
   "verification_gates": {
     "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED",
     "hostile": "PASS_EXTERNALLY_BYTE_VERIFIED",
     "reconstruction": "COMPLETE_EXTERNALLY_BYTE_VERIFIED",
-    "comparison": "REPLACEMENT1_ACTIVE"
+    "comparison": "PASS_EXTERNALLY_BYTE_VERIFIED"
   },
   "epoch_number": 3,
   "epoch_start_utc": "2026-10-14T09:30:38.010622Z",
@@ -82,9 +72,9 @@
   "recovery_incident": "Coordinator context handoff outlasted generation6 lease; no newer owner exists; completed local reconstruction preserved without promotion.",
   "recovery_source_generation": "VGENERIC--continuation7-recovery-20261014T091259Z-3b5772664498--g7--recon-v1.json",
   "recovery_source_generation_sha256": "0ff84898b7baff7f3eae3a41c0e71333eb721de093723a18bc3c3d1c431cea10",
-  "interrupted_utc": "2026-10-14T09:25:23.295Z",
-  "infrastructure_failure": "Local apply_patch stopped responding; independent shell date/stat health probe also did not return. Both pending calls were terminated after the single cleanup/health pass. Connector reads remain healthy. Comparator also reported a stalled shell date. No substantive work after diagnosis.",
-  "stop_reason": "Research assistant coordinator-level runtime-distress rule: one cleanup/reconciliation pass, preserve exact frontier, end this execution; bounded mathematical task remains unfinished.",
+  "interrupted_utc": null,
+  "infrastructure_failure": null,
+  "stop_reason": "The one authorized method test and its complete sequential verification are finished; no automatic successor on unused time.",
   "comparison_interrupted_agent": "/root/vframe_comp_v1",
   "comparison_tentative_message": "Comparator reported checks support PASS but was preparing the report and actual manifest. No complete return, output hashes, or readback was received. This earns zero verification credit.",
   "comparison_packet_allowlist": [
@@ -112,5 +102,60 @@
   "github_recovery_state_path": "watchdog/recovery/continuation7-recovery-20261014T091259Z-3b5772664498--g7--interrupted.json",
   "github_recovery_state_blob_sha": "2e52e4de070342ac7ad52c9cbd9ba41b5e515846",
   "github_interruption_status_path": "watchdog/recovery/FINAL_STATUS--continuation7-v-generic-descent-20261014-v2--continuation7-recovery-20261014T091259Z-3b5772664498--g7.md",
-  "github_interruption_status_blob_sha": "82fcb6a05f7f9ca8601af3aa90c9c27435fdd41a"
+  "github_interruption_status_blob_sha": "82fcb6a05f7f9ca8601af3aa90c9c27435fdd41a",
+  "historical_recovery_incidents": {
+    "recovery_incident": "Coordinator context handoff outlasted generation6 lease; no newer owner exists; completed local reconstruction preserved without promotion.",
+    "interrupted_utc": "2026-10-14T09:25:23.295Z",
+    "infrastructure_failure": "Local apply_patch stopped responding; independent shell date/stat health probe also did not return. Both pending calls were terminated after the single cleanup/health pass. Connector reads remain healthy. Comparator also reported a stalled shell date. No substantive work after diagnosis.",
+    "stop_reason": "Research assistant coordinator-level runtime-distress rule: one cleanup/reconciliation pass, preserve exact frontier, end this execution; bounded mathematical task remains unfinished.",
+    "comparison_tentative_message": "Comparator reported checks support PASS but was preparing the report and actual manifest. No complete return, output hashes, or readback was received. This earns zero verification credit.",
+    "local_unconfirmed_administrative_write": "OPERATIONS/finalize_verified.py creation call was terminated without response; existence unknown. It was never invoked. No promotion/finalization script ran."
+  },
+  "comparison_original_interrupted_bytes_recovered": false,
+  "comparison_complete_replacement_bytes_verified": true,
+  "result_id": "continuation7-v-generic-descent-20261014-v2/continuation7-recovery-20261014T092953Z-633119efb02d/g8/vframe-brauer-v1-promoted",
+  "final_status_path": "/ChatGPT-Research-State/delta14-mixed-tate/FINAL_STATUS--continuation7-v-generic-descent-20261014-v2--continuation7-recovery-20261014T092953Z-633119efb02d--g8.md",
+  "terminal_status_path": "/ChatGPT-Research-State/delta14-mixed-tate/FINAL_STATUS--continuation7-v-generic-descent-20261014-v2--continuation7-recovery-20261014T092953Z-633119efb02d--g8.md",
+  "latest_verified_dropbox_generation_sha256": "06e476135f1331858c304373255e341cf24aa3345c9b3eccc8c56ec0651f434a",
+  "latest_verified_dropbox_capsule_sha256": "1845cfeada6d449ec2ed41c5bc31e43ea8f0a74aee843f2578598de8719e249a",
+  "final_status_sha256": "c9c1c406ab2ad4b5c028ca46b0dfa83a470f297d743a6213d177846c44c48464",
+  "terminal_status_sha256": "c9c1c406ab2ad4b5c028ca46b0dfa83a470f297d743a6213d177846c44c48464",
+  "terminal_utc": "2026-10-14T09:44:35.251749Z",
+  "terminal_generation_persistence_phase": "Immutable terminal snapshot preceded external readback; this heartbeat is the subsequent verified delivery receipt.",
+  "terminal_publication_verified_utc": "2026-10-14T09:44:35.251749Z",
+  "terminal_artifact_receipts": [
+    {
+      "name": "VGENERIC--continuation7-recovery-20261014T092953Z-633119efb02d--g8--terminal.json",
+      "sha256": "06e476135f1331858c304373255e341cf24aa3345c9b3eccc8c56ec0651f434a",
+      "size_bytes": 276209,
+      "raw_dropbox_readback_equal": true
+    },
+    {
+      "name": "VGENERIC--continuation7-recovery-20261014T092953Z-633119efb02d--g8--terminal--RESUME_CAPSULE.zip",
+      "sha256": "1845cfeada6d449ec2ed41c5bc31e43ea8f0a74aee843f2578598de8719e249a",
+      "size_bytes": 118720,
+      "raw_dropbox_readback_equal": true
+    },
+    {
+      "name": "FINAL_STATUS--continuation7-v-generic-descent-20261014-v2--continuation7-recovery-20261014T092953Z-633119efb02d--g8.md",
+      "sha256": "c9c1c406ab2ad4b5c028ca46b0dfa83a470f297d743a6213d177846c44c48464",
+      "size_bytes": 5032,
+      "raw_dropbox_readback_equal": true
+    },
+    {
+      "name": "VGENERIC--continuation7-recovery-20261014T092953Z-633119efb02d--g8--SHARE.zip",
+      "sha256": "33efd0418fbf9e1b713314b6ddda4a5a4d109648de04fdcd1f02147f9ae5c13e",
+      "size_bytes": 91493,
+      "raw_dropbox_readback_equal": true
+    }
+  ],
+  "notification_dedup": {
+    "result_id": "continuation7-v-generic-descent-20261014-v2/continuation7-recovery-20261014T092953Z-633119efb02d/g8/vframe-brauer-v1-promoted",
+    "run_id": "continuation7-recovery-20261014T092953Z-633119efb02d",
+    "generation": 8,
+    "delivery_channel": "current recovery response",
+    "status": "reserved_for_current_response",
+    "no_second_result_notification_without_delivery_failure": true
+  },
+  "historical_missing_evidence": "Continuation5 original cubical comparison report and actual manifest bytes remain lost; recorded PASS/hashes preserved, not reconstructed."
 }
