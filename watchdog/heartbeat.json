@@ -35,7 +35,15 @@
     "C3/COINCIDENCE": 1
   },
   "new_independent_wave_credit": 0,
-  "active_workers": [],
+  "active_workers": [
+    {
+      "assignment_id": "RELATIVE-RECON-v1",
+      "agent": "/root/relative_recon_v1",
+      "role": "fresh proof-blind reconstruction",
+      "status": "running",
+      "automatic_replacement_count": 0
+    }
+  ],
   "policy_sha": "4e513d633bd406adf6d034f67df3dbc06bb415d7",
   "ownership_protocol_sha": "0b30e411cb93251224e73361ed929d65c4eecb0b",
   "historical_missing_evidence": "Continuation5 original cubical comparison report and actual manifest bytes remain lost; recorded PASS/hashes preserved, not reconstructed.",
@@ -45,7 +53,7 @@
   "dropbox_final_status_verified": false,
   "watchdog_recovery_armed": true,
   "infrastructure_verification_level": "Conditional generation9 ownership verified; source hashes, initial generation and heartbeat raw byte-readbacks verified; start.signal readback verified; actual GitHub supervisor regression success and supervising step in_progress observed at 2026-10-14T12:50:24Z.",
-  "last_heartbeat_utc": "2026-10-14T13:11:14.659Z",
+  "last_heartbeat_utc": "2026-10-14T13:18:39.675Z",
   "latest_verified_dropbox_generation": "AUTONOMOUS--continuation8-autonomous-20261014T124515Z-0d47e7bba02b--g9--hostile-v1.json",
   "latest_verified_dropbox_generation_sha256": "aa93c87aabf9392d70e0d58e6812bb5a1a02606f6cfc407e43898650627d2b02",
   "latest_verified_dropbox_capsule": "AUTONOMOUS--continuation8-autonomous-20261014T124515Z-0d47e7bba02b--g9--candidate-v1--RESUME_CAPSULE.zip",
