@@ -6,48 +6,64 @@
   "predecessor_run_id": "continuation8-recovery-20261014T135743Z-a23632894cf5",
   "predecessor_generation": 10,
   "authorization_start_utc": "2026-10-14T12:45:15Z",
-  "hard_deadline_utc": "2026-10-14T16:45:15Z",
   "delivery_start_utc": "2026-10-14T16:35:15Z",
-  "status": "finalization_only",
-  "global_campaign_status": "INCOMPLETE_FINALIZATION",
-  "bounded_workflow_status": "COMPLETE_BUT_UNDELIVERED_RECOVERY",
-  "current_assignment": "Reconcile and deliver existing continuation8 results only",
-  "research_started": false,
+  "hard_deadline_utc": "2026-10-14T16:45:15Z",
+  "status": "stopped",
+  "bounded_workflow_status": "STOPPED_INCOMPLETE_AT_HARD_DEADLINE",
+  "global_campaign_status": "INCOMPLETE",
+  "stop_reason": "Hard deadline expired; finalization-only recovery delivered all durable existing results. No new mathematics or verification was performed.",
+  "current_assignment": null,
   "active_workers": [],
   "mathematical_work_authorized": false,
-  "terminal_delivery_complete": false,
-  "dropbox_final_status_verified": false,
-  "watchdog_recovery_armed": true,
-  "recovery_classification": "COMPLETE-BUT-UNDELIVERED; hard deadline expired; no new mathematics or verification",
-  "source_generation_path": "/ChatGPT-Research-State/delta14-mixed-tate/AUTONOMOUS--continuation8-recovery-20261014T135743Z-a23632894cf5--g10--epoch3-selected.json",
-  "source_generation_sha256": "9e21723d35f7d58fc5b0304c73bda184797cd2a0389814ae373c38f023cdd1d7",
-  "source_capsule_path": "/ChatGPT-Research-State/delta14-mixed-tate/AUTONOMOUS--continuation8-recovery-20261014T135743Z-a23632894cf5--g10--epoch3-selected--RESUME_CAPSULE.zip",
-  "source_capsule_sha256": "5eaab67bd1543c932134e6b9c63f4cbc5e5c67e4810f9a82fb23237c603d0136",
-  "source_heartbeat_path": "/ChatGPT-Research-State/delta14-mixed-tate/AUTONOMOUS--continuation8-recovery-20261014T135743Z-a23632894cf5--g10--heartbeat-epoch3-screen-closed.json",
-  "source_heartbeat_sha256": "a28a7e389c744b6d752da3fb6c9c711d4c32a50031358edf2228b1f59b502b42",
-  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation8-finalization-20261014T191755Z-9b87a01c8656--g11--bootstrap.json",
-  "latest_verified_dropbox_generation_sha256": "2e6632363304387d33b0ea458e8a3fd4a999bb4a34263148ec5b353c580962a3",
-  "recovery_bootstrap_raw_readback_equal": true,
+  "terminal_delivery_complete": true,
+  "dropbox_final_status_verified": true,
+  "watchdog_recovery_armed": false,
+  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation8-finalization-20261014T191755Z-9b87a01c8656--g11--terminal.json",
+  "latest_verified_dropbox_generation_sha256": "cdaf3aee22a6d96f9a6b1dac0e2993384034a0b6e61f1efa6420fdcaf57b290f",
+  "latest_verified_dropbox_capsule": "AUTONOMOUS--continuation8-finalization-20261014T191755Z-9b87a01c8656--g11--terminal--RESUME_CAPSULE.zip",
+  "latest_verified_dropbox_capsule_sha256": "8d6a1f9bc2c97d203732220a02a0275efa38ff79fcccacb15f2c371fedafca73",
+  "final_status_path": "/ChatGPT-Research-State/delta14-mixed-tate/FINAL_STATUS--continuation8-autonomous-strategy-20261014-v1--continuation8-finalization-20261014T191755Z-9b87a01c8656--g11.md",
+  "final_status_sha256": "f5be814effb9c022fffa7a210bf4f5ddc4a101f4e59c6a29806239b185c6bd7d",
+  "raw_readback_equal": {
+    "terminal_generation": true,
+    "terminal_capsule": true,
+    "final_status": true
+  },
   "completed_candidates": {
     "relative-brauer-v1": {
       "label": "promoted",
+      "contract": "claim-contract-v1",
       "verification_gates": {
         "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED",
         "hostile": "PASS_EXTERNALLY_BYTE_VERIFIED",
         "reconstruction": "COMPLETE_EXTERNALLY_BYTE_VERIFIED",
         "comparison": "PASS_EXTERNALLY_BYTE_VERIFIED"
       },
-      "proof_sha256": "04b991cc1fe3774dce9d1e2644fbbee9981175b5bca5dfe1f7e81f6bb3d2e26e"
+      "proof_sha256": "04b991cc1fe3774dce9d1e2644fbbee9981175b5bca5dfe1f7e81f6bb3d2e26e",
+      "scope": "Actual relative f^*beta is nonzero; dominant witness; same conic is not a rank-2 projective bundle and same PGL2 torsor has no GL2 lift on any nonempty open. No motivic or exact-ring conclusion."
     },
     "collision-boundary-v2": {
       "label": "promoted",
+      "contract": "claim-contract-v2",
       "verification_gates": {
         "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED",
         "hostile": "PASS_EXTERNALLY_BYTE_VERIFIED",
         "reconstruction": "COMPLETE_EXTERNALLY_BYTE_VERIFIED",
         "comparison": "PASS_EXTERNALLY_BYTE_VERIFIED"
       },
-      "proof_sha256": "ce5ed1e54013d71b0c7b8a9dcb41a977b8bbcc51203e88faa20e978c22a29edc"
+      "proof_sha256": "ce5ed1e54013d71b0c7b8a9dcb41a977b8bbcc51203e88faa20e978c22a29edc",
+      "scope": "Coupled T42 is integral mixed Tate; specified compact block quotients except the transitive discrete eight-label case are mixed Tate; all at-most-seven-block distinct opens and proper collision filtration are mixed Tate; T42 boundary and E42 are mixed Tate; localization gives C3 mixed Tate iff E8 mixed Tate. Neither is decided."
+    }
+  },
+  "failed_candidate_versions": {
+    "collision-boundary-v1": {
+      "verification_gates": {
+        "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED",
+        "hostile": "NONPASS_EXTERNALLY_BYTE_VERIFIED",
+        "reconstruction": "NOT_RUN",
+        "comparison": "NOT_RUN"
+      },
+      "finding": "Exact source F_E/action missing; no counterexample; unchanged retry forbidden."
     }
   },
   "pending_unverified_result": {
@@ -78,7 +94,11 @@
     "exact Grothendieck class"
   ],
   "historical_missing_evidence": "Continuation5 original cubical comparison report and actual manifest bytes remain lost; recorded PASS/hashes preserved, not reconstructed.",
+  "supervisor_actions_run_id": 38623088486,
+  "supervisor_actions_job_id": 116055617689,
+  "supervisor_last_observed": "Actual generation-11 finalization supervisor started; regression preflight succeeded and supervise step was in progress.",
   "policy_sha": "4e513d633bd406adf6d034f67df3dbc06bb415d7",
   "ownership_protocol_sha": "0b30e411cb93251224e73361ed929d65c4eecb0b",
-  "last_heartbeat_utc": "2026-10-14T19:22:01.610Z"
+  "terminal_delivery_utc": "2026-10-14T19:24:00.581Z",
+  "last_heartbeat_utc": "2026-10-14T19:24:00.581Z"
 }
