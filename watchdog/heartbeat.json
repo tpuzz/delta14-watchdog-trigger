@@ -10,26 +10,26 @@
   "authorization_start_utc": "2026-10-14T19:27:19Z",
   "delivery_start_utc": "2026-10-14T23:17:19Z",
   "hard_deadline_utc": "2026-10-14T23:27:19Z",
-  "last_heartbeat_utc": "2026-10-14T21:50:11.765Z",
+  "last_heartbeat_utc": "2026-10-14T21:52:27.248Z",
   "research_started": true,
   "mathematical_work_authorized": true,
   "active_workers": [
     {
-      "assignment_id": "REL-REPAIR-v2",
-      "agent": "/root/rel_repair_v2",
+      "assignment_id": "REL-V2-LEAK",
+      "agent": "/root/rel_v2_leak",
       "state": "running",
       "replacement_number": 0
     }
   ],
-  "current_assignment": "Bounded author repair for relative-toric-boundary-v2 after v1 hostile NONPASS",
-  "first_unfinished_action": "Receive complete v2 proof plus actual manifest; externally persist and raw-byte verify before freezing a new candidate or launching any v2 gate.",
+  "current_assignment": "Fresh isolated leakage verification for relative-toric-boundary-v2",
+  "first_unfinished_action": "Receive complete v2 leakage report plus actual manifest; externally persist and raw-byte verify before any hostile gate.",
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
   "watchdog_recovery_armed": true,
   "recovery_mode": "DIRECT-RESUME",
   "recovery_classification": "INCOMPLETE",
-  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation9-recovery-20261014T212819Z-9b87a01c8656--g13--rel-hostile-nonpass-v1.json",
-  "latest_verified_dropbox_generation_sha256": "10a20046678373549730bf548708bb34b63e8fc28d779b93ee34d56401c4ff61",
+  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation9-recovery-20261014T212819Z-9b87a01c8656--g13--rel-v2-return.json",
+  "latest_verified_dropbox_generation_sha256": "58a0c330b5cfe3dc1826e625243114f2d472c565a29bd74c68341b1ef1066cd9",
   "recovery_bootstrap_raw_readback_equal": true,
   "source_generation": "AUTONOMOUS--continuation9-autonomous-20261014T193034Z-0599f2e47215--g12--fc-recon-v1.json",
   "source_generation_sha256": "7b6c2984ed7a67995b927b4765c0e301ef23ad8319ecf2f2e97fcfe2ee03b885",
@@ -87,16 +87,18 @@
   },
   "candidate_statuses": {
     "relative-toric-boundary-v2": {
-      "status": "author_repair_running",
+      "status": "candidate",
       "contract": "claim-contract-v1",
-      "predecessor_candidate": "relative-toric-boundary-v1",
+      "proof_sha256": "16a484dae15b5223fd74db3ded25fefbccc4e793b87bd0058ea275f7d5e6cf0e",
+      "author_manifest_sha256": "67ae4681f1e3bf2997cec252bf13204ad32648f6e78b52e44dd3670a5c2313f8",
+      "frozen_manifest_sha256": "c59810bc6fab82dbd7a599137b320ff2626fafc902a24b0d68c9bf7bde667aee",
       "gates": {
-        "leakage": "NOT_RUN",
+        "leakage": "RUNNING",
         "hostile": "NOT_RUN",
         "reconstruction": "NOT_RUN",
         "comparison": "NOT_RUN"
       },
-      "packet_allowlist_sha256": "df5f03da598bf16f73cfd598ab6e9d57cc62cb7c3d5799e54c43c56d9e3354c1"
+      "packet_allowlist_sha256": "ce4d7662d91d606adb6c20d36ac87446f74d5b72e4075efdcb52ba3309352f97"
     }
   },
   "wave_counts": {
