@@ -10,26 +10,26 @@
   "authorization_start_utc": "2026-10-14T19:27:19Z",
   "delivery_start_utc": "2026-10-14T23:17:19Z",
   "hard_deadline_utc": "2026-10-14T23:27:19Z",
-  "last_heartbeat_utc": "2026-10-14T21:40:03.845Z",
+  "last_heartbeat_utc": "2026-10-14T21:45:38.242Z",
   "research_started": true,
   "mathematical_work_authorized": true,
   "active_workers": [
     {
-      "assignment_id": "REL-HOSTILE-v1",
-      "agent": "/root/rel_hostile_v1",
+      "assignment_id": "REL-REPAIR-v2",
+      "agent": "/root/rel_repair_v2",
       "state": "running",
       "replacement_number": 0
     }
   ],
-  "current_assignment": "Fresh isolated hostile audit running for relative-toric-boundary-v1",
-  "first_unfinished_action": "Receive complete REL-HOSTILE-v1 report plus actual manifest; externally persist and raw-byte verify before credit.",
+  "current_assignment": "Bounded author repair for relative-toric-boundary-v2 after v1 hostile NONPASS",
+  "first_unfinished_action": "Receive complete v2 proof plus actual manifest; externally persist and raw-byte verify before freezing a new candidate or launching any v2 gate.",
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
   "watchdog_recovery_armed": true,
   "recovery_mode": "DIRECT-RESUME",
   "recovery_classification": "INCOMPLETE",
-  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation9-recovery-20261014T212819Z-9b87a01c8656--g13--fc-promoted-rel-hostile-start.json",
-  "latest_verified_dropbox_generation_sha256": "5cc9b534bc385c1eeb2ea0f5566ca0d5ac805027087d85806a901d3705d22faf",
+  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation9-recovery-20261014T212819Z-9b87a01c8656--g13--rel-hostile-nonpass-v1.json",
+  "latest_verified_dropbox_generation_sha256": "10a20046678373549730bf548708bb34b63e8fc28d779b93ee34d56401c4ff61",
   "recovery_bootstrap_raw_readback_equal": true,
   "source_generation": "AUTONOMOUS--continuation9-autonomous-20261014T193034Z-0599f2e47215--g12--fc-recon-v1.json",
   "source_generation_sha256": "7b6c2984ed7a67995b927b4765c0e301ef23ad8319ecf2f2e97fcfe2ee03b885",
@@ -86,19 +86,17 @@
     }
   },
   "candidate_statuses": {
-    "relative-toric-boundary-v1": {
-      "status": "candidate",
+    "relative-toric-boundary-v2": {
+      "status": "author_repair_running",
+      "contract": "claim-contract-v1",
+      "predecessor_candidate": "relative-toric-boundary-v1",
       "gates": {
-        "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED",
-        "hostile": "RUNNING",
+        "leakage": "NOT_RUN",
+        "hostile": "NOT_RUN",
         "reconstruction": "NOT_RUN",
         "comparison": "NOT_RUN"
       },
-      "proof_sha256": "2293992a59b44a4fc5d0bfeeecb3508deb5e4eac5fe9272ff89f298cbc7083a7",
-      "leakage_replacement_count": 1,
-      "hostile_replacement_count": 0,
-      "checklist_revision": 10,
-      "checklist_sha256": "f3e478ccd1272d6175d0043822c02c0773b93ab1dacc7cf9b90e346a81e4b13e"
+      "packet_allowlist_sha256": "df5f03da598bf16f73cfd598ab6e9d57cc62cb7c3d5799e54c43c56d9e3354c1"
     }
   },
   "wave_counts": {
@@ -112,5 +110,24 @@
   "historical_missing_evidence": "Continuation5 original cubical comparison report and actual manifest bytes remain lost; recorded PASS/hashes preserved, not reconstructed.",
   "policy_sha": "ffb5dc24643d747482e2f1ab94040431b7e46361",
   "ownership_protocol_sha": "4bb548d2a8a8772dc2a1d0e3271c84825856d584",
-  "latest_verified_dropbox_generation_raw_readback_equal": true
+  "latest_verified_dropbox_generation_raw_readback_equal": true,
+  "failed_candidates": {
+    "relative-toric-boundary-v1": {
+      "status": "failed_hostile_nonpass",
+      "contract": "claim-contract-v1",
+      "gates": {
+        "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED",
+        "hostile": "NONPASS_EXTERNALLY_BYTE_VERIFIED",
+        "reconstruction": "NOT_RUN",
+        "comparison": "NOT_RUN"
+      },
+      "proof_sha256": "2293992a59b44a4fc5d0bfeeecb3508deb5e4eac5fe9272ff89f298cbc7083a7",
+      "hostile_report_sha256": "2717b95450b4127d7fe2d2a6bf4ae49b1be415d66f934db3680273a7377b6d9b",
+      "hostile_manifest_sha256": "ca9c84bd43aa38cfee5515c8d80a598519346e24d7efc5ad3a322a138a088038",
+      "blocking_defect": "Missing motive-level product comparison for B(G_h x C2^(4-h)); six-support induction and downstream boundary comparison not proved.",
+      "unchanged_retry_forbidden": true
+    }
+  },
+  "strategy_epoch": 4,
+  "strategy_decision": "Repair the isolated v1 stack-product defect as a genuinely new v2 candidate; if complete, require the full four-gate cadence."
 }
