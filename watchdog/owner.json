@@ -1,9 +1,9 @@
 {
   "campaign_id": "delta14-mixed-tate-20261012T210157Z",
-  "owner_run_id": "continuation8-finalization-20261014T191755Z-9b87a01c8656",
-  "generation": 11,
-  "status": "inactive",
-  "last_renewed_utc": "2026-10-14T19:24:20.523Z",
-  "lease_expires_utc": "2026-10-14T19:24:20.523Z",
-  "release_reason": "Terminal generation, capsule, and final status verified by raw readback; terminal signal sent."
+  "owner_run_id": "continuation9-autonomous-20261014T193034Z-0599f2e47215",
+  "generation": 12,
+  "status": "active",
+  "last_renewed_utc": "2026-10-14T19:30:34.974Z",
+  "lease_expires_utc": "2026-10-14T19:42:34.974Z",
+  "authorization_id": "continuation9-autonomous-strategy-20261014-v1"
 }
