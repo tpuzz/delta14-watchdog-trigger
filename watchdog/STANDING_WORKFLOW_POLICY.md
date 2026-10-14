@@ -63,6 +63,10 @@ Reuse the existing GitHub/Dropbox ownership, heartbeat, supervisor and recovery/
 - active supervisor polling: 60 seconds;
 - silent-running recovery threshold: 20-minute stale heartbeat AND matching expired lease;
 - explicit interrupted/blocked incomplete-delivery recovery: matching lease expiry, with no extra 20-minute wait.
+- recovery request acknowledgement: opening a recovery PR is NOT recovery success; success requires a coherent successor owner generation plus matching fresh heartbeat under the same authorization/deadline.
+- acknowledgement timeout: about 6 minutes; while the original authorization remains recoverable, retry the wake-up with a distinct attempt identifier, at most three attempts.
+- after repeated unacknowledged wake-ups, emit a dedicated infrastructure-failure signal rather than silently stopping.
+- the event-triggered recovery/results task and hourly backup are standing infrastructure. A disabled recovery consumer during an active/recoverable campaign is an infrastructure fault, not a reason to abandon recovery.
 
 The cooperative lease is not a server-side fence on Dropbox writes. Recheck ownership before advancing a shared current-state pointer and after long operations.
 
