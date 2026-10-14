@@ -1,0 +1,5 @@
+{
+  "type": "infrastructure_test",
+  "research_authorized": false,
+  "purpose": "Verify recovery event consumer wakes without starting research"
+}
