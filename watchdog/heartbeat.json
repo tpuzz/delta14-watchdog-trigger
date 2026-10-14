@@ -20,6 +20,9 @@
   "mechanism_gate_total_seconds": 1200,
   "mechanism_gate_clock": "cumulative_active_mathematical_time",
   "strategy_epoch": 3,
+  "current_assignment_kind": "own-route search; previous candidate and verification fields describe completed collision-boundary-v2 until a new version is frozen",
+  "current_assignment_packet": "PACKET_COINCIDENCE_W3/ALLOWLIST.json; exact physical bytes preserved in OPERATIONS/PACKET_RECORDS/PACKET_COINCIDENCE_W3.json",
+  "current_assignment_source_binding": "strategy_epoch3_baseline.filtered_packet_hashes; current verified epoch3-selected generation contains packet record",
   "execution_epoch": 4,
   "execution_epoch_start_utc": "2026-10-14T15:21:56.066922Z",
   "source_capsule_path": "/ChatGPT-Research-State/delta14-mixed-tate/VGENERIC--continuation7-recovery-20261014T092953Z-633119efb02d--g8--terminal--RESUME_CAPSULE.zip",
@@ -53,13 +56,13 @@
   "dropbox_final_status_verified": false,
   "watchdog_recovery_armed": true,
   "infrastructure_verification_level": "Generation10 ownership, initial Dropbox generation/heartbeat and GitHub heartbeat/start.signal all read back; actual supervisor preflight success and supervising step in_progress observed.",
-  "last_heartbeat_utc": "2026-10-14T15:28:18.350634Z",
+  "last_heartbeat_utc": "2026-10-14T15:33:03.475694Z",
   "latest_verified_dropbox_generation": "AUTONOMOUS--continuation8-recovery-20261014T135743Z-a23632894cf5--g10--epoch3-selected.json",
   "latest_verified_dropbox_generation_sha256": "9e21723d35f7d58fc5b0304c73bda184797cd2a0389814ae373c38f023cdd1d7",
   "latest_verified_dropbox_capsule": "AUTONOMOUS--continuation8-recovery-20261014T135743Z-a23632894cf5--g10--epoch3-selected--RESUME_CAPSULE.zip",
   "latest_verified_dropbox_capsule_sha256": "5eaab67bd1543c932134e6b9c63f4cbc5e5c67e4810f9a82fb23237c603d0136",
   "capsule_scope": "Current continuation8 candidate and exact minimal inputs; source capsule pointer retains historical bytes",
-  "latest_verified_dropbox_heartbeat": "AUTONOMOUS--continuation8-recovery-20261014T135743Z-a23632894cf5--g10--heartbeat-1528.json",
+  "latest_verified_dropbox_heartbeat": "AUTONOMOUS--continuation8-recovery-20261014T135743Z-a23632894cf5--g10--heartbeat-1533.json",
   "initial_external_state_verified": true,
   "supervisor_actions_run_id": 38576500397,
   "supervisor_actions_job_id": 115894910387,
@@ -513,5 +516,5 @@
     "prior_coincidence_leaf_waves": 2
   },
   "strategy_epoch3_parent_dispatch_utc": "2026-10-14T15:23:32Z",
-  "latest_verified_dropbox_heartbeat_sha256": "9aea094582d47f1b4d0fe474c195a580272a7c672c6ba98e72aecd7d78b2cfec"
+  "latest_verified_dropbox_heartbeat_sha256": "ad82087c6bc2f935421648b00ca4f7e447faa09644b30c2cee29948d5c1467fc"
 }
