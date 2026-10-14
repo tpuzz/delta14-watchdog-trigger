@@ -10,26 +10,26 @@
   "authorization_start_utc": "2026-10-14T19:27:19Z",
   "delivery_start_utc": "2026-10-14T23:17:19Z",
   "hard_deadline_utc": "2026-10-14T23:27:19Z",
-  "last_heartbeat_utc": "2026-10-14T22:02:35.460Z",
+  "last_heartbeat_utc": "2026-10-14T22:08:17.155Z",
   "research_started": true,
   "mathematical_work_authorized": true,
   "active_workers": [
     {
-      "assignment_id": "REL-PRODUCT-W1",
-      "agent": "/root/rel_product_w1",
+      "assignment_id": "C3-ABS-W2",
+      "agent": "/root/c3_abs_w2",
       "state": "running",
       "replacement_number": 0
     }
   ],
-  "current_assignment": "Bounded product-totalization repair screen REL-PRODUCT-W1",
-  "first_unfinished_action": "Receive complete GO/NO_GO return plus actual manifest; externally persist and raw-byte verify before freezing any v3 candidate.",
+  "current_assignment": "Fresh bounded direct absolute residual screen C3-ABS-W2",
+  "first_unfinished_action": "Receive complete GO_CANDIDATE/NO_GO return plus actual manifest; externally persist and raw-byte verify before any verification decision.",
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
   "watchdog_recovery_armed": true,
   "recovery_mode": "DIRECT-RESUME",
   "recovery_classification": "INCOMPLETE",
-  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation9-recovery-20261014T212819Z-9b87a01c8656--g13--rel-v2-hostile-nonpass.json",
-  "latest_verified_dropbox_generation_sha256": "5a14adf3a8e5848a6a48055d5c1604f64350496f24e230f4cbf51c4ec309bd1c",
+  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation9-recovery-20261014T212819Z-9b87a01c8656--g13--rel-product-nogo.json",
+  "latest_verified_dropbox_generation_sha256": "9e436e090a8819e04edbea59b0ae6aeec3ced08453511c191e7474db734d2b77",
   "recovery_bootstrap_raw_readback_equal": true,
   "source_generation": "AUTONOMOUS--continuation9-autonomous-20261014T193034Z-0599f2e47215--g12--fc-recon-v1.json",
   "source_generation_sha256": "7b6c2984ed7a67995b927b4765c0e301ef23ad8319ecf2f2e97fcfe2ee03b885",
@@ -130,15 +130,24 @@
       "unchanged_retry_forbidden": true
     }
   },
-  "strategy_epoch": 5,
-  "strategy_decision": "One bounded product-totalization repair screen; GO only with a complete construction, otherwise close this relative repair.",
+  "strategy_epoch": 6,
+  "strategy_decision": "Test one materially different direct absolute residual mechanism from the promoted frontier; no relative-product retry.",
   "mechanism_screens": {
     "REL-PRODUCT-W1": {
-      "status": "RUNNING",
-      "math_start_utc": "2026-10-14T22:02:35.460Z",
-      "active_math_elapsed_seconds": 0,
+      "status": "NO_GO_EXTERNALLY_BYTE_VERIFIED",
+      "active_math_elapsed_seconds": 180,
       "cap_seconds": 1200,
-      "independent_wave_credit": 0
+      "independent_wave_credit": 0,
+      "return_sha256": "5cbd330e7f42b7a60aec093e0b0ddc3c206b5b8c53064a1d4dcc19137c89fd22",
+      "manifest_sha256": "22c8309df86c4d4e9d25526f89eaf5bde6009575b11842442fd035fcc91c94ed"
+    },
+    "C3-ABS-W2": {
+      "status": "RUNNING",
+      "math_start_utc": "2026-10-14T22:08:17.155Z",
+      "active_math_elapsed_seconds": 180,
+      "preplanning_charge_seconds": 180,
+      "cap_seconds": 1200,
+      "independent_wave_credit": "PENDING_COMPLETE_EXTERNAL_VERIFICATION"
     }
   }
 }
