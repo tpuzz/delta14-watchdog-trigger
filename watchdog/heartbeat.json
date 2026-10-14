@@ -10,8 +10,8 @@
   "delivery_reserve_minutes": 10,
   "status": "running",
   "global_campaign_status": "INCOMPLETE_ACTIVE",
-  "current_assignment": "Persist COLLISION-LEAK-v1 report and actual manifest",
-  "first_unfinished_action": "Externally byte-verify this complete return before credit or next verification role.",
+  "current_assignment": "Fresh isolated hostile audit of collision-boundary-v1",
+  "first_unfinished_action": "Receive, externally persist and byte-verify hostile audit report and actual input manifest; no successor before verified PASS",
   "last_safe_frontier": "relative-brauer-v1 promoted: actual generic f*beta NONZERO; no same-conic rank-two bundle or GL2 lift on any nonempty open. No motive or exact-class decision. Inherited C3 iff V remains at exact scope.",
   "research_started": true,
   "math_start_utc": "2026-10-14T12:50:50.046Z",
@@ -35,7 +35,15 @@
     "C3/COINCIDENCE": 2
   },
   "new_independent_wave_credit": 1,
-  "active_workers": [],
+  "active_workers": [
+    {
+      "agent": "/root/collision_hostile_v1",
+      "role": "hostile",
+      "candidate": "collision-boundary-v1",
+      "deadline_utc": "2026-10-14T14:43:00Z",
+      "status": "active"
+    }
+  ],
   "policy_sha": "4e513d633bd406adf6d034f67df3dbc06bb415d7",
   "ownership_protocol_sha": "0b30e411cb93251224e73361ed929d65c4eecb0b",
   "historical_missing_evidence": "Continuation5 original cubical comparison report and actual manifest bytes remain lost; recorded PASS/hashes preserved, not reconstructed.",
@@ -45,28 +53,41 @@
   "dropbox_final_status_verified": false,
   "watchdog_recovery_armed": true,
   "infrastructure_verification_level": "Generation10 ownership, initial Dropbox generation/heartbeat and GitHub heartbeat/start.signal all read back; actual supervisor preflight success and supervising step in_progress observed.",
-  "last_heartbeat_utc": "2026-10-14T14:20:02.003702Z",
+  "last_heartbeat_utc": "2026-10-14T14:24:57.957858Z",
   "latest_verified_dropbox_generation": "AUTONOMOUS--continuation8-recovery-20261014T135743Z-a23632894cf5--g10--collision-leak-v1.json",
   "latest_verified_dropbox_generation_sha256": "00d86f29781634de760ecd7307f8f6e8e193bf94e771de211c06deb973dcd721",
   "latest_verified_dropbox_capsule": "AUTONOMOUS--continuation8-recovery-20261014T135743Z-a23632894cf5--g10--coincidence-w2-return--RESUME_CAPSULE.zip",
   "latest_verified_dropbox_capsule_sha256": "e9818395b35683b9a09cb57fc27ccebcc71d73dcfff06ac69db952eb3c1d5fa9",
   "capsule_scope": "Current continuation8 candidate and exact minimal inputs; source capsule pointer retains historical bytes",
-  "latest_verified_dropbox_heartbeat": "AUTONOMOUS--continuation8-recovery-20261014T135743Z-a23632894cf5--g10--collision-leak-v1-heartbeat.json",
-  "latest_verified_dropbox_heartbeat_sha256": "fc766cd3f062f5a71b53ed353f202bfe84a37c57cea7226b36b94d608bc25bf2",
+  "latest_verified_dropbox_heartbeat": "AUTONOMOUS--continuation8-recovery-20261014T135743Z-a23632894cf5--g10--heartbeat-1425.json",
+  "latest_verified_dropbox_heartbeat_sha256": "1452fafc6ac1e6ce19696358ad6dcad6c4c05048695b79fc599eb56a22c8d07f",
   "initial_external_state_verified": true,
   "supervisor_actions_run_id": 38576500397,
-  "supervisor_actions_job_id": 115861627398,
+  "supervisor_actions_job_id": 115894910387,
   "math_segment_status": "closed_at_early_GO-CALCULATION",
   "mechanism_gate_outcome": "GO-CALCULATION",
   "candidate": "collision-boundary-v1",
   "candidate_label": "candidate",
   "verification_gates": {
-    "leakage": "PASS_RECEIVED_NOT_YET_EXTERNALLY_BYTE_VERIFIED",
+    "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED",
     "hostile": "NOT_RUN",
     "reconstruction": "NOT_RUN",
     "comparison": "NOT_RUN"
   },
-  "external_gate_receipts": {},
+  "external_gate_receipts": {
+    "leakage": {
+      "report": "AUDITS/COLLISION-LEAK-v1.md",
+      "report_sha256": "992649b9c5096330d8136db7eef5f47cf268a5909495fa9c04c68792db0ec2c4",
+      "manifest": "AUDITS/COLLISION-LEAK-v1-INPUTS.json",
+      "manifest_sha256": "810207c8de7a17b192f2d01f568bbc9fd3472095c9d5c47227f88ee071e0d7b3",
+      "verdict": "PASS",
+      "received_utc": "2026-10-14T14:20:01.954781Z",
+      "generation": "AUTONOMOUS--continuation8-recovery-20261014T135743Z-a23632894cf5--g10--collision-leak-v1.json",
+      "sha256": "00d86f29781634de760ecd7307f8f6e8e193bf94e771de211c06deb973dcd721",
+      "raw_readback_equal": true,
+      "verified_utc": "2026-10-14T14:21:08.425180Z"
+    }
+  },
   "strategy_decision": "STRATEGY/STRATEGY_DECISION-epoch1.md",
   "minimal_next_read": [
     "STRATEGY/STRATEGY_DECISION-epoch1.md",
