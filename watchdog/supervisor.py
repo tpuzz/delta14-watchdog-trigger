@@ -140,7 +140,44 @@ def incident_identity(hb, owner):
     return hashlib.sha256(value.encode()).hexdigest()[:24]
 
 
-def emit_recovery(api, snapshot, decision):
+def copy_dict(value):
+    return json.loads(json.dumps(value))
+
+
+def recovery_acknowledged(old_hb, old_owner, new_hb, new_owner, now):
+    """A recovery request is successful only after a coherent successor generation is live."""
+    if not isinstance(new_hb, dict) or not isinstance(new_owner, dict):
+        return False
+    if new_hb.get("campaign_id") != CAMPAIGN or new_owner.get("campaign_id") != CAMPAIGN:
+        return False
+    old_generation = old_owner.get("generation")
+    new_generation = new_owner.get("generation")
+    if type(old_generation) is not int or type(new_generation) is not int or new_generation <= old_generation:
+        return False
+    new_run = new_owner.get("owner_run_id")
+    if not isinstance(new_run, str) or not new_run or new_run == old_hb.get("run_id"):
+        return False
+    if new_owner.get("status") != "active":
+        return False
+    if new_hb.get("run_id") != new_run or new_hb.get("lease_generation") != new_generation:
+        return False
+    if old_hb.get("authorization_id") and new_hb.get("authorization_id") != old_hb.get("authorization_id"):
+        return False
+    if old_hb.get("hard_deadline_utc") and new_hb.get("hard_deadline_utc") != old_hb.get("hard_deadline_utc"):
+        return False
+    if new_hb.get("status") not in ("running", "checkpointed", "interrupted", "blocked"):
+        return False
+    try:
+        lease_end = timestamp(new_owner.get("lease_expires_utc"))
+        last = timestamp(new_hb.get("last_heartbeat_utc"))
+    except (TypeError, ValueError, OverflowError):
+        return False
+    if lease_end <= now or last > now + timedelta(seconds=120):
+        return False
+    return True
+
+
+def emit_recovery(api, snapshot, decision, attempt=1):
     sha, hb, owner = snapshot
     incident = incident_identity(hb, owner)
     branch = "watchdog-recovery-" + incident + "-a" + str(attempt)
