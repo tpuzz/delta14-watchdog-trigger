@@ -2,9 +2,9 @@
   "campaign_id": "delta14-mixed-tate-20261012T210157Z",
   "owner_run_id": "continuation9-recovery-20261014T212819Z-9b87a01c8656",
   "generation": 13,
-  "status": "active",
-  "last_renewed_utc": "2026-10-14T22:14:03.625Z",
-  "lease_expires_utc": "2026-10-14T22:26:03.625Z",
+  "status": "inactive",
+  "last_renewed_utc": "2026-10-14T22:17:23.414Z",
+  "lease_expires_utc": "2026-10-14T22:17:23.414Z",
   "authorization_id": "continuation9-autonomous-strategy-20261014-v1",
   "predecessor_run_id": "continuation9-autonomous-20261014T193034Z-0599f2e47215",
   "claim_reason": "Recover explicit infrastructure interruption with incomplete delivery under unchanged authorization and deadline."
