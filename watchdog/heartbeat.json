@@ -11,7 +11,7 @@
   "status": "running",
   "global_campaign_status": "INCOMPLETE_ACTIVE",
   "current_assignment": "Freeze and verify relative-brauer-v1, then reassess globally under the same authorization.",
-  "first_unfinished_action": "Fresh proof-blind reconstruction of relative-brauer-v1 contracted outputs.",
+  "first_unfinished_action": "Fresh comparison of frozen relative-brauer-v1 proof, contract and independent reconstruction.",
   "last_safe_frontier": "Promoted vframe-brauer-v1 / claim-contract-v1; C3 mixed Tate iff V mixed Tate at exact inherited scope; no new mathematical claim.",
   "research_started": true,
   "math_start_utc": "2026-10-14T12:50:50.046Z",
@@ -35,15 +35,7 @@
     "C3/COINCIDENCE": 1
   },
   "new_independent_wave_credit": 0,
-  "active_workers": [
-    {
-      "assignment_id": "RELATIVE-RECON-v1",
-      "agent": "/root/relative_recon_v1",
-      "role": "fresh proof-blind reconstruction",
-      "status": "running",
-      "automatic_replacement_count": 0
-    }
-  ],
+  "active_workers": [],
   "policy_sha": "4e513d633bd406adf6d034f67df3dbc06bb415d7",
   "ownership_protocol_sha": "0b30e411cb93251224e73361ed929d65c4eecb0b",
   "historical_missing_evidence": "Continuation5 original cubical comparison report and actual manifest bytes remain lost; recorded PASS/hashes preserved, not reconstructed.",
@@ -53,14 +45,14 @@
   "dropbox_final_status_verified": false,
   "watchdog_recovery_armed": true,
   "infrastructure_verification_level": "Conditional generation9 ownership verified; source hashes, initial generation and heartbeat raw byte-readbacks verified; start.signal readback verified; actual GitHub supervisor regression success and supervising step in_progress observed at 2026-10-14T12:50:24Z.",
-  "last_heartbeat_utc": "2026-10-14T13:18:39.675Z",
-  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation8-autonomous-20261014T124515Z-0d47e7bba02b--g9--hostile-v1.json",
-  "latest_verified_dropbox_generation_sha256": "aa93c87aabf9392d70e0d58e6812bb5a1a02606f6cfc407e43898650627d2b02",
+  "last_heartbeat_utc": "2026-10-14T13:27:13.420Z",
+  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation8-autonomous-20261014T124515Z-0d47e7bba02b--g9--reconstruction-v1.json",
+  "latest_verified_dropbox_generation_sha256": "4a8a48a0a70527e2d6ba8a76c227490443e00a58d48405910e142426662bfca8",
   "latest_verified_dropbox_capsule": "AUTONOMOUS--continuation8-autonomous-20261014T124515Z-0d47e7bba02b--g9--candidate-v1--RESUME_CAPSULE.zip",
   "latest_verified_dropbox_capsule_sha256": "bb27c994540311ed95f576183bfc0160d2718cb5959a01bae69191947a776407",
   "capsule_scope": "Current continuation8 candidate and exact minimal inputs; source capsule pointer retains historical bytes",
-  "latest_verified_dropbox_heartbeat": "AUTONOMOUS--continuation8-autonomous-20261014T124515Z-0d47e7bba02b--g9--heartbeat-1302.json",
-  "latest_verified_dropbox_heartbeat_sha256": "ab2e64874549aa40622fd2ff553d69b7cd837a0b72a829a566a9e06a2558d48d",
+  "latest_verified_dropbox_heartbeat": "AUTONOMOUS--continuation8-autonomous-20261014T124515Z-0d47e7bba02b--g9--heartbeat-1318.json",
+  "latest_verified_dropbox_heartbeat_sha256": "8cfb4b00b4c8c3f041886693bb470e6bddc87f7276c8e5d6a80996115de041b4",
   "initial_external_state_verified": true,
   "supervisor_actions_run_id": 38566856114,
   "supervisor_actions_job_id": 115861627398,
@@ -70,7 +62,8 @@
   "candidate_label": "candidate",
   "verification_gates": {
     "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED",
-    "hostile": "PASS_EXTERNALLY_BYTE_VERIFIED"
+    "hostile": "PASS_EXTERNALLY_BYTE_VERIFIED",
+    "reconstruction": "COMPLETE_EXTERNALLY_BYTE_VERIFIED"
   },
   "external_gate_receipts": {
     "leakage": {
@@ -85,6 +78,13 @@
       "sha256": "aa93c87aabf9392d70e0d58e6812bb5a1a02606f6cfc407e43898650627d2b02",
       "report_sha256": "9a44ace65fbc1ce105f5357a4c66898b83af890eb85e09de44544d789db8c266",
       "manifest_sha256": "59c6652e38f99625689f9b5940d1467975ac6ea3785bd31710935f43c04be12d",
+      "raw_readback_equal": true
+    },
+    "reconstruction": {
+      "generation": "AUTONOMOUS--continuation8-autonomous-20261014T124515Z-0d47e7bba02b--g9--reconstruction-v1.json",
+      "sha256": "4a8a48a0a70527e2d6ba8a76c227490443e00a58d48405910e142426662bfca8",
+      "report_sha256": "f8dd3256fbdae1c3ef56d272c1a681dcd907e8bfa8ff05620ab43732f12f2331",
+      "manifest_sha256": "e137d7255aff09db5e3e0bd4e22d81c874303033d4109c6d8f7c4ac7c9164d33",
       "raw_readback_equal": true
     }
   }
