@@ -10,32 +10,26 @@
   "authorization_start_utc": "2026-10-14T19:27:19Z",
   "delivery_start_utc": "2026-10-14T23:17:19Z",
   "hard_deadline_utc": "2026-10-14T23:27:19Z",
-  "last_heartbeat_utc": "2026-10-14T21:31:27.052Z",
+  "last_heartbeat_utc": "2026-10-14T21:40:03.845Z",
   "research_started": true,
   "mathematical_work_authorized": true,
   "active_workers": [
     {
-      "assignment_id": "FC-COMP-v1-replacement1",
-      "agent": "/root/fc_comp_replacement1",
+      "assignment_id": "REL-HOSTILE-v1",
+      "agent": "/root/rel_hostile_v1",
       "state": "running",
-      "replacement_number": 1
-    },
-    {
-      "assignment_id": "REL-LEAK-v1-replacement1",
-      "agent": "/root/rel_leak_replacement1",
-      "state": "running",
-      "replacement_number": 1
+      "replacement_number": 0
     }
   ],
-  "current_assignment": "Fresh isolated replacement1 roles running for interrupted FC comparison and REL leakage",
-  "first_unfinished_action": "Receive complete FC comparison and REL leakage reports plus actual manifests; externally persist and raw-byte verify each before credit.",
+  "current_assignment": "Fresh isolated hostile audit running for relative-toric-boundary-v1",
+  "first_unfinished_action": "Receive complete REL-HOSTILE-v1 report plus actual manifest; externally persist and raw-byte verify before credit.",
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
   "watchdog_recovery_armed": true,
   "recovery_mode": "DIRECT-RESUME",
   "recovery_classification": "INCOMPLETE",
-  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation9-recovery-20261014T212819Z-9b87a01c8656--g13--bootstrap.json",
-  "latest_verified_dropbox_generation_sha256": "7d989c1b0acc211b8f8afd933a183394a818d482a768445ecbd91724d3ea2b63",
+  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation9-recovery-20261014T212819Z-9b87a01c8656--g13--fc-promoted-rel-hostile-start.json",
+  "latest_verified_dropbox_generation_sha256": "5cc9b534bc385c1eeb2ea0f5566ca0d5ac805027087d85806a901d3705d22faf",
   "recovery_bootstrap_raw_readback_equal": true,
   "source_generation": "AUTONOMOUS--continuation9-autonomous-20261014T193034Z-0599f2e47215--g12--fc-recon-v1.json",
   "source_generation_sha256": "7b6c2984ed7a67995b927b4765c0e301ef23ad8319ecf2f2e97fcfe2ee03b885",
@@ -76,30 +70,35 @@
         "comparison": "PASS_EXTERNALLY_BYTE_VERIFIED"
       },
       "proof_sha256": "ce5ed1e54013d71b0c7b8a9dcb41a977b8bbcc51203e88faa20e978c22a29edc"
-    }
-  },
-  "candidate_statuses": {
+    },
     "free-collision-complement-v1": {
-      "status": "candidate",
-      "gates": {
+      "label": "promoted",
+      "contract": "claim-contract-v1",
+      "verification_gates": {
         "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED",
         "hostile": "PASS_EXTERNALLY_BYTE_VERIFIED",
         "reconstruction": "COMPLETE_EXTERNALLY_BYTE_VERIFIED",
-        "comparison": "REPLACEMENT1_RUNNING"
+        "comparison": "PASS_EXTERNALLY_BYTE_VERIFIED"
       },
       "proof_sha256": "5fa96128bc9a264d7aaa5e0190bd86226e1527d63f56188d600d7d7d36e819c1",
-      "comparison_replacement_count": 1
-    },
+      "promotion_statement_sha256": "e655191afd53cbf431412640a43dc4d2b58fdb55c3a799f8578bc1df3ba6c8d6",
+      "promotion_record_sha256": "bb6d10ffb62478439bafcf09e910b915b3c8e02985f203624f3e9952780a7f19"
+    }
+  },
+  "candidate_statuses": {
     "relative-toric-boundary-v1": {
       "status": "candidate",
       "gates": {
-        "leakage": "REPLACEMENT1_RUNNING",
-        "hostile": "NOT_RUN",
+        "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED",
+        "hostile": "RUNNING",
         "reconstruction": "NOT_RUN",
         "comparison": "NOT_RUN"
       },
       "proof_sha256": "2293992a59b44a4fc5d0bfeeecb3508deb5e4eac5fe9272ff89f298cbc7083a7",
-      "leakage_replacement_count": 1
+      "leakage_replacement_count": 1,
+      "hostile_replacement_count": 0,
+      "checklist_revision": 10,
+      "checklist_sha256": "f3e478ccd1272d6175d0043822c02c0773b93ab1dacc7cf9b90e346a81e4b13e"
     }
   },
   "wave_counts": {
@@ -112,5 +111,6 @@
   "aggregate_closed_mathematical_seconds": 2103.302944,
   "historical_missing_evidence": "Continuation5 original cubical comparison report and actual manifest bytes remain lost; recorded PASS/hashes preserved, not reconstructed.",
   "policy_sha": "ffb5dc24643d747482e2f1ab94040431b7e46361",
-  "ownership_protocol_sha": "4bb548d2a8a8772dc2a1d0e3271c84825856d584"
+  "ownership_protocol_sha": "4bb548d2a8a8772dc2a1d0e3271c84825856d584",
+  "latest_verified_dropbox_generation_raw_readback_equal": true
 }
