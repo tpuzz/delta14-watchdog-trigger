@@ -3,31 +3,25 @@
   "authorization_id": "continuation9-autonomous-strategy-20261014-v1",
   "run_id": "continuation9-autonomous-20261014T193034Z-0599f2e47215",
   "lease_generation": 12,
-  "status": "running",
+  "status": "interrupted",
   "global_campaign_status": "INCOMPLETE",
   "authorization_start_utc": "2026-10-14T19:27:19Z",
   "delivery_start_utc": "2026-10-14T23:17:19Z",
   "hard_deadline_utc": "2026-10-14T23:27:19Z",
-  "last_heartbeat_utc": "2026-10-14T21:10:15.446Z",
+  "last_heartbeat_utc": "2026-10-14T21:19:06.112Z",
   "research_started": true,
-  "active_math_elapsed_seconds": 2103.302944,
+  "active_math_elapsed_seconds": 1106.19286,
   "math_segment_start_utc": null,
-  "current_assignment": "FC reconstruction; relative partial-comparison candidate preparation",
-  "active_workers": [
-    {
-      "assignment_id": "FC-RECON-v1",
-      "agent": "/root/fc_recon_v1",
-      "state": "running"
-    }
-  ],
+  "current_assignment": "Infrastructure interruption: executor disconnected; all unfinished roles stopped",
+  "active_workers": [],
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
   "watchdog_recovery_armed": true,
-  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation9-autonomous-20261014T193034Z-0599f2e47215--g12--fc-hostile-and-rel-return.json",
-  "latest_verified_dropbox_generation_sha256": "cb0b07de44f9072dcba56581d10dd72136633caf24056f5ec32309c8a9436a25",
+  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation9-autonomous-20261014T193034Z-0599f2e47215--g12--fc-recon-v1.json",
+  "latest_verified_dropbox_generation_sha256": "7b6c2984ed7a67995b927b4765c0e301ef23ad8319ecf2f2e97fcfe2ee03b885",
   "latest_verified_dropbox_capsule": "AUTONOMOUS--continuation9-autonomous-20261014T193034Z-0599f2e47215--g12--j-promoted-v1--RESUME_CAPSULE.zip",
   "latest_verified_dropbox_capsule_sha256": "960ef2bef554bbb086033181718f2379331fdb9419f30ca62e9ac68516b4a211",
-  "capsule_scope": "Coherent generation12 with exact-j-v1 promotion, all four full audit reports and actual manifests; no nested archives",
+  "capsule_scope": "Latest capsule is exact-J promoted checkpoint; the newer verified generation embeds complete recoverable UTF-8 bytes for FC through reconstruction, relative candidate/source and all current exact packets. Reconstruct current work from the named newer generation, not only the older capsule.",
   "source_generation": "AUTONOMOUS--continuation8-finalization-20261014T191755Z-9b87a01c8656--g11--terminal.json",
   "source_generation_sha256": "cdaf3aee22a6d96f9a6b1dac0e2993384034a0b6e61f1efa6420fdcaf57b290f",
   "promoted_results": {
@@ -68,7 +62,7 @@
       "scope": "[J/F] integral mixed Tate; actual J/E8/B localization; C3 iff E8 iff B iff V. No individual membership, V minus B, relative, higher-width, global or ring conclusion."
     }
   },
-  "pending_unverified_result": "FC candidate leakage/hostile PASS; REL partial comparison source complete and externally byte-verified, no theorem credit",
+  "pending_unverified_result": "free-collision-complement-v1 candidate: leakage PASS, hostile PASS, reconstruction COMPLETE all externally raw-byte verified; final comparator interrupted. relative-toric-boundary-v1 frozen candidate and full source return/manifest externally verified; leakage interrupted, zero gate credit.",
   "wave_counts": {
     "MT-STRUCT": 2,
     "MT-OBSTRUCT": 2,
@@ -80,15 +74,99 @@
   "latest_verified_dropbox_heartbeat": "AUTONOMOUS--continuation9-autonomous-20261014T193034Z-0599f2e47215--g12--heartbeat-rel-return-fc-recon.json",
   "math_start_utc": "2026-10-14T19:35:00.602655Z",
   "mathematical_work_authorized": true,
-  "infrastructure_verification_level": "Actual supervisor run38624747502 job116061193283 running; regression preflight succeeded. End-to-end crash recovery not tested by this bootstrap.",
+  "infrastructure_verification_level": "Supervisor run38624747502/job116061193283 last observed in progress with regression success at20:51Z; both existing recovery consumers last observed enabled at20:59Z. Current executor is inaccessible; automatic successor recovery not yet observed.",
   "supervisor_actions_run_id": 38624747502,
   "supervisor_actions_job_id": 116061193283,
   "current_checklist_revision": 9,
   "new_independent_wave_credit": 2,
   "execution_epoch": 3,
-  "strategy_epoch": 2,
+  "strategy_epoch": 3,
   "mechanism_deadline_utc": null,
   "current_mechanism_id": null,
   "current_mechanism_coordinator_charge_seconds": 360,
-  "current_mechanism_worker_allowance_seconds": 840
+  "current_mechanism_worker_allowance_seconds": 840,
+  "interrupted_workers": [
+    {
+      "assignment_id": "FC-COMP-v1",
+      "agent": "/root/fc_comp_v1",
+      "state": "interrupted before complete externally verified report/manifest",
+      "gate_credit": 0,
+      "automatic_replacement_attempts": 0
+    },
+    {
+      "assignment_id": "REL-LEAK-v1",
+      "agent": "/root/rel_leak_v1",
+      "state": "interrupted before complete externally verified report/manifest",
+      "gate_credit": 0,
+      "automatic_replacement_attempts": 0
+    }
+  ],
+  "stop_reason": "Heartbeat raw readback failed with network approval cancellation; one read-only check then failed: exec-server transport disconnected, failed resume, recovery timed out after25s. Bounded infrastructure cleanup only; no further mathematics in this execution.",
+  "latest_verified_dropbox_generation_size_bytes": 1470145,
+  "current_checklist_sha256": "83f41f654148fcbfbaffd3de2499a43f21328766713af8d4e8b2df9f9a2a9aca",
+  "first_unfinished_action": "After independently checking interruption and matching lease expiry, claim successor generation under unchanged authorization. Materialize the exact named fc-recon-v1 generation and validate its full embedded records. Reconcile any genuinely recoverable complete FC-COMP-v1 or REL-LEAK-v1 report+actual manifest; otherwise use fresh bounded replacement1 for each, from existing isolated packets, with zero credit for interrupted originals. Do not repeat FC leakage/hostile/reconstruction or J gates. Keep checklist9 unchanged until FC promotion; then append proposed REL checks before its hostile audit. Continue ranked strategy only before23:17:19Z reserve.",
+  "candidate_statuses": {
+    "free-collision-complement-v1": {
+      "status": "candidate",
+      "gates": {
+        "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED",
+        "hostile": "PASS_EXTERNALLY_BYTE_VERIFIED",
+        "reconstruction": "COMPLETE_EXTERNALLY_BYTE_VERIFIED",
+        "comparison": "INTERRUPTED_NO_COMPLETE_EXTERNALLY_VERIFIED_RETURN"
+      },
+      "proof_sha256": "5fa96128bc9a264d7aaa5e0190bd86226e1527d63f56188d600d7d7d36e819c1",
+      "reconstruction_sha256": "2e142ef6d81838b3d0f09b94b88a7af424d71266dfc152736b52ebfe0e59ae43",
+      "reconstruction_manifest_sha256": "82aa9dce38b68587ae8979a8a2c971502f15ddb83ef04ded6bb2b4152417ed5b"
+    },
+    "relative-toric-boundary-v1": {
+      "status": "candidate",
+      "gates": {
+        "leakage": "INTERRUPTED_NO_COMPLETE_EXTERNALLY_VERIFIED_RETURN",
+        "hostile": "NOT_RUN",
+        "reconstruction": "NOT_RUN",
+        "comparison": "NOT_RUN"
+      },
+      "proof_sha256": "2293992a59b44a4fc5d0bfeeecb3508deb5e4eac5fe9272ff89f298cbc7083a7",
+      "contract_sha256": "142a5ec0f1593dc12373b937742a88b45dc7b5bf6d0692f15cff535258abbdb0",
+      "brief_sha256": "5f68bc13f79912097db8f5e8f0bc49cd839cfda93f679a367cd99ead5e33386f",
+      "frozen_manifest_sha256": "eca181a8510d11a81b89dea67f599fdbb516edd7a0b318f07d21bfe7a524bd9e",
+      "preferred_implication": "B_H MT => actual relative T MT remains practical NO_GO; no negative theorem"
+    }
+  },
+  "math_clock_scope": "Last selected mechanism REL-TORIC-W1 is CLOSED at1106.19286 seconds. Earlier top-level2103.302944 was an aggregate, corrected here to per-screen scope without resetting any screen.",
+  "aggregate_closed_mathematical_seconds": 2103.302944,
+  "mechanism_clocks": {
+    "J-W1": {
+      "status": "COMPLETE_PROMOTED",
+      "active_seconds": 826.110084,
+      "cap_seconds": 1200
+    },
+    "REL-TORIC-W1": {
+      "status": "COMPLETE_PARTIAL_CANDIDATE_PREFERRED_NO_GO",
+      "worker_start_utc": "2026-10-14T20:52:43.508700Z",
+      "worker_stop_utc": "2026-10-14T21:05:09.701560Z",
+      "worker_seconds": 746.19286,
+      "coordinator_seconds": 360,
+      "total_seconds": 1106.19286,
+      "cap_seconds": 1200
+    },
+    "FC-AUTHOR-v1": {
+      "status": "COMPLETE_FORMAL_CANDIDATE",
+      "conservative_seconds": 171,
+      "independent_wave_credit": 0
+    },
+    "C3_NEXT_PREPLANNING": {
+      "status": "NOT_SELECTED",
+      "precharge_seconds_if_used": 180
+    }
+  },
+  "leaf_wave_counts": {
+    "C3/COINCIDENCE/J": 1,
+    "MT-STRUCT/REL-TORIC": 1
+  },
+  "heartbeat_persistence_status": "This interruption marker is conditionally written/read back on GitHub. The attempted newer Dropbox heartbeat was uploaded but raw-byte readback was NOT completed and receives no verified status. Last verified Dropbox heartbeat pointer remains the prior value.",
+  "unverified_dropbox_heartbeat": "AUTONOMOUS--continuation9-autonomous-20261014T193034Z-0599f2e47215--g12--heartbeat-fc-comp-rel-leak.json",
+  "clean_terminal_publication": "NOT_COMPLETED; no terminal signal or ownership release is asserted. Stop renewing; current lease expiry permits separately checked automatic recovery.",
+  "recovery_mode_before_reserve": "Resume exact unfinished authorized verification and autonomous strategy after valid successor claim; no clock reset",
+  "recovery_mode_at_or_after_reserve": "finalize_only"
 }
