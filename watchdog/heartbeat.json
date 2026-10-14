@@ -1,17 +1,17 @@
 {
   "campaign_id": "delta14-mixed-tate-20261012T210157Z",
   "authorization_id": "continuation8-autonomous-strategy-20261014-v1",
-  "run_id": "continuation8-autonomous-20261014T124515Z-0d47e7bba02b",
-  "lease_generation": 9,
+  "run_id": "continuation8-recovery-20261014T135743Z-a23632894cf5",
+  "lease_generation": 10,
   "authorization_start_utc": "2026-10-14T12:45:15Z",
   "actual_start_utc": "2026-10-14T12:45:15Z",
   "hard_deadline_utc": "2026-10-14T16:45:15Z",
   "delivery_start_utc": "2026-10-14T16:35:15Z",
   "delivery_reserve_minutes": 10,
-  "status": "interrupted",
-  "global_campaign_status": "INCOMPLETE_INFRASTRUCTURE_INTERRUPTION",
-  "current_assignment": "Infrastructure stop; awaiting independently checked recovery of the same authorization.",
-  "first_unfinished_action": "In a fresh environment, verify current owner/heartbeat and unchanged clocks; after matching lease expiry conditionally claim a new generation. Materialize the exact verified epoch1-promoted JSON (all35 files embedded), confirm capsule hash if using it, reconcile promotion/strategy decision, then complete the COINCIDENCE-W2 packet and launch the selected T_42 search. No completed verification gate may be repeated.",
+  "status": "running",
+  "global_campaign_status": "INCOMPLETE_ACTIVE",
+  "current_assignment": "Complete isolated COINCIDENCE-W2 packet and launch exact selected T_42 search after supervisor verification.",
+  "first_unfinished_action": "Fresh own-route second search for compact T_42 and proper-collision filtration; no repeated verification gates.",
   "last_safe_frontier": "relative-brauer-v1 promoted: actual generic f*beta NONZERO; no same-conic rank-two bundle or GL2 lift on any nonempty open. No motive or exact-class decision. Inherited C3 iff V remains at exact scope.",
   "research_started": true,
   "math_start_utc": "2026-10-14T12:50:50.046Z",
@@ -20,8 +20,8 @@
   "mechanism_gate_total_seconds": 1200,
   "mechanism_gate_clock": "cumulative_active_mathematical_time",
   "strategy_epoch": 2,
-  "execution_epoch": 1,
-  "execution_epoch_start_utc": "2026-10-14T12:45:15Z",
+  "execution_epoch": 2,
+  "execution_epoch_start_utc": "2026-10-14T13:58:19.397142Z",
   "source_capsule_path": "/ChatGPT-Research-State/delta14-mixed-tate/VGENERIC--continuation7-recovery-20261014T092953Z-633119efb02d--g8--terminal--RESUME_CAPSULE.zip",
   "source_capsule_sha256": "1845cfeada6d449ec2ed41c5bc31e43ea8f0a74aee843f2578598de8719e249a",
   "source_generation_path": "/ChatGPT-Research-State/delta14-mixed-tate/VGENERIC--continuation7-recovery-20261014T092953Z-633119efb02d--g8--terminal.json",
@@ -44,14 +44,14 @@
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
   "watchdog_recovery_armed": true,
-  "infrastructure_verification_level": "Conditional generation9 ownership verified; source hashes, initial generation and heartbeat raw byte-readbacks verified; start.signal readback verified; actual GitHub supervisor regression success and supervising step in_progress observed at 2026-10-14T12:50:24Z.",
-  "last_heartbeat_utc": "2026-10-14T13:51:52.992Z",
-  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation8-autonomous-20261014T124515Z-0d47e7bba02b--g9--epoch1-promoted.json",
-  "latest_verified_dropbox_generation_sha256": "18cde834bfa3ef15e5a6c0b7ffb3f2349872250dff0288f637cbe59167928b65",
+  "infrastructure_verification_level": "Generation10 conditional claim read back; exact source generation and35 embedded file hashes verified; initial publication/supervisor still pending.",
+  "last_heartbeat_utc": "2026-10-14T13:58:19.397142Z",
+  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation8-recovery-20261014T135743Z-a23632894cf5--g10--bootstrap.json",
+  "latest_verified_dropbox_generation_sha256": "4ec3cf2417fa6d5338c052eacf7de49076c9c49dc9c33bbe20f2c5616837aec1",
   "latest_verified_dropbox_capsule": "AUTONOMOUS--continuation8-autonomous-20261014T124515Z-0d47e7bba02b--g9--candidate-v1--RESUME_CAPSULE.zip",
   "latest_verified_dropbox_capsule_sha256": "bb27c994540311ed95f576183bfc0160d2718cb5959a01bae69191947a776407",
   "capsule_scope": "Current continuation8 candidate and exact minimal inputs; source capsule pointer retains historical bytes",
-  "latest_verified_dropbox_heartbeat": "AUTONOMOUS--continuation8-autonomous-20261014T124515Z-0d47e7bba02b--g9--heartbeat-1328.json",
+  "latest_verified_dropbox_heartbeat": "AUTONOMOUS--continuation8-recovery-20261014T135743Z-a23632894cf5--g10--bootstrap-heartbeat.json",
   "latest_verified_dropbox_heartbeat_sha256": "fc766cd3f062f5a71b53ed353f202bfe84a37c57cea7226b36b94d608bc25bf2",
   "initial_external_state_verified": true,
   "supervisor_actions_run_id": 38566856114,
@@ -104,7 +104,7 @@
     "PROMOTIONS/cubical8-proper-boundary-v1.md",
     "PROMOTIONS/vframe-brauer-v1.md"
   ],
-  "execution_epoch_health": "FAILED: checkpoint files written and uploaded at13:42Z, then apply_patch stalled; single core process probe returned environment_offline. No execution epoch2 launched.",
+  "execution_epoch_health": "Fresh runtime pwd and materialization succeeded; all35 current generation file hashes verified; no active predecessor workers.",
   "snapshot_paths": [
     "PROMOTIONS/PAULI-v1.md",
     "PROMOTIONS/WIDTH3-v1.md",
@@ -131,8 +131,8 @@
     "AUDITS/RELATIVE-COMP-v1.md",
     "AUDITS/RELATIVE-COMP-v1-INPUTS.json"
   ],
-  "stop_reason": "Coordinator process environment went offline (409 Conflict environment_offline: Environment is not connected) during packet/checkpoint handoff. One cleanup/reconciliation pass; no further mathematical search.",
-  "interruption_detected_utc": "2026-10-14T13:47:18.784Z",
+  "stop_reason": null,
+  "interruption_detected_utc": null,
   "latest_generation_verification": {
     "utc": "2026-10-14T13:51:52.992Z",
     "method": "Fetched all UTF8 content via Dropbox; extractor-added final LF removed; exact258532-byte sequence SHA256 matched pre-upload expected hash; all35 embedded file content hashes also verified. The earlier raw download process result was inaccessible after offline.",
@@ -157,5 +157,25 @@
   "preserved_unproved_coordinator_notes": {
     "status": "candidate planning notes only, no theorem or verification credit; do not feed these to the independent own-route W2 search if independence is claimed",
     "notes": "A possible T_42 proof assigns each regular E label to its image in E/J. For each subset of four coordinates equal to its assigned pair coordinate, use its actual W_I stabilizer. Remaining fibers are products of P1 minus the assigned point, potentially genuine affine torsors over[(P1)^2/(K x W_I)]; the pair base may be treated through Sym^2(P1)=P2 with honest Sym^2 K lift plus all diagonal BC2 inertia. This still needs a complete proof. For a proper partition of the eight-element H-set, W=H gives a transitive coset partition; W proper has rank<=2. A maximal block stabilizer can supply such an anchor unless there are two incomparable order-two stabilizers; those two pair-orbits already consume all8 original labels and give the older independent-pairs typeA. Compact-source treatment plus decreasing block-count localization might prove the full collision boundary Tate. Check product-with-ineffective-abelian-kernel motives rigorously. A compact-collision conclusion would directly reduce C3 to the full eight-distinct stack E8; do not claim equivalence to V_dist without separately treating the intersections with boundary/nonfree loci."
-  }
+  },
+  "historical_interruption_g9": {
+    "stop_reason": "Coordinator process environment went offline (409 Conflict environment_offline: Environment is not connected) during packet/checkpoint handoff. One cleanup/reconciliation pass; no further mathematical search.",
+    "interruption_detected_utc": "2026-10-14T13:47:18.784Z",
+    "execution_epoch_health": "FAILED: checkpoint files written and uploaded at13:42Z, then apply_patch stalled; single core process probe returned environment_offline. No execution epoch2 launched.",
+    "incomplete_delivery_items": [
+      "New terminal FINAL_STATUS and namespaced SHARE could not be created because local runtime is offline.",
+      "Final user-facing Library handoff could not be completed.",
+      "Latest uploaded capsule raw readback receipt unavailable; complete corresponding generation content and35 file hashes ARE verified.",
+      "COINCIDENCE-W2 packet creation outcome unknown; no second search launched and no second leaf-wave credit."
+    ],
+    "preserved_unproved_coordinator_notes": {
+      "status": "candidate planning notes only, no theorem or verification credit; do not feed these to the independent own-route W2 search if independence is claimed",
+      "notes": "A possible T_42 proof assigns each regular E label to its image in E/J. For each subset of four coordinates equal to its assigned pair coordinate, use its actual W_I stabilizer. Remaining fibers are products of P1 minus the assigned point, potentially genuine affine torsors over[(P1)^2/(K x W_I)]; the pair base may be treated through Sym^2(P1)=P2 with honest Sym^2 K lift plus all diagonal BC2 inertia. This still needs a complete proof. For a proper partition of the eight-element H-set, W=H gives a transitive coset partition; W proper has rank<=2. A maximal block stabilizer can supply such an anchor unless there are two incomparable order-two stabilizers; those two pair-orbits already consume all8 original labels and give the older independent-pairs typeA. Compact-source treatment plus decreasing block-count localization might prove the full collision boundary Tate. Check product-with-ineffective-abelian-kernel motives rigorously. A compact-collision conclusion would directly reduce C3 to the full eight-distinct stack E8; do not claim equivalence to V_dist without separately treating the intersections with boundary/nonfree loci."
+    }
+  },
+  "recovery_mode": "DIRECT-RESUME",
+  "predecessor_run_id": "continuation8-autonomous-20261014T124515Z-0d47e7bba02b",
+  "predecessor_generation": 9,
+  "recovery_source_generation": "AUTONOMOUS--continuation8-autonomous-20261014T124515Z-0d47e7bba02b--g9--epoch1-promoted.json",
+  "recovery_source_generation_sha256": "18cde834bfa3ef15e5a6c0b7ffb3f2349872250dff0288f637cbe59167928b65"
 }
