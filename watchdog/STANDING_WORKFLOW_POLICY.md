@@ -4,7 +4,7 @@ Campaign: delta14-mixed-tate-20261012T210157Z
 User directive recorded: 2026-10-14
 User instruction: "from now on always use our automatic recovery mechanism".
 
-For every future explicitly authorized launch and continuation in this campaign, automatic recovery is a required launch condition, not an optional addendum. Reuse the existing GitHub/Dropbox ownership, heartbeat, supervisor and recovery/results task, plus the existing hourly backup. Do not create duplicates or ask again whether to use the mechanism.
+For every future explicitly authorized launch and continuation in this campaign, automatic recovery is a required launch condition, not an optional addendum. Reuse the existing GitHub/Dropbox ownership, heartbeat, supervisor and recovery/results task, together with any currently enabled authorized backup. Do not create duplicates, silently reactivate disabled tasks, or ask again whether to use the mechanism. The per-run GitHub supervisor is the primary sub-hour monitor.
 
 Preparing or uploading a kit is NOT launching its mathematical task. Do not claim the research lease, refresh a research heartbeat, change start.signal, or start a PREPARED kit merely because preparation was requested. Every actual launch must record its own explicit authorization, start, deadline and scope; recovery never extends these.
 
@@ -16,6 +16,6 @@ Every complete verification report AND its actual input/output manifest must be 
 
 Recovered executions initialize their own verified supervisor under the SAME deadline, preserve all completed gates and exact scope, and obey the installed Research assistant isolation/replacement rules. At/after delivery reserve or deadline, only reconcile and deliver existing results. Deliberate mathematical pause, explicit user stop/cancel and verified completion must not be restarted automatically.
 
-On clean stop publish/read back the current immutable FINAL_STATUS, generation and capsule, send one terminal signal, and conditionally release ownership. The recovery/results task supplies completion reporting independently of the original conversation. Retain honest disclosure that the full external crash-to-recovery cycle has not yet been demonstrated; the latest completed C3 supervisor job was observed successful.
+On clean stop publish/read back the current immutable FINAL_STATUS, generation and capsule, send one terminal signal, and conditionally release ownership. The recovery/results task is configured to supply completion reporting independently of the original conversation. Distinguish a successful GitHub notification PR from a verified Work notification execution. Retain honest disclosure that the full external crash-to-recovery cycle has not yet been demonstrated; the latest completed C3 supervisor and GitHub terminal-notifier jobs were observed successful.
 
 This preference persists for future campaign preparation. It grants no new mathematical scope, no new time window, and no permission to bypass a safety, connector or ownership restriction.
