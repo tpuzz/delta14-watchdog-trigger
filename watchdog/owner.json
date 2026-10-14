@@ -1,8 +1,8 @@
 {
   "campaign_id": "delta14-mixed-tate-20261012T210157Z",
-  "owner_run_id": "continuation8-recovery-20261014T135743Z-a23632894cf5",
-  "generation": 10,
+  "owner_run_id": "continuation8-finalization-20261014T191755Z-9b87a01c8656",
+  "generation": 11,
   "status": "active",
-  "last_renewed_utc": "2026-10-14T15:37:23.451Z",
-  "lease_expires_utc": "2026-10-14T15:49:23.451Z"
+  "last_renewed_utc": "2026-10-14T19:17:55.923Z",
+  "lease_expires_utc": "2026-10-14T19:29:55.923Z"
 }
