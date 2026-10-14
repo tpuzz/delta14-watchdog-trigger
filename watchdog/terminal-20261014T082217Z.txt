@@ -1,0 +1,6 @@
+DELTA14_WORKFLOW_TERMINAL
+campaign=delta14-mixed-tate-20261012T210157Z
+run_id=continuation7-finalization-20261014T081719Z-db88fea78c23
+status=blocked
+last_heartbeat_utc=2026-10-14T08:20:30.463469Z
+detected_utc=2026-10-14T08:22:17Z
