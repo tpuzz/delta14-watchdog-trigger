@@ -3,8 +3,8 @@
   "owner_run_id": "continuation9-recovery-20261014T212819Z-9b87a01c8656",
   "generation": 13,
   "status": "active",
-  "last_renewed_utc": "2026-10-14T21:28:19.655Z",
-  "lease_expires_utc": "2026-10-14T21:40:19.655Z",
+  "last_renewed_utc": "2026-10-14T21:31:07.834Z",
+  "lease_expires_utc": "2026-10-14T21:43:07.834Z",
   "authorization_id": "continuation9-autonomous-strategy-20261014-v1",
   "predecessor_run_id": "continuation9-autonomous-20261014T193034Z-0599f2e47215",
   "claim_reason": "Recover explicit infrastructure interruption with incomplete delivery under unchanged authorization and deadline."
