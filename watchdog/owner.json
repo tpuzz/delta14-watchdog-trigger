@@ -2,7 +2,7 @@
   "campaign_id": "delta14-mixed-tate-20261012T210157Z",
   "owner_run_id": "continuation8-autonomous-20261014T124515Z-0d47e7bba02b",
   "generation": 9,
-  "status": "active",
-  "last_renewed_utc": "2026-10-14T13:51:45.719Z",
-  "lease_expires_utc": "2026-10-14T14:03:45.719Z"
+  "status": "inactive",
+  "last_renewed_utc": "2026-10-14T13:52:41.418Z",
+  "lease_expires_utc": "2026-10-14T13:52:41.418Z"
 }
