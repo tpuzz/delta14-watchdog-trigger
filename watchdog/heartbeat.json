@@ -10,8 +10,8 @@
   "delivery_reserve_minutes": 10,
   "status": "running",
   "global_campaign_status": "INCOMPLETE_ACTIVE",
-  "current_assignment": "Persist complete COINCIDENCE-W2 and frozen collision-boundary-v1 before leakage",
-  "first_unfinished_action": "Raw-byte verify complete search return/actual manifest externally; then fresh leakage check.",
+  "current_assignment": "Persist COLLISION-LEAK-v1 report and actual manifest",
+  "first_unfinished_action": "Externally byte-verify this complete return before credit or next verification role.",
   "last_safe_frontier": "relative-brauer-v1 promoted: actual generic f*beta NONZERO; no same-conic rank-two bundle or GL2 lift on any nonempty open. No motive or exact-class decision. Inherited C3 iff V remains at exact scope.",
   "research_started": true,
   "math_start_utc": "2026-10-14T12:50:50.046Z",
@@ -32,9 +32,9 @@
   "wave_counts": {
     "MT-STRUCT": 2,
     "MT-OBSTRUCT": 2,
-    "C3/COINCIDENCE": 1
+    "C3/COINCIDENCE": 2
   },
-  "new_independent_wave_credit": 0,
+  "new_independent_wave_credit": 1,
   "active_workers": [],
   "policy_sha": "4e513d633bd406adf6d034f67df3dbc06bb415d7",
   "ownership_protocol_sha": "0b30e411cb93251224e73361ed929d65c4eecb0b",
@@ -45,13 +45,13 @@
   "dropbox_final_status_verified": false,
   "watchdog_recovery_armed": true,
   "infrastructure_verification_level": "Generation10 ownership, initial Dropbox generation/heartbeat and GitHub heartbeat/start.signal all read back; actual supervisor preflight success and supervising step in_progress observed.",
-  "last_heartbeat_utc": "2026-10-14T14:14:13.496635Z",
-  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation8-recovery-20261014T135743Z-a23632894cf5--g10--coincidence-w2-return.json",
-  "latest_verified_dropbox_generation_sha256": "d0f4a2e6f9277e3b3575a3f94a8fc615d2ffff2530f77d4cdbb1a63644a7273f",
+  "last_heartbeat_utc": "2026-10-14T14:20:02.003702Z",
+  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation8-recovery-20261014T135743Z-a23632894cf5--g10--collision-leak-v1.json",
+  "latest_verified_dropbox_generation_sha256": "00d86f29781634de760ecd7307f8f6e8e193bf94e771de211c06deb973dcd721",
   "latest_verified_dropbox_capsule": "AUTONOMOUS--continuation8-recovery-20261014T135743Z-a23632894cf5--g10--coincidence-w2-return--RESUME_CAPSULE.zip",
   "latest_verified_dropbox_capsule_sha256": "e9818395b35683b9a09cb57fc27ccebcc71d73dcfff06ac69db952eb3c1d5fa9",
   "capsule_scope": "Current continuation8 candidate and exact minimal inputs; source capsule pointer retains historical bytes",
-  "latest_verified_dropbox_heartbeat": "AUTONOMOUS--continuation8-recovery-20261014T135743Z-a23632894cf5--g10--coincidence-w2-return-heartbeat.json",
+  "latest_verified_dropbox_heartbeat": "AUTONOMOUS--continuation8-recovery-20261014T135743Z-a23632894cf5--g10--collision-leak-v1-heartbeat.json",
   "latest_verified_dropbox_heartbeat_sha256": "fc766cd3f062f5a71b53ed353f202bfe84a37c57cea7226b36b94d608bc25bf2",
   "initial_external_state_verified": true,
   "supervisor_actions_run_id": 38576500397,
@@ -61,41 +61,12 @@
   "candidate": "collision-boundary-v1",
   "candidate_label": "candidate",
   "verification_gates": {
-    "leakage": "NOT_RUN",
+    "leakage": "PASS_RECEIVED_NOT_YET_EXTERNALLY_BYTE_VERIFIED",
     "hostile": "NOT_RUN",
     "reconstruction": "NOT_RUN",
     "comparison": "NOT_RUN"
   },
-  "external_gate_receipts": {
-    "leakage": {
-      "generation": "AUTONOMOUS--continuation8-autonomous-20261014T124515Z-0d47e7bba02b--g9--leakage-v1.json",
-      "sha256": "01cff5725dd70f208d478fcaa7fa00d5f43acbbc3b0f629ece242c105f4c6af9",
-      "report_sha256": "01989d1525631971bedc428b2112ac6ec61dec35366fa9e26bdd4b5146f265bb",
-      "manifest_sha256": "d0122e0202ab8e778c18d34a922c8bcfa8dc5357dbfef1f36ff90eebc53b0a01",
-      "raw_readback_equal": true
-    },
-    "hostile": {
-      "generation": "AUTONOMOUS--continuation8-autonomous-20261014T124515Z-0d47e7bba02b--g9--hostile-v1.json",
-      "sha256": "aa93c87aabf9392d70e0d58e6812bb5a1a02606f6cfc407e43898650627d2b02",
-      "report_sha256": "9a44ace65fbc1ce105f5357a4c66898b83af890eb85e09de44544d789db8c266",
-      "manifest_sha256": "59c6652e38f99625689f9b5940d1467975ac6ea3785bd31710935f43c04be12d",
-      "raw_readback_equal": true
-    },
-    "reconstruction": {
-      "generation": "AUTONOMOUS--continuation8-autonomous-20261014T124515Z-0d47e7bba02b--g9--reconstruction-v1.json",
-      "sha256": "4a8a48a0a70527e2d6ba8a76c227490443e00a58d48405910e142426662bfca8",
-      "report_sha256": "f8dd3256fbdae1c3ef56d272c1a681dcd907e8bfa8ff05620ab43732f12f2331",
-      "manifest_sha256": "e137d7255aff09db5e3e0bd4e22d81c874303033d4109c6d8f7c4ac7c9164d33",
-      "raw_readback_equal": true
-    },
-    "comparison": {
-      "generation": "AUTONOMOUS--continuation8-autonomous-20261014T124515Z-0d47e7bba02b--g9--comparison-v1.json",
-      "sha256": "4679b16d2a7d14e6cf06fc35f723fbed7512a467d5bc430a51bc5ccff4823110",
-      "report_sha256": "43bd2eb65d85fd9b8160b43a2df5108cda56c91a2718cdedf0397c9728b71b53",
-      "manifest_sha256": "5529eb9149e36d24d19d1519f647bcb1d6553c5f089d9cb66e199052e9791471",
-      "raw_readback_equal": true
-    }
-  },
+  "external_gate_receipts": {},
   "strategy_decision": "STRATEGY/STRATEGY_DECISION-epoch1.md",
   "minimal_next_read": [
     "STRATEGY/STRATEGY_DECISION-epoch1.md",
@@ -219,7 +190,7 @@
       "size_bytes": 3078
     }
   },
-  "generation_utc": "2026-10-14T14:14:13.496635Z",
+  "generation_utc": "2026-10-14T14:20:02.003702Z",
   "completed_candidates": {
     "relative-brauer-v1": {
       "label": "promoted",
@@ -264,5 +235,24 @@
   "strategy_epoch2_mechanism_gate_outcome": "GO_MOTIVIC_CANDIDATE",
   "strategy_epoch2_math_segment_end_utc": "2026-10-14T14:10:32Z",
   "strategy_epoch2_clock_note": "Conservative full parent-start to worker mathematical finish; includes initial loading. Worker separately reports557sec from first observed clock. No recovery reset.",
-  "pending_return": "COINCIDENCE-W2 complete received; no durable wave credit until persistence"
+  "pending_return": null,
+  "coincidence_w2_receipt": {
+    "generation": "AUTONOMOUS--continuation8-recovery-20261014T135743Z-a23632894cf5--g10--coincidence-w2-return.json",
+    "sha256": "d0f4a2e6f9277e3b3575a3f94a8fc615d2ffff2530f77d4cdbb1a63644a7273f",
+    "raw_readback_equal": true,
+    "return_sha256": "d5b6c8ec79fdc2f51bbf87689aa916823aa8440105d0f6c43327736de27d79f9",
+    "manifest_sha256": "43d921e8acb1d0148ef73d3f8c69aa4b559edb2a737560f2f8b35cf68ef836a4",
+    "verified_before_leakage_launch": true,
+    "verified_utc": "2026-10-14T14:16:24.836279Z"
+  },
+  "received_gate_returns": {
+    "leakage": {
+      "report": "AUDITS/COLLISION-LEAK-v1.md",
+      "report_sha256": "992649b9c5096330d8136db7eef5f47cf268a5909495fa9c04c68792db0ec2c4",
+      "manifest": "AUDITS/COLLISION-LEAK-v1-INPUTS.json",
+      "manifest_sha256": "810207c8de7a17b192f2d01f568bbc9fd3472095c9d5c47227f88ee071e0d7b3",
+      "verdict": "PASS",
+      "received_utc": "2026-10-14T14:20:01.954781Z"
+    }
+  }
 }
