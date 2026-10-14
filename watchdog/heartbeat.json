@@ -35,7 +35,16 @@
     "C3/COINCIDENCE": 1
   },
   "new_independent_wave_credit": 0,
-  "active_workers": [],
+  "active_workers": [
+    {
+      "assignment_id": "RELATIVE-HOSTILE-v1",
+      "agent": "/root/relative_hostile_v1",
+      "role": "fresh hostile auditor",
+      "status": "running",
+      "automatic_replacement_count": 0,
+      "checklist_revision": 5
+    }
+  ],
   "policy_sha": "4e513d633bd406adf6d034f67df3dbc06bb415d7",
   "ownership_protocol_sha": "0b30e411cb93251224e73361ed929d65c4eecb0b",
   "historical_missing_evidence": "Continuation5 original cubical comparison report and actual manifest bytes remain lost; recorded PASS/hashes preserved, not reconstructed.",
@@ -45,14 +54,14 @@
   "dropbox_final_status_verified": false,
   "watchdog_recovery_armed": true,
   "infrastructure_verification_level": "Conditional generation9 ownership verified; source hashes, initial generation and heartbeat raw byte-readbacks verified; start.signal readback verified; actual GitHub supervisor regression success and supervising step in_progress observed at 2026-10-14T12:50:24Z.",
-  "last_heartbeat_utc": "2026-10-14T13:00:54.402Z",
+  "last_heartbeat_utc": "2026-10-14T13:06:14.587Z",
   "latest_verified_dropbox_generation": "AUTONOMOUS--continuation8-autonomous-20261014T124515Z-0d47e7bba02b--g9--leakage-v1.json",
   "latest_verified_dropbox_generation_sha256": "01cff5725dd70f208d478fcaa7fa00d5f43acbbc3b0f629ece242c105f4c6af9",
   "latest_verified_dropbox_capsule": "AUTONOMOUS--continuation8-autonomous-20261014T124515Z-0d47e7bba02b--g9--candidate-v1--RESUME_CAPSULE.zip",
   "latest_verified_dropbox_capsule_sha256": "bb27c994540311ed95f576183bfc0160d2718cb5959a01bae69191947a776407",
   "capsule_scope": "Current continuation8 candidate and exact minimal inputs; source capsule pointer retains historical bytes",
-  "latest_verified_dropbox_heartbeat": "AUTONOMOUS--continuation8-autonomous-20261014T124515Z-0d47e7bba02b--g9--initial-heartbeat.json",
-  "latest_verified_dropbox_heartbeat_sha256": "3fbd5091a4cdecf67a25815f38473381e89d85dad66649a855a99603732659bf",
+  "latest_verified_dropbox_heartbeat": "AUTONOMOUS--continuation8-autonomous-20261014T124515Z-0d47e7bba02b--g9--heartbeat-1302.json",
+  "latest_verified_dropbox_heartbeat_sha256": "ab2e64874549aa40622fd2ff553d69b7cd837a0b72a829a566a9e06a2558d48d",
   "initial_external_state_verified": true,
   "supervisor_actions_run_id": 38566856114,
   "supervisor_actions_job_id": 115861627398,
