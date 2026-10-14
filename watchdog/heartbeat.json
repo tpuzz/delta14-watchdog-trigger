@@ -10,12 +10,25 @@
   "authorization_start_utc": "2026-10-14T19:27:19Z",
   "delivery_start_utc": "2026-10-14T23:17:19Z",
   "hard_deadline_utc": "2026-10-14T23:27:19Z",
-  "last_heartbeat_utc": "2026-10-14T21:30:12.793Z",
+  "last_heartbeat_utc": "2026-10-14T21:31:27.052Z",
   "research_started": true,
   "mathematical_work_authorized": true,
-  "active_workers": [],
-  "current_assignment": "Recovery bootstrap complete; reconcile interrupted FC comparison and REL leakage, then replacement1 only if needed",
-  "first_unfinished_action": "Materialize exact isolated FC-COMP-v1 and REL-LEAK-v1 packets from the verified generation; use fresh replacement1 for each unless a complete report+actual manifest is recoverable.",
+  "active_workers": [
+    {
+      "assignment_id": "FC-COMP-v1-replacement1",
+      "agent": "/root/fc_comp_replacement1",
+      "state": "running",
+      "replacement_number": 1
+    },
+    {
+      "assignment_id": "REL-LEAK-v1-replacement1",
+      "agent": "/root/rel_leak_replacement1",
+      "state": "running",
+      "replacement_number": 1
+    }
+  ],
+  "current_assignment": "Fresh isolated replacement1 roles running for interrupted FC comparison and REL leakage",
+  "first_unfinished_action": "Receive complete FC comparison and REL leakage reports plus actual manifests; externally persist and raw-byte verify each before credit.",
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
   "watchdog_recovery_armed": true,
@@ -26,9 +39,10 @@
   "recovery_bootstrap_raw_readback_equal": true,
   "source_generation": "AUTONOMOUS--continuation9-autonomous-20261014T193034Z-0599f2e47215--g12--fc-recon-v1.json",
   "source_generation_sha256": "7b6c2984ed7a67995b927b4765c0e301ef23ad8319ecf2f2e97fcfe2ee03b885",
-  "source_generation_embedded_files_verified": 235,
   "source_capsule": "AUTONOMOUS--continuation9-autonomous-20261014T193034Z-0599f2e47215--g12--j-promoted-v1--RESUME_CAPSULE.zip",
   "source_capsule_sha256": "960ef2bef554bbb086033181718f2379331fdb9419f30ca62e9ac68516b4a211",
+  "supervisor_actions_run_id": 38640786031,
+  "supervisor_verification_level": "Actual generation-13 GitHub Actions supervisor run observed pending after start.signal readback.",
   "promoted_results": {
     "exact-j-v1": {
       "label": "promoted",
@@ -71,21 +85,21 @@
         "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED",
         "hostile": "PASS_EXTERNALLY_BYTE_VERIFIED",
         "reconstruction": "COMPLETE_EXTERNALLY_BYTE_VERIFIED",
-        "comparison": "INTERRUPTED_NO_CREDIT"
+        "comparison": "REPLACEMENT1_RUNNING"
       },
       "proof_sha256": "5fa96128bc9a264d7aaa5e0190bd86226e1527d63f56188d600d7d7d36e819c1",
-      "comparison_replacement_count": 0
+      "comparison_replacement_count": 1
     },
     "relative-toric-boundary-v1": {
       "status": "candidate",
       "gates": {
-        "leakage": "INTERRUPTED_NO_CREDIT",
+        "leakage": "REPLACEMENT1_RUNNING",
         "hostile": "NOT_RUN",
         "reconstruction": "NOT_RUN",
         "comparison": "NOT_RUN"
       },
       "proof_sha256": "2293992a59b44a4fc5d0bfeeecb3508deb5e4eac5fe9272ff89f298cbc7083a7",
-      "leakage_replacement_count": 0
+      "leakage_replacement_count": 1
     }
   },
   "wave_counts": {
