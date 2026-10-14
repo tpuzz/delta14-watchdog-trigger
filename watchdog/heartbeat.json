@@ -10,8 +10,8 @@
   "delivery_reserve_minutes": 10,
   "status": "running",
   "global_campaign_status": "INCOMPLETE_ACTIVE",
-  "current_assignment": "Prepare exact J screen with fresh isolated own-route role",
-  "first_unfinished_action": "Start recorded active-math segment immediately before launching COINCIDENCE-W3",
+  "current_assignment": "COINCIDENCE-W3 exact J mechanism screen",
+  "first_unfinished_action": "Receive exact bounded screen return and manifest; no promotion before full cadence",
   "last_safe_frontier": "Exactly the six collision-boundary-v2 / claim-contract-v2 conclusions: actual coupled T42 is integral mixed Tate; all specified compact block quotients except the transitive discrete eight-label case are mixed Tate; all at-most-seven-block distinct opens and the complete proper collision filtration are mixed Tate; T42 boundary and E42 are mixed Tate; the actual localization triangle gives C3 mixed Tate iff E8 mixed Tate. Neither membership, Vdist, the relative L3 family, higher-width classifying stacks, BDelta14 nor its exact class is decided.",
   "research_started": true,
   "math_start_utc": "2026-10-14T12:50:50.046Z",
@@ -35,7 +35,15 @@
     "C3/COINCIDENCE": 2
   },
   "new_independent_wave_credit": 1,
-  "active_workers": [],
+  "active_workers": [
+    {
+      "agent": "/root/coincidence_w3",
+      "role": "own-route exact J mechanism screen",
+      "status": "active",
+      "deadline_utc": "2026-10-14T15:44:00Z",
+      "max_active_math_seconds": 1200
+    }
+  ],
   "policy_sha": "4e513d633bd406adf6d034f67df3dbc06bb415d7",
   "ownership_protocol_sha": "0b30e411cb93251224e73361ed929d65c4eecb0b",
   "historical_missing_evidence": "Continuation5 original cubical comparison report and actual manifest bytes remain lost; recorded PASS/hashes preserved, not reconstructed.",
@@ -45,13 +53,13 @@
   "dropbox_final_status_verified": false,
   "watchdog_recovery_armed": true,
   "infrastructure_verification_level": "Generation10 ownership, initial Dropbox generation/heartbeat and GitHub heartbeat/start.signal all read back; actual supervisor preflight success and supervising step in_progress observed.",
-  "last_heartbeat_utc": "2026-10-14T15:22:52.543736Z",
+  "last_heartbeat_utc": "2026-10-14T15:24:09.137716Z",
   "latest_verified_dropbox_generation": "AUTONOMOUS--continuation8-recovery-20261014T135743Z-a23632894cf5--g10--epoch3-selected.json",
   "latest_verified_dropbox_generation_sha256": "9e21723d35f7d58fc5b0304c73bda184797cd2a0389814ae373c38f023cdd1d7",
   "latest_verified_dropbox_capsule": "AUTONOMOUS--continuation8-recovery-20261014T135743Z-a23632894cf5--g10--epoch3-selected--RESUME_CAPSULE.zip",
   "latest_verified_dropbox_capsule_sha256": "5eaab67bd1543c932134e6b9c63f4cbc5e5c67e4810f9a82fb23237c603d0136",
   "capsule_scope": "Current continuation8 candidate and exact minimal inputs; source capsule pointer retains historical bytes",
-  "latest_verified_dropbox_heartbeat": "AUTONOMOUS--continuation8-recovery-20261014T135743Z-a23632894cf5--g10--heartbeat-epoch3-prepared.json",
+  "latest_verified_dropbox_heartbeat": "AUTONOMOUS--continuation8-recovery-20261014T135743Z-a23632894cf5--g10--heartbeat-epoch3-active.json",
   "initial_external_state_verified": true,
   "supervisor_actions_run_id": 38576500397,
   "supervisor_actions_job_id": 115894910387,
@@ -433,7 +441,7 @@
     }
   },
   "strategy_epoch3_active_math_elapsed_seconds": 0,
-  "strategy_epoch3_math_segment_start_utc": null,
+  "strategy_epoch3_math_segment_start_utc": "2026-10-14T15:23:32Z",
   "strategy_epoch3_mechanism_allowance_seconds": 1200,
   "strategy_epoch3_baseline": {
     "checklist_revision": 7,
@@ -503,5 +511,6 @@
     "new_wave_credit": 0,
     "prior_coincidence_leaf_waves": 2
   },
-  "latest_verified_dropbox_heartbeat_sha256": "d98ac616d76e0291077759838116cdc353bf0b631b4df4668dd931526d1af4e8"
+  "strategy_epoch3_parent_dispatch_utc": "2026-10-14T15:23:32Z",
+  "latest_verified_dropbox_heartbeat_sha256": "5cbd15545b31fa2d264ce21a0a53f98affe619da76ede9ba3f33d95989555144"
 }
