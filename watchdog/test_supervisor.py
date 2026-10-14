@@ -1,7 +1,7 @@
 import copy
 from datetime import datetime, timedelta, timezone
 import unittest
-from supervisor import CAMPAIGN, decide, emit_recovery, incident_identity
+from supervisor import CAMPAIGN, decide, emit_recovery, incident_identity, recovery_acknowledged
 
 NOW = datetime(2026, 10, 13, 20, 40, tzinfo=timezone.utc)
 def stamp(minutes):
@@ -84,6 +84,21 @@ class WatchdogRegressionTests(unittest.TestCase):
                 assert method=="GET" and endpoint.startswith("/pulls?")
                 return [{"html_url":"already-exists"}]
         self.assertEqual(emit_recovery(FakeAPI(),("sha",self.h,self.o),decide(self.h,self.o,NOW)),"done")
+
+    def test_recovery_ack_requires_new_live_generation(self):
+        old_h = copy.deepcopy(self.h)
+        old_h["authorization_id"] = "auth-A"
+        old_o = copy.deepcopy(self.o)
+        new_h = copy.deepcopy(old_h)
+        new_o = copy.deepcopy(old_o)
+        self.assertFalse(recovery_acknowledged(old_h, old_o, new_h, new_o, NOW))
+        new_o.update(owner_run_id="run-B", generation=2, status="active", lease_expires_utc=stamp(10))
+        new_h.update(run_id="run-B", lease_generation=2, status="running",
+                     authorization_id="auth-A", last_heartbeat_utc=stamp(0))
+        self.assertTrue(recovery_acknowledged(old_h, old_o, new_h, new_o, NOW))
+        new_h["authorization_id"] = "auth-B"
+        self.assertFalse(recovery_acknowledged(old_h, old_o, new_h, new_o, NOW))
+
     def test_original_incident_replay(self):
         self.h.update(status="interrupted", last_heartbeat_utc="2026-10-13T20:09:45.763Z",
                       hard_deadline_utc="2026-10-13T21:02:18Z", delivery_start_utc="2026-10-13T20:52:18Z",
