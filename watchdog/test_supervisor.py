@@ -62,6 +62,18 @@ class WatchdogRegressionTests(unittest.TestCase):
         self.h["status"]="cancelled"; self.check("stop")
     def test_owner_mismatch_waits(self):
         self.o["owner_run_id"]="run-B"; self.check("wait")
+
+    def test_orphaned_recovery_handover_recovers_after_lease_expiry(self):
+        self.o.update(owner_run_id="run-B", generation=2, status="active", lease_expires_utc=stamp(-1))
+        result = decide(self.h, self.o, NOW)
+        self.assertEqual(result.action, "trigger")
+        self.assertEqual(result.mode, "resume_within_original_scope")
+        self.assertIn("Orphaned recovery handover", result.reason)
+
+    def test_orphaned_recovery_handover_waits_for_lease_expiry(self):
+        self.o.update(owner_run_id="run-B", generation=2, status="active", lease_expires_utc=stamp(5))
+        self.check("wait")
+
     def test_generation_mismatch_waits(self):
         self.o["generation"]=2; self.check("wait")
     def test_missing_owner_waits(self):
