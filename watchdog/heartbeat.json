@@ -10,8 +10,8 @@
   "delivery_reserve_minutes": 10,
   "status": "running",
   "global_campaign_status": "INCOMPLETE_ACTIVE",
-  "current_assignment": "Fresh isolated hostile audit of collision-boundary-v2",
-  "first_unfinished_action": "Receive complete hostile report and actual manifest, externally persist and byte-verify before proof-blind reconstruction",
+  "current_assignment": "Persist COLLISION-HOSTILE-v2 report and actual manifest",
+  "first_unfinished_action": "Externally byte-verify this complete return before credit or next verification role.",
   "last_safe_frontier": "relative-brauer-v1 promoted: actual generic f*beta NONZERO; no same-conic rank-two bundle or GL2 lift on any nonempty open. No motive or exact-class decision. Inherited C3 iff V remains at exact scope.",
   "research_started": true,
   "math_start_utc": "2026-10-14T12:50:50.046Z",
@@ -35,15 +35,7 @@
     "C3/COINCIDENCE": 2
   },
   "new_independent_wave_credit": 1,
-  "active_workers": [
-    {
-      "agent": "/root/collision_hostile_v2",
-      "role": "hostile",
-      "candidate": "collision-boundary-v2",
-      "status": "active",
-      "deadline_utc": "2026-10-14T15:05:00Z"
-    }
-  ],
+  "active_workers": [],
   "policy_sha": "4e513d633bd406adf6d034f67df3dbc06bb415d7",
   "ownership_protocol_sha": "0b30e411cb93251224e73361ed929d65c4eecb0b",
   "historical_missing_evidence": "Continuation5 original cubical comparison report and actual manifest bytes remain lost; recorded PASS/hashes preserved, not reconstructed.",
@@ -53,13 +45,13 @@
   "dropbox_final_status_verified": false,
   "watchdog_recovery_armed": true,
   "infrastructure_verification_level": "Generation10 ownership, initial Dropbox generation/heartbeat and GitHub heartbeat/start.signal all read back; actual supervisor preflight success and supervising step in_progress observed.",
-  "last_heartbeat_utc": "2026-10-14T14:45:08.605987Z",
-  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation8-recovery-20261014T135743Z-a23632894cf5--g10--collision-leak-v2.json",
-  "latest_verified_dropbox_generation_sha256": "71ddae50e5a69c097e21ca5691ce782cdaa5fb49cfaa10268ae809b85b1974eb",
+  "last_heartbeat_utc": "2026-10-14T14:50:10.749193Z",
+  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation8-recovery-20261014T135743Z-a23632894cf5--g10--collision-hostile-v2.json",
+  "latest_verified_dropbox_generation_sha256": "56744fd025597f899fba2815b18ba4946060039980ff631085361431ba8fecc3",
   "latest_verified_dropbox_capsule": "AUTONOMOUS--continuation8-recovery-20261014T135743Z-a23632894cf5--g10--epoch2-reconciled--RESUME_CAPSULE.zip",
   "latest_verified_dropbox_capsule_sha256": "9ff9865e12f447d875f23441f857b40bd637e029393121c8d250156c09539ba5",
   "capsule_scope": "Current continuation8 candidate and exact minimal inputs; source capsule pointer retains historical bytes",
-  "latest_verified_dropbox_heartbeat": "AUTONOMOUS--continuation8-recovery-20261014T135743Z-a23632894cf5--g10--heartbeat-1445.json",
+  "latest_verified_dropbox_heartbeat": "AUTONOMOUS--continuation8-recovery-20261014T135743Z-a23632894cf5--g10--collision-hostile-v2-heartbeat.json",
   "initial_external_state_verified": true,
   "supervisor_actions_run_id": 38576500397,
   "supervisor_actions_job_id": 115894910387,
@@ -69,7 +61,7 @@
   "candidate_label": "candidate",
   "verification_gates": {
     "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED",
-    "hostile": "ACTIVE",
+    "hostile": "PASS_RECEIVED_NOT_YET_EXTERNALLY_BYTE_VERIFIED",
     "reconstruction": "NOT_RUN",
     "comparison": "NOT_RUN"
   },
@@ -210,7 +202,7 @@
       "size_bytes": 3078
     }
   },
-  "generation_utc": "2026-10-14T14:40:51.959247Z",
+  "generation_utc": "2026-10-14T14:50:10.749193Z",
   "completed_candidates": {
     "relative-brauer-v1": {
       "label": "promoted",
@@ -273,6 +265,14 @@
       "manifest_sha256": "5fb7fa130212766ea856c8ef645e4ca36e41f927c9ae8902cfe2e976f92d0b1f",
       "verdict": "PASS",
       "received_utc": "2026-10-14T14:40:51.487727Z"
+    },
+    "hostile": {
+      "report": "AUDITS/COLLISION-HOSTILE-v2.md",
+      "report_sha256": "844474f120a371ede446d09c3b0fd0fcc7ea4858b00a2127e6bae31dfa37ccfb",
+      "manifest": "AUDITS/COLLISION-HOSTILE-v2-INPUTS.json",
+      "manifest_sha256": "f9e1848ccc541c267b23bada68c24a952211344533adfd8c1cf23c8b15463a92",
+      "verdict": "PASS",
+      "received_utc": "2026-10-14T14:50:10.293935Z"
     }
   },
   "failed_candidate_versions": {
@@ -318,5 +318,5 @@
       }
     }
   },
-  "latest_verified_dropbox_heartbeat_sha256": "0de0989038048dc135710ce0cca9ed88174e2ab7691af013bfe28d49857dd4ee"
+  "latest_verified_dropbox_heartbeat_sha256": "21d170f2804046ba1604e8abc3de2b023ff18fec5e794ab502b33aa935e281b3"
 }
