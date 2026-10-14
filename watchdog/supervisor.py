@@ -17,6 +17,8 @@ from urllib.request import Request, urlopen
 CAMPAIGN = "delta14-mixed-tate-20261012T210157Z"
 STALE_SECONDS = 1200
 POLL_SECONDS = 60
+ACK_TIMEOUT_SECONDS = 360
+MAX_RECOVERY_ATTEMPTS = 3
 
 
 def timestamp(value):
@@ -141,17 +143,18 @@ def incident_identity(hb, owner):
 def emit_recovery(api, snapshot, decision):
     sha, hb, owner = snapshot
     incident = incident_identity(hb, owner)
-    branch = "watchdog-recovery-" + incident
+    branch = "watchdog-recovery-" + incident + "-a" + str(attempt)
     query = urlencode({"state": "all", "head": api.repo.split("/")[0] + ":" + branch, "per_page": 100})
     existing = api.request("GET", "/pulls?" + query)
     if existing:
         print("Recovery signal already exists: " + existing[0]["html_url"], flush=True)
         return "done"
-    marker_path = "watchdog/events/" + incident + ".json"
+    marker_path = "watchdog/events/" + incident + "-a" + str(attempt) + ".json"
     marker = {"campaign_id": CAMPAIGN, "run_id": hb["run_id"],
               "lease_generation": owner["generation"], "incident_id": incident,
               "recovery_mode": decision.mode, "reason": decision.reason,
-              "hard_deadline_utc": hb["hard_deadline_utc"], "snapshot_commit": sha}
+              "hard_deadline_utc": hb["hard_deadline_utc"], "snapshot_commit": sha,
+              "attempt": attempt}
     ref = api.request("GET", "/git/ref/heads/" + branch, missing_ok=True)
     if ref is None:
         commit = api.request("GET", "/git/commits/" + sha)
@@ -175,9 +178,9 @@ def emit_recovery(api, snapshot, decision):
         print("State advanced during preparation; no recovery PR opened", flush=True)
         return "changed"
     # Recompute mode: the delivery reserve/deadline may have arrived meanwhile.
-    title = "DELTA14_WORKFLOW_STALE " + current.mode + " " + hb["run_id"]
+    title = "DELTA14_WORKFLOW_STALE " + current.mode + " " + hb["run_id"] + " attempt-" + str(attempt)
     body = ("Recovery request only, not permission to skip checks.\n\n"
-            + "Incident: `" + incident + "`; generation: `" + str(owner["generation"]) + "`.\n"
+            + "Incident: `" + incident + "`; generation: `" + str(owner["generation"]) + "`; attempt: `" + str(attempt) + "`.\n"
             + "Requested mode: `" + current.mode + "`.\n"
             + "Preserve original hard deadline: `" + hb["hard_deadline_utc"] + "`.\n\n"
             + "Read live GitHub ownership/heartbeat and the newest coherent Dropbox frontier. "
@@ -200,6 +203,50 @@ def emit_recovery(api, snapshot, decision):
     return "done"
 
 
+
+def emit_infrastructure_failure(api, snapshot, attempts):
+    """Persist a visible alert if no recovery consumer acknowledges repeated wake-ups."""
+    sha, hb, owner = snapshot
+    incident = incident_identity(hb, owner)
+    branch = "watchdog-recovery-failure-" + incident
+    marker_path = "watchdog/events/" + incident + "-launch-failure.json"
+    marker = {"campaign_id": CAMPAIGN, "run_id": hb["run_id"],
+              "lease_generation": owner["generation"], "incident_id": incident,
+              "attempts": attempts, "reason": "Recovery wake-ups were not acknowledged",
+              "hard_deadline_utc": hb["hard_deadline_utc"], "snapshot_commit": sha}
+    query = urlencode({"state": "all", "head": api.repo.split("/")[0] + ":" + branch, "per_page": 100})
+    existing = api.request("GET", "/pulls?" + query)
+    if existing:
+        print("Infrastructure-failure signal already exists: " + existing[0]["html_url"], flush=True)
+        return
+    ref = api.request("GET", "/git/ref/heads/" + branch, missing_ok=True)
+    if ref is None:
+        commit = api.request("GET", "/git/commits/" + sha)
+        tree = api.request("POST", "/git/trees", {"base_tree": commit["tree"]["sha"], "tree": [
+            {"path": marker_path, "mode": "100644", "type": "blob", "content": json.dumps(marker, indent=2) + "\n"}]})
+        new_commit = api.request("POST", "/git/commits", {"message": "Record unacknowledged delta14 recovery " + incident,
+                                  "tree": tree["sha"], "parents": [sha]})
+        try:
+            api.request("POST", "/git/refs", {"ref": "refs/heads/" + branch, "sha": new_commit["sha"]})
+        except APIError as error:
+            if error.status != 422:
+                raise
+    title = "DELTA14_RECOVERY_INFRA_FAILURE " + hb["run_id"]
+    body = ("Automatic recovery was requested " + str(attempts) + " times but no coherent successor "
+            "owner/heartbeat generation acknowledged the incident. No mathematical authorization is added. "
+            "Inspect the ChatGPT recovery consumer and the hourly backup; preserve the original deadline and scope.")
+    try:
+        pr = api.request("POST", "/pulls", {"title": title, "body": body, "head": branch, "base": "main"})
+    except APIError as error:
+        if error.status != 422:
+            raise
+        found = api.request("GET", "/pulls?" + query)
+        if not found:
+            raise
+        pr = found[0]
+    print("Infrastructure-failure PR created/verified: " + pr["html_url"], flush=True)
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--once", action="store_true", help="Evaluate once without waiting")
@@ -208,18 +255,60 @@ def main():
     api = GitHubAPI(os.environ["GITHUB_REPOSITORY"], os.environ["GH_TOKEN"])
     failures, previous = 0, None
     stop_at = time.monotonic() + 235 * 60
+    pending = None
     while time.monotonic() < stop_at:
         try:
+            now = datetime.now(timezone.utc)
             snapshot = api.snapshot()
-            decision = decide(snapshot[1], snapshot[2], datetime.now(timezone.utc))
-            if decision != previous:
-                print(json.dumps(decision.__dict__), flush=True)
-                previous = decision
-            if args.dry_run or decision.action == "stop":
-                return
-            if decision.action == "trigger" and emit_recovery(api, snapshot, decision) == "done":
-                return
-            failures = 0
+
+            if pending is not None:
+                if recovery_acknowledged(pending["hb"], pending["owner"], snapshot[1], snapshot[2], now):
+                    print("Recovery acknowledged by coherent successor generation %s run %s" %
+                          (snapshot[2]["generation"], snapshot[2]["owner_run_id"]), flush=True)
+                    return
+                current_incident = incident_identity(snapshot[1], snapshot[2])
+                if current_incident != pending["incident"]:
+                    print("Incident state changed before acknowledgement; returning to supervision", flush=True)
+                    pending = None
+                    previous = None
+                    continue
+                if time.monotonic() >= pending["ack_deadline"]:
+                    decision = decide(snapshot[1], snapshot[2], now)
+                    if decision.action != "trigger":
+                        print("Recovery no longer actionable while awaiting acknowledgement: " + decision.reason, flush=True)
+                        pending = None
+                        previous = None
+                        continue
+                    if pending["attempt"] >= MAX_RECOVERY_ATTEMPTS:
+                        emit_infrastructure_failure(api, snapshot, pending["attempt"])
+                        return
+                    pending["attempt"] += 1
+                    result = emit_recovery(api, snapshot, decision, pending["attempt"])
+                    if result == "changed":
+                        pending = None
+                        previous = None
+                        continue
+                    pending["ack_deadline"] = time.monotonic() + ACK_TIMEOUT_SECONDS
+                    print("Awaiting recovery acknowledgement after attempt %d" % pending["attempt"], flush=True)
+                failures = 0
+            else:
+                decision = decide(snapshot[1], snapshot[2], now)
+                if decision != previous:
+                    print(json.dumps(decision.__dict__), flush=True)
+                    previous = decision
+                if args.dry_run or decision.action == "stop":
+                    return
+                if decision.action == "trigger":
+                    result = emit_recovery(api, snapshot, decision, 1)
+                    if result == "done":
+                        pending = {"incident": incident_identity(snapshot[1], snapshot[2]),
+                                   "hb": copy_dict(snapshot[1]), "owner": copy_dict(snapshot[2]),
+                                   "attempt": 1,
+                                   "ack_deadline": time.monotonic() + ACK_TIMEOUT_SECONDS}
+                        print("Recovery request emitted; waiting for coherent successor acknowledgement", flush=True)
+                    elif result == "changed":
+                        previous = None
+                failures = 0
         except (APIError, OSError, ValueError, KeyError) as error:
             failures += 1
             print("Supervisor check error (%d/3): %s" % (failures, error), file=sys.stderr, flush=True)
