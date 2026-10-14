@@ -12,18 +12,18 @@
   "authorization_launch_utc": "2026-10-14T07:55:47Z",
   "started_at_utc": "2026-10-14T07:55:47Z",
   "status": "interrupted",
-  "last_heartbeat_utc": "2026-10-14T08:08:54.423Z",
+  "last_heartbeat_utc": "2026-10-14T08:13:04.942Z",
   "current_assignment": "Coordinator cleanup only after exec-server transport disconnected",
   "last_safe_frontier": "Promoted c3-nonfree-locus-v1; V and global target unresolved",
   "first_unfinished_action": "Recover exact unfinished V/FRAME-DESCENT mechanism screen under same authorization and 08:15:47Z gate; first verify fresh run ownership, immutable source and actual supervisor. At/after gate without prior GO: infrastructure-blocked finalization only.",
   "watchdog_recovery_armed": false,
   "ownership_exclusion_available": true,
   "terminal_delivery_complete": false,
-  "dropbox_final_status_verified": false,
-  "latest_verified_dropbox_generation": "VGENERIC-initial--continuation7-vgeneric-20261014T075547Z-10836c31f125--g4.json",
-  "latest_verified_dropbox_generation_sha256": "2ae9a235384db294efe26891a0bc284041a885724db5fe60267593404924e99c",
-  "latest_verified_dropbox_capsule": "VGENERIC-initial--continuation7-vgeneric-20261014T075547Z-10836c31f125--g4--RESUME_CAPSULE.zip",
-  "latest_verified_dropbox_capsule_sha256": "3baa1df3923ee25808486472442cee8b43dff24aab6d7a84015f4dd827ddfca4",
+  "dropbox_final_status_verified": true,
+  "latest_verified_dropbox_generation": "VGENERIC-stopped-final--continuation7-vgeneric-20261014T075547Z-10836c31f125--g4.json",
+  "latest_verified_dropbox_generation_sha256": "4db7e6a92fd04e3c4673f56dd7316a6fe319313b67910dbbef550a8e6f7a57d0",
+  "latest_verified_dropbox_capsule": "VGENERIC-stopped-final--continuation7-vgeneric-20261014T075547Z-10836c31f125--g4--RESUME_CAPSULE.zip",
+  "latest_verified_dropbox_capsule_sha256": "a9cb3db66378d74dbfe594d3c32c06a3716fbacc18c457411695d4397cf7dd37",
   "source_predecessor_generation_sha256": "9e0311add95ae6698a276b7ec98fa690b9204a504f8df3afd34eedea804801f4",
   "comparison_artifact_bytes_recovered": false,
   "wave_counts": {
@@ -36,8 +36,24 @@
   "clock_reset": false,
   "recovery_directive": "Explicit infrastructure interruption, bounded task incomplete. After matching lease expiry a new run may recover only exact unfinished screen with SAME clock; if 08:15:47Z mechanism gate has elapsed without GO, reconciliation/persistence/delivery only. No new authorization or successor.",
   "infrastructure_verification_level": "Actual Actions supervising step observed in_progress with regression success before coordinator exec-server transport disconnected; fresh supervisor status pending",
-  "latest_verified_dropbox_heartbeat": "HEARTBEAT--continuation7-vgeneric-20261014T075547Z-10836c31f125--g4-initial.json",
+  "latest_verified_dropbox_heartbeat": "HEARTBEAT--continuation7-vgeneric-20261014T075547Z-10836c31f125--g4-interrupted.json",
   "stop_reason": "Coordinator runtime distress: exec_command failed: CreateProcess { message: Rejected(Failed to create unified exec process: exec-server transport disconnected) }",
   "supervisor_actions_run_id": 38532549914,
-  "supervisor_actions_job_id": 115747598443
+  "supervisor_actions_job_id": 115747598443,
+  "final_status_path": "/ChatGPT-Research-State/delta14-mixed-tate/FINAL_STATUS--continuation7-v-generic-descent-20261014-v2--continuation7-vgeneric-20261014T075547Z-10836c31f125--g4.md",
+  "final_status_sha256": "f12b729bba9e61037724d61e763bd314a611bd4cddc95efc867c4d2fdb04aa7b",
+  "current_execution_stop_report_verified": true,
+  "bounded_task_status": "INCOMPLETE_INFRASTRUCTURE_STOP",
+  "mechanism_gate_outcome": "NOT_REACHED_NO_VERDICT",
+  "candidate_label": "interrupted candidate-only notes",
+  "library_deliverables": [
+    {
+      "name": "delta14-VGENERIC-STATUS.md",
+      "library_file_id": "libfile_2a8cc868288081918730e2afb1bf39f7"
+    },
+    {
+      "name": "delta14-VGENERIC-RESUME.zip",
+      "library_file_id": "libfile_bbcab4d1fec48191881bdc67859ee2ec"
+    }
+  ]
 }
