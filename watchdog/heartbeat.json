@@ -35,7 +35,14 @@
   "new_independent_wave_credit": 0,
   "verification_credit": 0,
   "comparison_artifact_bytes_recovered": false,
-  "active_workers": [],
+  "active_workers": [
+    {
+      "assignment": "VFRAME-LEAK-v1",
+      "agent": "/root/vframe_leak_v1",
+      "state": "running",
+      "candidate": "vframe-brauer-v1"
+    }
+  ],
   "global_campaign_status": "INCOMPLETE",
   "bounded_task_status": "INCOMPLETE_RESUMING",
   "terminal_delivery_complete": false,
@@ -50,7 +57,7 @@
   "latest_verified_dropbox_capsule": "VGENERIC--continuation7-recovery-20261014T082546Z-3b5772664498--g6--candidate-ready--RESUME_CAPSULE.zip",
   "latest_verified_dropbox_capsule_sha256": "87ba1647c66a2714115935d7f3f5871f7d0efed610daf95748f6cfe603714589",
   "capsule_scope": "current coherent continuation7 verification frontier",
-  "last_heartbeat_utc": "2026-10-14T08:37:39.554Z",
+  "last_heartbeat_utc": "2026-10-14T08:40:23.469Z",
   "last_safe_frontier": "Promoted c3-nonfree-locus-v1; preserved interrupted screen candidate-only",
   "recovery_directive": "Resume exact unfinished V/FRAME-DESCENT under cumulative active clock; generation5 administrative closure superseded by user correction. Never reset total deadline.",
   "infrastructure_verification_level": "generation6 active lease and immutable Dropbox state verified; fresh supervisor regression success and supervising step in_progress",
