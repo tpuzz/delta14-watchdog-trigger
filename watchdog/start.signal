@@ -1,1 +1,7 @@
-continuation7-recovery-20261014T082546Z-3b5772664498 2026-10-14T08:27:44.409Z ownership-generation=6 authorization_id=continuation7-v-generic-descent-20261014-v2
+{
+  "campaign_id": "delta14-mixed-tate-20261012T210157Z",
+  "authorization_id": "continuation7-v-generic-descent-20261014-v2",
+  "run_id": "continuation7-recovery-20261014T091259Z-3b5772664498",
+  "generation": 7,
+  "started_utc": "2026-10-14T09:14:02.167Z"
+}
