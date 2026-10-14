@@ -11,7 +11,7 @@
   "status": "running",
   "global_campaign_status": "INCOMPLETE_ACTIVE",
   "current_assignment": "Freeze and verify relative-brauer-v1, then reassess globally under the same authorization.",
-  "first_unfinished_action": "Leakage gate for relative-brauer-v1 / claim-contract-v1 / reconstruction-brief-v1.",
+  "first_unfinished_action": "Fresh hostile audit of relative-brauer-v1 at checklist revision5.",
   "last_safe_frontier": "Promoted vframe-brauer-v1 / claim-contract-v1; C3 mixed Tate iff V mixed Tate at exact inherited scope; no new mathematical claim.",
   "research_started": true,
   "math_start_utc": "2026-10-14T12:50:50.046Z",
@@ -45,9 +45,9 @@
   "dropbox_final_status_verified": false,
   "watchdog_recovery_armed": true,
   "infrastructure_verification_level": "Conditional generation9 ownership verified; source hashes, initial generation and heartbeat raw byte-readbacks verified; start.signal readback verified; actual GitHub supervisor regression success and supervising step in_progress observed at 2026-10-14T12:50:24Z.",
-  "last_heartbeat_utc": "2026-10-14T12:57:34.186Z",
-  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation8-autonomous-20261014T124515Z-0d47e7bba02b--g9--candidate-v1.json",
-  "latest_verified_dropbox_generation_sha256": "aa79f57d58fc143cd9168355f56d2e21c47f6b9def691d6f03ddacfcc00ea9be",
+  "last_heartbeat_utc": "2026-10-14T13:00:54.402Z",
+  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation8-autonomous-20261014T124515Z-0d47e7bba02b--g9--leakage-v1.json",
+  "latest_verified_dropbox_generation_sha256": "01cff5725dd70f208d478fcaa7fa00d5f43acbbc3b0f629ece242c105f4c6af9",
   "latest_verified_dropbox_capsule": "AUTONOMOUS--continuation8-autonomous-20261014T124515Z-0d47e7bba02b--g9--candidate-v1--RESUME_CAPSULE.zip",
   "latest_verified_dropbox_capsule_sha256": "bb27c994540311ed95f576183bfc0160d2718cb5959a01bae69191947a776407",
   "capsule_scope": "Current continuation8 candidate and exact minimal inputs; source capsule pointer retains historical bytes",
@@ -59,5 +59,17 @@
   "math_segment_status": "closed_at_early_GO-CALCULATION",
   "mechanism_gate_outcome": "GO-CALCULATION",
   "candidate": "relative-brauer-v1",
-  "candidate_label": "candidate"
+  "candidate_label": "candidate",
+  "verification_gates": {
+    "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED"
+  },
+  "external_gate_receipts": {
+    "leakage": {
+      "generation": "AUTONOMOUS--continuation8-autonomous-20261014T124515Z-0d47e7bba02b--g9--leakage-v1.json",
+      "sha256": "01cff5725dd70f208d478fcaa7fa00d5f43acbbc3b0f629ece242c105f4c6af9",
+      "report_sha256": "01989d1525631971bedc428b2112ac6ec61dec35366fa9e26bdd4b5146f265bb",
+      "manifest_sha256": "d0122e0202ab8e778c18d34a922c8bcfa8dc5357dbfef1f36ff90eebc53b0a01",
+      "raw_readback_equal": true
+    }
+  }
 }
