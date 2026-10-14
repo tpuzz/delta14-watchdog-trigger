@@ -8,11 +8,11 @@
   "authorization_start_utc": "2026-10-14T19:27:19Z",
   "delivery_start_utc": "2026-10-14T23:17:19Z",
   "hard_deadline_utc": "2026-10-14T23:27:19Z",
-  "last_heartbeat_utc": "2026-10-14T20:53:44.806Z",
+  "last_heartbeat_utc": "2026-10-14T20:58:02.323Z",
   "research_started": true,
-  "active_math_elapsed_seconds": 1006.110084,
+  "active_math_elapsed_seconds": 1357.110084,
   "math_segment_start_utc": "2026-10-14T20:52:43.508700Z",
-  "current_assignment": "Genuine relative L3 toric-model screen; separate free-collision formal author",
+  "current_assignment": "Relative toric screen and free-collision candidate leakage audit",
   "active_workers": [
     {
       "assignment_id": "REL-TORIC-W1",
@@ -20,16 +20,16 @@
       "state": "running"
     },
     {
-      "assignment_id": "FC-AUTHOR-v1",
-      "agent": "/root/fc_author_v1",
+      "assignment_id": "FC-LEAK-v1",
+      "agent": "/root/fc_leak_v1",
       "state": "running"
     }
   ],
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
   "watchdog_recovery_armed": true,
-  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation9-autonomous-20261014T193034Z-0599f2e47215--g12--epoch3-selected.json",
-  "latest_verified_dropbox_generation_sha256": "c414028bb768f4cb7fb6668821cdc10485076a572faa32e0154445256a2ca94c",
+  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation9-autonomous-20261014T193034Z-0599f2e47215--g12--fc-candidate-v1.json",
+  "latest_verified_dropbox_generation_sha256": "13a530dfaf3d3d957d6d7f89a6047b3b8399a9865f08fcb6870b35883cb8de7b",
   "latest_verified_dropbox_capsule": "AUTONOMOUS--continuation9-autonomous-20261014T193034Z-0599f2e47215--g12--j-promoted-v1--RESUME_CAPSULE.zip",
   "latest_verified_dropbox_capsule_sha256": "960ef2bef554bbb086033181718f2379331fdb9419f30ca62e9ac68516b4a211",
   "capsule_scope": "Coherent generation12 with exact-j-v1 promotion, all four full audit reports and actual manifests; no nested archives",
@@ -73,7 +73,7 @@
       "scope": "[J/F] integral mixed Tate; actual J/E8/B localization; C3 iff E8 iff B iff V. No individual membership, V minus B, relative, higher-width, global or ring conclusion."
     }
   },
-  "pending_unverified_result": "REL-TORIC-W1 and FC-AUTHOR-v1 running; no new claim",
+  "pending_unverified_result": "free-collision-complement-v1 candidate; no verification gate yet",
   "wave_counts": {
     "MT-STRUCT": 2,
     "MT-OBSTRUCT": 2,
@@ -82,7 +82,7 @@
   "historical_missing_evidence": "Continuation5 original cubical comparison report and actual manifest bytes remain lost; recorded PASS/hashes preserved, not reconstructed.",
   "policy_sha": "ffb5dc24643d747482e2f1ab94040431b7e46361",
   "ownership_protocol_sha": "4bb548d2a8a8772dc2a1d0e3271c84825856d584",
-  "latest_verified_dropbox_heartbeat": "AUTONOMOUS--continuation9-autonomous-20261014T193034Z-0599f2e47215--g12--heartbeat-epoch3-selected.json",
+  "latest_verified_dropbox_heartbeat": "AUTONOMOUS--continuation9-autonomous-20261014T193034Z-0599f2e47215--g12--heartbeat-fc-leak-01.json",
   "math_start_utc": "2026-10-14T19:35:00.602655Z",
   "mathematical_work_authorized": true,
   "infrastructure_verification_level": "Actual supervisor run38624747502 job116061193283 running; regression preflight succeeded. End-to-end crash recovery not tested by this bootstrap.",
@@ -92,5 +92,8 @@
   "new_independent_wave_credit": 1,
   "execution_epoch": 3,
   "strategy_epoch": 2,
-  "mechanism_deadline_utc": "2026-10-14T21:09:43.508700Z"
+  "mechanism_deadline_utc": "2026-10-14T21:06:43.508700Z",
+  "current_mechanism_id": "REL-TORIC-W1",
+  "current_mechanism_coordinator_charge_seconds": 360,
+  "current_mechanism_worker_allowance_seconds": 840
 }
