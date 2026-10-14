@@ -114,3 +114,17 @@ If the available Dropbox action can create but cannot safely replace an existing
 Publish and verify the actual bytes of every new proof/audit/reconstruction/comparison return and its input manifest externally BEFORE launching the next verification gate. Distinguish a locally received PASS from an externally durable report. A lost report is not recreated by writing its hash into a status file. Preserve all inherited verdicts and provenance limitations without fabricating new evidence.
 
 This update changes persistence and recovery bookkeeping only. It does not claim a server-enforced Dropbox fence, remove the lease checks, extend any deadline, authorize a new research run, or certify a complete automatic crash-to-recovery test.
+
+
+## Fast bootstrap and mechanism-gate amendment
+
+For all new launches, and for continuation7 recovery under the explicit user amendment of 2026-10-14, apply `watchdog/STANDING_WORKFLOW_POLICY.md` as follows:
+
+- Keep the hard authorization deadline fixed from launch/intake.
+- Perform only the minimal mandatory infrastructure bootstrap before mathematics; defer large capsule regeneration and historical rereads.
+- Record `math_start_utc` immediately before the first substantive mathematical action. The nominal local mechanism gate is `math_start_utc + 20 minutes`, capped by the delivery-reserve start. Once `math_start_utc` exists it is immutable across recovery.
+- If an interrupted authorization has a verified pre-math state with `research_started=false`, no durable `math_start_utc`, and no persisted mathematical checkpoint/return, a recovered run may set `math_start_utc` when it first resumes substantive mathematics, while preserving the ORIGINAL hard deadline and reserve.
+- Recovery does not replay the full launch bootstrap. It verifies the current generation, authorization, source binding, unfinished assignment and clocks; conditionally claims the expired lease; publishes a minimal recovery state/heartbeat; re-arms and verifies the supervisor; and resumes the exact unfinished assignment.
+- Do not re-fetch/re-hash static inputs already verified in the current coherent generation unless a concrete integrity conflict requires it.
+
+These rules do not reset the total clock, completed verification gates, replacement counters or independence credit.
