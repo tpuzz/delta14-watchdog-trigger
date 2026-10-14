@@ -10,8 +10,8 @@
   "delivery_reserve_minutes": 10,
   "status": "running",
   "global_campaign_status": "INCOMPLETE_ACTIVE",
-  "current_assignment": "Persist COLLISION-LEAK-v2 report and actual manifest",
-  "first_unfinished_action": "Externally byte-verify this complete return before credit or next verification role.",
+  "current_assignment": "Fresh isolated hostile audit of collision-boundary-v2",
+  "first_unfinished_action": "Receive complete hostile report and actual manifest, externally persist and byte-verify before proof-blind reconstruction",
   "last_safe_frontier": "relative-brauer-v1 promoted: actual generic f*beta NONZERO; no same-conic rank-two bundle or GL2 lift on any nonempty open. No motive or exact-class decision. Inherited C3 iff V remains at exact scope.",
   "research_started": true,
   "math_start_utc": "2026-10-14T12:50:50.046Z",
@@ -35,7 +35,15 @@
     "C3/COINCIDENCE": 2
   },
   "new_independent_wave_credit": 1,
-  "active_workers": [],
+  "active_workers": [
+    {
+      "agent": "/root/collision_hostile_v2",
+      "role": "hostile",
+      "candidate": "collision-boundary-v2",
+      "status": "active",
+      "deadline_utc": "2026-10-14T15:05:00Z"
+    }
+  ],
   "policy_sha": "4e513d633bd406adf6d034f67df3dbc06bb415d7",
   "ownership_protocol_sha": "0b30e411cb93251224e73361ed929d65c4eecb0b",
   "historical_missing_evidence": "Continuation5 original cubical comparison report and actual manifest bytes remain lost; recorded PASS/hashes preserved, not reconstructed.",
@@ -45,13 +53,13 @@
   "dropbox_final_status_verified": false,
   "watchdog_recovery_armed": true,
   "infrastructure_verification_level": "Generation10 ownership, initial Dropbox generation/heartbeat and GitHub heartbeat/start.signal all read back; actual supervisor preflight success and supervising step in_progress observed.",
-  "last_heartbeat_utc": "2026-10-14T14:40:51.959247Z",
+  "last_heartbeat_utc": "2026-10-14T14:42:41.182126Z",
   "latest_verified_dropbox_generation": "AUTONOMOUS--continuation8-recovery-20261014T135743Z-a23632894cf5--g10--collision-leak-v2.json",
   "latest_verified_dropbox_generation_sha256": "71ddae50e5a69c097e21ca5691ce782cdaa5fb49cfaa10268ae809b85b1974eb",
   "latest_verified_dropbox_capsule": "AUTONOMOUS--continuation8-recovery-20261014T135743Z-a23632894cf5--g10--epoch2-reconciled--RESUME_CAPSULE.zip",
   "latest_verified_dropbox_capsule_sha256": "9ff9865e12f447d875f23441f857b40bd637e029393121c8d250156c09539ba5",
   "capsule_scope": "Current continuation8 candidate and exact minimal inputs; source capsule pointer retains historical bytes",
-  "latest_verified_dropbox_heartbeat": "AUTONOMOUS--continuation8-recovery-20261014T135743Z-a23632894cf5--g10--collision-leak-v2-heartbeat.json",
+  "latest_verified_dropbox_heartbeat": "AUTONOMOUS--continuation8-recovery-20261014T135743Z-a23632894cf5--g10--heartbeat-hostile-v2-active.json",
   "initial_external_state_verified": true,
   "supervisor_actions_run_id": 38576500397,
   "supervisor_actions_job_id": 115894910387,
@@ -60,12 +68,25 @@
   "candidate": "collision-boundary-v2",
   "candidate_label": "candidate",
   "verification_gates": {
-    "leakage": "PASS_RECEIVED_NOT_YET_EXTERNALLY_BYTE_VERIFIED",
-    "hostile": "NOT_RUN",
+    "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED",
+    "hostile": "ACTIVE",
     "reconstruction": "NOT_RUN",
     "comparison": "NOT_RUN"
   },
-  "external_gate_receipts": {},
+  "external_gate_receipts": {
+    "leakage": {
+      "report": "AUDITS/COLLISION-LEAK-v2.md",
+      "report_sha256": "e4f044fc30c6d8c43a4e5a5aabfa3966b5a31b0813e7bc654b2a145c049911c4",
+      "manifest": "AUDITS/COLLISION-LEAK-v2-INPUTS.json",
+      "manifest_sha256": "5fb7fa130212766ea856c8ef645e4ca36e41f927c9ae8902cfe2e976f92d0b1f",
+      "verdict": "PASS",
+      "received_utc": "2026-10-14T14:40:51.487727Z",
+      "generation": "AUTONOMOUS--continuation8-recovery-20261014T135743Z-a23632894cf5--g10--collision-leak-v2.json",
+      "sha256": "71ddae50e5a69c097e21ca5691ce782cdaa5fb49cfaa10268ae809b85b1974eb",
+      "raw_readback_equal": true,
+      "verified_utc": "2026-10-14T14:41:38.417293Z"
+    }
+  },
   "strategy_decision": "STRATEGY/STRATEGY_DECISION-epoch1.md",
   "minimal_next_read": [
     "STRATEGY/STRATEGY_DECISION-epoch1.md",
@@ -297,5 +318,5 @@
       }
     }
   },
-  "latest_verified_dropbox_heartbeat_sha256": "9411255bea27d6c81153965f5a2b68c54dc10145aa52e3d16005d37dd1bf44ea"
+  "latest_verified_dropbox_heartbeat_sha256": "ad60a89fbd5d103e495df7f68865a708e0268971a506c141d68b034131aa1436"
 }
