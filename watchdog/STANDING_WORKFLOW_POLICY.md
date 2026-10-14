@@ -30,14 +30,14 @@ Separate the total authorization clock from the local feasibility gate.
 - `authorization_start_utc`: actual launch/intake time.
 - `hard_deadline_utc`: authorization start + the user-authorized total duration. Immutable.
 - `delivery_start_utc`: unchanged reserve start before the hard deadline.
-- `math_start_utc`: first instant AFTER the mandatory bootstrap when the coordinator actually begins the first substantive mathematical assignment.
-- nominal `mechanism_gate_utc = math_start_utc + 20 minutes`, capped by `delivery_start_utc` if necessary.
+- `active_math_elapsed_seconds`: cumulative time during which the assigned mechanism screen is actually doing substantive mathematics.
+- `math_segment_start_utc`: start of the current active mathematical segment, if any.
 
-The total budget includes bootstrap and recovery. Only the local 20-minute mechanism gate is measured from mathematical start.
+The mechanism gate is reached when `active_math_elapsed_seconds >= 1200` (20 minutes), subject always to the unchanged delivery reserve and hard deadline. Technical bootstrap, coordinator transport outage, lease-expiry waiting, automatic recovery bootstrap, persistence-only reconciliation, and other infrastructure downtime do NOT consume the 20-minute mechanism allowance. They DO consume the fixed three-hour total authorization.
 
-Record `math_start_utc` immediately before the first substantive mathematical action and persist it in the next heartbeat/state update. Once recorded, recovery preserves it and NEVER resets the mechanism gate.
+Immediately before substantive mathematics, start a math segment. On checkpoint, interruption, deliberate gate decision, or switch to verification, close the segment and add its elapsed wall time to `active_math_elapsed_seconds`. Recovery continues the same accumulator; it never resets it. Persist the accumulator and segment provenance in state/heartbeat at the next safe write.
 
-Special amendment for the interrupted continuation7 V-generic-descent launch: its initial durable state recorded `research_started=false` and no durable `math_start_utc`. If recovery confirms that no substantive mathematical checkpoint/return was persisted before the transport failure, the recovered run may set `math_start_utc` at its first recovered substantive mathematical action and receive the full nominal 20-minute mechanism gate from there, subject to the ORIGINAL hard deadline and delivery reserve. This does not create a new authorization or extend the three-hour total window.
+Special continuation7 correction: the verified 08:03:28Z initial heartbeat still represented pre-math bootstrap, and mathematics stopped approximately 08:08:00Z. Charge a conservative 300 seconds of active mechanism work before the crash (which is at least as much as the observed maximum from those durable bounds), leaving 900 seconds of the 1200-second mechanism allowance. The generation-5 finalize-only decision based on the obsolete 08:15:47Z launch-derived gate is superseded administratively. If the original hard deadline and delivery reserve are still live, a checked recovery may resume only the exact unfinished V/FRAME-DESCENT screen with `active_math_elapsed_seconds=300`; this is not a new authorization or an extension of total time.
 
 ## Lightweight recovery bootstrap
 
