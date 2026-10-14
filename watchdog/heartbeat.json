@@ -8,23 +8,23 @@
   "authorization_start_utc": "2026-10-14T19:27:19Z",
   "delivery_start_utc": "2026-10-14T23:17:19Z",
   "hard_deadline_utc": "2026-10-14T23:27:19Z",
-  "last_heartbeat_utc": "2026-10-14T19:56:41.969Z",
+  "last_heartbeat_utc": "2026-10-14T20:06:39.754Z",
   "research_started": true,
   "active_math_elapsed_seconds": 826.110084,
   "math_segment_start_utc": null,
-  "current_assignment": "exact-j-v1 leakage check",
+  "current_assignment": "exact-j-v1 hostile audit",
   "active_workers": [
     {
-      "assignment_id": "J-LEAK-v1",
-      "agent": "/root/j_leak_v1",
+      "assignment_id": "J-HOSTILE-v1",
+      "agent": "/root/j_hostile_v1",
       "state": "running"
     }
   ],
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
   "watchdog_recovery_armed": true,
-  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation9-autonomous-20261014T193034Z-0599f2e47215--g12--exact-j-candidate-v1.json",
-  "latest_verified_dropbox_generation_sha256": "8196f57195a2e94f4bfb396f3d6211b1318bece981719d0e652450819fbcb0f4",
+  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation9-autonomous-20261014T193034Z-0599f2e47215--g12--j-leak-v1.json",
+  "latest_verified_dropbox_generation_sha256": "de6369e1c475f4a86a9c1d33182afae7c51d9225a22f4c26ae35822dddb28b5f",
   "latest_verified_dropbox_capsule": "AUTONOMOUS--continuation9-autonomous-20261014T193034Z-0599f2e47215--g12--exact-j-candidate-v1--RESUME_CAPSULE.zip",
   "latest_verified_dropbox_capsule_sha256": "8d92fb568685d9a9c503db397126d53a04c33bb421fb48bea6a723c5565a047b",
   "capsule_scope": "Current generation12 complete fresh J return, manifest, candidate and exact inherited premises; no nested old archives",
@@ -56,7 +56,7 @@
       "scope": "Coupled T42 is integral mixed Tate; specified compact block quotients except the transitive discrete eight-label case are mixed Tate; all at-most-seven-block distinct opens and proper collision filtration are mixed Tate; T42 boundary and E42 are mixed Tate; localization gives C3 mixed Tate iff E8 mixed Tate. Neither is decided."
     }
   },
-  "pending_unverified_result": "exact-j-v1 candidate; all verification gates pending",
+  "pending_unverified_result": "exact-j-v1 candidate; leakage PASS externally byte-verified; hostile running; reconstruction and comparison not run",
   "wave_counts": {
     "MT-STRUCT": 2,
     "MT-OBSTRUCT": 2,
@@ -65,7 +65,7 @@
   "historical_missing_evidence": "Continuation5 original cubical comparison report and actual manifest bytes remain lost; recorded PASS/hashes preserved, not reconstructed.",
   "policy_sha": "ffb5dc24643d747482e2f1ab94040431b7e46361",
   "ownership_protocol_sha": "4bb548d2a8a8772dc2a1d0e3271c84825856d584",
-  "latest_verified_dropbox_heartbeat": "AUTONOMOUS--continuation9-autonomous-20261014T193034Z-0599f2e47215--g12--heartbeat-j-leak-start.json",
+  "latest_verified_dropbox_heartbeat": "AUTONOMOUS--continuation9-autonomous-20261014T193034Z-0599f2e47215--g12--heartbeat-j-hostile-start.json",
   "math_start_utc": "2026-10-14T19:35:00.602655Z",
   "mathematical_work_authorized": true,
   "infrastructure_verification_level": "Actual supervisor run38624747502 job116061193283 running; regression preflight succeeded. End-to-end crash recovery not tested by this bootstrap.",
