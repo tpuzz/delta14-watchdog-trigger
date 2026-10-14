@@ -1,1 +1,8 @@
-inactive
+{
+  "campaign_id": "delta14-mixed-tate-20261012T210157Z",
+  "authorization_id": "continuation6-c3-transitive-20261013-v2",
+  "run_id": "continuation6-c3-20261013T230954Z-6bf5b0d61b3d",
+  "lease_generation": 3,
+  "status": "completed",
+  "terminal_utc": "2026-10-14T00:11:41.436Z"
+}
