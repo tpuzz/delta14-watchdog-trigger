@@ -20,8 +20,8 @@
   "mechanism_gate_total_seconds": 1200,
   "mechanism_gate_clock": "cumulative_active_mathematical_time",
   "strategy_epoch": 2,
-  "execution_epoch": 2,
-  "execution_epoch_start_utc": "2026-10-14T13:58:19.397142Z",
+  "execution_epoch": 3,
+  "execution_epoch_start_utc": "2026-10-14T14:39:04.251333Z",
   "source_capsule_path": "/ChatGPT-Research-State/delta14-mixed-tate/VGENERIC--continuation7-recovery-20261014T092953Z-633119efb02d--g8--terminal--RESUME_CAPSULE.zip",
   "source_capsule_sha256": "1845cfeada6d449ec2ed41c5bc31e43ea8f0a74aee843f2578598de8719e249a",
   "source_generation_path": "/ChatGPT-Research-State/delta14-mixed-tate/VGENERIC--continuation7-recovery-20261014T092953Z-633119efb02d--g8--terminal.json",
@@ -53,13 +53,13 @@
   "dropbox_final_status_verified": false,
   "watchdog_recovery_armed": true,
   "infrastructure_verification_level": "Generation10 ownership, initial Dropbox generation/heartbeat and GitHub heartbeat/start.signal all read back; actual supervisor preflight success and supervising step in_progress observed.",
-  "last_heartbeat_utc": "2026-10-14T14:35:44.277415Z",
-  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation8-recovery-20261014T135743Z-a23632894cf5--g10--collision-v2-frozen.json",
-  "latest_verified_dropbox_generation_sha256": "42499d4c2e8aced9e1ac9f032f3ed23f1fe7ba74d82462b1beb740d1454101ee",
-  "latest_verified_dropbox_capsule": "AUTONOMOUS--continuation8-recovery-20261014T135743Z-a23632894cf5--g10--collision-hostile-v1--RESUME_CAPSULE.zip",
-  "latest_verified_dropbox_capsule_sha256": "5586dd924e5f7e57c059a5a37af96640c54137a92eddf4dda0b88c42b5145354",
+  "last_heartbeat_utc": "2026-10-14T14:39:04.702830Z",
+  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation8-recovery-20261014T135743Z-a23632894cf5--g10--epoch2-reconciled.json",
+  "latest_verified_dropbox_generation_sha256": "9cbb108ede2d1a656f643b2e0a33eeb169c88a7ab926c269129868633bb65b77",
+  "latest_verified_dropbox_capsule": "AUTONOMOUS--continuation8-recovery-20261014T135743Z-a23632894cf5--g10--epoch2-reconciled--RESUME_CAPSULE.zip",
+  "latest_verified_dropbox_capsule_sha256": "9ff9865e12f447d875f23441f857b40bd637e029393121c8d250156c09539ba5",
   "capsule_scope": "Current continuation8 candidate and exact minimal inputs; source capsule pointer retains historical bytes",
-  "latest_verified_dropbox_heartbeat": "AUTONOMOUS--continuation8-recovery-20261014T135743Z-a23632894cf5--g10--heartbeat-1435.json",
+  "latest_verified_dropbox_heartbeat": "AUTONOMOUS--continuation8-recovery-20261014T135743Z-a23632894cf5--g10--epoch2-reconciled-heartbeat.json",
   "initial_external_state_verified": true,
   "supervisor_actions_run_id": 38576500397,
   "supervisor_actions_job_id": 115894910387,
@@ -82,7 +82,7 @@
     "PROMOTIONS/cubical8-proper-boundary-v1.md",
     "PROMOTIONS/vframe-brauer-v1.md"
   ],
-  "execution_epoch_health": "Fresh runtime pwd and materialization succeeded; all35 current generation file hashes verified; no active predecessor workers.",
+  "execution_epoch_health": "Healthy control boundary; exact evidence in OPERATIONS/EXECUTION_EPOCH2_RECONCILIATION.json. Continue current isolated verification within unchanged authorization.",
   "snapshot_paths": [
     "PROMOTIONS/PAULI-v1.md",
     "PROMOTIONS/WIDTH3-v1.md",
@@ -197,7 +197,7 @@
       "size_bytes": 3078
     }
   },
-  "generation_utc": "2026-10-14T14:33:44.075104Z",
+  "generation_utc": "2026-10-14T14:39:04.702830Z",
   "completed_candidates": {
     "relative-brauer-v1": {
       "label": "promoted",
@@ -296,5 +296,5 @@
       }
     }
   },
-  "latest_verified_dropbox_heartbeat_sha256": "b892075aacf46ceaa9f9aacd4c2c1c5b035e47c0cbea9b7b94c0e5c7e5916ed9"
+  "latest_verified_dropbox_heartbeat_sha256": "e7ebdce100caca8d56a3dde36e48a6d6c6a9b26bef2ea51c137da15d86440061"
 }
