@@ -53,13 +53,13 @@
   "dropbox_final_status_verified": false,
   "watchdog_recovery_armed": true,
   "infrastructure_verification_level": "Generation10 ownership, initial Dropbox generation/heartbeat and GitHub heartbeat/start.signal all read back; actual supervisor preflight success and supervising step in_progress observed.",
-  "last_heartbeat_utc": "2026-10-14T14:42:41.182126Z",
+  "last_heartbeat_utc": "2026-10-14T14:45:08.605987Z",
   "latest_verified_dropbox_generation": "AUTONOMOUS--continuation8-recovery-20261014T135743Z-a23632894cf5--g10--collision-leak-v2.json",
   "latest_verified_dropbox_generation_sha256": "71ddae50e5a69c097e21ca5691ce782cdaa5fb49cfaa10268ae809b85b1974eb",
   "latest_verified_dropbox_capsule": "AUTONOMOUS--continuation8-recovery-20261014T135743Z-a23632894cf5--g10--epoch2-reconciled--RESUME_CAPSULE.zip",
   "latest_verified_dropbox_capsule_sha256": "9ff9865e12f447d875f23441f857b40bd637e029393121c8d250156c09539ba5",
   "capsule_scope": "Current continuation8 candidate and exact minimal inputs; source capsule pointer retains historical bytes",
-  "latest_verified_dropbox_heartbeat": "AUTONOMOUS--continuation8-recovery-20261014T135743Z-a23632894cf5--g10--heartbeat-hostile-v2-active.json",
+  "latest_verified_dropbox_heartbeat": "AUTONOMOUS--continuation8-recovery-20261014T135743Z-a23632894cf5--g10--heartbeat-1445.json",
   "initial_external_state_verified": true,
   "supervisor_actions_run_id": 38576500397,
   "supervisor_actions_job_id": 115894910387,
@@ -318,5 +318,5 @@
       }
     }
   },
-  "latest_verified_dropbox_heartbeat_sha256": "ad60a89fbd5d103e495df7f68865a708e0268971a506c141d68b034131aa1436"
+  "latest_verified_dropbox_heartbeat_sha256": "0de0989038048dc135710ce0cca9ed88174e2ab7691af013bfe28d49857dd4ee"
 }
