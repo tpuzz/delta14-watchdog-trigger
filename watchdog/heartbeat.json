@@ -11,7 +11,7 @@
   "status": "running",
   "global_campaign_status": "INCOMPLETE_ACTIVE",
   "current_assignment": "Freeze and verify relative-brauer-v1, then reassess globally under the same authorization.",
-  "first_unfinished_action": "Fresh hostile audit of relative-brauer-v1 at checklist revision5.",
+  "first_unfinished_action": "Fresh proof-blind reconstruction of relative-brauer-v1 contracted outputs.",
   "last_safe_frontier": "Promoted vframe-brauer-v1 / claim-contract-v1; C3 mixed Tate iff V mixed Tate at exact inherited scope; no new mathematical claim.",
   "research_started": true,
   "math_start_utc": "2026-10-14T12:50:50.046Z",
@@ -35,16 +35,7 @@
     "C3/COINCIDENCE": 1
   },
   "new_independent_wave_credit": 0,
-  "active_workers": [
-    {
-      "assignment_id": "RELATIVE-HOSTILE-v1",
-      "agent": "/root/relative_hostile_v1",
-      "role": "fresh hostile auditor",
-      "status": "running",
-      "automatic_replacement_count": 0,
-      "checklist_revision": 5
-    }
-  ],
+  "active_workers": [],
   "policy_sha": "4e513d633bd406adf6d034f67df3dbc06bb415d7",
   "ownership_protocol_sha": "0b30e411cb93251224e73361ed929d65c4eecb0b",
   "historical_missing_evidence": "Continuation5 original cubical comparison report and actual manifest bytes remain lost; recorded PASS/hashes preserved, not reconstructed.",
@@ -54,9 +45,9 @@
   "dropbox_final_status_verified": false,
   "watchdog_recovery_armed": true,
   "infrastructure_verification_level": "Conditional generation9 ownership verified; source hashes, initial generation and heartbeat raw byte-readbacks verified; start.signal readback verified; actual GitHub supervisor regression success and supervising step in_progress observed at 2026-10-14T12:50:24Z.",
-  "last_heartbeat_utc": "2026-10-14T13:06:14.587Z",
-  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation8-autonomous-20261014T124515Z-0d47e7bba02b--g9--leakage-v1.json",
-  "latest_verified_dropbox_generation_sha256": "01cff5725dd70f208d478fcaa7fa00d5f43acbbc3b0f629ece242c105f4c6af9",
+  "last_heartbeat_utc": "2026-10-14T13:11:14.659Z",
+  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation8-autonomous-20261014T124515Z-0d47e7bba02b--g9--hostile-v1.json",
+  "latest_verified_dropbox_generation_sha256": "aa93c87aabf9392d70e0d58e6812bb5a1a02606f6cfc407e43898650627d2b02",
   "latest_verified_dropbox_capsule": "AUTONOMOUS--continuation8-autonomous-20261014T124515Z-0d47e7bba02b--g9--candidate-v1--RESUME_CAPSULE.zip",
   "latest_verified_dropbox_capsule_sha256": "bb27c994540311ed95f576183bfc0160d2718cb5959a01bae69191947a776407",
   "capsule_scope": "Current continuation8 candidate and exact minimal inputs; source capsule pointer retains historical bytes",
@@ -70,7 +61,8 @@
   "candidate": "relative-brauer-v1",
   "candidate_label": "candidate",
   "verification_gates": {
-    "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED"
+    "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED",
+    "hostile": "PASS_EXTERNALLY_BYTE_VERIFIED"
   },
   "external_gate_receipts": {
     "leakage": {
@@ -78,6 +70,13 @@
       "sha256": "01cff5725dd70f208d478fcaa7fa00d5f43acbbc3b0f629ece242c105f4c6af9",
       "report_sha256": "01989d1525631971bedc428b2112ac6ec61dec35366fa9e26bdd4b5146f265bb",
       "manifest_sha256": "d0122e0202ab8e778c18d34a922c8bcfa8dc5357dbfef1f36ff90eebc53b0a01",
+      "raw_readback_equal": true
+    },
+    "hostile": {
+      "generation": "AUTONOMOUS--continuation8-autonomous-20261014T124515Z-0d47e7bba02b--g9--hostile-v1.json",
+      "sha256": "aa93c87aabf9392d70e0d58e6812bb5a1a02606f6cfc407e43898650627d2b02",
+      "report_sha256": "9a44ace65fbc1ce105f5357a4c66898b83af890eb85e09de44544d789db8c266",
+      "manifest_sha256": "59c6652e38f99625689f9b5940d1467975ac6ea3785bd31710935f43c04be12d",
       "raw_readback_equal": true
     }
   }
