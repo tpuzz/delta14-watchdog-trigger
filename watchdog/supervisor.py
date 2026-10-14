@@ -61,11 +61,10 @@ def decide(hb, owner, now):
     run_id = hb.get("run_id")
     if not isinstance(run_id, str) or not run_id or run_id == "inactive":
         return Decision("wait", "Missing run identity")
-    if owner.get("campaign_id") != CAMPAIGN or owner.get("owner_run_id") != run_id:
-        return Decision("wait", "Owner/heartbeat mismatch; possibly handover in progress")
     generation = owner.get("generation")
-    if type(generation) is not int or generation < 1 or hb.get("lease_generation") != generation:
-        return Decision("wait", "Missing or mismatched ownership generation")
+    hb_generation = hb.get("lease_generation")
+    if type(generation) is not int or generation < 1 or type(hb_generation) is not int or hb_generation < 1:
+        return Decision("wait", "Missing ownership generation")
     if owner.get("status") not in ("active", "inactive"):
         return Decision("wait", "Unknown lease status")
     try:
@@ -75,6 +74,28 @@ def decide(hb, owner, now):
         reserve = timestamp(hb["delivery_start_utc"]) if hb.get("delivery_start_utc") else deadline - timedelta(minutes=10)
     except (TypeError, ValueError, OverflowError):
         return Decision("wait", "Invalid or missing clock/lease; never invent authorization")
+    owner_matches = (owner.get("campaign_id") == CAMPAIGN and owner.get("owner_run_id") == run_id
+                     and generation == hb_generation)
+    if not owner_matches:
+        orphaned_handover = (
+            owner.get("campaign_id") == CAMPAIGN
+            and owner.get("status") == "active"
+            and generation == hb_generation + 1
+            and owner.get("owner_run_id") not in (None, "", run_id)
+            and now >= lease_end
+            and (now - last).total_seconds() >= STALE_SECONDS
+        )
+        if not orphaned_handover:
+            return Decision("wait", "Owner/heartbeat mismatch; possibly handover in progress")
+        text = " ".join(str(hb.get(k, "")) for k in
+                        ("recovery_directive", "current_assignment", "recovery_classification")).lower()
+        final_only = (now >= reserve or hb.get("recovery_mode") == "finalize_only"
+                      or "do not resume substantive mathematics" in text
+                      or "no new mathematics" in text
+                      or "complete-but-undelivered" in text
+                      or "terminal persistence" in text)
+        mode = "finalize_only" if final_only else "resume_within_original_scope"
+        return Decision("trigger", "Orphaned recovery handover; successor lease expired before heartbeat", mode)
     if reserve > deadline or last > now + timedelta(seconds=120):
         return Decision("wait", "Inconsistent clock")
     if now < lease_end:
