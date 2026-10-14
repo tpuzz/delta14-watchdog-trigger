@@ -8,18 +8,18 @@
   "hard_deadline_utc": "2026-10-14T16:45:15Z",
   "delivery_start_utc": "2026-10-14T16:35:15Z",
   "delivery_reserve_minutes": 10,
-  "status": "running",
-  "global_campaign_status": "INCOMPLETE_ACTIVE",
-  "current_assignment": "Freeze and verify relative-brauer-v1, then reassess globally under the same authorization.",
-  "first_unfinished_action": "Complete fresh comparison; externally persist exact return; then promotion and global strategy decision.",
-  "last_safe_frontier": "Promoted vframe-brauer-v1 / claim-contract-v1; C3 mixed Tate iff V mixed Tate at exact inherited scope; no new mathematical claim.",
+  "status": "interrupted",
+  "global_campaign_status": "INCOMPLETE_INFRASTRUCTURE_INTERRUPTION",
+  "current_assignment": "Infrastructure stop; awaiting independently checked recovery of the same authorization.",
+  "first_unfinished_action": "In a fresh environment, verify current owner/heartbeat and unchanged clocks; after matching lease expiry conditionally claim a new generation. Materialize the exact verified epoch1-promoted JSON (all35 files embedded), confirm capsule hash if using it, reconcile promotion/strategy decision, then complete the COINCIDENCE-W2 packet and launch the selected T_42 search. No completed verification gate may be repeated.",
+  "last_safe_frontier": "relative-brauer-v1 promoted: actual generic f*beta NONZERO; no same-conic rank-two bundle or GL2 lift on any nonempty open. No motive or exact-class decision. Inherited C3 iff V remains at exact scope.",
   "research_started": true,
   "math_start_utc": "2026-10-14T12:50:50.046Z",
   "math_segment_start_utc": null,
   "active_math_elapsed_seconds": 290.915,
   "mechanism_gate_total_seconds": 1200,
   "mechanism_gate_clock": "cumulative_active_mathematical_time",
-  "strategy_epoch": 1,
+  "strategy_epoch": 2,
   "execution_epoch": 1,
   "execution_epoch_start_utc": "2026-10-14T12:45:15Z",
   "source_capsule_path": "/ChatGPT-Research-State/delta14-mixed-tate/VGENERIC--continuation7-recovery-20261014T092953Z-633119efb02d--g8--terminal--RESUME_CAPSULE.zip",
@@ -35,27 +35,19 @@
     "C3/COINCIDENCE": 1
   },
   "new_independent_wave_credit": 0,
-  "active_workers": [
-    {
-      "assignment_id": "RELATIVE-COMP-v1",
-      "agent": "/root/relative_comp_v1",
-      "role": "fresh comparison",
-      "status": "running",
-      "automatic_replacement_count": 0
-    }
-  ],
+  "active_workers": [],
   "policy_sha": "4e513d633bd406adf6d034f67df3dbc06bb415d7",
   "ownership_protocol_sha": "0b30e411cb93251224e73361ed929d65c4eecb0b",
   "historical_missing_evidence": "Continuation5 original cubical comparison report and actual manifest bytes remain lost; recorded PASS/hashes preserved, not reconstructed.",
   "authorization_prompt_truncation": "Uploaded prompt ends literally 'However, every'; fixed target, successor authorization, scope safeguards and four-hour clock are explicit in received text. No omitted content reconstructed.",
-  "recovery_directive": "Continue this same authorization after independently verified interruption and conditional lease claim, using the same hard deadline; at reserve finalize only. No duplicate monitoring systems.",
+  "recovery_directive": "Explicit infrastructure interruption with incomplete delivery. The same four-hour authorization remains live until16:45:15Z with16:35:15Z reserve; recover automatically through the existing mechanism after independent incident/lease checks. Do not start a new clock or ask for new permission. At/after reserve, finalize only.",
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
   "watchdog_recovery_armed": true,
   "infrastructure_verification_level": "Conditional generation9 ownership verified; source hashes, initial generation and heartbeat raw byte-readbacks verified; start.signal readback verified; actual GitHub supervisor regression success and supervising step in_progress observed at 2026-10-14T12:50:24Z.",
-  "last_heartbeat_utc": "2026-10-14T13:33:15.185Z",
-  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation8-autonomous-20261014T124515Z-0d47e7bba02b--g9--reconstruction-v1.json",
-  "latest_verified_dropbox_generation_sha256": "4a8a48a0a70527e2d6ba8a76c227490443e00a58d48405910e142426662bfca8",
+  "last_heartbeat_utc": "2026-10-14T13:51:52.992Z",
+  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation8-autonomous-20261014T124515Z-0d47e7bba02b--g9--epoch1-promoted.json",
+  "latest_verified_dropbox_generation_sha256": "18cde834bfa3ef15e5a6c0b7ffb3f2349872250dff0288f637cbe59167928b65",
   "latest_verified_dropbox_capsule": "AUTONOMOUS--continuation8-autonomous-20261014T124515Z-0d47e7bba02b--g9--candidate-v1--RESUME_CAPSULE.zip",
   "latest_verified_dropbox_capsule_sha256": "bb27c994540311ed95f576183bfc0160d2718cb5959a01bae69191947a776407",
   "capsule_scope": "Current continuation8 candidate and exact minimal inputs; source capsule pointer retains historical bytes",
@@ -67,11 +59,12 @@
   "math_segment_status": "closed_at_early_GO-CALCULATION",
   "mechanism_gate_outcome": "GO-CALCULATION",
   "candidate": "relative-brauer-v1",
-  "candidate_label": "candidate",
+  "candidate_label": "promoted",
   "verification_gates": {
     "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED",
     "hostile": "PASS_EXTERNALLY_BYTE_VERIFIED",
-    "reconstruction": "COMPLETE_EXTERNALLY_BYTE_VERIFIED"
+    "reconstruction": "COMPLETE_EXTERNALLY_BYTE_VERIFIED",
+    "comparison": "PASS_EXTERNALLY_BYTE_VERIFIED"
   },
   "external_gate_receipts": {
     "leakage": {
@@ -94,6 +87,75 @@
       "report_sha256": "f8dd3256fbdae1c3ef56d272c1a681dcd907e8bfa8ff05620ab43732f12f2331",
       "manifest_sha256": "e137d7255aff09db5e3e0bd4e22d81c874303033d4109c6d8f7c4ac7c9164d33",
       "raw_readback_equal": true
+    },
+    "comparison": {
+      "generation": "AUTONOMOUS--continuation8-autonomous-20261014T124515Z-0d47e7bba02b--g9--comparison-v1.json",
+      "sha256": "4679b16d2a7d14e6cf06fc35f723fbed7512a467d5bc430a51bc5ccff4823110",
+      "report_sha256": "43bd2eb65d85fd9b8160b43a2df5108cda56c91a2718cdedf0397c9728b71b53",
+      "manifest_sha256": "5529eb9149e36d24d19d1519f647bcb1d6553c5f089d9cb66e199052e9791471",
+      "raw_readback_equal": true
     }
+  },
+  "strategy_decision": "STRATEGY/STRATEGY_DECISION-epoch1.md",
+  "minimal_next_read": [
+    "STRATEGY/STRATEGY_DECISION-epoch1.md",
+    "ROUTES/MT-STRUCT/C3/C3-ALTERNATIVE-1/RETURN.md",
+    "PROMOTIONS/WIDTH3-v1.md",
+    "PROMOTIONS/cubical8-proper-boundary-v1.md",
+    "PROMOTIONS/vframe-brauer-v1.md"
+  ],
+  "execution_epoch_health": "FAILED: checkpoint files written and uploaded at13:42Z, then apply_patch stalled; single core process probe returned environment_offline. No execution epoch2 launched.",
+  "snapshot_paths": [
+    "PROMOTIONS/PAULI-v1.md",
+    "PROMOTIONS/WIDTH3-v1.md",
+    "PROMOTIONS/cubical8-proper-boundary-v1.md",
+    "PROMOTIONS/c3-nonfree-locus-v1.md",
+    "PROMOTIONS/vframe-brauer-v1.md",
+    "PROMOTIONS/relative-brauer-v1.md",
+    "PROMOTIONS/relative-brauer-v1-PROMOTION_RECORD.json",
+    "STRATEGY/STRATEGY_DECISION-epoch1.md",
+    "ROUTES/MT-STRUCT/C3/C3-ALTERNATIVE-1/RETURN.md",
+    "ROUTES/MT-STRUCT/C3/C3-ALTERNATIVE-1/INPUT_MANIFEST.json",
+    "OPERATIONS/C3_ALT_LAZY_LOAD_RECEIPT.json",
+    "CANDIDATES/relative-brauer-v1/CLAIM_CONTRACT.md",
+    "CANDIDATES/relative-brauer-v1/PROOF.md",
+    "CANDIDATES/relative-brauer-v1/RECONSTRUCTION_BRIEF.md",
+    "CANDIDATES/relative-brauer-v1/DEPENDENCIES.md",
+    "CANDIDATES/relative-brauer-v1/INPUT_OUTPUT_MANIFEST.json",
+    "AUDITS/RELATIVE-LEAK-v1.md",
+    "AUDITS/RELATIVE-LEAK-v1-INPUTS.json",
+    "AUDITS/RELATIVE-HOSTILE-v1.md",
+    "AUDITS/RELATIVE-HOSTILE-v1-INPUTS.json",
+    "AUDITS/RELATIVE-RECON-v1.md",
+    "AUDITS/RELATIVE-RECON-v1-INPUTS.json",
+    "AUDITS/RELATIVE-COMP-v1.md",
+    "AUDITS/RELATIVE-COMP-v1-INPUTS.json"
+  ],
+  "stop_reason": "Coordinator process environment went offline (409 Conflict environment_offline: Environment is not connected) during packet/checkpoint handoff. One cleanup/reconciliation pass; no further mathematical search.",
+  "interruption_detected_utc": "2026-10-14T13:47:18.784Z",
+  "latest_generation_verification": {
+    "utc": "2026-10-14T13:51:52.992Z",
+    "method": "Fetched all UTF8 content via Dropbox; extractor-added final LF removed; exact258532-byte sequence SHA256 matched pre-upload expected hash; all35 embedded file content hashes also verified. The earlier raw download process result was inaccessible after offline.",
+    "sha256": "18cde834bfa3ef15e5a6c0b7ffb3f2349872250dff0288f637cbe59167928b65"
+  },
+  "pending_uploaded_capsule": {
+    "path": "/ChatGPT-Research-State/delta14-mixed-tate/AUTONOMOUS--continuation8-autonomous-20261014T124515Z-0d47e7bba02b--g9--epoch1-promoted--RESUME_CAPSULE.zip",
+    "sha256": "d8e0797d43014ae298e1eb77523cf475777e7860a55a62297bef71be44148f85",
+    "size_bytes": 100642,
+    "status": "Upload completed and metadata observed. Final raw-download receipt could not be collected; verify hash on recovery before use."
+  },
+  "final_status_path": null,
+  "final_status_sha256": null,
+  "supervisor_last_checked_utc": "2026-10-14T13:49:16.943Z",
+  "supervisor_last_observed": "Actions38566856114 job115861627398 in_progress; regression success; supervising step in_progress. End-to-end Work recovery is not claimed.",
+  "incomplete_delivery_items": [
+    "New terminal FINAL_STATUS and namespaced SHARE could not be created because local runtime is offline.",
+    "Final user-facing Library handoff could not be completed.",
+    "Latest uploaded capsule raw readback receipt unavailable; complete corresponding generation content and35 file hashes ARE verified.",
+    "COINCIDENCE-W2 packet creation outcome unknown; no second search launched and no second leaf-wave credit."
+  ],
+  "preserved_unproved_coordinator_notes": {
+    "status": "candidate planning notes only, no theorem or verification credit; do not feed these to the independent own-route W2 search if independence is claimed",
+    "notes": "A possible T_42 proof assigns each regular E label to its image in E/J. For each subset of four coordinates equal to its assigned pair coordinate, use its actual W_I stabilizer. Remaining fibers are products of P1 minus the assigned point, potentially genuine affine torsors over[(P1)^2/(K x W_I)]; the pair base may be treated through Sym^2(P1)=P2 with honest Sym^2 K lift plus all diagonal BC2 inertia. This still needs a complete proof. For a proper partition of the eight-element H-set, W=H gives a transitive coset partition; W proper has rank<=2. A maximal block stabilizer can supply such an anchor unless there are two incomparable order-two stabilizers; those two pair-orbits already consume all8 original labels and give the older independent-pairs typeA. Compact-source treatment plus decreasing block-count localization might prove the full collision boundary Tate. Check product-with-ineffective-abelian-kernel motives rigorously. A compact-collision conclusion would directly reduce C3 to the full eight-distinct stack E8; do not claim equivalence to V_dist without separately treating the intersections with boundary/nonfree loci."
   }
 }
