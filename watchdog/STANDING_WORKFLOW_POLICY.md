@@ -56,7 +56,7 @@ Do NOT re-download/re-hash already verified static predecessor artifacts, rebuil
 
 ## Monitoring and persistence
 
-Reuse the existing GitHub/Dropbox ownership, heartbeat, supervisor and recovery/results task. Do not create duplicates or silently reactivate disabled tasks.
+Reuse the existing GitHub/Dropbox ownership, heartbeat, supervisor and recovery/results task. Do not create duplicates. The two standing recovery consumers are infrastructure: if one is found disabled while the campaign is active or recoverable, the other may re-enable that existing task and must report the incident.
 
 - heartbeat target: about 5 minutes while control is available;
 - cooperative ownership lease: 12 minutes;
