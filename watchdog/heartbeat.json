@@ -10,8 +10,8 @@
   "delivery_reserve_minutes": 10,
   "status": "running",
   "global_campaign_status": "INCOMPLETE_ACTIVE",
-  "current_assignment": "Fresh proof-blind reconstruction of collision-boundary-v2 exact contract",
-  "first_unfinished_action": "Receive complete isolated reconstruction and actual manifest, externally persist and byte-verify before comparison",
+  "current_assignment": "Persist COLLISION-RECON-v2 report and actual manifest",
+  "first_unfinished_action": "Externally byte-verify this complete return before credit or next verification role.",
   "last_safe_frontier": "relative-brauer-v1 promoted: actual generic f*beta NONZERO; no same-conic rank-two bundle or GL2 lift on any nonempty open. No motive or exact-class decision. Inherited C3 iff V remains at exact scope.",
   "research_started": true,
   "math_start_utc": "2026-10-14T12:50:50.046Z",
@@ -35,15 +35,7 @@
     "C3/COINCIDENCE": 2
   },
   "new_independent_wave_credit": 1,
-  "active_workers": [
-    {
-      "agent": "/root/collision_recon_v2",
-      "role": "proof-blind reconstruction",
-      "candidate": "collision-boundary-v2",
-      "status": "active",
-      "deadline_utc": "2026-10-14T15:18:00Z"
-    }
-  ],
+  "active_workers": [],
   "policy_sha": "4e513d633bd406adf6d034f67df3dbc06bb415d7",
   "ownership_protocol_sha": "0b30e411cb93251224e73361ed929d65c4eecb0b",
   "historical_missing_evidence": "Continuation5 original cubical comparison report and actual manifest bytes remain lost; recorded PASS/hashes preserved, not reconstructed.",
@@ -53,13 +45,13 @@
   "dropbox_final_status_verified": false,
   "watchdog_recovery_armed": true,
   "infrastructure_verification_level": "Generation10 ownership, initial Dropbox generation/heartbeat and GitHub heartbeat/start.signal all read back; actual supervisor preflight success and supervising step in_progress observed.",
-  "last_heartbeat_utc": "2026-10-14T15:03:42.906233Z",
-  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation8-recovery-20261014T135743Z-a23632894cf5--g10--collision-hostile-v2.json",
-  "latest_verified_dropbox_generation_sha256": "56744fd025597f899fba2815b18ba4946060039980ff631085361431ba8fecc3",
-  "latest_verified_dropbox_capsule": "AUTONOMOUS--continuation8-recovery-20261014T135743Z-a23632894cf5--g10--epoch2-reconciled--RESUME_CAPSULE.zip",
-  "latest_verified_dropbox_capsule_sha256": "9ff9865e12f447d875f23441f857b40bd637e029393121c8d250156c09539ba5",
+  "last_heartbeat_utc": "2026-10-14T15:07:14.845180Z",
+  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation8-recovery-20261014T135743Z-a23632894cf5--g10--collision-recon-v2.json",
+  "latest_verified_dropbox_generation_sha256": "7b9a0331436bd1f5b19d7298ca9e8b002b48378317e8294bb56e224ae0b01d45",
+  "latest_verified_dropbox_capsule": "AUTONOMOUS--continuation8-recovery-20261014T135743Z-a23632894cf5--g10--collision-recon-v2--RESUME_CAPSULE.zip",
+  "latest_verified_dropbox_capsule_sha256": "21b7eb98c20e8e9ee79bfffd199104af993a7440798a9249482703b28ff25191",
   "capsule_scope": "Current continuation8 candidate and exact minimal inputs; source capsule pointer retains historical bytes",
-  "latest_verified_dropbox_heartbeat": "AUTONOMOUS--continuation8-recovery-20261014T135743Z-a23632894cf5--g10--heartbeat-1505.json",
+  "latest_verified_dropbox_heartbeat": "AUTONOMOUS--continuation8-recovery-20261014T135743Z-a23632894cf5--g10--collision-recon-v2-heartbeat.json",
   "initial_external_state_verified": true,
   "supervisor_actions_run_id": 38576500397,
   "supervisor_actions_job_id": 115894910387,
@@ -70,7 +62,7 @@
   "verification_gates": {
     "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED",
     "hostile": "PASS_EXTERNALLY_BYTE_VERIFIED",
-    "reconstruction": "ACTIVE",
+    "reconstruction": "COMPLETE_RECEIVED_NOT_YET_EXTERNALLY_BYTE_VERIFIED",
     "comparison": "NOT_RUN"
   },
   "external_gate_receipts": {
@@ -222,7 +214,7 @@
       "size_bytes": 3078
     }
   },
-  "generation_utc": "2026-10-14T14:50:10.749193Z",
+  "generation_utc": "2026-10-14T15:07:14.845180Z",
   "completed_candidates": {
     "relative-brauer-v1": {
       "label": "promoted",
@@ -293,6 +285,14 @@
       "manifest_sha256": "f9e1848ccc541c267b23bada68c24a952211344533adfd8c1cf23c8b15463a92",
       "verdict": "PASS",
       "received_utc": "2026-10-14T14:50:10.293935Z"
+    },
+    "reconstruction": {
+      "report": "AUDITS/COLLISION-RECON-v2.md",
+      "report_sha256": "0a6aeb809bc7bf236ad9681b6c4b559404cb5d96581cdad6194952fd8e387ffe",
+      "manifest": "AUDITS/COLLISION-RECON-v2-INPUTS.json",
+      "manifest_sha256": "8f79d17006d9a07ef7ba4ec05ac2f91f96f38933d5e2fbdba800fbe84463deed",
+      "verdict": "COMPLETE",
+      "received_utc": "2026-10-14T15:07:14.808988Z"
     }
   },
   "failed_candidate_versions": {
@@ -338,5 +338,5 @@
       }
     }
   },
-  "latest_verified_dropbox_heartbeat_sha256": "74539790f88d7a3b4cf9991226c5c84a7c42e5ab26b767affa40873a7d11a6d7"
+  "latest_verified_dropbox_heartbeat_sha256": "eecb555de96a45cdc70d6fb2babae9870712a9e078e6b40226a98ad02267e86b"
 }
