@@ -10,8 +10,8 @@
   "delivery_reserve_minutes": 10,
   "status": "running",
   "global_campaign_status": "INCOMPLETE_ACTIVE",
-  "current_assignment": "Persist version2 exact-interface repair before fresh leakage",
-  "first_unfinished_action": "Byte-verify v2 immutable generation and heartbeat, then launch fresh isolated leakage role.",
+  "current_assignment": "Fresh leakage review of collision-boundary-v2 exact-interface repair",
+  "first_unfinished_action": "Receive complete leakage report and actual manifest, externally persist and byte-verify before hostile role",
   "last_safe_frontier": "relative-brauer-v1 promoted: actual generic f*beta NONZERO; no same-conic rank-two bundle or GL2 lift on any nonempty open. No motive or exact-class decision. Inherited C3 iff V remains at exact scope.",
   "research_started": true,
   "math_start_utc": "2026-10-14T12:50:50.046Z",
@@ -35,7 +35,15 @@
     "C3/COINCIDENCE": 2
   },
   "new_independent_wave_credit": 1,
-  "active_workers": [],
+  "active_workers": [
+    {
+      "agent": "/root/collision_leak_v2",
+      "role": "leakage",
+      "candidate": "collision-boundary-v2",
+      "status": "active",
+      "deadline_utc": "2026-10-14T14:48:00Z"
+    }
+  ],
   "policy_sha": "4e513d633bd406adf6d034f67df3dbc06bb415d7",
   "ownership_protocol_sha": "0b30e411cb93251224e73361ed929d65c4eecb0b",
   "historical_missing_evidence": "Continuation5 original cubical comparison report and actual manifest bytes remain lost; recorded PASS/hashes preserved, not reconstructed.",
@@ -45,13 +53,13 @@
   "dropbox_final_status_verified": false,
   "watchdog_recovery_armed": true,
   "infrastructure_verification_level": "Generation10 ownership, initial Dropbox generation/heartbeat and GitHub heartbeat/start.signal all read back; actual supervisor preflight success and supervising step in_progress observed.",
-  "last_heartbeat_utc": "2026-10-14T14:33:44.075104Z",
+  "last_heartbeat_utc": "2026-10-14T14:35:44.277415Z",
   "latest_verified_dropbox_generation": "AUTONOMOUS--continuation8-recovery-20261014T135743Z-a23632894cf5--g10--collision-v2-frozen.json",
   "latest_verified_dropbox_generation_sha256": "42499d4c2e8aced9e1ac9f032f3ed23f1fe7ba74d82462b1beb740d1454101ee",
   "latest_verified_dropbox_capsule": "AUTONOMOUS--continuation8-recovery-20261014T135743Z-a23632894cf5--g10--collision-hostile-v1--RESUME_CAPSULE.zip",
   "latest_verified_dropbox_capsule_sha256": "5586dd924e5f7e57c059a5a37af96640c54137a92eddf4dda0b88c42b5145354",
   "capsule_scope": "Current continuation8 candidate and exact minimal inputs; source capsule pointer retains historical bytes",
-  "latest_verified_dropbox_heartbeat": "AUTONOMOUS--continuation8-recovery-20261014T135743Z-a23632894cf5--g10--collision-v2-frozen-heartbeat.json",
+  "latest_verified_dropbox_heartbeat": "AUTONOMOUS--continuation8-recovery-20261014T135743Z-a23632894cf5--g10--heartbeat-1435.json",
   "initial_external_state_verified": true,
   "supervisor_actions_run_id": 38576500397,
   "supervisor_actions_job_id": 115894910387,
@@ -60,7 +68,7 @@
   "candidate": "collision-boundary-v2",
   "candidate_label": "candidate",
   "verification_gates": {
-    "leakage": "NOT_RUN",
+    "leakage": "ACTIVE",
     "hostile": "NOT_RUN",
     "reconstruction": "NOT_RUN",
     "comparison": "NOT_RUN"
@@ -288,5 +296,5 @@
       }
     }
   },
-  "latest_verified_dropbox_heartbeat_sha256": "8278be0c169f8d0e36ade1ebd331ca0c04aec421bbc0a78d98586b0574b83a48"
+  "latest_verified_dropbox_heartbeat_sha256": "b892075aacf46ceaa9f9aacd4c2c1c5b035e47c0cbea9b7b94c0e5c7e5916ed9"
 }
