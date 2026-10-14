@@ -8,11 +8,11 @@
   "authorization_start_utc": "2026-10-14T19:27:19Z",
   "delivery_start_utc": "2026-10-14T23:17:19Z",
   "hard_deadline_utc": "2026-10-14T23:27:19Z",
-  "last_heartbeat_utc": "2026-10-14T19:37:52.202Z",
+  "last_heartbeat_utc": "2026-10-14T19:40:55.535Z",
   "research_started": true,
   "active_math_elapsed_seconds": 0,
   "math_segment_start_utc": "2026-10-14T19:35:00.602655Z",
-  "current_assignment": "COINCIDENCE-J-W1 fresh exact J own-route return",
+  "current_assignment": "J-W1: checking complete geometric filtration; no candidate credited",
   "active_workers": [
     {
       "assignment_id": "J-W1",
@@ -76,7 +76,7 @@
   "historical_missing_evidence": "Continuation5 original cubical comparison report and actual manifest bytes remain lost; recorded PASS/hashes preserved, not reconstructed.",
   "policy_sha": "ffb5dc24643d747482e2f1ab94040431b7e46361",
   "ownership_protocol_sha": "4bb548d2a8a8772dc2a1d0e3271c84825856d584",
-  "latest_verified_dropbox_heartbeat": "AUTONOMOUS--continuation9-autonomous-20261014T193034Z-0599f2e47215--g12--heartbeat-math-start.json",
+  "latest_verified_dropbox_heartbeat": "AUTONOMOUS--continuation9-autonomous-20261014T193034Z-0599f2e47215--g12--heartbeat-j-w1-01.json",
   "math_start_utc": "2026-10-14T19:35:00.602655Z",
   "mathematical_work_authorized": true,
   "infrastructure_verification_level": "Actual supervisor run38624747502 job116061193283 running; regression preflight succeeded. End-to-end crash recovery not tested by this bootstrap.",
