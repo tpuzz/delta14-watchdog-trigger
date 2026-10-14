@@ -5,31 +5,24 @@
   "lease_generation": 13,
   "predecessor_run_id": "continuation9-autonomous-20261014T193034Z-0599f2e47215",
   "predecessor_generation": 12,
-  "status": "running",
+  "status": "finalizing",
   "global_campaign_status": "INCOMPLETE",
   "authorization_start_utc": "2026-10-14T19:27:19Z",
   "delivery_start_utc": "2026-10-14T23:17:19Z",
   "hard_deadline_utc": "2026-10-14T23:27:19Z",
-  "last_heartbeat_utc": "2026-10-14T22:08:17.155Z",
+  "last_heartbeat_utc": "2026-10-14T22:14:27.953Z",
   "research_started": true,
   "mathematical_work_authorized": true,
-  "active_workers": [
-    {
-      "assignment_id": "C3-ABS-W2",
-      "agent": "/root/c3_abs_w2",
-      "state": "running",
-      "replacement_number": 0
-    }
-  ],
-  "current_assignment": "Fresh bounded direct absolute residual screen C3-ABS-W2",
-  "first_unfinished_action": "Receive complete GO_CANDIDATE/NO_GO return plus actual manifest; externally persist and raw-byte verify before any verification decision.",
+  "active_workers": [],
+  "current_assignment": "Terminal reconciliation after all currently justified bounded routes closed",
+  "first_unfinished_action": "Publish and raw-byte verify coherent terminal generation, compact capsule, and run-qualified FINAL_STATUS; send terminal signal once; release lease.",
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
   "watchdog_recovery_armed": true,
   "recovery_mode": "DIRECT-RESUME",
   "recovery_classification": "INCOMPLETE",
-  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation9-recovery-20261014T212819Z-9b87a01c8656--g13--rel-product-nogo.json",
-  "latest_verified_dropbox_generation_sha256": "9e436e090a8819e04edbea59b0ae6aeec3ced08453511c191e7474db734d2b77",
+  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation9-recovery-20261014T212819Z-9b87a01c8656--g13--c3-abs-nogo.json",
+  "latest_verified_dropbox_generation_sha256": "c42fbf18fa1fd06553192e1b1fcb607d637923e0c6d16801ee250b36b1f8bd89",
   "recovery_bootstrap_raw_readback_equal": true,
   "source_generation": "AUTONOMOUS--continuation9-autonomous-20261014T193034Z-0599f2e47215--g12--fc-recon-v1.json",
   "source_generation_sha256": "7b6c2984ed7a67995b927b4765c0e301ef23ad8319ecf2f2e97fcfe2ee03b885",
@@ -91,7 +84,7 @@
     "MT-OBSTRUCT": 2,
     "C3/COINCIDENCE": 2
   },
-  "new_independent_wave_credit": 2,
+  "new_independent_wave_credit": 3,
   "active_math_elapsed_seconds": 1106.19286,
   "aggregate_closed_mathematical_seconds": 2103.302944,
   "historical_missing_evidence": "Continuation5 original cubical comparison report and actual manifest bytes remain lost; recorded PASS/hashes preserved, not reconstructed.",
@@ -131,7 +124,7 @@
     }
   },
   "strategy_epoch": 6,
-  "strategy_decision": "Test one materially different direct absolute residual mechanism from the promoted frontier; no relative-product retry.",
+  "strategy_decision": "Deliberate scope-exhausted pause: relative product-totalization repair and two distinct absolute residual mechanisms all returned externally verified NO_GO; no unchanged retry or unsupported theorem.",
   "mechanism_screens": {
     "REL-PRODUCT-W1": {
       "status": "NO_GO_EXTERNALLY_BYTE_VERIFIED",
@@ -142,12 +135,15 @@
       "manifest_sha256": "22c8309df86c4d4e9d25526f89eaf5bde6009575b11842442fd035fcc91c94ed"
     },
     "C3-ABS-W2": {
-      "status": "RUNNING",
+      "status": "NO_GO_EXTERNALLY_BYTE_VERIFIED",
       "math_start_utc": "2026-10-14T22:08:17.155Z",
       "active_math_elapsed_seconds": 180,
       "preplanning_charge_seconds": 180,
       "cap_seconds": 1200,
-      "independent_wave_credit": "PENDING_COMPLETE_EXTERNAL_VERIFICATION"
+      "independent_leaf_wave_credit": 1,
+      "return_sha256": "f0703325d6daf512a8b36f53d0a3b2dc05fe0f91d88ddd1f68ee0d9d6a70d6e2",
+      "manifest_sha256": "c76f1c77cd197f4e72b8b561588b61c14f5179d799c4d14a54569dd0dbd7a9d6",
+      "blocking_gap": "Need a new integral motivic comparison or equivariant Tate stratification controlling the nonconstant quotient/projective-bundle total space without assuming M^c(B) mixed Tate."
     }
   }
 }
