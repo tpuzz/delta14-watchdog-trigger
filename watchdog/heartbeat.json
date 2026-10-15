@@ -33,8 +33,8 @@
   "active_math_elapsed_seconds": null,
   "aggregate_worker_seconds": null,
   "active_workers": [],
-  "current_assignment": "Persisting complete residual-v2 comparison before promotion; no active worker.",
-  "first_unfinished_action": "Receive and reconcile PR-COMPARE-v2 final report/manifest, externally persist and byte-verify before any promotion; then begin paired-compact-conic-v1 leakage as next sequential verification role.",
+  "current_assignment": "Residual-v2 promoted at exact contract after complete sequential gates; preparing compact-conic-v1 fresh leakage.",
+  "first_unfinished_action": "Persist exact residual-v2 promotion, then audit compact-conic-v1 leakage.",
   "source_instructions": "/ChatGPT-Research-State/delta14-mixed-tate/delta14-paired-label-4h-hourly-instructions-v1-20261015.txt",
   "source_instructions_sha256": "3c1b6adb2b2e7b98b3d3d7de8c87c19f86ee0ef2c71310a6b4405395143c31e3",
   "source_capsule": "AUTONOMOUS--continuation10-recovery-20261015T103125Z-g16--g16--terminal-complete--RESUME_CAPSULE.zip",
@@ -58,13 +58,13 @@
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
   "clock_reset": false,
-  "last_heartbeat_utc": "2026-10-15T15:01:33.558Z",
+  "last_heartbeat_utc": "2026-10-15T15:02:34.489Z",
   "recovery_mode": "DIRECT-RESUME existing campaign under newly confirmed bounded authorization",
   "persistent_goal_status": "No new discovery; inherited campaign limitation retained.",
-  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--residual-v2-comparison.json",
-  "latest_verified_dropbox_generation_sha256": "ca2384260a7ddcc9668e34d392c1b16eaf801888b34b176fd110c2c6b06c21d9",
+  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--residual-v2-promotion.json",
+  "latest_verified_dropbox_generation_sha256": "43f2f28590a31520225212f7162f775d4f67a3bd2a26d9aa662161fc44708aa4",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
-  "dropbox_heartbeat_path": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--residual-v2-comparison.json",
+  "dropbox_heartbeat_path": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--residual-v2-promotion.json",
   "supervisor_actions_run_id": 38740824534,
   "supervisor_job_id": 116442382345,
   "baseline_revisions": {
@@ -74,7 +74,7 @@
     "AUDIT_CHECKLIST": "9ede295d1b248c5ab28e9615cbdcfbe4303c54eac44d384413106c331e4a2d92"
   },
   "active_math_accounting": "Exact root active time unavailable; wall elapsed and explicitly recorded worker intervals are separate. No double counting or assertion of exact active total.",
-  "provisional_findings": "Candidates only: affine pair swaps form index2 normalizer; common-isogeny repair has extra mu2 data. Original-family exact evaluation unresolved; no promotion.",
+  "provisional_findings": "Residual-v2 promoted exact scope; compactification candidate still unverified. No exact class or motive evaluation.",
   "latest_verified_dropbox_capsule": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--hour1--RESUME_CAPSULE.zip",
   "latest_verified_dropbox_capsule_sha256": "04c5450fc23edd53e15516b7d8fc9542b7e50461b5eefebab2655eb65a768840",
   "latest_verified_dropbox_capsule_raw_readback_equal": true,
@@ -131,12 +131,12 @@
     "proof_sha256": "beff4d97780cd88b9480729d76bccae45d5278ccd769827bf78f764d50068ec5",
     "contract_sha256": "76549cef14fdb381dc3554237982148b8824424ddbf32f7fc5a6572f88ee8a22",
     "brief_sha256": "6def798e5ca82f8545f506320d33cc60790a3e3f60cb30d7544775b4441fd14f",
-    "status": "candidate",
+    "status": "PROMOTED_SAME_MODEL_FAMILY_ONLY",
     "gates": {
       "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED",
       "hostile": "PASS_EXTERNALLY_BYTE_VERIFIED",
-      "reconstruction": "COMPLETE_EXTERNALLY_BYTE_VERIFIED_PENDING_COMPARISON",
-      "comparison": "NOT_RUN"
+      "reconstruction": "COMPLETE_EXTERNALLY_BYTE_VERIFIED_MATCHED",
+      "comparison": "PASS_EXTERNALLY_BYTE_VERIFIED"
     },
     "leakage": {
       "report_sha256": "1d769dcdd38fe5d8bc72f04cde294ee792790bcef576eb446b2b97420650b906",
@@ -168,9 +168,11 @@
     "comparison": {
       "report_sha256": "1ae906d771a539f8dc58072fbcb68d249c9a5035461635590c16b55e13110828",
       "manifest_sha256": "18edaff22ffc9bf69807a1df55e9b200fd47fb8b49d2064be3110ea8d926eff5",
-      "verdict": "PASS_PENDING_EXTERNAL_BYTE_VERIFICATION",
+      "verdict": "PASS",
       "math_end_utc": "2026-10-15T14:52:56.512272070Z",
-      "draft_delay_seconds": 146.174593278
+      "draft_delay_seconds": 146.174593278,
+      "external_generation": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--residual-v2-comparison.json",
+      "external_sha256": "ca2384260a7ddcc9668e34d392c1b16eaf801888b34b176fd110c2c6b06c21d9"
     }
   },
   "leakage_return": {
@@ -183,7 +185,7 @@
     "externally_byte_verified": true
   },
   "timing_qualification": "Root top-level counter was a conservative wall-union screen bound, including some interleaved administration, not exact active-mathematics telemetry. The13:35:34 feasibility decision is retained as an early/upper-bound gate; no assertion that exactly1200 active seconds had elapsed. Worker exact intervals separately retained. No budget reset or extension; continuation allowance is the explicit bounded13:55 test.",
-  "wall_elapsed_since_math_start_seconds": 6349,
+  "wall_elapsed_since_math_start_seconds": 6411,
   "norm_w2_external_evidence": {
     "name": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--norm-w2-return.json",
     "sha256": "51e666d86e356c18b277a83478b5b1306d2578d5f1f412d373351ed0af908dd3",
