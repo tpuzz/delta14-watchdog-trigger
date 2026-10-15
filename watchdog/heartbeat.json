@@ -49,7 +49,7 @@
       "replacement_count": 0
     }
   ],
-  "current_assignment": "Hostile v2 and one isolated compactification search active; sequential verification roles remain nonoverlapping.",
+  "current_assignment": "Hostile v2 nearing completion; compactification W3 has provisional explicit conic/double-cover description, complete proof pending.",
   "first_unfinished_action": "Reconcile hostile return, persist complete actual records before dispatching blind reconstruction; bounded compactification W3 independent.",
   "source_instructions": "/ChatGPT-Research-State/delta14-mixed-tate/delta14-paired-label-4h-hourly-instructions-v1-20261015.txt",
   "source_instructions_sha256": "3c1b6adb2b2e7b98b3d3d7de8c87c19f86ee0ef2c71310a6b4405395143c31e3",
@@ -74,13 +74,13 @@
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
   "clock_reset": false,
-  "last_heartbeat_utc": "2026-10-15T14:12:56.502Z",
+  "last_heartbeat_utc": "2026-10-15T14:17:58.196Z",
   "recovery_mode": "DIRECT-RESUME existing campaign under newly confirmed bounded authorization",
   "persistent_goal_status": "No new discovery; inherited campaign limitation retained.",
-  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--hour1-capsule-pointer.json",
-  "latest_verified_dropbox_generation_sha256": "7db36b8351ed468f43d323808b937a67bb3eb2c0256f34bed3dfe76187dd7ac2",
+  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--verification-progress.json",
+  "latest_verified_dropbox_generation_sha256": "8ada0b96e8509e1634a19ea8bf7a666083ee673667fef74a285a77a9540548e5",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
-  "dropbox_heartbeat_path": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--hour1-capsule-pointer.json",
+  "dropbox_heartbeat_path": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--verification-progress.json",
   "supervisor_actions_run_id": 38740824534,
   "supervisor_job_id": 116442382345,
   "baseline_revisions": {
@@ -108,7 +108,7 @@
       "manifest_sha256": "18bfe871f17658d0a0b2f42b9da257954e254f49bea4effe35a248557d495b7a",
       "status": "candidate",
       "recorded_interval_seconds": 634.083438,
-      "provenance_addendum": "pending"
+      "provenance_addendum": "EXTERNALLY_SAVED in gate01 generation, recovered actual stdin source and output transcript; no separate raw executor log or execution-time source hash"
     },
     {
       "assignment": "PAIR-NORM-W2",
@@ -162,7 +162,7 @@
     "externally_byte_verified": true
   },
   "timing_qualification": "Root top-level counter was a conservative wall-union screen bound, including some interleaved administration, not exact active-mathematics telemetry. The13:35:34 feasibility decision is retained as an early/upper-bound gate; no assertion that exactly1200 active seconds had elapsed. Worker exact intervals separately retained. No budget reset or extension; continuation allowance is the explicit bounded13:55 test.",
-  "wall_elapsed_since_math_start_seconds": 3432,
+  "wall_elapsed_since_math_start_seconds": 3735,
   "norm_w2_external_evidence": {
     "name": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--norm-w2-return.json",
     "sha256": "51e666d86e356c18b277a83478b5b1306d2578d5f1f412d373351ed0af908dd3",
@@ -215,5 +215,10 @@
       "classification": "reported mathematical interval"
     }
   ],
-  "policy_live_recheck_utc": "2026-10-15T14:12:29.959Z"
+  "policy_live_recheck_utc": "2026-10-15T14:12:29.959Z",
+  "compactification_interim": {
+    "status": "candidate-only incomplete",
+    "reported_utc": "2026-10-15T14:16Z",
+    "claim": "Actual orthant compactification; proposed degree2 map to a Weil restriction of a generically nonsplit conic; no evaluated class."
+  }
 }
