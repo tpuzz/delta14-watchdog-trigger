@@ -10,12 +10,12 @@
   "delivery_start_utc": "2026-10-15T11:37:45Z",
   "hard_deadline_utc": "2026-10-15T11:47:45Z",
   "delivery_reserve_minutes": 10,
-  "research_started": false,
-  "math_start_utc": null,
+  "research_started": true,
+  "math_start_utc": "2026-10-15T07:55:12.444Z",
   "active_math_elapsed_seconds": 0,
   "active_workers": [],
-  "current_assignment": "Bootstrap continuation10; then narrow product-input repair",
-  "first_unfinished_action": "Recover fixed STATEMENT.md and PAULI definitions from pinned predecessor lineage; verify supervisor; narrow product-input repair.",
+  "current_assignment": "PRODUCT-INPUT-v1 narrow source-backed closure repair",
+  "first_unfinished_action": "Read exact relative-toric-boundary-v2 objection, h-range and PAULI; check Sella Proposition4.1.3 and Lemma4.1.5(a), Totaro Corollary8.14.",
   "launch_kit": "delta14-relative-generic-launch-v1-20261015.zip",
   "launch_kit_sha256": "49cde9d2aea51d8d1d32c10434718fad4ff07ade2cc5fd5aaf2e7d032ee9936a",
   "source_capsule": "AUTONOMOUS--continuation9-recovery-20261014T212819Z-9b87a01c8656--g13--terminal--RESUME_CAPSULE.zip",
@@ -26,7 +26,7 @@
   "source_final_status_sha256": "dc98a4ea837c52740f68b458ae2b119c734d1c59e8dd22046b2e5ee505c0e052",
   "policy_sha": "ffb5dc24643d747482e2f1ab94040431b7e46361",
   "ownership_protocol_sha": "4bb548d2a8a8772dc2a1d0e3271c84825856d584",
-  "watchdog_recovery_armed": false,
+  "watchdog_recovery_armed": true,
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
   "clock_reset": false,
@@ -192,10 +192,27 @@
     "stop_reason": "Deliberate scope-exhausted pause after externally verified NO_GO on the relative product repair and two materially different absolute residual mechanisms; not a crash, disproof, or deadline reset."
   },
   "provenance_note": "Pinned terminal capsule contains stale recovery START_HERE. Terminal FINAL_STATUS and live heartbeat supersede it. No previous completed gate repeated.",
-  "source_statement_pending": true,
-  "last_heartbeat_utc": "2026-10-15T07:53:51.146Z",
+  "source_statement_pending": false,
+  "last_heartbeat_utc": "2026-10-15T07:55:12.444Z",
   "latest_verified_dropbox_generation": "AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--initial.json",
   "latest_verified_dropbox_generation_sha256": "288a544a569d38f72f76cee9654b53d69fe7373f4690b5d6cd40e6f814ba9f0e",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
-  "mathematical_work_authorized": true
+  "mathematical_work_authorized": true,
+  "source_statement_sha256": "76482cf9eb1e459429efa4fcdff74dd986fcb39889a48c40193642e63f23f32d",
+  "supervisor_actions_run_id": 38701889289,
+  "supervisor_verification_level": "Actual job 116311810344 running; regression preflight success, supervisor step in progress.",
+  "math_segment_start_utc": "2026-10-15T07:55:12.444Z",
+  "epoch": {
+    "number": 1,
+    "start_utc": "2026-10-15T07:55:12.444Z",
+    "status": "healthy"
+  },
+  "mechanism_screens": {
+    "PRODUCT-INPUT-v1": {
+      "active_math_elapsed_seconds": 0,
+      "math_segment_start_utc": "2026-10-15T07:55:12.444Z",
+      "status": "active",
+      "independent_wave_credit": 0
+    }
+  }
 }
