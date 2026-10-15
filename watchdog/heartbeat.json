@@ -55,7 +55,7 @@
     "RELATIVE-LATTICE": 2,
     "RELATIVE-GEOMETRY": 1
   },
-  "new_independent_wave_credit": 2,
+  "new_independent_wave_credit": 3,
   "source_limits": "Same-family promoted only. Continuation5 original cubical comparison report and manifest remain missing. No-section original Rowen/Tignol full texts unavailable; later primary restatements/preprint qualifications retained.",
   "policy_sha": "ffb5dc24643d747482e2f1ab94040431b7e46361",
   "ownership_protocol_sha": "4bb548d2a8a8772dc2a1d0e3271c84825856d584",
@@ -67,13 +67,13 @@
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
   "clock_reset": false,
-  "last_heartbeat_utc": "2026-10-15T14:30:41.797Z",
+  "last_heartbeat_utc": "2026-10-15T14:35:48.170Z",
   "recovery_mode": "DIRECT-RESUME existing campaign under newly confirmed bounded authorization",
   "persistent_goal_status": "No new discovery; inherited campaign limitation retained.",
-  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--compact-w3-return.json",
-  "latest_verified_dropbox_generation_sha256": "789c894cff5815d4217c1d65332a6473a867d21ad752dfbdc7f70743abc5fae1",
+  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--compact-v1-freeze.json",
+  "latest_verified_dropbox_generation_sha256": "7b180f940daab3b45e8097a923e0eb88c567849a916557d3e3a0863176e7f1f8",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
-  "dropbox_heartbeat_path": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--compact-w3-return.json",
+  "dropbox_heartbeat_path": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--compact-v1-freeze.json",
   "supervisor_actions_run_id": 38740824534,
   "supervisor_job_id": 116442382345,
   "baseline_revisions": {
@@ -116,7 +116,8 @@
       "report_sha256": "184aea036b3d1a2b09a5d4d09121fb93edfd52132d0ffd6aadd0a7313257ba77",
       "math_start_observed_utc": "2026-10-15T14:09:33Z",
       "math_end_utc": "2026-10-15T14:25:50Z",
-      "reported_interval_seconds": 977
+      "reported_interval_seconds": 977,
+      "manifest_sha256": "4630fd5ec41784ce1fbb65ec7d58590a3338529afd659744e98395a4dbbd0a2e"
     }
   ],
   "w1_external_evidence": {
@@ -124,7 +125,7 @@
     "sha256": "dc9ac47a0e4923ec93064d1c220a216657bf7b4a90176e8f1cc50ef279c6fa59",
     "raw_readback_equal": true
   },
-  "wave_grouping": "W1 same-root batch counted once; W2 is an isolated own-route sequential wave, complete and externally persisted. Paired-twist family now has two waves; no change to inherited family counts.",
+  "wave_grouping": "Paired-twist two isolated completed waves matured before cross-pollination. Third complete isolated compactification pivot persisted. Inherited counts unchanged; verification earns no waves.",
   "mechanism_gate": {
     "actual_utc": "2026-10-15T13:35:34Z",
     "due_utc": "2026-10-15T13:35:26.111Z",
@@ -171,7 +172,7 @@
     "externally_byte_verified": true
   },
   "timing_qualification": "Root top-level counter was a conservative wall-union screen bound, including some interleaved administration, not exact active-mathematics telemetry. The13:35:34 feasibility decision is retained as an early/upper-bound gate; no assertion that exactly1200 active seconds had elapsed. Worker exact intervals separately retained. No budget reset or extension; continuation allowance is the explicit bounded13:55 test.",
-  "wall_elapsed_since_math_start_seconds": 4498,
+  "wall_elapsed_since_math_start_seconds": 4805,
   "norm_w2_external_evidence": {
     "name": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--norm-w2-return.json",
     "sha256": "51e666d86e356c18b277a83478b5b1306d2578d5f1f412d373351ed0af908dd3",
@@ -229,5 +230,24 @@
     "status": "candidate-only incomplete",
     "reported_utc": "2026-10-15T14:16Z",
     "claim": "Actual orthant compactification; proposed degree2 map to a Weil restriction of a generically nonsplit conic; no evaluated class."
-  }
+  },
+  "compact_w3_external_evidence": {
+    "name": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--compact-w3-return.json",
+    "sha256": "789c894cff5815d4217c1d65332a6473a867d21ad752dfbdc7f70743abc5fae1",
+    "raw_readback_equal": true
+  },
+  "secondary_candidate": {
+    "name": "paired-compact-conic-v1",
+    "proof_sha256": "d187a8779ab1e7e99f55746bcbf29d98657398e256612e047c4055c1f4990291",
+    "contract_sha256": "ddd5eafa2e7a42c18162075609187c1d410507e6cb5e9c974098e50da1ad9ec2",
+    "brief_sha256": "e001ad5db901e9e2714b9e0f3b19b36be2296d3b6d8dae79450261284d8c1d38",
+    "status": "candidate",
+    "gates": {
+      "leakage": "NOT_RUN",
+      "hostile": "NOT_RUN",
+      "reconstruction": "NOT_RUN",
+      "comparison": "NOT_RUN"
+    }
+  },
+  "search_disposition": "VERIFY_ONLY after completed compactification pivot; local induction provisionally parked, no further search allowance."
 }
