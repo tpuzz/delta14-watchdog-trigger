@@ -13,11 +13,9 @@
   "research_started": true,
   "math_start_utc": "2026-10-15T07:55:12.444Z",
   "active_math_elapsed_seconds": 251.936741,
-  "active_workers": [
-    "ns_recon_v1"
-  ],
+  "active_workers": [],
   "current_assignment": "Proof-blind reconstruction no-rational-section-v1",
-  "first_unfinished_action": "Finish reconstruction before11:17Z math stop and11:20Z complete return; publish before comparison.",
+  "first_unfinished_action": "Fresh isolated comparison of frozen candidate and independently reconstructed exact claim; no promotion before complete persisted PASS.",
   "launch_kit": "delta14-relative-generic-launch-v1-20261015.zip",
   "launch_kit_sha256": "49cde9d2aea51d8d1d32c10434718fad4ff07ade2cc5fd5aaf2e7d032ee9936a",
   "source_capsule": "AUTONOMOUS--continuation9-recovery-20261014T212819Z-9b87a01c8656--g13--terminal--RESUME_CAPSULE.zip",
@@ -195,9 +193,9 @@
   },
   "provenance_note": "Pinned terminal capsule contains stale recovery START_HERE. Terminal FINAL_STATUS and live heartbeat supersede it. No previous completed gate repeated.",
   "source_statement_pending": false,
-  "last_heartbeat_utc": "2026-10-15T11:07:26.925Z",
-  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation10-recovery-20261015T103125Z-g16--g16--hostile-v1.json",
-  "latest_verified_dropbox_generation_sha256": "a22779ea696ea06e5c17974cfce249b7729f1255b2b9d3b6093ac338e77465c0",
+  "last_heartbeat_utc": "2026-10-15T11:09:14.742Z",
+  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation10-recovery-20261015T103125Z-g16--g16--reconstruction-complete.json",
+  "latest_verified_dropbox_generation_sha256": "64eef7bc8c4aefe5c92fec1b9abb8d00afd9611383dbca8f6deae6de319c9099",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
   "mathematical_work_authorized": true,
   "source_statement_sha256": "76482cf9eb1e459429efa4fcdff74dd986fcb39889a48c40193642e63f23f32d",
@@ -365,7 +363,7 @@
       "gates": {
         "leakage": "BRIEF_V2_PASS_EXTERNALLY_BYTE_VERIFIED; BRIEF_V1_FAIL_RETAINED",
         "hostile": "PASS_EXTERNALLY_BYTE_VERIFIED; NS08 reconstruction/comparison pending",
-        "reconstruction": "NOT_RUN",
+        "reconstruction": "COMPLETE_EXTERNALLY_BYTE_VERIFIED; comparison pending",
         "comparison": "NOT_RUN"
       },
       "brief_version": 2
@@ -599,5 +597,10 @@
     "manifest_sha256": "b495bd9e1f4f5a5a6c63f144394f3f17b2ee90c093725def567b90ab7c330175",
     "checklist_revision": 13
   },
-  "last_operational_check": "Duplicate PR16 redelivery acknowledged without duplicate takeover or ending the active owning run; proof-blind reconstruction reports exact allowed input hashes matched, draft under internal checking, no verdict credited."
+  "last_operational_check": "Duplicate PR16 redelivery acknowledged without duplicate takeover or ending the active owning run; proof-blind reconstruction reports exact allowed input hashes matched, draft under internal checking, no verdict credited.",
+  "reconstruction_source_archive": {
+    "path": "/ChatGPT-Research-State/delta14-mixed-tate/NS-RECON-v1-actual-return-inputs-sources.zip",
+    "sha256": "07cbd3106d4f48e032830a48ef9212c830583442f0e8d857f673708dedc7b8ae",
+    "raw_readback_equal": true
+  }
 }
