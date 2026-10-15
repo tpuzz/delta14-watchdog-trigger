@@ -3,13 +3,11 @@
   "supervision_campaign_id": "delta14-mixed-tate-20261012T210157Z",
   "mathematical_campaign_id": "delta14-exact-class-20261015T182114Z",
   "authorization_id": "exact-class-breakthrough-4h-20261015-v1",
-  "owner_run_id": "exact-class-breakthrough-20261015T195016Z-g20",
-  "generation": 20,
-  "status": "inactive",
-  "last_renewed_utc": "2026-10-15T22:31:53.796Z",
-  "lease_expires_utc": "2026-10-15T22:43:53.796Z",
-  "predecessor_run_id": "exact-class-absolute-20261015T182114Z-g19",
-  "claim_reason": "New explicitly authorized four-hour continuation; prior authorizations remain stopped. Same mathematical campaign; diagnostic-only mechanism check.",
-  "released_utc": "2026-10-15T22:35:23.224Z",
-  "release_reason": "Coordinator-level environment_offline interruption; latest verified checkpoint retained; terminal completion not claimed; same authorization/deadline for any recovery."
+  "owner_run_id": "exact-class-breakthrough-recovery-20261015T230900Z-g21",
+  "generation": 21,
+  "status": "active",
+  "last_renewed_utc": "2026-10-15T23:09:00.000Z",
+  "lease_expires_utc": "2026-10-15T23:21:00.000Z",
+  "predecessor_run_id": "exact-class-breakthrough-20261015T195016Z-g20",
+  "claim_reason": "Checked recovery after explicit coordinator-level runtime interruption, incomplete delivery, and released generation-20 ownership; original authorization and deadlines unchanged."
 }
