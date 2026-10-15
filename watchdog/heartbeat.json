@@ -8,7 +8,7 @@
   "authorization_start_utc": "2026-10-15T19:50:16.938319Z",
   "hard_deadline_utc": "2026-10-15T23:50:16.938319Z",
   "delivery_start_utc": "2026-10-15T23:40:16.938319Z",
-  "last_heartbeat_utc": "2026-10-15T20:13:37.137Z",
+  "last_heartbeat_utc": "2026-10-15T20:19:08.060Z",
   "research_started": true,
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
