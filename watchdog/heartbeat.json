@@ -13,9 +13,12 @@
   "research_started": true,
   "math_start_utc": "2026-10-15T07:55:12.444Z",
   "active_math_elapsed_seconds": 251.936741,
-  "active_workers": [],
-  "current_assignment": "PRODUCT-RECON-v2",
-  "first_unfinished_action": "Externally persist comparator; fresh reconstruction with only statement, contract, brief and exact dependencies, no original-range proof text.",
+  "active_workers": [
+    "product_recon_v2",
+    "generic_lattice_w1"
+  ],
+  "current_assignment": "PRODUCT-RECON-v2 and RELATIVE-LATTICE-W1",
+  "first_unfinished_action": "Complete strict product reconstruction; independent generic lattice screen uses only already promoted inputs, not pending product repair.",
   "launch_kit": "delta14-relative-generic-launch-v1-20261015.zip",
   "launch_kit_sha256": "49cde9d2aea51d8d1d32c10434718fad4ff07ade2cc5fd5aaf2e7d032ee9936a",
   "source_capsule": "AUTONOMOUS--continuation9-recovery-20261014T212819Z-9b87a01c8656--g13--terminal--RESUME_CAPSULE.zip",
@@ -193,7 +196,7 @@
   },
   "provenance_note": "Pinned terminal capsule contains stale recovery START_HERE. Terminal FINAL_STATUS and live heartbeat supersede it. No previous completed gate repeated.",
   "source_statement_pending": false,
-  "last_heartbeat_utc": "2026-10-15T08:35:20.134Z",
+  "last_heartbeat_utc": "2026-10-15T08:36:42.371Z",
   "latest_verified_dropbox_generation": "AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--product-comp-v1-qualified.json",
   "latest_verified_dropbox_generation_sha256": "3e5df8c6f11ac9617d83d9259b8cfe88c016de531438275a704e8f35d931ac32",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
@@ -214,6 +217,29 @@
       "status": "candidate_ready_verification",
       "independent_wave_credit": 0,
       "decision": "GO: narrow character-line proof available, general tensor assertion excluded"
+    },
+    "RELATIVE-LATTICE": {
+      "active_math_elapsed_seconds": 540,
+      "math_segment_start_utc": null,
+      "status": "assigned_first_wave",
+      "independent_wave_credit": 0,
+      "baseline_files": [
+        {
+          "path": "/workspace/scratch/92d0c8d20bf7/campaign/PACKETS/RELATIVE-LATTICE-W1/PROVED_FILTER.md",
+          "sha256": "f596fb168de2484fa8aa5b059f3319539ba504c8265154b1e37e43517b48dbaa",
+          "size_bytes": 472
+        },
+        {
+          "path": "/workspace/scratch/92d0c8d20bf7/campaign/PACKETS/RELATIVE-LATTICE-W1/FAILED_FILTER.md",
+          "sha256": "35d56942f271ef6124acb2b788a334c555bd05690eb8a9ba3b8187518680473f",
+          "size_bytes": 1783
+        },
+        {
+          "path": "/workspace/scratch/92d0c8d20bf7/campaign/PACKETS/RELATIVE-LATTICE-W1/CHECKLIST.md",
+          "sha256": "a8ad46c77308b9467f4aacb57b07d6bddf4cd7bb7886273316f0e533883808eb",
+          "size_bytes": 866
+        }
+      ]
     }
   },
   "baseline_revisions": {
