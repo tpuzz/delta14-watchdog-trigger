@@ -1,0 +1,504 @@
+{
+  "schema": "delta14-emergency-coordinator-stop-v1",
+  "created_utc": "2026-10-15T09:35:35.002Z",
+  "state": {
+    "schema": "delta14-continuation10-state-v1",
+    "campaign_id": "delta14-mixed-tate-20261012T210157Z",
+    "authorization_id": "continuation10-relative-generic-exact-20261015-v1",
+    "run_id": "continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7",
+    "lease_generation": 14,
+    "status": "interrupted",
+    "global_campaign_status": "INCOMPLETE",
+    "authorization_start_utc": "2026-10-15T07:47:45Z",
+    "delivery_start_utc": "2026-10-15T11:37:45Z",
+    "hard_deadline_utc": "2026-10-15T11:47:45Z",
+    "delivery_reserve_minutes": 10,
+    "research_started": true,
+    "math_start_utc": "2026-10-15T07:55:12.444Z",
+    "active_math_elapsed_seconds": 251.936741,
+    "active_workers": [],
+    "current_assignment": null,
+    "first_unfinished_action": "Fresh proof-blind replacement of incomplete PF-RECON-v1 from exact four-file allowlist, then external full-byte persistence and comparison. Concurrent search may resume only after recovery health check.",
+    "launch_kit": "delta14-relative-generic-launch-v1-20261015.zip",
+    "launch_kit_sha256": "49cde9d2aea51d8d1d32c10434718fad4ff07ade2cc5fd5aaf2e7d032ee9936a",
+    "source_capsule": "AUTONOMOUS--continuation9-recovery-20261014T212819Z-9b87a01c8656--g13--terminal--RESUME_CAPSULE.zip",
+    "source_capsule_sha256": "c0c1dd053fa5d9e9688eaaba28818dd7bd7ae9707ee9f90db815ef6294221c72",
+    "source_generation": "AUTONOMOUS--continuation9-recovery-20261014T212819Z-9b87a01c8656--g13--terminal.json",
+    "source_generation_sha256": "7f02f9785c86a965a41ae689ffe1a3ffe855807fef797d4a05e2c361b0ac65e5",
+    "source_raw_bytes_verified": true,
+    "source_final_status_sha256": "dc98a4ea837c52740f68b458ae2b119c734d1c59e8dd22046b2e5ee505c0e052",
+    "policy_sha": "ffb5dc24643d747482e2f1ab94040431b7e46361",
+    "ownership_protocol_sha": "4bb548d2a8a8772dc2a1d0e3271c84825856d584",
+    "watchdog_recovery_armed": true,
+    "terminal_delivery_complete": false,
+    "dropbox_final_status_verified": false,
+    "clock_reset": false,
+    "existing_recovery_task_id": "6ace7f845e50819197062077fdcc8125",
+    "existing_hourly_task_id": "6ace34e619e08191a0fafff81fa8714c",
+    "hourly_backup_incident": "Observed disabled at launch; re-enabled existing task 2026-10-15T07:50:01Z.",
+    "inherited_frontier": {
+      "campaign_id": "delta14-mixed-tate-20261012T210157Z",
+      "authorization_id": "continuation9-autonomous-strategy-20261014-v1",
+      "run_id": "continuation9-recovery-20261014T212819Z-9b87a01c8656",
+      "lease_generation": 13,
+      "predecessor_run_id": "continuation9-autonomous-20261014T193034Z-0599f2e47215",
+      "predecessor_generation": 12,
+      "status": "stopped",
+      "global_campaign_status": "INCOMPLETE",
+      "authorization_start_utc": "2026-10-14T19:27:19Z",
+      "delivery_start_utc": "2026-10-14T23:17:19Z",
+      "hard_deadline_utc": "2026-10-14T23:27:19Z",
+      "last_heartbeat_utc": "2026-10-14T22:17:04.253Z",
+      "research_started": true,
+      "mathematical_work_authorized": false,
+      "active_workers": [],
+      "current_assignment": null,
+      "first_unfinished_action": "None within this authorization. A successor requires explicit new authorization and a genuinely new integral comparison/stratification input.",
+      "terminal_delivery_complete": true,
+      "dropbox_final_status_verified": true,
+      "watchdog_recovery_armed": false,
+      "recovery_mode": "DIRECT-RESUME",
+      "recovery_classification": "INCOMPLETE",
+      "latest_verified_dropbox_generation": "AUTONOMOUS--continuation9-recovery-20261014T212819Z-9b87a01c8656--g13--terminal.json",
+      "latest_verified_dropbox_generation_sha256": "7f02f9785c86a965a41ae689ffe1a3ffe855807fef797d4a05e2c361b0ac65e5",
+      "recovery_bootstrap_raw_readback_equal": true,
+      "source_generation": "AUTONOMOUS--continuation9-autonomous-20261014T193034Z-0599f2e47215--g12--fc-recon-v1.json",
+      "source_generation_sha256": "7b6c2984ed7a67995b927b4765c0e301ef23ad8319ecf2f2e97fcfe2ee03b885",
+      "source_capsule": "AUTONOMOUS--continuation9-autonomous-20261014T193034Z-0599f2e47215--g12--j-promoted-v1--RESUME_CAPSULE.zip",
+      "source_capsule_sha256": "960ef2bef554bbb086033181718f2379331fdb9419f30ca62e9ac68516b4a211",
+      "supervisor_actions_run_id": 38640786031,
+      "supervisor_verification_level": "Actual generation-13 GitHub Actions supervisor run observed pending after start.signal readback.",
+      "promoted_results": {
+        "exact-j-v1": {
+          "label": "promoted",
+          "contract": "claim-contract-v1",
+          "verification_gates": {
+            "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED",
+            "hostile": "PASS_EXTERNALLY_BYTE_VERIFIED",
+            "reconstruction": "COMPLETE_EXTERNALLY_BYTE_VERIFIED",
+            "comparison": "PASS_EXTERNALLY_BYTE_VERIFIED"
+          },
+          "proof_sha256": "dd40e00a1e5fc066579488e27f348ee5fd8c2dc2d45801e7bc4de91213462dde"
+        },
+        "relative-brauer-v1": {
+          "label": "promoted",
+          "contract": "claim-contract-v1",
+          "verification_gates": {
+            "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED",
+            "hostile": "PASS_EXTERNALLY_BYTE_VERIFIED",
+            "reconstruction": "COMPLETE_EXTERNALLY_BYTE_VERIFIED",
+            "comparison": "PASS_EXTERNALLY_BYTE_VERIFIED"
+          },
+          "proof_sha256": "04b991cc1fe3774dce9d1e2644fbbee9981175b5bca5dfe1f7e81f6bb3d2e26e"
+        },
+        "collision-boundary-v2": {
+          "label": "promoted",
+          "contract": "claim-contract-v2",
+          "verification_gates": {
+            "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED",
+            "hostile": "PASS_EXTERNALLY_BYTE_VERIFIED",
+            "reconstruction": "COMPLETE_EXTERNALLY_BYTE_VERIFIED",
+            "comparison": "PASS_EXTERNALLY_BYTE_VERIFIED"
+          },
+          "proof_sha256": "ce5ed1e54013d71b0c7b8a9dcb41a977b8bbcc51203e88faa20e978c22a29edc"
+        },
+        "free-collision-complement-v1": {
+          "label": "promoted",
+          "contract": "claim-contract-v1",
+          "verification_gates": {
+            "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED",
+            "hostile": "PASS_EXTERNALLY_BYTE_VERIFIED",
+            "reconstruction": "COMPLETE_EXTERNALLY_BYTE_VERIFIED",
+            "comparison": "PASS_EXTERNALLY_BYTE_VERIFIED"
+          },
+          "proof_sha256": "5fa96128bc9a264d7aaa5e0190bd86226e1527d63f56188d600d7d7d36e819c1",
+          "promotion_statement_sha256": "e655191afd53cbf431412640a43dc4d2b58fdb55c3a799f8578bc1df3ba6c8d6",
+          "promotion_record_sha256": "bb6d10ffb62478439bafcf09e910b915b3c8e02985f203624f3e9952780a7f19"
+        }
+      },
+      "candidate_statuses": {},
+      "wave_counts": {
+        "MT-STRUCT": 2,
+        "MT-OBSTRUCT": 2,
+        "C3/COINCIDENCE": 2
+      },
+      "new_independent_wave_credit": 3,
+      "active_math_elapsed_seconds": 1106.19286,
+      "aggregate_closed_mathematical_seconds": 2103.302944,
+      "historical_missing_evidence": "Continuation5 original cubical comparison report and actual manifest bytes remain lost; recorded PASS/hashes preserved, not reconstructed.",
+      "policy_sha": "ffb5dc24643d747482e2f1ab94040431b7e46361",
+      "ownership_protocol_sha": "4bb548d2a8a8772dc2a1d0e3271c84825856d584",
+      "latest_verified_dropbox_generation_raw_readback_equal": true,
+      "failed_candidates": {
+        "relative-toric-boundary-v1": {
+          "status": "failed_hostile_nonpass",
+          "contract": "claim-contract-v1",
+          "gates": {
+            "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED",
+            "hostile": "NONPASS_EXTERNALLY_BYTE_VERIFIED",
+            "reconstruction": "NOT_RUN",
+            "comparison": "NOT_RUN"
+          },
+          "proof_sha256": "2293992a59b44a4fc5d0bfeeecb3508deb5e4eac5fe9272ff89f298cbc7083a7",
+          "hostile_report_sha256": "2717b95450b4127d7fe2d2a6bf4ae49b1be415d66f934db3680273a7377b6d9b",
+          "hostile_manifest_sha256": "ca9c84bd43aa38cfee5515c8d80a598519346e24d7efc5ad3a322a138a088038",
+          "blocking_defect": "Missing motive-level product comparison for B(G_h x C2^(4-h)); six-support induction and downstream boundary comparison not proved.",
+          "unchanged_retry_forbidden": true
+        },
+        "relative-toric-boundary-v2": {
+          "status": "failed_hostile_nonpass",
+          "contract": "claim-contract-v1",
+          "gates": {
+            "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED",
+            "hostile": "NONPASS_EXTERNALLY_BYTE_VERIFIED",
+            "reconstruction": "NOT_RUN",
+            "comparison": "NOT_RUN"
+          },
+          "proof_sha256": "16a484dae15b5223fd74db3ded25fefbccc4e793b87bd0058ea275f7d5e6cf0e",
+          "hostile_report_sha256": "c926c7d272d622477ad20d2522c58cf16a4b4897b932f7a6a4a5087bb5c91257",
+          "hostile_manifest_sha256": "5fe552248da62bcdbde9fa799f60035989dd7aa3572f7abf73564d81aa0a3e45",
+          "blocking_defect": "Unjustified interchange of separate Sella totalizations with derived tensor product.",
+          "unchanged_retry_forbidden": true
+        }
+      },
+      "strategy_epoch": 6,
+      "strategy_decision": "Deliberate scope-exhausted pause: relative product-totalization repair and two distinct absolute residual mechanisms all returned externally verified NO_GO; no unchanged retry or unsupported theorem.",
+      "mechanism_screens": {
+        "REL-PRODUCT-W1": {
+          "status": "NO_GO_EXTERNALLY_BYTE_VERIFIED",
+          "active_math_elapsed_seconds": 180,
+          "cap_seconds": 1200,
+          "independent_wave_credit": 0,
+          "return_sha256": "5cbd330e7f42b7a60aec093e0b0ddc3c206b5b8c53064a1d4dcc19137c89fd22",
+          "manifest_sha256": "22c8309df86c4d4e9d25526f89eaf5bde6009575b11842442fd035fcc91c94ed"
+        },
+        "C3-ABS-W2": {
+          "status": "NO_GO_EXTERNALLY_BYTE_VERIFIED",
+          "math_start_utc": "2026-10-14T22:08:17.155Z",
+          "active_math_elapsed_seconds": 180,
+          "preplanning_charge_seconds": 180,
+          "cap_seconds": 1200,
+          "independent_leaf_wave_credit": 1,
+          "return_sha256": "f0703325d6daf512a8b36f53d0a3b2dc05fe0f91d88ddd1f68ee0d9d6a70d6e2",
+          "manifest_sha256": "c76f1c77cd197f4e72b8b561588b61c14f5179d799c4d14a54569dd0dbd7a9d6",
+          "blocking_gap": "Need a new integral motivic comparison or equivariant Tate stratification controlling the nonconstant quotient/projective-bundle total space without assuming M^c(B) mixed Tate."
+        }
+      },
+      "bounded_workflow_status": "COMPLETED_PARTIAL_RESULT_SCOPE_EXHAUSTED",
+      "terminal_utc": "2026-10-14T22:17:04.253Z",
+      "latest_verified_dropbox_capsule": "AUTONOMOUS--continuation9-recovery-20261014T212819Z-9b87a01c8656--g13--terminal--RESUME_CAPSULE.zip",
+      "latest_verified_dropbox_capsule_sha256": "c0c1dd053fa5d9e9688eaaba28818dd7bd7ae9707ee9f90db815ef6294221c72",
+      "latest_verified_dropbox_capsule_raw_readback_equal": true,
+      "final_status_path": "FINAL_STATUS--continuation9-autonomous-strategy-20261014-v1--continuation9-recovery-20261014T212819Z-9b87a01c8656--g13.md",
+      "final_status_sha256": "dc98a4ea837c52740f68b458ae2b119c734d1c59e8dd22046b2e5ee505c0e052",
+      "final_status_raw_readback_equal": true,
+      "stop_reason": "Deliberate scope-exhausted pause after externally verified NO_GO on the relative product repair and two materially different absolute residual mechanisms; not a crash, disproof, or deadline reset."
+    },
+    "provenance_note": "Pinned terminal capsule contains stale recovery START_HERE. Terminal FINAL_STATUS and live heartbeat supersede it. No previous completed gate repeated.",
+    "source_statement_pending": false,
+    "last_heartbeat_utc": "2026-10-15T09:35:35.001Z",
+    "latest_verified_dropbox_generation": "AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--lattice-w2-incomplete.json",
+    "latest_verified_dropbox_generation_sha256": "3ea0e7b68da05af3825c8813ae586df851a04b07ecdac52226afc3063f55fa6f",
+    "latest_verified_dropbox_generation_raw_readback_equal": true,
+    "mathematical_work_authorized": false,
+    "source_statement_sha256": "76482cf9eb1e459429efa4fcdff74dd986fcb39889a48c40193642e63f23f32d",
+    "supervisor_actions_run_id": 38701889289,
+    "supervisor_verification_level": "Actual job 116311810344 running; regression preflight success, supervisor step in progress.",
+    "math_segment_start_utc": null,
+    "epoch": {
+      "number": 2,
+      "start_utc": "2026-10-15T09:01:56.014817+00:00",
+      "status": "coordinator_runtime_distress_stopped",
+      "health_check": "Epoch1 capsule written/external raw readback verified. All completed roles reconciled and externally byte-verified; no active agent, no unresolved transport/storage/tool error. Supervisor job116311810344 still running. Protocol source-isolation replacement completed; timing breaches explicitly preserved, no clock reset."
+    },
+    "mechanism_screens": {
+      "PRODUCT-INPUT-v1": {
+        "active_math_elapsed_seconds": 251.936741,
+        "math_segment_start_utc": null,
+        "status": "promoted_narrow_repair",
+        "independent_wave_credit": 0,
+        "decision": "GO: narrow character-line proof available, general tensor assertion excluded"
+      },
+      "RELATIVE-LATTICE": {
+        "active_math_elapsed_seconds": 2327.872838,
+        "math_segment_start_utc": null,
+        "status": "W2_interrupted_incomplete_no_credit",
+        "independent_wave_credit": 1,
+        "baseline_files": [
+          {
+            "path": "/workspace/scratch/92d0c8d20bf7/campaign/PACKETS/RELATIVE-LATTICE-W1/PROVED_FILTER.md",
+            "sha256": "f596fb168de2484fa8aa5b059f3319539ba504c8265154b1e37e43517b48dbaa",
+            "size_bytes": 472
+          },
+          {
+            "path": "/workspace/scratch/92d0c8d20bf7/campaign/PACKETS/RELATIVE-LATTICE-W1/FAILED_FILTER.md",
+            "sha256": "35d56942f271ef6124acb2b788a334c555bd05690eb8a9ba3b8187518680473f",
+            "size_bytes": 1783
+          },
+          {
+            "path": "/workspace/scratch/92d0c8d20bf7/campaign/PACKETS/RELATIVE-LATTICE-W1/CHECKLIST.md",
+            "sha256": "a8ad46c77308b9467f4aacb57b07d6bddf4cd7bb7886273316f0e533883808eb",
+            "size_bytes": 866
+          }
+        ],
+        "gate_overrun_seconds": 32.24,
+        "gate_decision": "Pause literal permutation-factor mechanism pending verification; general rational descent criterion is a distinct proposed next test, not an established result.",
+        "decision": "PAUSE incomplete unrestricted-section attempt; primary background source lead permits a fresh tightly scoped source/instantiation test after external metadata persistence.",
+        "post_gate_root_reassessment_math_seconds": 210,
+        "post_gate_charge_note": "Conservative charge for root examination of unrestricted rational-section cohomology after completed W1; same accumulator, no reset.",
+        "candidate_freeze_root_math_charge_seconds": 180,
+        "new_active_allocation_seconds": 480,
+        "conservative_wall_stop_utc": "2026-10-15T09:13:00Z",
+        "no_clock_reset": true,
+        "root_source_reassessment_charge": {
+          "seconds": 180,
+          "basis": "Conservative09:26–09:29 source reading and task reassessment, before coordinator outage; no new proved result or wave credit."
+        }
+      },
+      "RELATIVE-GEOMETRY": {
+        "active_math_elapsed_seconds": 1841.240427,
+        "math_segment_start_utc": null,
+        "status": "W2_RUNTIME_INTERRUPTED_INCOMPLETE_NO_ADDITIONAL_CREDIT",
+        "independent_wave_credit": 1,
+        "baseline_files": [
+          {
+            "path": "/workspace/scratch/92d0c8d20bf7/campaign/PACKETS/RELATIVE-GEOMETRY-W1/PROVED_FILTER.md",
+            "sha256": "f596fb168de2484fa8aa5b059f3319539ba504c8265154b1e37e43517b48dbaa",
+            "size_bytes": 472
+          },
+          {
+            "path": "/workspace/scratch/92d0c8d20bf7/campaign/PACKETS/RELATIVE-GEOMETRY-W1/FAILED_FILTER.md",
+            "sha256": "35d56942f271ef6124acb2b788a334c555bd05690eb8a9ba3b8187518680473f",
+            "size_bytes": 1783
+          },
+          {
+            "path": "/workspace/scratch/92d0c8d20bf7/campaign/PACKETS/RELATIVE-GEOMETRY-W1/CHECKLIST.md",
+            "sha256": "a8ad46c77308b9467f4aacb57b07d6bddf4cd7bb7886273316f0e533883808eb",
+            "size_bytes": 866
+          }
+        ],
+        "gate_overrun_seconds": 101.240427,
+        "decision": "PAUSE normalization/single-label elimination; candidate obstruction requires full cadence. A fresh second independent wave may test equivariant pair correspondence, with unchanged cumulative clock.",
+        "post_gate_root_pairing_sanity_charge_seconds": 180,
+        "new_active_allocation_seconds": 720,
+        "conservative_wall_stop_utc": "2026-10-15T09:37:00Z",
+        "wave2_clock": {
+          "charged_seconds": 360,
+          "basis": "Conservative continuous09:25:00–09:31:00Z covers assignment through coordinator stop instruction; exact worker stop not captured. No outage exclusion before stop; all later finalization administrative.",
+          "additional_allowance_seconds": 720,
+          "absolute_local_stop_utc": "2026-10-15T09:37:00Z",
+          "no_clock_reset": true
+        }
+      }
+    },
+    "baseline_revisions": {
+      "PROVED": {
+        "path": "/workspace/scratch/92d0c8d20bf7/campaign/INHERITED/PROVED.md",
+        "sha256": "e237a12b624c66ef149147f60fdf844d931fc35dcdb5c5d15e2fb1fd9386fe78",
+        "size_bytes": 8647
+      },
+      "FAILED": {
+        "path": "/workspace/scratch/92d0c8d20bf7/campaign/INHERITED/FAILED.md",
+        "sha256": "321223385e3dc010749f92d73e4aec62614e819d39a4e2165012a1e1d98d26d6",
+        "size_bytes": 4859
+      },
+      "AUDIT_CHECKLIST": {
+        "path": "/workspace/scratch/92d0c8d20bf7/campaign/AUDIT_CHECKLIST.md",
+        "sha256": "d8d456afbefe11dddfb0506dcfa94fe8c83463094952afd3e872f1b7f782512a",
+        "size_bytes": 11720
+      }
+    },
+    "candidate_statuses": {
+      "product-input-v1": {
+        "status": "promoted",
+        "gates": {
+          "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED",
+          "hostile": "PASS_EXTERNALLY_BYTE_VERIFIED",
+          "reconstruction": "COMPLETE_BUT_PROOF_SHAPED_INPUT_DISQUALIFIES_STRICT_BLINDNESS",
+          "comparison": "MATHEMATICAL_PASS_ISOLATION_NOT_CERTIFIED",
+          "reconstruction_v2": "COMPLETE_EXTERNALLY_BYTE_VERIFIED",
+          "comparison_v2": "PASS_EXTERNALLY_BYTE_VERIFIED"
+        },
+        "promotion_record": "PROMOTIONS/product-input-v1.json"
+      },
+      "permutation-factor-obstruction-v1": {
+        "status": "candidate",
+        "gates": {
+          "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED",
+          "hostile": "MATHEMATICAL_PASS_EXTERNALLY_BYTE_VERIFIED; PF07 deferred to reconstruction/comparison",
+          "reconstruction": "INTERRUPTED_INITIAL_DRAFT_ONLY_NO_MANIFEST_NO_COMPLETION_CREDIT",
+          "comparison": "NOT_RUN"
+        }
+      }
+    },
+    "current_checkpoint": "runtime-interruption",
+    "preliminary_generic_planning": {
+      "status": "root-only exploratory notes, no result or independent credit",
+      "RELATIVE-LATTICE": {
+        "active_math_elapsed_seconds": 540,
+        "basis": "Conservative cumulative root preplanning charge, including post-compaction exploratory reasoning; no independent credit."
+      },
+      "RELATIVE-GEOMETRY": {
+        "active_math_elapsed_seconds": 540,
+        "basis": "Conservative cumulative root preplanning charge, including post-compaction exploratory reasoning; no independent credit."
+      }
+    },
+    "protocol_replacements": {
+      "PRODUCT-RECON-v1": {
+        "reason": "Coordinator supplied proof-shaped old excerpts; strict blind isolation not certified. No mathematical failure in candidate.",
+        "replacement": "PRODUCT-RECON-v2",
+        "original_preserved": true
+      }
+    },
+    "concurrency_exception": "Three live subagents during one final auxiliary verification gate, so the two genuinely distinct main generic mechanisms can be tested within the first epoch. No parallel verification. Return to at most two when product comparison completes.",
+    "recovery_counters": {
+      "product_comp_v1": 0,
+      "product_recon_v2": 0,
+      "product_comp_v2": 0,
+      "generic_lattice_w1": 0,
+      "generic_geometry_w1": 0,
+      "pf_recon_v1": 0,
+      "generic_geometry_w2": 0
+    },
+    "timing_exceptions": [
+      {
+        "assignment": "RELATIVE-LATTICE-W1",
+        "gate_limit_seconds": 1200,
+        "actual_seconds": 1232.24,
+        "overrun_seconds": 32.24,
+        "cause": "Final mathematical drafting crossed gate; disclosed by worker, stopped. No clock reset or retroactive infrastructure exclusion."
+      },
+      {
+        "assignment": "RELATIVE-GEOMETRY-W1",
+        "gate_limit_seconds": 1200,
+        "actual_seconds": 1301.240427,
+        "overrun_seconds": 101.240427,
+        "cause": "Mathematical drafting and initially uncharged22.240427s packet comprehension. Conservative final accounting supersedes earlier79s notice; stopped and no reset."
+      },
+      {
+        "assignment": "RELATIVE-LATTICE-W2",
+        "additional_allowance_seconds": 480,
+        "actual_additional_seconds": 525.632838,
+        "overrun_seconds": 45.632838,
+        "hard_wall_stop_overrun_seconds": 105.632838,
+        "cause": "No saved mathematical return at stop; parent interrupted and allowed metadata only. No completed independent-wave credit."
+      }
+    ],
+    "latest_verified_dropbox_capsule": "AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--epoch1--RESUME_CAPSULE.zip",
+    "latest_verified_dropbox_capsule_sha256": "3390b681b63d9307ea1d022bba93cfda1da21951b340b431cb5ae947f6f34d73",
+    "latest_verified_dropbox_capsule_raw_readback_equal": true,
+    "epoch_history": [
+      {
+        "number": 1,
+        "start_utc": "2026-10-15T07:55:12.444Z",
+        "status": "checkpointed_pending_health_check",
+        "checkpoint_utc": "2026-10-15T08:58:16.097814+00:00",
+        "finished_agent_reconciliation": "All three completed assignments read; product and lattice externally verified, geometry return awaits publication."
+      }
+    ],
+    "current_execution_mathematics_stopped": true,
+    "recovery_mode": "DIRECT-RESUME in a fresh healthy Work environment only",
+    "recovery_classification": "INCOMPLETE",
+    "runtime_incident": {
+      "first_observed_utc": "2026-10-15T09:29:00Z",
+      "error": "exec-server transport disconnected; failed to resume exec-server session: recovery timed out after25s",
+      "cleanup": "One root reconciliation read was attempted, yielded without result, and terminated; no additional local retry. GitHub connector remained available for truthful emergency persistence.",
+      "worker_effects": "PF reconstruction interrupted with initial draft only and no actual manifest; geometry W2 interrupted with initial draft/pending-write ambiguity.",
+      "stop_rule": "Research assistant coordinator-level distress: stop new work, at most one reconciliation attempt, preserve actual durable work, end current execution.",
+      "automatic_recovery": "Existing supervisor/tasks retained; no claim that a fresh Work recovery has already succeeded.",
+      "fresh_capsule_status": "Cannot regenerate through failed local runtime; latest fully verified capsule remains epoch1 plus newer exact Dropbox generations and this GitHub emergency checkpoint.",
+      "final_confirmation": "Library upload at09:33Z returned409 environment_offline: Environment is not connected. No further local calls.",
+      "library_deliverable_save": "FAILED; no new Library file or xattrs created"
+    },
+    "runtime_recovery_authorization": "Fresh independently checked recovery may continue within original11:37:45Z reserve; afterward finalize-only. No reset, no continuation9 reopening.",
+    "new_independent_wave_credit": 2,
+    "wave_counts_current": {
+      "RELATIVE_LATTICE": 1,
+      "RELATIVE_GEOMETRY": 1
+    },
+    "emergency_publications": [
+      {
+        "name": "AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--product-comp-v2-lattice-w1.json",
+        "sha256": "9844aa8eeea2fbce357bd317b7ac38d68cf9b1e5bd7564019b64824f1f279fae",
+        "dest": "/ChatGPT-Research-State/delta14-mixed-tate/AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--product-comp-v2-lattice-w1.json",
+        "checkpoint": "product-comp-v2-lattice-w1",
+        "kind": "generation"
+      },
+      {
+        "name": "AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--epoch1--RESUME_CAPSULE.zip",
+        "sha256": "3390b681b63d9307ea1d022bba93cfda1da21951b340b431cb5ae947f6f34d73",
+        "dest": "/ChatGPT-Research-State/delta14-mixed-tate/AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--epoch1--RESUME_CAPSULE.zip",
+        "checkpoint": "epoch1",
+        "kind": "capsule"
+      },
+      {
+        "name": "AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--epoch1.json",
+        "sha256": "0044b486bdaa2dea5a16e92f4b22c7cd0d5d2fad6f3bd247bd59fe7f0c0f4b74",
+        "dest": "/ChatGPT-Research-State/delta14-mixed-tate/AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--epoch1.json",
+        "checkpoint": "epoch1",
+        "kind": "generation"
+      },
+      {
+        "name": "AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--geometry-w1.json",
+        "sha256": "4b276a5bd08a721677a1cb9408fcd125a1f86713674ac879be8eb1bf119e3c44",
+        "dest": "/ChatGPT-Research-State/delta14-mixed-tate/AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--geometry-w1.json",
+        "checkpoint": "geometry-w1",
+        "kind": "generation"
+      },
+      {
+        "name": "AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--pf-candidate-v1.json",
+        "sha256": "566bb2fb738004961234c408430118c6c095930705598689f3172625c41e6f9f",
+        "dest": "/ChatGPT-Research-State/delta14-mixed-tate/AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--pf-candidate-v1.json",
+        "checkpoint": "pf-candidate-v1",
+        "kind": "generation"
+      },
+      {
+        "name": "AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--pf-leak-v1.json",
+        "sha256": "94fd7ae0db283ce4096941d55357b7e34aace353e6c19b1383e9a5ca1d25e9d1",
+        "dest": "/ChatGPT-Research-State/delta14-mixed-tate/AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--pf-leak-v1.json",
+        "checkpoint": "pf-leak-v1",
+        "kind": "generation"
+      },
+      {
+        "name": "AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--pf-hostile-v1.json",
+        "sha256": "93d0c3063da7d183a65415ae5e8d3da55e490466e87081f0fac143d83a751c85",
+        "dest": "/ChatGPT-Research-State/delta14-mixed-tate/AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--pf-hostile-v1.json",
+        "checkpoint": "pf-hostile-v1",
+        "kind": "generation"
+      },
+      {
+        "name": "AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--lattice-w2-incomplete.json",
+        "sha256": "3ea0e7b68da05af3825c8813ae586df851a04b07ecdac52226afc3063f55fa6f",
+        "dest": "/ChatGPT-Research-State/delta14-mixed-tate/AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--lattice-w2-incomplete.json",
+        "checkpoint": "lattice-w2-incomplete",
+        "kind": "generation"
+      }
+    ],
+    "completed_assignments": {
+      "product_input": "PROMOTED exact narrow h0..2 repair, full cadence externally byte verified",
+      "relative_lattice_w1": "complete externally byte verified and root-synthesized;1 independent credit",
+      "relative_geometry_w1": "complete externally byte verified and root-synthesized;1 independent credit",
+      "pf_leak": "PASS externally byte verified",
+      "pf_hostile": "mathematical PASS PF01–PF06 externally byte verified;PF07 pending",
+      "relative_lattice_w2": "prior deliberate local-stop interruption, incomplete with metadata only;zero credit",
+      "pf_recon_v1": "coordinator-interrupted initial draft only;no manifest;zero completion credit",
+      "relative_geometry_w2": "coordinator/runtime-interrupted initial draft plus ambiguous patch;no final return/ledger/clock/manifest;zero credit"
+    },
+    "recovery_constraints": {
+      "do_not_repeat": "All inherited promotions and completed product/leakage/hostile gates. Never reopen continuation9 or failed unchanged boundary candidates.",
+      "strict_pf_replacement": "Fresh context fork_turns:none; exact four allowed files only. Do NOT give incomplete reconstruction draft or this emergency report's mathematical draft material to the reconstructer. Complete actual report+manifest must be externally byte verified before comparison.",
+      "geometry_replacement": "Same own-route W2 assignment may resume own actually durable draft after inspection;no extra wave credit for restart. No lattice-route material until both routes have2 complete independent waves.",
+      "scope": "Product-input repair is not verification of relative-toric-boundary-v1/v2. Generic projectivization remains an unresolved equivalent;no generic class evaluation.",
+      "fresh_bootstrap": "Fetch live owner/heartbeat/current immutable generations;verify authorization+clocks+unfinished frontier;conditionally claim expired lease with generation+1/readback;publish minimal recovery Dropbox state+matching heartbeat;reuse tasks/startsignal and verify actual supervisor. No repeat static hashes without conflict."
+    },
+    "emergency_report_path": "watchdog/recovery/continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7-g14/REPORT.md",
+    "emergency_checkpoint_path": "watchdog/recovery/continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7-g14/CHECKPOINT.json"
+  },
+  "read_order": [
+    "REPORT.md",
+    "CHECKPOINT.json",
+    "exact Dropbox generations named in state.emergency_publications as needed"
+  ],
+  "report_text": "# Continuation10 — execution interrupted, verified partial result\n\nCampaign: delta14-mixed-tate-20261012T210157Z.\nAuthorization: continuation10-relative-generic-exact-20261015-v1.\nRun: continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7; ownership generation14.\nLaunch07:47:45Z; delivery reserve11:37:45Z; hard deadline11:47:45Z on2026-10-15. These clocks are unchanged.\n\n## Exact earned result\n\nThe only newly promoted result is product-input-v1. For J <= F2^4 of dimension h=0,1,2, with the specified shear action on F2 x (F2^4)^*, the actual stabilizer group Gamma_J is G_h x C2^(4-h), including every ineffective elementary factor. Its compactly supported classifying-stack motive is integral mixed Tate. The proof uses the established h<=2 Pauli cases and iterated character-line principal GL1 torsors, avoiding the unsupported tensor/totalization interchange.\n\nIn K0(Stacks_C)=K0(Var_C)[q^-1,(q^j-1)^-1:j>=1], the exact conclusion is {B Gamma_J}={B G_h}, with the h=0 value1. No value for {B G1} or {B G2} is inferred merely from mixed-Tateness.\n\nCandidate proof SHA256:54e54082f87c8e21497ca7fbf7a2d1e98fc0b85d78bdd144a8ac8d829a1d7d5c.\nStrict reconstructionv2 SHA256:81a3046113c9188629e27c41161fa859f148bc60c5c3c97dcc8cf9a91893aa82.\nStrict comparisonv2 PASS SHA256:8cb756eaba64509d94bad60a8ff88564898f61d3eac0bc946117020fe011056c.\nFull leakage, hostile, reconstructionv2 and comparisonv2 artifacts and actual manifests were externally saved and raw-byte verified. The earlier reconstruction/comparison remain qualified because their packet contained proof-shaped old excerpts; they do not supply the strict-blindness gate. All verification is same-family; no outside-family/human audit occurred.\n\nThis repair does not validate the failed relative-toric-boundary-v1/v2 candidates or settle their remaining geometric arguments.\n\n## Original relative generic quotient\n\nThe target remains Tcal=[Q3 x P8/(H x <sigma>)], with H=F2^3 and sigma(q,p)=(q*pi(p),p^-1), over BH=[P8/(H x <sigma>)]. The exact kernel of pi is mu2^3. BH remains undecided.\n\nRELATIVE-LATTICE W1 produced a precise candidate obstruction to one literal reciprocal-factor section ansatz: for H-equivariant maps c:L3->Z[J], psi:Z[J]->A8, the augmentation of psi c(2e0) is divisible by4. Hence inclusion cannot equal -2b+psi c for an equivariant b:L3->A8. This excludes the explicitly specified H-permuted products of1+characters, not arbitrary rational sections or monomial-unit cocycles. The candidate includes a positive rank-two control.\n\nIts leakage gate passed and hostile mathematical checks PF01–PF06 passed, all externally byte verified. PF07 (actual reconstruction isolation) and comparison remain unfinished. The proof-blind reconstructer was interrupted with an initial draft only and no manifest; its chat statement that an argument appeared complete is not credited as a complete reconstruction. Thus this obstruction is NOT promoted.\n\nRELATIVE-GEOMETRY W1 produced candidate calculations retaining the degree16 Kummer covers in coefficient normalization and single-label elimination. It also gave a candidate exact identity {Tcal}={[Z0/G]}+(q-1){[Z1/G]}, with Zs the levels of the actual invariant F=sum_u(1+r_u^2)y_u^2. This only repackages an unresolved scalar quotient: {Tcal}=(q-1){Y}, where Y is still unknown. It is NOT a genuine generic evaluation or simplification and has not undergone the full verification cadence.\n\nThe second geometry wave began a distinct simultaneous four-pair calculation. Only its initial unresolved draft is known saved; an incremental patch has ambiguous persistence. No full actions/complements/ledger or final actual manifest was completed. Zero second-wave credit is awarded.\n\nThe second lattice attempt likewise earned zero credit: it missed its local stop without a saved mathematical return, then was restricted to metadata-only finalization. Its metadata and actual manifest were externally saved. Subsequent primary-source reading found a possible triquadratic Brauer-group test, but no instantiated theorem or generic specialization bridge was completed.\n\nTherefore the generic contribution has genuinely been neither evaluated nor simplified. No new conclusion follows for {BDelta14}: neither its value, equality to1, nor inequality to1 is proved. The integral mixed-Tate target remains unresolved. Launch-provided downstream d interfaces were not source-pinned and were not used.\n\n## Exact remaining work and provenance\n\nImmediate recovery frontier: replace the incomplete PF reconstruction in a genuinely fresh proof-blind context using the same four-file packet; externally persist and verify the full return and actual manifest; only then launch comparison. Valid leakage/hostile gates must not be repeated.\n\nSingle best indispensable mathematical task: resolve the actual unrestricted descent obstruction for the original twisted Q3-family, including a verified decision of the proposed Brauer-class/Dec criterion over the generic base. The literal reciprocal-factor obstruction alone does not decide this. No implication from a rational-section obstruction to non-mixed-Tateness may be assumed.\n\nSource leads only, not promoted premises:\n- Queguiner-Mathieu–Tignol, Documenta Math. Extra Volume Merkurjev2015, Remark5.14: https://ftp.gwdg.de/pub/misc/EMIS/journals/DMJDMV/vol-merkurjev/queguiner-mathieu_tignol.pdf\n- Wadsworth, Unitary SK1 of semiramified graded and valued division algebras, Remark8.2: https://mathweb.ucsd.edu/~wadswrth/AWunitarySK1.pdf\n- Karpenko, Codimension2 cycles on Severi–Brauer varieties, K-Theory13(1998), proposed Corollary5.4/Example4.12 check: https://sites.ualberta.ca/~karpenko/publ/ch2.pdf\nThe needed C-field instantiation, full hypotheses, and specialization bridge remain unverified. The last local Karpenko download/read failed during the outage.\n\nCurrent independent search credits: lattice1, geometry1. Preserve all inherited parent counts and continuation9 counts unchanged. Verification contributes zero search-wave credit.\n\nTiming failures are disclosed, not normalized away: initial lattice gate overrun32.24seconds; initial geometry gate overrun101.240427seconds including corrected packet-comprehension charge; latticeW2 additional-budget overrun45.632838seconds and conservative local-wall-stop overrun105.632838seconds. Lattice cumulative mechanism charge is2327.872838seconds including180seconds root source reassessment. Geometry cumulative charge is1841.240427seconds including conservative360seconds for interrupted W2. No accumulator reset.\n\nThe continuation5 original cubical comparison report and actual manifest bytes remain missing; inherited contemporaneous PASS/hashes retain their recorded provenance limitation. Neither that missing evidence nor any unfinished new report has been reconstructed from a hash.\n\n## Why this execution stopped\n\nCoordinator exec-server transport disconnected around09:29Z and one cleanup read failed to return. The local environment then reported409 environment_offline. Research assistant's coordinator-distress rule requires stopping new work after at most one cleanup/reconciliation attempt; workflow-recovery also requires a clean resumable exit. Both active assignments were interrupted and reconciled administratively. This is an infrastructure interruption, not a mathematical failure or deliberate scope-exhausted pause.\n\nA fresh downloadable capsule could not be generated or saved. The last verified capsule plus subsequent exact immutable Dropbox generations remain authoritative. This emergency GitHub record is supplemental, not a falsely verified Dropbox terminal file.\n\nThe existing recovery/results task and hourly backup are retained, with no duplicate task. Live heartbeat is interrupted, terminal_delivery_complete=false, dropbox_final_status_verified=false, so recovery is still needed. No terminal success signal is sent. Ownership will be conditionally released only after this record is read back. A fresh independently checked Work invocation may continue within the original remaining window; at/after11:37:45Z only finalization is permitted. No claim is made that automatic recovery has succeeded or that this stopped execution continues research in the background.\n",
+  "source_authority": "GitHub supplemental emergency record; prior Dropbox generations retain their verified raw bytes. No new Dropbox byte verification claimed."
+}
