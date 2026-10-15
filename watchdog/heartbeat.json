@@ -16,7 +16,7 @@
   "active_workers": [
     "pf_recon_replacement1"
   ],
-  "current_assignment": "PF-RECON-v1 replacement1, exact four-file packet ready",
+  "current_assignment": "PF-RECON-v1 replacement1 running in verified four-input proof-blind context",
   "first_unfinished_action": "Fresh proof-blind replacement of incomplete PF-RECON-v1 from exact four-file allowlist, then external full-byte persistence and comparison. Concurrent search may resume only after recovery health check.",
   "launch_kit": "delta14-relative-generic-launch-v1-20261015.zip",
   "launch_kit_sha256": "49cde9d2aea51d8d1d32c10434718fad4ff07ade2cc5fd5aaf2e7d032ee9936a",
@@ -195,7 +195,7 @@
   },
   "provenance_note": "Pinned terminal capsule contains stale recovery START_HERE. Terminal FINAL_STATUS and live heartbeat supersede it. No previous completed gate repeated.",
   "source_statement_pending": false,
-  "last_heartbeat_utc": "2026-10-15T09:46:54.606Z",
+  "last_heartbeat_utc": "2026-10-15T09:51:09.465Z",
   "latest_verified_dropbox_generation": "AUTONOMOUS--continuation10-recovery-20261015T094314Z-a23632894cf5--g15--bootstrap.json",
   "latest_verified_dropbox_generation_sha256": "aa0efd61809b0c424dcc764429b7268be4e7fe0be31b863426d196704be5d63e",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
