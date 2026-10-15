@@ -1,158 +1,201 @@
 {
+  "schema": "delta14-continuation10-state-v1",
   "campaign_id": "delta14-mixed-tate-20261012T210157Z",
-  "authorization_id": "continuation9-autonomous-strategy-20261014-v1",
-  "run_id": "continuation9-recovery-20261014T212819Z-9b87a01c8656",
-  "lease_generation": 13,
-  "predecessor_run_id": "continuation9-autonomous-20261014T193034Z-0599f2e47215",
-  "predecessor_generation": 12,
-  "status": "stopped",
+  "authorization_id": "continuation10-relative-generic-exact-20261015-v1",
+  "run_id": "continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7",
+  "lease_generation": 14,
+  "status": "running",
   "global_campaign_status": "INCOMPLETE",
-  "authorization_start_utc": "2026-10-14T19:27:19Z",
-  "delivery_start_utc": "2026-10-14T23:17:19Z",
-  "hard_deadline_utc": "2026-10-14T23:27:19Z",
-  "last_heartbeat_utc": "2026-10-14T22:17:04.253Z",
-  "research_started": true,
-  "mathematical_work_authorized": false,
+  "authorization_start_utc": "2026-10-15T07:47:45Z",
+  "delivery_start_utc": "2026-10-15T11:37:45Z",
+  "hard_deadline_utc": "2026-10-15T11:47:45Z",
+  "delivery_reserve_minutes": 10,
+  "research_started": false,
+  "math_start_utc": null,
+  "active_math_elapsed_seconds": 0,
   "active_workers": [],
-  "current_assignment": null,
-  "first_unfinished_action": "None within this authorization. A successor requires explicit new authorization and a genuinely new integral comparison/stratification input.",
-  "terminal_delivery_complete": true,
-  "dropbox_final_status_verified": true,
-  "watchdog_recovery_armed": false,
-  "recovery_mode": "DIRECT-RESUME",
-  "recovery_classification": "INCOMPLETE",
-  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation9-recovery-20261014T212819Z-9b87a01c8656--g13--terminal.json",
-  "latest_verified_dropbox_generation_sha256": "7f02f9785c86a965a41ae689ffe1a3ffe855807fef797d4a05e2c361b0ac65e5",
-  "recovery_bootstrap_raw_readback_equal": true,
-  "source_generation": "AUTONOMOUS--continuation9-autonomous-20261014T193034Z-0599f2e47215--g12--fc-recon-v1.json",
-  "source_generation_sha256": "7b6c2984ed7a67995b927b4765c0e301ef23ad8319ecf2f2e97fcfe2ee03b885",
-  "source_capsule": "AUTONOMOUS--continuation9-autonomous-20261014T193034Z-0599f2e47215--g12--j-promoted-v1--RESUME_CAPSULE.zip",
-  "source_capsule_sha256": "960ef2bef554bbb086033181718f2379331fdb9419f30ca62e9ac68516b4a211",
-  "supervisor_actions_run_id": 38640786031,
-  "supervisor_verification_level": "Actual generation-13 GitHub Actions supervisor run observed pending after start.signal readback.",
-  "promoted_results": {
-    "exact-j-v1": {
-      "label": "promoted",
-      "contract": "claim-contract-v1",
-      "verification_gates": {
-        "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED",
-        "hostile": "PASS_EXTERNALLY_BYTE_VERIFIED",
-        "reconstruction": "COMPLETE_EXTERNALLY_BYTE_VERIFIED",
-        "comparison": "PASS_EXTERNALLY_BYTE_VERIFIED"
-      },
-      "proof_sha256": "dd40e00a1e5fc066579488e27f348ee5fd8c2dc2d45801e7bc4de91213462dde"
-    },
-    "relative-brauer-v1": {
-      "label": "promoted",
-      "contract": "claim-contract-v1",
-      "verification_gates": {
-        "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED",
-        "hostile": "PASS_EXTERNALLY_BYTE_VERIFIED",
-        "reconstruction": "COMPLETE_EXTERNALLY_BYTE_VERIFIED",
-        "comparison": "PASS_EXTERNALLY_BYTE_VERIFIED"
-      },
-      "proof_sha256": "04b991cc1fe3774dce9d1e2644fbbee9981175b5bca5dfe1f7e81f6bb3d2e26e"
-    },
-    "collision-boundary-v2": {
-      "label": "promoted",
-      "contract": "claim-contract-v2",
-      "verification_gates": {
-        "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED",
-        "hostile": "PASS_EXTERNALLY_BYTE_VERIFIED",
-        "reconstruction": "COMPLETE_EXTERNALLY_BYTE_VERIFIED",
-        "comparison": "PASS_EXTERNALLY_BYTE_VERIFIED"
-      },
-      "proof_sha256": "ce5ed1e54013d71b0c7b8a9dcb41a977b8bbcc51203e88faa20e978c22a29edc"
-    },
-    "free-collision-complement-v1": {
-      "label": "promoted",
-      "contract": "claim-contract-v1",
-      "verification_gates": {
-        "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED",
-        "hostile": "PASS_EXTERNALLY_BYTE_VERIFIED",
-        "reconstruction": "COMPLETE_EXTERNALLY_BYTE_VERIFIED",
-        "comparison": "PASS_EXTERNALLY_BYTE_VERIFIED"
-      },
-      "proof_sha256": "5fa96128bc9a264d7aaa5e0190bd86226e1527d63f56188d600d7d7d36e819c1",
-      "promotion_statement_sha256": "e655191afd53cbf431412640a43dc4d2b58fdb55c3a799f8578bc1df3ba6c8d6",
-      "promotion_record_sha256": "bb6d10ffb62478439bafcf09e910b915b3c8e02985f203624f3e9952780a7f19"
-    }
-  },
-  "candidate_statuses": {},
-  "wave_counts": {
-    "MT-STRUCT": 2,
-    "MT-OBSTRUCT": 2,
-    "C3/COINCIDENCE": 2
-  },
-  "new_independent_wave_credit": 3,
-  "active_math_elapsed_seconds": 1106.19286,
-  "aggregate_closed_mathematical_seconds": 2103.302944,
-  "historical_missing_evidence": "Continuation5 original cubical comparison report and actual manifest bytes remain lost; recorded PASS/hashes preserved, not reconstructed.",
+  "current_assignment": "Bootstrap continuation10; then narrow product-input repair",
+  "first_unfinished_action": "Recover fixed STATEMENT.md and PAULI definitions from pinned predecessor lineage; verify supervisor; narrow product-input repair.",
+  "launch_kit": "delta14-relative-generic-launch-v1-20261015.zip",
+  "launch_kit_sha256": "49cde9d2aea51d8d1d32c10434718fad4ff07ade2cc5fd5aaf2e7d032ee9936a",
+  "source_capsule": "AUTONOMOUS--continuation9-recovery-20261014T212819Z-9b87a01c8656--g13--terminal--RESUME_CAPSULE.zip",
+  "source_capsule_sha256": "c0c1dd053fa5d9e9688eaaba28818dd7bd7ae9707ee9f90db815ef6294221c72",
+  "source_generation": "AUTONOMOUS--continuation9-recovery-20261014T212819Z-9b87a01c8656--g13--terminal.json",
+  "source_generation_sha256": "7f02f9785c86a965a41ae689ffe1a3ffe855807fef797d4a05e2c361b0ac65e5",
+  "source_raw_bytes_verified": true,
+  "source_final_status_sha256": "dc98a4ea837c52740f68b458ae2b119c734d1c59e8dd22046b2e5ee505c0e052",
   "policy_sha": "ffb5dc24643d747482e2f1ab94040431b7e46361",
   "ownership_protocol_sha": "4bb548d2a8a8772dc2a1d0e3271c84825856d584",
+  "watchdog_recovery_armed": false,
+  "terminal_delivery_complete": false,
+  "dropbox_final_status_verified": false,
+  "clock_reset": false,
+  "existing_recovery_task_id": "6ace7f845e50819197062077fdcc8125",
+  "existing_hourly_task_id": "6ace34e619e08191a0fafff81fa8714c",
+  "hourly_backup_incident": "Observed disabled at launch; re-enabled existing task 2026-10-15T07:50:01Z.",
+  "inherited_frontier": {
+    "campaign_id": "delta14-mixed-tate-20261012T210157Z",
+    "authorization_id": "continuation9-autonomous-strategy-20261014-v1",
+    "run_id": "continuation9-recovery-20261014T212819Z-9b87a01c8656",
+    "lease_generation": 13,
+    "predecessor_run_id": "continuation9-autonomous-20261014T193034Z-0599f2e47215",
+    "predecessor_generation": 12,
+    "status": "stopped",
+    "global_campaign_status": "INCOMPLETE",
+    "authorization_start_utc": "2026-10-14T19:27:19Z",
+    "delivery_start_utc": "2026-10-14T23:17:19Z",
+    "hard_deadline_utc": "2026-10-14T23:27:19Z",
+    "last_heartbeat_utc": "2026-10-14T22:17:04.253Z",
+    "research_started": true,
+    "mathematical_work_authorized": false,
+    "active_workers": [],
+    "current_assignment": null,
+    "first_unfinished_action": "None within this authorization. A successor requires explicit new authorization and a genuinely new integral comparison/stratification input.",
+    "terminal_delivery_complete": true,
+    "dropbox_final_status_verified": true,
+    "watchdog_recovery_armed": false,
+    "recovery_mode": "DIRECT-RESUME",
+    "recovery_classification": "INCOMPLETE",
+    "latest_verified_dropbox_generation": "AUTONOMOUS--continuation9-recovery-20261014T212819Z-9b87a01c8656--g13--terminal.json",
+    "latest_verified_dropbox_generation_sha256": "7f02f9785c86a965a41ae689ffe1a3ffe855807fef797d4a05e2c361b0ac65e5",
+    "recovery_bootstrap_raw_readback_equal": true,
+    "source_generation": "AUTONOMOUS--continuation9-autonomous-20261014T193034Z-0599f2e47215--g12--fc-recon-v1.json",
+    "source_generation_sha256": "7b6c2984ed7a67995b927b4765c0e301ef23ad8319ecf2f2e97fcfe2ee03b885",
+    "source_capsule": "AUTONOMOUS--continuation9-autonomous-20261014T193034Z-0599f2e47215--g12--j-promoted-v1--RESUME_CAPSULE.zip",
+    "source_capsule_sha256": "960ef2bef554bbb086033181718f2379331fdb9419f30ca62e9ac68516b4a211",
+    "supervisor_actions_run_id": 38640786031,
+    "supervisor_verification_level": "Actual generation-13 GitHub Actions supervisor run observed pending after start.signal readback.",
+    "promoted_results": {
+      "exact-j-v1": {
+        "label": "promoted",
+        "contract": "claim-contract-v1",
+        "verification_gates": {
+          "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED",
+          "hostile": "PASS_EXTERNALLY_BYTE_VERIFIED",
+          "reconstruction": "COMPLETE_EXTERNALLY_BYTE_VERIFIED",
+          "comparison": "PASS_EXTERNALLY_BYTE_VERIFIED"
+        },
+        "proof_sha256": "dd40e00a1e5fc066579488e27f348ee5fd8c2dc2d45801e7bc4de91213462dde"
+      },
+      "relative-brauer-v1": {
+        "label": "promoted",
+        "contract": "claim-contract-v1",
+        "verification_gates": {
+          "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED",
+          "hostile": "PASS_EXTERNALLY_BYTE_VERIFIED",
+          "reconstruction": "COMPLETE_EXTERNALLY_BYTE_VERIFIED",
+          "comparison": "PASS_EXTERNALLY_BYTE_VERIFIED"
+        },
+        "proof_sha256": "04b991cc1fe3774dce9d1e2644fbbee9981175b5bca5dfe1f7e81f6bb3d2e26e"
+      },
+      "collision-boundary-v2": {
+        "label": "promoted",
+        "contract": "claim-contract-v2",
+        "verification_gates": {
+          "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED",
+          "hostile": "PASS_EXTERNALLY_BYTE_VERIFIED",
+          "reconstruction": "COMPLETE_EXTERNALLY_BYTE_VERIFIED",
+          "comparison": "PASS_EXTERNALLY_BYTE_VERIFIED"
+        },
+        "proof_sha256": "ce5ed1e54013d71b0c7b8a9dcb41a977b8bbcc51203e88faa20e978c22a29edc"
+      },
+      "free-collision-complement-v1": {
+        "label": "promoted",
+        "contract": "claim-contract-v1",
+        "verification_gates": {
+          "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED",
+          "hostile": "PASS_EXTERNALLY_BYTE_VERIFIED",
+          "reconstruction": "COMPLETE_EXTERNALLY_BYTE_VERIFIED",
+          "comparison": "PASS_EXTERNALLY_BYTE_VERIFIED"
+        },
+        "proof_sha256": "5fa96128bc9a264d7aaa5e0190bd86226e1527d63f56188d600d7d7d36e819c1",
+        "promotion_statement_sha256": "e655191afd53cbf431412640a43dc4d2b58fdb55c3a799f8578bc1df3ba6c8d6",
+        "promotion_record_sha256": "bb6d10ffb62478439bafcf09e910b915b3c8e02985f203624f3e9952780a7f19"
+      }
+    },
+    "candidate_statuses": {},
+    "wave_counts": {
+      "MT-STRUCT": 2,
+      "MT-OBSTRUCT": 2,
+      "C3/COINCIDENCE": 2
+    },
+    "new_independent_wave_credit": 3,
+    "active_math_elapsed_seconds": 1106.19286,
+    "aggregate_closed_mathematical_seconds": 2103.302944,
+    "historical_missing_evidence": "Continuation5 original cubical comparison report and actual manifest bytes remain lost; recorded PASS/hashes preserved, not reconstructed.",
+    "policy_sha": "ffb5dc24643d747482e2f1ab94040431b7e46361",
+    "ownership_protocol_sha": "4bb548d2a8a8772dc2a1d0e3271c84825856d584",
+    "latest_verified_dropbox_generation_raw_readback_equal": true,
+    "failed_candidates": {
+      "relative-toric-boundary-v1": {
+        "status": "failed_hostile_nonpass",
+        "contract": "claim-contract-v1",
+        "gates": {
+          "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED",
+          "hostile": "NONPASS_EXTERNALLY_BYTE_VERIFIED",
+          "reconstruction": "NOT_RUN",
+          "comparison": "NOT_RUN"
+        },
+        "proof_sha256": "2293992a59b44a4fc5d0bfeeecb3508deb5e4eac5fe9272ff89f298cbc7083a7",
+        "hostile_report_sha256": "2717b95450b4127d7fe2d2a6bf4ae49b1be415d66f934db3680273a7377b6d9b",
+        "hostile_manifest_sha256": "ca9c84bd43aa38cfee5515c8d80a598519346e24d7efc5ad3a322a138a088038",
+        "blocking_defect": "Missing motive-level product comparison for B(G_h x C2^(4-h)); six-support induction and downstream boundary comparison not proved.",
+        "unchanged_retry_forbidden": true
+      },
+      "relative-toric-boundary-v2": {
+        "status": "failed_hostile_nonpass",
+        "contract": "claim-contract-v1",
+        "gates": {
+          "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED",
+          "hostile": "NONPASS_EXTERNALLY_BYTE_VERIFIED",
+          "reconstruction": "NOT_RUN",
+          "comparison": "NOT_RUN"
+        },
+        "proof_sha256": "16a484dae15b5223fd74db3ded25fefbccc4e793b87bd0058ea275f7d5e6cf0e",
+        "hostile_report_sha256": "c926c7d272d622477ad20d2522c58cf16a4b4897b932f7a6a4a5087bb5c91257",
+        "hostile_manifest_sha256": "5fe552248da62bcdbde9fa799f60035989dd7aa3572f7abf73564d81aa0a3e45",
+        "blocking_defect": "Unjustified interchange of separate Sella totalizations with derived tensor product.",
+        "unchanged_retry_forbidden": true
+      }
+    },
+    "strategy_epoch": 6,
+    "strategy_decision": "Deliberate scope-exhausted pause: relative product-totalization repair and two distinct absolute residual mechanisms all returned externally verified NO_GO; no unchanged retry or unsupported theorem.",
+    "mechanism_screens": {
+      "REL-PRODUCT-W1": {
+        "status": "NO_GO_EXTERNALLY_BYTE_VERIFIED",
+        "active_math_elapsed_seconds": 180,
+        "cap_seconds": 1200,
+        "independent_wave_credit": 0,
+        "return_sha256": "5cbd330e7f42b7a60aec093e0b0ddc3c206b5b8c53064a1d4dcc19137c89fd22",
+        "manifest_sha256": "22c8309df86c4d4e9d25526f89eaf5bde6009575b11842442fd035fcc91c94ed"
+      },
+      "C3-ABS-W2": {
+        "status": "NO_GO_EXTERNALLY_BYTE_VERIFIED",
+        "math_start_utc": "2026-10-14T22:08:17.155Z",
+        "active_math_elapsed_seconds": 180,
+        "preplanning_charge_seconds": 180,
+        "cap_seconds": 1200,
+        "independent_leaf_wave_credit": 1,
+        "return_sha256": "f0703325d6daf512a8b36f53d0a3b2dc05fe0f91d88ddd1f68ee0d9d6a70d6e2",
+        "manifest_sha256": "c76f1c77cd197f4e72b8b561588b61c14f5179d799c4d14a54569dd0dbd7a9d6",
+        "blocking_gap": "Need a new integral motivic comparison or equivariant Tate stratification controlling the nonconstant quotient/projective-bundle total space without assuming M^c(B) mixed Tate."
+      }
+    },
+    "bounded_workflow_status": "COMPLETED_PARTIAL_RESULT_SCOPE_EXHAUSTED",
+    "terminal_utc": "2026-10-14T22:17:04.253Z",
+    "latest_verified_dropbox_capsule": "AUTONOMOUS--continuation9-recovery-20261014T212819Z-9b87a01c8656--g13--terminal--RESUME_CAPSULE.zip",
+    "latest_verified_dropbox_capsule_sha256": "c0c1dd053fa5d9e9688eaaba28818dd7bd7ae9707ee9f90db815ef6294221c72",
+    "latest_verified_dropbox_capsule_raw_readback_equal": true,
+    "final_status_path": "FINAL_STATUS--continuation9-autonomous-strategy-20261014-v1--continuation9-recovery-20261014T212819Z-9b87a01c8656--g13.md",
+    "final_status_sha256": "dc98a4ea837c52740f68b458ae2b119c734d1c59e8dd22046b2e5ee505c0e052",
+    "final_status_raw_readback_equal": true,
+    "stop_reason": "Deliberate scope-exhausted pause after externally verified NO_GO on the relative product repair and two materially different absolute residual mechanisms; not a crash, disproof, or deadline reset."
+  },
+  "provenance_note": "Pinned terminal capsule contains stale recovery START_HERE. Terminal FINAL_STATUS and live heartbeat supersede it. No previous completed gate repeated.",
+  "source_statement_pending": true,
+  "last_heartbeat_utc": "2026-10-15T07:53:51.146Z",
+  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--initial.json",
+  "latest_verified_dropbox_generation_sha256": "288a544a569d38f72f76cee9654b53d69fe7373f4690b5d6cd40e6f814ba9f0e",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
-  "failed_candidates": {
-    "relative-toric-boundary-v1": {
-      "status": "failed_hostile_nonpass",
-      "contract": "claim-contract-v1",
-      "gates": {
-        "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED",
-        "hostile": "NONPASS_EXTERNALLY_BYTE_VERIFIED",
-        "reconstruction": "NOT_RUN",
-        "comparison": "NOT_RUN"
-      },
-      "proof_sha256": "2293992a59b44a4fc5d0bfeeecb3508deb5e4eac5fe9272ff89f298cbc7083a7",
-      "hostile_report_sha256": "2717b95450b4127d7fe2d2a6bf4ae49b1be415d66f934db3680273a7377b6d9b",
-      "hostile_manifest_sha256": "ca9c84bd43aa38cfee5515c8d80a598519346e24d7efc5ad3a322a138a088038",
-      "blocking_defect": "Missing motive-level product comparison for B(G_h x C2^(4-h)); six-support induction and downstream boundary comparison not proved.",
-      "unchanged_retry_forbidden": true
-    },
-    "relative-toric-boundary-v2": {
-      "status": "failed_hostile_nonpass",
-      "contract": "claim-contract-v1",
-      "gates": {
-        "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED",
-        "hostile": "NONPASS_EXTERNALLY_BYTE_VERIFIED",
-        "reconstruction": "NOT_RUN",
-        "comparison": "NOT_RUN"
-      },
-      "proof_sha256": "16a484dae15b5223fd74db3ded25fefbccc4e793b87bd0058ea275f7d5e6cf0e",
-      "hostile_report_sha256": "c926c7d272d622477ad20d2522c58cf16a4b4897b932f7a6a4a5087bb5c91257",
-      "hostile_manifest_sha256": "5fe552248da62bcdbde9fa799f60035989dd7aa3572f7abf73564d81aa0a3e45",
-      "blocking_defect": "Unjustified interchange of separate Sella totalizations with derived tensor product.",
-      "unchanged_retry_forbidden": true
-    }
-  },
-  "strategy_epoch": 6,
-  "strategy_decision": "Deliberate scope-exhausted pause: relative product-totalization repair and two distinct absolute residual mechanisms all returned externally verified NO_GO; no unchanged retry or unsupported theorem.",
-  "mechanism_screens": {
-    "REL-PRODUCT-W1": {
-      "status": "NO_GO_EXTERNALLY_BYTE_VERIFIED",
-      "active_math_elapsed_seconds": 180,
-      "cap_seconds": 1200,
-      "independent_wave_credit": 0,
-      "return_sha256": "5cbd330e7f42b7a60aec093e0b0ddc3c206b5b8c53064a1d4dcc19137c89fd22",
-      "manifest_sha256": "22c8309df86c4d4e9d25526f89eaf5bde6009575b11842442fd035fcc91c94ed"
-    },
-    "C3-ABS-W2": {
-      "status": "NO_GO_EXTERNALLY_BYTE_VERIFIED",
-      "math_start_utc": "2026-10-14T22:08:17.155Z",
-      "active_math_elapsed_seconds": 180,
-      "preplanning_charge_seconds": 180,
-      "cap_seconds": 1200,
-      "independent_leaf_wave_credit": 1,
-      "return_sha256": "f0703325d6daf512a8b36f53d0a3b2dc05fe0f91d88ddd1f68ee0d9d6a70d6e2",
-      "manifest_sha256": "c76f1c77cd197f4e72b8b561588b61c14f5179d799c4d14a54569dd0dbd7a9d6",
-      "blocking_gap": "Need a new integral motivic comparison or equivariant Tate stratification controlling the nonconstant quotient/projective-bundle total space without assuming M^c(B) mixed Tate."
-    }
-  },
-  "bounded_workflow_status": "COMPLETED_PARTIAL_RESULT_SCOPE_EXHAUSTED",
-  "terminal_utc": "2026-10-14T22:17:04.253Z",
-  "latest_verified_dropbox_capsule": "AUTONOMOUS--continuation9-recovery-20261014T212819Z-9b87a01c8656--g13--terminal--RESUME_CAPSULE.zip",
-  "latest_verified_dropbox_capsule_sha256": "c0c1dd053fa5d9e9688eaaba28818dd7bd7ae9707ee9f90db815ef6294221c72",
-  "latest_verified_dropbox_capsule_raw_readback_equal": true,
-  "final_status_path": "FINAL_STATUS--continuation9-autonomous-strategy-20261014-v1--continuation9-recovery-20261014T212819Z-9b87a01c8656--g13.md",
-  "final_status_sha256": "dc98a4ea837c52740f68b458ae2b119c734d1c59e8dd22046b2e5ee505c0e052",
-  "final_status_raw_readback_equal": true,
-  "stop_reason": "Deliberate scope-exhausted pause after externally verified NO_GO on the relative product repair and two materially different absolute residual mechanisms; not a crash, disproof, or deadline reset."
+  "mathematical_work_authorized": true
 }
