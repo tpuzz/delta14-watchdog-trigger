@@ -23,7 +23,7 @@
   "active_math_elapsed_seconds": null,
   "aggregate_worker_seconds": 0,
   "active_workers": [],
-  "current_assignment": "Fresh sequential verification of paired-residual-v2; first leakage.",
+  "current_assignment": "Persist fresh v2 leakage PASS, then fresh hostile audit under checklist revision15.",
   "first_unfinished_action": "Freeze combined candidate v2; fresh leakage audit.",
   "source_instructions": "/ChatGPT-Research-State/delta14-mixed-tate/delta14-paired-label-4h-hourly-instructions-v1-20261015.txt",
   "source_instructions_sha256": "3c1b6adb2b2e7b98b3d3d7de8c87c19f86ee0ef2c71310a6b4405395143c31e3",
@@ -44,17 +44,17 @@
   "existing_hourly_task_id": "6ace34e619e08191a0fafff81fa8714c",
   "hourly_backup_incident": "Observed disabled; existing hourly task re-enabled 2026-10-15T13:10:26Z; no duplicate.",
   "watchdog_recovery_armed": true,
-  "supervisor_verification_level": "Actual job in_progress; checkout and regression tests success; supervise step in_progress, observed 2026-10-15T13:14:39Z. No end-to-end recovery certification.",
+  "supervisor_verification_level": "Actual job116442382345 remains in_progress; checkout/regression success and supervision in_progress observed14:01Z; no end-to-end recovery certification.",
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
   "clock_reset": false,
-  "last_heartbeat_utc": "2026-10-15T13:57:16.935Z",
+  "last_heartbeat_utc": "2026-10-15T14:02:39.064Z",
   "recovery_mode": "DIRECT-RESUME existing campaign under newly confirmed bounded authorization",
   "persistent_goal_status": "No new discovery; inherited campaign limitation retained.",
-  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--residual-v2-freeze.json",
-  "latest_verified_dropbox_generation_sha256": "7a460e935f4588a9f03bc19aa31841259d24db9256f0d3f9ab2c0e228f656029",
+  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--residual-v2-leak.json",
+  "latest_verified_dropbox_generation_sha256": "6d6a65406f287af35d8d662ad90357b1fde5fcdf050779e557c49777e9c1b4da",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
-  "dropbox_heartbeat_path": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--residual-v2-freeze.json",
+  "dropbox_heartbeat_path": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--residual-v2-leak.json",
   "supervisor_actions_run_id": 38740824534,
   "supervisor_job_id": 116442382345,
   "baseline_revisions": {
@@ -114,10 +114,14 @@
     "brief_sha256": "6def798e5ca82f8545f506320d33cc60790a3e3f60cb30d7544775b4441fd14f",
     "status": "candidate",
     "gates": {
-      "leakage": "NOT_RUN",
+      "leakage": "PASS_PENDING_EXTERNAL_READBACK",
       "hostile": "NOT_RUN",
       "reconstruction": "NOT_RUN",
       "comparison": "NOT_RUN"
+    },
+    "leakage": {
+      "report_sha256": "1d769dcdd38fe5d8bc72f04cde294ee792790bcef576eb446b2b97420650b906",
+      "manifest_sha256": "828593d03b8210f26d08d858fcf455749ccb8284ca9c3df9262339e74810eca7"
     }
   },
   "leakage_return": {
@@ -130,7 +134,7 @@
     "externally_byte_verified": true
   },
   "timing_qualification": "Root top-level counter was a conservative wall-union screen bound, including some interleaved administration, not exact active-mathematics telemetry. The13:35:34 feasibility decision is retained as an early/upper-bound gate; no assertion that exactly1200 active seconds had elapsed. Worker exact intervals separately retained. No budget reset or extension; continuation allowance is the explicit bounded13:55 test.",
-  "wall_elapsed_since_math_start_seconds": 2494,
+  "wall_elapsed_since_math_start_seconds": 2816,
   "norm_w2_external_evidence": {
     "name": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--norm-w2-return.json",
     "sha256": "51e666d86e356c18b277a83478b5b1306d2578d5f1f412d373351ed0af908dd3",
