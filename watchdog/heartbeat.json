@@ -13,10 +13,8 @@
   "research_started": true,
   "math_start_utc": "2026-10-15T07:55:12.444Z",
   "active_math_elapsed_seconds": 251.936741,
-  "active_workers": [
-    "pf_recon_replacement1"
-  ],
-  "current_assignment": "PF-RECON-v1 replacement1 running in verified four-input proof-blind context",
+  "active_workers": [],
+  "current_assignment": "Persist complete PF-RECON replacement1 before comparison",
   "first_unfinished_action": "Fresh proof-blind replacement of incomplete PF-RECON-v1 from exact four-file allowlist, then external full-byte persistence and comparison. Concurrent search may resume only after recovery health check.",
   "launch_kit": "delta14-relative-generic-launch-v1-20261015.zip",
   "launch_kit_sha256": "49cde9d2aea51d8d1d32c10434718fad4ff07ade2cc5fd5aaf2e7d032ee9936a",
@@ -195,9 +193,9 @@
   },
   "provenance_note": "Pinned terminal capsule contains stale recovery START_HERE. Terminal FINAL_STATUS and live heartbeat supersede it. No previous completed gate repeated.",
   "source_statement_pending": false,
-  "last_heartbeat_utc": "2026-10-15T09:51:09.465Z",
-  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation10-recovery-20261015T094314Z-a23632894cf5--g15--bootstrap.json",
-  "latest_verified_dropbox_generation_sha256": "aa0efd61809b0c424dcc764429b7268be4e7fe0be31b863426d196704be5d63e",
+  "last_heartbeat_utc": "2026-10-15T09:56:54.870Z",
+  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation10-recovery-20261015T094314Z-a23632894cf5--g15--pf-recon-r1.json",
+  "latest_verified_dropbox_generation_sha256": "fa83737ff4d000ca24596ca8c22bf0b4a9dae000c8adc5fcc92996b70ac8a742",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
   "mathematical_work_authorized": true,
   "source_statement_sha256": "76482cf9eb1e459429efa4fcdff74dd986fcb39889a48c40193642e63f23f32d",
@@ -325,7 +323,7 @@
       "gates": {
         "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED",
         "hostile": "MATHEMATICAL_PASS_EXTERNALLY_BYTE_VERIFIED; PF07 deferred to reconstruction/comparison",
-        "reconstruction": "INTERRUPTED_INITIAL_DRAFT_ONLY_NO_MANIFEST_NO_COMPLETION_CREDIT",
+        "reconstruction": "RECEIVED_COMPLETE_PENDING_EXTERNAL_PUBLICATION",
         "comparison": "NOT_RUN"
       }
     }
@@ -383,8 +381,8 @@
       "cause": "No saved mathematical return at stop; parent interrupted and allowed metadata only. No completed independent-wave credit."
     }
   ],
-  "latest_verified_dropbox_capsule": "AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--epoch1--RESUME_CAPSULE.zip",
-  "latest_verified_dropbox_capsule_sha256": "3390b681b63d9307ea1d022bba93cfda1da21951b340b431cb5ae947f6f34d73",
+  "latest_verified_dropbox_capsule": "AUTONOMOUS--continuation10-recovery-20261015T094314Z-a23632894cf5--g15--pf-recon-r1--RESUME_CAPSULE.zip",
+  "latest_verified_dropbox_capsule_sha256": "170d18de035c58147158b643251bf45f2b7d6928645a5ec11c6731d1bb42ac02",
   "latest_verified_dropbox_capsule_raw_readback_equal": true,
   "epoch_history": [
     {
@@ -515,5 +513,13 @@
   },
   "recovery_bootstrap_note": "No old audit repeated; current delta generation plus exact PF payloads verified. Old epoch capsule used only for unchanged launch authorization. Prior runtime incident retained as historical.",
   "recovery_bootstrap_raw_readback_equal": true,
-  "recovery_math_start_utc": "2026-10-15T09:46:46.678Z"
+  "recovery_math_start_utc": "2026-10-15T09:46:46.678Z",
+  "pf_reconstruction_return": {
+    "report_sha256": "260444a3a31ce7eb6ee10197797efd37968a3a30e525fd228d3eef27170686b2",
+    "manifest_sha256": "59bf5403d26bb97c006c6ab6665c0eb20d044520242ff804ff143f8f8804fe7a",
+    "start_utc": "2026-10-15T09:47:53Z",
+    "end_utc": "2026-10-15T09:54:52Z",
+    "independent_wave_credit": 0,
+    "isolation": "Fresh fork-none; exact four input hashes match original; no forbidden exposure; no runtime errors."
+  }
 }
