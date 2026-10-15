@@ -78,13 +78,13 @@
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
   "clock_reset": false,
-  "last_heartbeat_utc": "2026-10-15T15:50:05.983Z",
+  "last_heartbeat_utc": "2026-10-15T15:54:28.587Z",
   "recovery_mode": "CHECKED_DIRECT_RECOVERY_VERIFY_ONLY",
   "persistent_goal_status": "No new discovery; inherited campaign limitation retained.",
   "latest_verified_dropbox_generation": "AUTONOMOUS--continuation11-recovery-20261015T152347Z-g18--g18--hostile-pass.json",
   "latest_verified_dropbox_generation_sha256": "531b3e7dfb5df8b35f0a1c7b02a93be15848c9aaa4c51a4b711ba70d9eb0771d",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
-  "dropbox_heartbeat_path": "AUTONOMOUS--continuation11-recovery-20261015T152347Z-g18--g18--reconstruction-control-01--heartbeat.json",
+  "dropbox_heartbeat_path": "AUTONOMOUS--continuation11-recovery-20261015T152347Z-g18--g18--reconstruction-control-02--heartbeat.json",
   "supervisor_actions_run_id": 38760245125,
   "supervisor_job_id": 116509745138,
   "baseline_revisions": {
@@ -333,7 +333,7 @@
   "search_disposition": "VERIFY_ONLY after completed compactification pivot; local induction provisionally parked, no further search allowance.",
   "mathematics_mode": "VERIFY_ONLY",
   "current_audit_checklist_sha256": "ef7ada9b66560a376d9963ec9f695b7534b21835cc712c228d00be122f40f84b",
-  "infrastructure_last_checked_utc": "2026-10-15T15:50:00.775Z",
+  "infrastructure_last_checked_utc": "2026-10-15T15:54:24.071Z",
   "execution_epoch": {
     "number": 3,
     "start_utc": "2026-10-15T15:23:47.630Z",
@@ -398,5 +398,6 @@
       "reason": "Coherent live generation18 already owned by this continuing recovery; no duplicate work.",
       "observed_utc": "2026-10-15T15:48:44.977Z"
     }
-  ]
+  ],
+  "recovery_wakeup_duplicate_notice": "Repeated deliveries of PR17 and18 observe this coherent active generation18; no duplicate recovery."
 }
