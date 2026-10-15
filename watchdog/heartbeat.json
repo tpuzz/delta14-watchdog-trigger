@@ -2,9 +2,9 @@
   "schema": "delta14-continuation11-state-v1",
   "campaign_id": "delta14-mixed-tate-20261012T210157Z",
   "authorization_id": "continuation11-paired-label-exact-20261015-v1",
-  "run_id": "continuation11-paired-label-20261015T130749Z-28d8ccde1490",
-  "lease_generation": 17,
-  "status": "interrupted",
+  "run_id": "continuation11-recovery-20261015T152347Z-g18",
+  "lease_generation": 18,
+  "status": "bootstrapping",
   "global_campaign_status": "INCOMPLETE",
   "authorization_start_utc": "2026-10-15T13:07:49Z",
   "confirmed_at_utc": "2026-10-15T13:07:49Z",
@@ -41,7 +41,7 @@
   "active_math_elapsed_seconds": null,
   "aggregate_worker_seconds": null,
   "active_workers": [],
-  "current_assignment": "One bounded cleanup pass only; all mathematical work stopped.",
+  "current_assignment": "Bootstrap only; no mathematics until matching heartbeats and actual supervisor verified.",
   "first_unfinished_action": "Recover the exact compact-conic-v1 leakage assignment: reconcile any complete actual pre-interruption report/manifest without granting unearned credit; if incomplete, use one fresh isolated replacement with the same six allowed inputs. Then continue sequential hostile/reconstruction/comparison within the unchanged deadline. Do not repeat primary gates or launch new search.",
   "source_instructions": "/ChatGPT-Research-State/delta14-mixed-tate/delta14-paired-label-4h-hourly-instructions-v1-20261015.txt",
   "source_instructions_sha256": "3c1b6adb2b2e7b98b3d3d7de8c87c19f86ee0ef2c71310a6b4405395143c31e3",
@@ -62,19 +62,19 @@
   "existing_hourly_task_id": "6ace34e619e08191a0fafff81fa8714c",
   "hourly_backup_incident": "Observed disabled; existing hourly task re-enabled 2026-10-15T13:10:26Z; no duplicate.",
   "watchdog_recovery_armed": true,
-  "supervisor_verification_level": "Actual job116442382345 in_progress; checkout/regression success, supervision in_progress observed15:03:30Z. Both existing automations enabled. No end-to-end recovery certification.",
+  "supervisor_verification_level": "New recovery supervisor not yet verified; inherited supervisor observations historical only.",
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
   "clock_reset": false,
-  "last_heartbeat_utc": "2026-10-15T15:12:13.335Z",
-  "recovery_mode": "DIRECT-RESUME existing campaign under newly confirmed bounded authorization",
+  "last_heartbeat_utc": "2026-10-15T15:25:20.742Z",
+  "recovery_mode": "CHECKED_DIRECT_RECOVERY_VERIFY_ONLY",
   "persistent_goal_status": "No new discovery; inherited campaign limitation retained.",
-  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--interrupted-cleanup.json",
-  "latest_verified_dropbox_generation_sha256": "293463ce5bc1e7d804c0bf42b8d26fee108fa5b5d551bbfb5140470988c30994",
+  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation11-recovery-20261015T152347Z-g18--g18--bootstrap.json",
+  "latest_verified_dropbox_generation_sha256": "f08807ef7c263dcd95065db8137a5062573d8403bc1ac183fccb0ceba018925c",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
-  "dropbox_heartbeat_path": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--interrupted-cleanup.json",
-  "supervisor_actions_run_id": 38740824534,
-  "supervisor_job_id": 116442382345,
+  "dropbox_heartbeat_path": "AUTONOMOUS--continuation11-recovery-20261015T152347Z-g18--g18--bootstrap--heartbeat.json",
+  "supervisor_actions_run_id": null,
+  "supervisor_job_id": null,
   "baseline_revisions": {
     "STATEMENT": "76482cf9eb1e459429efa4fcdff74dd986fcb39889a48c40193642e63f23f32d",
     "PROVED": "92f8d5ee3e1b878069f380ab26dfd236756a21b4fe3b1e71a6d921ec7547880b",
@@ -302,7 +302,7 @@
     }
   },
   "search_disposition": "VERIFY_ONLY after completed compactification pivot; local induction provisionally parked, no further search allowance.",
-  "mathematics_mode": "STOPPED_COORDINATOR_RUNTIME_DISTRESS",
+  "mathematics_mode": "BOOTSTRAP_NO_MATH",
   "current_audit_checklist_sha256": "ef7ada9b66560a376d9963ec9f695b7534b21835cc712c228d00be122f40f84b",
   "infrastructure_last_checked_utc": "2026-10-15T15:04:21.801Z",
   "execution_epoch": {
@@ -318,5 +318,24 @@
     "error": "exec-server transport disconnected; failed to resume exec-server session: recovery timed out after25s",
     "cleanup_attempts": 1
   },
-  "recovery_eligibility": "Same authorization may direct-resume only in a fresh healthy environment before16:57:49Z; after reserve finalize_only. Hard deadline17:07:49Z unchanged. No successor."
+  "recovery_eligibility": "Same authorization may direct-resume only in a fresh healthy environment before16:57:49Z; after reserve finalize_only. Hard deadline17:07:49Z unchanged. No successor.",
+  "predecessor_run_id": "continuation11-paired-label-20261015T130749Z-28d8ccde1490",
+  "recovery_started_utc": "2026-10-15T15:23:47.630Z",
+  "recovery_incident_id": "aa6fd19579040faf1656ae4a",
+  "recovery_replacements": {
+    "PC-LEAK-v1": 1
+  },
+  "recovery_source_generation": {
+    "path": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--interrupted-cleanup.json",
+    "sha256": "293463ce5bc1e7d804c0bf42b8d26fee108fa5b5d551bbfb5140470988c30994"
+  },
+  "recovery_source_freeze": {
+    "name": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--compact-v1-freeze.json",
+    "sha256": "7b180f940daab3b45e8097a923e0eb88c567849a916557d3e3a0863176e7f1f8",
+    "raw_readback_equal": true
+  },
+  "recovery_wakeup_prs": [
+    17,
+    18
+  ]
 }
