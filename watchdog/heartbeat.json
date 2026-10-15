@@ -22,14 +22,16 @@
       "scheduled_utc": "2026-10-15T14:07:49Z",
       "actual_utc": "2026-10-15T14:08:10.045Z",
       "disposition": "PIVOT_WITHIN_SCOPE",
-      "path": "REASSESSMENT-01.md"
+      "path": "REASSESSMENT-01.md",
+      "delay_seconds": 21.045,
+      "delay_reason": "Coordinator checkpoint preparation; no outage or on-time observation fabricated."
     }
   ],
   "research_started": true,
   "math_start_utc": "2026-10-15T13:15:26.111Z",
   "math_segment_start_utc": "2026-10-15T13:15:26.111Z",
   "active_math_elapsed_seconds": null,
-  "aggregate_worker_seconds": 0,
+  "aggregate_worker_seconds": null,
   "active_workers": [
     {
       "task": "PR-HOSTILE-v2",
@@ -37,10 +39,18 @@
       "status": "running",
       "math_stop_utc": "2026-10-15T14:20:00Z",
       "delivery_utc": "2026-10-15T14:22:00Z"
+    },
+    {
+      "task": "PAIR-COMPACT-W3",
+      "agent": "/root/pair_compact_w3",
+      "status": "running",
+      "math_stop_utc": "2026-10-15T14:34:00Z",
+      "delivery_utc": "2026-10-15T14:36:00Z",
+      "replacement_count": 0
     }
   ],
-  "current_assignment": "Hostile v2 active; bounded compactification W3 approved by first hourly review, dispatch after checkpoint.",
-  "first_unfinished_action": "Freeze combined candidate v2; fresh leakage audit.",
+  "current_assignment": "Hostile v2 and one isolated compactification search active; sequential verification roles remain nonoverlapping.",
+  "first_unfinished_action": "Reconcile hostile return, persist complete actual records before dispatching blind reconstruction; bounded compactification W3 independent.",
   "source_instructions": "/ChatGPT-Research-State/delta14-mixed-tate/delta14-paired-label-4h-hourly-instructions-v1-20261015.txt",
   "source_instructions_sha256": "3c1b6adb2b2e7b98b3d3d7de8c87c19f86ee0ef2c71310a6b4405395143c31e3",
   "source_capsule": "AUTONOMOUS--continuation10-recovery-20261015T103125Z-g16--g16--terminal-complete--RESUME_CAPSULE.zip",
@@ -64,13 +74,13 @@
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
   "clock_reset": false,
-  "last_heartbeat_utc": "2026-10-15T14:08:32.716Z",
+  "last_heartbeat_utc": "2026-10-15T14:12:56.502Z",
   "recovery_mode": "DIRECT-RESUME existing campaign under newly confirmed bounded authorization",
   "persistent_goal_status": "No new discovery; inherited campaign limitation retained.",
-  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--hour1-strategy.json",
-  "latest_verified_dropbox_generation_sha256": "5620e81d215c62d7f241e102117e37dcff6d1935b40c20c3f1a353191dfa88b4",
+  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--hour1-capsule-pointer.json",
+  "latest_verified_dropbox_generation_sha256": "7db36b8351ed468f43d323808b937a67bb3eb2c0256f34bed3dfe76187dd7ac2",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
-  "dropbox_heartbeat_path": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--hour1-strategy.json",
+  "dropbox_heartbeat_path": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--hour1-capsule-pointer.json",
   "supervisor_actions_run_id": 38740824534,
   "supervisor_job_id": 116442382345,
   "baseline_revisions": {
@@ -81,8 +91,8 @@
   },
   "active_math_accounting": "Exact root active time unavailable; wall elapsed and explicitly recorded worker intervals are separate. No double counting or assertion of exact active total.",
   "provisional_findings": "Candidates only: affine pair swaps form index2 normalizer; common-isogeny repair has extra mu2 data. Original-family exact evaluation unresolved; no promotion.",
-  "latest_verified_dropbox_capsule": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--bootstrap--RESUME_CAPSULE.zip",
-  "latest_verified_dropbox_capsule_sha256": "7787204dc9d09ca4d6c0210f65eefbc04b804a20226f64c099ed7f6af8bb0c88",
+  "latest_verified_dropbox_capsule": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--hour1--RESUME_CAPSULE.zip",
+  "latest_verified_dropbox_capsule_sha256": "04c5450fc23edd53e15516b7d8fc9542b7e50461b5eefebab2655eb65a768840",
   "latest_verified_dropbox_capsule_raw_readback_equal": true,
   "completed_returns": [
     {
@@ -152,7 +162,7 @@
     "externally_byte_verified": true
   },
   "timing_qualification": "Root top-level counter was a conservative wall-union screen bound, including some interleaved administration, not exact active-mathematics telemetry. The13:35:34 feasibility decision is retained as an early/upper-bound gate; no assertion that exactly1200 active seconds had elapsed. Worker exact intervals separately retained. No budget reset or extension; continuation allowance is the explicit bounded13:55 test.",
-  "wall_elapsed_since_math_start_seconds": 3170,
+  "wall_elapsed_since_math_start_seconds": 3432,
   "norm_w2_external_evidence": {
     "name": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--norm-w2-return.json",
     "sha256": "51e666d86e356c18b277a83478b5b1306d2578d5f1f412d373351ed0af908dd3",
@@ -180,5 +190,30 @@
     "math_stop_utc": "2026-10-15T14:34:00Z",
     "delivery_utc": "2026-10-15T14:36:00Z",
     "replacement_count": 0
-  }
+  },
+  "aggregate_search_recorded_interval_seconds": 1807.352981095,
+  "recorded_worker_intervals": [
+    {
+      "task": "PAIR-LIFT-W1",
+      "start": "2026-10-15T13:18:52.192350Z",
+      "end": "2026-10-15T13:28:39.197140095Z",
+      "seconds": 587.004790095,
+      "classification": "reported mathematical interval"
+    },
+    {
+      "task": "PAIR-CORRESP-W1",
+      "start": "2026-10-15T13:18:57.802039Z",
+      "end": "2026-10-15T13:29:31.885477Z",
+      "seconds": 634.083438,
+      "classification": "recorded working interval including unseparated final review/bookkeeping"
+    },
+    {
+      "task": "PAIR-NORM-W2",
+      "start": "2026-10-15T13:37:52.843960Z",
+      "end": "2026-10-15T13:47:39.108713Z",
+      "seconds": 586.264753,
+      "classification": "reported mathematical interval"
+    }
+  ],
+  "policy_live_recheck_utc": "2026-10-15T14:12:29.959Z"
 }
