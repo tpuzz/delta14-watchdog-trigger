@@ -41,8 +41,8 @@
   "active_math_elapsed_seconds": null,
   "aggregate_worker_seconds": null,
   "active_workers": [],
-  "current_assignment": "PC-LEAK-v1-r1 fresh isolated leakage replacement, exact six allowed inputs; no new search",
-  "first_unfinished_action": "Recover the exact compact-conic-v1 leakage assignment: reconcile any complete actual pre-interruption report/manifest without granting unearned credit; if incomplete, use one fresh isolated replacement with the same six allowed inputs. Then continue sequential hostile/reconstruction/comparison within the unchanged deadline. Do not repeat primary gates or launch new search.",
+  "current_assignment": "Leakage passed and actual evidence externally byte-verified; next fresh hostile audit r16.",
+  "first_unfinished_action": "Hostile audit of exact paired-compact-conic-v1 against checklist revision16, then proof-blind reconstruction and comparison only after predecessor reports externally byte-verified.",
   "source_instructions": "/ChatGPT-Research-State/delta14-mixed-tate/delta14-paired-label-4h-hourly-instructions-v1-20261015.txt",
   "source_instructions_sha256": "3c1b6adb2b2e7b98b3d3d7de8c87c19f86ee0ef2c71310a6b4405395143c31e3",
   "source_capsule": "AUTONOMOUS--continuation10-recovery-20261015T103125Z-g16--g16--terminal-complete--RESUME_CAPSULE.zip",
@@ -66,13 +66,13 @@
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
   "clock_reset": false,
-  "last_heartbeat_utc": "2026-10-15T15:27:18.198Z",
+  "last_heartbeat_utc": "2026-10-15T15:32:20.390Z",
   "recovery_mode": "CHECKED_DIRECT_RECOVERY_VERIFY_ONLY",
   "persistent_goal_status": "No new discovery; inherited campaign limitation retained.",
-  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation11-recovery-20261015T152347Z-g18--g18--bootstrap.json",
-  "latest_verified_dropbox_generation_sha256": "f08807ef7c263dcd95065db8137a5062573d8403bc1ac183fccb0ceba018925c",
+  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation11-recovery-20261015T152347Z-g18--g18--leakage-pass.json",
+  "latest_verified_dropbox_generation_sha256": "3977fa8ce0cfe3a6ec2e7718565165b7ac2f0574738c6f899de6f1799cc37392",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
-  "dropbox_heartbeat_path": "AUTONOMOUS--continuation11-recovery-20261015T152347Z-g18--g18--supervisor-verified--heartbeat.json",
+  "dropbox_heartbeat_path": "AUTONOMOUS--continuation11-recovery-20261015T152347Z-g18--g18--leakage-pass--heartbeat.json",
   "supervisor_actions_run_id": 38760245125,
   "supervisor_job_id": 116509745138,
   "baseline_revisions": {
@@ -83,8 +83,8 @@
   },
   "active_math_accounting": "Exact root active time unavailable; wall elapsed and explicitly recorded worker intervals are separate. No double counting or assertion of exact active total.",
   "provisional_findings": "Residual-v2 promoted exact scope; compactification candidate still unverified. No exact class or motive evaluation.",
-  "latest_verified_dropbox_capsule": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--interrupted-cleanup--RESUME_CAPSULE.zip",
-  "latest_verified_dropbox_capsule_sha256": "af4ccda9df62fa76970de398cd44670b70b1a68ec3c270502e36b3653f6c3749",
+  "latest_verified_dropbox_capsule": "AUTONOMOUS--continuation11-recovery-20261015T152347Z-g18--g18--leakage-pass--RESUME_CAPSULE.zip",
+  "latest_verified_dropbox_capsule_sha256": "7c2df5363aa1456287b21ed6c1d9709f128bef7da67fe602a05d85771ddf2b27",
   "latest_verified_dropbox_capsule_raw_readback_equal": true,
   "completed_returns": [
     {
@@ -276,7 +276,7 @@
     "brief_sha256": "e001ad5db901e9e2714b9e0f3b19b36be2296d3b6d8dae79450261284d8c1d38",
     "status": "candidate",
     "gates": {
-      "leakage": "INTERRUPTED_UNCREDITED",
+      "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED",
       "hostile": "NOT_RUN",
       "reconstruction": "NOT_RUN",
       "comparison": "NOT_RUN"
@@ -299,6 +299,14 @@
         "actual_manifest_present": false,
         "credit": "NONE; forbidden input to fresh replacement"
       }
+    },
+    "leakage": {
+      "report_sha256": "2f92463cd4adf94b01586a500dcd3db3d9fab58e24712765711fbe1fcb8b5281",
+      "manifest_sha256": "31af359ced76834d64980ebf7134d7044d71310d69db5d0208ed4e0954d0f7d3",
+      "external_generation": "EVIDENCE--continuation11-recovery-20261015T152347Z-g18--PC-LEAK-v1-r1.json",
+      "external_sha256": "b18a6967518789e2f1d07ae751187fdc926eb6d861ab25386bd66c5403f37b25",
+      "replacement_count": 1,
+      "raw_readback_equal": true
     }
   },
   "search_disposition": "VERIFY_ONLY after completed compactification pivot; local induction provisionally parked, no further search allowance.",
@@ -338,5 +346,14 @@
     17,
     18
   ],
-  "recovery_acknowledgement": "Generation18 owner, immutable state and matching heartbeats read back; start.signal read back; actual new supervisor preflight passed and supervision in progress."
+  "recovery_acknowledgement": "Generation18 owner, immutable state and matching heartbeats read back; start.signal read back; actual new supervisor preflight passed and supervision in progress.",
+  "recovered_verification_segments": [
+    {
+      "role": "PC-LEAK-v1-r1",
+      "start_utc": "2026-10-15T15:28:37Z",
+      "end_utc": "2026-10-15T15:29:08Z",
+      "seconds": 31
+    }
+  ],
+  "recovered_verification_seconds": 31
 }
