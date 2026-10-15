@@ -6,8 +6,8 @@
   "owner_run_id": "exact-class-breakthrough-20261015T195016Z-g20",
   "generation": 20,
   "status": "active",
-  "last_renewed_utc": "2026-10-15T19:52:53.504Z",
-  "lease_expires_utc": "2026-10-15T20:04:53.504Z",
+  "last_renewed_utc": "2026-10-15T19:59:20.256Z",
+  "lease_expires_utc": "2026-10-15T20:11:20.256Z",
   "predecessor_run_id": "exact-class-absolute-20261015T182114Z-g19",
   "claim_reason": "New explicitly authorized four-hour continuation; prior authorizations remain stopped. Same mathematical campaign; diagnostic-only mechanism check."
 }
