@@ -4,7 +4,7 @@
   "authorization_id": "continuation10-relative-generic-exact-20261015-v1",
   "run_id": "continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7",
   "lease_generation": 14,
-  "status": "running",
+  "status": "interrupted",
   "global_campaign_status": "INCOMPLETE",
   "authorization_start_utc": "2026-10-15T07:47:45Z",
   "delivery_start_utc": "2026-10-15T11:37:45Z",
@@ -13,12 +13,9 @@
   "research_started": true,
   "math_start_utc": "2026-10-15T07:55:12.444Z",
   "active_math_elapsed_seconds": 251.936741,
-  "active_workers": [
-    "pf_recon_v1",
-    "generic_geometry_w2"
-  ],
-  "current_assignment": "PF-RECON-v1 and RELATIVE-GEOMETRY-W2; root lattice primary-source reassessment",
-  "first_unfinished_action": "Read and externally persist proof-blind PF reconstruction before comparison; geometry pair test; source-focused lattice reassessment.",
+  "active_workers": [],
+  "current_assignment": null,
+  "first_unfinished_action": "Fresh proof-blind replacement of incomplete PF-RECON-v1 from exact four-file allowlist, then external full-byte persistence and comparison. Concurrent search may resume only after recovery health check.",
   "launch_kit": "delta14-relative-generic-launch-v1-20261015.zip",
   "launch_kit_sha256": "49cde9d2aea51d8d1d32c10434718fad4ff07ade2cc5fd5aaf2e7d032ee9936a",
   "source_capsule": "AUTONOMOUS--continuation9-recovery-20261014T212819Z-9b87a01c8656--g13--terminal--RESUME_CAPSULE.zip",
@@ -196,11 +193,11 @@
   },
   "provenance_note": "Pinned terminal capsule contains stale recovery START_HERE. Terminal FINAL_STATUS and live heartbeat supersede it. No previous completed gate repeated.",
   "source_statement_pending": false,
-  "last_heartbeat_utc": "2026-10-15T09:27:15.579Z",
+  "last_heartbeat_utc": "2026-10-15T09:32:27.452Z",
   "latest_verified_dropbox_generation": "AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--lattice-w2-incomplete.json",
   "latest_verified_dropbox_generation_sha256": "3ea0e7b68da05af3825c8813ae586df851a04b07ecdac52226afc3063f55fa6f",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
-  "mathematical_work_authorized": true,
+  "mathematical_work_authorized": false,
   "source_statement_sha256": "76482cf9eb1e459429efa4fcdff74dd986fcb39889a48c40193642e63f23f32d",
   "supervisor_actions_run_id": 38701889289,
   "supervisor_verification_level": "Actual job 116311810344 running; regression preflight success, supervisor step in progress.",
@@ -208,7 +205,7 @@
   "epoch": {
     "number": 2,
     "start_utc": "2026-10-15T09:01:56.014817+00:00",
-    "status": "healthy",
+    "status": "coordinator_runtime_distress_stopped",
     "health_check": "Epoch1 capsule written/external raw readback verified. All completed roles reconciled and externally byte-verified; no active agent, no unresolved transport/storage/tool error. Supervisor job116311810344 still running. Protocol source-isolation replacement completed; timing breaches explicitly preserved, no clock reset."
   },
   "mechanism_screens": {
@@ -220,8 +217,8 @@
       "decision": "GO: narrow character-line proof available, general tensor assertion excluded"
     },
     "RELATIVE-LATTICE": {
-      "active_math_elapsed_seconds": 2147.872838,
-      "math_segment_start_utc": "2026-10-15T09:26:00Z",
+      "active_math_elapsed_seconds": 2327.872838,
+      "math_segment_start_utc": null,
       "status": "W2_interrupted_incomplete_no_credit",
       "independent_wave_credit": 1,
       "baseline_files": [
@@ -249,12 +246,16 @@
       "candidate_freeze_root_math_charge_seconds": 180,
       "new_active_allocation_seconds": 480,
       "conservative_wall_stop_utc": "2026-10-15T09:13:00Z",
-      "no_clock_reset": true
+      "no_clock_reset": true,
+      "root_source_reassessment_charge": {
+        "seconds": 180,
+        "basis": "Conservative09:26–09:29 source reading and task reassessment, before coordinator outage; no new proved result or wave credit."
+      }
     },
     "RELATIVE-GEOMETRY": {
       "active_math_elapsed_seconds": 1481.240427,
       "math_segment_start_utc": null,
-      "status": "second_independent_wave_active",
+      "status": "W2_interrupted_pending_cleanup_no_extra_credit",
       "independent_wave_credit": 1,
       "baseline_files": [
         {
@@ -315,12 +316,12 @@
       "gates": {
         "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED",
         "hostile": "MATHEMATICAL_PASS_EXTERNALLY_BYTE_VERIFIED; PF07 deferred to reconstruction/comparison",
-        "reconstruction": "IN_PROGRESS_FRESH_BLIND_CONTEXT",
+        "reconstruction": "INTERRUPTED_INITIAL_DRAFT_ONLY_NO_MANIFEST_NO_COMPLETION_CREDIT",
         "comparison": "NOT_RUN"
       }
     }
   },
-  "current_checkpoint": "lattice-w2-incomplete",
+  "current_checkpoint": "runtime-interruption",
   "preliminary_generic_planning": {
     "status": "root-only exploratory notes, no result or independent credit",
     "RELATIVE-LATTICE": {
@@ -381,6 +382,82 @@
       "status": "checkpointed_pending_health_check",
       "checkpoint_utc": "2026-10-15T08:58:16.097814+00:00",
       "finished_agent_reconciliation": "All three completed assignments read; product and lattice externally verified, geometry return awaits publication."
+    }
+  ],
+  "current_execution_mathematics_stopped": true,
+  "recovery_mode": "DIRECT-RESUME in a fresh healthy Work environment only",
+  "recovery_classification": "INCOMPLETE",
+  "runtime_incident": {
+    "first_observed_utc": "2026-10-15T09:29:00Z",
+    "error": "exec-server transport disconnected; failed to resume exec-server session: recovery timed out after25s",
+    "cleanup": "One root reconciliation read was attempted, yielded without result, and terminated; no additional local retry. GitHub connector remained available for truthful emergency persistence.",
+    "worker_effects": "PF reconstruction interrupted with initial draft only and no actual manifest; geometry W2 interrupted with initial draft/pending-write ambiguity.",
+    "stop_rule": "Research assistant coordinator-level distress: stop new work, at most one reconciliation attempt, preserve actual durable work, end current execution.",
+    "automatic_recovery": "Existing supervisor/tasks retained; no claim that a fresh Work recovery has already succeeded.",
+    "fresh_capsule_status": "Cannot regenerate through failed local runtime; latest fully verified capsule remains epoch1 plus newer exact Dropbox generations and this GitHub emergency checkpoint."
+  },
+  "runtime_recovery_authorization": "Fresh independently checked recovery may continue within original11:37:45Z reserve; afterward finalize-only. No reset, no continuation9 reopening.",
+  "new_independent_wave_credit": 2,
+  "wave_counts_current": {
+    "RELATIVE_LATTICE": 1,
+    "RELATIVE_GEOMETRY": 1
+  },
+  "emergency_publications": [
+    {
+      "name": "AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--product-comp-v2-lattice-w1.json",
+      "sha256": "9844aa8eeea2fbce357bd317b7ac38d68cf9b1e5bd7564019b64824f1f279fae",
+      "dest": "/ChatGPT-Research-State/delta14-mixed-tate/AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--product-comp-v2-lattice-w1.json",
+      "checkpoint": "product-comp-v2-lattice-w1",
+      "kind": "generation"
+    },
+    {
+      "name": "AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--epoch1--RESUME_CAPSULE.zip",
+      "sha256": "3390b681b63d9307ea1d022bba93cfda1da21951b340b431cb5ae947f6f34d73",
+      "dest": "/ChatGPT-Research-State/delta14-mixed-tate/AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--epoch1--RESUME_CAPSULE.zip",
+      "checkpoint": "epoch1",
+      "kind": "capsule"
+    },
+    {
+      "name": "AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--epoch1.json",
+      "sha256": "0044b486bdaa2dea5a16e92f4b22c7cd0d5d2fad6f3bd247bd59fe7f0c0f4b74",
+      "dest": "/ChatGPT-Research-State/delta14-mixed-tate/AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--epoch1.json",
+      "checkpoint": "epoch1",
+      "kind": "generation"
+    },
+    {
+      "name": "AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--geometry-w1.json",
+      "sha256": "4b276a5bd08a721677a1cb9408fcd125a1f86713674ac879be8eb1bf119e3c44",
+      "dest": "/ChatGPT-Research-State/delta14-mixed-tate/AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--geometry-w1.json",
+      "checkpoint": "geometry-w1",
+      "kind": "generation"
+    },
+    {
+      "name": "AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--pf-candidate-v1.json",
+      "sha256": "566bb2fb738004961234c408430118c6c095930705598689f3172625c41e6f9f",
+      "dest": "/ChatGPT-Research-State/delta14-mixed-tate/AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--pf-candidate-v1.json",
+      "checkpoint": "pf-candidate-v1",
+      "kind": "generation"
+    },
+    {
+      "name": "AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--pf-leak-v1.json",
+      "sha256": "94fd7ae0db283ce4096941d55357b7e34aace353e6c19b1383e9a5ca1d25e9d1",
+      "dest": "/ChatGPT-Research-State/delta14-mixed-tate/AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--pf-leak-v1.json",
+      "checkpoint": "pf-leak-v1",
+      "kind": "generation"
+    },
+    {
+      "name": "AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--pf-hostile-v1.json",
+      "sha256": "93d0c3063da7d183a65415ae5e8d3da55e490466e87081f0fac143d83a751c85",
+      "dest": "/ChatGPT-Research-State/delta14-mixed-tate/AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--pf-hostile-v1.json",
+      "checkpoint": "pf-hostile-v1",
+      "kind": "generation"
+    },
+    {
+      "name": "AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--lattice-w2-incomplete.json",
+      "sha256": "3ea0e7b68da05af3825c8813ae586df851a04b07ecdac52226afc3063f55fa6f",
+      "dest": "/ChatGPT-Research-State/delta14-mixed-tate/AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--lattice-w2-incomplete.json",
+      "checkpoint": "lattice-w2-incomplete",
+      "kind": "generation"
     }
   ]
 }
