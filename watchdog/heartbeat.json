@@ -2,8 +2,8 @@
   "schema": "delta14-continuation10-state-v1",
   "campaign_id": "delta14-mixed-tate-20261012T210157Z",
   "authorization_id": "continuation10-relative-generic-exact-20261015-v1",
-  "run_id": "continuation10-recovery-20261015T094314Z-a23632894cf5",
-  "lease_generation": 15,
+  "run_id": "continuation10-recovery-20261015T103125Z-g16",
+  "lease_generation": 16,
   "status": "running",
   "global_campaign_status": "INCOMPLETE",
   "authorization_start_utc": "2026-10-15T07:47:45Z",
@@ -13,11 +13,9 @@
   "research_started": true,
   "math_start_utc": "2026-10-15T07:55:12.444Z",
   "active_math_elapsed_seconds": 251.936741,
-  "active_workers": [
-    "dec_source_screen"
-  ],
-  "current_assignment": "PF exact contract promoted; source-specialization screen running",
-  "first_unfinished_action": "Complete already-dispatched source/specialization screen within its fixed cap and stop; no resumption of expired W2 assignments.",
+  "active_workers": [],
+  "current_assignment": "Reconcile complete locally saved DEC-SOURCE return, then exact candidate verification if permitted",
+  "first_unfinished_action": "Persist and byte-verify complete DEC-SOURCE report and actual manifest before any verification role.",
   "launch_kit": "delta14-relative-generic-launch-v1-20261015.zip",
   "launch_kit_sha256": "49cde9d2aea51d8d1d32c10434718fad4ff07ade2cc5fd5aaf2e7d032ee9936a",
   "source_capsule": "AUTONOMOUS--continuation9-recovery-20261014T212819Z-9b87a01c8656--g13--terminal--RESUME_CAPSULE.zip",
@@ -195,9 +193,9 @@
   },
   "provenance_note": "Pinned terminal capsule contains stale recovery START_HERE. Terminal FINAL_STATUS and live heartbeat supersede it. No previous completed gate repeated.",
   "source_statement_pending": false,
-  "last_heartbeat_utc": "2026-10-15T10:08:56.104Z",
-  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation10-recovery-20261015T094314Z-a23632894cf5--g15--pf-promoted.json",
-  "latest_verified_dropbox_generation_sha256": "5cc1a91a3fab15f53fb55fccc6b2f944bc580eaf8560684a89257d307e3fb700",
+  "last_heartbeat_utc": "2026-10-15T10:32:15.341Z",
+  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation10-recovery-20261015T103125Z-g16--g16--bootstrap.json",
+  "latest_verified_dropbox_generation_sha256": "3c8adb4b23578e4603af8818c9a008e2975be0238f424bed8e66c71e98daa1d8",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
   "mathematical_work_authorized": true,
   "source_statement_sha256": "76482cf9eb1e459429efa4fcdff74dd986fcb39889a48c40193642e63f23f32d",
@@ -414,7 +412,7 @@
       "finished_agent_reconciliation": "All three completed assignments read; product and lattice externally verified, geometry return awaits publication."
     }
   ],
-  "current_execution_mathematics_stopped": true,
+  "current_execution_mathematics_stopped": false,
   "recovery_mode": "DIRECT-RESUME",
   "recovery_classification": "INCOMPLETE",
   "runtime_incident": {
@@ -518,10 +516,10 @@
   "emergency_report_git_blob_sha": "cb5e18b67652a7915548334289539e909e18c075",
   "emergency_worker_reconciliation_path": "watchdog/recovery/continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7-g14/WORKER_RECONCILIATION.json",
   "emergency_worker_reconciliation_git_blob_sha": "6cdfb9c07c10f6dd2946e50d68c52688d53974d7",
-  "stop_reason": "Coordinator runtime distress; environment_offline confirmed. Current execution ends; explicit interrupted/incomplete-delivery signal retains existing recovery.",
-  "predecessor_run_id": "continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7",
-  "predecessor_generation": 14,
-  "recovery_research_started": true,
+  "stop_reason": null,
+  "predecessor_run_id": "continuation10-recovery-20261015T094314Z-a23632894cf5",
+  "predecessor_generation": 15,
+  "recovery_research_started": false,
   "source_generation_verified_in_recovery": {
     "path": "AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--lattice-w2-incomplete.json",
     "sha256": "3ea0e7b68da05af3825c8813ae586df851a04b07ecdac52226afc3063f55fa6f"
@@ -559,5 +557,12 @@
     "contract_unchanged": true,
     "current_checklist_sha256": "437230f776a563ab115ba082ca42e4026dcd0836dbc19c950733ff48f844e6e2",
     "externally_byte_verified": true
+  },
+  "recovery_incident": {
+    "incident_id": "77d997f91f34e040039f083d",
+    "pr": 16,
+    "evidence": "Generation15 heartbeat10:08:56Z; lease expired10:20:49Z; no successor at claim. Prior duplicate-event handling ended coordinator turn; no specific transport failure inferred.",
+    "source_generation": "AUTONOMOUS--continuation10-recovery-20261015T094314Z-a23632894cf5--g15--pf-promoted.json",
+    "source_sha256": "5cc1a91a3fab15f53fb55fccc6b2f944bc580eaf8560684a89257d307e3fb700"
   }
 }
