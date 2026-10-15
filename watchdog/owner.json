@@ -4,8 +4,8 @@
   "owner_run_id": "continuation10-recovery-20261015T103125Z-g16",
   "generation": 16,
   "status": "active",
-  "last_renewed_utc": "2026-10-15T11:28:36.243Z",
-  "lease_expires_utc": "2026-10-15T11:40:36.243Z",
+  "last_renewed_utc": "2026-10-15T11:30:36.290Z",
+  "lease_expires_utc": "2026-10-15T11:42:36.290Z",
   "predecessor_run_id": "continuation10-recovery-20261015T094314Z-a23632894cf5",
   "claim_reason": "PR16 checked recovery: matching generation15 heartbeat >20min stale and ownership expired. Reconcile completed source return; no expired assignment restart."
 }
