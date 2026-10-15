@@ -12,10 +12,10 @@
   "research_started": true,
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
-  "latest_verified_dropbox_generation": "BREAKTHROUGH--exact-class-breakthrough-4h-20261015-v1--g20--diagnostic1.json",
-  "latest_verified_dropbox_generation_sha256": "0f17c11dc2e088bd547dd40c8c762b99e0f7af2cde2258a911bc2d3b5ea564bb",
-  "latest_verified_dropbox_capsule": "BREAKTHROUGH--exact-class-breakthrough-4h-20261015-v1--g20--diagnostic1--RESUME_CAPSULE.zip",
-  "latest_verified_dropbox_capsule_sha256": "45acbccc1b033bd3de8f5a189f090767e845ac4e41a75c265c5242ed04869ef4",
+  "latest_verified_dropbox_generation": "BREAKTHROUGH--exact-class-breakthrough-4h-20261015-v1--g20--hour1.json",
+  "latest_verified_dropbox_generation_sha256": "658abda61737e2ee03b416f5f174eeffa0ab0c1a5b73c1492d469026572699af",
+  "latest_verified_dropbox_capsule": "BREAKTHROUGH--exact-class-breakthrough-4h-20261015-v1--g20--hour1--RESUME_CAPSULE.zip",
+  "latest_verified_dropbox_capsule_sha256": "ae088229b0a084d43d420eeb30a056382c2c1b29164e646710532ebfc361b49e",
   "supervisor_actions_run_id": 38797869629,
   "supervisor_verification_level": "Actual job running; regression preflight successful."
 }
