@@ -2,12 +2,12 @@
   "campaign_id": "delta14-mixed-tate-20261012T210157Z",
   "supervision_campaign_id": "delta14-mixed-tate-20261012T210157Z",
   "mathematical_campaign_id": "delta14-exact-class-20261015T182114Z",
-  "authorization_id": "exact-class-absolute-20261015-v1",
-  "owner_run_id": "exact-class-absolute-20261015T182114Z-g19",
-  "generation": 19,
-  "status": "inactive",
-  "last_renewed_utc": "2026-10-15T19:07:37.969Z",
-  "lease_expires_utc": "2026-10-15T19:07:37.969Z",
-  "predecessor_run_id": "continuation11-recovery-20261015T152347Z-g18",
-  "claim_reason": "Explicit user confirmation 2026-10-15T18:21:14Z of NEW exact-class pilot; continuation11 remains completed/stopped. Reuse supervision lineage only."
+  "authorization_id": "exact-class-breakthrough-4h-20261015-v1",
+  "owner_run_id": "exact-class-breakthrough-20261015T195016Z-g20",
+  "generation": 20,
+  "status": "active",
+  "last_renewed_utc": "2026-10-15T19:52:53.504Z",
+  "lease_expires_utc": "2026-10-15T20:04:53.504Z",
+  "predecessor_run_id": "exact-class-absolute-20261015T182114Z-g19",
+  "claim_reason": "New explicitly authorized four-hour continuation; prior authorizations remain stopped. Same mathematical campaign; diagnostic-only mechanism check."
 }
