@@ -13,9 +13,11 @@
   "research_started": true,
   "math_start_utc": "2026-10-15T07:55:12.444Z",
   "active_math_elapsed_seconds": 251.936741,
-  "active_workers": [],
-  "current_assignment": "Persist complete PF-RECON replacement1 before comparison",
-  "first_unfinished_action": "Fresh proof-blind replacement of incomplete PF-RECON-v1 from exact four-file allowlist, then external full-byte persistence and comparison. Concurrent search may resume only after recovery health check.",
+  "active_workers": [
+    "pf_comp_r1"
+  ],
+  "current_assignment": "PF comparison; bounded recorded source/specialization screen ready",
+  "first_unfinished_action": "PF comparison of exact candidate against raw-verified fresh reconstruction; PF07 isolation remains mandatory.",
   "launch_kit": "delta14-relative-generic-launch-v1-20261015.zip",
   "launch_kit_sha256": "49cde9d2aea51d8d1d32c10434718fad4ff07ade2cc5fd5aaf2e7d032ee9936a",
   "source_capsule": "AUTONOMOUS--continuation9-recovery-20261014T212819Z-9b87a01c8656--g13--terminal--RESUME_CAPSULE.zip",
@@ -193,7 +195,7 @@
   },
   "provenance_note": "Pinned terminal capsule contains stale recovery START_HERE. Terminal FINAL_STATUS and live heartbeat supersede it. No previous completed gate repeated.",
   "source_statement_pending": false,
-  "last_heartbeat_utc": "2026-10-15T09:56:54.870Z",
+  "last_heartbeat_utc": "2026-10-15T10:02:26.669Z",
   "latest_verified_dropbox_generation": "AUTONOMOUS--continuation10-recovery-20261015T094314Z-a23632894cf5--g15--pf-recon-r1.json",
   "latest_verified_dropbox_generation_sha256": "fa83737ff4d000ca24596ca8c22bf0b4a9dae000c8adc5fcc92996b70ac8a742",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
@@ -217,7 +219,7 @@
       "decision": "GO: narrow character-line proof available, general tensor assertion excluded"
     },
     "RELATIVE-LATTICE": {
-      "active_math_elapsed_seconds": 2327.872838,
+      "active_math_elapsed_seconds": 2477.872838,
       "math_segment_start_utc": null,
       "status": "W2_interrupted_incomplete_no_credit",
       "independent_wave_credit": 1,
@@ -250,6 +252,12 @@
       "root_source_reassessment_charge": {
         "seconds": 180,
         "basis": "Conservative09:26–09:29 source reading and task reassessment, before coordinator outage; no new proved result or wave credit."
+      },
+      "recovery_root_source_reassessment": {
+        "start_utc": "2026-10-15T09:58:57Z",
+        "charged_seconds": 150,
+        "stop_utc": "2026-10-15 10:02:19 UTC",
+        "description": "Primary-source applicability and exact unfinished local scope; conservative charge, no new result or wave credit."
       }
     },
     "RELATIVE-GEOMETRY": {
@@ -286,6 +294,17 @@
         "absolute_local_stop_utc": "2026-10-15T09:37:00Z",
         "no_clock_reset": true
       }
+    },
+    "DEC-SOURCE-SPECIALIZATION": {
+      "status": "ready",
+      "active_math_elapsed_seconds": 150,
+      "parent_family": "RELATIVE-LATTICE",
+      "root_charge_seconds": 150,
+      "new_worker_allowance_seconds": 900,
+      "cap_seconds": 1200,
+      "absolute_local_stop_utc": "2026-10-15T10:18:00Z",
+      "reset": false,
+      "decision": "Materially new recorded primary-source existence/instantiation and specialization check; not a retry of the expired W2."
     }
   },
   "baseline_revisions": {
@@ -323,7 +342,7 @@
       "gates": {
         "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED",
         "hostile": "MATHEMATICAL_PASS_EXTERNALLY_BYTE_VERIFIED; PF07 deferred to reconstruction/comparison",
-        "reconstruction": "RECEIVED_COMPLETE_PENDING_EXTERNAL_PUBLICATION",
+        "reconstruction": "COMPLETE_EXTERNALLY_BYTE_VERIFIED",
         "comparison": "NOT_RUN"
       }
     }
@@ -520,6 +539,12 @@
     "start_utc": "2026-10-15T09:47:53Z",
     "end_utc": "2026-10-15T09:54:52Z",
     "independent_wave_credit": 0,
-    "isolation": "Fresh fork-none; exact four input hashes match original; no forbidden exposure; no runtime errors."
+    "isolation": "Fresh fork-none; exact four input hashes match original; no forbidden exposure; no runtime errors.",
+    "externally_byte_verified": true,
+    "generation": {
+      "name": "AUTONOMOUS--continuation10-recovery-20261015T094314Z-a23632894cf5--g15--pf-recon-r1.json",
+      "sha256": "fa83737ff4d000ca24596ca8c22bf0b4a9dae000c8adc5fcc92996b70ac8a742",
+      "size_bytes": 231830
+    }
   }
 }
