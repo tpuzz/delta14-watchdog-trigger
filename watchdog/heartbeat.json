@@ -7,7 +7,7 @@
   "run_id": "exact-class-absolute-20261015T182114Z-g19",
   "lease_generation": 19,
   "status": "running",
-  "phase": "mandatory_bootstrap",
+  "phase": "mechanism_screen",
   "confirmed_at_utc": "2026-10-15T18:21:14Z",
   "authorization_start_utc": "2026-10-15T18:21:14Z",
   "hard_deadline_utc": "2026-10-15T22:21:14Z",
@@ -19,12 +19,15 @@
     "2026-10-15T21:21:14Z"
   ],
   "reassessments_completed": [],
-  "research_started": false,
+  "research_started": true,
   "active_math_elapsed_seconds": 0,
-  "math_segment_start_utc": null,
-  "active_workers": [],
-  "current_assignment": "Verify initial external state, heartbeat and actual supervisor; then exact-class mechanism screen.",
-  "first_unfinished_action": "Complete mandatory bootstrap; no mathematical assignment begun.",
+  "math_segment_start_utc": "2026-10-15T18:27:52.684Z",
+  "active_workers": [
+    "ABSOLUTE-QUAT-W1",
+    "COARSE-PAULI-W1"
+  ],
+  "current_assignment": "Two isolated first-wave mechanism screens and named background check; results due18:44Z.",
+  "first_unfinished_action": "Evaluate full five-item mechanism contracts from two isolated first-wave returns.",
   "source_capsule": "AUTONOMOUS--continuation11-recovery-20261015T152347Z-g18--g18--terminal-complete--RESUME_CAPSULE.zip",
   "source_capsule_sha256": "cc460c499d6ac1f6272b1454d822a27e0a5dcf2234386b8a91fd67e9d89d0826",
   "source_generation": "AUTONOMOUS--continuation11-recovery-20261015T152347Z-g18--g18--terminal-complete.json",
@@ -49,8 +52,11 @@
   "latest_verified_dropbox_generation": "EXACT--delta14-exact-class-20261015T182114Z--g19--initial.json",
   "latest_verified_dropbox_generation_sha256": "50bbf7d5eeea5258445754aeb2c4818bb9a7c39ee1b0a77365af6ed68f7ee55c",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
-  "last_heartbeat_utc": "2026-10-15T18:24:36.158Z",
-  "supervisor_verification_level": "Initial external generation raw-byte verified; both existing recovery consumers enabled; start.signal and actual supervisor verification pending.",
+  "last_heartbeat_utc": "2026-10-15T18:28:45.838Z",
+  "supervisor_verification_level": "Actual job in progress; checkout/regression success; supervision step running.",
   "recovery_directive": "Recover only the confirmed new exact-class mathematical_campaign_id under this authorization and its fixed statement; preserve old mixed-Tate campaign stopped. Immutable clock and first unfinished action apply.",
-  "source_instructions": "EXACT--delta14-exact-class-20261015T182114Z--g19--initial.json payload_files.USER_INSTRUCTIONS.txt"
+  "source_instructions": "EXACT--delta14-exact-class-20261015T182114Z--g19--initial.json payload_files.USER_INSTRUCTIONS.txt",
+  "math_start_utc": "2026-10-15T18:27:52.684Z",
+  "supervisor_actions_run_id": 38785408894,
+  "supervisor_job_id": 116596612612
 }
