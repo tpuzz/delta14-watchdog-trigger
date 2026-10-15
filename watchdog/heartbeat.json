@@ -16,8 +16,8 @@
   "active_workers": [
     "ns_hostile_v1"
   ],
-  "current_assignment": "Hostile audit no-rational-section-v1",
-  "first_unfinished_action": "Complete exact hostile audit and externally byte-verify report/manifest before proof-blind reconstruction.",
+  "current_assignment": "Hostile audit report completed; actual manifest pending",
+  "first_unfinished_action": "Receive and externally byte-verify hostile report+actual manifest before next role.",
   "launch_kit": "delta14-relative-generic-launch-v1-20261015.zip",
   "launch_kit_sha256": "49cde9d2aea51d8d1d32c10434718fad4ff07ade2cc5fd5aaf2e7d032ee9936a",
   "source_capsule": "AUTONOMOUS--continuation9-recovery-20261014T212819Z-9b87a01c8656--g13--terminal--RESUME_CAPSULE.zip",
@@ -195,7 +195,7 @@
   },
   "provenance_note": "Pinned terminal capsule contains stale recovery START_HERE. Terminal FINAL_STATUS and live heartbeat supersede it. No previous completed gate repeated.",
   "source_statement_pending": false,
-  "last_heartbeat_utc": "2026-10-15T10:48:39.881Z",
+  "last_heartbeat_utc": "2026-10-15T10:52:35.839Z",
   "latest_verified_dropbox_generation": "AUTONOMOUS--continuation10-recovery-20261015T103125Z-g16--g16--audit-running.json",
   "latest_verified_dropbox_generation_sha256": "33b79c972ee3e04787b9c6e812a71aa3c9890507e5d0cd51fae9cb29c12426c5",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
@@ -205,10 +205,10 @@
   "supervisor_verification_level": "Actual run38720989688 job116375254526 in_progress; checkout and regression preflight success; supervise active.",
   "math_segment_start_utc": null,
   "epoch": {
-    "number": 3,
-    "start_utc": "2026-10-15T09:46:46.678Z",
+    "number": 4,
+    "start_utc": "2026-10-15T10:34:17.988Z",
     "status": "running",
-    "health_check": "Local execution, raw Dropbox download/upload/readback and GitHub owner/heartbeat/startsignal/supervisor verified; no unresolved runtime errors."
+    "health_check": "Active ownership and actual supervisor checked; exact checkpoint/capsule readback verified10:48. One response-shape issue reconciled without duplicate upload. No unresolved runtime distress."
   },
   "mechanism_screens": {
     "PRODUCT-INPUT-v1": {
