@@ -13,9 +13,11 @@
   "research_started": true,
   "math_start_utc": "2026-10-15T07:55:12.444Z",
   "active_math_elapsed_seconds": 251.936741,
-  "active_workers": [],
+  "active_workers": [
+    "product_comp_v1"
+  ],
   "current_assignment": "PRODUCT-COMP-v1",
-  "first_unfinished_action": "Externally byte-verify reconstruction and actual manifest, then fresh comparison.",
+  "first_unfinished_action": "Fresh comparison of exact frozen product proof and blind reconstruction.",
   "launch_kit": "delta14-relative-generic-launch-v1-20261015.zip",
   "launch_kit_sha256": "49cde9d2aea51d8d1d32c10434718fad4ff07ade2cc5fd5aaf2e7d032ee9936a",
   "source_capsule": "AUTONOMOUS--continuation9-recovery-20261014T212819Z-9b87a01c8656--g13--terminal--RESUME_CAPSULE.zip",
@@ -193,7 +195,7 @@
   },
   "provenance_note": "Pinned terminal capsule contains stale recovery START_HERE. Terminal FINAL_STATUS and live heartbeat supersede it. No previous completed gate repeated.",
   "source_statement_pending": false,
-  "last_heartbeat_utc": "2026-10-15T08:25:48.402Z",
+  "last_heartbeat_utc": "2026-10-15T08:28:42.831Z",
   "latest_verified_dropbox_generation": "AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--product-recon-v1.json",
   "latest_verified_dropbox_generation_sha256": "42c51627f4898242d5ce349fba2eea8ece530dcea5e73aceff67c8cb85e74b80",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
@@ -239,8 +241,8 @@
       "gates": {
         "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED",
         "hostile": "PASS_EXTERNALLY_BYTE_VERIFIED",
-        "reconstruction": "COMPLETE_LOCAL_PENDING_EXTERNAL",
-        "comparison": "NOT_RUN"
+        "reconstruction": "COMPLETE_EXTERNALLY_BYTE_VERIFIED",
+        "comparison": "RUNNING"
       }
     }
   },
