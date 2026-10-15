@@ -14,11 +14,9 @@
   "math_start_utc": "2026-10-15T07:55:12.444Z",
   "active_math_elapsed_seconds": 251.936741,
   "active_workers": [
-    "product_comp_v2",
-    "generic_lattice_w1",
     "generic_geometry_w1"
   ],
-  "current_assignment": "PRODUCT-COMP-v2; RELATIVE-LATTICE-W1; RELATIVE-GEOMETRY-W1",
+  "current_assignment": "Product promotion pending external comparison; lattice W1 gate reassessment; geometry W1 active",
   "first_unfinished_action": "Complete product comparison v2 and receive independent original-generic screens; none uses pending product repair.",
   "launch_kit": "delta14-relative-generic-launch-v1-20261015.zip",
   "launch_kit_sha256": "49cde9d2aea51d8d1d32c10434718fad4ff07ade2cc5fd5aaf2e7d032ee9936a",
@@ -197,9 +195,9 @@
   },
   "provenance_note": "Pinned terminal capsule contains stale recovery START_HERE. Terminal FINAL_STATUS and live heartbeat supersede it. No previous completed gate repeated.",
   "source_statement_pending": false,
-  "last_heartbeat_utc": "2026-10-15T08:54:03.271Z",
-  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--product-recon-v2.json",
-  "latest_verified_dropbox_generation_sha256": "e9ee5ce843d0969b2289628e194ae97d7365e4c7ef4607472411f0aa6cd1fa32",
+  "last_heartbeat_utc": "2026-10-15T08:54:42.690Z",
+  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--product-comp-v2-lattice-w1.json",
+  "latest_verified_dropbox_generation_sha256": "9844aa8eeea2fbce357bd317b7ac38d68cf9b1e5bd7564019b64824f1f279fae",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
   "mathematical_work_authorized": true,
   "source_statement_sha256": "76482cf9eb1e459429efa4fcdff74dd986fcb39889a48c40193642e63f23f32d",
@@ -220,9 +218,9 @@
       "decision": "GO: narrow character-line proof available, general tensor assertion excluded"
     },
     "RELATIVE-LATTICE": {
-      "active_math_elapsed_seconds": 540,
+      "active_math_elapsed_seconds": 1232.24,
       "math_segment_start_utc": null,
-      "status": "assigned_first_wave",
+      "status": "complete_return_pending_external_and_synthesis",
       "independent_wave_credit": 0,
       "baseline_files": [
         {
@@ -240,7 +238,9 @@
           "sha256": "a8ad46c77308b9467f4aacb57b07d6bddf4cd7bb7886273316f0e533883808eb",
           "size_bytes": 866
         }
-      ]
+      ],
+      "gate_overrun_seconds": 32.24,
+      "gate_decision": "Pause literal permutation-factor mechanism pending verification; general rational descent criterion is a distinct proposed next test, not an established result."
     },
     "RELATIVE-GEOMETRY": {
       "active_math_elapsed_seconds": 540,
@@ -292,11 +292,11 @@
         "reconstruction": "COMPLETE_BUT_PROOF_SHAPED_INPUT_DISQUALIFIES_STRICT_BLINDNESS",
         "comparison": "MATHEMATICAL_PASS_ISOLATION_NOT_CERTIFIED",
         "reconstruction_v2": "COMPLETE_EXTERNALLY_BYTE_VERIFIED",
-        "comparison_v2": "RUNNING"
+        "comparison_v2": "PASS_LOCAL_PENDING_EXTERNAL"
       }
     }
   },
-  "current_checkpoint": "product-recon-v2",
+  "current_checkpoint": "product-comp-v2-lattice-w1",
   "preliminary_generic_planning": {
     "status": "root-only exploratory notes, no result or independent credit",
     "RELATIVE-LATTICE": {
@@ -322,5 +322,14 @@
     "product_comp_v2": 0,
     "generic_lattice_w1": 0,
     "generic_geometry_w1": 0
-  }
+  },
+  "timing_exceptions": [
+    {
+      "assignment": "RELATIVE-LATTICE-W1",
+      "gate_limit_seconds": 1200,
+      "actual_seconds": 1232.24,
+      "overrun_seconds": 32.24,
+      "cause": "Final mathematical drafting crossed gate; disclosed by worker, stopped. No clock reset or retroactive infrastructure exclusion."
+    }
+  ]
 }
