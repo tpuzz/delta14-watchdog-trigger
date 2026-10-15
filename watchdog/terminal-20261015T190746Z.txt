@@ -1,0 +1,6 @@
+DELTA14_WORKFLOW_TERMINAL
+campaign=delta14-mixed-tate-20261012T210157Z
+run_id=exact-class-absolute-20261015T182114Z-g19
+status=paused
+last_heartbeat_utc=2026-10-15T19:07:24.396Z
+detected_utc=2026-10-15T19:07:46Z
