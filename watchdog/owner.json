@@ -6,8 +6,8 @@
   "owner_run_id": "exact-class-breakthrough-recovery-20261015T230900Z-g21",
   "generation": 21,
   "status": "active",
-  "last_renewed_utc": "2026-10-15T23:09:00.000Z",
-  "lease_expires_utc": "2026-10-15T23:21:00.000Z",
+  "last_renewed_utc": "2026-10-15T23:12:30.000Z",
+  "lease_expires_utc": "2026-10-15T23:24:30.000Z",
   "predecessor_run_id": "exact-class-breakthrough-20261015T195016Z-g20",
   "claim_reason": "Checked recovery after explicit coordinator-level runtime interruption, incomplete delivery, and released generation-20 ownership; original authorization and deadlines unchanged."
 }
