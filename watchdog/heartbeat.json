@@ -14,10 +14,9 @@
   "math_start_utc": "2026-10-15T07:55:12.444Z",
   "active_math_elapsed_seconds": 251.936741,
   "active_workers": [
-    "pf_comp_r1",
     "dec_source_screen"
   ],
-  "current_assignment": "PF comparison and isolated source/specialization screen; both bounded",
+  "current_assignment": "Publish complete comparison; source-specialization screen running",
   "first_unfinished_action": "PF comparison of exact candidate against raw-verified fresh reconstruction; PF07 isolation remains mandatory.",
   "launch_kit": "delta14-relative-generic-launch-v1-20261015.zip",
   "launch_kit_sha256": "49cde9d2aea51d8d1d32c10434718fad4ff07ade2cc5fd5aaf2e7d032ee9936a",
@@ -196,9 +195,9 @@
   },
   "provenance_note": "Pinned terminal capsule contains stale recovery START_HERE. Terminal FINAL_STATUS and live heartbeat supersede it. No previous completed gate repeated.",
   "source_statement_pending": false,
-  "last_heartbeat_utc": "2026-10-15T10:04:32.850Z",
-  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation10-recovery-20261015T094314Z-a23632894cf5--g15--pf-recon-r1.json",
-  "latest_verified_dropbox_generation_sha256": "fa83737ff4d000ca24596ca8c22bf0b4a9dae000c8adc5fcc92996b70ac8a742",
+  "last_heartbeat_utc": "2026-10-15T10:06:20.992Z",
+  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation10-recovery-20261015T094314Z-a23632894cf5--g15--pf-comp-r1.json",
+  "latest_verified_dropbox_generation_sha256": "0fc0b0b7accbe90010c2ba2cdb8a65c6747902da47a459b4b2eff1d09b76ded2",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
   "mathematical_work_authorized": true,
   "source_statement_sha256": "76482cf9eb1e459429efa4fcdff74dd986fcb39889a48c40193642e63f23f32d",
@@ -345,7 +344,7 @@
         "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED",
         "hostile": "MATHEMATICAL_PASS_EXTERNALLY_BYTE_VERIFIED; PF07 deferred to reconstruction/comparison",
         "reconstruction": "COMPLETE_EXTERNALLY_BYTE_VERIFIED",
-        "comparison": "NOT_RUN"
+        "comparison": "RECEIVED_PASS_PENDING_EXTERNAL_PUBLICATION"
       }
     }
   },
@@ -549,5 +548,14 @@
       "size_bytes": 231830
     }
   },
-  "source_screen_parent_dispatch_utc": "2026-10-15T10:03:00Z"
+  "source_screen_parent_dispatch_utc": "2026-10-15T10:03:00Z",
+  "pf_comparison_return": {
+    "report_sha256": "4a436908090c85122b385776f234d95e556c85a5c52f1e012b7da06bda866035",
+    "manifest_sha256": "3cef2ebe40b028d358f6341f2573f382b8d8b874c6be4bdf6ad83742c2dd30ac",
+    "verdict": "PASS",
+    "PF07": "PASS actual input bytes and exposure manifest; same-family only",
+    "candidate_unchanged": true,
+    "contract_unchanged": true,
+    "current_checklist_sha256": "437230f776a563ab115ba082ca42e4026dcd0836dbc19c950733ff48f844e6e2"
+  }
 }
