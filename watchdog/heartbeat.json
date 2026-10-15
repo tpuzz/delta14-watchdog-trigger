@@ -193,14 +193,14 @@
   },
   "provenance_note": "Pinned terminal capsule contains stale recovery START_HERE. Terminal FINAL_STATUS and live heartbeat supersede it. No previous completed gate repeated.",
   "source_statement_pending": false,
-  "last_heartbeat_utc": "2026-10-15T09:32:27.452Z",
+  "last_heartbeat_utc": "2026-10-15T09:38:14.026Z",
   "latest_verified_dropbox_generation": "AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--lattice-w2-incomplete.json",
   "latest_verified_dropbox_generation_sha256": "3ea0e7b68da05af3825c8813ae586df851a04b07ecdac52226afc3063f55fa6f",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
-  "mathematical_work_authorized": false,
+  "mathematical_work_authorized": true,
   "source_statement_sha256": "76482cf9eb1e459429efa4fcdff74dd986fcb39889a48c40193642e63f23f32d",
   "supervisor_actions_run_id": 38701889289,
-  "supervisor_verification_level": "Actual job 116311810344 running; regression preflight success, supervisor step in progress.",
+  "supervisor_verification_level": "2026-10-15 runtime-stop reconciliation: run38701889289/job116311810344 still in_progress; checkout and regression tests success, supervision step active. No fresh recovery success claimed.",
   "math_segment_start_utc": null,
   "epoch": {
     "number": 2,
@@ -253,9 +253,9 @@
       }
     },
     "RELATIVE-GEOMETRY": {
-      "active_math_elapsed_seconds": 1481.240427,
+      "active_math_elapsed_seconds": 1841.240427,
       "math_segment_start_utc": null,
-      "status": "W2_interrupted_pending_cleanup_no_extra_credit",
+      "status": "W2_RUNTIME_INTERRUPTED_INCOMPLETE_NO_ADDITIONAL_CREDIT",
       "independent_wave_credit": 1,
       "baseline_files": [
         {
@@ -278,7 +278,14 @@
       "decision": "PAUSE normalization/single-label elimination; candidate obstruction requires full cadence. A fresh second independent wave may test equivariant pair correspondence, with unchanged cumulative clock.",
       "post_gate_root_pairing_sanity_charge_seconds": 180,
       "new_active_allocation_seconds": 720,
-      "conservative_wall_stop_utc": "2026-10-15T09:37:00Z"
+      "conservative_wall_stop_utc": "2026-10-15T09:37:00Z",
+      "wave2_clock": {
+        "charged_seconds": 360,
+        "basis": "Conservative continuous09:25:00–09:31:00Z covers assignment through coordinator stop instruction; exact worker stop not captured. No outage exclusion before stop; all later finalization administrative.",
+        "additional_allowance_seconds": 720,
+        "absolute_local_stop_utc": "2026-10-15T09:37:00Z",
+        "no_clock_reset": true
+      }
     }
   },
   "baseline_revisions": {
@@ -346,7 +353,9 @@
     "product_recon_v2": 0,
     "product_comp_v2": 0,
     "generic_lattice_w1": 0,
-    "generic_geometry_w1": 0
+    "generic_geometry_w1": 0,
+    "pf_recon_v1": 0,
+    "generic_geometry_w2": 0
   },
   "timing_exceptions": [
     {
@@ -394,7 +403,9 @@
     "worker_effects": "PF reconstruction interrupted with initial draft only and no actual manifest; geometry W2 interrupted with initial draft/pending-write ambiguity.",
     "stop_rule": "Research assistant coordinator-level distress: stop new work, at most one reconciliation attempt, preserve actual durable work, end current execution.",
     "automatic_recovery": "Existing supervisor/tasks retained; no claim that a fresh Work recovery has already succeeded.",
-    "fresh_capsule_status": "Cannot regenerate through failed local runtime; latest fully verified capsule remains epoch1 plus newer exact Dropbox generations and this GitHub emergency checkpoint."
+    "fresh_capsule_status": "Cannot regenerate through failed local runtime; latest fully verified capsule remains epoch1 plus newer exact Dropbox generations and this GitHub emergency checkpoint.",
+    "final_confirmation": "Library upload at09:33Z returned409 environment_offline: Environment is not connected. No further local calls.",
+    "library_deliverable_save": "FAILED; no new Library file or xattrs created"
   },
   "runtime_recovery_authorization": "Fresh independently checked recovery may continue within original11:37:45Z reserve; afterward finalize-only. No reset, no continuation9 reopening.",
   "new_independent_wave_credit": 2,
@@ -459,5 +470,32 @@
       "checkpoint": "lattice-w2-incomplete",
       "kind": "generation"
     }
-  ]
+  ],
+  "completed_assignments": {
+    "product_input": "PROMOTED exact narrow h0..2 repair, full cadence externally byte verified",
+    "relative_lattice_w1": "complete externally byte verified and root-synthesized;1 independent credit",
+    "relative_geometry_w1": "complete externally byte verified and root-synthesized;1 independent credit",
+    "pf_leak": "PASS externally byte verified",
+    "pf_hostile": "mathematical PASS PF01–PF06 externally byte verified;PF07 pending",
+    "relative_lattice_w2": "prior deliberate local-stop interruption, incomplete with metadata only;zero credit",
+    "pf_recon_v1": "coordinator-interrupted initial draft only;no manifest;zero completion credit",
+    "relative_geometry_w2": "coordinator/runtime-interrupted initial draft plus ambiguous patch;no final return/ledger/clock/manifest;zero credit"
+  },
+  "recovery_constraints": {
+    "do_not_repeat": "All inherited promotions and completed product/leakage/hostile gates. Never reopen continuation9 or failed unchanged boundary candidates.",
+    "strict_pf_replacement": "Fresh context fork_turns:none; exact four allowed files only. Do NOT give incomplete reconstruction draft or this emergency report's mathematical draft material to the reconstructer. Complete actual report+manifest must be externally byte verified before comparison.",
+    "geometry_replacement": "Same own-route W2 assignment may resume own actually durable draft after inspection;no extra wave credit for restart. No lattice-route material until both routes have2 complete independent waves.",
+    "scope": "Product-input repair is not verification of relative-toric-boundary-v1/v2. Generic projectivization remains an unresolved equivalent;no generic class evaluation.",
+    "fresh_bootstrap": "Fetch live owner/heartbeat/current immutable generations;verify authorization+clocks+unfinished frontier;conditionally claim expired lease with generation+1/readback;publish minimal recovery Dropbox state+matching heartbeat;reuse tasks/startsignal and verify actual supervisor. No repeat static hashes without conflict."
+  },
+  "emergency_report_path": "watchdog/recovery/continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7-g14/REPORT.md",
+  "emergency_checkpoint_path": "watchdog/recovery/continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7-g14/CHECKPOINT.json",
+  "mathematical_work_permitted_in_current_execution": false,
+  "saved_user_directive_forbids_further_mathematics": false,
+  "authorization_scope_note": "Existing user authorization remains live for a fresh independently checked healthy recovery until delivery reserve. This stopped execution is forbidden to continue mathematics. No new authorization or clock reset.",
+  "emergency_checkpoint_git_blob_sha": "5a8864aafe8a347413a7f231dc993b72d54d9236",
+  "emergency_report_git_blob_sha": "cb5e18b67652a7915548334289539e909e18c075",
+  "emergency_worker_reconciliation_path": "watchdog/recovery/continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7-g14/WORKER_RECONCILIATION.json",
+  "emergency_worker_reconciliation_git_blob_sha": "6cdfb9c07c10f6dd2946e50d68c52688d53974d7",
+  "stop_reason": "Coordinator runtime distress; environment_offline confirmed. Current execution ends; explicit interrupted/incomplete-delivery signal retains existing recovery."
 }
