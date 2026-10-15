@@ -7,7 +7,7 @@
   "run_id": "exact-class-absolute-20261015T182114Z-g19",
   "lease_generation": 19,
   "status": "running",
-  "phase": "mechanism_screen",
+  "phase": "delivery",
   "confirmed_at_utc": "2026-10-15T18:21:14Z",
   "authorization_start_utc": "2026-10-15T18:21:14Z",
   "hard_deadline_utc": "2026-10-15T22:21:14Z",
@@ -22,12 +22,9 @@
   "research_started": true,
   "active_math_elapsed_seconds": 1282.65052,
   "math_segment_start_utc": "2026-10-15T18:51:32.736200Z",
-  "active_workers": [
-    "ABSOLUTE-QUAT-W2",
-    "COARSE-PAULI-W2"
-  ],
-  "current_assignment": "Gate NO-GO for development; two existing short independent screens finishing current finite checks only.",
-  "first_unfinished_action": "Receive and reconcile complete second-screen reports/manifests; absent new independent bounded calculation, deliberately stop unresolved and deliver.",
+  "active_workers": [],
+  "current_assignment": "Deliberate incomplete stop decided after two complete isolated waves; final persistence and delivery only.",
+  "first_unfinished_action": "Publish and raw-byte verify complete reports/manifests, decision report and nonrecursive terminal capsule; then terminal heartbeat/signal/release.",
   "source_capsule": "AUTONOMOUS--continuation11-recovery-20261015T152347Z-g18--g18--terminal-complete--RESUME_CAPSULE.zip",
   "source_capsule_sha256": "cc460c499d6ac1f6272b1454d822a27e0a5dcf2234386b8a91fd67e9d89d0826",
   "source_generation": "AUTONOMOUS--continuation11-recovery-20261015T152347Z-g18--g18--terminal-complete.json",
@@ -52,7 +49,7 @@
   "latest_verified_dropbox_generation": "EXACT--delta14-exact-class-20261015T182114Z--g19--wave2-screen-start.json",
   "latest_verified_dropbox_generation_sha256": "81510c23f4fcee7f0e145a23e11b53bf542ed6fd7a4cabf8f34eb866c9cb6dca",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
-  "last_heartbeat_utc": "2026-10-15T18:51:57.474Z",
+  "last_heartbeat_utc": "2026-10-15T18:58:15.421Z",
   "supervisor_verification_level": "Actual job in progress; checkout/regression success; supervision step running.",
   "recovery_directive": "Recover only the confirmed new exact-class mathematical_campaign_id under this authorization and its fixed statement; preserve old mixed-Tate campaign stopped. Immutable clock and first unfinished action apply.",
   "source_instructions": "EXACT--delta14-exact-class-20261015T182114Z--g19--initial.json payload_files.USER_INSTRUCTIONS.txt",
@@ -69,5 +66,7 @@
     "status": "NO mechanism admitted for substantial development",
     "report": "ROUTES/MECHANISM-GATE-1200-v1.md",
     "remaining_permission": "Finish current bounded second-screen construction/control only; no reset; decide deliberate incomplete stop unless concrete closing calculation appears."
-  }
+  },
+  "mathematics_stopped_at_utc": "2026-10-15T18:57:39Z",
+  "no_substantive_continuation": true
 }
