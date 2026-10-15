@@ -20,7 +20,7 @@
   "research_started": true,
   "math_start_utc": "2026-10-15T13:15:26.111Z",
   "math_segment_start_utc": "2026-10-15T13:15:26.111Z",
-  "active_math_elapsed_seconds": 1611,
+  "active_math_elapsed_seconds": 1730,
   "aggregate_worker_seconds": 0,
   "active_workers": [
     {
@@ -30,16 +30,9 @@
       "math_stop_utc": "2026-10-15T13:55:00Z",
       "delivery_utc": "2026-10-15T13:57:00Z",
       "replacement_count": 0
-    },
-    {
-      "task": "PD-LEAK-v1",
-      "agent": "/root/pd_leak_v1",
-      "status": "running",
-      "local_stop_utc": "2026-10-15T13:47:00Z",
-      "replacement_count": 0
     }
   ],
-  "current_assignment": "PAIR-NORM-W2 search and sequential PD leakage check",
+  "current_assignment": "PAIR-NORM-W2 search; reconcile candidate-v1 leakage; decide whether norm return warrants a new stronger frozen version before hostile audit.",
   "first_unfinished_action": "Dispatch W2 after gate checkpoint; freeze exact scoped paired-descent candidate for sequential verification.",
   "source_instructions": "/ChatGPT-Research-State/delta14-mixed-tate/delta14-paired-label-4h-hourly-instructions-v1-20261015.txt",
   "source_instructions_sha256": "3c1b6adb2b2e7b98b3d3d7de8c87c19f86ee0ef2c71310a6b4405395143c31e3",
@@ -64,13 +57,13 @@
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
   "clock_reset": false,
-  "last_heartbeat_utc": "2026-10-15T13:42:34.281Z",
+  "last_heartbeat_utc": "2026-10-15T13:44:32.619Z",
   "recovery_mode": "DIRECT-RESUME existing campaign under newly confirmed bounded authorization",
   "persistent_goal_status": "No new discovery; inherited campaign limitation retained.",
-  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--candidate-and-leak.json",
-  "latest_verified_dropbox_generation_sha256": "b9938d65cbff9c4ce65b30c7543e660f5208a8805ee53420e76bbaa2566038dc",
+  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--pd-leak-v1.json",
+  "latest_verified_dropbox_generation_sha256": "aea42a5cae9fbcf3e21ac89a730537556de9a99df033b74a13ce7c3e5c89209a",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
-  "dropbox_heartbeat_path": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--candidate-and-leak.json",
+  "dropbox_heartbeat_path": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--pd-leak-v1.json",
   "supervisor_actions_run_id": 38740824534,
   "supervisor_job_id": 116442382345,
   "baseline_revisions": {
@@ -126,10 +119,18 @@
     "archive_sha256": "55cfad158ab87d88857aecc4f43638fc112b74ba2c966d8688a155a0c14f4fc6",
     "externally_byte_verified": true,
     "gates": {
-      "leakage": "NOT_RUN",
+      "leakage": "PASS_LOCAL_REPORT_DURABILITY_PENDING",
       "hostile": "NOT_RUN",
       "reconstruction": "NOT_RUN",
       "comparison": "NOT_RUN"
     }
+  },
+  "leakage_return": {
+    "report": "AUDITS/PD-LEAK-v1/LEAKAGE_REPORT.md",
+    "report_sha256": "2dbacdb98deca1493ca57b676a8a5ce57fe91b1a3c353ccc41a92e956e98d437",
+    "manifest": "AUDITS/PD-LEAK-v1/INPUT_OUTPUT_MANIFEST.json",
+    "manifest_sha256": "97042cd4b6455bb0b3b1980be9d66447b5ed2391810bf55c0c53ddce802c3b54",
+    "verdict": "PASS",
+    "math_end_utc": "2026-10-15T13:42:56Z"
   }
 }
