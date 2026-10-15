@@ -2,9 +2,9 @@
   "schema": "delta14-continuation10-state-v1",
   "campaign_id": "delta14-mixed-tate-20261012T210157Z",
   "authorization_id": "continuation10-relative-generic-exact-20261015-v1",
-  "run_id": "continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7",
-  "lease_generation": 14,
-  "status": "interrupted",
+  "run_id": "continuation10-recovery-20261015T094314Z-a23632894cf5",
+  "lease_generation": 15,
+  "status": "running",
   "global_campaign_status": "INCOMPLETE",
   "authorization_start_utc": "2026-10-15T07:47:45Z",
   "delivery_start_utc": "2026-10-15T11:37:45Z",
@@ -14,7 +14,7 @@
   "math_start_utc": "2026-10-15T07:55:12.444Z",
   "active_math_elapsed_seconds": 251.936741,
   "active_workers": [],
-  "current_assignment": null,
+  "current_assignment": "Recovery bootstrap; no new mathematical work begun",
   "first_unfinished_action": "Fresh proof-blind replacement of incomplete PF-RECON-v1 from exact four-file allowlist, then external full-byte persistence and comparison. Concurrent search may resume only after recovery health check.",
   "launch_kit": "delta14-relative-generic-launch-v1-20261015.zip",
   "launch_kit_sha256": "49cde9d2aea51d8d1d32c10434718fad4ff07ade2cc5fd5aaf2e7d032ee9936a",
@@ -26,7 +26,7 @@
   "source_final_status_sha256": "dc98a4ea837c52740f68b458ae2b119c734d1c59e8dd22046b2e5ee505c0e052",
   "policy_sha": "ffb5dc24643d747482e2f1ab94040431b7e46361",
   "ownership_protocol_sha": "4bb548d2a8a8772dc2a1d0e3271c84825856d584",
-  "watchdog_recovery_armed": true,
+  "watchdog_recovery_armed": false,
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
   "clock_reset": false,
@@ -193,9 +193,9 @@
   },
   "provenance_note": "Pinned terminal capsule contains stale recovery START_HERE. Terminal FINAL_STATUS and live heartbeat supersede it. No previous completed gate repeated.",
   "source_statement_pending": false,
-  "last_heartbeat_utc": "2026-10-15T09:38:14.026Z",
-  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--lattice-w2-incomplete.json",
-  "latest_verified_dropbox_generation_sha256": "3ea0e7b68da05af3825c8813ae586df851a04b07ecdac52226afc3063f55fa6f",
+  "last_heartbeat_utc": "2026-10-15T09:44:57.340Z",
+  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation10-recovery-20261015T094314Z-a23632894cf5--g15--bootstrap.json",
+  "latest_verified_dropbox_generation_sha256": "aa0efd61809b0c424dcc764429b7268be4e7fe0be31b863426d196704be5d63e",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
   "mathematical_work_authorized": true,
   "source_statement_sha256": "76482cf9eb1e459429efa4fcdff74dd986fcb39889a48c40193642e63f23f32d",
@@ -394,7 +394,7 @@
     }
   ],
   "current_execution_mathematics_stopped": true,
-  "recovery_mode": "DIRECT-RESUME in a fresh healthy Work environment only",
+  "recovery_mode": "DIRECT-RESUME",
   "recovery_classification": "INCOMPLETE",
   "runtime_incident": {
     "first_observed_utc": "2026-10-15T09:29:00Z",
@@ -497,5 +497,20 @@
   "emergency_report_git_blob_sha": "cb5e18b67652a7915548334289539e909e18c075",
   "emergency_worker_reconciliation_path": "watchdog/recovery/continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7-g14/WORKER_RECONCILIATION.json",
   "emergency_worker_reconciliation_git_blob_sha": "6cdfb9c07c10f6dd2946e50d68c52688d53974d7",
-  "stop_reason": "Coordinator runtime distress; environment_offline confirmed. Current execution ends; explicit interrupted/incomplete-delivery signal retains existing recovery."
+  "stop_reason": "Coordinator runtime distress; environment_offline confirmed. Current execution ends; explicit interrupted/incomplete-delivery signal retains existing recovery.",
+  "predecessor_run_id": "continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7",
+  "predecessor_generation": 14,
+  "recovery_research_started": false,
+  "source_generation_verified_in_recovery": {
+    "path": "AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--lattice-w2-incomplete.json",
+    "sha256": "3ea0e7b68da05af3825c8813ae586df851a04b07ecdac52226afc3063f55fa6f"
+  },
+  "recovery_bootstrap_source_bindings": {
+    "emergency_checkpoint_blob": "5a8864aafe8a347413a7f231dc993b72d54d9236",
+    "pf_candidate_generation_sha256": "566bb2fb738004961234c408430118c6c095930705598689f3172625c41e6f9f",
+    "pf_hostile_generation_sha256": "93d0c3063da7d183a65415ae5e8d3da55e490466e87081f0fac143d83a751c85",
+    "epoch1_capsule_sha256": "3390b681b63d9307ea1d022bba93cfda1da21951b340b431cb5ae947f6f34d73"
+  },
+  "recovery_bootstrap_note": "No old audit repeated; current delta generation plus exact PF payloads verified. Old epoch capsule used only for unchanged launch authorization. Prior runtime incident retained as historical.",
+  "recovery_bootstrap_raw_readback_equal": true
 }
