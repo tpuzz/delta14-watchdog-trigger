@@ -195,7 +195,7 @@
   },
   "provenance_note": "Pinned terminal capsule contains stale recovery START_HERE. Terminal FINAL_STATUS and live heartbeat supersede it. No previous completed gate repeated.",
   "source_statement_pending": false,
-  "last_heartbeat_utc": "2026-10-15T10:58:24.851Z",
+  "last_heartbeat_utc": "2026-10-15T11:07:26.925Z",
   "latest_verified_dropbox_generation": "AUTONOMOUS--continuation10-recovery-20261015T103125Z-g16--g16--hostile-v1.json",
   "latest_verified_dropbox_generation_sha256": "a22779ea696ea06e5c17974cfce249b7729f1255b2b9d3b6093ac338e77465c0",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
@@ -598,5 +598,6 @@
     "report_sha256": "25365dd8c152ca0e9496245bb53fa11ddbd45783ac38b860aabe6f0f9976730f",
     "manifest_sha256": "b495bd9e1f4f5a5a6c63f144394f3f17b2ee90c093725def567b90ab7c330175",
     "checklist_revision": 13
-  }
+  },
+  "last_operational_check": "Duplicate PR16 redelivery acknowledged without duplicate takeover or ending the active owning run; proof-blind reconstruction reports exact allowed input hashes matched, draft under internal checking, no verdict credited."
 }
