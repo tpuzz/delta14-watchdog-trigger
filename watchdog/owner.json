@@ -4,8 +4,8 @@
   "owner_run_id": "continuation11-recovery-20261015T152347Z-g18",
   "generation": 18,
   "status": "active",
-  "last_renewed_utc": "2026-10-15T16:22:11.529Z",
-  "lease_expires_utc": "2026-10-15T16:34:11.529Z",
+  "last_renewed_utc": "2026-10-15T16:24:33.815Z",
+  "lease_expires_utc": "2026-10-15T16:36:33.815Z",
   "predecessor_run_id": "continuation11-paired-label-20261015T130749Z-28d8ccde1490",
   "claim_reason": "PR17 incident aa6fd19579040faf1656ae4a; independently verified released generation17 coordinator interruption; source generation and frozen candidate byte-verified; VERIFY_ONLY same authorization and immutable clocks."
 }
