@@ -14,9 +14,10 @@
   "math_start_utc": "2026-10-15T07:55:12.444Z",
   "active_math_elapsed_seconds": 251.936741,
   "active_workers": [
-    "pf_recon_v1"
+    "pf_recon_v1",
+    "generic_geometry_w2"
   ],
-  "current_assignment": "PF-RECON-v1; preparing isolated geometry W2",
+  "current_assignment": "PF-RECON-v1 and RELATIVE-GEOMETRY-W2; root lattice primary-source reassessment",
   "first_unfinished_action": "Read and externally persist proof-blind PF reconstruction before comparison; geometry pair test; source-focused lattice reassessment.",
   "launch_kit": "delta14-relative-generic-launch-v1-20261015.zip",
   "launch_kit_sha256": "49cde9d2aea51d8d1d32c10434718fad4ff07ade2cc5fd5aaf2e7d032ee9936a",
@@ -195,7 +196,7 @@
   },
   "provenance_note": "Pinned terminal capsule contains stale recovery START_HERE. Terminal FINAL_STATUS and live heartbeat supersede it. No previous completed gate repeated.",
   "source_statement_pending": false,
-  "last_heartbeat_utc": "2026-10-15T09:25:34.397Z",
+  "last_heartbeat_utc": "2026-10-15T09:27:15.579Z",
   "latest_verified_dropbox_generation": "AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--lattice-w2-incomplete.json",
   "latest_verified_dropbox_generation_sha256": "3ea0e7b68da05af3825c8813ae586df851a04b07ecdac52226afc3063f55fa6f",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
@@ -220,7 +221,7 @@
     },
     "RELATIVE-LATTICE": {
       "active_math_elapsed_seconds": 2147.872838,
-      "math_segment_start_utc": null,
+      "math_segment_start_utc": "2026-10-15T09:26:00Z",
       "status": "W2_interrupted_incomplete_no_credit",
       "independent_wave_credit": 1,
       "baseline_files": [
@@ -253,7 +254,7 @@
     "RELATIVE-GEOMETRY": {
       "active_math_elapsed_seconds": 1481.240427,
       "math_segment_start_utc": null,
-      "status": "first_wave_synthesized_pause_old_mechanism",
+      "status": "second_independent_wave_active",
       "independent_wave_credit": 1,
       "baseline_files": [
         {
@@ -274,7 +275,9 @@
       ],
       "gate_overrun_seconds": 101.240427,
       "decision": "PAUSE normalization/single-label elimination; candidate obstruction requires full cadence. A fresh second independent wave may test equivariant pair correspondence, with unchanged cumulative clock.",
-      "post_gate_root_pairing_sanity_charge_seconds": 180
+      "post_gate_root_pairing_sanity_charge_seconds": 180,
+      "new_active_allocation_seconds": 720,
+      "conservative_wall_stop_utc": "2026-10-15T09:37:00Z"
     }
   },
   "baseline_revisions": {
