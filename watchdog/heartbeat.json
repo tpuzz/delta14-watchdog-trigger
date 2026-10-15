@@ -40,8 +40,20 @@
   "math_segment_start_utc": null,
   "active_math_elapsed_seconds": null,
   "aggregate_worker_seconds": null,
-  "active_workers": [],
-  "current_assignment": "Hostile r16 passed; actual complete report/manifest and inputs externally byte-verified. Next proof-blind reconstruction.",
+  "active_workers": [
+    {
+      "task": "PC-RECON-v1",
+      "agent": "/root/pc_recon_v1",
+      "status": "running",
+      "replacement_count": 0,
+      "math_start_utc": "2026-10-15T15:46:30Z",
+      "checkpoint_utc": "2026-10-15T16:04:30Z",
+      "pause_for_review_utc": "2026-10-15T16:06:00Z",
+      "math_stop_utc": "2026-10-15T16:25:00Z",
+      "return_due_utc": "2026-10-15T16:27:00Z"
+    }
+  ],
+  "current_assignment": "Fresh proof-blind compact-conic-v1 reconstruction; no proof/audit exposure, five allowed mathematical inputs.",
   "first_unfinished_action": "Fresh isolated reconstruction from exact accepted BRIEF-v1 and contract only with permitted definitions; then persist and compare.",
   "source_instructions": "/ChatGPT-Research-State/delta14-mixed-tate/delta14-paired-label-4h-hourly-instructions-v1-20261015.txt",
   "source_instructions_sha256": "3c1b6adb2b2e7b98b3d3d7de8c87c19f86ee0ef2c71310a6b4405395143c31e3",
@@ -66,13 +78,13 @@
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
   "clock_reset": false,
-  "last_heartbeat_utc": "2026-10-15T15:45:26.183Z",
+  "last_heartbeat_utc": "2026-10-15T15:50:05.983Z",
   "recovery_mode": "CHECKED_DIRECT_RECOVERY_VERIFY_ONLY",
   "persistent_goal_status": "No new discovery; inherited campaign limitation retained.",
   "latest_verified_dropbox_generation": "AUTONOMOUS--continuation11-recovery-20261015T152347Z-g18--g18--hostile-pass.json",
   "latest_verified_dropbox_generation_sha256": "531b3e7dfb5df8b35f0a1c7b02a93be15848c9aaa4c51a4b711ba70d9eb0771d",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
-  "dropbox_heartbeat_path": "AUTONOMOUS--continuation11-recovery-20261015T152347Z-g18--g18--hostile-pass--heartbeat.json",
+  "dropbox_heartbeat_path": "AUTONOMOUS--continuation11-recovery-20261015T152347Z-g18--g18--reconstruction-control-01--heartbeat.json",
   "supervisor_actions_run_id": 38760245125,
   "supervisor_job_id": 116509745138,
   "baseline_revisions": {
@@ -258,7 +270,7 @@
       "classification": "observed reported interval; first input slightly before observed clock"
     }
   ],
-  "policy_live_recheck_utc": "2026-10-15T14:12:29.959Z",
+  "policy_live_recheck_utc": "2026-10-15T15:48:40Z",
   "compactification_interim": {
     "status": "candidate-only incomplete",
     "reported_utc": "2026-10-15T14:16Z",
@@ -321,12 +333,13 @@
   "search_disposition": "VERIFY_ONLY after completed compactification pivot; local induction provisionally parked, no further search allowance.",
   "mathematics_mode": "VERIFY_ONLY",
   "current_audit_checklist_sha256": "ef7ada9b66560a376d9963ec9f695b7534b21835cc712c228d00be122f40f84b",
-  "infrastructure_last_checked_utc": "2026-10-15T15:41:21.756Z",
+  "infrastructure_last_checked_utc": "2026-10-15T15:50:00.775Z",
   "execution_epoch": {
-    "number": 2,
-    "boundary_review_utc": "2026-10-15T15:07:49.340610Z",
-    "health": "Coordinator transport disconnected during hour2 persistence; epoch not advanced.",
-    "next_epoch_status": "blocked_pending_fresh_recovery"
+    "number": 3,
+    "start_utc": "2026-10-15T15:23:47.630Z",
+    "math_restart_assignment_utc": "2026-10-15T15:28:37Z",
+    "health": "Fresh healthy exec-server; ownership/readback, durable bytes, matching heartbeats and actual supervisor verified; serial verification only.",
+    "next_health_check_due_utc": "2026-10-15T16:08:47.630Z"
   },
   "infrastructure_incident": {
     "observed_utc": "2026-10-15T15:10:47.698Z",
@@ -371,5 +384,19 @@
       "qualification": "Reported decision interval; preceding mathematical-input reading not separated, so not an exact all-activity total."
     }
   ],
-  "recovered_verification_seconds": 329
+  "recovered_verification_seconds": 329,
+  "prior_execution_epoch": {
+    "number": 2,
+    "boundary_review_utc": "2026-10-15T15:07:49.340610Z",
+    "health": "Coordinator transport disconnected during hour2 persistence; epoch not advanced.",
+    "next_epoch_status": "blocked_pending_fresh_recovery"
+  },
+  "duplicate_wakeups_ignored": [
+    {
+      "pr": 17,
+      "incident": "aa6fd19579040faf1656ae4a",
+      "reason": "Coherent live generation18 already owned by this continuing recovery; no duplicate work.",
+      "observed_utc": "2026-10-15T15:48:44.977Z"
+    }
+  ]
 }
