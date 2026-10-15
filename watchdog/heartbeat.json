@@ -13,9 +13,11 @@
   "research_started": true,
   "math_start_utc": "2026-10-15T07:55:12.444Z",
   "active_math_elapsed_seconds": 251.936741,
-  "active_workers": [],
-  "current_assignment": "Hostile audit report completed; actual manifest pending",
-  "first_unfinished_action": "Fresh proof-blind reconstruction using only accepted five-file packet after hostile report publication.",
+  "active_workers": [
+    "ns_recon_v1"
+  ],
+  "current_assignment": "Proof-blind reconstruction no-rational-section-v1",
+  "first_unfinished_action": "Finish reconstruction before11:17Z math stop and11:20Z complete return; publish before comparison.",
   "launch_kit": "delta14-relative-generic-launch-v1-20261015.zip",
   "launch_kit_sha256": "49cde9d2aea51d8d1d32c10434718fad4ff07ade2cc5fd5aaf2e7d032ee9936a",
   "source_capsule": "AUTONOMOUS--continuation9-recovery-20261014T212819Z-9b87a01c8656--g13--terminal--RESUME_CAPSULE.zip",
@@ -193,7 +195,7 @@
   },
   "provenance_note": "Pinned terminal capsule contains stale recovery START_HERE. Terminal FINAL_STATUS and live heartbeat supersede it. No previous completed gate repeated.",
   "source_statement_pending": false,
-  "last_heartbeat_utc": "2026-10-15T10:54:06.082Z",
+  "last_heartbeat_utc": "2026-10-15T10:58:24.851Z",
   "latest_verified_dropbox_generation": "AUTONOMOUS--continuation10-recovery-20261015T103125Z-g16--g16--hostile-v1.json",
   "latest_verified_dropbox_generation_sha256": "a22779ea696ea06e5c17974cfce249b7729f1255b2b9d3b6093ac338e77465c0",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
@@ -362,7 +364,7 @@
       "contract_sha256": "dde680804b67d897bdeb5d1d57f36e8a02bf5549f1e2376d2228b4ac86fe44b2",
       "gates": {
         "leakage": "BRIEF_V2_PASS_EXTERNALLY_BYTE_VERIFIED; BRIEF_V1_FAIL_RETAINED",
-        "hostile": "PASS_RECEIVED_PENDING_PUBLICATION; NS08 reconstruction/comparison pending",
+        "hostile": "PASS_EXTERNALLY_BYTE_VERIFIED; NS08 reconstruction/comparison pending",
         "reconstruction": "NOT_RUN",
         "comparison": "NOT_RUN"
       },
@@ -588,7 +590,8 @@
     "pr": 16,
     "evidence": "Generation15 heartbeat10:08:56Z; lease expired10:20:49Z; no successor at claim. Prior duplicate-event handling ended coordinator turn; no specific transport failure inferred.",
     "source_generation": "AUTONOMOUS--continuation10-recovery-20261015T094314Z-a23632894cf5--g15--pf-promoted.json",
-    "source_sha256": "5cc1a91a3fab15f53fb55fccc6b2f944bc580eaf8560684a89257d307e3fb700"
+    "source_sha256": "5cc1a91a3fab15f53fb55fccc6b2f944bc580eaf8560684a89257d307e3fb700",
+    "followup_readback_note": "Hostile checkpoint initial GitHub readback differed or was unavailable; one fresh read yielded exact byte match while generation16 ownership remained active. No conditional write retried."
   },
   "persistence_note": "One download-link response lacked expected entries; single bounded reconciliation obtained valid link and exact raw readback. No generation re-upload or gate credit before readback.",
   "hostile_return": {
