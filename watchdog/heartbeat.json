@@ -196,7 +196,7 @@
   },
   "provenance_note": "Pinned terminal capsule contains stale recovery START_HERE. Terminal FINAL_STATUS and live heartbeat supersede it. No previous completed gate repeated.",
   "source_statement_pending": false,
-  "last_heartbeat_utc": "2026-10-15T08:36:42.371Z",
+  "last_heartbeat_utc": "2026-10-15T08:40:08.422Z",
   "latest_verified_dropbox_generation": "AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--product-comp-v1-qualified.json",
   "latest_verified_dropbox_generation_sha256": "3e5df8c6f11ac9617d83d9259b8cfe88c016de531438275a704e8f35d931ac32",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
@@ -278,7 +278,7 @@
       "basis": "Conservative cumulative root preplanning charge, including post-compaction exploratory reasoning; no independent credit."
     },
     "RELATIVE-GEOMETRY": {
-      "active_math_elapsed_seconds": 360,
+      "active_math_elapsed_seconds": 540,
       "basis": "Conservative cumulative root preplanning charge, including post-compaction exploratory reasoning; no independent credit."
     }
   },
