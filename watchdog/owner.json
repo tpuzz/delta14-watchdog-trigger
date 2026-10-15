@@ -4,8 +4,8 @@
   "owner_run_id": "continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7",
   "generation": 14,
   "status": "active",
-  "last_renewed_utc": "2026-10-15T08:40:00.904Z",
-  "lease_expires_utc": "2026-10-15T08:52:00.904Z",
+  "last_renewed_utc": "2026-10-15T08:43:59.667Z",
+  "lease_expires_utc": "2026-10-15T08:55:59.667Z",
   "predecessor_run_id": "continuation9-recovery-20261014T212819Z-9b87a01c8656",
   "claim_reason": "Explicit user launch of new continuation10, preserving completed continuation9."
 }
