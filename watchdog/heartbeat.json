@@ -49,20 +49,9 @@
   "math_segment_start_utc": null,
   "active_math_elapsed_seconds": null,
   "aggregate_worker_seconds": null,
-  "active_workers": [
-    {
-      "task": "PC-COMP-v1",
-      "agent": "/root/pc_comp_v1",
-      "status": "running fresh isolated comparison",
-      "replacement_count": 0,
-      "checkpoint_utc": "2026-10-15T16:20:00Z",
-      "math_stop_utc": "2026-10-15T16:30:00Z",
-      "return_due_utc": "2026-10-15T16:33:00Z",
-      "math_start_utc": "2026-10-15T16:10:00Z"
-    }
-  ],
-  "current_assignment": "Fresh PC-COMP-v1 comparing exact frozen arguments; reconstruction remains incomplete and no promotion is granted.",
-  "first_unfinished_action": "Receive complete comparison report and actual manifest, then externally byte-verify before disposition.",
+  "active_workers": [],
+  "current_assignment": "Finalization only: all complete role returns externally byte-verified; compactification full contract remains INCOMPLETE, no promotion.",
+  "first_unfinished_action": "Publish/read back current run-specific FINAL_STATUS, results and terminal capsule; signal once and conditionally release.",
   "source_instructions": "/ChatGPT-Research-State/delta14-mixed-tate/delta14-paired-label-4h-hourly-instructions-v1-20261015.txt",
   "source_instructions_sha256": "3c1b6adb2b2e7b98b3d3d7de8c87c19f86ee0ef2c71310a6b4405395143c31e3",
   "source_capsule": "AUTONOMOUS--continuation10-recovery-20261015T103125Z-g16--g16--terminal-complete--RESUME_CAPSULE.zip",
@@ -86,13 +75,13 @@
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
   "clock_reset": false,
-  "last_heartbeat_utc": "2026-10-15T16:13:53.028Z",
+  "last_heartbeat_utc": "2026-10-15T16:18:11.799Z",
   "recovery_mode": "CHECKED_DIRECT_RECOVERY_VERIFY_ONLY",
   "persistent_goal_status": "No new discovery; inherited campaign limitation retained.",
   "latest_verified_dropbox_generation": "AUTONOMOUS--continuation11-recovery-20261015T152347Z-g18--g18--hour3-review.json",
   "latest_verified_dropbox_generation_sha256": "6d95beede7f995a8fc92d8e9cbede6987932ec4a5f56c2d529e76f28bb69a155",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
-  "dropbox_heartbeat_path": "AUTONOMOUS--continuation11-recovery-20261015T152347Z-g18--g18--comparison-control-01--heartbeat.json",
+  "dropbox_heartbeat_path": "AUTONOMOUS--continuation11-recovery-20261015T152347Z-g18--g18--finalization-control-01--heartbeat.json",
   "supervisor_actions_run_id": 38760245125,
   "supervisor_job_id": 116509745138,
   "baseline_revisions": {
@@ -102,7 +91,7 @@
     "AUDIT_CHECKLIST": "9ede295d1b248c5ab28e9615cbdcfbe4303c54eac44d384413106c331e4a2d92"
   },
   "active_math_accounting": "Exact root active time unavailable; wall elapsed and explicitly recorded worker intervals are separate. No double counting or assertion of exact active total.",
-  "provisional_findings": "Residual-v2 promoted exact scope; compactification candidate still unverified. No exact class or motive evaluation.",
+  "provisional_findings": "Primary paired-residual-v2 remains promoted at exact scope. Compact-conic-v1 remains unpromoted: reconstruction and comparison INCOMPLETE at integral functorial-localization dependency; geometric agreement does not close full contract. Global targets unresolved.",
   "latest_verified_dropbox_capsule": "AUTONOMOUS--continuation11-recovery-20261015T152347Z-g18--g18--hour3-review--RESUME_CAPSULE.zip",
   "latest_verified_dropbox_capsule_sha256": "31675651f785e988d55816b5083fb797101c0e73ec0cbf1c07e7d26ab2c34fe6",
   "latest_verified_dropbox_capsule_raw_readback_equal": true,
@@ -294,12 +283,12 @@
     "proof_sha256": "d187a8779ab1e7e99f55746bcbf29d98657398e256612e047c4055c1f4990291",
     "contract_sha256": "ddd5eafa2e7a42c18162075609187c1d410507e6cb5e9c974098e50da1ad9ec2",
     "brief_sha256": "e001ad5db901e9e2714b9e0f3b19b36be2296d3b6d8dae79450261284d8c1d38",
-    "status": "candidate",
+    "status": "CANDIDATE_FULL_CONTRACT_INCOMPLETE_NOT_PROMOTED",
     "gates": {
       "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED",
       "hostile": "PASS_EXTERNALLY_BYTE_VERIFIED",
       "reconstruction": "INCOMPLETE_EXACT_CONTRACT_EXTERNALLY_BYTE_VERIFIED",
-      "comparison": "NOT_RUN"
+      "comparison": "INCOMPLETE_EXTERNALLY_BYTE_VERIFIED"
     },
     "external_freeze": {
       "name": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--compact-v1-freeze.json",
@@ -344,10 +333,19 @@
       "external_sha256": "cb90512d052e3c0793f12008095aa3130fb3f3e82372a5259f478fdf6ed21fab",
       "raw_readback_equal": true,
       "exact_unfinished_obligation": "Integral functorial closed/open compact-support localization and finite-disjoint-union compatibility for named Sella construction not supplied/proved within isolated input bundle."
+    },
+    "comparison": {
+      "verdict": "INCOMPLETE",
+      "report_sha256": "10b15e242ea8ab133625975abfadc3e1d4784ca1fbff9731971da310cf5e21a1",
+      "manifest_sha256": "9aa52dec568e236801d4e7662ff2722748794dc5e572fafc6b50731be2563e3e",
+      "external_generation": "EVIDENCE--continuation11-recovery-20261015T152347Z-g18--PC-COMP-v1.json",
+      "external_sha256": "79e126b9a8286acc19f14e06640a336c7dbf9330d22d872f1dc0acf964340839",
+      "raw_readback_equal": true,
+      "failure_classification": "Input/admitted-dependency scope gap, not detected mathematical error or counterexample."
     }
   },
-  "search_disposition": "VERIFY_ONLY after completed compactification pivot; local induction provisionally parked, no further search allowance.",
-  "mathematics_mode": "VERIFY_ONLY",
+  "search_disposition": "DELIBERATE_SCOPE_STOP; no new search, repair cadence, or successor.",
+  "mathematics_mode": "FINALIZATION_ONLY",
   "current_audit_checklist_sha256": "ef7ada9b66560a376d9963ec9f695b7534b21835cc712c228d00be122f40f84b",
   "infrastructure_last_checked_utc": "2026-10-15T16:13:46.155Z",
   "execution_epoch": {
@@ -363,7 +361,7 @@
     "error": "exec-server transport disconnected; failed to resume exec-server session: recovery timed out after25s",
     "cleanup_attempts": 1
   },
-  "recovery_eligibility": "Same authorization may direct-resume only in a fresh healthy environment before16:57:49Z; after reserve finalize_only. Hard deadline17:07:49Z unchanged. No successor.",
+  "recovery_eligibility": "Finalization-only if interrupted; deliberate scope stop forbids further mathematics under this authorization even before original reserve.",
   "predecessor_run_id": "continuation11-paired-label-20261015T130749Z-28d8ccde1490",
   "recovery_started_utc": "2026-10-15T15:23:47.630Z",
   "recovery_incident_id": "aa6fd19579040faf1656ae4a",
@@ -403,9 +401,15 @@
       "start_utc": "2026-10-15T15:46:30Z",
       "end_utc": "2026-10-15T16:00:31Z",
       "seconds": 841
+    },
+    {
+      "role": "PC-COMP-v1",
+      "start_utc": "2026-10-15T16:10:00Z",
+      "end_utc": "2026-10-15T16:14:20Z",
+      "seconds": 260
     }
   ],
-  "recovered_verification_seconds": 1170,
+  "recovered_verification_seconds": 1430,
   "prior_execution_epoch": {
     "number": 2,
     "boundary_review_utc": "2026-10-15T15:07:49.340610Z",
@@ -427,5 +431,9 @@
       "end_utc": "2026-10-15T16:08:18Z",
       "qualification": "Review elapsed window includes persistence and administrative interruptions; not exact active-math time."
     }
-  ]
+  ],
+  "stop_decision_utc": "2026-10-15T16:15:54.173Z",
+  "stop_reason": "Existing compactification comparison returned INCOMPLETE at a precise admitted-dependency gap. Hour3 disposition closes this verification effort without promotion; primary promotion preserved.",
+  "bounded_workflow_status": "COMPLETED_PARTIAL_RESULT_VERIFICATION_GAP",
+  "notification_result_id": "continuation11-paired-label-exact-20261015-v1/continuation11-recovery-20261015T152347Z-g18/g18/compact-v1-incomplete-localization"
 }
