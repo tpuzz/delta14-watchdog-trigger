@@ -5,11 +5,11 @@
   "run_id": "exact-class-breakthrough-recovery-20261015T230900Z-g21",
   "lease_generation": 21,
   "status": "running",
-  "phase": "recovery_bootstrap",
+  "phase": "recovery_mathematics_and_verification",
   "authorization_start_utc": "2026-10-15T19:50:16.938319Z",
   "hard_deadline_utc": "2026-10-15T23:50:16.938319Z",
   "delivery_start_utc": "2026-10-15T23:40:16.938319Z",
-  "last_heartbeat_utc": "2026-10-15T23:11:00.000Z",
+  "last_heartbeat_utc": "2026-10-15T23:12:30.000Z",
   "research_started": true,
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
@@ -26,5 +26,30 @@
   ],
   "interrupted_assignment_credit": "none",
   "first_unfinished_action": "Inspect actual interrupted output bytes that became durable; resume only the exact three interrupted assignments under original input restrictions. Externally byte-verify complete reconstruction report and manifest before comparison.",
-  "supervisor_verification_level": "Pending generation-21 start.signal and actual Actions job verification."
+  "supervisor_verification_level": "Actual generation-21 supervisor job running; checkout and regression tests passed; supervision step in progress.",
+  "supervisor_actions_run_id": 38821854293,
+  "supervisor_job_id": 116720291260,
+  "active_workers": [
+    {
+      "assignment": "SECANT-BLOCK4-v1-RECONSTRUCTION-v1",
+      "agent": "/root/g21_secant_recon",
+      "state": "fresh replacement1 active under original proof-blind allowlist",
+      "automatic_recovery_count": 1,
+      "return_due_utc": "2026-10-15T23:31:00Z"
+    },
+    {
+      "assignment": "MONOMIAL-EXACT-W1",
+      "agent": "/root/g21_monomial",
+      "state": "replacement1 active under original route allowlist",
+      "automatic_recovery_count": 1,
+      "return_due_utc": "2026-10-15T23:31:00Z"
+    },
+    {
+      "assignment": "COUPLED-ADJOINT-W2",
+      "agent": "/root/g21_coupled",
+      "state": "replacement1 active under original route allowlist",
+      "automatic_recovery_count": 1,
+      "return_due_utc": "2026-10-15T23:31:00Z"
+    }
+  ]
 }
