@@ -20,20 +20,11 @@
   "research_started": true,
   "math_start_utc": "2026-10-15T13:15:26.111Z",
   "math_segment_start_utc": "2026-10-15T13:15:26.111Z",
-  "active_math_elapsed_seconds": 1903,
+  "active_math_elapsed_seconds": null,
   "aggregate_worker_seconds": 0,
-  "active_workers": [
-    {
-      "task": "PAIR-NORM-W2",
-      "agent": "/root/pair_norm_w2",
-      "status": "running",
-      "math_stop_utc": "2026-10-15T13:55:00Z",
-      "delivery_utc": "2026-10-15T13:57:00Z",
-      "replacement_count": 0
-    }
-  ],
-  "current_assignment": "Await complete norm W2 return; candidate-v1 leakage passed externally, hostile deferred to avoid verifying a weaker version if norm result supports stronger contract.",
-  "first_unfinished_action": "Dispatch W2 after gate checkpoint; freeze exact scoped paired-descent candidate for sequential verification.",
+  "active_workers": [],
+  "current_assignment": "Freeze stronger candidate from completed norm W2 plus compatible pair descent, then fresh sequential leakage/hostile/reconstruction/comparison.",
+  "first_unfinished_action": "Freeze combined candidate v2; fresh leakage audit.",
   "source_instructions": "/ChatGPT-Research-State/delta14-mixed-tate/delta14-paired-label-4h-hourly-instructions-v1-20261015.txt",
   "source_instructions_sha256": "3c1b6adb2b2e7b98b3d3d7de8c87c19f86ee0ef2c71310a6b4405395143c31e3",
   "source_capsule": "AUTONOMOUS--continuation10-recovery-20261015T103125Z-g16--g16--terminal-complete--RESUME_CAPSULE.zip",
@@ -45,7 +36,7 @@
     "RELATIVE-LATTICE": 2,
     "RELATIVE-GEOMETRY": 1
   },
-  "new_independent_wave_credit": 1,
+  "new_independent_wave_credit": 2,
   "source_limits": "Same-family promoted only. Continuation5 original cubical comparison report and manifest remain missing. No-section original Rowen/Tignol full texts unavailable; later primary restatements/preprint qualifications retained.",
   "policy_sha": "ffb5dc24643d747482e2f1ab94040431b7e46361",
   "ownership_protocol_sha": "4bb548d2a8a8772dc2a1d0e3271c84825856d584",
@@ -57,13 +48,13 @@
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
   "clock_reset": false,
-  "last_heartbeat_utc": "2026-10-15T13:47:25.894Z",
+  "last_heartbeat_utc": "2026-10-15T13:54:32.975Z",
   "recovery_mode": "DIRECT-RESUME existing campaign under newly confirmed bounded authorization",
   "persistent_goal_status": "No new discovery; inherited campaign limitation retained.",
-  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--norm-screen.json",
-  "latest_verified_dropbox_generation_sha256": "a7cb1410067746e686da4dc47464245ec998c6711ff2b942b0451350dad37f27",
+  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--norm-w2-return.json",
+  "latest_verified_dropbox_generation_sha256": "51e666d86e356c18b277a83478b5b1306d2578d5f1f412d373351ed0af908dd3",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
-  "dropbox_heartbeat_path": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--norm-screen.json",
+  "dropbox_heartbeat_path": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--norm-w2-return.json",
   "supervisor_actions_run_id": 38740824534,
   "supervisor_job_id": 116442382345,
   "baseline_revisions": {
@@ -72,7 +63,7 @@
     "FAILED": "28e72b0ced27f4b568cc18f2223382b68631ebf8a06268f3c57bd5423a6b34aa",
     "AUDIT_CHECKLIST": "9ede295d1b248c5ab28e9615cbdcfbe4303c54eac44d384413106c331e4a2d92"
   },
-  "active_math_accounting": "Conservative wall-union elapsed since first root math; includes brief preparation and interleaved administrative work, concurrent worker time not double counted. Aggregate worker separately at return.",
+  "active_math_accounting": "Exact root active time unavailable; wall elapsed and explicitly recorded worker intervals are separate. No double counting or assertion of exact active total.",
   "provisional_findings": "Candidates only: affine pair swaps form index2 normalizer; common-isogeny repair has extra mu2 data. Original-family exact evaluation unresolved; no promotion.",
   "latest_verified_dropbox_capsule": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--bootstrap--RESUME_CAPSULE.zip",
   "latest_verified_dropbox_capsule_sha256": "7787204dc9d09ca4d6c0210f65eefbc04b804a20226f64c099ed7f6af8bb0c88",
@@ -92,6 +83,13 @@
       "status": "candidate",
       "recorded_interval_seconds": 634.083438,
       "provenance_addendum": "pending"
+    },
+    {
+      "assignment": "PAIR-NORM-W2",
+      "report_sha256": "5382d3cada2146a6303246bc51cda8616a38d28e3c9678881d2036d2bb6c8cd2",
+      "manifest_sha256": "c3c7243bb7c38f137708e9686fc1ed81f5bf7bfdbf9c28f282e542e15d79f957",
+      "status": "candidate",
+      "math_seconds": 586.264753
     }
   ],
   "w1_external_evidence": {
@@ -99,7 +97,7 @@
     "sha256": "dc9ac47a0e4923ec93064d1c220a216657bf7b4a90176e8f1cc50ef279c6fa59",
     "raw_readback_equal": true
   },
-  "wave_grouping": "Both isolated assignments converged to paired-sign compatibility/common-isogeny mechanism in the same root-synthesized batch: ONE credit, not two; no independently matured new family yet.",
+  "wave_grouping": "W1 same-root batch counted once; W2 is an isolated own-route sequential wave, complete and externally persisted. Paired-twist family now has two waves; no change to inherited family counts.",
   "mechanism_gate": {
     "actual_utc": "2026-10-15T13:35:34Z",
     "due_utc": "2026-10-15T13:35:26.111Z",
@@ -135,5 +133,11 @@
     "math_end_utc": "2026-10-15T13:42:56Z",
     "externally_byte_verified": true
   },
-  "timing_qualification": "Root top-level counter was a conservative wall-union screen bound, including some interleaved administration, not exact active-mathematics telemetry. The13:35:34 feasibility decision is retained as an early/upper-bound gate; no assertion that exactly1200 active seconds had elapsed. Worker exact intervals separately retained. No budget reset or extension; continuation allowance is the explicit bounded13:55 test."
+  "timing_qualification": "Root top-level counter was a conservative wall-union screen bound, including some interleaved administration, not exact active-mathematics telemetry. The13:35:34 feasibility decision is retained as an early/upper-bound gate; no assertion that exactly1200 active seconds had elapsed. Worker exact intervals separately retained. No budget reset or extension; continuation allowance is the explicit bounded13:55 test.",
+  "wall_elapsed_since_math_start_seconds": 2284,
+  "norm_w2_external_evidence": {
+    "name": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--norm-w2-return.json",
+    "sha256": "51e666d86e356c18b277a83478b5b1306d2578d5f1f412d373351ed0af908dd3",
+    "raw_readback_equal": true
+  }
 }
