@@ -4,12 +4,12 @@
   "authorization_id": "exact-class-breakthrough-4h-20261015-v1",
   "run_id": "exact-class-breakthrough-recovery-20261015T230900Z-g21",
   "lease_generation": 21,
-  "status": "running",
-  "phase": "recovery_mathematics_and_verification",
+  "status": "checkpointed",
+  "phase": "recovery_result_reconciliation",
   "authorization_start_utc": "2026-10-15T19:50:16.938319Z",
   "hard_deadline_utc": "2026-10-15T23:50:16.938319Z",
   "delivery_start_utc": "2026-10-15T23:40:16.938319Z",
-  "last_heartbeat_utc": "2026-10-15T23:16:00.000Z",
+  "last_heartbeat_utc": "2026-10-15T23:21:00.000Z",
   "research_started": true,
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
@@ -25,31 +25,30 @@
     "COUPLED-ADJOINT-W2"
   ],
   "interrupted_assignment_credit": "none",
-  "first_unfinished_action": "Inspect actual interrupted output bytes that became durable; resume only the exact three interrupted assignments under original input restrictions. Externally byte-verify complete reconstruction report and manifest before comparison.",
+  "first_unfinished_action": "Reconcile and durably persist all three replacement returns. Secant reconstruction is incomplete/no-credit, so comparison remains NOT RUN.",
   "supervisor_verification_level": "Actual generation-21 supervisor job running; checkout and regression tests passed; supervision step in progress.",
   "supervisor_actions_run_id": 38821854293,
   "supervisor_job_id": 116720291260,
-  "active_workers": [
+  "active_workers": [],
+  "recovered_returns": [
     {
       "assignment": "SECANT-BLOCK4-v1-RECONSTRUCTION-v1",
-      "agent": "/root/g21_secant_recon",
-      "state": "fresh replacement1 active under original proof-blind allowlist",
-      "automatic_recovery_count": 1,
-      "return_due_utc": "2026-10-15T23:31:00Z"
+      "status": "INCOMPLETE_NO_CREDIT",
+      "report_sha256": "11241f00b6b15940c2add8d81edcc97f9a50f88dfe8db6f921323091e461ce13",
+      "manifest_sha256": "20a1c000ee32bb4fc690eb1e48f323ed80832941d210ce3ee8380c1cf6475d5f",
+      "comparison": "NOT_RUN"
     },
     {
       "assignment": "MONOMIAL-EXACT-W1",
-      "agent": "/root/g21_monomial",
-      "state": "replacement1 active under original route allowlist",
-      "automatic_recovery_count": 1,
-      "return_due_utc": "2026-10-15T23:31:00Z"
+      "status": "candidate_only_unverified",
+      "report_sha256": "bf543f23fa25cf327bf8fda19bfa2cccec967e95403c86d8d0354000b3765d35",
+      "manifest_sha256": "4bc8cf74cfee0676fd4779d2529d75583161258b8d6785089e0f61fb06523233"
     },
     {
       "assignment": "COUPLED-ADJOINT-W2",
-      "agent": "/root/g21_coupled",
-      "state": "replacement1 active under original route allowlist",
-      "automatic_recovery_count": 1,
-      "return_due_utc": "2026-10-15T23:31:00Z"
+      "status": "candidate_only_unverified",
+      "report_sha256": "4cbb3b215da1ea6784c903571dce172a053c607608330fb97e5bffffcd85b852",
+      "manifest_sha256": "0f1de707885cefbf12f635dca2365e2e7cf7d60c9075efc23f19565fcd9557fa"
     }
   ]
 }
