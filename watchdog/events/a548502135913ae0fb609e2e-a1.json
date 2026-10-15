@@ -1,0 +1,11 @@
+{
+  "campaign_id": "delta14-mixed-tate-20261012T210157Z",
+  "run_id": "continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7",
+  "lease_generation": 14,
+  "incident_id": "a548502135913ae0fb609e2e",
+  "recovery_mode": "resume_within_original_scope",
+  "reason": "Explicit interruption/incomplete delivery; expired lease",
+  "hard_deadline_utc": "2026-10-15T11:47:45Z",
+  "snapshot_commit": "6237ffb61a578674a2db2d3b0f89fbdfe351ca4f",
+  "attempt": 1
+}
