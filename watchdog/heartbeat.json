@@ -49,9 +49,20 @@
   "math_segment_start_utc": null,
   "active_math_elapsed_seconds": null,
   "aggregate_worker_seconds": null,
-  "active_workers": [],
-  "current_assignment": "Fresh version-bound comparison of frozen candidate and returned incomplete reconstruction; no repair or new search.",
-  "first_unfinished_action": "Launch fresh PC-COMP-v1 within recorded allowance; persist exact return before any label.",
+  "active_workers": [
+    {
+      "task": "PC-COMP-v1",
+      "agent": "/root/pc_comp_v1",
+      "status": "running fresh isolated comparison",
+      "replacement_count": 0,
+      "checkpoint_utc": "2026-10-15T16:20:00Z",
+      "math_stop_utc": "2026-10-15T16:30:00Z",
+      "return_due_utc": "2026-10-15T16:33:00Z",
+      "math_start_utc": "2026-10-15T16:10:00Z"
+    }
+  ],
+  "current_assignment": "Fresh PC-COMP-v1 comparing exact frozen arguments; reconstruction remains incomplete and no promotion is granted.",
+  "first_unfinished_action": "Receive complete comparison report and actual manifest, then externally byte-verify before disposition.",
   "source_instructions": "/ChatGPT-Research-State/delta14-mixed-tate/delta14-paired-label-4h-hourly-instructions-v1-20261015.txt",
   "source_instructions_sha256": "3c1b6adb2b2e7b98b3d3d7de8c87c19f86ee0ef2c71310a6b4405395143c31e3",
   "source_capsule": "AUTONOMOUS--continuation10-recovery-20261015T103125Z-g16--g16--terminal-complete--RESUME_CAPSULE.zip",
@@ -71,17 +82,17 @@
   "existing_hourly_task_id": "6ace34e619e08191a0fafff81fa8714c",
   "hourly_backup_incident": "Observed disabled; existing hourly task re-enabled 2026-10-15T13:10:26Z; no duplicate.",
   "watchdog_recovery_armed": true,
-  "supervisor_verification_level": "Generation18 actual job116509745138 in progress with successful checkout/regression and live supervision observed15:57:52Z. Cooperative ownership only; no end-to-end delivery guarantee.",
+  "supervisor_verification_level": "Generation18 actual job116509745138 in progress; checkout/regression success and live supervision observed16:10Z. Cooperative ownership only; no end-to-end delivery guarantee.",
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
   "clock_reset": false,
-  "last_heartbeat_utc": "2026-10-15T16:09:28.118Z",
+  "last_heartbeat_utc": "2026-10-15T16:13:53.028Z",
   "recovery_mode": "CHECKED_DIRECT_RECOVERY_VERIFY_ONLY",
   "persistent_goal_status": "No new discovery; inherited campaign limitation retained.",
   "latest_verified_dropbox_generation": "AUTONOMOUS--continuation11-recovery-20261015T152347Z-g18--g18--hour3-review.json",
   "latest_verified_dropbox_generation_sha256": "6d95beede7f995a8fc92d8e9cbede6987932ec4a5f56c2d529e76f28bb69a155",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
-  "dropbox_heartbeat_path": "AUTONOMOUS--continuation11-recovery-20261015T152347Z-g18--g18--hour3-review--heartbeat.json",
+  "dropbox_heartbeat_path": "AUTONOMOUS--continuation11-recovery-20261015T152347Z-g18--g18--comparison-control-01--heartbeat.json",
   "supervisor_actions_run_id": 38760245125,
   "supervisor_job_id": 116509745138,
   "baseline_revisions": {
@@ -267,7 +278,7 @@
       "classification": "observed reported interval; first input slightly before observed clock"
     }
   ],
-  "policy_live_recheck_utc": "2026-10-15T15:48:40Z",
+  "policy_live_recheck_utc": "2026-10-15T16:10:00Z",
   "compactification_interim": {
     "status": "candidate-only incomplete",
     "reported_utc": "2026-10-15T14:16Z",
@@ -338,7 +349,7 @@
   "search_disposition": "VERIFY_ONLY after completed compactification pivot; local induction provisionally parked, no further search allowance.",
   "mathematics_mode": "VERIFY_ONLY",
   "current_audit_checklist_sha256": "ef7ada9b66560a376d9963ec9f695b7534b21835cc712c228d00be122f40f84b",
-  "infrastructure_last_checked_utc": "2026-10-15T15:59:06.857Z",
+  "infrastructure_last_checked_utc": "2026-10-15T16:13:46.155Z",
   "execution_epoch": {
     "number": 4,
     "start_utc": "2026-10-15T16:08:18Z",
