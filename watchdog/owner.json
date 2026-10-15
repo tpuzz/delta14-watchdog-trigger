@@ -6,8 +6,8 @@
   "owner_run_id": "exact-class-absolute-20261015T182114Z-g19",
   "generation": 19,
   "status": "active",
-  "last_renewed_utc": "2026-10-15T18:22:10.156Z",
-  "lease_expires_utc": "2026-10-15T18:34:10.156Z",
+  "last_renewed_utc": "2026-10-15T18:28:38.846Z",
+  "lease_expires_utc": "2026-10-15T18:40:38.846Z",
   "predecessor_run_id": "continuation11-recovery-20261015T152347Z-g18",
   "claim_reason": "Explicit user confirmation 2026-10-15T18:21:14Z of NEW exact-class pilot; continuation11 remains completed/stopped. Reuse supervision lineage only."
 }
