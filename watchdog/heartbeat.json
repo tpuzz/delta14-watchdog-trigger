@@ -32,9 +32,18 @@
   "math_segment_start_utc": null,
   "active_math_elapsed_seconds": null,
   "aggregate_worker_seconds": null,
-  "active_workers": [],
-  "current_assignment": "Residual-v2 promoted at exact contract after complete sequential gates; preparing compact-conic-v1 fresh leakage.",
-  "first_unfinished_action": "Persist exact residual-v2 promotion, then audit compact-conic-v1 leakage.",
+  "active_workers": [
+    {
+      "task": "PC-LEAK-v1",
+      "agent": "/root/pc_leak_v1",
+      "status": "running",
+      "math_stop_utc": "2026-10-15T15:08:00Z",
+      "delivery_utc": "2026-10-15T15:09:00Z",
+      "replacement_count": 0
+    }
+  ],
+  "current_assignment": "Fresh compact-conic-v1 leakage audit, sequential after residual-v2 promotion; no search active.",
+  "first_unfinished_action": "Receive complete compact leakage report and actual manifest; externally byte-verify before hostile audit.",
   "source_instructions": "/ChatGPT-Research-State/delta14-mixed-tate/delta14-paired-label-4h-hourly-instructions-v1-20261015.txt",
   "source_instructions_sha256": "3c1b6adb2b2e7b98b3d3d7de8c87c19f86ee0ef2c71310a6b4405395143c31e3",
   "source_capsule": "AUTONOMOUS--continuation10-recovery-20261015T103125Z-g16--g16--terminal-complete--RESUME_CAPSULE.zip",
@@ -54,17 +63,17 @@
   "existing_hourly_task_id": "6ace34e619e08191a0fafff81fa8714c",
   "hourly_backup_incident": "Observed disabled; existing hourly task re-enabled 2026-10-15T13:10:26Z; no duplicate.",
   "watchdog_recovery_armed": true,
-  "supervisor_verification_level": "Actual job116442382345 remains in_progress; checkout/regression success and supervision in_progress observed14:46:41Z. No end-to-end recovery certification.",
+  "supervisor_verification_level": "Actual job116442382345 in_progress; checkout/regression success, supervision in_progress observed15:03:30Z. Both existing automations enabled. No end-to-end recovery certification.",
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
   "clock_reset": false,
-  "last_heartbeat_utc": "2026-10-15T15:02:34.489Z",
+  "last_heartbeat_utc": "2026-10-15T15:04:47.936Z",
   "recovery_mode": "DIRECT-RESUME existing campaign under newly confirmed bounded authorization",
   "persistent_goal_status": "No new discovery; inherited campaign limitation retained.",
-  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--residual-v2-promotion.json",
-  "latest_verified_dropbox_generation_sha256": "43f2f28590a31520225212f7162f775d4f67a3bd2a26d9aa662161fc44708aa4",
+  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--compact-leak-start.json",
+  "latest_verified_dropbox_generation_sha256": "60f35ffa1f8573f8004845b98bf8ed6780ad794dcf5ddcf614debb31b00d0880",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
-  "dropbox_heartbeat_path": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--residual-v2-promotion.json",
+  "dropbox_heartbeat_path": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--compact-leak-start.json",
   "supervisor_actions_run_id": 38740824534,
   "supervisor_job_id": 116442382345,
   "baseline_revisions": {
@@ -173,6 +182,11 @@
       "draft_delay_seconds": 146.174593278,
       "external_generation": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--residual-v2-comparison.json",
       "external_sha256": "ca2384260a7ddcc9668e34d392c1b16eaf801888b34b176fd110c2c6b06c21d9"
+    },
+    "promotion_external": {
+      "name": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--residual-v2-promotion.json",
+      "sha256": "43f2f28590a31520225212f7162f775d4f67a3bd2a26d9aa662161fc44708aa4",
+      "raw_readback_equal": true
     }
   },
   "leakage_return": {
@@ -185,7 +199,7 @@
     "externally_byte_verified": true
   },
   "timing_qualification": "Root top-level counter was a conservative wall-union screen bound, including some interleaved administration, not exact active-mathematics telemetry. The13:35:34 feasibility decision is retained as an early/upper-bound gate; no assertion that exactly1200 active seconds had elapsed. Worker exact intervals separately retained. No budget reset or extension; continuation allowance is the explicit bounded13:55 test.",
-  "wall_elapsed_since_math_start_seconds": 6411,
+  "wall_elapsed_since_math_start_seconds": 6542,
   "norm_w2_external_evidence": {
     "name": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--norm-w2-return.json",
     "sha256": "51e666d86e356c18b277a83478b5b1306d2578d5f1f412d373351ed0af908dd3",
@@ -268,5 +282,7 @@
     }
   },
   "search_disposition": "VERIFY_ONLY after completed compactification pivot; local induction provisionally parked, no further search allowance.",
-  "mathematics_mode": "VERIFICATION_ONLY; root has no currently timed active segment, exact root active accumulator unavailable with qualification preserved."
+  "mathematics_mode": "VERIFICATION_ONLY; root has no currently timed active segment, exact root active accumulator unavailable with qualification preserved.",
+  "current_audit_checklist_sha256": "ef7ada9b66560a376d9963ec9f695b7534b21835cc712c228d00be122f40f84b",
+  "infrastructure_last_checked_utc": "2026-10-15T15:04:21.801Z"
 }
