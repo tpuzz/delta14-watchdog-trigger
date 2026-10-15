@@ -49,14 +49,17 @@
   "existing_recovery_task_id": "6ace7f845e50819197062077fdcc8125",
   "existing_hourly_task_id": "6ace34e619e08191a0fafff81fa8714c",
   "supervision_binding": "Existing campaign_id remains supervision lineage only in public coordination records. mathematical_campaign_id and this STATEMENT identify new fixed exact-class task. Old motive statement never overwritten.",
-  "latest_verified_dropbox_generation": "EXACT--delta14-exact-class-20261015T182114Z--g19--initial.json",
-  "latest_verified_dropbox_generation_sha256": "50bbf7d5eeea5258445754aeb2c4818bb9a7c39ee1b0a77365af6ed68f7ee55c",
+  "latest_verified_dropbox_generation": "EXACT--delta14-exact-class-20261015T182114Z--g19--screen-start.json",
+  "latest_verified_dropbox_generation_sha256": "8eaa2e72ba0081f771e0344dd319e5206a6fbcf7fb5a7aa87f980fdf78c44078",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
-  "last_heartbeat_utc": "2026-10-15T18:28:45.838Z",
+  "last_heartbeat_utc": "2026-10-15T18:34:24.640Z",
   "supervisor_verification_level": "Actual job in progress; checkout/regression success; supervision step running.",
   "recovery_directive": "Recover only the confirmed new exact-class mathematical_campaign_id under this authorization and its fixed statement; preserve old mixed-Tate campaign stopped. Immutable clock and first unfinished action apply.",
   "source_instructions": "EXACT--delta14-exact-class-20261015T182114Z--g19--initial.json payload_files.USER_INSTRUCTIONS.txt",
   "math_start_utc": "2026-10-15T18:27:52.684Z",
   "supervisor_actions_run_id": 38785408894,
-  "supervisor_job_id": 116596612612
+  "supervisor_job_id": 116596612612,
+  "latest_verified_dropbox_capsule": "EXACT--delta14-exact-class-20261015T182114Z--g19--screen-start--RESUME_CAPSULE.zip",
+  "latest_verified_dropbox_capsule_sha256": "183780a25b044691b557908a5fa1e6c44eaed8cddd56a15f128a3922696277a2",
+  "latest_verified_dropbox_capsule_raw_readback_equal": true
 }
