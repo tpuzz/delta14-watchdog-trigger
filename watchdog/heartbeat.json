@@ -13,9 +13,11 @@
   "research_started": true,
   "math_start_utc": "2026-10-15T07:55:12.444Z",
   "active_math_elapsed_seconds": 251.936741,
-  "active_workers": [],
-  "current_assignment": "Proof-blind reconstruction no-rational-section-v1",
-  "first_unfinished_action": "Fresh isolated comparison of frozen candidate and independently reconstructed exact claim; no promotion before complete persisted PASS.",
+  "active_workers": [
+    "ns_comp_v1"
+  ],
+  "current_assignment": "Fresh isolated comparison no-rational-section-v1",
+  "first_unfinished_action": "Finish NS-COMP-v1 comparison; math stop11:29Z/full return11:31Z; externally verify actual report+manifest before any promotion.",
   "launch_kit": "delta14-relative-generic-launch-v1-20261015.zip",
   "launch_kit_sha256": "49cde9d2aea51d8d1d32c10434718fad4ff07ade2cc5fd5aaf2e7d032ee9936a",
   "source_capsule": "AUTONOMOUS--continuation9-recovery-20261014T212819Z-9b87a01c8656--g13--terminal--RESUME_CAPSULE.zip",
@@ -193,14 +195,14 @@
   },
   "provenance_note": "Pinned terminal capsule contains stale recovery START_HERE. Terminal FINAL_STATUS and live heartbeat supersede it. No previous completed gate repeated.",
   "source_statement_pending": false,
-  "last_heartbeat_utc": "2026-10-15T11:09:14.742Z",
+  "last_heartbeat_utc": "2026-10-15T11:12:40.521Z",
   "latest_verified_dropbox_generation": "AUTONOMOUS--continuation10-recovery-20261015T103125Z-g16--g16--reconstruction-complete.json",
   "latest_verified_dropbox_generation_sha256": "64eef7bc8c4aefe5c92fec1b9abb8d00afd9611383dbca8f6deae6de319c9099",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
   "mathematical_work_authorized": true,
   "source_statement_sha256": "76482cf9eb1e459429efa4fcdff74dd986fcb39889a48c40193642e63f23f32d",
   "supervisor_actions_run_id": 38720989688,
-  "supervisor_verification_level": "Actual run38720989688 job116375254526 in_progress; checkout and regression preflight success; supervise active.",
+  "supervisor_verification_level": "Actual Actions38720989688 job116375254526 observed in_progress11:11Z; checkout/regression tests success; supervise step in_progress. Not an end-to-end crash/recovery certification.",
   "math_segment_start_utc": null,
   "epoch": {
     "number": 4,
@@ -602,5 +604,6 @@
     "path": "/ChatGPT-Research-State/delta14-mixed-tate/NS-RECON-v1-actual-return-inputs-sources.zip",
     "sha256": "07cbd3106d4f48e032830a48ef9212c830583442f0e8d857f673708dedc7b8ae",
     "raw_readback_equal": true
-  }
+  },
+  "monitor_tasks_verified_enabled_utc": "2026-10-15T11:12:36.318Z"
 }
