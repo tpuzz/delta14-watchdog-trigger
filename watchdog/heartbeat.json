@@ -33,6 +33,15 @@
       "delay_seconds": 0.34061,
       "path": "REASSESSMENT-02.md",
       "disposition": "VERIFY_ONLY"
+    },
+    {
+      "number": 3,
+      "scheduled_utc": "2026-10-15T16:07:49Z",
+      "actual_utc": "2026-10-15T16:08:18Z",
+      "delay_seconds": 29,
+      "delay_reason": "Returned evidence reconciliation and checkpoint preparation.",
+      "path": "REASSESSMENT-03.md",
+      "disposition": "VERIFY_ONLY_COMPARISON_THEN_SCOPED_STOP"
     }
   ],
   "research_started": true,
@@ -41,8 +50,8 @@
   "active_math_elapsed_seconds": null,
   "aggregate_worker_seconds": null,
   "active_workers": [],
-  "current_assignment": "Persist frozen PC-RECON-v1 incomplete return and reconcile exact foundational dependency; no promotion.",
-  "first_unfinished_action": "Persist reconstruction return; hour3 reassessment and bounded gate decision.",
+  "current_assignment": "Fresh version-bound comparison of frozen candidate and returned incomplete reconstruction; no repair or new search.",
+  "first_unfinished_action": "Launch fresh PC-COMP-v1 within recorded allowance; persist exact return before any label.",
   "source_instructions": "/ChatGPT-Research-State/delta14-mixed-tate/delta14-paired-label-4h-hourly-instructions-v1-20261015.txt",
   "source_instructions_sha256": "3c1b6adb2b2e7b98b3d3d7de8c87c19f86ee0ef2c71310a6b4405395143c31e3",
   "source_capsule": "AUTONOMOUS--continuation10-recovery-20261015T103125Z-g16--g16--terminal-complete--RESUME_CAPSULE.zip",
@@ -66,13 +75,13 @@
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
   "clock_reset": false,
-  "last_heartbeat_utc": "2026-10-15T16:05:51.113Z",
+  "last_heartbeat_utc": "2026-10-15T16:09:28.118Z",
   "recovery_mode": "CHECKED_DIRECT_RECOVERY_VERIFY_ONLY",
   "persistent_goal_status": "No new discovery; inherited campaign limitation retained.",
-  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation11-recovery-20261015T152347Z-g18--g18--hostile-pass.json",
-  "latest_verified_dropbox_generation_sha256": "531b3e7dfb5df8b35f0a1c7b02a93be15848c9aaa4c51a4b711ba70d9eb0771d",
+  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation11-recovery-20261015T152347Z-g18--g18--hour3-review.json",
+  "latest_verified_dropbox_generation_sha256": "6d95beede7f995a8fc92d8e9cbede6987932ec4a5f56c2d529e76f28bb69a155",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
-  "dropbox_heartbeat_path": "AUTONOMOUS--continuation11-recovery-20261015T152347Z-g18--g18--reconstruction-received--heartbeat.json",
+  "dropbox_heartbeat_path": "AUTONOMOUS--continuation11-recovery-20261015T152347Z-g18--g18--hour3-review--heartbeat.json",
   "supervisor_actions_run_id": 38760245125,
   "supervisor_job_id": 116509745138,
   "baseline_revisions": {
@@ -83,8 +92,8 @@
   },
   "active_math_accounting": "Exact root active time unavailable; wall elapsed and explicitly recorded worker intervals are separate. No double counting or assertion of exact active total.",
   "provisional_findings": "Residual-v2 promoted exact scope; compactification candidate still unverified. No exact class or motive evaluation.",
-  "latest_verified_dropbox_capsule": "AUTONOMOUS--continuation11-recovery-20261015T152347Z-g18--g18--leakage-pass--RESUME_CAPSULE.zip",
-  "latest_verified_dropbox_capsule_sha256": "7c2df5363aa1456287b21ed6c1d9709f128bef7da67fe602a05d85771ddf2b27",
+  "latest_verified_dropbox_capsule": "AUTONOMOUS--continuation11-recovery-20261015T152347Z-g18--g18--hour3-review--RESUME_CAPSULE.zip",
+  "latest_verified_dropbox_capsule_sha256": "31675651f785e988d55816b5083fb797101c0e73ec0cbf1c07e7d26ab2c34fe6",
   "latest_verified_dropbox_capsule_raw_readback_equal": true,
   "completed_returns": [
     {
@@ -278,7 +287,7 @@
     "gates": {
       "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED",
       "hostile": "PASS_EXTERNALLY_BYTE_VERIFIED",
-      "reconstruction": "NOT_RUN",
+      "reconstruction": "INCOMPLETE_EXACT_CONTRACT_EXTERNALLY_BYTE_VERIFIED",
       "comparison": "NOT_RUN"
     },
     "external_freeze": {
@@ -316,6 +325,14 @@
       "external_generation": "EVIDENCE--continuation11-recovery-20261015T152347Z-g18--PC-HOSTILE-v1.json",
       "external_sha256": "ee59f08c3f992f07282c594c0f27d281e9ca2971f4dccc9635fdba9c3f28af51",
       "raw_readback_equal": true
+    },
+    "reconstruction": {
+      "report_sha256": "d221bcd2a949754f5e6a3fd41e8b8763a5bd854870481912a31a2a9d8c8b7219",
+      "manifest_sha256": "9668fbc4ac25f47b701db93c81fe6b6539031201f05ba5f8fda567054fcdc206",
+      "external_generation": "EVIDENCE--continuation11-recovery-20261015T152347Z-g18--PC-RECON-v1.json",
+      "external_sha256": "cb90512d052e3c0793f12008095aa3130fb3f3e82372a5259f478fdf6ed21fab",
+      "raw_readback_equal": true,
+      "exact_unfinished_obligation": "Integral functorial closed/open compact-support localization and finite-disjoint-union compatibility for named Sella construction not supplied/proved within isolated input bundle."
     }
   },
   "search_disposition": "VERIFY_ONLY after completed compactification pivot; local induction provisionally parked, no further search allowance.",
@@ -323,11 +340,10 @@
   "current_audit_checklist_sha256": "ef7ada9b66560a376d9963ec9f695b7534b21835cc712c228d00be122f40f84b",
   "infrastructure_last_checked_utc": "2026-10-15T15:59:06.857Z",
   "execution_epoch": {
-    "number": 3,
-    "start_utc": "2026-10-15T15:23:47.630Z",
-    "math_restart_assignment_utc": "2026-10-15T15:28:37Z",
-    "health": "Fresh healthy exec-server; ownership/readback, durable bytes, matching heartbeats and actual supervisor verified; serial verification only.",
-    "next_health_check_due_utc": "2026-10-15T16:08:47.630Z"
+    "number": 4,
+    "start_utc": "2026-10-15T16:08:18Z",
+    "health": "Healthy local runtime and durable raw readback; transient Dropbox status timeout reconciled without duplicate upload; no active role at boundary.",
+    "next_health_check_due_utc": "2026-10-15T16:53:18Z"
   },
   "infrastructure_incident": {
     "observed_utc": "2026-10-15T15:10:47.698Z",
@@ -370,9 +386,15 @@
       "end_utc": "2026-10-15T15:38:51Z",
       "seconds": 298,
       "qualification": "Reported decision interval; preceding mathematical-input reading not separated, so not an exact all-activity total."
+    },
+    {
+      "role": "PC-RECON-v1",
+      "start_utc": "2026-10-15T15:46:30Z",
+      "end_utc": "2026-10-15T16:00:31Z",
+      "seconds": 841
     }
   ],
-  "recovered_verification_seconds": 329,
+  "recovered_verification_seconds": 1170,
   "prior_execution_epoch": {
     "number": 2,
     "boundary_review_utc": "2026-10-15T15:07:49.340610Z",
@@ -387,5 +409,12 @@
       "observed_utc": "2026-10-15T15:48:44.977Z"
     }
   ],
-  "recovery_wakeup_duplicate_notice": "Repeated deliveries of PR17 and18 observe this coherent active generation18; no duplicate recovery."
+  "recovery_wakeup_duplicate_notice": "Repeated deliveries of PR17 and18 observe this coherent active generation18; no duplicate recovery.",
+  "root_recovery_review_segments": [
+    {
+      "start_utc": "2026-10-15T16:01:51.840Z",
+      "end_utc": "2026-10-15T16:08:18Z",
+      "qualification": "Review elapsed window includes persistence and administrative interruptions; not exact active-math time."
+    }
+  ]
 }
