@@ -13,16 +13,9 @@
   "research_started": true,
   "math_start_utc": "2026-10-15T07:55:12.444Z",
   "active_math_elapsed_seconds": 251.936741,
-  "active_workers": [
-    {
-      "task_name": "/root/product_hostile_v1",
-      "assignment": "PRODUCT-HOSTILE-v1",
-      "status": "running",
-      "replacement_count": 0
-    }
-  ],
-  "current_assignment": "PRODUCT-HOSTILE-v1",
-  "first_unfinished_action": "Complete isolated hostile audit, then externally persist report and manifest.",
+  "active_workers": [],
+  "current_assignment": "PRODUCT-RECON-v1",
+  "first_unfinished_action": "Byte-verify hostile report and manifest externally, then fresh proof-blind reconstruction.",
   "launch_kit": "delta14-relative-generic-launch-v1-20261015.zip",
   "launch_kit_sha256": "49cde9d2aea51d8d1d32c10434718fad4ff07ade2cc5fd5aaf2e7d032ee9936a",
   "source_capsule": "AUTONOMOUS--continuation9-recovery-20261014T212819Z-9b87a01c8656--g13--terminal--RESUME_CAPSULE.zip",
@@ -200,9 +193,9 @@
   },
   "provenance_note": "Pinned terminal capsule contains stale recovery START_HERE. Terminal FINAL_STATUS and live heartbeat supersede it. No previous completed gate repeated.",
   "source_statement_pending": false,
-  "last_heartbeat_utc": "2026-10-15T08:10:31.248Z",
-  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--product-leak-v1.json",
-  "latest_verified_dropbox_generation_sha256": "2a9834c7c1c09d21590a6dd7ac6cd0a8264a9a36c73d4ed70614905703636e82",
+  "last_heartbeat_utc": "2026-10-15T08:14:24.273Z",
+  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--product-hostile-v1.json",
+  "latest_verified_dropbox_generation_sha256": "76c1a7a82470f9a708f1bb4bbdfd460d9b8d5b3b088d4aa63db553891a553d26",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
   "mathematical_work_authorized": true,
   "source_statement_sha256": "76482cf9eb1e459429efa4fcdff74dd986fcb39889a48c40193642e63f23f32d",
@@ -245,11 +238,22 @@
       "status": "candidate",
       "gates": {
         "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED",
-        "hostile": "NOT_RUN",
+        "hostile": "PASS_LOCAL_PENDING_EXTERNAL",
         "reconstruction": "NOT_RUN",
         "comparison": "NOT_RUN"
       }
     }
   },
-  "current_checkpoint": "product-leak-v1"
+  "current_checkpoint": "product-hostile-v1",
+  "preliminary_generic_planning": {
+    "status": "root-only exploratory notes, no result or independent credit",
+    "RELATIVE-LATTICE": {
+      "active_math_elapsed_seconds": 240,
+      "basis": "conservative charge for root exploratory reasoning during product verification; no search agent yet"
+    },
+    "RELATIVE-GEOMETRY": {
+      "active_math_elapsed_seconds": 180,
+      "basis": "conservative charge for root exploratory reasoning during product verification; no search agent yet"
+    }
+  }
 }
