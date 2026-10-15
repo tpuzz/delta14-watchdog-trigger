@@ -13,9 +13,12 @@
   "research_started": true,
   "math_start_utc": "2026-10-15T07:55:12.444Z",
   "active_math_elapsed_seconds": 251.936741,
-  "active_workers": [],
-  "current_assignment": "Prepare fresh lattice W2 and narrow permutation-factor obstruction cadence",
-  "first_unfinished_action": "Freeze exact obstruction candidate and independent W2 brief, then persist before new verifier.",
+  "active_workers": [
+    "pf_leak_v1",
+    "generic_lattice_w2"
+  ],
+  "current_assignment": "PF-LEAK-v1; RELATIVE-LATTICE-W2",
+  "first_unfinished_action": "Receive narrow obstruction leakage gate and unrestricted-section W2 return; geometry route remains paused with one independent credit.",
   "launch_kit": "delta14-relative-generic-launch-v1-20261015.zip",
   "launch_kit_sha256": "49cde9d2aea51d8d1d32c10434718fad4ff07ade2cc5fd5aaf2e7d032ee9936a",
   "source_capsule": "AUTONOMOUS--continuation9-recovery-20261014T212819Z-9b87a01c8656--g13--terminal--RESUME_CAPSULE.zip",
@@ -193,7 +196,7 @@
   },
   "provenance_note": "Pinned terminal capsule contains stale recovery START_HERE. Terminal FINAL_STATUS and live heartbeat supersede it. No previous completed gate repeated.",
   "source_statement_pending": false,
-  "last_heartbeat_utc": "2026-10-15T09:05:33.883Z",
+  "last_heartbeat_utc": "2026-10-15T09:05:50.615Z",
   "latest_verified_dropbox_generation": "AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--pf-candidate-v1.json",
   "latest_verified_dropbox_generation_sha256": "566bb2fb738004961234c408430118c6c095930705598689f3172625c41e6f9f",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
@@ -219,7 +222,7 @@
     "RELATIVE-LATTICE": {
       "active_math_elapsed_seconds": 1622.24,
       "math_segment_start_utc": null,
-      "status": "first_wave_synthesized_gate_reassessed",
+      "status": "second_independent_wave_assigned",
       "independent_wave_credit": 1,
       "baseline_files": [
         {
@@ -243,7 +246,10 @@
       "decision": "GO only to unrestricted rational-section cohomology/unit-cocycle test, with same cumulative screen accumulator; literal reciprocal-factor obstruction requires full verification.",
       "post_gate_root_reassessment_math_seconds": 210,
       "post_gate_charge_note": "Conservative charge for root examination of unrestricted rational-section cohomology after completed W1; same accumulator, no reset.",
-      "candidate_freeze_root_math_charge_seconds": 180
+      "candidate_freeze_root_math_charge_seconds": 180,
+      "new_active_allocation_seconds": 480,
+      "conservative_wall_stop_utc": "2026-10-15T09:13:00Z",
+      "no_clock_reset": true
     },
     "RELATIVE-GEOMETRY": {
       "active_math_elapsed_seconds": 1301.240427,
@@ -304,7 +310,7 @@
     "permutation-factor-obstruction-v1": {
       "status": "candidate",
       "gates": {
-        "leakage": "NOT_RUN",
+        "leakage": "RUNNING",
         "hostile": "NOT_RUN",
         "reconstruction": "NOT_RUN",
         "comparison": "NOT_RUN"
