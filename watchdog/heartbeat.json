@@ -13,11 +13,9 @@
   "research_started": true,
   "math_start_utc": "2026-10-15T07:55:12.444Z",
   "active_math_elapsed_seconds": 890,
-  "active_workers": [
-    "ns_comp_v1"
-  ],
-  "current_assignment": "Fresh isolated comparison no-rational-section-v1",
-  "first_unfinished_action": "Finish NS-COMP-v1 comparison; math stop11:29Z/full return11:31Z; externally verify actual report+manifest before any promotion.",
+  "active_workers": [],
+  "current_assignment": "Terminal reconciliation and delivery only",
+  "first_unfinished_action": "Persist and read back current run-specific FINAL_STATUS, terminal generation/capsule; signal once and conditionally release; deliver artifacts. No new mathematics.",
   "launch_kit": "delta14-relative-generic-launch-v1-20261015.zip",
   "launch_kit_sha256": "49cde9d2aea51d8d1d32c10434718fad4ff07ade2cc5fd5aaf2e7d032ee9936a",
   "source_capsule": "AUTONOMOUS--continuation9-recovery-20261014T212819Z-9b87a01c8656--g13--terminal--RESUME_CAPSULE.zip",
@@ -195,11 +193,11 @@
   },
   "provenance_note": "Pinned terminal capsule contains stale recovery START_HERE. Terminal FINAL_STATUS and live heartbeat supersede it. No previous completed gate repeated.",
   "source_statement_pending": false,
-  "last_heartbeat_utc": "2026-10-15T11:17:43.761Z",
-  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation10-recovery-20261015T103125Z-g16--g16--epoch5-comparison.json",
-  "latest_verified_dropbox_generation_sha256": "8c95349a2bb103005cc73a70e967bcea00497efbfcdee7246e04093286b20fa1",
+  "last_heartbeat_utc": "2026-10-15T11:22:37.597Z",
+  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation10-recovery-20261015T103125Z-g16--g16--ns-promoted.json",
+  "latest_verified_dropbox_generation_sha256": "a64ae4d9ea350a5c5cba3953ff1a1eac5233844fb9a55c8c87da6c9ef7773f10",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
-  "mathematical_work_authorized": true,
+  "mathematical_work_authorized": false,
   "source_statement_sha256": "76482cf9eb1e459429efa4fcdff74dd986fcb39889a48c40193642e63f23f32d",
   "supervisor_actions_run_id": 38720989688,
   "supervisor_verification_level": "Actual Actions38720989688 job116375254526 observed in_progress11:11Z; checkout/regression tests success; supervise step in_progress. Not an end-to-end crash/recovery certification.",
@@ -359,16 +357,17 @@
       "promotion_record": "PROMOTIONS/permutation-factor-obstruction-v1.json"
     },
     "no-rational-section-v1": {
-      "status": "candidate",
+      "status": "promoted",
       "proof_sha256": "a0a9973cff7f803dd05869d928eef8aa175044431456886375f7b900034e0329",
       "contract_sha256": "dde680804b67d897bdeb5d1d57f36e8a02bf5549f1e2376d2228b4ac86fe44b2",
       "gates": {
         "leakage": "BRIEF_V2_PASS_EXTERNALLY_BYTE_VERIFIED; BRIEF_V1_FAIL_RETAINED",
-        "hostile": "PASS_EXTERNALLY_BYTE_VERIFIED; NS08 reconstruction/comparison pending",
+        "hostile": "PASS_EXTERNALLY_BYTE_VERIFIED; NS08 completed by comparison",
         "reconstruction": "COMPLETE_EXTERNALLY_BYTE_VERIFIED; comparison pending",
-        "comparison": "NOT_RUN"
+        "comparison": "PASS_EXTERNALLY_BYTE_VERIFIED; source/version and exposure-record qualifications retained"
       },
-      "brief_version": 2
+      "brief_version": 2,
+      "promotion_record": "PROMOTIONS/no-rational-section-v1.json"
     }
   },
   "current_checkpoint": "no-section-candidate-verification",
@@ -444,8 +443,8 @@
       "reconciliation": "Source return and leakage/hostile/reconstruction actual bytes externally verified. Fresh comparison active with strict11:29 math stop; no other workers. Both monitoring tasks enabled and actual supervisor observed active. No unresolved runtime blocker."
     }
   ],
-  "current_execution_mathematics_stopped": false,
-  "recovery_mode": "DIRECT-RESUME",
+  "current_execution_mathematics_stopped": true,
+  "recovery_mode": "finalize_only",
   "recovery_classification": "INCOMPLETE",
   "runtime_incident": {
     "first_observed_utc": "2026-10-15T09:29:00Z",
@@ -544,14 +543,14 @@
   },
   "emergency_report_path": "watchdog/recovery/continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7-g14/REPORT.md",
   "emergency_checkpoint_path": "watchdog/recovery/continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7-g14/CHECKPOINT.json",
-  "mathematical_work_permitted_in_current_execution": true,
+  "mathematical_work_permitted_in_current_execution": false,
   "saved_user_directive_forbids_further_mathematics": false,
   "authorization_scope_note": "Generation16 checked recovery owns the active lease. Preserve original continuation10 scope and11:37:45Z reserve; all prior stopped-execution notes describe historical generations only.",
   "emergency_checkpoint_git_blob_sha": "5a8864aafe8a347413a7f231dc993b72d54d9236",
   "emergency_report_git_blob_sha": "cb5e18b67652a7915548334289539e909e18c075",
   "emergency_worker_reconciliation_path": "watchdog/recovery/continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7-g14/WORKER_RECONCILIATION.json",
   "emergency_worker_reconciliation_git_blob_sha": "6cdfb9c07c10f6dd2946e50d68c52688d53974d7",
-  "stop_reason": null,
+  "stop_reason": "Exact local method-obstruction deliverable completed. Generic motive/class remains unresolved; no materially new verified reducing mechanism ready within the remaining fixed window. Finalization only, no automatic successor.",
   "predecessor_run_id": "continuation10-recovery-20261015T094314Z-a23632894cf5",
   "predecessor_generation": 15,
   "recovery_research_started": true,
@@ -631,7 +630,18 @@
         "2026-10-15T11:11:13Z"
       ],
       "mandatory_math_stop_utc": "2026-10-15T11:29:00Z",
-      "status": "running"
+      "status": "complete",
+      "mathematics_completed_utc": "2026-10-15T11:18:00Z",
+      "complete_return_durable": true
     }
-  }
+  },
+  "comparison_return": {
+    "report_sha256": "7158f296628b7ccab6fc036471a6c9faa429cb39fd20e70ba19536ba1edc6f55",
+    "manifest_sha256": "ef5406b569ede29efd859e71f4689158866413a4e1985cf0c27be7607584f14b",
+    "external_archive": "NS-COMP-v1-actual-return-inputs-sources.zip",
+    "archive_sha256": "3c68b350d868e92268ba76903f77198e8a4dd2bf4b6df5649b34cc8d7d87d5fd",
+    "raw_readback_equal": true
+  },
+  "mathematics_stop_utc": "2026-10-15T11:21:59.095Z",
+  "bounded_workflow_status": "COMPLETED_PARTIAL_RESULT_METHOD_OBSTRUCTION"
 }
