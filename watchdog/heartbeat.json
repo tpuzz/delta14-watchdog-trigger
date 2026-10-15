@@ -16,8 +16,8 @@
   "active_workers": [
     "dec_source_screen"
   ],
-  "current_assignment": "Publish complete comparison; source-specialization screen running",
-  "first_unfinished_action": "PF comparison of exact candidate against raw-verified fresh reconstruction; PF07 isolation remains mandatory.",
+  "current_assignment": "PF exact contract promoted; source-specialization screen running",
+  "first_unfinished_action": "Complete already-dispatched source/specialization screen within its fixed cap and stop; no resumption of expired W2 assignments.",
   "launch_kit": "delta14-relative-generic-launch-v1-20261015.zip",
   "launch_kit_sha256": "49cde9d2aea51d8d1d32c10434718fad4ff07ade2cc5fd5aaf2e7d032ee9936a",
   "source_capsule": "AUTONOMOUS--continuation9-recovery-20261014T212819Z-9b87a01c8656--g13--terminal--RESUME_CAPSULE.zip",
@@ -195,9 +195,9 @@
   },
   "provenance_note": "Pinned terminal capsule contains stale recovery START_HERE. Terminal FINAL_STATUS and live heartbeat supersede it. No previous completed gate repeated.",
   "source_statement_pending": false,
-  "last_heartbeat_utc": "2026-10-15T10:06:20.992Z",
-  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation10-recovery-20261015T094314Z-a23632894cf5--g15--pf-comp-r1.json",
-  "latest_verified_dropbox_generation_sha256": "0fc0b0b7accbe90010c2ba2cdb8a65c6747902da47a459b4b2eff1d09b76ded2",
+  "last_heartbeat_utc": "2026-10-15T10:08:56.104Z",
+  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation10-recovery-20261015T094314Z-a23632894cf5--g15--pf-promoted.json",
+  "latest_verified_dropbox_generation_sha256": "5cc1a91a3fab15f53fb55fccc6b2f944bc580eaf8560684a89257d307e3fb700",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
   "mathematical_work_authorized": true,
   "source_statement_sha256": "76482cf9eb1e459429efa4fcdff74dd986fcb39889a48c40193642e63f23f32d",
@@ -339,13 +339,14 @@
       "promotion_record": "PROMOTIONS/product-input-v1.json"
     },
     "permutation-factor-obstruction-v1": {
-      "status": "candidate",
+      "status": "promoted",
       "gates": {
         "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED",
         "hostile": "MATHEMATICAL_PASS_EXTERNALLY_BYTE_VERIFIED; PF07 deferred to reconstruction/comparison",
         "reconstruction": "COMPLETE_EXTERNALLY_BYTE_VERIFIED",
-        "comparison": "RECEIVED_PASS_PENDING_EXTERNAL_PUBLICATION"
-      }
+        "comparison": "PASS_EXTERNALLY_BYTE_VERIFIED INCLUDING PF07"
+      },
+      "promotion_record": "PROMOTIONS/permutation-factor-obstruction-v1.json"
     }
   },
   "current_checkpoint": "runtime-interruption",
@@ -401,8 +402,8 @@
       "cause": "No saved mathematical return at stop; parent interrupted and allowed metadata only. No completed independent-wave credit."
     }
   ],
-  "latest_verified_dropbox_capsule": "AUTONOMOUS--continuation10-recovery-20261015T094314Z-a23632894cf5--g15--pf-recon-r1--RESUME_CAPSULE.zip",
-  "latest_verified_dropbox_capsule_sha256": "170d18de035c58147158b643251bf45f2b7d6928645a5ec11c6731d1bb42ac02",
+  "latest_verified_dropbox_capsule": "AUTONOMOUS--continuation10-recovery-20261015T094314Z-a23632894cf5--g15--pf-promoted--RESUME_CAPSULE.zip",
+  "latest_verified_dropbox_capsule_sha256": "8867fc02dfad62bf3fed3650b735b187e719f8737455b47a78e2e6f29d165564",
   "latest_verified_dropbox_capsule_raw_readback_equal": true,
   "epoch_history": [
     {
@@ -556,6 +557,7 @@
     "PF07": "PASS actual input bytes and exposure manifest; same-family only",
     "candidate_unchanged": true,
     "contract_unchanged": true,
-    "current_checklist_sha256": "437230f776a563ab115ba082ca42e4026dcd0836dbc19c950733ff48f844e6e2"
+    "current_checklist_sha256": "437230f776a563ab115ba082ca42e4026dcd0836dbc19c950733ff48f844e6e2",
+    "externally_byte_verified": true
   }
 }
