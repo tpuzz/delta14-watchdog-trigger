@@ -1,449 +1,56 @@
 {
-  "schema": "delta14-continuation11-state-v1",
+  "schema": "delta14-linked-exact-class-state-v1",
   "campaign_id": "delta14-mixed-tate-20261012T210157Z",
-  "authorization_id": "continuation11-paired-label-exact-20261015-v1",
-  "run_id": "continuation11-recovery-20261015T152347Z-g18",
-  "lease_generation": 18,
-  "status": "stopped",
-  "global_campaign_status": "INCOMPLETE",
-  "authorization_start_utc": "2026-10-15T13:07:49Z",
-  "confirmed_at_utc": "2026-10-15T13:07:49Z",
-  "hard_deadline_utc": "2026-10-15T17:07:49Z",
-  "delivery_start_utc": "2026-10-15T16:57:49Z",
+  "supervision_campaign_id": "delta14-mixed-tate-20261012T210157Z",
+  "mathematical_campaign_id": "delta14-exact-class-20261015T182114Z",
+  "authorization_id": "exact-class-absolute-20261015-v1",
+  "run_id": "exact-class-absolute-20261015T182114Z-g19",
+  "lease_generation": 19,
+  "status": "running",
+  "phase": "mandatory_bootstrap",
+  "confirmed_at_utc": "2026-10-15T18:21:14Z",
+  "authorization_start_utc": "2026-10-15T18:21:14Z",
+  "hard_deadline_utc": "2026-10-15T22:21:14Z",
+  "delivery_start_utc": "2026-10-15T22:11:14Z",
   "delivery_reserve_minutes": 10,
   "reassessment_due_utc": [
-    "2026-10-15T14:07:49Z",
-    "2026-10-15T15:07:49Z",
-    "2026-10-15T16:07:49Z"
+    "2026-10-15T19:21:14Z",
+    "2026-10-15T20:21:14Z",
+    "2026-10-15T21:21:14Z"
   ],
-  "reassessments_completed": [
-    {
-      "number": 1,
-      "scheduled_utc": "2026-10-15T14:07:49Z",
-      "actual_utc": "2026-10-15T14:08:10.045Z",
-      "disposition": "PIVOT_WITHIN_SCOPE",
-      "path": "REASSESSMENT-01.md",
-      "delay_seconds": 21.045,
-      "delay_reason": "Coordinator checkpoint preparation; no outage or on-time observation fabricated."
-    },
-    {
-      "number": 2,
-      "scheduled_utc": "2026-10-15T15:07:49Z",
-      "actual_utc": "2026-10-15T15:07:49.340610Z",
-      "delay_seconds": 0.34061,
-      "path": "REASSESSMENT-02.md",
-      "disposition": "VERIFY_ONLY"
-    },
-    {
-      "number": 3,
-      "scheduled_utc": "2026-10-15T16:07:49Z",
-      "actual_utc": "2026-10-15T16:08:18Z",
-      "delay_seconds": 29,
-      "delay_reason": "Returned evidence reconciliation and checkpoint preparation.",
-      "path": "REASSESSMENT-03.md",
-      "disposition": "VERIFY_ONLY_COMPARISON_THEN_SCOPED_STOP"
-    }
-  ],
-  "research_started": true,
-  "math_start_utc": "2026-10-15T13:15:26.111Z",
+  "reassessments_completed": [],
+  "research_started": false,
+  "active_math_elapsed_seconds": 0,
   "math_segment_start_utc": null,
-  "active_math_elapsed_seconds": null,
-  "aggregate_worker_seconds": null,
   "active_workers": [],
-  "current_assignment": "Bounded verification effort stopped; complete run-specific status and results verified. No mathematical work active.",
-  "first_unfinished_action": "No remaining authorized mathematical action. If terminal delivery is interrupted, reconcile/deliver existing artifacts only; any new mathematics requires explicit authorization and a genuine version/dependency repair.",
-  "source_instructions": "/ChatGPT-Research-State/delta14-mixed-tate/delta14-paired-label-4h-hourly-instructions-v1-20261015.txt",
-  "source_instructions_sha256": "3c1b6adb2b2e7b98b3d3d7de8c87c19f86ee0ef2c71310a6b4405395143c31e3",
-  "source_capsule": "AUTONOMOUS--continuation10-recovery-20261015T103125Z-g16--g16--terminal-complete--RESUME_CAPSULE.zip",
-  "source_capsule_sha256": "1f4a83614ec1232c8cfc3feae89dfb127637c894318fee2f7b5cf336b1e98b83",
+  "current_assignment": "Verify initial external state, heartbeat and actual supervisor; then exact-class mechanism screen.",
+  "first_unfinished_action": "Complete mandatory bootstrap; no mathematical assignment begun.",
+  "source_capsule": "AUTONOMOUS--continuation11-recovery-20261015T152347Z-g18--g18--terminal-complete--RESUME_CAPSULE.zip",
+  "source_capsule_sha256": "cc460c499d6ac1f6272b1454d822a27e0a5dcf2234386b8a91fd67e9d89d0826",
+  "source_generation": "AUTONOMOUS--continuation11-recovery-20261015T152347Z-g18--g18--terminal-complete.json",
+  "source_generation_sha256": "6ab3de5157c749310d7a31863e377d7cb5029cd0826049d550268b10d8150b77",
+  "source_predecessor_status": "continuation11 stopped, terminal complete; not reopened",
   "source_raw_bytes_verified": true,
-  "source_predecessor_status": "COMPLETED_PARTIAL_RESULT_METHOD_OBSTRUCTION; stopped; not reopened",
-  "inherited_frontier": "Exact promotions product-input-v1, permutation-factor-obstruction-v1, no-rational-section-v1; all previous scopes, failed gates, candidate hashes and historical limits retained in pinned predecessor.",
-  "inherited_wave_counts": {
-    "RELATIVE-LATTICE": 2,
-    "RELATIVE-GEOMETRY": 1
+  "source_limits": "All inherited same-family/dependency-bound scopes, missing continuation5 comparison/manifest bytes and original no-section source limitations retained. No outside-family audit.",
+  "persistent_goal_status": "unavailable: checked enabled tool metadata once at launch",
+  "new_independent_wave_credit": 0,
+  "watchdog_recovery_armed": true,
+  "terminal_delivery_complete": false,
+  "dropbox_final_status_verified": false,
+  "clock_reset": false,
+  "execution_epoch": {
+    "number": 1,
+    "start_utc": "2026-10-15T18:21:14Z",
+    "health": "bootstrap tools healthy"
   },
-  "new_independent_wave_credit": 3,
-  "source_limits": "Same-family promoted only. Continuation5 original cubical comparison report and manifest remain missing. No-section original Rowen/Tignol full texts unavailable; later primary restatements/preprint qualifications retained.",
-  "policy_sha": "ffb5dc24643d747482e2f1ab94040431b7e46361",
-  "ownership_protocol_sha": "4bb548d2a8a8772dc2a1d0e3271c84825856d584",
   "existing_recovery_task_id": "6ace7f845e50819197062077fdcc8125",
   "existing_hourly_task_id": "6ace34e619e08191a0fafff81fa8714c",
-  "hourly_backup_incident": "Observed disabled; existing hourly task re-enabled 2026-10-15T13:10:26Z; no duplicate.",
-  "watchdog_recovery_armed": true,
-  "supervisor_verification_level": "Generation18 actual job116509745138 in progress; checkout/regression success and live supervision observed16:10Z. Cooperative ownership only; no end-to-end delivery guarantee.",
-  "terminal_delivery_complete": true,
-  "dropbox_final_status_verified": true,
-  "clock_reset": false,
-  "last_heartbeat_utc": "2026-10-15T16:24:41.901Z",
-  "recovery_mode": "CHECKED_DIRECT_RECOVERY_VERIFY_ONLY",
-  "persistent_goal_status": "No new discovery; inherited campaign limitation retained.",
-  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation11-recovery-20261015T152347Z-g18--g18--terminal-complete.json",
-  "latest_verified_dropbox_generation_sha256": "6ab3de5157c749310d7a31863e377d7cb5029cd0826049d550268b10d8150b77",
+  "supervision_binding": "Existing campaign_id remains supervision lineage only in public coordination records. mathematical_campaign_id and this STATEMENT identify new fixed exact-class task. Old motive statement never overwritten.",
+  "latest_verified_dropbox_generation": "EXACT--delta14-exact-class-20261015T182114Z--g19--initial.json",
+  "latest_verified_dropbox_generation_sha256": "50bbf7d5eeea5258445754aeb2c4818bb9a7c39ee1b0a77365af6ed68f7ee55c",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
-  "dropbox_heartbeat_path": "AUTONOMOUS--continuation11-recovery-20261015T152347Z-g18--g18--terminal-complete--heartbeat.json",
-  "supervisor_actions_run_id": 38760245125,
-  "supervisor_job_id": 116509745138,
-  "baseline_revisions": {
-    "STATEMENT": "76482cf9eb1e459429efa4fcdff74dd986fcb39889a48c40193642e63f23f32d",
-    "PROVED": "92f8d5ee3e1b878069f380ab26dfd236756a21b4fe3b1e71a6d921ec7547880b",
-    "FAILED": "28e72b0ced27f4b568cc18f2223382b68631ebf8a06268f3c57bd5423a6b34aa",
-    "AUDIT_CHECKLIST": "9ede295d1b248c5ab28e9615cbdcfbe4303c54eac44d384413106c331e4a2d92"
-  },
-  "active_math_accounting": "Exact root active time unavailable; wall elapsed and explicitly recorded worker intervals are separate. No double counting or assertion of exact active total.",
-  "provisional_findings": "Primary paired-residual-v2 remains promoted at exact scope. Compact-conic-v1 remains unpromoted: reconstruction and comparison INCOMPLETE at integral functorial-localization dependency; geometric agreement does not close full contract. Global targets unresolved.",
-  "latest_verified_dropbox_capsule": "AUTONOMOUS--continuation11-recovery-20261015T152347Z-g18--g18--terminal-complete--RESUME_CAPSULE.zip",
-  "latest_verified_dropbox_capsule_sha256": "cc460c499d6ac1f6272b1454d822a27e0a5dcf2234386b8a91fd67e9d89d0826",
-  "latest_verified_dropbox_capsule_raw_readback_equal": true,
-  "completed_returns": [
-    {
-      "assignment": "PAIR-LIFT-W1",
-      "report_sha256": "e11be23d202a81cf7f505e9290ebc2bd1b80acd12b8c949693379d5ba07a0a08",
-      "manifest_sha256": "e1aec0930de1e503af3df07337e4ea0d29b3ca9eaefffa218f3b86ff8a4be245",
-      "status": "candidate",
-      "math_seconds": 587.004790095
-    },
-    {
-      "assignment": "PAIR-CORRESP-W1",
-      "report_sha256": "8ddfc66b96fe6d9378739db84a5ccf7a57543d0b0c14379f2affd954427b716f",
-      "manifest_sha256": "18bfe871f17658d0a0b2f42b9da257954e254f49bea4effe35a248557d495b7a",
-      "status": "candidate",
-      "recorded_interval_seconds": 634.083438,
-      "provenance_addendum": "EXTERNALLY_SAVED in gate01 generation, recovered actual stdin source and output transcript; no separate raw executor log or execution-time source hash"
-    },
-    {
-      "assignment": "PAIR-NORM-W2",
-      "report_sha256": "5382d3cada2146a6303246bc51cda8616a38d28e3c9678881d2036d2bb6c8cd2",
-      "manifest_sha256": "c3c7243bb7c38f137708e9686fc1ed81f5bf7bfdbf9c28f282e542e15d79f957",
-      "status": "candidate",
-      "math_seconds": 586.264753
-    },
-    {
-      "assignment": "PAIR-COMPACT-W3",
-      "status": "candidate",
-      "report_sha256": "184aea036b3d1a2b09a5d4d09121fb93edfd52132d0ffd6aadd0a7313257ba77",
-      "math_start_observed_utc": "2026-10-15T14:09:33Z",
-      "math_end_utc": "2026-10-15T14:25:50Z",
-      "reported_interval_seconds": 977,
-      "manifest_sha256": "4630fd5ec41784ce1fbb65ec7d58590a3338529afd659744e98395a4dbbd0a2e"
-    }
-  ],
-  "w1_external_evidence": {
-    "name": "CONT11--g17--paired-w1-actual-evidence.zip",
-    "sha256": "dc9ac47a0e4923ec93064d1c220a216657bf7b4a90176e8f1cc50ef279c6fa59",
-    "raw_readback_equal": true
-  },
-  "wave_grouping": "Paired-twist two isolated completed waves matured before cross-pollination. Third complete isolated compactification pivot persisted. Inherited counts unchanged; verification earns no waves.",
-  "mechanism_gate": {
-    "actual_utc": "2026-10-15T13:35:34Z",
-    "due_utc": "2026-10-15T13:35:26.111Z",
-    "conservative_charged_seconds": 1207.889,
-    "clock_reset": false,
-    "decision": "REPAIR: bounded own-route pair-norm W2 to13:55Z mathematics,13:57Z delivery; selected-inversion cocycle comparison, not section of original torsor",
-    "new_allowance_seconds": 1200,
-    "externally_byte_verified": true
-  },
-  "candidate": {
-    "name": "paired-residual-v2",
-    "proof_sha256": "beff4d97780cd88b9480729d76bccae45d5278ccd769827bf78f764d50068ec5",
-    "contract_sha256": "76549cef14fdb381dc3554237982148b8824424ddbf32f7fc5a6572f88ee8a22",
-    "brief_sha256": "6def798e5ca82f8545f506320d33cc60790a3e3f60cb30d7544775b4441fd14f",
-    "status": "PROMOTED_SAME_MODEL_FAMILY_ONLY",
-    "gates": {
-      "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED",
-      "hostile": "PASS_EXTERNALLY_BYTE_VERIFIED",
-      "reconstruction": "COMPLETE_EXTERNALLY_BYTE_VERIFIED_MATCHED",
-      "comparison": "PASS_EXTERNALLY_BYTE_VERIFIED"
-    },
-    "leakage": {
-      "report_sha256": "1d769dcdd38fe5d8bc72f04cde294ee792790bcef576eb446b2b97420650b906",
-      "manifest_sha256": "828593d03b8210f26d08d858fcf455749ccb8284ca9c3df9262339e74810eca7",
-      "external_generation": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--residual-v2-leak.json",
-      "external_sha256": "6d6a65406f287af35d8d662ad90357b1fde5fcdf050779e557c49777e9c1b4da"
-    },
-    "hostile": {
-      "report_sha256": "a29bb37ab0574698a4b1b6d787aa530ad715f04f486843d927b67f237af7f9c4",
-      "manifest_sha256": "4c562f5ce461ca39586624ca80311118ae949d389979bdf3ea16e8538c10e0c1",
-      "checklist_sha256": "e6773b9a5fa93552b65cb01a24e9d8f2573126f24b9d5221c0b15b3bc686e97e",
-      "completed_utc": "2026-10-15T14:17:31Z",
-      "external_generation": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--residual-v2-hostile.json",
-      "external_sha256": "eb745c5c0d56c3c8b167a9a1d31fe84369e7386b759cca647fd5fb693765591f"
-    },
-    "reconstruction": {
-      "report_sha256": "fec53ca4016f5c432e9b050a0d7c421b3cdcb7b46398b1d145f9ec7555a4f370",
-      "manifest_sha256": "9b92111e3a0b66566254999f63bdc3b8e3c1e3fd391daccdd8cf23407644f694",
-      "math_end_utc": "2026-10-15T14:35:51.030865163Z",
-      "draft_delay_seconds": 118.031269949,
-      "external_generation": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--residual-v2-reconstruction.json",
-      "external_sha256": "d922fcbba731276a0c030d28b7a28e3eed003a49fbf4bfe777d117233b723d07"
-    },
-    "external_freeze": {
-      "name": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--residual-v2-freeze.json",
-      "sha256": "7a460e935f4588a9f03bc19aa31841259d24db9256f0d3f9ab2c0e228f656029",
-      "raw_readback_equal": true
-    },
-    "comparison": {
-      "report_sha256": "1ae906d771a539f8dc58072fbcb68d249c9a5035461635590c16b55e13110828",
-      "manifest_sha256": "18edaff22ffc9bf69807a1df55e9b200fd47fb8b49d2064be3110ea8d926eff5",
-      "verdict": "PASS",
-      "math_end_utc": "2026-10-15T14:52:56.512272070Z",
-      "draft_delay_seconds": 146.174593278,
-      "external_generation": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--residual-v2-comparison.json",
-      "external_sha256": "ca2384260a7ddcc9668e34d392c1b16eaf801888b34b176fd110c2c6b06c21d9"
-    },
-    "promotion_external": {
-      "name": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--residual-v2-promotion.json",
-      "sha256": "43f2f28590a31520225212f7162f775d4f67a3bd2a26d9aa662161fc44708aa4",
-      "raw_readback_equal": true
-    }
-  },
-  "leakage_return": {
-    "report": "AUDITS/PD-LEAK-v1/LEAKAGE_REPORT.md",
-    "report_sha256": "2dbacdb98deca1493ca57b676a8a5ce57fe91b1a3c353ccc41a92e956e98d437",
-    "manifest": "AUDITS/PD-LEAK-v1/INPUT_OUTPUT_MANIFEST.json",
-    "manifest_sha256": "97042cd4b6455bb0b3b1980be9d66447b5ed2391810bf55c0c53ddce802c3b54",
-    "verdict": "PASS",
-    "math_end_utc": "2026-10-15T13:42:56Z",
-    "externally_byte_verified": true
-  },
-  "timing_qualification": "Root top-level counter was a conservative wall-union screen bound, including some interleaved administration, not exact active-mathematics telemetry. The13:35:34 feasibility decision is retained as an early/upper-bound gate; no assertion that exactly1200 active seconds had elapsed. Worker exact intervals separately retained. No budget reset or extension; continuation allowance is the explicit bounded13:55 test.",
-  "wall_elapsed_since_math_start_seconds": 6988,
-  "norm_w2_external_evidence": {
-    "name": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--norm-w2-return.json",
-    "sha256": "51e666d86e356c18b277a83478b5b1306d2578d5f1f412d373351ed0af908dd3",
-    "raw_readback_equal": true
-  },
-  "candidate_v1": {
-    "name": "paired-descent-obstruction-v1",
-    "proof_sha256": "a3b8ceb3f750f920480799253af5f219bd3fc38e5edccea8dfce00148624a248",
-    "contract_sha256": "77a7fecbbaeab1a67d21cd9afbda3cde5070882bae2038c71e549a7a08bb1c25",
-    "brief": "BRIEF-v2.md",
-    "status": "candidate",
-    "archive": "CONT11--g17--paired-descent-candidate-v1.zip",
-    "archive_sha256": "55cfad158ab87d88857aecc4f43638fc112b74ba2c966d8688a155a0c14f4fc6",
-    "externally_byte_verified": true,
-    "gates": {
-      "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED",
-      "hostile": "NOT_RUN",
-      "reconstruction": "NOT_RUN",
-      "comparison": "NOT_RUN"
-    },
-    "disposition": "FROZEN_AUXILIARY; may be superseded by strictly stronger combined candidate, not failed."
-  },
-  "next_search": {
-    "task": "PAIR-COMPACT-W3",
-    "math_stop_utc": "2026-10-15T14:34:00Z",
-    "delivery_utc": "2026-10-15T14:36:00Z",
-    "replacement_count": 0
-  },
-  "aggregate_search_recorded_interval_seconds": 2784.352981095,
-  "recorded_worker_intervals": [
-    {
-      "task": "PAIR-LIFT-W1",
-      "start": "2026-10-15T13:18:52.192350Z",
-      "end": "2026-10-15T13:28:39.197140095Z",
-      "seconds": 587.004790095,
-      "classification": "reported mathematical interval"
-    },
-    {
-      "task": "PAIR-CORRESP-W1",
-      "start": "2026-10-15T13:18:57.802039Z",
-      "end": "2026-10-15T13:29:31.885477Z",
-      "seconds": 634.083438,
-      "classification": "recorded working interval including unseparated final review/bookkeeping"
-    },
-    {
-      "task": "PAIR-NORM-W2",
-      "start": "2026-10-15T13:37:52.843960Z",
-      "end": "2026-10-15T13:47:39.108713Z",
-      "seconds": 586.264753,
-      "classification": "reported mathematical interval"
-    },
-    {
-      "task": "PAIR-COMPACT-W3",
-      "start": "2026-10-15T14:09:33Z",
-      "end": "2026-10-15T14:25:50Z",
-      "seconds": 977,
-      "classification": "observed reported interval; first input slightly before observed clock"
-    }
-  ],
-  "policy_live_recheck_utc": "2026-10-15T16:10:00Z",
-  "compactification_interim": {
-    "status": "candidate-only incomplete",
-    "reported_utc": "2026-10-15T14:16Z",
-    "claim": "Actual orthant compactification; proposed degree2 map to a Weil restriction of a generically nonsplit conic; no evaluated class."
-  },
-  "compact_w3_external_evidence": {
-    "name": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--compact-w3-return.json",
-    "sha256": "789c894cff5815d4217c1d65332a6473a867d21ad752dfbdc7f70743abc5fae1",
-    "raw_readback_equal": true
-  },
-  "secondary_candidate": {
-    "name": "paired-compact-conic-v1",
-    "proof_sha256": "d187a8779ab1e7e99f55746bcbf29d98657398e256612e047c4055c1f4990291",
-    "contract_sha256": "ddd5eafa2e7a42c18162075609187c1d410507e6cb5e9c974098e50da1ad9ec2",
-    "brief_sha256": "e001ad5db901e9e2714b9e0f3b19b36be2296d3b6d8dae79450261284d8c1d38",
-    "status": "CANDIDATE_FULL_CONTRACT_INCOMPLETE_NOT_PROMOTED",
-    "gates": {
-      "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED",
-      "hostile": "PASS_EXTERNALLY_BYTE_VERIFIED",
-      "reconstruction": "INCOMPLETE_EXACT_CONTRACT_EXTERNALLY_BYTE_VERIFIED",
-      "comparison": "INCOMPLETE_EXTERNALLY_BYTE_VERIFIED"
-    },
-    "external_freeze": {
-      "name": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--compact-v1-freeze.json",
-      "sha256": "7b180f940daab3b45e8097a923e0eb88c567849a916557d3e3a0863176e7f1f8",
-      "raw_readback_equal": true
-    },
-    "leakage_interruption": {
-      "agent": "/root/pc_leak_v1",
-      "actual_substantive_draft_utc": "2026-10-15T15:06:19.896556Z",
-      "draft_delay_seconds": 19.896556,
-      "final_return_received": false,
-      "notes": "Checker initially proposed overall NONPASS for timing only. Root requested separate leakage verdict and operational compliance without changing findings. No final complete report/manifest received before coordinator interruption.",
-      "preserved_partial_report": {
-        "path": "AUDITS/PC-LEAK-v1/LEAKAGE_REPORT.md",
-        "sha256": "1e38d6a71d611bed78f3d2f64c0dd4cdc9fcb606679fbae620ddb633d7d74a09",
-        "bytes": 4729,
-        "actual_manifest_present": false,
-        "credit": "NONE; forbidden input to fresh replacement"
-      }
-    },
-    "leakage": {
-      "report_sha256": "2f92463cd4adf94b01586a500dcd3db3d9fab58e24712765711fbe1fcb8b5281",
-      "manifest_sha256": "31af359ced76834d64980ebf7134d7044d71310d69db5d0208ed4e0954d0f7d3",
-      "external_generation": "EVIDENCE--continuation11-recovery-20261015T152347Z-g18--PC-LEAK-v1-r1.json",
-      "external_sha256": "b18a6967518789e2f1d07ae751187fdc926eb6d861ab25386bd66c5403f37b25",
-      "replacement_count": 1,
-      "raw_readback_equal": true
-    },
-    "hostile": {
-      "report_sha256": "c392fb93a9346bbd4d5ce33c856409ba6af7f8dae62dec7c29f8763cb90b46f0",
-      "manifest_sha256": "7f42d29f3dbb29f0b635a310cb96ad7fda5390ad361310f6a47ff832cabd5e0c",
-      "checklist_revision": 16,
-      "checklist_sha256": "ef7ada9b66560a376d9963ec9f695b7534b21835cc712c228d00be122f40f84b",
-      "external_generation": "EVIDENCE--continuation11-recovery-20261015T152347Z-g18--PC-HOSTILE-v1.json",
-      "external_sha256": "ee59f08c3f992f07282c594c0f27d281e9ca2971f4dccc9635fdba9c3f28af51",
-      "raw_readback_equal": true
-    },
-    "reconstruction": {
-      "report_sha256": "d221bcd2a949754f5e6a3fd41e8b8763a5bd854870481912a31a2a9d8c8b7219",
-      "manifest_sha256": "9668fbc4ac25f47b701db93c81fe6b6539031201f05ba5f8fda567054fcdc206",
-      "external_generation": "EVIDENCE--continuation11-recovery-20261015T152347Z-g18--PC-RECON-v1.json",
-      "external_sha256": "cb90512d052e3c0793f12008095aa3130fb3f3e82372a5259f478fdf6ed21fab",
-      "raw_readback_equal": true,
-      "exact_unfinished_obligation": "Integral functorial closed/open compact-support localization and finite-disjoint-union compatibility for named Sella construction not supplied/proved within isolated input bundle."
-    },
-    "comparison": {
-      "verdict": "INCOMPLETE",
-      "report_sha256": "10b15e242ea8ab133625975abfadc3e1d4784ca1fbff9731971da310cf5e21a1",
-      "manifest_sha256": "9aa52dec568e236801d4e7662ff2722748794dc5e572fafc6b50731be2563e3e",
-      "external_generation": "EVIDENCE--continuation11-recovery-20261015T152347Z-g18--PC-COMP-v1.json",
-      "external_sha256": "79e126b9a8286acc19f14e06640a336c7dbf9330d22d872f1dc0acf964340839",
-      "raw_readback_equal": true,
-      "failure_classification": "Input/admitted-dependency scope gap, not detected mathematical error or counterexample."
-    }
-  },
-  "search_disposition": "DELIBERATE_SCOPE_STOP; no new search, repair cadence, or successor.",
-  "mathematics_mode": "FINALIZATION_ONLY",
-  "current_audit_checklist_sha256": "b6a34be7d180be5ce8b089f9cea14abd19388716075d088a4011972f718a1940",
-  "infrastructure_last_checked_utc": "2026-10-15T16:13:46.155Z",
-  "execution_epoch": {
-    "number": 4,
-    "start_utc": "2026-10-15T16:08:18Z",
-    "health": "Healthy local runtime and durable raw readback; transient Dropbox status timeout reconciled without duplicate upload; no active role at boundary.",
-    "next_health_check_due_utc": "2026-10-15T16:53:18Z"
-  },
-  "infrastructure_incident": {
-    "observed_utc": "2026-10-15T15:10:47.698Z",
-    "class": "coordinator-level runtime distress",
-    "action": "exec_command state write during hour2 checkpoint",
-    "error": "exec-server transport disconnected; failed to resume exec-server session: recovery timed out after25s",
-    "cleanup_attempts": 1
-  },
-  "recovery_eligibility": "Verified terminal delivery/deliberate scope stop forbids mathematical takeover. Only reconciliation of existing results if delivery evidence conflicts.",
-  "predecessor_run_id": "continuation11-paired-label-20261015T130749Z-28d8ccde1490",
-  "recovery_started_utc": "2026-10-15T15:23:47.630Z",
-  "recovery_incident_id": "aa6fd19579040faf1656ae4a",
-  "recovery_replacements": {
-    "PC-LEAK-v1": 1
-  },
-  "recovery_source_generation": {
-    "path": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--interrupted-cleanup.json",
-    "sha256": "293463ce5bc1e7d804c0bf42b8d26fee108fa5b5d551bbfb5140470988c30994"
-  },
-  "recovery_source_freeze": {
-    "name": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--compact-v1-freeze.json",
-    "sha256": "7b180f940daab3b45e8097a923e0eb88c567849a916557d3e3a0863176e7f1f8",
-    "raw_readback_equal": true
-  },
-  "recovery_wakeup_prs": [
-    17,
-    18
-  ],
-  "recovery_acknowledgement": "Generation18 owner, immutable state and matching heartbeats read back; start.signal read back; actual new supervisor preflight passed and supervision in progress.",
-  "recovered_verification_segments": [
-    {
-      "role": "PC-LEAK-v1-r1",
-      "start_utc": "2026-10-15T15:28:37Z",
-      "end_utc": "2026-10-15T15:29:08Z",
-      "seconds": 31
-    },
-    {
-      "role": "PC-HOSTILE-v1",
-      "start_utc": "2026-10-15T15:33:53Z",
-      "end_utc": "2026-10-15T15:38:51Z",
-      "seconds": 298,
-      "qualification": "Reported decision interval; preceding mathematical-input reading not separated, so not an exact all-activity total."
-    },
-    {
-      "role": "PC-RECON-v1",
-      "start_utc": "2026-10-15T15:46:30Z",
-      "end_utc": "2026-10-15T16:00:31Z",
-      "seconds": 841
-    },
-    {
-      "role": "PC-COMP-v1",
-      "start_utc": "2026-10-15T16:10:00Z",
-      "end_utc": "2026-10-15T16:14:20Z",
-      "seconds": 260
-    }
-  ],
-  "recovered_verification_seconds": 1430,
-  "prior_execution_epoch": {
-    "number": 2,
-    "boundary_review_utc": "2026-10-15T15:07:49.340610Z",
-    "health": "Coordinator transport disconnected during hour2 persistence; epoch not advanced.",
-    "next_epoch_status": "blocked_pending_fresh_recovery"
-  },
-  "duplicate_wakeups_ignored": [
-    {
-      "pr": 17,
-      "incident": "aa6fd19579040faf1656ae4a",
-      "reason": "Coherent live generation18 already owned by this continuing recovery; no duplicate work.",
-      "observed_utc": "2026-10-15T15:48:44.977Z"
-    }
-  ],
-  "recovery_wakeup_duplicate_notice": "Repeated deliveries of PR17 and18 observe this coherent active generation18; no duplicate recovery.",
-  "root_recovery_review_segments": [
-    {
-      "start_utc": "2026-10-15T16:01:51.840Z",
-      "end_utc": "2026-10-15T16:08:18Z",
-      "qualification": "Review elapsed window includes persistence and administrative interruptions; not exact active-math time."
-    }
-  ],
-  "stop_decision_utc": "2026-10-15T16:15:54.173Z",
-  "stop_reason": "Existing compactification comparison returned INCOMPLETE at a precise admitted-dependency gap. Hour3 disposition closes this verification effort without promotion; primary promotion preserved.",
-  "bounded_workflow_status": "COMPLETED_PARTIAL_RESULT_VERIFICATION_GAP",
-  "notification_result_id": "continuation11-paired-label-exact-20261015-v1/continuation11-recovery-20261015T152347Z-g18/g18/compact-v1-incomplete-localization",
-  "final_status_path": "/ChatGPT-Research-State/delta14-mixed-tate/FINAL_STATUS--continuation11-paired-label-exact-20261015-v1--continuation11-recovery-20261015T152347Z-g18--g18.md",
-  "final_status_sha256": "3d97c5e1afddfa5875150a3efcd8251c3a62666f07552e1e29402b9fbbb7f840",
-  "current_audit_checklist_revision": 17,
-  "terminal_utc": "2026-10-15T16:15:54.173Z",
-  "artifact_packaging_note": "Current results ZIP captures publication-stage state. The later terminal generation and live heartbeat are authoritative for terminal_delivery_complete.",
-  "results_path": "/ChatGPT-Research-State/delta14-mixed-tate/RESULTS--continuation11-recovery-20261015T152347Z-g18--g18.zip",
-  "results_sha256": "b1dd812f4073476ada4d475c72893f2957bbd0066725c20b6b38c973efe52a95",
-  "results_raw_readback_equal": true,
-  "terminal_publication_utc": "2026-10-15T16:23:06.567Z",
-  "terminal_delivery_semantics": "Current named FINAL_STATUS and terminal artifacts persisted and raw-byte read back before live pointer publication; no assertion of end-to-end chat-notification receipt."
+  "last_heartbeat_utc": "2026-10-15T18:24:36.158Z",
+  "supervisor_verification_level": "Initial external generation raw-byte verified; both existing recovery consumers enabled; start.signal and actual supervisor verification pending.",
+  "recovery_directive": "Recover only the confirmed new exact-class mathematical_campaign_id under this authorization and its fixed statement; preserve old mixed-Tate campaign stopped. Immutable clock and first unfinished action apply.",
+  "source_instructions": "EXACT--delta14-exact-class-20261015T182114Z--g19--initial.json payload_files.USER_INSTRUCTIONS.txt"
 }
