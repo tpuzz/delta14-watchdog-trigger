@@ -32,8 +32,17 @@
   "math_segment_start_utc": "2026-10-15T13:15:26.111Z",
   "active_math_elapsed_seconds": null,
   "aggregate_worker_seconds": null,
-  "active_workers": [],
-  "current_assignment": "Complete proof-blind reconstruction v2 received; persist actual bytes/manifests, then fresh comparison. Compact conic candidate queued, no concurrent verification.",
+  "active_workers": [
+    {
+      "task": "PR-COMPARE-v2",
+      "agent": "/root/pr_compare_v2",
+      "status": "running",
+      "math_stop_utc": "2026-10-15T14:57:00Z",
+      "delivery_utc": "2026-10-15T14:59:00Z",
+      "replacement_count": 0
+    }
+  ],
+  "current_assignment": "Fresh comparison v2 active; complete compactification candidate frozen and queued for its own sequential cadence. No search active.",
   "first_unfinished_action": "Await complete proof-blind reconstruction v2; preserve compactification W3 return as a distinct candidate if substantive. No next verification role until full return persistence.",
   "source_instructions": "/ChatGPT-Research-State/delta14-mixed-tate/delta14-paired-label-4h-hourly-instructions-v1-20261015.txt",
   "source_instructions_sha256": "3c1b6adb2b2e7b98b3d3d7de8c87c19f86ee0ef2c71310a6b4405395143c31e3",
@@ -58,13 +67,13 @@
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
   "clock_reset": false,
-  "last_heartbeat_utc": "2026-10-15T14:39:40.444Z",
+  "last_heartbeat_utc": "2026-10-15T14:44:57.196Z",
   "recovery_mode": "DIRECT-RESUME existing campaign under newly confirmed bounded authorization",
   "persistent_goal_status": "No new discovery; inherited campaign limitation retained.",
-  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--residual-v2-reconstruction.json",
-  "latest_verified_dropbox_generation_sha256": "d922fcbba731276a0c030d28b7a28e3eed003a49fbf4bfe777d117233b723d07",
+  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--comparison-active.json",
+  "latest_verified_dropbox_generation_sha256": "66a91644c6bd91f6763ac0c47aff72a80ce36a261bbfd618625c627788620af7",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
-  "dropbox_heartbeat_path": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--residual-v2-reconstruction.json",
+  "dropbox_heartbeat_path": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--comparison-active.json",
   "supervisor_actions_run_id": 38740824534,
   "supervisor_job_id": 116442382345,
   "baseline_revisions": {
@@ -135,7 +144,7 @@
     "gates": {
       "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED",
       "hostile": "PASS_EXTERNALLY_BYTE_VERIFIED",
-      "reconstruction": "COMPLETE_PENDING_EXTERNAL_READBACK",
+      "reconstruction": "COMPLETE_EXTERNALLY_BYTE_VERIFIED_PENDING_COMPARISON",
       "comparison": "NOT_RUN"
     },
     "leakage": {
@@ -156,7 +165,9 @@
       "report_sha256": "fec53ca4016f5c432e9b050a0d7c421b3cdcb7b46398b1d145f9ec7555a4f370",
       "manifest_sha256": "9b92111e3a0b66566254999f63bdc3b8e3c1e3fd391daccdd8cf23407644f694",
       "math_end_utc": "2026-10-15T14:35:51.030865163Z",
-      "draft_delay_seconds": 118.031269949
+      "draft_delay_seconds": 118.031269949,
+      "external_generation": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--residual-v2-reconstruction.json",
+      "external_sha256": "d922fcbba731276a0c030d28b7a28e3eed003a49fbf4bfe777d117233b723d07"
     }
   },
   "leakage_return": {
@@ -169,7 +180,7 @@
     "externally_byte_verified": true
   },
   "timing_qualification": "Root top-level counter was a conservative wall-union screen bound, including some interleaved administration, not exact active-mathematics telemetry. The13:35:34 feasibility decision is retained as an early/upper-bound gate; no assertion that exactly1200 active seconds had elapsed. Worker exact intervals separately retained. No budget reset or extension; continuation allowance is the explicit bounded13:55 test.",
-  "wall_elapsed_since_math_start_seconds": 5037,
+  "wall_elapsed_since_math_start_seconds": 5351,
   "norm_w2_external_evidence": {
     "name": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--norm-w2-return.json",
     "sha256": "51e666d86e356c18b277a83478b5b1306d2578d5f1f412d373351ed0af908dd3",
