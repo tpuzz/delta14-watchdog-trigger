@@ -13,9 +13,11 @@
   "research_started": true,
   "math_start_utc": "2026-10-15T07:55:12.444Z",
   "active_math_elapsed_seconds": 251.936741,
-  "active_workers": [],
-  "current_assignment": "no-rational-section-v1 leakage check",
-  "first_unfinished_action": "Hostile audit of no-rational-section-v1 after leakage2 external verification.",
+  "active_workers": [
+    "ns_hostile_v1"
+  ],
+  "current_assignment": "Hostile audit no-rational-section-v1",
+  "first_unfinished_action": "Complete exact hostile audit and externally byte-verify report/manifest before proof-blind reconstruction.",
   "launch_kit": "delta14-relative-generic-launch-v1-20261015.zip",
   "launch_kit_sha256": "49cde9d2aea51d8d1d32c10434718fad4ff07ade2cc5fd5aaf2e7d032ee9936a",
   "source_capsule": "AUTONOMOUS--continuation9-recovery-20261014T212819Z-9b87a01c8656--g13--terminal--RESUME_CAPSULE.zip",
@@ -193,9 +195,9 @@
   },
   "provenance_note": "Pinned terminal capsule contains stale recovery START_HERE. Terminal FINAL_STATUS and live heartbeat supersede it. No previous completed gate repeated.",
   "source_statement_pending": false,
-  "last_heartbeat_utc": "2026-10-15T10:43:44.591Z",
-  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation10-recovery-20261015T103125Z-g16--g16--leak-v2.json",
-  "latest_verified_dropbox_generation_sha256": "0d99ee4cd01c625e78c887c86d98603135eb81628551040194d69b09116b297b",
+  "last_heartbeat_utc": "2026-10-15T10:48:39.881Z",
+  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation10-recovery-20261015T103125Z-g16--g16--audit-running.json",
+  "latest_verified_dropbox_generation_sha256": "33b79c972ee3e04787b9c6e812a71aa3c9890507e5d0cd51fae9cb29c12426c5",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
   "mathematical_work_authorized": true,
   "source_statement_sha256": "76482cf9eb1e459429efa4fcdff74dd986fcb39889a48c40193642e63f23f32d",
@@ -361,7 +363,7 @@
       "proof_sha256": "a0a9973cff7f803dd05869d928eef8aa175044431456886375f7b900034e0329",
       "contract_sha256": "dde680804b67d897bdeb5d1d57f36e8a02bf5549f1e2376d2228b4ac86fe44b2",
       "gates": {
-        "leakage": "BRIEF_V2_PASS_RECEIVED_PENDING_PUBLICATION; BRIEF_V1_FAIL_RETAINED",
+        "leakage": "BRIEF_V2_PASS_EXTERNALLY_BYTE_VERIFIED; BRIEF_V1_FAIL_RETAINED",
         "hostile": "NOT_RUN",
         "reconstruction": "NOT_RUN",
         "comparison": "NOT_RUN"
@@ -422,8 +424,8 @@
       "cause": "No saved mathematical return at stop; parent interrupted and allowed metadata only. No completed independent-wave credit."
     }
   ],
-  "latest_verified_dropbox_capsule": "AUTONOMOUS--continuation10-recovery-20261015T094314Z-a23632894cf5--g15--pf-promoted--RESUME_CAPSULE.zip",
-  "latest_verified_dropbox_capsule_sha256": "8867fc02dfad62bf3fed3650b735b187e719f8737455b47a78e2e6f29d165564",
+  "latest_verified_dropbox_capsule": "AUTONOMOUS--continuation10-recovery-20261015T103125Z-g16--g16--audit-running--RESUME_CAPSULE.zip",
+  "latest_verified_dropbox_capsule_sha256": "3e4dc6d68d0896c003723f6e3d551a9875047952ba658faf56e54691825cd75f",
   "latest_verified_dropbox_capsule_raw_readback_equal": true,
   "epoch_history": [
     {
@@ -589,5 +591,6 @@
     "evidence": "Generation15 heartbeat10:08:56Z; lease expired10:20:49Z; no successor at claim. Prior duplicate-event handling ended coordinator turn; no specific transport failure inferred.",
     "source_generation": "AUTONOMOUS--continuation10-recovery-20261015T094314Z-a23632894cf5--g15--pf-promoted.json",
     "source_sha256": "5cc1a91a3fab15f53fb55fccc6b2f944bc580eaf8560684a89257d307e3fb700"
-  }
+  },
+  "persistence_note": "One download-link response lacked expected entries; single bounded reconciliation obtained valid link and exact raw readback. No generation re-upload or gate credit before readback."
 }
