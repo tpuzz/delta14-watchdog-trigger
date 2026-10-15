@@ -5,9 +5,10 @@
   "authorization_id": "exact-class-breakthrough-4h-20261015-v1",
   "owner_run_id": "exact-class-breakthrough-recovery-20261015T230900Z-g21",
   "generation": 21,
-  "status": "active",
+  "status": "released",
   "last_renewed_utc": "2026-10-15T23:28:00.000Z",
-  "lease_expires_utc": "2026-10-15T23:40:00.000Z",
+  "lease_expires_utc": "2026-10-15T23:31:00.000Z",
+  "released_at_utc": "2026-10-15T23:31:00.000Z",
   "predecessor_run_id": "exact-class-breakthrough-20261015T195016Z-g20",
-  "claim_reason": "Checked recovery after explicit coordinator-level runtime interruption, incomplete delivery, and released generation-20 ownership; original authorization and deadlines unchanged."
+  "release_reason": "Generation 21 terminal generation, capsule, final status, heartbeat, and terminal signal were published and read back; no active workers and no promotion."
 }
