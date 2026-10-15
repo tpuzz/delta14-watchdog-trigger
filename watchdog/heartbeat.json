@@ -8,7 +8,7 @@
   "authorization_start_utc": "2026-10-15T19:50:16.938319Z",
   "hard_deadline_utc": "2026-10-15T23:50:16.938319Z",
   "delivery_start_utc": "2026-10-15T23:40:16.938319Z",
-  "last_heartbeat_utc": "2026-10-15T22:24:59.931Z",
+  "last_heartbeat_utc": "2026-10-15T22:31:53.796Z",
   "research_started": true,
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
@@ -17,5 +17,8 @@
   "latest_verified_dropbox_capsule": "BREAKTHROUGH--exact-class-breakthrough-4h-20261015-v1--g20--searches-recovered--RESUME_CAPSULE.zip",
   "latest_verified_dropbox_capsule_sha256": "4345bd93f1e4e6711bfebb3f5a9d7aa9358f08576930f838d79bd719e35ed718",
   "supervisor_actions_run_id": 38797869629,
-  "supervisor_verification_level": "Actual supervisor job inspected 2026-10-15T21:54Z: supervision in progress; setup, checkout and regression successful."
+  "supervisor_verification_level": "Actual supervisor job inspected 2026-10-15T21:54Z: supervision in progress; setup, checkout and regression successful.",
+  "execution_environment_status": "offline reported by worker exec server; root date probe stalled and terminated; bounded recovery underway; mathematics continues in context only",
+  "new_local_artifact_writes_confirmed": false,
+  "last_verified_checkpoint_retained": true
 }
