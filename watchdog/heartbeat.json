@@ -193,9 +193,9 @@
   },
   "provenance_note": "Pinned terminal capsule contains stale recovery START_HERE. Terminal FINAL_STATUS and live heartbeat supersede it. No previous completed gate repeated.",
   "source_statement_pending": false,
-  "last_heartbeat_utc": "2026-10-15T08:25:22.479Z",
-  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--product-hostile-v1.json",
-  "latest_verified_dropbox_generation_sha256": "76c1a7a82470f9a708f1bb4bbdfd460d9b8d5b3b088d4aa63db553891a553d26",
+  "last_heartbeat_utc": "2026-10-15T08:25:48.402Z",
+  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--product-recon-v1.json",
+  "latest_verified_dropbox_generation_sha256": "42c51627f4898242d5ce349fba2eea8ece530dcea5e73aceff67c8cb85e74b80",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
   "mathematical_work_authorized": true,
   "source_statement_sha256": "76482cf9eb1e459429efa4fcdff74dd986fcb39889a48c40193642e63f23f32d",
@@ -244,7 +244,7 @@
       }
     }
   },
-  "current_checkpoint": "product-hostile-v1",
+  "current_checkpoint": "product-recon-v1",
   "preliminary_generic_planning": {
     "status": "root-only exploratory notes, no result or independent credit",
     "RELATIVE-LATTICE": {
