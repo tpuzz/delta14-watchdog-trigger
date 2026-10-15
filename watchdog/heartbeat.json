@@ -14,11 +14,10 @@
   "math_start_utc": "2026-10-15T07:55:12.444Z",
   "active_math_elapsed_seconds": 251.936741,
   "active_workers": [
-    "pf_leak_v1",
     "generic_lattice_w2"
   ],
   "current_assignment": "PF-LEAK-v1; RELATIVE-LATTICE-W2",
-  "first_unfinished_action": "Receive narrow obstruction leakage gate and unrestricted-section W2 return; geometry route remains paused with one independent credit.",
+  "first_unfinished_action": "Persist PF leakage then isolated hostile audit; lattice W2 hard stop09:13Z.",
   "launch_kit": "delta14-relative-generic-launch-v1-20261015.zip",
   "launch_kit_sha256": "49cde9d2aea51d8d1d32c10434718fad4ff07ade2cc5fd5aaf2e7d032ee9936a",
   "source_capsule": "AUTONOMOUS--continuation9-recovery-20261014T212819Z-9b87a01c8656--g13--terminal--RESUME_CAPSULE.zip",
@@ -196,9 +195,9 @@
   },
   "provenance_note": "Pinned terminal capsule contains stale recovery START_HERE. Terminal FINAL_STATUS and live heartbeat supersede it. No previous completed gate repeated.",
   "source_statement_pending": false,
-  "last_heartbeat_utc": "2026-10-15T09:05:50.615Z",
-  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--pf-candidate-v1.json",
-  "latest_verified_dropbox_generation_sha256": "566bb2fb738004961234c408430118c6c095930705598689f3172625c41e6f9f",
+  "last_heartbeat_utc": "2026-10-15T09:09:38.409Z",
+  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--pf-leak-v1.json",
+  "latest_verified_dropbox_generation_sha256": "94fd7ae0db283ce4096941d55357b7e34aace353e6c19b1383e9a5ca1d25e9d1",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
   "mathematical_work_authorized": true,
   "source_statement_sha256": "76482cf9eb1e459429efa4fcdff74dd986fcb39889a48c40193642e63f23f32d",
@@ -310,14 +309,14 @@
     "permutation-factor-obstruction-v1": {
       "status": "candidate",
       "gates": {
-        "leakage": "RUNNING",
+        "leakage": "PASS_LOCAL_PENDING_EXTERNAL",
         "hostile": "NOT_RUN",
         "reconstruction": "NOT_RUN",
         "comparison": "NOT_RUN"
       }
     }
   },
-  "current_checkpoint": "pf-candidate-v1",
+  "current_checkpoint": "pf-leak-v1",
   "preliminary_generic_planning": {
     "status": "root-only exploratory notes, no result or independent credit",
     "RELATIVE-LATTICE": {
