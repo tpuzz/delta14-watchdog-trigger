@@ -12,7 +12,7 @@
   "delivery_reserve_minutes": 10,
   "research_started": true,
   "math_start_utc": "2026-10-15T07:55:12.444Z",
-  "active_math_elapsed_seconds": 251.936741,
+  "active_math_elapsed_seconds": 890,
   "active_workers": [
     "ns_comp_v1"
   ],
@@ -195,9 +195,9 @@
   },
   "provenance_note": "Pinned terminal capsule contains stale recovery START_HERE. Terminal FINAL_STATUS and live heartbeat supersede it. No previous completed gate repeated.",
   "source_statement_pending": false,
-  "last_heartbeat_utc": "2026-10-15T11:12:40.521Z",
-  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation10-recovery-20261015T103125Z-g16--g16--reconstruction-complete.json",
-  "latest_verified_dropbox_generation_sha256": "64eef7bc8c4aefe5c92fec1b9abb8d00afd9611383dbca8f6deae6de319c9099",
+  "last_heartbeat_utc": "2026-10-15T11:17:43.761Z",
+  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation10-recovery-20261015T103125Z-g16--g16--epoch5-comparison.json",
+  "latest_verified_dropbox_generation_sha256": "8c95349a2bb103005cc73a70e967bcea00497efbfcdee7246e04093286b20fa1",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
   "mathematical_work_authorized": true,
   "source_statement_sha256": "76482cf9eb1e459429efa4fcdff74dd986fcb39889a48c40193642e63f23f32d",
@@ -205,10 +205,10 @@
   "supervisor_verification_level": "Actual Actions38720989688 job116375254526 observed in_progress11:11Z; checkout/regression tests success; supervise step in_progress. Not an end-to-end crash/recovery certification.",
   "math_segment_start_utc": null,
   "epoch": {
-    "number": 4,
-    "start_utc": "2026-10-15T10:34:17.988Z",
+    "number": 5,
+    "start_utc": "2026-10-15T11:16:42.921Z",
     "status": "running",
-    "health_check": "Active ownership and actual supervisor checked; exact checkpoint/capsule readback verified10:48. One response-shape issue reconciled without duplicate upload. No unresolved runtime distress."
+    "health_check": "Continuation only of current comparison and terminal delivery; no new search wave. Fixed11:37:45 reserve."
   },
   "mechanism_screens": {
     "PRODUCT-INPUT-v1": {
@@ -315,7 +315,7 @@
       "external_packet": "DEC-SOURCE-v1-actual-return-and-inputs.zip",
       "external_packet_sha256": "2dc2ea28f462cb5af01dc0cf1b9fbd585052c28e59d6378801de0dc254ce72e3",
       "independent_wave_credit": 1,
-      "credit_note": "Complete isolated return persisted; root synthesis pending. No theorem promotion."
+      "credit_note": "Complete isolated return externally persisted and root-synthesized before no-section verification; one independent source/search-wave credit, zero verification-role credit."
     }
   },
   "baseline_revisions": {
@@ -424,8 +424,8 @@
       "cause": "No saved mathematical return at stop; parent interrupted and allowed metadata only. No completed independent-wave credit."
     }
   ],
-  "latest_verified_dropbox_capsule": "AUTONOMOUS--continuation10-recovery-20261015T103125Z-g16--g16--audit-running--RESUME_CAPSULE.zip",
-  "latest_verified_dropbox_capsule_sha256": "3e4dc6d68d0896c003723f6e3d551a9875047952ba658faf56e54691825cd75f",
+  "latest_verified_dropbox_capsule": "AUTONOMOUS--continuation10-recovery-20261015T103125Z-g16--g16--epoch5-comparison--RESUME_CAPSULE.zip",
+  "latest_verified_dropbox_capsule_sha256": "d687e383077ef3aaa23ebae444a54f36de026f1cbfd3f7e5751a1ba2f7c0f642",
   "latest_verified_dropbox_capsule_raw_readback_equal": true,
   "epoch_history": [
     {
@@ -434,6 +434,14 @@
       "status": "checkpointed_pending_health_check",
       "checkpoint_utc": "2026-10-15T08:58:16.097814+00:00",
       "finished_agent_reconciliation": "All three completed assignments read; product and lattice externally verified, geometry return awaits publication."
+    },
+    {
+      "number": 4,
+      "start_utc": "2026-10-15T10:34:17.988Z",
+      "status": "reconciled",
+      "health_check": "Active ownership and actual supervisor checked; exact checkpoint/capsule readback verified10:48. One response-shape issue reconciled without duplicate upload. No unresolved runtime distress.",
+      "end_utc": "2026-10-15T11:16:42.921Z",
+      "reconciliation": "Source return and leakage/hostile/reconstruction actual bytes externally verified. Fresh comparison active with strict11:29 math stop; no other workers. Both monitoring tasks enabled and actual supervisor observed active. No unresolved runtime blocker."
     }
   ],
   "current_execution_mathematics_stopped": false,
@@ -605,5 +613,25 @@
     "sha256": "07cbd3106d4f48e032830a48ef9212c830583442f0e8d857f673708dedc7b8ae",
     "raw_readback_equal": true
   },
-  "monitor_tasks_verified_enabled_utc": "2026-10-15T11:12:36.318Z"
+  "monitor_tasks_verified_enabled_utc": "2026-10-15T11:12:36.318Z",
+  "legacy_root_active_math_elapsed_seconds": {
+    "value": 251.936741,
+    "context": "PRODUCT-INPUT-v1; historical value retained, not the current source-screen accumulator"
+  },
+  "active_math_elapsed_seconds_context": "DEC-SOURCE-SPECIALIZATION feasibility screen closed; verification roles are not new search waves. Full parent/leaf cumulative clocks remain in mechanism_screens.",
+  "verification_execution_segments": {
+    "reconstruction": {
+      "dispatch_utc_approximate": "2026-10-15T10:54:50Z",
+      "complete_return_persisted_by_utc": "2026-10-15T11:09:14.742Z",
+      "basis": "Operational bounds only, not exact active-math measurement; source retrieval/persistence included; no new mechanism or wave allowance"
+    },
+    "comparison": {
+      "dispatch_window_utc": [
+        "2026-10-15T11:09:26Z",
+        "2026-10-15T11:11:13Z"
+      ],
+      "mandatory_math_stop_utc": "2026-10-15T11:29:00Z",
+      "status": "running"
+    }
+  }
 }
