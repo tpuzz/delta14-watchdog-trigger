@@ -14,10 +14,12 @@
   "math_start_utc": "2026-10-15T07:55:12.444Z",
   "active_math_elapsed_seconds": 251.936741,
   "active_workers": [
-    "generic_lattice_w1"
+    "product_comp_v2",
+    "generic_lattice_w1",
+    "generic_geometry_w1"
   ],
-  "current_assignment": "PRODUCT-COMP-v2 and RELATIVE-LATTICE-W1",
-  "first_unfinished_action": "Persist strict reconstruction v2 and actual manifest, then fresh comparison v2.",
+  "current_assignment": "PRODUCT-COMP-v2; RELATIVE-LATTICE-W1; RELATIVE-GEOMETRY-W1",
+  "first_unfinished_action": "Complete product comparison v2 and receive independent original-generic screens; none uses pending product repair.",
   "launch_kit": "delta14-relative-generic-launch-v1-20261015.zip",
   "launch_kit_sha256": "49cde9d2aea51d8d1d32c10434718fad4ff07ade2cc5fd5aaf2e7d032ee9936a",
   "source_capsule": "AUTONOMOUS--continuation9-recovery-20261014T212819Z-9b87a01c8656--g13--terminal--RESUME_CAPSULE.zip",
@@ -195,7 +197,7 @@
   },
   "provenance_note": "Pinned terminal capsule contains stale recovery START_HERE. Terminal FINAL_STATUS and live heartbeat supersede it. No previous completed gate repeated.",
   "source_statement_pending": false,
-  "last_heartbeat_utc": "2026-10-15T08:42:56.001Z",
+  "last_heartbeat_utc": "2026-10-15T08:44:08.745Z",
   "latest_verified_dropbox_generation": "AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--product-recon-v2.json",
   "latest_verified_dropbox_generation_sha256": "e9ee5ce843d0969b2289628e194ae97d7365e4c7ef4607472411f0aa6cd1fa32",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
@@ -239,6 +241,29 @@
           "size_bytes": 866
         }
       ]
+    },
+    "RELATIVE-GEOMETRY": {
+      "active_math_elapsed_seconds": 540,
+      "math_segment_start_utc": null,
+      "status": "assigned_first_wave",
+      "independent_wave_credit": 0,
+      "baseline_files": [
+        {
+          "path": "/workspace/scratch/92d0c8d20bf7/campaign/PACKETS/RELATIVE-GEOMETRY-W1/PROVED_FILTER.md",
+          "sha256": "f596fb168de2484fa8aa5b059f3319539ba504c8265154b1e37e43517b48dbaa",
+          "size_bytes": 472
+        },
+        {
+          "path": "/workspace/scratch/92d0c8d20bf7/campaign/PACKETS/RELATIVE-GEOMETRY-W1/FAILED_FILTER.md",
+          "sha256": "35d56942f271ef6124acb2b788a334c555bd05690eb8a9ba3b8187518680473f",
+          "size_bytes": 1783
+        },
+        {
+          "path": "/workspace/scratch/92d0c8d20bf7/campaign/PACKETS/RELATIVE-GEOMETRY-W1/CHECKLIST.md",
+          "sha256": "a8ad46c77308b9467f4aacb57b07d6bddf4cd7bb7886273316f0e533883808eb",
+          "size_bytes": 866
+        }
+      ]
     }
   },
   "baseline_revisions": {
@@ -266,8 +291,8 @@
         "hostile": "PASS_EXTERNALLY_BYTE_VERIFIED",
         "reconstruction": "COMPLETE_BUT_PROOF_SHAPED_INPUT_DISQUALIFIES_STRICT_BLINDNESS",
         "comparison": "MATHEMATICAL_PASS_ISOLATION_NOT_CERTIFIED",
-        "reconstruction_v2": "COMPLETE_LOCAL_PENDING_EXTERNAL",
-        "comparison_v2": "NOT_RUN"
+        "reconstruction_v2": "COMPLETE_EXTERNALLY_BYTE_VERIFIED",
+        "comparison_v2": "RUNNING"
       }
     }
   },
@@ -289,5 +314,6 @@
       "replacement": "PRODUCT-RECON-v2",
       "original_preserved": true
     }
-  }
+  },
+  "concurrency_exception": "Three live subagents during one final auxiliary verification gate, so the two genuinely distinct main generic mechanisms can be tested within the first epoch. No parallel verification. Return to at most two when product comparison completes."
 }
