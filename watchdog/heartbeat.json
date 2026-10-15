@@ -4,7 +4,7 @@
   "authorization_id": "continuation11-paired-label-exact-20261015-v1",
   "run_id": "continuation11-paired-label-20261015T130749Z-28d8ccde1490",
   "lease_generation": 17,
-  "status": "running",
+  "status": "interrupted",
   "global_campaign_status": "INCOMPLETE",
   "authorization_start_utc": "2026-10-15T13:07:49Z",
   "confirmed_at_utc": "2026-10-15T13:07:49Z",
@@ -25,6 +25,14 @@
       "path": "REASSESSMENT-01.md",
       "delay_seconds": 21.045,
       "delay_reason": "Coordinator checkpoint preparation; no outage or on-time observation fabricated."
+    },
+    {
+      "number": 2,
+      "scheduled_utc": "2026-10-15T15:07:49Z",
+      "actual_utc": "2026-10-15T15:07:49.340610Z",
+      "delay_seconds": 0.34061,
+      "path": "REASSESSMENT-02.md",
+      "disposition": "VERIFY_ONLY"
     }
   ],
   "research_started": true,
@@ -32,18 +40,9 @@
   "math_segment_start_utc": null,
   "active_math_elapsed_seconds": null,
   "aggregate_worker_seconds": null,
-  "active_workers": [
-    {
-      "task": "PC-LEAK-v1",
-      "agent": "/root/pc_leak_v1",
-      "status": "running",
-      "math_stop_utc": "2026-10-15T15:08:00Z",
-      "delivery_utc": "2026-10-15T15:09:00Z",
-      "replacement_count": 0
-    }
-  ],
-  "current_assignment": "Fresh compact-conic-v1 leakage audit, sequential after residual-v2 promotion; no search active.",
-  "first_unfinished_action": "Receive complete compact leakage report and actual manifest; externally byte-verify before hostile audit.",
+  "active_workers": [],
+  "current_assignment": "One bounded cleanup pass only; all mathematical work stopped.",
+  "first_unfinished_action": "Recover the exact compact-conic-v1 leakage assignment: reconcile any complete actual pre-interruption report/manifest without granting unearned credit; if incomplete, use one fresh isolated replacement with the same six allowed inputs. Then continue sequential hostile/reconstruction/comparison within the unchanged deadline. Do not repeat primary gates or launch new search.",
   "source_instructions": "/ChatGPT-Research-State/delta14-mixed-tate/delta14-paired-label-4h-hourly-instructions-v1-20261015.txt",
   "source_instructions_sha256": "3c1b6adb2b2e7b98b3d3d7de8c87c19f86ee0ef2c71310a6b4405395143c31e3",
   "source_capsule": "AUTONOMOUS--continuation10-recovery-20261015T103125Z-g16--g16--terminal-complete--RESUME_CAPSULE.zip",
@@ -67,13 +66,13 @@
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
   "clock_reset": false,
-  "last_heartbeat_utc": "2026-10-15T15:04:47.936Z",
+  "last_heartbeat_utc": "2026-10-15T15:12:13.335Z",
   "recovery_mode": "DIRECT-RESUME existing campaign under newly confirmed bounded authorization",
   "persistent_goal_status": "No new discovery; inherited campaign limitation retained.",
-  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--compact-leak-start.json",
-  "latest_verified_dropbox_generation_sha256": "60f35ffa1f8573f8004845b98bf8ed6780ad794dcf5ddcf614debb31b00d0880",
+  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--interrupted-cleanup.json",
+  "latest_verified_dropbox_generation_sha256": "293463ce5bc1e7d804c0bf42b8d26fee108fa5b5d551bbfb5140470988c30994",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
-  "dropbox_heartbeat_path": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--compact-leak-start.json",
+  "dropbox_heartbeat_path": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--interrupted-cleanup.json",
   "supervisor_actions_run_id": 38740824534,
   "supervisor_job_id": 116442382345,
   "baseline_revisions": {
@@ -84,8 +83,8 @@
   },
   "active_math_accounting": "Exact root active time unavailable; wall elapsed and explicitly recorded worker intervals are separate. No double counting or assertion of exact active total.",
   "provisional_findings": "Residual-v2 promoted exact scope; compactification candidate still unverified. No exact class or motive evaluation.",
-  "latest_verified_dropbox_capsule": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--hour1--RESUME_CAPSULE.zip",
-  "latest_verified_dropbox_capsule_sha256": "04c5450fc23edd53e15516b7d8fc9542b7e50461b5eefebab2655eb65a768840",
+  "latest_verified_dropbox_capsule": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--interrupted-cleanup--RESUME_CAPSULE.zip",
+  "latest_verified_dropbox_capsule_sha256": "af4ccda9df62fa76970de398cd44670b70b1a68ec3c270502e36b3653f6c3749",
   "latest_verified_dropbox_capsule_raw_readback_equal": true,
   "completed_returns": [
     {
@@ -199,7 +198,7 @@
     "externally_byte_verified": true
   },
   "timing_qualification": "Root top-level counter was a conservative wall-union screen bound, including some interleaved administration, not exact active-mathematics telemetry. The13:35:34 feasibility decision is retained as an early/upper-bound gate; no assertion that exactly1200 active seconds had elapsed. Worker exact intervals separately retained. No budget reset or extension; continuation allowance is the explicit bounded13:55 test.",
-  "wall_elapsed_since_math_start_seconds": 6542,
+  "wall_elapsed_since_math_start_seconds": 6988,
   "norm_w2_external_evidence": {
     "name": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--norm-w2-return.json",
     "sha256": "51e666d86e356c18b277a83478b5b1306d2578d5f1f412d373351ed0af908dd3",
@@ -228,7 +227,7 @@
     "delivery_utc": "2026-10-15T14:36:00Z",
     "replacement_count": 0
   },
-  "aggregate_search_recorded_interval_seconds": 1807.352981095,
+  "aggregate_search_recorded_interval_seconds": 2784.352981095,
   "recorded_worker_intervals": [
     {
       "task": "PAIR-LIFT-W1",
@@ -250,6 +249,13 @@
       "end": "2026-10-15T13:47:39.108713Z",
       "seconds": 586.264753,
       "classification": "reported mathematical interval"
+    },
+    {
+      "task": "PAIR-COMPACT-W3",
+      "start": "2026-10-15T14:09:33Z",
+      "end": "2026-10-15T14:25:50Z",
+      "seconds": 977,
+      "classification": "observed reported interval; first input slightly before observed clock"
     }
   ],
   "policy_live_recheck_utc": "2026-10-15T14:12:29.959Z",
@@ -270,7 +276,7 @@
     "brief_sha256": "e001ad5db901e9e2714b9e0f3b19b36be2296d3b6d8dae79450261284d8c1d38",
     "status": "candidate",
     "gates": {
-      "leakage": "NOT_RUN",
+      "leakage": "INTERRUPTED_UNCREDITED",
       "hostile": "NOT_RUN",
       "reconstruction": "NOT_RUN",
       "comparison": "NOT_RUN"
@@ -279,10 +285,38 @@
       "name": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--compact-v1-freeze.json",
       "sha256": "7b180f940daab3b45e8097a923e0eb88c567849a916557d3e3a0863176e7f1f8",
       "raw_readback_equal": true
+    },
+    "leakage_interruption": {
+      "agent": "/root/pc_leak_v1",
+      "actual_substantive_draft_utc": "2026-10-15T15:06:19.896556Z",
+      "draft_delay_seconds": 19.896556,
+      "final_return_received": false,
+      "notes": "Checker initially proposed overall NONPASS for timing only. Root requested separate leakage verdict and operational compliance without changing findings. No final complete report/manifest received before coordinator interruption.",
+      "preserved_partial_report": {
+        "path": "AUDITS/PC-LEAK-v1/LEAKAGE_REPORT.md",
+        "sha256": "1e38d6a71d611bed78f3d2f64c0dd4cdc9fcb606679fbae620ddb633d7d74a09",
+        "bytes": 4729,
+        "actual_manifest_present": false,
+        "credit": "NONE; forbidden input to fresh replacement"
+      }
     }
   },
   "search_disposition": "VERIFY_ONLY after completed compactification pivot; local induction provisionally parked, no further search allowance.",
-  "mathematics_mode": "VERIFICATION_ONLY; root has no currently timed active segment, exact root active accumulator unavailable with qualification preserved.",
+  "mathematics_mode": "STOPPED_COORDINATOR_RUNTIME_DISTRESS",
   "current_audit_checklist_sha256": "ef7ada9b66560a376d9963ec9f695b7534b21835cc712c228d00be122f40f84b",
-  "infrastructure_last_checked_utc": "2026-10-15T15:04:21.801Z"
+  "infrastructure_last_checked_utc": "2026-10-15T15:04:21.801Z",
+  "execution_epoch": {
+    "number": 2,
+    "boundary_review_utc": "2026-10-15T15:07:49.340610Z",
+    "health": "Coordinator transport disconnected during hour2 persistence; epoch not advanced.",
+    "next_epoch_status": "blocked_pending_fresh_recovery"
+  },
+  "infrastructure_incident": {
+    "observed_utc": "2026-10-15T15:10:47.698Z",
+    "class": "coordinator-level runtime distress",
+    "action": "exec_command state write during hour2 checkpoint",
+    "error": "exec-server transport disconnected; failed to resume exec-server session: recovery timed out after25s",
+    "cleanup_attempts": 1
+  },
+  "recovery_eligibility": "Same authorization may direct-resume only in a fresh healthy environment before16:57:49Z; after reserve finalize_only. Hard deadline17:07:49Z unchanged. No successor."
 }
