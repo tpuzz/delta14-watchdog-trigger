@@ -14,9 +14,10 @@
   "math_start_utc": "2026-10-15T07:55:12.444Z",
   "active_math_elapsed_seconds": 251.936741,
   "active_workers": [
-    "pf_comp_r1"
+    "pf_comp_r1",
+    "dec_source_screen"
   ],
-  "current_assignment": "PF comparison; bounded recorded source/specialization screen ready",
+  "current_assignment": "PF comparison and isolated source/specialization screen; both bounded",
   "first_unfinished_action": "PF comparison of exact candidate against raw-verified fresh reconstruction; PF07 isolation remains mandatory.",
   "launch_kit": "delta14-relative-generic-launch-v1-20261015.zip",
   "launch_kit_sha256": "49cde9d2aea51d8d1d32c10434718fad4ff07ade2cc5fd5aaf2e7d032ee9936a",
@@ -195,7 +196,7 @@
   },
   "provenance_note": "Pinned terminal capsule contains stale recovery START_HERE. Terminal FINAL_STATUS and live heartbeat supersede it. No previous completed gate repeated.",
   "source_statement_pending": false,
-  "last_heartbeat_utc": "2026-10-15T10:02:26.669Z",
+  "last_heartbeat_utc": "2026-10-15T10:04:32.850Z",
   "latest_verified_dropbox_generation": "AUTONOMOUS--continuation10-recovery-20261015T094314Z-a23632894cf5--g15--pf-recon-r1.json",
   "latest_verified_dropbox_generation_sha256": "fa83737ff4d000ca24596ca8c22bf0b4a9dae000c8adc5fcc92996b70ac8a742",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
@@ -219,7 +220,7 @@
       "decision": "GO: narrow character-line proof available, general tensor assertion excluded"
     },
     "RELATIVE-LATTICE": {
-      "active_math_elapsed_seconds": 2477.872838,
+      "active_math_elapsed_seconds": 2529.872838,
       "math_segment_start_utc": null,
       "status": "W2_interrupted_incomplete_no_credit",
       "independent_wave_credit": 1,
@@ -255,9 +256,9 @@
       },
       "recovery_root_source_reassessment": {
         "start_utc": "2026-10-15T09:58:57Z",
-        "charged_seconds": 150,
+        "charged_seconds": 202,
         "stop_utc": "2026-10-15 10:02:19 UTC",
-        "description": "Primary-source applicability and exact unfinished local scope; conservative charge, no new result or wave credit."
+        "description": "Actual continuous09:58:57–10:02:19 source assessment and mathematical brief preparation; corrected initial150s provisional charge to202s before worker dispatch."
       }
     },
     "RELATIVE-GEOMETRY": {
@@ -296,15 +297,16 @@
       }
     },
     "DEC-SOURCE-SPECIALIZATION": {
-      "status": "ready",
-      "active_math_elapsed_seconds": 150,
+      "status": "running",
+      "active_math_elapsed_seconds": 202,
       "parent_family": "RELATIVE-LATTICE",
-      "root_charge_seconds": 150,
+      "root_charge_seconds": 202,
       "new_worker_allowance_seconds": 900,
       "cap_seconds": 1200,
       "absolute_local_stop_utc": "2026-10-15T10:18:00Z",
       "reset": false,
-      "decision": "Materially new recorded primary-source existence/instantiation and specialization check; not a retry of the expired W2."
+      "decision": "Materially new recorded primary-source existence/instantiation and specialization check; not a retry of the expired W2.",
+      "math_segment_start_utc": "2026-10-15T10:03:18.489Z"
     }
   },
   "baseline_revisions": {
@@ -546,5 +548,6 @@
       "sha256": "fa83737ff4d000ca24596ca8c22bf0b4a9dae000c8adc5fcc92996b70ac8a742",
       "size_bytes": 231830
     }
-  }
+  },
+  "source_screen_parent_dispatch_utc": "2026-10-15T10:03:00Z"
 }
