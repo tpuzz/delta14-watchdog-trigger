@@ -40,19 +40,9 @@
   "math_segment_start_utc": null,
   "active_math_elapsed_seconds": null,
   "aggregate_worker_seconds": null,
-  "active_workers": [
-    {
-      "task": "PC-HOSTILE-v1",
-      "agent": "/root/pc_hostile_v1",
-      "status": "running",
-      "replacement_count": 0,
-      "checkpoint_utc": "2026-10-15T15:46:00Z",
-      "math_stop_utc": "2026-10-15T15:55:00Z",
-      "return_due_utc": "2026-10-15T15:57:00Z"
-    }
-  ],
-  "current_assignment": "Fresh isolated hostile audit of compact-conic-v1, checklist r16; leakage completed and byte-verified.",
-  "first_unfinished_action": "Hostile audit of exact paired-compact-conic-v1 against checklist revision16, then proof-blind reconstruction and comparison only after predecessor reports externally byte-verified.",
+  "active_workers": [],
+  "current_assignment": "Hostile r16 passed; actual complete report/manifest and inputs externally byte-verified. Next proof-blind reconstruction.",
+  "first_unfinished_action": "Fresh isolated reconstruction from exact accepted BRIEF-v1 and contract only with permitted definitions; then persist and compare.",
   "source_instructions": "/ChatGPT-Research-State/delta14-mixed-tate/delta14-paired-label-4h-hourly-instructions-v1-20261015.txt",
   "source_instructions_sha256": "3c1b6adb2b2e7b98b3d3d7de8c87c19f86ee0ef2c71310a6b4405395143c31e3",
   "source_capsule": "AUTONOMOUS--continuation10-recovery-20261015T103125Z-g16--g16--terminal-complete--RESUME_CAPSULE.zip",
@@ -76,13 +66,13 @@
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
   "clock_reset": false,
-  "last_heartbeat_utc": "2026-10-15T15:41:26.607Z",
+  "last_heartbeat_utc": "2026-10-15T15:45:26.183Z",
   "recovery_mode": "CHECKED_DIRECT_RECOVERY_VERIFY_ONLY",
   "persistent_goal_status": "No new discovery; inherited campaign limitation retained.",
-  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation11-recovery-20261015T152347Z-g18--g18--leakage-pass.json",
-  "latest_verified_dropbox_generation_sha256": "3977fa8ce0cfe3a6ec2e7718565165b7ac2f0574738c6f899de6f1799cc37392",
+  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation11-recovery-20261015T152347Z-g18--g18--hostile-pass.json",
+  "latest_verified_dropbox_generation_sha256": "531b3e7dfb5df8b35f0a1c7b02a93be15848c9aaa4c51a4b711ba70d9eb0771d",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
-  "dropbox_heartbeat_path": "AUTONOMOUS--continuation11-recovery-20261015T152347Z-g18--g18--hostile-control-02--heartbeat.json",
+  "dropbox_heartbeat_path": "AUTONOMOUS--continuation11-recovery-20261015T152347Z-g18--g18--hostile-pass--heartbeat.json",
   "supervisor_actions_run_id": 38760245125,
   "supervisor_job_id": 116509745138,
   "baseline_revisions": {
@@ -287,7 +277,7 @@
     "status": "candidate",
     "gates": {
       "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED",
-      "hostile": "NOT_RUN",
+      "hostile": "PASS_EXTERNALLY_BYTE_VERIFIED",
       "reconstruction": "NOT_RUN",
       "comparison": "NOT_RUN"
     },
@@ -316,6 +306,15 @@
       "external_generation": "EVIDENCE--continuation11-recovery-20261015T152347Z-g18--PC-LEAK-v1-r1.json",
       "external_sha256": "b18a6967518789e2f1d07ae751187fdc926eb6d861ab25386bd66c5403f37b25",
       "replacement_count": 1,
+      "raw_readback_equal": true
+    },
+    "hostile": {
+      "report_sha256": "c392fb93a9346bbd4d5ce33c856409ba6af7f8dae62dec7c29f8763cb90b46f0",
+      "manifest_sha256": "7f42d29f3dbb29f0b635a310cb96ad7fda5390ad361310f6a47ff832cabd5e0c",
+      "checklist_revision": 16,
+      "checklist_sha256": "ef7ada9b66560a376d9963ec9f695b7534b21835cc712c228d00be122f40f84b",
+      "external_generation": "EVIDENCE--continuation11-recovery-20261015T152347Z-g18--PC-HOSTILE-v1.json",
+      "external_sha256": "ee59f08c3f992f07282c594c0f27d281e9ca2971f4dccc9635fdba9c3f28af51",
       "raw_readback_equal": true
     }
   },
@@ -363,7 +362,14 @@
       "start_utc": "2026-10-15T15:28:37Z",
       "end_utc": "2026-10-15T15:29:08Z",
       "seconds": 31
+    },
+    {
+      "role": "PC-HOSTILE-v1",
+      "start_utc": "2026-10-15T15:33:53Z",
+      "end_utc": "2026-10-15T15:38:51Z",
+      "seconds": 298,
+      "qualification": "Reported decision interval; preceding mathematical-input reading not separated, so not an exact all-activity total."
     }
   ],
-  "recovered_verification_seconds": 31
+  "recovered_verification_seconds": 329
 }
