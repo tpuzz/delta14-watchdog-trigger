@@ -23,7 +23,7 @@
   "active_math_elapsed_seconds": null,
   "aggregate_worker_seconds": 0,
   "active_workers": [],
-  "current_assignment": "Freeze stronger candidate from completed norm W2 plus compatible pair descent, then fresh sequential leakage/hostile/reconstruction/comparison.",
+  "current_assignment": "Fresh sequential verification of paired-residual-v2; first leakage.",
   "first_unfinished_action": "Freeze combined candidate v2; fresh leakage audit.",
   "source_instructions": "/ChatGPT-Research-State/delta14-mixed-tate/delta14-paired-label-4h-hourly-instructions-v1-20261015.txt",
   "source_instructions_sha256": "3c1b6adb2b2e7b98b3d3d7de8c87c19f86ee0ef2c71310a6b4405395143c31e3",
@@ -48,13 +48,13 @@
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
   "clock_reset": false,
-  "last_heartbeat_utc": "2026-10-15T13:54:32.975Z",
+  "last_heartbeat_utc": "2026-10-15T13:57:16.935Z",
   "recovery_mode": "DIRECT-RESUME existing campaign under newly confirmed bounded authorization",
   "persistent_goal_status": "No new discovery; inherited campaign limitation retained.",
-  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--norm-w2-return.json",
-  "latest_verified_dropbox_generation_sha256": "51e666d86e356c18b277a83478b5b1306d2578d5f1f412d373351ed0af908dd3",
+  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--residual-v2-freeze.json",
+  "latest_verified_dropbox_generation_sha256": "7a460e935f4588a9f03bc19aa31841259d24db9256f0d3f9ab2c0e228f656029",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
-  "dropbox_heartbeat_path": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--norm-w2-return.json",
+  "dropbox_heartbeat_path": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--residual-v2-freeze.json",
   "supervisor_actions_run_id": 38740824534,
   "supervisor_job_id": 116442382345,
   "baseline_revisions": {
@@ -108,6 +108,35 @@
     "externally_byte_verified": true
   },
   "candidate": {
+    "name": "paired-residual-v2",
+    "proof_sha256": "beff4d97780cd88b9480729d76bccae45d5278ccd769827bf78f764d50068ec5",
+    "contract_sha256": "76549cef14fdb381dc3554237982148b8824424ddbf32f7fc5a6572f88ee8a22",
+    "brief_sha256": "6def798e5ca82f8545f506320d33cc60790a3e3f60cb30d7544775b4441fd14f",
+    "status": "candidate",
+    "gates": {
+      "leakage": "NOT_RUN",
+      "hostile": "NOT_RUN",
+      "reconstruction": "NOT_RUN",
+      "comparison": "NOT_RUN"
+    }
+  },
+  "leakage_return": {
+    "report": "AUDITS/PD-LEAK-v1/LEAKAGE_REPORT.md",
+    "report_sha256": "2dbacdb98deca1493ca57b676a8a5ce57fe91b1a3c353ccc41a92e956e98d437",
+    "manifest": "AUDITS/PD-LEAK-v1/INPUT_OUTPUT_MANIFEST.json",
+    "manifest_sha256": "97042cd4b6455bb0b3b1980be9d66447b5ed2391810bf55c0c53ddce802c3b54",
+    "verdict": "PASS",
+    "math_end_utc": "2026-10-15T13:42:56Z",
+    "externally_byte_verified": true
+  },
+  "timing_qualification": "Root top-level counter was a conservative wall-union screen bound, including some interleaved administration, not exact active-mathematics telemetry. The13:35:34 feasibility decision is retained as an early/upper-bound gate; no assertion that exactly1200 active seconds had elapsed. Worker exact intervals separately retained. No budget reset or extension; continuation allowance is the explicit bounded13:55 test.",
+  "wall_elapsed_since_math_start_seconds": 2494,
+  "norm_w2_external_evidence": {
+    "name": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--norm-w2-return.json",
+    "sha256": "51e666d86e356c18b277a83478b5b1306d2578d5f1f412d373351ed0af908dd3",
+    "raw_readback_equal": true
+  },
+  "candidate_v1": {
     "name": "paired-descent-obstruction-v1",
     "proof_sha256": "a3b8ceb3f750f920480799253af5f219bd3fc38e5edccea8dfce00148624a248",
     "contract_sha256": "77a7fecbbaeab1a67d21cd9afbda3cde5070882bae2038c71e549a7a08bb1c25",
@@ -123,21 +152,5 @@
       "comparison": "NOT_RUN"
     },
     "disposition": "FROZEN_AUXILIARY; may be superseded by strictly stronger combined candidate, not failed."
-  },
-  "leakage_return": {
-    "report": "AUDITS/PD-LEAK-v1/LEAKAGE_REPORT.md",
-    "report_sha256": "2dbacdb98deca1493ca57b676a8a5ce57fe91b1a3c353ccc41a92e956e98d437",
-    "manifest": "AUDITS/PD-LEAK-v1/INPUT_OUTPUT_MANIFEST.json",
-    "manifest_sha256": "97042cd4b6455bb0b3b1980be9d66447b5ed2391810bf55c0c53ddce802c3b54",
-    "verdict": "PASS",
-    "math_end_utc": "2026-10-15T13:42:56Z",
-    "externally_byte_verified": true
-  },
-  "timing_qualification": "Root top-level counter was a conservative wall-union screen bound, including some interleaved administration, not exact active-mathematics telemetry. The13:35:34 feasibility decision is retained as an early/upper-bound gate; no assertion that exactly1200 active seconds had elapsed. Worker exact intervals separately retained. No budget reset or extension; continuation allowance is the explicit bounded13:55 test.",
-  "wall_elapsed_since_math_start_seconds": 2284,
-  "norm_w2_external_evidence": {
-    "name": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--norm-w2-return.json",
-    "sha256": "51e666d86e356c18b277a83478b5b1306d2578d5f1f412d373351ed0af908dd3",
-    "raw_readback_equal": true
   }
 }
