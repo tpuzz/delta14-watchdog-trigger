@@ -14,11 +14,10 @@
   "math_start_utc": "2026-10-15T07:55:12.444Z",
   "active_math_elapsed_seconds": 251.936741,
   "active_workers": [
-    "pf_hostile_v1",
-    "generic_lattice_w2"
+    "generic_lattice_w2_finalize_only"
   ],
   "current_assignment": "PF-HOSTILE-v1; RELATIVE-LATTICE-W2",
-  "first_unfinished_action": "Persist PF leakage then isolated hostile audit; lattice W2 hard stop09:13Z.",
+  "first_unfinished_action": "Persist hostile audit then fresh proof-blind PF reconstruction; finalize incomplete lattice W2 metadata without credit.",
   "launch_kit": "delta14-relative-generic-launch-v1-20261015.zip",
   "launch_kit_sha256": "49cde9d2aea51d8d1d32c10434718fad4ff07ade2cc5fd5aaf2e7d032ee9936a",
   "source_capsule": "AUTONOMOUS--continuation9-recovery-20261014T212819Z-9b87a01c8656--g13--terminal--RESUME_CAPSULE.zip",
@@ -196,9 +195,9 @@
   },
   "provenance_note": "Pinned terminal capsule contains stale recovery START_HERE. Terminal FINAL_STATUS and live heartbeat supersede it. No previous completed gate repeated.",
   "source_statement_pending": false,
-  "last_heartbeat_utc": "2026-10-15T09:12:14.844Z",
-  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--pf-leak-v1.json",
-  "latest_verified_dropbox_generation_sha256": "94fd7ae0db283ce4096941d55357b7e34aace353e6c19b1383e9a5ca1d25e9d1",
+  "last_heartbeat_utc": "2026-10-15T09:17:21.665Z",
+  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--pf-hostile-v1.json",
+  "latest_verified_dropbox_generation_sha256": "93d0c3063da7d183a65415ae5e8d3da55e490466e87081f0fac143d83a751c85",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
   "mathematical_work_authorized": true,
   "source_statement_sha256": "76482cf9eb1e459429efa4fcdff74dd986fcb39889a48c40193642e63f23f32d",
@@ -252,7 +251,7 @@
       "no_clock_reset": true
     },
     "RELATIVE-GEOMETRY": {
-      "active_math_elapsed_seconds": 1301.240427,
+      "active_math_elapsed_seconds": 1481.240427,
       "math_segment_start_utc": null,
       "status": "first_wave_synthesized_pause_old_mechanism",
       "independent_wave_credit": 1,
@@ -274,7 +273,8 @@
         }
       ],
       "gate_overrun_seconds": 101.240427,
-      "decision": "PAUSE normalization/single-label elimination; candidate obstruction requires full cadence. A fresh second independent wave may test equivariant pair correspondence, with unchanged cumulative clock."
+      "decision": "PAUSE normalization/single-label elimination; candidate obstruction requires full cadence. A fresh second independent wave may test equivariant pair correspondence, with unchanged cumulative clock.",
+      "post_gate_root_pairing_sanity_charge_seconds": 180
     }
   },
   "baseline_revisions": {
@@ -311,13 +311,13 @@
       "status": "candidate",
       "gates": {
         "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED",
-        "hostile": "RUNNING",
+        "hostile": "MATHEMATICAL_PASS_LOCAL_PENDING_EXTERNAL; PF07 deferred to comparison",
         "reconstruction": "NOT_RUN",
         "comparison": "NOT_RUN"
       }
     }
   },
-  "current_checkpoint": "pf-leak-v1",
+  "current_checkpoint": "pf-hostile-v1",
   "preliminary_generic_planning": {
     "status": "root-only exploratory notes, no result or independent credit",
     "RELATIVE-LATTICE": {
