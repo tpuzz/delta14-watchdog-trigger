@@ -14,8 +14,8 @@
   "math_start_utc": "2026-10-15T07:55:12.444Z",
   "active_math_elapsed_seconds": 251.936741,
   "active_workers": [],
-  "current_assignment": "Reconcile complete locally saved DEC-SOURCE return, then exact candidate verification if permitted",
-  "first_unfinished_action": "Persist and byte-verify complete DEC-SOURCE report and actual manifest before any verification role.",
+  "current_assignment": "Freeze exact no-section candidate contract and proof-blind brief; then leakage check",
+  "first_unfinished_action": "Candidate freeze and sequential four-gate verification; no old completed gate repeated.",
   "launch_kit": "delta14-relative-generic-launch-v1-20261015.zip",
   "launch_kit_sha256": "49cde9d2aea51d8d1d32c10434718fad4ff07ade2cc5fd5aaf2e7d032ee9936a",
   "source_capsule": "AUTONOMOUS--continuation9-recovery-20261014T212819Z-9b87a01c8656--g13--terminal--RESUME_CAPSULE.zip",
@@ -193,14 +193,14 @@
   },
   "provenance_note": "Pinned terminal capsule contains stale recovery START_HERE. Terminal FINAL_STATUS and live heartbeat supersede it. No previous completed gate repeated.",
   "source_statement_pending": false,
-  "last_heartbeat_utc": "2026-10-15T10:32:15.341Z",
+  "last_heartbeat_utc": "2026-10-15T10:34:17.988Z",
   "latest_verified_dropbox_generation": "AUTONOMOUS--continuation10-recovery-20261015T103125Z-g16--g16--bootstrap.json",
   "latest_verified_dropbox_generation_sha256": "3c8adb4b23578e4603af8818c9a008e2975be0238f424bed8e66c71e98daa1d8",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
   "mathematical_work_authorized": true,
   "source_statement_sha256": "76482cf9eb1e459429efa4fcdff74dd986fcb39889a48c40193642e63f23f32d",
-  "supervisor_actions_run_id": 38715260641,
-  "supervisor_verification_level": "Actual run38715260641 job116356506243 in_progress; regression checks success; supervise step active.",
+  "supervisor_actions_run_id": 38720989688,
+  "supervisor_verification_level": "Actual run38720989688 job116375254526 in_progress; checkout and regression preflight success; supervise active.",
   "math_segment_start_utc": null,
   "epoch": {
     "number": 3,
@@ -217,7 +217,7 @@
       "decision": "GO: narrow character-line proof available, general tensor assertion excluded"
     },
     "RELATIVE-LATTICE": {
-      "active_math_elapsed_seconds": 2529.872838,
+      "active_math_elapsed_seconds": 3217.872838,
       "math_segment_start_utc": null,
       "status": "W2_interrupted_incomplete_no_credit",
       "independent_wave_credit": 1,
@@ -294,8 +294,8 @@
       }
     },
     "DEC-SOURCE-SPECIALIZATION": {
-      "status": "running",
-      "active_math_elapsed_seconds": 202,
+      "status": "COMPLETE_CANDIDATE_EXTERNALLY_BYTE_VERIFIED",
+      "active_math_elapsed_seconds": 890,
       "parent_family": "RELATIVE-LATTICE",
       "root_charge_seconds": 202,
       "new_worker_allowance_seconds": 900,
@@ -303,7 +303,17 @@
       "absolute_local_stop_utc": "2026-10-15T10:18:00Z",
       "reset": false,
       "decision": "Materially new recorded primary-source existence/instantiation and specialization check; not a retry of the expired W2.",
-      "math_segment_start_utc": "2026-10-15T10:03:18.489Z"
+      "math_segment_start_utc": null,
+      "worker_actual_start_utc": "2026-10-15T10:03:50Z",
+      "worker_active_closed_utc": "2026-10-15T10:15:18Z",
+      "worker_seconds": 688,
+      "gate_decision": "GO_TO_VERIFICATION_ONLY",
+      "return_sha256": "a0a9973cff7f803dd05869d928eef8aa175044431456886375f7b900034e0329",
+      "manifest_sha256": "38e24074383f2adaaa0b3db496b882ec1d1652acab2a014ac38a69e44fccc384",
+      "external_packet": "DEC-SOURCE-v1-actual-return-and-inputs.zip",
+      "external_packet_sha256": "2dc2ea28f462cb5af01dc0cf1b9fbd585052c28e59d6378801de0dc254ce72e3",
+      "independent_wave_credit": 0,
+      "credit_note": "Complete isolated return persisted; root synthesis pending. No theorem promotion."
     }
   },
   "baseline_revisions": {
@@ -519,7 +529,7 @@
   "stop_reason": null,
   "predecessor_run_id": "continuation10-recovery-20261015T094314Z-a23632894cf5",
   "predecessor_generation": 15,
-  "recovery_research_started": false,
+  "recovery_research_started": true,
   "source_generation_verified_in_recovery": {
     "path": "AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--lattice-w2-incomplete.json",
     "sha256": "3ea0e7b68da05af3825c8813ae586df851a04b07ecdac52226afc3063f55fa6f"
@@ -532,7 +542,7 @@
   },
   "recovery_bootstrap_note": "No old audit repeated; current delta generation plus exact PF payloads verified. Old epoch capsule used only for unchanged launch authorization. Prior runtime incident retained as historical.",
   "recovery_bootstrap_raw_readback_equal": true,
-  "recovery_math_start_utc": "2026-10-15T09:46:46.678Z",
+  "recovery_math_start_utc": "2026-10-15T10:34:13.070Z",
   "pf_reconstruction_return": {
     "report_sha256": "260444a3a31ce7eb6ee10197797efd37968a3a30e525fd228d3eef27170686b2",
     "manifest_sha256": "59bf5403d26bb97c006c6ab6665c0eb20d044520242ff804ff143f8f8804fe7a",
