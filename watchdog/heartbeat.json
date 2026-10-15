@@ -13,16 +13,9 @@
   "research_started": true,
   "math_start_utc": "2026-10-15T07:55:12.444Z",
   "active_math_elapsed_seconds": 251.936741,
-  "active_workers": [
-    {
-      "task_name": "/root/product_recon_v1",
-      "assignment": "PRODUCT-RECON-v1",
-      "status": "running",
-      "replacement_count": 0
-    }
-  ],
-  "current_assignment": "PRODUCT-RECON-v1",
-  "first_unfinished_action": "Complete proof-blind reconstruction, externally verify its complete report and manifest, then compare.",
+  "active_workers": [],
+  "current_assignment": "PRODUCT-COMP-v1",
+  "first_unfinished_action": "Externally byte-verify reconstruction and actual manifest, then fresh comparison.",
   "launch_kit": "delta14-relative-generic-launch-v1-20261015.zip",
   "launch_kit_sha256": "49cde9d2aea51d8d1d32c10434718fad4ff07ade2cc5fd5aaf2e7d032ee9936a",
   "source_capsule": "AUTONOMOUS--continuation9-recovery-20261014T212819Z-9b87a01c8656--g13--terminal--RESUME_CAPSULE.zip",
@@ -200,7 +193,7 @@
   },
   "provenance_note": "Pinned terminal capsule contains stale recovery START_HERE. Terminal FINAL_STATUS and live heartbeat supersede it. No previous completed gate repeated.",
   "source_statement_pending": false,
-  "last_heartbeat_utc": "2026-10-15T08:18:11.941Z",
+  "last_heartbeat_utc": "2026-10-15T08:25:22.479Z",
   "latest_verified_dropbox_generation": "AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--product-hostile-v1.json",
   "latest_verified_dropbox_generation_sha256": "76c1a7a82470f9a708f1bb4bbdfd460d9b8d5b3b088d4aa63db553891a553d26",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
@@ -246,7 +239,7 @@
       "gates": {
         "leakage": "PASS_EXTERNALLY_BYTE_VERIFIED",
         "hostile": "PASS_EXTERNALLY_BYTE_VERIFIED",
-        "reconstruction": "NOT_RUN",
+        "reconstruction": "COMPLETE_LOCAL_PENDING_EXTERNAL",
         "comparison": "NOT_RUN"
       }
     }
@@ -255,11 +248,11 @@
   "preliminary_generic_planning": {
     "status": "root-only exploratory notes, no result or independent credit",
     "RELATIVE-LATTICE": {
-      "active_math_elapsed_seconds": 240,
+      "active_math_elapsed_seconds": 420,
       "basis": "conservative charge for root exploratory reasoning during product verification; no search agent yet"
     },
     "RELATIVE-GEOMETRY": {
-      "active_math_elapsed_seconds": 180,
+      "active_math_elapsed_seconds": 300,
       "basis": "conservative charge for root exploratory reasoning during product verification; no search agent yet"
     }
   }
