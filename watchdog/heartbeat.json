@@ -4,11 +4,11 @@
   "authorization_id": "exact-class-breakthrough-4h-20261015-v1",
   "run_id": "exact-class-breakthrough-20261015T195016Z-g20",
   "lease_generation": 20,
-  "status": "running",
+  "status": "paused_runtime_distress",
   "authorization_start_utc": "2026-10-15T19:50:16.938319Z",
   "hard_deadline_utc": "2026-10-15T23:50:16.938319Z",
   "delivery_start_utc": "2026-10-15T23:40:16.938319Z",
-  "last_heartbeat_utc": "2026-10-15T22:31:53.796Z",
+  "last_heartbeat_utc": "2026-10-15T22:35:17.623Z",
   "research_started": true,
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
@@ -17,8 +17,26 @@
   "latest_verified_dropbox_capsule": "BREAKTHROUGH--exact-class-breakthrough-4h-20261015-v1--g20--searches-recovered--RESUME_CAPSULE.zip",
   "latest_verified_dropbox_capsule_sha256": "4345bd93f1e4e6711bfebb3f5a9d7aa9358f08576930f838d79bd719e35ed718",
   "supervisor_actions_run_id": 38797869629,
-  "supervisor_verification_level": "Actual supervisor job inspected 2026-10-15T21:54Z: supervision in progress; setup, checkout and regression successful.",
-  "execution_environment_status": "offline reported by worker exec server; root date probe stalled and terminated; bounded recovery underway; mathematics continues in context only",
+  "supervisor_verification_level": "Actual supervisor job inspected2026-10-15T22:32Z: supervision in_progress; setup checkout regression success.",
+  "execution_environment_status": "coordinator-level outage: shared exec backend reported 409 Conflict environment_offline; root date probe stalled; bounded cleanup completed; all three workers returned interruption records",
   "new_local_artifact_writes_confirmed": false,
-  "last_verified_checkpoint_retained": true
+  "last_verified_checkpoint_retained": true,
+  "runtime_stop_recorded_utc": "2026-10-15T22:35:17.623Z",
+  "mathematical_workflow_status": "INCOMPLETE",
+  "delivery_artifact_status": "INCOMPLETE",
+  "terminal_signal_emitted": false,
+  "interrupted_assignment_ids": [
+    "SECANT-BLOCK4-v1-RECONSTRUCTION-v1",
+    "MONOMIAL-EXACT-W1",
+    "COUPLED-ADJOINT-W2"
+  ],
+  "interrupted_assignment_credit": "No complete return, final manifest, verification-gate advance or independent-wave credit for these interrupted assignments.",
+  "pending_mutation_checks": [
+    "AUDITS/secant-block4-v1/reconstruction-v1/PROPER_SUPPORTS.md: write unconfirmed",
+    "ROUTES/COUPLED-ADJOINT-W2/quotient_structure_check.py and related log/certificate: writes/execution unconfirmed",
+    "ROOT_NOTES/FINITE-NORMALIZER-ESCAPE-SCREEN-v1.md: root queued write never confirmed"
+  ],
+  "first_unfinished_action": "In a healthy environment, recover the last verified capsule, inspect actual interrupted output bytes, and resume only the exact authorized unfinished assignments. A fresh proof-blind replacement must receive only its original allowed inputs, not the interrupted derivation. Actual reconstruction report and manifest must be externally byte-verified before comparison.",
+  "recovery_directive": "This is an actual infrastructure interruption, not a route-based stop. The original authorization and absolute deadline remain unchanged. Direct-resume only before 2026-10-15T23:50:16.938319Z with delivery reserve starting23:40:16.938319Z; no automatic successor or reset.",
+  "runtime_disclosure": "Newest in-context worker additions were preserved in conversation but could not be written or externally verified. Last verified checkpoint does not contain every later draft."
 }
