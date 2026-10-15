@@ -32,17 +32,8 @@
   "math_segment_start_utc": null,
   "active_math_elapsed_seconds": null,
   "aggregate_worker_seconds": null,
-  "active_workers": [
-    {
-      "task": "PR-COMPARE-v2",
-      "agent": "/root/pr_compare_v2",
-      "status": "running",
-      "math_stop_utc": "2026-10-15T14:57:00Z",
-      "delivery_utc": "2026-10-15T14:59:00Z",
-      "replacement_count": 0
-    }
-  ],
-  "current_assignment": "Fresh comparison v2 active; complete compactification candidate frozen and queued for its own sequential cadence. No search active.",
+  "active_workers": [],
+  "current_assignment": "Persisting complete residual-v2 comparison before promotion; no active worker.",
   "first_unfinished_action": "Receive and reconcile PR-COMPARE-v2 final report/manifest, externally persist and byte-verify before any promotion; then begin paired-compact-conic-v1 leakage as next sequential verification role.",
   "source_instructions": "/ChatGPT-Research-State/delta14-mixed-tate/delta14-paired-label-4h-hourly-instructions-v1-20261015.txt",
   "source_instructions_sha256": "3c1b6adb2b2e7b98b3d3d7de8c87c19f86ee0ef2c71310a6b4405395143c31e3",
@@ -67,13 +58,13 @@
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
   "clock_reset": false,
-  "last_heartbeat_utc": "2026-10-15T14:55:14.653Z",
+  "last_heartbeat_utc": "2026-10-15T15:01:33.558Z",
   "recovery_mode": "DIRECT-RESUME existing campaign under newly confirmed bounded authorization",
   "persistent_goal_status": "No new discovery; inherited campaign limitation retained.",
-  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--comparison-await-return.json",
-  "latest_verified_dropbox_generation_sha256": "4b2727c2caf4f62713797605f3b20ec3ba58602314c227c368335b013f3605e4",
+  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--residual-v2-comparison.json",
+  "latest_verified_dropbox_generation_sha256": "ca2384260a7ddcc9668e34d392c1b16eaf801888b34b176fd110c2c6b06c21d9",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
-  "dropbox_heartbeat_path": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--comparison-await-return.json",
+  "dropbox_heartbeat_path": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--residual-v2-comparison.json",
   "supervisor_actions_run_id": 38740824534,
   "supervisor_job_id": 116442382345,
   "baseline_revisions": {
@@ -173,6 +164,13 @@
       "name": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--residual-v2-freeze.json",
       "sha256": "7a460e935f4588a9f03bc19aa31841259d24db9256f0d3f9ab2c0e228f656029",
       "raw_readback_equal": true
+    },
+    "comparison": {
+      "report_sha256": "1ae906d771a539f8dc58072fbcb68d249c9a5035461635590c16b55e13110828",
+      "manifest_sha256": "18edaff22ffc9bf69807a1df55e9b200fd47fb8b49d2064be3110ea8d926eff5",
+      "verdict": "PASS_PENDING_EXTERNAL_BYTE_VERIFICATION",
+      "math_end_utc": "2026-10-15T14:52:56.512272070Z",
+      "draft_delay_seconds": 146.174593278
     }
   },
   "leakage_return": {
@@ -185,7 +183,7 @@
     "externally_byte_verified": true
   },
   "timing_qualification": "Root top-level counter was a conservative wall-union screen bound, including some interleaved administration, not exact active-mathematics telemetry. The13:35:34 feasibility decision is retained as an early/upper-bound gate; no assertion that exactly1200 active seconds had elapsed. Worker exact intervals separately retained. No budget reset or extension; continuation allowance is the explicit bounded13:55 test.",
-  "wall_elapsed_since_math_start_seconds": 5971,
+  "wall_elapsed_since_math_start_seconds": 6349,
   "norm_w2_external_evidence": {
     "name": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--norm-w2-return.json",
     "sha256": "51e666d86e356c18b277a83478b5b1306d2578d5f1f412d373351ed0af908dd3",
