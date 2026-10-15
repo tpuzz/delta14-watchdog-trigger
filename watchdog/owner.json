@@ -4,8 +4,8 @@
   "owner_run_id": "continuation10-recovery-20261015T094314Z-a23632894cf5",
   "generation": 15,
   "status": "active",
-  "last_renewed_utc": "2026-10-15T10:06:13.670Z",
-  "lease_expires_utc": "2026-10-15T10:18:13.670Z",
+  "last_renewed_utc": "2026-10-15T10:08:49.592Z",
+  "lease_expires_utc": "2026-10-15T10:20:49.592Z",
   "predecessor_run_id": "continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7",
   "claim_reason": "Checked recovery of explicit coordinator interruption with released ownership; unchanged authorization and clocks."
 }
