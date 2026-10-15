@@ -4,8 +4,8 @@
   "owner_run_id": "continuation11-paired-label-20261015T130749Z-28d8ccde1490",
   "generation": 17,
   "status": "active",
-  "last_renewed_utc": "2026-10-15T13:11:00.377Z",
-  "lease_expires_utc": "2026-10-15T13:23:00.377Z",
+  "last_renewed_utc": "2026-10-15T13:16:26.262Z",
+  "lease_expires_utc": "2026-10-15T13:28:26.262Z",
   "predecessor_run_id": "continuation10-recovery-20261015T103125Z-g16",
   "claim_reason": "Explicit new continuation11 authorization; pinned instructions and continuation10 capsule actual bytes SHA256 verified; continuation10 terminal/inactive preserved."
 }
