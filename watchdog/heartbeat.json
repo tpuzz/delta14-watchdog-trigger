@@ -17,14 +17,31 @@
     "2026-10-15T16:07:49Z"
   ],
   "reassessments_completed": [],
-  "research_started": false,
-  "math_start_utc": null,
-  "math_segment_start_utc": null,
-  "active_math_elapsed_seconds": 0,
+  "research_started": true,
+  "math_start_utc": "2026-10-15T13:15:26.111Z",
+  "math_segment_start_utc": "2026-10-15T13:15:26.111Z",
+  "active_math_elapsed_seconds": 296,
   "aggregate_worker_seconds": 0,
-  "active_workers": [],
-  "current_assignment": "Mandatory bootstrap: persist initial state, matching heartbeat, start signal, inspect actual supervisor",
-  "first_unfinished_action": "After bootstrap, bounded original-family paired-label correspondence screen retaining D3, mu2^3 kernel, affine multiplier and all complements.",
+  "active_workers": [
+    {
+      "task": "PAIR-LIFT-W1",
+      "agent": "/root/pair_lift_w1",
+      "status": "running",
+      "dispatch_utc": "2026-10-15T13:18:20Z",
+      "local_stop_utc": "2026-10-15T13:29:30Z",
+      "replacement_count": 0
+    },
+    {
+      "task": "PAIR-CORRESP-W1",
+      "agent": "/root/pair_corresp_w1",
+      "status": "running",
+      "dispatch_utc": "2026-10-15T13:18:24Z",
+      "local_stop_utc": "2026-10-15T13:29:30Z",
+      "replacement_count": 0
+    }
+  ],
+  "current_assignment": "Two isolated paired-label first screens plus root original-family synthesis",
+  "first_unfinished_action": "Reconcile exact family-lift/correspondence returns, evaluate strict-reduction test; no class claim from cover degree.",
   "source_instructions": "/ChatGPT-Research-State/delta14-mixed-tate/delta14-paired-label-4h-hourly-instructions-v1-20261015.txt",
   "source_instructions_sha256": "3c1b6adb2b2e7b98b3d3d7de8c87c19f86ee0ef2c71310a6b4405395143c31e3",
   "source_capsule": "AUTONOMOUS--continuation10-recovery-20261015T103125Z-g16--g16--terminal-complete--RESUME_CAPSULE.zip",
@@ -43,16 +60,25 @@
   "existing_recovery_task_id": "6ace7f845e50819197062077fdcc8125",
   "existing_hourly_task_id": "6ace34e619e08191a0fafff81fa8714c",
   "hourly_backup_incident": "Observed disabled; existing hourly task re-enabled 2026-10-15T13:10:26Z; no duplicate.",
-  "watchdog_recovery_armed": false,
-  "supervisor_verification_level": "Pending actual supervisor start",
+  "watchdog_recovery_armed": true,
+  "supervisor_verification_level": "Actual job in_progress; checkout and regression tests success; supervise step in_progress, observed 2026-10-15T13:14:39Z. No end-to-end recovery certification.",
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
   "clock_reset": false,
-  "last_heartbeat_utc": "2026-10-15T13:11:44.548Z",
+  "last_heartbeat_utc": "2026-10-15T13:21:27.320Z",
   "recovery_mode": "DIRECT-RESUME existing campaign under newly confirmed bounded authorization",
   "persistent_goal_status": "No new discovery; inherited campaign limitation retained.",
-  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--initial.json",
-  "latest_verified_dropbox_generation_sha256": "d15a1365a83a1b5e24a5eaa33ef99d3be9b8674c9f011083c8fbf983ea87cc3d",
+  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--math-start.json",
+  "latest_verified_dropbox_generation_sha256": "7bfd8aee8a0f4744a7d8540d1ab8b860d6426cdb22427e3227daafdfc1f24cfe",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
-  "dropbox_heartbeat_path": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--initial.json"
+  "dropbox_heartbeat_path": "AUTONOMOUS--continuation11-paired-label-20261015T130749Z-28d8ccde1490--g17--math-start.json",
+  "supervisor_actions_run_id": 38740824534,
+  "supervisor_job_id": 116442382345,
+  "baseline_revisions": {
+    "STATEMENT": "76482cf9eb1e459429efa4fcdff74dd986fcb39889a48c40193642e63f23f32d",
+    "PROVED": "92f8d5ee3e1b878069f380ab26dfd236756a21b4fe3b1e71a6d921ec7547880b",
+    "FAILED": "28e72b0ced27f4b568cc18f2223382b68631ebf8a06268f3c57bd5423a6b34aa",
+    "AUDIT_CHECKLIST": "9ede295d1b248c5ab28e9615cbdcfbe4303c54eac44d384413106c331e4a2d92"
+  },
+  "active_math_accounting": "Conservative wall-union elapsed since first root math; includes brief preparation and interleaved administrative work, concurrent worker time not double counted. Aggregate worker separately at return."
 }
