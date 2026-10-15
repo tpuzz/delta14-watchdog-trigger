@@ -1,0 +1,71 @@
+{
+  "schema": "delta14-worker-interruption-reconciliation-v1",
+  "created_utc": "2026-10-15T09:37:06.065Z",
+  "run_id": "continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7",
+  "generation": 14,
+  "classification": "Administrative preservation only; no fresh mathematics, completion credit or promotion.",
+  "pf_recon_v1": {
+    "status": "INCOMPLETE_INITIAL_DRAFT_ONLY",
+    "known_saved": "campaign/AUDITS/PF-RECON-v1/RECONSTRUCTION.md",
+    "missing": [
+      "INPUT_OUTPUT_MANIFEST.json",
+      "complete final reconstruction"
+    ],
+    "output_hash": "not measured before stop",
+    "actual_inputs": [
+      [
+        "ALLOWLIST.json",
+        1066,
+        "761199cd5aa4c7a197ab3140c6d3ff9fc1615d96beb69536810e6339326f2c38"
+      ],
+      [
+        "STATEMENT.md",
+        3078,
+        "76482cf9eb1e459429efa4fcdff74dd986fcb39889a48c40193642e63f23f32d"
+      ],
+      [
+        "CONTRACT.md",
+        2183,
+        "2ca9857cddc38f19f8c679441fa34b725b5272ca12b35d4a41c0d4a26b998ac9"
+      ],
+      [
+        "BRIEF.md",
+        2394,
+        "c8195b096b2c36e571514d37279a0c2dcf88ab50000f607b892d26a32c17b022"
+      ],
+      [
+        "PAULI-v1.md",
+        2966,
+        "36b4504da2f77ca285adb73815a6c6a4f9ea8b12188628a71b00ded4a4ab489f"
+      ]
+    ],
+    "isolation": "Worker attests exact four content inputs plus allowlist only; no external source, other campaign material, siblings, or subagents. No mathematical program. Three local calls succeeded; parent coordinator distress caused interruption.",
+    "replacement_warning": "A fresh proof-blind reconstructer MUST NOT read the following draft or any interrupted-role mathematical discussion.",
+    "draft_exact": "# PF-RECON-v1 independent reconstruction\n\nStatus: INITIAL DRAFT; proof and provenance verification in progress.\n\nThis fresh same-family context read only ALLOWLIST.json and its four named inputs. All four sizes and SHA-256 hashes matched. No prior proof, other campaign file, search result, audit, or sibling context was inspected. This is independent reconstruction for verification and earns no search-wave credit.\n\nThe planned proof of claim 1 decomposes the permutation set into H/K orbits. If |K| is at least 4, the augmentation of the K-fixed image generator is divisible by 4. If |K| is 1 or 2, choose a complementary subspace W of dimension at least 2; its indicator vector belongs to L, so the sum of the orbit coefficients of c(2e_0) is even. This proves the required divisibility orbit by orbit. Since b takes values in A, the proposed equation has augmentation 0 modulo 4 on its right side at 2e_0, whereas inclusion has augmentation 2.\n\nFor claim 2, reciprocal factors obey 1+chi_a(p^{-1})=chi_{-a}(p)(1+chi_a(p)). The character ratio under inversion is therefore chi_{-2b+psi c}. The exact inversion identity is equivalent to i=-2b+psi c.\n\nFor claim 3, use the six affine two-point lines in F2^2 as a permutation basis. Send each line to its indicator vector. Fix one of the three linear directions K0. Send 2e_u to the sum of the three line generators through u minus the sum of the two generators of direction K0. Send the all-ones vector to the sum of all six generators minus twice that last sum. The relation sum_u(2e_u)=2 times the all-ones vector is preserved. The resulting composite is inclusion.\n\nA full standalone proof and final scope statement will replace this draft.\n"
+  },
+  "geometry_w2": {
+    "status": "INCOMPLETE_NO_COMPLETED_WAVE_CREDIT",
+    "known_saved": [
+      "campaign/ROUTES/RELATIVE-GEOMETRY/W2/RETURN.md initial unresolved draft",
+      "campaign/ROUTES/RELATIVE-GEOMETRY/W2/verify_inputs.py infrastructure verification source",
+      "campaign/ROUTES/RELATIVE-GEOMETRY/W2/input_verification.json16input records"
+    ],
+    "missing": [
+      "RESIDUAL_LEDGER.md",
+      "ACTIVE_CLOCK.json",
+      "INPUT_OUTPUT_MANIFEST.json"
+    ],
+    "output_hashes": "not captured",
+    "input_verification": "All16allowlisted inputs matched actual SHA256/size; W1 manifest hashed, content unused. Exact W2 packet only;no foreign route or external sources.",
+    "initial_draft_status": "UNRESOLVED — work in progress; no evaluated generic contribution and no global no-go claimed. Written just after2026-10-15T09:25:47.301257221Z.",
+    "pending_patch_status": "Persistence ambiguous: timing+patch call failed exec-server recovery; separate apply_patch yielded cell6; one1s wait still running; administrative termination returned cell6notfound. No inference patch committed.",
+    "pre_stop_composed_patch": "All sixteen inputs passed their listed SHA256 and byte-size checks. Write each label as (j,e) with j in F2^2, e in F2, and fix the paired direction (0,0,1). Put c_je=1+r_je^2, a_j=y_j0^2, and t_j=y_j1/y_j0. The subgroup of D3 with last linear coefficient zero is D2, acting by the same sign on both entries of each pair. Its quotient has coordinates a_j,t_j,w=product_j y_j0 with w^2=product_j a_j. The remaining last-coordinate sign sends every t_j to -t_j and fixes a_j,w. Thus the complete quotient is the original Q2 x P4, with P4=(G_m)^4/mu2. The four functions are z_j=a_j f_j(t,p), where f_j=c_j0+c_j1 t_j^2. On the open where every f_j is nonzero, the four-pair map has the presentation w^2 product_j f_j = product_j z_j, with all z_j,w,f_j nonzero. This equation alone is not a width-two evaluation. The complete actions, complements, and exact K status remain to be supplied.",
+    "clock": {
+      "charged_seconds": 360,
+      "basis": "Conservative continuous09:25:00–09:31:00Z covers assignment through coordinator stop instruction; exact worker stop not captured. No outage exclusion before stop; all later finalization administrative.",
+      "additional_allowance_seconds": 720,
+      "absolute_local_stop_utc": "2026-10-15T09:37:00Z",
+      "no_clock_reset": true
+    }
+  }
+}
