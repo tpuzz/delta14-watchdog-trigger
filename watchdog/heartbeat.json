@@ -15,7 +15,7 @@
   "active_math_elapsed_seconds": 251.936741,
   "active_workers": [],
   "current_assignment": "no-rational-section-v1 leakage check",
-  "first_unfinished_action": "Sequential leakage then hostile then proof-blind reconstruction then comparison.",
+  "first_unfinished_action": "Fresh leakage recheck of BRIEF-v2; old brief FAIL retained.",
   "launch_kit": "delta14-relative-generic-launch-v1-20261015.zip",
   "launch_kit_sha256": "49cde9d2aea51d8d1d32c10434718fad4ff07ade2cc5fd5aaf2e7d032ee9936a",
   "source_capsule": "AUTONOMOUS--continuation9-recovery-20261014T212819Z-9b87a01c8656--g13--terminal--RESUME_CAPSULE.zip",
@@ -193,9 +193,9 @@
   },
   "provenance_note": "Pinned terminal capsule contains stale recovery START_HERE. Terminal FINAL_STATUS and live heartbeat supersede it. No previous completed gate repeated.",
   "source_statement_pending": false,
-  "last_heartbeat_utc": "2026-10-15T10:36:43.430Z",
-  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation10-recovery-20261015T103125Z-g16--g16--candidate.json",
-  "latest_verified_dropbox_generation_sha256": "fff9e50850e58d89190c52cf390e97177d64308cad143db7f9dc8cfad092a45e",
+  "last_heartbeat_utc": "2026-10-15T10:40:27.775Z",
+  "latest_verified_dropbox_generation": "AUTONOMOUS--continuation10-recovery-20261015T103125Z-g16--g16--leak-v1.json",
+  "latest_verified_dropbox_generation_sha256": "aaa946441a19262aeececdf02a0dd4bcabd34712b11c09f4f17739475da66ac8",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
   "mathematical_work_authorized": true,
   "source_statement_sha256": "76482cf9eb1e459429efa4fcdff74dd986fcb39889a48c40193642e63f23f32d",
@@ -361,11 +361,12 @@
       "proof_sha256": "a0a9973cff7f803dd05869d928eef8aa175044431456886375f7b900034e0329",
       "contract_sha256": "dde680804b67d897bdeb5d1d57f36e8a02bf5549f1e2376d2228b4ac86fe44b2",
       "gates": {
-        "leakage": "NOT_RUN",
+        "leakage": "BRIEF_V1_FAIL_RECEIVED_PENDING_EXTERNAL_PUBLICATION",
         "hostile": "NOT_RUN",
         "reconstruction": "NOT_RUN",
         "comparison": "NOT_RUN"
-      }
+      },
+      "brief_version": 2
     }
   },
   "current_checkpoint": "runtime-interruption",
@@ -448,9 +449,9 @@
     "library_deliverable_save": "FAILED; no new Library file or xattrs created"
   },
   "runtime_recovery_authorization": "Fresh independently checked recovery may continue within original11:37:45Z reserve; afterward finalize-only. No reset, no continuation9 reopening.",
-  "new_independent_wave_credit": 2,
+  "new_independent_wave_credit": 3,
   "wave_counts_current": {
-    "RELATIVE_LATTICE": 1,
+    "RELATIVE_LATTICE": 2,
     "RELATIVE_GEOMETRY": 1
   },
   "emergency_publications": [
