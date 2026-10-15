@@ -195,7 +195,7 @@
   },
   "provenance_note": "Pinned terminal capsule contains stale recovery START_HERE. Terminal FINAL_STATUS and live heartbeat supersede it. No previous completed gate repeated.",
   "source_statement_pending": false,
-  "last_heartbeat_utc": "2026-10-15T08:28:42.831Z",
+  "last_heartbeat_utc": "2026-10-15T08:32:50.246Z",
   "latest_verified_dropbox_generation": "AUTONOMOUS--continuation10-relative-generic-20261015T075045Z-92d0c8d20bf7--g14--product-recon-v1.json",
   "latest_verified_dropbox_generation_sha256": "42c51627f4898242d5ce349fba2eea8ece530dcea5e73aceff67c8cb85e74b80",
   "latest_verified_dropbox_generation_raw_readback_equal": true,
