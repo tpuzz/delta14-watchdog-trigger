@@ -66,9 +66,9 @@
     "Missing original continuation-5 comparison-report/manifest bytes remain missing; no reconstruction of evidence.",
     "Inherited results retained at exact recorded scope and same-family status."
   ],
-  "last_heartbeat_utc": "2026-10-16T09:04:16.582Z",
-  "latest_verified_dropbox_generation": "J22--exact-class-J22-independent-4h-20261016-v1--g23--state-0002.json",
-  "latest_verified_dropbox_generation_sha256": "08b183a97d17fb5c1adbf6ed5806109ee1def5973dec31956f6c8fa3688d2076",
+  "last_heartbeat_utc": "2026-10-16T09:13:27.634Z",
+  "latest_verified_dropbox_generation": "J22--exact-class-J22-independent-4h-20261016-v1--g23--state-0003.json",
+  "latest_verified_dropbox_generation_sha256": "3d869e1a891d11a4e89e66c410a96739d31ca348431dfbb38e269c4a35e60ccf",
   "latest_verified_dropbox_capsule": "J22--exact-class-J22-independent-4h-20261016-v1--g23--hour-1--RESUME_CAPSULE.zip",
   "latest_verified_dropbox_capsule_sha256": "53cdeea3436e162b16d8e6661552d944d393210ba958c1b924586647c8602d2d",
   "capsule_role": "Current hour-one frontier, all returned actual proof/audit manifests, correction-v3, active assignments; verified77members",
@@ -83,7 +83,7 @@
     "no_substantive_work_during_lapse": true
   },
   "recovery_count": 1,
-  "research_elapsed_gross_seconds": 1630,
+  "research_elapsed_gross_seconds": 4017,
   "active_math_timing_qualification": "Not continuously instrumented; gross interval includes admin and file work",
   "current_state_publication": "J22--exact-class-J22-independent-4h-20261016-v1--g23--state-0003.json",
   "latest_verified_gate": {
