@@ -11,22 +11,20 @@
   "hard_deadline_utc": "2026-10-16T20:18:47Z",
   "delivery_start_utc": "2026-10-16T20:08:47Z",
   "status": "running",
-  "phase": "orb-w2-final-self-review",
+  "phase": "abs-w2-prepared",
   "research_started": true,
-  "active_workers": [
-    "orb_w2_g28_selfreview"
-  ],
-  "active_math_elapsed_seconds": 3253.0326189999996,
-  "math_segment_start_utc": "2026-10-16T17:57:26.205Z",
-  "last_heartbeat_utc": "2026-10-16T18:02:13.307Z",
-  "first_unfinished_action": "Complete only ORB-W2 final mathematical self-review and synthesis using its frozen allowlist and own saved artifacts; then, if authorized time remains, run prepared ABS-W2 revision 2.",
+  "active_workers": [],
+  "active_math_elapsed_seconds": 3576.827619,
+  "math_segment_start_utc": null,
+  "last_heartbeat_utc": "2026-10-16T18:06:59.383Z",
+  "first_unfinished_action": "Run only the prepared ABS-W2 revision 2 as the independent second ABS-MIXED wave using its frozen allowlist.",
   "watchdog_recovery_armed": true,
-  "coordination": "Generation 28 recovery active; private bootstrap raw-byte verified; GitHub supervisor run 38943557567 succeeded; isolated ORB-W2 self-review running.",
+  "coordination": "Generation 28 recovery active; supervisor run 38943557567 succeeded. ORB-W2 completed and was independently persisted/read back; ABS-W2 revision 2 is next.",
   "recovery_ack": true,
-  "latest_verified_dropbox_generation": "ABSOLUTE-QUOTIENT--exact-class-absolute-quotient-4h-20261016-v1--absolute-quotient-recovery-20261016T175413Z-g28--bootstrap.json",
-  "latest_verified_dropbox_generation_sha256": "f40a9874085802ec4e797e3848cbad0ac9fd65ffa9113bf488fd309b6e29f07a",
-  "latest_verified_dropbox_capsule": "ABSOLUTE-QUOTIENT--exact-class-absolute-quotient-4h-20261016-v1--absolute-quotient-recovery-20261016T175413Z-g28--bootstrap.zip",
-  "latest_verified_dropbox_capsule_sha256": "922240efe7a03a3a7913edaab64050982555243dc620862d8528ba9f3f1f9d1e",
+  "latest_verified_dropbox_generation": "ABSOLUTE-QUOTIENT--exact-class-absolute-quotient-4h-20261016-v1--absolute-quotient-recovery-20261016T175413Z-g28--orb-w2-complete-0002.json",
+  "latest_verified_dropbox_generation_sha256": "f63347440d8ea9a67315fc131e4652cbd643be4ddca8598612b855218f638520",
+  "latest_verified_dropbox_capsule": "ABSOLUTE-QUOTIENT--exact-class-absolute-quotient-4h-20261016-v1--absolute-quotient-recovery-20261016T175413Z-g28--orb-w2-complete-0002.zip",
+  "latest_verified_dropbox_capsule_sha256": "f0f9e24519610d8bcacf929cc92a6be2426632488a9764f6c3404da0f3aae5b1",
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
   "execution_checkpoint_complete": false,
@@ -40,11 +38,11 @@
   "preserved_wave_counts": {
     "L8-TORUS": 2,
     "PARITY-EXACT": 2,
-    "ORB-INVERSION": 1,
+    "ORB-INVERSION": 2,
     "ABS-MIXED": 1
   },
   "second_wave_status": {
-    "ORB-W2": "isolated final self-review running; no credit yet",
+    "ORB-W2": "complete; self-audited candidate only; no promotion",
     "ABS-W2": "prepared revision 2; not launched"
   },
   "historical_disclosure": "Continuation5 comparison PASS/hashes survive, but original comparison report bytes were not recovered and are not implied to exist."
