@@ -36,7 +36,7 @@
     }
   ],
   "epoch": 1,
-  "first_unfinished_action": "Complete supervisor bootstrap, then independently compute J22 via N and residual D8; separately freeze minimal bridge candidate with surjective eta and test three specified correction objections.",
+  "first_unfinished_action": "Finish independent full-open N quotient, freeze separate bridge/correction candidates, then sequential leakage/hostile/reconstruction/comparison gates with byte-verified outputs.",
   "promotion": "NONE_NEW",
   "global_campaign_status": "unresolved",
   "terminal_delivery_complete": false,
@@ -66,7 +66,7 @@
     "Missing original continuation-5 comparison-report/manifest bytes remain missing; no reconstruction of evidence.",
     "Inherited results retained at exact recorded scope and same-family status."
   ],
-  "last_heartbeat_utc": "2026-10-16T08:13:30.223Z",
+  "last_heartbeat_utc": "2026-10-16T08:21:40.549Z",
   "latest_verified_dropbox_generation": "J22--exact-class-J22-independent-4h-20261016-v1--g22--bootstrap.json",
   "latest_verified_dropbox_generation_sha256": "d62c932dcd2c5d45af01d4e7fe0f867b1d29ca41cb62c8efeb4bb79f0f87f73a",
   "latest_verified_dropbox_capsule": "BREAKTHROUGH--exact-class-breakthrough-recovery-20261015T230900Z-g21--terminal-complete--RESUME_CAPSULE.zip",
