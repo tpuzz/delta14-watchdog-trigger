@@ -8,7 +8,7 @@
   "hard_deadline_utc": "2026-10-16T16:51:27Z",
   "delivery_start_utc": "2026-10-16T16:41:27Z",
   "status": "running",
-  "phase": "epoch-1-second-independent-wave",
+  "phase": "epoch-1-independent-search-and-local-verification",
   "research_started": true,
   "active_math_elapsed_seconds": null,
   "active_workers": [
@@ -39,10 +39,10 @@
     "Missing g23 reconstruction manifest earns no credit; g24 replacement credited."
   ],
   "mathematical_campaign_id": "delta14-exact-class-20261015T182114Z",
-  "last_heartbeat_utc": "2026-10-16T13:35:52.932Z",
+  "last_heartbeat_utc": "2026-10-16T13:47:04.413Z",
   "authorization_start_utc": "2026-10-16T12:51:27Z",
-  "latest_verified_dropbox_generation": "LATTICE--exact-class-lattice-torsion-4h-20261016-v1--lattice-20261016T125259Z--checkpoint-0002-state.json",
-  "latest_verified_dropbox_generation_sha256": "1a79b7001d192e65f52484b6601144e4dcadcb1643c6e55f4b248ef784de4a16",
+  "latest_verified_dropbox_generation": "LATTICE--exact-class-lattice-torsion-4h-20261016-v1--lattice-20261016T125259Z--state-0003.json",
+  "latest_verified_dropbox_generation_sha256": "bc5e62601b8486f5c6a7d94ef20f457a5e0fd44e24cb2d9a3c417662f427afba",
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
   "math_start_utc": "2026-10-16T12:55:50.747Z",
