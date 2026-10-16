@@ -17,14 +17,14 @@
     "2026-10-16T11:01:23Z"
   ],
   "status": "running",
-  "phase": "bridge-leakage-and-J22-toric-search",
+  "phase": "bridge-hostile-and-J22-toric-search",
   "research_started": true,
   "math_start_utc": "2026-10-16T08:06:30Z",
   "active_math_elapsed_seconds": null,
   "active_workers": [
     {
-      "id": "BRIDGE-A-v1-LEAKAGE",
-      "agent": "/root/bridge_a_leakage",
+      "id": "BRIDGE-A-v1-HOSTILE",
+      "agent": "/root/bridge_a_hostile",
       "state": "active",
       "recovery_count": 0
     },
@@ -36,7 +36,7 @@
     }
   ],
   "epoch": 1,
-  "first_unfinished_action": "Finish bridge leakage gate, persist actual return before hostile audit; continue residual toric full-open quotient search. Corrections frozen, separate cadence pending.",
+  "first_unfinished_action": "Finish hostile audit; persist exact return before proof-blind reconstruction. Continue toric search, then screen finite-curve central-product mechanism.",
   "promotion": "NONE_NEW",
   "global_campaign_status": "unresolved",
   "terminal_delivery_complete": false,
@@ -66,9 +66,9 @@
     "Missing original continuation-5 comparison-report/manifest bytes remain missing; no reconstruction of evidence.",
     "Inherited results retained at exact recorded scope and same-family status."
   ],
-  "last_heartbeat_utc": "2026-10-16T08:36:34.469Z",
-  "latest_verified_dropbox_generation": "J22--exact-class-J22-independent-4h-20261016-v1--g22--bootstrap.json",
-  "latest_verified_dropbox_generation_sha256": "d62c932dcd2c5d45af01d4e7fe0f867b1d29ca41cb62c8efeb4bb79f0f87f73a",
+  "last_heartbeat_utc": "2026-10-16T08:45:37.057Z",
+  "latest_verified_dropbox_generation": "J22--exact-class-J22-independent-4h-20261016-v1--g23--state-0002.json",
+  "latest_verified_dropbox_generation_sha256": "08b183a97d17fb5c1adbf6ed5806109ee1def5973dec31956f6c8fa3688d2076",
   "latest_verified_dropbox_capsule": "J22--exact-class-J22-independent-4h-20261016-v1--g23--checkpoint-0001--RESUME_CAPSULE.zip",
   "latest_verified_dropbox_capsule_sha256": "22d7aa85d097874f6fb753e428453fdc7c17e9c3c535aa88f9ed0d7bcf8ca4f3",
   "capsule_role": "Current candidate bytes and actual author manifests, externally raw-byte verified; source archives omitted and pinned",
@@ -85,5 +85,13 @@
   "recovery_count": 1,
   "research_elapsed_gross_seconds": 1630,
   "active_math_timing_qualification": "Not continuously instrumented; gross interval includes admin and file work",
-  "current_state_publication": "J22--exact-class-J22-independent-4h-20261016-v1--g23--state-0002.json"
+  "current_state_publication": "J22--exact-class-J22-independent-4h-20261016-v1--g23--state-0002.json",
+  "latest_verified_gate": {
+    "candidate": "bridge-a-v1",
+    "gate": "leakage",
+    "verdict": "PASS",
+    "artifact": "J22--exact-class-J22-independent-4h-20261016-v1--g23--bridge-a-v1-leakage.zip",
+    "sha256": "3ecf6ff3434dc5f58b152a02b074a98870bc83c85d19e19290ac79a39e4721e4",
+    "externally_byte_verified": true
+  }
 }
