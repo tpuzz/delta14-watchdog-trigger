@@ -2,13 +2,14 @@
   "campaign_id": "delta14-mixed-tate-20261012T210157Z",
   "supervision_campaign_id": "delta14-mixed-tate-20261012T210157Z",
   "mathematical_campaign_id": "delta14-exact-class-20261015T182114Z",
-  "authorization_id": "exact-class-breakthrough-4h-20261015-v1",
-  "owner_run_id": "exact-class-breakthrough-recovery-20261015T230900Z-g21",
-  "generation": 21,
-  "status": "released",
-  "last_renewed_utc": "2026-10-15T23:28:00.000Z",
-  "lease_expires_utc": "2026-10-15T23:31:00.000Z",
-  "released_at_utc": "2026-10-15T23:31:00.000Z",
-  "predecessor_run_id": "exact-class-breakthrough-20261015T195016Z-g20",
-  "release_reason": "Generation 21 terminal generation, capsule, final status, heartbeat, and terminal signal were published and read back; no active workers and no promotion."
+  "authorization_id": "exact-class-J22-independent-4h-20261016-v1",
+  "owner_run_id": "exact-class-J22-independent-20261016T080123Z-g22",
+  "generation": 22,
+  "status": "active",
+  "last_renewed_utc": "2026-10-16T08:02:30.056Z",
+  "lease_expires_utc": "2026-10-16T08:14:30.056Z",
+  "authorization_start_utc": "2026-10-16T08:01:23Z",
+  "hard_deadline_utc": "2026-10-16T12:01:23Z",
+  "delivery_start_utc": "2026-10-16T11:51:23Z",
+  "predecessor_run_id": "exact-class-breakthrough-recovery-20261015T230900Z-g21"
 }
