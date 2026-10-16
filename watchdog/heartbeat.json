@@ -17,13 +17,26 @@
     "2026-10-16T11:01:23Z"
   ],
   "status": "running",
-  "phase": "reconcile-author-returns-and-freeze-candidates",
+  "phase": "bridge-leakage-and-J22-toric-search",
   "research_started": true,
   "math_start_utc": "2026-10-16T08:06:30Z",
-  "active_math_elapsed_seconds": 0,
-  "active_workers": [],
+  "active_math_elapsed_seconds": null,
+  "active_workers": [
+    {
+      "id": "BRIDGE-A-v1-LEAKAGE",
+      "agent": "/root/bridge_a_leakage",
+      "state": "active",
+      "recovery_count": 0
+    },
+    {
+      "id": "J22-TORIC-CONTINUATION-v1",
+      "agent": "/root/j22_toric_continuation",
+      "state": "active",
+      "recovery_count": 0
+    }
+  ],
   "epoch": 1,
-  "first_unfinished_action": "Verify author manifests, freeze bridge/correction packages and persist exact bytes; begin sequential verification and residual torus quotient search.",
+  "first_unfinished_action": "Finish bridge leakage gate, persist actual return before hostile audit; continue residual toric full-open quotient search. Corrections frozen, separate cadence pending.",
   "promotion": "NONE_NEW",
   "global_campaign_status": "unresolved",
   "terminal_delivery_complete": false,
@@ -53,21 +66,24 @@
     "Missing original continuation-5 comparison-report/manifest bytes remain missing; no reconstruction of evidence.",
     "Inherited results retained at exact recorded scope and same-family status."
   ],
-  "last_heartbeat_utc": "2026-10-16T08:30:38.962Z",
+  "last_heartbeat_utc": "2026-10-16T08:36:34.469Z",
   "latest_verified_dropbox_generation": "J22--exact-class-J22-independent-4h-20261016-v1--g22--bootstrap.json",
   "latest_verified_dropbox_generation_sha256": "d62c932dcd2c5d45af01d4e7fe0f867b1d29ca41cb62c8efeb4bb79f0f87f73a",
-  "latest_verified_dropbox_capsule": "BREAKTHROUGH--exact-class-breakthrough-recovery-20261015T230900Z-g21--terminal-complete--RESUME_CAPSULE.zip",
-  "latest_verified_dropbox_capsule_sha256": "957704e6a958868473d3dd485291e6c5fe456b7f65ca04836c99b0e4fc42bfe4",
-  "capsule_role": "historical source only; current authorization and first action are in latest_verified_dropbox_generation",
-  "supervisor_verification_level": "One-shot regression/startup check PASS; enabled hourly recovery is actual ongoing cadence",
+  "latest_verified_dropbox_capsule": "J22--exact-class-J22-independent-4h-20261016-v1--g23--checkpoint-0001--RESUME_CAPSULE.zip",
+  "latest_verified_dropbox_capsule_sha256": "22d7aa85d097874f6fb753e428453fdc7c17e9c3c535aa88f9ed0d7bcf8ca4f3",
+  "capsule_role": "Current candidate bytes and actual author manifests, externally raw-byte verified; source archives omitted and pinned",
+  "supervisor_verification_level": "Generation23 one-shot regression and recovery check PASS; existing enabled hourly recovery is ongoing cadence",
   "math_segment_start_utc": "2026-10-16T08:06:30Z",
-  "supervisor_actions_run_id": 38871431091,
-  "supervisor_job_id": 116876186779,
+  "supervisor_actions_run_id": 38874529161,
+  "supervisor_job_id": 116886261636,
   "ownership_incident": {
     "expired_utc": "2026-10-16T08:29:08.960Z",
     "accidental_renewal_utc": "2026-10-16T08:29:12.246Z",
     "corrected_generation": 23,
     "no_substantive_work_during_lapse": true
   },
-  "recovery_count": 1
+  "recovery_count": 1,
+  "research_elapsed_gross_seconds": 1630,
+  "active_math_timing_qualification": "Not continuously instrumented; gross interval includes admin and file work",
+  "current_state_publication": "J22--exact-class-J22-independent-4h-20261016-v1--g23--state-0002.json"
 }
