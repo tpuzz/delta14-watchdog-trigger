@@ -16,26 +16,19 @@
     "2026-10-16T10:01:23Z",
     "2026-10-16T11:01:23Z"
   ],
-  "status": "running",
-  "phase": "bridge-a-fresh-comparison-v1",
+  "status": "terminal",
+  "phase": "terminal-reconciliation-complete",
   "research_started": true,
   "math_start_utc": "2026-10-16T08:06:30Z",
   "active_math_elapsed_seconds": null,
-  "active_workers": [
-    {
-      "id": "BRIDGE-A-v1-COMPARISON",
-      "agent": "/root/bridge_comparison_v1",
-      "recovery_count": 0,
-      "status": "running fresh exact comparison"
-    }
-  ],
+  "active_workers": [],
   "epoch": 2,
-  "first_unfinished_action": "Await fresh bridge-a-v1 comparison; persist/read back exact report and manifest. If PASS, promote bridge-a-v1 at same-family verifier-backed status. Then stop new mathematics at reserve and reconcile terminal state.",
-  "promotion": "NONE_NEW",
+  "first_unfinished_action": "Under a fresh explicit authorization only, obtain independent exact-class information evaluating b22-h5 or the equivalent FM_c(5) finite-monodromy stack; do not repeat bridge-a-v1 gates.",
+  "promotion": "bridge-a-v1",
   "global_campaign_status": "unresolved",
-  "terminal_delivery_complete": false,
-  "dropbox_final_status_verified": false,
-  "watchdog_recovery_armed": true,
+  "terminal_delivery_complete": true,
+  "dropbox_final_status_verified": true,
+  "watchdog_recovery_armed": false,
   "automatic_successor_authorized": false,
   "persistent_goal": "unavailable; checked once",
   "precedence": "g21 terminal status supersedes g20 running fields; earlier authorizations remain stopped",
@@ -60,12 +53,12 @@
     "Missing original continuation-5 comparison-report/manifest bytes remain missing; no reconstruction of evidence.",
     "Inherited results retained at exact recorded scope and same-family status."
   ],
-  "last_heartbeat_utc": "2026-10-16T11:34:34.706Z",
-  "latest_verified_dropbox_generation": "J22--exact-class-J22-independent-4h-20261016-v1--g24--state-0001-recovery-bootstrap.json",
-  "latest_verified_dropbox_generation_sha256": "6b67703c48f09631f2c372a4cf8e4d70855bca822839a50725a87439f8727d9b",
-  "latest_verified_dropbox_capsule": "J22--exact-class-J22-independent-4h-20261016-v1--g23--runtime-interrupted-v2--RESUME_CAPSULE.zip",
-  "latest_verified_dropbox_capsule_sha256": "9f088eee859f8b06a98fb0357f5fc5e45c2eed1f654d98bab7bf8d0da746b070",
-  "capsule_role": "Authoritative predecessor interrupted frontier; 90 manifest entries and ZIP integrity externally verified. Generation-24 recovery bootstrap verified separately.",
+  "last_heartbeat_utc": "2026-10-16T11:36:07.353Z",
+  "latest_verified_dropbox_generation": "J22--exact-class-J22-independent-4h-20261016-v1--g24--terminal-complete.json",
+  "latest_verified_dropbox_generation_sha256": "0d7efb3cea39ec4b08b869e2cde2819b1dab5b548d3817123dffb74864c5a84a",
+  "latest_verified_dropbox_capsule": "J22--exact-class-J22-independent-4h-20261016-v1--g24--terminal-complete--RESUME_CAPSULE.zip",
+  "latest_verified_dropbox_capsule_sha256": "adeaca45ab6b8151fc0c14e1ffedc0e71ea52a6830445aef79ad6bea04b82876",
+  "capsule_role": "Terminal generation-24 frontier; 29 manifest entries externally verified; ZIP integrity PASS",
   "supervisor_verification_level": "Generation-24 start signal read back; one-shot supervisor run 38892444998 completed success",
   "math_segment_start_utc": "2026-10-16T08:06:30Z",
   "ownership_incident": {
@@ -80,14 +73,14 @@
   "current_state_publication": "J22--exact-class-J22-independent-4h-20261016-v1--g24--state-0001-recovery-bootstrap.json",
   "latest_verified_gate": {
     "candidate": "bridge-a-v1",
-    "gate": "reconstruction",
-    "verdict": "COMPLETE",
-    "artifact": "J22--exact-class-J22-independent-4h-20261016-v1--g24--bridge-a-v1-reconstruction-replacement1--RECONSTRUCTION.md",
-    "sha256": "423009bef8a9fae10ffca456e9238483e9c6f18bcda6d943954198e167cdad49",
-    "manifest_sha256": "19c2f2ea9997771dc7bb31acd2c5cd8cfcd145f594a54feb2cb6348793cff81d",
+    "gate": "comparison",
+    "verdict": "PASS",
+    "artifact": "J22--exact-class-J22-independent-4h-20261016-v1--g24--bridge-a-v1-comparison-v1--COMPARISON.md",
+    "sha256": "2acae9b97b3ec343aad1bcb9c4319a76fa475157483457d8ff6ecb3e44b6355b",
+    "manifest_sha256": "c46b9da75cf631acb120ea0d5abb8867b494a87b33239c9b9df2c75bd5084563",
     "externally_byte_verified": true
   },
-  "epoch_health": "Fresh comparator reports hashes matched and mathematical checks presently pass; exact report/manifest still pending, so comparison remains NOT_RUN for gate credit until return",
+  "epoch_health": "Terminal generation, final status, and capsule externally read back; all 29 capsule manifest entries verified; no active workers",
   "completed_returns": [
     "BRIDGE-A-AUTHOR-v1",
     "CORRECTIONS-AUTHOR-v1",
@@ -95,7 +88,8 @@
     "BRIDGE-A-v1-HOSTILE",
     "J22-TORIC-CONTINUATION-v1",
     "CENTRAL-PRODUCT-CURVE-W1-candidate-return-reconciled",
-    "BRIDGE-A-v1-RECONSTRUCTION-REPLACEMENT1-COMPLETE"
+    "BRIDGE-A-v1-RECONSTRUCTION-REPLACEMENT1-COMPLETE",
+    "BRIDGE-A-v1-COMPARISON-v1-PASS"
   ],
   "current_correction_candidate": "corrections-v3",
   "latest_reassessment": "REASSESSMENTS/HOUR-1.md",
@@ -146,5 +140,29 @@
     "contract_sha256": "a87ec3bef359d17d7ba1fb1d539d833bdd742dbd7052244498799efe18057905",
     "exact_gap": "FM_c(5): evaluate the explicit finite-monodromy stack B_Gm M_s; the candidate identifies its defect as a unit multiple of d-1 but does not evaluate it",
     "promotion": "NONE"
+  },
+  "final_status_path": "/ChatGPT-Research-State/delta14-mixed-tate/FINAL_STATUS--exact-class-J22-independent-4h-20261016-v1--exact-class-J22-independent-recovery-20261016T111048Z-g24--g24.md",
+  "final_status_sha256": "5102bc19dc3d894d379fd604ac7fffddbba9042f4a4fea0c39320d6b13b63a1e",
+  "terminal_result_hash": "5102bc19dc3d894d379fd604ac7fffddbba9042f4a4fea0c39320d6b13b63a1e",
+  "verification": {
+    "bridge-a-v1": {
+      "leakage": "PASS",
+      "hostile": "PASS",
+      "reconstruction": "COMPLETE",
+      "comparison": "PASS",
+      "promotion": "PROMOTED",
+      "outside_family_audit": "NOT_RUN"
+    },
+    "central-product-curve-v1": {
+      "status": "candidate_only_unverified",
+      "promotion": "NONE"
+    },
+    "corrections-v3": {
+      "leakage": "NOT_RUN",
+      "hostile": "NOT_RUN",
+      "reconstruction": "NOT_RUN",
+      "comparison": "NOT_RUN",
+      "promotion": "NONE"
+    }
   }
 }
