@@ -4,8 +4,8 @@
   "supervision_campaign_id": "delta14-mixed-tate-20261012T210157Z",
   "mathematical_campaign_id": "delta14-exact-class-20261015T182114Z",
   "authorization_id": "exact-class-J22-independent-4h-20261016-v1",
-  "run_id": "exact-class-J22-independent-20261016T083000Z-g23",
-  "lease_generation": 23,
+  "run_id": "exact-class-J22-independent-recovery-20261016T111048Z-g24",
+  "lease_generation": 24,
   "confirmed_at_utc": "2026-10-16T08:01:23Z",
   "authorization_start_utc": "2026-10-16T08:01:23Z",
   "delivery_start_utc": "2026-10-16T11:51:23Z",
@@ -16,18 +16,18 @@
     "2026-10-16T10:01:23Z",
     "2026-10-16T11:01:23Z"
   ],
-  "status": "interrupted",
-  "phase": "interrupted-checkpoint-complete-fresh-recovery-needed",
+  "status": "checkpointed",
+  "phase": "recovery-bootstrap-verified-before-mathematics",
   "research_started": true,
   "math_start_utc": "2026-10-16T08:06:30Z",
   "active_math_elapsed_seconds": null,
   "active_workers": [],
   "epoch": 2,
-  "first_unfinished_action": "Recover exact missing bridge reconstruction manifest or rerun fresh proof-blind reconstruction under its original allowlist without reading its preserved draft; then compare. Reconcile interrupted curve packet. Correction-v3 gates remain pending.",
+  "first_unfinished_action": "Recover the exact missing bridge reconstruction manifest or rerun a fresh proof-blind reconstruction under its original allowlist without reading the preserved draft, then persist and compare; reconcile the interrupted central-product curve packet; correction-v3 gates remain pending.",
   "promotion": "NONE_NEW",
   "global_campaign_status": "unresolved",
   "terminal_delivery_complete": false,
-  "dropbox_final_status_verified": true,
+  "dropbox_final_status_verified": false,
   "watchdog_recovery_armed": true,
   "automatic_successor_authorized": false,
   "persistent_goal": "unavailable; checked once",
@@ -53,26 +53,24 @@
     "Missing original continuation-5 comparison-report/manifest bytes remain missing; no reconstruction of evidence.",
     "Inherited results retained at exact recorded scope and same-family status."
   ],
-  "last_heartbeat_utc": "2026-10-16T09:27:32.144Z",
-  "latest_verified_dropbox_generation": "J22--exact-class-J22-independent-4h-20261016-v1--g23--state-0005-runtime-interrupted.json",
-  "latest_verified_dropbox_generation_sha256": "f4c01a9367585e264ecc27fdf1177c5c3d7fd90e215f58bbb1c356ed003bad5a",
+  "last_heartbeat_utc": "2026-10-16T11:13:40.930Z",
+  "latest_verified_dropbox_generation": "J22--exact-class-J22-independent-4h-20261016-v1--g24--state-0001-recovery-bootstrap.json",
+  "latest_verified_dropbox_generation_sha256": "6b67703c48f09631f2c372a4cf8e4d70855bca822839a50725a87439f8727d9b",
   "latest_verified_dropbox_capsule": "J22--exact-class-J22-independent-4h-20261016-v1--g23--runtime-interrupted-v2--RESUME_CAPSULE.zip",
   "latest_verified_dropbox_capsule_sha256": "9f088eee859f8b06a98fb0357f5fc5e45c2eed1f654d98bab7bf8d0da746b070",
-  "capsule_role": "Interrupted exact frontier with actual bridge report and missing-manifest receipt, actual interrupted curve packet, all candidate/correction/gate bytes; 91 members externally verified",
-  "supervisor_verification_level": "Generation23 one-shot regression and recovery check PASS; existing enabled hourly recovery is ongoing cadence",
+  "capsule_role": "Authoritative predecessor interrupted frontier; 90 manifest entries and ZIP integrity externally verified. Generation-24 recovery bootstrap verified separately.",
+  "supervisor_verification_level": "Generation-24 start signal and Actions verification pending",
   "math_segment_start_utc": "2026-10-16T08:06:30Z",
-  "supervisor_actions_run_id": 38874529161,
-  "supervisor_job_id": 116886261636,
   "ownership_incident": {
     "expired_utc": "2026-10-16T08:29:08.960Z",
     "accidental_renewal_utc": "2026-10-16T08:29:12.246Z",
     "corrected_generation": 23,
     "no_substantive_work_during_lapse": true
   },
-  "recovery_count": 1,
+  "recovery_count": 2,
   "research_elapsed_gross_seconds": 4769,
   "active_math_timing_qualification": "Not continuously instrumented; gross interval includes admin and file work",
-  "current_state_publication": "J22--exact-class-J22-independent-4h-20261016-v1--g23--state-0005-runtime-interrupted.json",
+  "current_state_publication": "J22--exact-class-J22-independent-4h-20261016-v1--g24--state-0001-recovery-bootstrap.json",
   "latest_verified_gate": {
     "candidate": "bridge-a-v1",
     "gate": "hostile",
@@ -81,7 +79,7 @@
     "sha256": "93483fd2deb8755fafbe9036d51926681ab168d70d5c6b28a557ca852351d65b",
     "externally_byte_verified": true
   },
-  "epoch_health": "epoch2 stopped for coordinator exec transport disconnect; one administrative cleanup pass completed; fresh environment required for mathematical continuation",
+  "epoch_health": "Generation-24 owner and minimal recovery bootstrap read back and byte-verified; no substantive mathematics started in recovery yet",
   "completed_returns": [
     "BRIDGE-A-AUTHOR-v1",
     "CORRECTIONS-AUTHOR-v1",
@@ -121,12 +119,18 @@
     "expected_sha256": "672b5add68bfe1829ce22f95107e30c0350c2b17d667d5f80a0a64b5c925dbae",
     "actual_bytes_available": false
   },
-  "final_status_path": "/ChatGPT-Research-State/delta14-mixed-tate/FINAL_STATUS--exact-class-J22-independent-4h-20261016-v1--g23--runtime-interrupted-v2.md",
-  "final_status_sha256": "6a7a30c527aebf56c4464a7b419f48f4a2e5965d876975b855b4e1b351422968",
   "execution_checkpoint_complete": true,
-  "recovery_eligible": true,
+  "recovery_eligible": false,
   "received_unreconciled": [
     "BRIDGE-A-v1-RECONSTRUCTION text present; actual manifest missing",
     "CENTRAL-PRODUCT-CURVE-W1 actual packet present; assignment interrupted before completed return"
-  ]
+  ],
+  "recovered_from": {
+    "run_id": "exact-class-J22-independent-20261016T083000Z-g23",
+    "generation": 23,
+    "status": "interrupted",
+    "owner_status": "inactive",
+    "lease_expired_utc": "2026-10-16T09:28:07.053Z",
+    "no_live_worker_confirmed": true
+  }
 }
