@@ -1,74 +1,63 @@
 {
+  "schema": "delta14-j22-initial-v1",
   "campaign_id": "delta14-mixed-tate-20261012T210157Z",
+  "supervision_campaign_id": "delta14-mixed-tate-20261012T210157Z",
   "mathematical_campaign_id": "delta14-exact-class-20261015T182114Z",
-  "authorization_id": "exact-class-breakthrough-4h-20261015-v1",
-  "run_id": "exact-class-breakthrough-recovery-20261015T230900Z-g21",
-  "lease_generation": 21,
-  "status": "terminal",
-  "phase": "reconciled_clean_stop",
-  "authorization_start_utc": "2026-10-15T19:50:16.938319Z",
-  "hard_deadline_utc": "2026-10-15T23:50:16.938319Z",
-  "delivery_start_utc": "2026-10-15T23:40:16.938319Z",
-  "last_heartbeat_utc": "2026-10-15T23:30:34.000Z",
-  "research_started": true,
-  "terminal_delivery_complete": true,
-  "dropbox_final_status_verified": true,
-  "latest_verified_dropbox_generation": "BREAKTHROUGH--exact-class-breakthrough-recovery-20261015T230900Z-g21--terminal-complete.json",
-  "latest_verified_dropbox_generation_sha256": "75cf42b6503aea30d97089630bc341fd2e2a3925a87dcbc84d26e54dbf433be2",
-  "latest_verified_dropbox_capsule": "BREAKTHROUGH--exact-class-breakthrough-recovery-20261015T230900Z-g21--terminal-complete--RESUME_CAPSULE.zip",
-  "latest_verified_dropbox_capsule_sha256": "957704e6a958868473d3dd485291e6c5fe456b7f65ca04836c99b0e4fc42bfe4",
-  "latest_verified_final_status": "FINAL_STATUS--exact-class-breakthrough-recovery-20261015T230900Z-g21.md",
-  "latest_verified_final_status_sha256": "49ec5a33cb7c6d24c21ef6fc39040446e0e3bc4e2cf476b53deba3836b317a7d",
-  "recovery_from_run_id": "exact-class-breakthrough-20261015T195016Z-g20",
-  "recovery_reason": "Confirmed coordinator-level environment_offline interruption with incomplete delivery and released ownership.",
-  "terminal_reason": "Exact interrupted assignments recovered. Both fresh secant reconstruction replacements were incomplete/no-credit, comparison was not run, monomial and coupled returns are candidate-only, and no result was promoted.",
-  "local_bounded_task_status": "recovered_and_reconciled_without_promotion",
-  "global_campaign_status": "unresolved",
-  "promotion": "NONE",
-  "first_unfinished_action": "Under a separately authorized successor only, prove the width-two projective Pauli Grassmannian quotient lemma without finite-degree division or nonsplit-gerbe shortcut; then perform fresh reconstruction before comparison.",
-  "supervisor_verification_level": "Actual generation-21 supervisor job observed in progress; checkout and regression tests succeeded and supervision step was running.",
-  "supervisor_actions_run_id": 38821854293,
-  "supervisor_job_id": 116720291260,
+  "authorization_id": "exact-class-J22-independent-4h-20261016-v1",
+  "run_id": "exact-class-J22-independent-20261016T080123Z-g22",
+  "lease_generation": 22,
+  "confirmed_at_utc": "2026-10-16T08:01:23Z",
+  "authorization_start_utc": "2026-10-16T08:01:23Z",
+  "delivery_start_utc": "2026-10-16T11:51:23Z",
+  "hard_deadline_utc": "2026-10-16T12:01:23Z",
+  "delivery_reserve_minutes": 10,
+  "reassessment_utc": [
+    "2026-10-16T09:01:23Z",
+    "2026-10-16T10:01:23Z",
+    "2026-10-16T11:01:23Z"
+  ],
+  "status": "running",
+  "phase": "bootstrap",
+  "research_started": false,
+  "math_start_utc": null,
+  "active_math_elapsed_seconds": 0,
   "active_workers": [],
-  "verification": {
-    "historical_leakage": "PASS",
-    "historical_hostile": "PASS at exact fixed-width contract",
-    "reconstruction_replacement1": "INCOMPLETE_NO_CREDIT",
-    "reconstruction_replacement2": "INCOMPLETE_NO_CREDIT",
-    "comparison": "NOT_RUN",
-    "promotion": "NONE"
-  },
-  "recovered_returns": [
+  "epoch": 1,
+  "first_unfinished_action": "Complete supervisor bootstrap, then independently compute J22 via N and residual D8; separately freeze minimal bridge candidate with surjective eta and test three specified correction objections.",
+  "promotion": "NONE_NEW",
+  "global_campaign_status": "unresolved",
+  "terminal_delivery_complete": false,
+  "dropbox_final_status_verified": false,
+  "watchdog_recovery_armed": true,
+  "automatic_successor_authorized": false,
+  "persistent_goal": "unavailable; checked once",
+  "precedence": "g21 terminal status supersedes g20 running fields; earlier authorizations remain stopped",
+  "sources": [
     {
-      "assignment": "MONOMIAL-EXACT-W1",
-      "status": "candidate_only_unverified",
-      "report_sha256": "bf543f23fa25cf327bf8fda19bfa2cccec967e95403c86d8d0354000b3765d35",
-      "manifest_sha256": "4bc8cf74cfee0676fd4779d2529d75583161258b8d6785089e0f61fb06523233",
-      "dropbox_raw_bytes_verified": true
+      "name": "BREAKTHROUGH--exact-class-breakthrough-recovery-20261015T230900Z-g21--terminal-complete.json",
+      "role": "terminal_pointer",
+      "sha256": null
     },
     {
-      "assignment": "COUPLED-ADJOINT-W2",
-      "status": "candidate_only_unverified",
-      "report_sha256": "4cbb3b215da1ea6784c903571dce172a053c607608330fb97e5bffffcd85b852",
-      "manifest_sha256": "0f1de707885cefbf12f635dca2365e2e7cf7d60c9075efc23f19565fcd9557fa",
-      "dropbox_raw_bytes_verified": true
+      "name": "BREAKTHROUGH--exact-class-breakthrough-recovery-20261015T230900Z-g21--terminal-complete--RESUME_CAPSULE.zip",
+      "role": "terminal_and_return_bytes",
+      "sha256": "957704e6a958868473d3dd485291e6c5fe456b7f65ca04836c99b0e4fc42bfe4"
     },
     {
-      "assignment": "SECANT-BLOCK4-v1-RECONSTRUCTION-v1",
-      "replacement": 1,
-      "status": "INCOMPLETE_NO_CREDIT",
-      "report_sha256": "11241f00b6b15940c2add8d81edcc97f9a50f88dfe8db6f921323091e461ce13",
-      "manifest_sha256": "20a1c000ee32bb4fc690eb1e48f323ed80832941d210ce3ee8380c1cf6475d5f",
-      "dropbox_raw_bytes_verified": true
-    },
-    {
-      "assignment": "SECANT-BLOCK4-v1-RECONSTRUCTION-v1",
-      "replacement": 2,
-      "status": "INCOMPLETE_NO_CREDIT",
-      "report_sha256": "965545c839781505f3c9290340be46a9b356a7cc55b74ff1cee8db14726c191a",
-      "manifest_sha256": "87e070a78bb41660d876a107f570c43ce5e2a81ea50ff0b55a8ebe878b536559",
-      "dropbox_raw_bytes_verified": true
+      "name": "BREAKTHROUGH--exact-class-breakthrough-4h-20261015-v1--g20--searches-recovered--RESUME_CAPSULE.zip",
+      "role": "earlier_proof_source_bytes",
+      "sha256": "4345bd93f1e4e6711bfebb3f5a9d7aa9358f08576930f838d79bd719e35ed718"
     }
   ],
-  "historical_continuation5_disclosure": "Comparison PASS and hashes survived, but the original comparison-report bytes were not recovered and are not claimed to exist."
+  "source_limitations": [
+    "Missing original continuation-5 comparison-report/manifest bytes remain missing; no reconstruction of evidence.",
+    "Inherited results retained at exact recorded scope and same-family status."
+  ],
+  "last_heartbeat_utc": "2026-10-16T08:05:17.272Z",
+  "latest_verified_dropbox_generation": "J22--exact-class-J22-independent-4h-20261016-v1--g22--bootstrap.json",
+  "latest_verified_dropbox_generation_sha256": "d62c932dcd2c5d45af01d4e7fe0f867b1d29ca41cb62c8efeb4bb79f0f87f73a",
+  "latest_verified_dropbox_capsule": "BREAKTHROUGH--exact-class-breakthrough-recovery-20261015T230900Z-g21--terminal-complete--RESUME_CAPSULE.zip",
+  "latest_verified_dropbox_capsule_sha256": "957704e6a958868473d3dd485291e6c5fe456b7f65ca04836c99b0e4fc42bfe4",
+  "capsule_role": "historical source only; current authorization and first action are in latest_verified_dropbox_generation",
+  "supervisor_verification_level": "pending; standing tasks both enabled"
 }
