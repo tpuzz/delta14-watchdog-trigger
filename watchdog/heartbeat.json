@@ -21,7 +21,7 @@
       "isolation": "fresh no inherited conversation; exact allowlist only"
     }
   ],
-  "last_heartbeat_utc": "2026-10-16T15:09:52.946Z",
+  "last_heartbeat_utc": "2026-10-16T15:11:19.892Z",
   "first_unfinished_action": "Complete fresh proof-blind reconstruction of LTC-v1 from the accepted brief and claim contract; persist and raw-byte verify the full return before comparison.",
   "watchdog_recovery_armed": true,
   "coordination": "Generation 26 ownership claimed atomically; Dropbox recovery bootstrap uploaded and raw-byte read back.",
