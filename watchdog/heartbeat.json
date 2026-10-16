@@ -7,14 +7,11 @@
   "confirmed_at_utc": "2026-10-16T12:51:27Z",
   "hard_deadline_utc": "2026-10-16T16:51:27Z",
   "delivery_start_utc": "2026-10-16T16:41:27Z",
-  "status": "running",
-  "phase": "epoch-1-independent-search-and-local-verification",
+  "status": "interrupted",
+  "phase": "infrastructure-stop-incomplete-delivery",
   "research_started": true,
   "active_math_elapsed_seconds": null,
-  "active_workers": [
-    "L8-W2",
-    "PARITY-W2"
-  ],
+  "active_workers": [],
   "source_hashes": [
     {
       "name": "J22--exact-class-J22-independent-4h-20261016-v1--g24--terminal-complete--RESUME_CAPSULE.zip",
@@ -29,7 +26,7 @@
       "sha256": "4345bd93f1e4e6711bfebb3f5a9d7aa9358f08576930f838d79bd719e35ed718"
     }
   ],
-  "first_unfinished_action": "Route intake and first authorized mathematical diagnostic; details in private instructions.",
+  "first_unfinished_action": "Recover actual completed second-wave and hostile-report bytes; read and reconcile reports and manifests, persist and raw-byte verify complete hostile return before any successor gate. Continue only under unchanged authorization/deadline after independent ownership checks.",
   "old_authorizations": "Completed and remain stopped",
   "watchdog_recovery_armed": true,
   "coordination": "g25 conditional ownership mutation succeeded and read back",
@@ -39,15 +36,63 @@
     "Missing g23 reconstruction manifest earns no credit; g24 replacement credited."
   ],
   "mathematical_campaign_id": "delta14-exact-class-20261015T182114Z",
-  "last_heartbeat_utc": "2026-10-16T13:47:04.413Z",
+  "last_heartbeat_utc": "2026-10-16T14:05:36.071Z",
   "authorization_start_utc": "2026-10-16T12:51:27Z",
   "latest_verified_dropbox_generation": "LATTICE--exact-class-lattice-torsion-4h-20261016-v1--lattice-20261016T125259Z--state-0003.json",
   "latest_verified_dropbox_generation_sha256": "bc5e62601b8486f5c6a7d94ef20f457a5e0fd44e24cb2d9a3c417662f427afba",
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
   "math_start_utc": "2026-10-16T12:55:50.747Z",
-  "math_segment_start_utc": "2026-10-16T12:55:50.747Z",
+  "math_segment_start_utc": null,
   "supervisor_verification_level": "g25 Actions 38903928090 job 116982671835 regression and one-shot check success; hourly backup and event recovery enabled; no continuous minute polling",
   "latest_verified_dropbox_capsule": "LATTICE--exact-class-lattice-torsion-4h-20261016-v1--lattice-20261016T125259Z--checkpoint-0002.zip",
-  "latest_verified_dropbox_capsule_sha256": "455d2692c8762220d10df3f19b708612d8b8b587eb55c7f9d323a48794441cd2"
+  "latest_verified_dropbox_capsule_sha256": "455d2692c8762220d10df3f19b708612d8b8b587eb55c7f9d323a48794441cd2",
+  "terminal_utc": "2026-10-16T14:05:36.071Z",
+  "execution_checkpoint_complete": false,
+  "recovery_eligible": true,
+  "authorization_complete": false,
+  "stop_reason": "Coordinator exec-server transport disconnected; bounded cleanup failed with environment_offline. Local artifact upload also failed. No substantive work resumed.",
+  "cleanup_attempts": 1,
+  "epoch_checkpoint_status": "First diagnostic recorded within 40 minutes. Hour-one reassessment and epoch-end checkpoint incomplete at infrastructure boundary; no timely completion claimed.",
+  "independent_wave_counts": {
+    "L8-TORUS": 1,
+    "PARITY-EXACT": 1
+  },
+  "second_wave_credit": "Full local returns reported complete, but coordinator reading/synthesis and external persistence unfinished; no second-wave credit yet.",
+  "new_promotions": [],
+  "active_math_time_estimate_minutes": [
+    45,
+    58
+  ],
+  "active_math_time_note": "Conservative unmeasured wall-clock estimate through report returns; excludes later infrastructure cleanup and does not add parallel agent hours.",
+  "latest_verified_local_gate": "LTC-v1 leakage only; hostile return locally received but full coordinator reconciliation and external verification incomplete.",
+  "latest_verified_gate_archive": "LATTICE--exact-class-lattice-torsion-4h-20261016-v1--lattice-20261016T125259Z--LTC-v1-LEAKAGE.zip",
+  "latest_verified_gate_archive_sha256": "f273aabe8d82e40ca1d80e70d5a4cb38d481872dc58a7aaf0b8235d0b10beb86",
+  "artifact_recovery_warning": "New hashes below are worker-reported identities, not proof bytes or root verification; do not recreate missing reports from summaries.",
+  "local_returns_unverified": [
+    {
+      "path": "run/ROUTES/L8-W2/REPORT.md",
+      "sha256": "106b1263104d4e430df149023173b7c63030c4fde885c60c6c2c704b85a1888f"
+    },
+    {
+      "path": "run/ROUTES/L8-W2/ACTUAL_MANIFEST.json",
+      "sha256": "d2b678e5ea0942e54d82f130220cce9460d31e77723f8ede23a65a4a1775079c"
+    },
+    {
+      "path": "run/ROUTES/PARITY-W2/REPORT.md",
+      "sha256": "022b00155ec4059646e67cb9b8a09c52aea9c55b0757610656803be5702299d5"
+    },
+    {
+      "path": "run/ROUTES/PARITY-W2/ACTUAL_MANIFEST.json",
+      "sha256": "4998a38e97b77e06a7670d6cab02e638bef85e74e7c9d26fbee6410812260c31"
+    },
+    {
+      "path": "run/AUDITS/LTC-v1-HOSTILE/REPORT.md",
+      "sha256": "7286c2c31d6f08bdad2ae25aa99fc8412e5e81081c1b6e598dbc21a20d94410f"
+    },
+    {
+      "path": "run/AUDITS/LTC-v1-HOSTILE/ACTUAL_MANIFEST.json",
+      "sha256": "3eb0ba48f5e5fa4c05d0ebf0224202e9fcff795c4d6fa6c8d17824491045d05a"
+    }
+  ]
 }
