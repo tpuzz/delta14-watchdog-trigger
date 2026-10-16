@@ -3,14 +3,14 @@
   "supervision_campaign_id": "delta14-mixed-tate-20261012T210157Z",
   "mathematical_campaign_id": "delta14-exact-class-20261015T182114Z",
   "authorization_id": "exact-class-J22-independent-4h-20261016-v1",
-  "owner_run_id": "exact-class-J22-independent-20261016T080123Z-g22",
-  "generation": 22,
-  "status": "inactive",
-  "last_renewed_utc": "2026-10-16T08:29:52.608Z",
-  "lease_expires_utc": "2026-10-16T08:29:52.608Z",
+  "owner_run_id": "exact-class-J22-independent-20261016T083000Z-g23",
+  "generation": 23,
+  "status": "active",
+  "last_renewed_utc": "2026-10-16T08:30:14.146Z",
+  "lease_expires_utc": "2026-10-16T08:42:14.146Z",
   "authorization_start_utc": "2026-10-16T08:01:23Z",
   "hard_deadline_utc": "2026-10-16T12:01:23Z",
   "delivery_start_utc": "2026-10-16T11:51:23Z",
-  "predecessor_run_id": "exact-class-breakthrough-recovery-20261015T230900Z-g21",
-  "release_reason": "Correct accidental post-expiry renewal; no substantive work or frontier publication occurred during lapse. Reclaim requires new generation."
+  "predecessor_run_id": "exact-class-J22-independent-20261016T080123Z-g22",
+  "claim_reason": "Same authorization recovery after four-second lease lapse; fixed original clocks, both author returns complete before lapse, no worker interruption."
 }
