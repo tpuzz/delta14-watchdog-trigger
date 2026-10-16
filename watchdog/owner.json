@@ -3,14 +3,14 @@
   "supervision_campaign_id": "delta14-mixed-tate-20261012T210157Z",
   "mathematical_campaign_id": "delta14-exact-class-20261015T182114Z",
   "authorization_id": "exact-class-J22-independent-4h-20261016-v1",
-  "owner_run_id": "exact-class-J22-independent-20261016T083000Z-g23",
-  "generation": 23,
-  "status": "inactive",
-  "last_renewed_utc": "2026-10-16T09:28:07.053Z",
-  "lease_expires_utc": "2026-10-16T09:28:07.053Z",
+  "owner_run_id": "exact-class-J22-independent-recovery-20261016T111048Z-g24",
+  "generation": 24,
+  "status": "active",
+  "last_renewed_utc": "2026-10-16T11:10:48.007Z",
+  "lease_expires_utc": "2026-10-16T11:22:48.007Z",
   "authorization_start_utc": "2026-10-16T08:01:23Z",
   "hard_deadline_utc": "2026-10-16T12:01:23Z",
   "delivery_start_utc": "2026-10-16T11:51:23Z",
-  "predecessor_run_id": "exact-class-J22-independent-20261016T080123Z-g22",
-  "claim_reason": "Same authorization recovery after four-second lease lapse; fixed original clocks, both author returns complete before lapse, no worker interruption."
+  "predecessor_run_id": "exact-class-J22-independent-20261016T083000Z-g23",
+  "claim_reason": "Exact-scope recovery of explicit interrupted/checkpoint-complete generation 23 after matching inactive expired lease; same authorization and immutable clocks."
 }
