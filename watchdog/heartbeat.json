@@ -10,65 +10,50 @@
   "authorization_start_utc": "2026-10-16T12:51:27Z",
   "hard_deadline_utc": "2026-10-16T16:51:27Z",
   "delivery_start_utc": "2026-10-16T16:41:27Z",
-  "status": "running",
-  "phase": "fresh-comparison-running",
+  "status": "terminal",
+  "phase": "clean-stop-local-promotion-global-unresolved",
   "research_started": true,
-  "active_workers": [
-    {
-      "assignment_id": "LTC-v1-COMPARISON",
-      "agent": "/root/ltc_comparison_g26",
-      "status": "running",
-      "isolation": "fresh no inherited conversation; exact candidate/reconstruction allowlist only"
-    }
-  ],
-  "last_heartbeat_utc": "2026-10-16T15:23:39.065Z",
-  "first_unfinished_action": "Complete fresh comparison of frozen LTC-v1 candidate and proof-blind reconstruction; persist and raw-byte verify return; promote only on exact PASS.",
+  "active_workers": [],
+  "last_heartbeat_utc": "2026-10-16T15:29:31.261Z",
+  "terminal_utc": "2026-10-16T15:29:31.261Z",
+  "first_unfinished_action": "None under this authorization. Any future mathematics requires new explicit authorization and must not repeat completed LTC-v1 gates.",
   "watchdog_recovery_armed": true,
-  "coordination": "Fresh comparator active; no sibling verification role.",
+  "coordination": "Generation 26 recovery complete; terminal generation, FINAL_STATUS, and capsule externally persisted and raw-byte verified.",
   "recovery_ack": true,
-  "recovery_ack_artifact": "LATTICE--exact-class-lattice-torsion-4h-20261016-v1--lattice-recovery-20261016T150144Z-g26--recovery-bootstrap.json",
-  "recovery_ack_artifact_sha256": "dedd8cc61483b79acdfa9bd2b473c1f3fc3e1cfa90c8fb2dc9fd5cf2cc343b26",
-  "predecessor_verified_generation": "LATTICE--exact-class-lattice-torsion-4h-20261016-v1--lattice-20261016T125259Z--state-0003.json",
-  "predecessor_verified_generation_sha256": "bc5e62601b8486f5c6a7d94ef20f457a5e0fd44e24cb2d9a3c417662f427afba",
-  "latest_verified_dropbox_generation": "LATTICE--exact-class-lattice-torsion-4h-20261016-v1--lattice-recovery-20261016T150144Z-g26--recovery-bootstrap.json",
-  "latest_verified_dropbox_generation_sha256": "dedd8cc61483b79acdfa9bd2b473c1f3fc3e1cfa90c8fb2dc9fd5cf2cc343b26",
-  "terminal_delivery_complete": false,
-  "dropbox_final_status_verified": false,
-  "execution_checkpoint_complete": false,
+  "latest_verified_dropbox_generation": "LATTICE--exact-class-lattice-torsion-4h-20261016-v1--lattice-recovery-20261016T150144Z-g26--terminal-0001.json",
+  "latest_verified_dropbox_generation_sha256": "4acd12f9c98558d305befa7a59dedf7a84dbe92fee9222da80d269acad923c14",
+  "latest_verified_dropbox_capsule": "LATTICE--exact-class-lattice-torsion-4h-20261016-v1--g26--TERMINAL-RESUME_CAPSULE.zip",
+  "latest_verified_dropbox_capsule_sha256": "9bc56b7950c8e768210bf30a782b92f75aca0611fd2667e3f8d1f28926c00ca5",
+  "latest_verified_final_status": "LATTICE--exact-class-lattice-torsion-4h-20261016-v1--g26--FINAL_STATUS.md",
+  "latest_verified_final_status_sha256": "6f9c74a20559abc0965ad2dd6055f72de26b7420625ffd3272291eda13ba995d",
+  "terminal_delivery_complete": true,
+  "dropbox_final_status_verified": true,
+  "execution_checkpoint_complete": true,
   "recovery_eligible": false,
-  "authorization_complete": false,
-  "stop_reason": null,
+  "authorization_complete": true,
+  "stop_reason": "Clean stop after recovery, complete sequential LTC-v1 verification, and local promotion; global Delta14 exact-class question remains unresolved.",
   "independent_wave_counts": {
     "L8-TORUS": 2,
     "PARITY-EXACT": 2
   },
-  "second_wave_credit": "L8-W2 and PARITY-W2 complete returns recovered, reconciled, persisted to Dropbox, and raw-byte verified; independent wave counts now 2/2. Their claims remain candidate.",
-  "latest_verified_local_gate": "LTC-v1 leakage PASS; hostile PASS; proof-blind reconstruction COMPLETE/PASS and externally raw-byte verified; comparison running.",
-  "latest_verified_gate_archive": "LATTICE--exact-class-lattice-torsion-4h-20261016-v1--lattice-20261016T125259Z--LTC-v1-LEAKAGE.zip",
-  "latest_verified_gate_archive_sha256": "f273aabe8d82e40ca1d80e70d5a4cb38d481872dc58a7aaf0b8235d0b10beb86",
-  "artifact_recovery_warning": "Worker-reported identities are not proof bytes; do not recreate missing reports from summaries.",
-  "recovered_artifacts": {
-    "L8-W2": {
-      "report_sha256": "106b1263104d4e430df149023173b7c63030c4fde885c60c6c2c704b85a1888f",
-      "manifest_sha256": "d2b678e5ea0942e54d82f130220cce9460d31e77723f8ede23a65a4a1775079c",
-      "archive_sha256": "586cd350923ef0f7edf54638a8082898b9f5ff0965feaa8883eea878fdb24b6b"
-    },
-    "PARITY-W2": {
-      "report_sha256": "022b00155ec4059646e67cb9b8a09c52aea9c55b0757610656803be5702299d5",
-      "manifest_sha256": "4998a38e97b77e06a7670d6cab02e638bef85e74e7c9d26fbee6410812260c31",
-      "archive_sha256": "b6803db5128078b20105dfd6219d78ff92534470a5a03e44457b7d35961b2782"
-    },
-    "LTC-v1-HOSTILE": {
-      "verdict": "PASS at exact six-conclusion contract; audit-only; no promotion",
-      "report_sha256": "7286c2c31d6f08bdad2ae25aa99fc8412e5e81081c1b6e598dbc21a20d94410f",
-      "manifest_sha256": "3eb0ba48f5e5fa4c05d0ebf0224202e9fcff795c4d6fa6c8d17824491045d05a",
-      "archive_sha256": "eac1deb12a720017a7e06d14033a5c0a48efd114378d2fd681b3bf4fec7ae729"
-    }
+  "second_wave_credit": "L8-W2 and PARITY-W2 complete second-wave returns recovered, reconciled, externally persisted, and raw-byte verified; both remain candidate-only.",
+  "new_promotions": [
+    "LTC-v1"
+  ],
+  "verification": {
+    "leakage": "PASS",
+    "hostile": "PASS at exact six-conclusion contract",
+    "proof_blind_reconstruction": "COMPLETE/PASS",
+    "comparison": "PASS",
+    "outside_family_or_human": "NOT_RUN"
   },
-  "reconstruction_artifacts": {
-    "report_sha256": "2924af10219096e7105c4961796037a9eda8d94e4ae1667abf43d536ce3a0e05",
-    "manifest_sha256": "3b5a8482a9a92175d904880bdb7cc666371aaf161647b00a4365ad3ea8ea3315",
-    "archive_sha256": "0f1d105ba7ddebbb4c6f3af9e1b9ee2af0e1c5af4a5dc65e5ad0cca563dbe44d",
-    "status": "COMPLETE/PASS at reconstruction scope; no global Delta14 conclusion"
-  }
+  "promoted_scope": "Exactly conclusions 1-6 of LTC-v1 claim contract; local lattice/finite-cover theorem only.",
+  "global_campaign_status": "unresolved",
+  "residual_gap": "No evaluation of width-seven absolute defect; no proof or refutation of global Delta14 exact-class question.",
+  "comparison_artifacts": {
+    "report_sha256": "49cc3add7a4993d3b51707622aaac9c10fa3039f1ca44bd38aa604d3c9e9180c",
+    "manifest_sha256": "72c27c32914fa47663d5b3ab7aa9214ae6b45a822731aca6b5ab965d4bf92fe1",
+    "archive_sha256": "c2d968291e75d170a6e4c8140f65cfed58bd55204fba312c05d41af093da4c0b"
+  },
+  "historical_disclosure": "Continuation5 comparison PASS/hashes survive, but original comparison report bytes were not recovered and are not implied to exist."
 }
