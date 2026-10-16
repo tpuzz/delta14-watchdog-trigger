@@ -21,10 +21,10 @@
       "isolation": "fresh no inherited conversation; exact candidate/reconstruction allowlist only"
     }
   ],
-  "last_heartbeat_utc": "2026-10-16T15:18:54.074Z",
+  "last_heartbeat_utc": "2026-10-16T15:23:39.065Z",
   "first_unfinished_action": "Complete fresh comparison of frozen LTC-v1 candidate and proof-blind reconstruction; persist and raw-byte verify return; promote only on exact PASS.",
   "watchdog_recovery_armed": true,
-  "coordination": "Fresh reconstruction role healthy and writing complete bounded return; no other worker active.",
+  "coordination": "Fresh comparator active; no sibling verification role.",
   "recovery_ack": true,
   "recovery_ack_artifact": "LATTICE--exact-class-lattice-torsion-4h-20261016-v1--lattice-recovery-20261016T150144Z-g26--recovery-bootstrap.json",
   "recovery_ack_artifact_sha256": "dedd8cc61483b79acdfa9bd2b473c1f3fc3e1cfa90c8fb2dc9fd5cf2cc343b26",
