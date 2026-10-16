@@ -1,168 +1,45 @@
 {
-  "schema": "delta14-j22-initial-v1",
   "campaign_id": "delta14-mixed-tate-20261012T210157Z",
   "supervision_campaign_id": "delta14-mixed-tate-20261012T210157Z",
-  "mathematical_campaign_id": "delta14-exact-class-20261015T182114Z",
-  "authorization_id": "exact-class-J22-independent-4h-20261016-v1",
-  "run_id": "exact-class-J22-independent-recovery-20261016T111048Z-g24",
-  "lease_generation": 24,
-  "confirmed_at_utc": "2026-10-16T08:01:23Z",
-  "authorization_start_utc": "2026-10-16T08:01:23Z",
-  "delivery_start_utc": "2026-10-16T11:51:23Z",
-  "hard_deadline_utc": "2026-10-16T12:01:23Z",
-  "delivery_reserve_minutes": 10,
-  "reassessment_utc": [
-    "2026-10-16T09:01:23Z",
-    "2026-10-16T10:01:23Z",
-    "2026-10-16T11:01:23Z"
-  ],
-  "status": "terminal",
-  "phase": "terminal-reconciliation-complete",
-  "research_started": true,
-  "math_start_utc": "2026-10-16T08:06:30Z",
-  "active_math_elapsed_seconds": null,
+  "authorization_id": "exact-class-lattice-torsion-4h-20261016-v1",
+  "run_id": "lattice-20261016T125259Z",
+  "lease_generation": 25,
+  "confirmed_at_utc": "2026-10-16T12:51:27Z",
+  "hard_deadline_utc": "2026-10-16T16:51:27Z",
+  "delivery_start_utc": "2026-10-16T16:41:27Z",
+  "status": "running",
+  "phase": "verified-source-intake",
+  "research_started": false,
+  "active_math_elapsed_seconds": 0,
   "active_workers": [],
-  "epoch": 2,
-  "first_unfinished_action": "Under a fresh explicit authorization only, obtain independent exact-class information evaluating b22-h5 or the equivalent FM_c(5) finite-monodromy stack; do not repeat bridge-a-v1 gates.",
-  "promotion": "bridge-a-v1",
-  "global_campaign_status": "unresolved",
-  "terminal_delivery_complete": true,
-  "dropbox_final_status_verified": true,
-  "watchdog_recovery_armed": false,
-  "automatic_successor_authorized": false,
-  "persistent_goal": "unavailable; checked once",
-  "precedence": "g21 terminal status supersedes g20 running fields; earlier authorizations remain stopped",
-  "sources": [
+  "source_hashes": [
     {
-      "name": "BREAKTHROUGH--exact-class-breakthrough-recovery-20261015T230900Z-g21--terminal-complete.json",
-      "role": "terminal_pointer",
-      "sha256": null
+      "name": "J22--exact-class-J22-independent-4h-20261016-v1--g24--terminal-complete--RESUME_CAPSULE.zip",
+      "sha256": "adeaca45ab6b8151fc0c14e1ffedc0e71ea52a6830445aef79ad6bea04b82876"
     },
     {
-      "name": "BREAKTHROUGH--exact-class-breakthrough-recovery-20261015T230900Z-g21--terminal-complete--RESUME_CAPSULE.zip",
-      "role": "terminal_and_return_bytes",
-      "sha256": "957704e6a958868473d3dd485291e6c5fe456b7f65ca04836c99b0e4fc42bfe4"
+      "name": "J22--exact-class-J22-independent-4h-20261016-v1--g23--runtime-interrupted-v2--RESUME_CAPSULE.zip",
+      "sha256": "9f088eee859f8b06a98fb0357f5fc5e45c2eed1f654d98bab7bf8d0da746b070"
     },
     {
       "name": "BREAKTHROUGH--exact-class-breakthrough-4h-20261015-v1--g20--searches-recovered--RESUME_CAPSULE.zip",
-      "role": "earlier_proof_source_bytes",
       "sha256": "4345bd93f1e4e6711bfebb3f5a9d7aa9358f08576930f838d79bd719e35ed718"
     }
   ],
-  "source_limitations": [
-    "Missing original continuation-5 comparison-report/manifest bytes remain missing; no reconstruction of evidence.",
-    "Inherited results retained at exact recorded scope and same-family status."
+  "first_unfinished_action": "Read route-specific sources, verify the rank-eight integral character model and exact period, independently test original parity-lattice exact cancellation.",
+  "old_authorizations": "Completed and remain stopped",
+  "watchdog_recovery_armed": false,
+  "coordination": "g25 conditional ownership mutation succeeded and read back",
+  "persistent_goal": "unavailable; inherited single check",
+  "historical_limitations": [
+    "Missing continuation-5 original comparison report and manifest bytes.",
+    "Missing g23 reconstruction manifest earns no credit; g24 replacement credited."
   ],
-  "last_heartbeat_utc": "2026-10-16T11:36:07.353Z",
-  "latest_verified_dropbox_generation": "J22--exact-class-J22-independent-4h-20261016-v1--g24--terminal-complete.json",
-  "latest_verified_dropbox_generation_sha256": "0d7efb3cea39ec4b08b869e2cde2819b1dab5b548d3817123dffb74864c5a84a",
-  "latest_verified_dropbox_capsule": "J22--exact-class-J22-independent-4h-20261016-v1--g24--terminal-complete--RESUME_CAPSULE.zip",
-  "latest_verified_dropbox_capsule_sha256": "adeaca45ab6b8151fc0c14e1ffedc0e71ea52a6830445aef79ad6bea04b82876",
-  "capsule_role": "Terminal generation-24 frontier; 29 manifest entries externally verified; ZIP integrity PASS",
-  "supervisor_verification_level": "Generation-24 start signal read back; one-shot supervisor run 38892444998 completed success",
-  "math_segment_start_utc": "2026-10-16T08:06:30Z",
-  "ownership_incident": {
-    "expired_utc": "2026-10-16T08:29:08.960Z",
-    "accidental_renewal_utc": "2026-10-16T08:29:12.246Z",
-    "corrected_generation": 23,
-    "no_substantive_work_during_lapse": true
-  },
-  "recovery_count": 2,
-  "research_elapsed_gross_seconds": 4769,
-  "active_math_timing_qualification": "Not continuously instrumented; gross interval includes admin and file work",
-  "current_state_publication": "J22--exact-class-J22-independent-4h-20261016-v1--g24--state-0001-recovery-bootstrap.json",
-  "latest_verified_gate": {
-    "candidate": "bridge-a-v1",
-    "gate": "comparison",
-    "verdict": "PASS",
-    "artifact": "J22--exact-class-J22-independent-4h-20261016-v1--g24--bridge-a-v1-comparison-v1--COMPARISON.md",
-    "sha256": "2acae9b97b3ec343aad1bcb9c4319a76fa475157483457d8ff6ecb3e44b6355b",
-    "manifest_sha256": "c46b9da75cf631acb120ea0d5abb8867b494a87b33239c9b9df2c75bd5084563",
-    "externally_byte_verified": true
-  },
-  "epoch_health": "Terminal generation, final status, and capsule externally read back; all 29 capsule manifest entries verified; no active workers",
-  "completed_returns": [
-    "BRIDGE-A-AUTHOR-v1",
-    "CORRECTIONS-AUTHOR-v1",
-    "BRIDGE-A-v1-LEAKAGE",
-    "BRIDGE-A-v1-HOSTILE",
-    "J22-TORIC-CONTINUATION-v1",
-    "CENTRAL-PRODUCT-CURVE-W1-candidate-return-reconciled",
-    "BRIDGE-A-v1-RECONSTRUCTION-REPLACEMENT1-COMPLETE",
-    "BRIDGE-A-v1-COMPARISON-v1-PASS"
-  ],
-  "current_correction_candidate": "corrections-v3",
-  "latest_reassessment": "REASSESSMENTS/HOUR-1.md",
-  "epoch_start_utc": "2026-10-16T09:04:16.582Z",
-  "runtime_boundary": {
-    "type": "coordinator-level exec transport disconnect",
-    "error": "exec_command failed: CreateProcess Rejected Failed to create unified exec process: exec-server transport disconnected",
-    "cleanup_attempt": 1,
-    "mathematics_stopped": true,
-    "automatic_resume_before_deadline_authorized": true,
-    "cleanup_finalization_utc": "2026-10-16T09:23:46.439461+00:00",
-    "recorded_utc": "2026-10-16T09:21:41.470027+00:00",
-    "observed_utc_approx": "2026-10-16T09:19:00Z"
-  },
-  "interrupted_assignments": [
-    {
-      "id": "BRIDGE-A-v1-RECONSTRUCTION",
-      "state": "reported complete; report present, actual manifest missing",
-      "recovery_count": 0
-    }
-  ],
-  "artifact_gap": {
-    "member": "historical g23 reconstruction ACTUAL_MANIFEST.json",
-    "expected_sha256": "672b5add68bfe1829ce22f95107e30c0350c2b17d667d5f80a0a64b5c925dbae",
-    "actual_bytes_available": false,
-    "replaced_for_gate_credit_by": "fresh reconstruction replacement1 with complete externally verified manifest",
-    "historical_bytes_not_recovered": true
-  },
-  "execution_checkpoint_complete": true,
-  "recovery_eligible": false,
-  "received_unreconciled": [
-    "BRIDGE-A-v1-RECONSTRUCTION text present; actual manifest missing"
-  ],
-  "recovered_from": {
-    "run_id": "exact-class-J22-independent-20261016T083000Z-g23",
-    "generation": 23,
-    "status": "interrupted",
-    "owner_status": "inactive",
-    "lease_expired_utc": "2026-10-16T09:28:07.053Z",
-    "no_live_worker_confirmed": true
-  },
-  "supervisor_actions_run_id": 38892444998,
-  "supervisor_job_id": null,
-  "curve_candidate": {
-    "id": "central-product-curve-v1",
-    "status": "candidate_only_unverified",
-    "report_sha256": "7dab39bbea359835210960051122c948ba3e3ab0aa439df17e685e53c8db49cb",
-    "contract_sha256": "a87ec3bef359d17d7ba1fb1d539d833bdd742dbd7052244498799efe18057905",
-    "exact_gap": "FM_c(5): evaluate the explicit finite-monodromy stack B_Gm M_s; the candidate identifies its defect as a unit multiple of d-1 but does not evaluate it",
-    "promotion": "NONE"
-  },
-  "final_status_path": "/ChatGPT-Research-State/delta14-mixed-tate/FINAL_STATUS--exact-class-J22-independent-4h-20261016-v1--exact-class-J22-independent-recovery-20261016T111048Z-g24--g24.md",
-  "final_status_sha256": "5102bc19dc3d894d379fd604ac7fffddbba9042f4a4fea0c39320d6b13b63a1e",
-  "terminal_result_hash": "5102bc19dc3d894d379fd604ac7fffddbba9042f4a4fea0c39320d6b13b63a1e",
-  "verification": {
-    "bridge-a-v1": {
-      "leakage": "PASS",
-      "hostile": "PASS",
-      "reconstruction": "COMPLETE",
-      "comparison": "PASS",
-      "promotion": "PROMOTED",
-      "outside_family_audit": "NOT_RUN"
-    },
-    "central-product-curve-v1": {
-      "status": "candidate_only_unverified",
-      "promotion": "NONE"
-    },
-    "corrections-v3": {
-      "leakage": "NOT_RUN",
-      "hostile": "NOT_RUN",
-      "reconstruction": "NOT_RUN",
-      "comparison": "NOT_RUN",
-      "promotion": "NONE"
-    }
-  }
+  "mathematical_campaign_id": "delta14-exact-class-20261015T182114Z",
+  "last_heartbeat_utc": "2026-10-16T12:54:51.330Z",
+  "authorization_start_utc": "2026-10-16T12:51:27Z",
+  "latest_verified_dropbox_generation": "LATTICE--exact-class-lattice-torsion-4h-20261016-v1--lattice-20261016T125259Z--initial-state.json",
+  "latest_verified_dropbox_generation_sha256": null,
+  "terminal_delivery_complete": false,
+  "dropbox_final_status_verified": false
 }
