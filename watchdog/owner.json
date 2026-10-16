@@ -5,9 +5,9 @@
   "authorization_id": "exact-class-absolute-quotient-4h-20261016-v1",
   "owner_run_id": "absolute-quotient-20261016T161847Z",
   "generation": 27,
-  "status": "active",
-  "last_renewed_utc": "2026-10-16T16:19:20.003Z",
-  "lease_expires_utc": "2026-10-16T16:31:20.003Z",
+  "status": "inactive",
+  "last_renewed_utc": "2026-10-16T16:22:56.836Z",
+  "lease_expires_utc": "2026-10-16T16:22:56.836Z",
   "authorization_start_utc": "2026-10-16T16:18:47Z",
   "hard_deadline_utc": "2026-10-16T20:18:47Z",
   "delivery_start_utc": "2026-10-16T20:08:47Z"
