@@ -5,12 +5,13 @@
   "authorization_id": "exact-class-lattice-torsion-4h-20261016-v1",
   "owner_run_id": "lattice-20261016T125259Z",
   "generation": 25,
-  "status": "active",
-  "last_renewed_utc": "2026-10-16T13:57:40.417Z",
-  "lease_expires_utc": "2026-10-16T14:09:40.417Z",
+  "status": "inactive",
+  "last_renewed_utc": "2026-10-16T14:06:30.762Z",
+  "lease_expires_utc": "2026-10-16T14:06:30.762Z",
   "authorization_start_utc": "2026-10-16T12:51:27Z",
   "hard_deadline_utc": "2026-10-16T16:51:27Z",
   "delivery_start_utc": "2026-10-16T16:41:27Z",
   "predecessor_run_id": "exact-class-J22-independent-recovery-20261016T111048Z-g24",
-  "claim_reason": "User-authorized new bounded continuation; predecessor completed and ownership inactive. No private mathematical payload."
+  "claim_reason": "User-authorized new bounded continuation; predecessor completed and ownership inactive. No private mathematical payload.",
+  "released_reason": "Infrastructure stop; incomplete delivery; unchanged authorization remains recoverable under protocol"
 }
