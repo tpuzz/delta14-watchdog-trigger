@@ -11,11 +11,18 @@
   "hard_deadline_utc": "2026-10-16T16:51:27Z",
   "delivery_start_utc": "2026-10-16T16:41:27Z",
   "status": "running",
-  "phase": "recovery-bootstrap-published",
+  "phase": "proof-blind-reconstruction-running",
   "research_started": true,
-  "active_workers": [],
-  "last_heartbeat_utc": "2026-10-16T15:04:28.678Z",
-  "first_unfinished_action": "Recover actual completed second-wave and hostile-report bytes; read and reconcile reports and manifests, persist and raw-byte verify complete hostile return before any successor gate. Continue only under unchanged authorization/deadline after independent ownership checks.",
+  "active_workers": [
+    {
+      "assignment_id": "LTC-v1-RECONSTRUCTION",
+      "agent": "/root/ltc_reconstruction_g26",
+      "status": "running",
+      "isolation": "fresh no inherited conversation; exact allowlist only"
+    }
+  ],
+  "last_heartbeat_utc": "2026-10-16T15:09:52.946Z",
+  "first_unfinished_action": "Complete fresh proof-blind reconstruction of LTC-v1 from the accepted brief and claim contract; persist and raw-byte verify the full return before comparison.",
   "watchdog_recovery_armed": true,
   "coordination": "Generation 26 ownership claimed atomically; Dropbox recovery bootstrap uploaded and raw-byte read back.",
   "recovery_ack": true,
@@ -32,38 +39,30 @@
   "authorization_complete": false,
   "stop_reason": null,
   "independent_wave_counts": {
-    "L8-TORUS": 1,
-    "PARITY-EXACT": 1
+    "L8-TORUS": 2,
+    "PARITY-EXACT": 2
   },
-  "second_wave_credit": "Worker-reported returns remain uncredited until actual bytes are recovered, reconciled, externally persisted, and raw-byte verified.",
-  "latest_verified_local_gate": "LTC-v1 leakage only; hostile return worker-reported but unreconciled and unpersisted.",
+  "second_wave_credit": "L8-W2 and PARITY-W2 complete returns recovered, reconciled, persisted to Dropbox, and raw-byte verified; independent wave counts now 2/2. Their claims remain candidate.",
+  "latest_verified_local_gate": "LTC-v1 hostile PASS at exact six-conclusion contract; report, manifest, and full return archive externally persisted and raw-byte verified. Reconstruction running.",
   "latest_verified_gate_archive": "LATTICE--exact-class-lattice-torsion-4h-20261016-v1--lattice-20261016T125259Z--LTC-v1-LEAKAGE.zip",
   "latest_verified_gate_archive_sha256": "f273aabe8d82e40ca1d80e70d5a4cb38d481872dc58a7aaf0b8235d0b10beb86",
   "artifact_recovery_warning": "Worker-reported identities are not proof bytes; do not recreate missing reports from summaries.",
-  "local_returns_unverified": [
-    {
-      "path": "run/ROUTES/L8-W2/REPORT.md",
-      "sha256": "106b1263104d4e430df149023173b7c63030c4fde885c60c6c2c704b85a1888f"
+  "recovered_artifacts": {
+    "L8-W2": {
+      "report_sha256": "106b1263104d4e430df149023173b7c63030c4fde885c60c6c2c704b85a1888f",
+      "manifest_sha256": "d2b678e5ea0942e54d82f130220cce9460d31e77723f8ede23a65a4a1775079c",
+      "archive_sha256": "586cd350923ef0f7edf54638a8082898b9f5ff0965feaa8883eea878fdb24b6b"
     },
-    {
-      "path": "run/ROUTES/L8-W2/ACTUAL_MANIFEST.json",
-      "sha256": "d2b678e5ea0942e54d82f130220cce9460d31e77723f8ede23a65a4a1775079c"
+    "PARITY-W2": {
+      "report_sha256": "022b00155ec4059646e67cb9b8a09c52aea9c55b0757610656803be5702299d5",
+      "manifest_sha256": "4998a38e97b77e06a7670d6cab02e638bef85e74e7c9d26fbee6410812260c31",
+      "archive_sha256": "b6803db5128078b20105dfd6219d78ff92534470a5a03e44457b7d35961b2782"
     },
-    {
-      "path": "run/ROUTES/PARITY-W2/REPORT.md",
-      "sha256": "022b00155ec4059646e67cb9b8a09c52aea9c55b0757610656803be5702299d5"
-    },
-    {
-      "path": "run/ROUTES/PARITY-W2/ACTUAL_MANIFEST.json",
-      "sha256": "4998a38e97b77e06a7670d6cab02e638bef85e74e7c9d26fbee6410812260c31"
-    },
-    {
-      "path": "run/AUDITS/LTC-v1-HOSTILE/REPORT.md",
-      "sha256": "7286c2c31d6f08bdad2ae25aa99fc8412e5e81081c1b6e598dbc21a20d94410f"
-    },
-    {
-      "path": "run/AUDITS/LTC-v1-HOSTILE/ACTUAL_MANIFEST.json",
-      "sha256": "3eb0ba48f5e5fa4c05d0ebf0224202e9fcff795c4d6fa6c8d17824491045d05a"
+    "LTC-v1-HOSTILE": {
+      "verdict": "PASS at exact six-conclusion contract; audit-only; no promotion",
+      "report_sha256": "7286c2c31d6f08bdad2ae25aa99fc8412e5e81081c1b6e598dbc21a20d94410f",
+      "manifest_sha256": "3eb0ba48f5e5fa4c05d0ebf0224202e9fcff795c4d6fa6c8d17824491045d05a",
+      "archive_sha256": "eac1deb12a720017a7e06d14033a5c0a48efd114378d2fd681b3bf4fec7ae729"
     }
-  ]
+  }
 }
