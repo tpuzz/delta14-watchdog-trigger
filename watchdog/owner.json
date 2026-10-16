@@ -5,11 +5,12 @@
   "authorization_id": "exact-class-J22-independent-4h-20261016-v1",
   "owner_run_id": "exact-class-J22-independent-20261016T080123Z-g22",
   "generation": 22,
-  "status": "active",
-  "last_renewed_utc": "2026-10-16T08:29:12.246Z",
-  "lease_expires_utc": "2026-10-16T08:41:12.246Z",
+  "status": "inactive",
+  "last_renewed_utc": "2026-10-16T08:29:52.608Z",
+  "lease_expires_utc": "2026-10-16T08:29:52.608Z",
   "authorization_start_utc": "2026-10-16T08:01:23Z",
   "hard_deadline_utc": "2026-10-16T12:01:23Z",
   "delivery_start_utc": "2026-10-16T11:51:23Z",
-  "predecessor_run_id": "exact-class-breakthrough-recovery-20261015T230900Z-g21"
+  "predecessor_run_id": "exact-class-breakthrough-recovery-20261015T230900Z-g21",
+  "release_reason": "Correct accidental post-expiry renewal; no substantive work or frontier publication occurred during lapse. Reclaim requires new generation."
 }
