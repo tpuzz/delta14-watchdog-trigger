@@ -6,12 +6,12 @@
   "owner_run_id": "lattice-recovery-20261016T150144Z-g26",
   "generation": 26,
   "status": "active",
-  "last_renewed_utc": "2026-10-16T15:15:10.633Z",
-  "lease_expires_utc": "2026-10-16T15:27:10.633Z",
+  "last_renewed_utc": "2026-10-16T15:18:54.074Z",
+  "lease_expires_utc": "2026-10-16T15:30:54.074Z",
   "authorization_start_utc": "2026-10-16T12:51:27Z",
   "hard_deadline_utc": "2026-10-16T16:51:27Z",
   "delivery_start_utc": "2026-10-16T16:41:27Z",
   "predecessor_run_id": "lattice-20261016T125259Z",
   "claim_reason": "Exact-scope recovery of explicit interrupted generation 25 with incomplete delivery after matching inactive expired lease; same authorization and immutable clocks.",
-  "progress": "Fresh proof-blind reconstruction healthy; allowed inputs read; conclusions 1-5 assembled; width-two cover algebra checked; return being written."
+  "progress": "LTC-v1 reconstruction COMPLETE/PASS and raw-byte verified; fresh comparison running."
 }
