@@ -39,7 +39,7 @@
     "Missing g23 reconstruction manifest earns no credit; g24 replacement credited."
   ],
   "mathematical_campaign_id": "delta14-exact-class-20261015T182114Z",
-  "last_heartbeat_utc": "2026-10-16T13:01:52.121Z",
+  "last_heartbeat_utc": "2026-10-16T13:11:23.556Z",
   "authorization_start_utc": "2026-10-16T12:51:27Z",
   "latest_verified_dropbox_generation": "LATTICE--exact-class-lattice-torsion-4h-20261016-v1--lattice-20261016T125259Z--initial-state.json",
   "latest_verified_dropbox_generation_sha256": "a4708842cfd891ad850c602fb74f7c3230f6e2562bd6967842e71eab8d364c56",
