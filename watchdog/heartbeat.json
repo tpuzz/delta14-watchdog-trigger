@@ -60,7 +60,7 @@
     "Missing original continuation-5 comparison-report/manifest bytes remain missing; no reconstruction of evidence.",
     "Inherited results retained at exact recorded scope and same-family status."
   ],
-  "last_heartbeat_utc": "2026-10-16T11:19:38.140Z",
+  "last_heartbeat_utc": "2026-10-16T11:26:48.250Z",
   "latest_verified_dropbox_generation": "J22--exact-class-J22-independent-4h-20261016-v1--g24--state-0001-recovery-bootstrap.json",
   "latest_verified_dropbox_generation_sha256": "6b67703c48f09631f2c372a4cf8e4d70855bca822839a50725a87439f8727d9b",
   "latest_verified_dropbox_capsule": "J22--exact-class-J22-independent-4h-20261016-v1--g23--runtime-interrupted-v2--RESUME_CAPSULE.zip",
@@ -86,7 +86,7 @@
     "sha256": "93483fd2deb8755fafbe9036d51926681ab168d70d5c6b28a557ca852351d65b",
     "externally_byte_verified": true
   },
-  "epoch_health": "Recovery ACK complete; fresh proof-blind bridge reconstruction replacement1 running under original allowlist; central-product curve packet reconciled as complete candidate-only return",
+  "epoch_health": "Fresh proof-blind bridge reconstruction replacement1 reports a complete independent route and is writing its exact report/manifest; no gate credit yet",
   "completed_returns": [
     "BRIDGE-A-AUTHOR-v1",
     "CORRECTIONS-AUTHOR-v1",
