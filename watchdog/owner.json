@@ -3,15 +3,14 @@
   "supervision_campaign_id": "delta14-mixed-tate-20261012T210157Z",
   "mathematical_campaign_id": "delta14-exact-class-20261015T182114Z",
   "authorization_id": "exact-class-lattice-torsion-4h-20261016-v1",
-  "owner_run_id": "lattice-20261016T125259Z",
-  "generation": 25,
-  "status": "inactive",
-  "last_renewed_utc": "2026-10-16T14:06:30.762Z",
-  "lease_expires_utc": "2026-10-16T14:06:30.762Z",
+  "owner_run_id": "lattice-recovery-20261016T150144Z-g26",
+  "generation": 26,
+  "status": "active",
+  "last_renewed_utc": "2026-10-16T15:01:44.951Z",
+  "lease_expires_utc": "2026-10-16T15:13:44.952Z",
   "authorization_start_utc": "2026-10-16T12:51:27Z",
   "hard_deadline_utc": "2026-10-16T16:51:27Z",
   "delivery_start_utc": "2026-10-16T16:41:27Z",
-  "predecessor_run_id": "exact-class-J22-independent-recovery-20261016T111048Z-g24",
-  "claim_reason": "User-authorized new bounded continuation; predecessor completed and ownership inactive. No private mathematical payload.",
-  "released_reason": "Infrastructure stop; incomplete delivery; unchanged authorization remains recoverable under protocol"
+  "predecessor_run_id": "lattice-20261016T125259Z",
+  "claim_reason": "Exact-scope recovery of explicit interrupted generation 25 with incomplete delivery after matching inactive expired lease; same authorization and immutable clocks."
 }
