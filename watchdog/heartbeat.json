@@ -8,8 +8,8 @@
   "hard_deadline_utc": "2026-10-16T16:51:27Z",
   "delivery_start_utc": "2026-10-16T16:41:27Z",
   "status": "running",
-  "phase": "verified-source-intake",
-  "research_started": false,
+  "phase": "epoch-1",
+  "research_started": true,
   "active_math_elapsed_seconds": 0,
   "active_workers": [],
   "source_hashes": [
@@ -26,9 +26,9 @@
       "sha256": "4345bd93f1e4e6711bfebb3f5a9d7aa9358f08576930f838d79bd719e35ed718"
     }
   ],
-  "first_unfinished_action": "Read route-specific sources, verify the rank-eight integral character model and exact period, independently test original parity-lattice exact cancellation.",
+  "first_unfinished_action": "Route intake and first authorized mathematical diagnostic; details in private instructions.",
   "old_authorizations": "Completed and remain stopped",
-  "watchdog_recovery_armed": false,
+  "watchdog_recovery_armed": true,
   "coordination": "g25 conditional ownership mutation succeeded and read back",
   "persistent_goal": "unavailable; inherited single check",
   "historical_limitations": [
@@ -36,10 +36,13 @@
     "Missing g23 reconstruction manifest earns no credit; g24 replacement credited."
   ],
   "mathematical_campaign_id": "delta14-exact-class-20261015T182114Z",
-  "last_heartbeat_utc": "2026-10-16T12:54:51.330Z",
+  "last_heartbeat_utc": "2026-10-16T12:55:50.747Z",
   "authorization_start_utc": "2026-10-16T12:51:27Z",
   "latest_verified_dropbox_generation": "LATTICE--exact-class-lattice-torsion-4h-20261016-v1--lattice-20261016T125259Z--initial-state.json",
-  "latest_verified_dropbox_generation_sha256": null,
+  "latest_verified_dropbox_generation_sha256": "a4708842cfd891ad850c602fb74f7c3230f6e2562bd6967842e71eab8d364c56",
   "terminal_delivery_complete": false,
-  "dropbox_final_status_verified": false
+  "dropbox_final_status_verified": false,
+  "math_start_utc": "2026-10-16T12:55:50.747Z",
+  "math_segment_start_utc": "2026-10-16T12:55:50.747Z",
+  "supervisor_verification_level": "g25 Actions 38903928090 job 116982671835 regression and one-shot check success; hourly backup and event recovery enabled; no continuous minute polling"
 }
