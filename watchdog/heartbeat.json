@@ -17,20 +17,20 @@
     "2026-10-16T11:01:23Z"
   ],
   "status": "running",
-  "phase": "bridge-a-proof-blind-reconstruction-replacement1",
+  "phase": "bridge-a-fresh-comparison-v1",
   "research_started": true,
   "math_start_utc": "2026-10-16T08:06:30Z",
   "active_math_elapsed_seconds": null,
   "active_workers": [
     {
-      "id": "BRIDGE-A-v1-RECONSTRUCTION-REPLACEMENT1",
-      "agent": "/root/bridge_recon_replacement1",
-      "recovery_count": 1,
-      "status": "running fresh proof-blind under original allowlist"
+      "id": "BRIDGE-A-v1-COMPARISON",
+      "agent": "/root/bridge_comparison_v1",
+      "recovery_count": 0,
+      "status": "running fresh exact comparison"
     }
   ],
   "epoch": 2,
-  "first_unfinished_action": "Await fresh proof-blind bridge reconstruction replacement1; persist/read back its exact return and manifest, then run fresh comparison if COMPLETE. Reconcile interrupted curve packet and correction-v3 gates only if remaining time permits.",
+  "first_unfinished_action": "Await fresh bridge-a-v1 comparison; persist/read back exact report and manifest. If PASS, promote bridge-a-v1 at same-family verifier-backed status. Then stop new mathematics at reserve and reconcile terminal state.",
   "promotion": "NONE_NEW",
   "global_campaign_status": "unresolved",
   "terminal_delivery_complete": false,
@@ -60,7 +60,7 @@
     "Missing original continuation-5 comparison-report/manifest bytes remain missing; no reconstruction of evidence.",
     "Inherited results retained at exact recorded scope and same-family status."
   ],
-  "last_heartbeat_utc": "2026-10-16T11:26:48.250Z",
+  "last_heartbeat_utc": "2026-10-16T11:29:45.429Z",
   "latest_verified_dropbox_generation": "J22--exact-class-J22-independent-4h-20261016-v1--g24--state-0001-recovery-bootstrap.json",
   "latest_verified_dropbox_generation_sha256": "6b67703c48f09631f2c372a4cf8e4d70855bca822839a50725a87439f8727d9b",
   "latest_verified_dropbox_capsule": "J22--exact-class-J22-independent-4h-20261016-v1--g23--runtime-interrupted-v2--RESUME_CAPSULE.zip",
@@ -80,20 +80,22 @@
   "current_state_publication": "J22--exact-class-J22-independent-4h-20261016-v1--g24--state-0001-recovery-bootstrap.json",
   "latest_verified_gate": {
     "candidate": "bridge-a-v1",
-    "gate": "hostile",
-    "verdict": "PASS",
-    "artifact": "J22--exact-class-J22-independent-4h-20261016-v1--g23--bridge-a-v1-hostile.zip",
-    "sha256": "93483fd2deb8755fafbe9036d51926681ab168d70d5c6b28a557ca852351d65b",
+    "gate": "reconstruction",
+    "verdict": "COMPLETE",
+    "artifact": "J22--exact-class-J22-independent-4h-20261016-v1--g24--bridge-a-v1-reconstruction-replacement1--RECONSTRUCTION.md",
+    "sha256": "423009bef8a9fae10ffca456e9238483e9c6f18bcda6d943954198e167cdad49",
+    "manifest_sha256": "19c2f2ea9997771dc7bb31acd2c5cd8cfcd145f594a54feb2cb6348793cff81d",
     "externally_byte_verified": true
   },
-  "epoch_health": "Fresh proof-blind bridge reconstruction replacement1 reports a complete independent route and is writing its exact report/manifest; no gate credit yet",
+  "epoch_health": "Reconstruction replacement1 COMPLETE and externally byte-verified; fresh comparator running",
   "completed_returns": [
     "BRIDGE-A-AUTHOR-v1",
     "CORRECTIONS-AUTHOR-v1",
     "BRIDGE-A-v1-LEAKAGE",
     "BRIDGE-A-v1-HOSTILE",
     "J22-TORIC-CONTINUATION-v1",
-    "CENTRAL-PRODUCT-CURVE-W1-candidate-return-reconciled"
+    "CENTRAL-PRODUCT-CURVE-W1-candidate-return-reconciled",
+    "BRIDGE-A-v1-RECONSTRUCTION-REPLACEMENT1-COMPLETE"
   ],
   "current_correction_candidate": "corrections-v3",
   "latest_reassessment": "REASSESSMENTS/HOUR-1.md",
@@ -116,10 +118,11 @@
     }
   ],
   "artifact_gap": {
-    "path": "/workspace/scratch/145a32450c15/CAMPAIGN/AUDITS/bridge-a-v1-reconstruction/ACTUAL_MANIFEST.json",
-    "expected_bytes": 8165,
+    "member": "historical g23 reconstruction ACTUAL_MANIFEST.json",
     "expected_sha256": "672b5add68bfe1829ce22f95107e30c0350c2b17d667d5f80a0a64b5c925dbae",
-    "actual_bytes_available": false
+    "actual_bytes_available": false,
+    "replaced_for_gate_credit_by": "fresh reconstruction replacement1 with complete externally verified manifest",
+    "historical_bytes_not_recovered": true
   },
   "execution_checkpoint_complete": true,
   "recovery_eligible": false,
