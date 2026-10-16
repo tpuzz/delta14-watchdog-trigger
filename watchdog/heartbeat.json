@@ -4,8 +4,8 @@
   "supervision_campaign_id": "delta14-mixed-tate-20261012T210157Z",
   "mathematical_campaign_id": "delta14-exact-class-20261015T182114Z",
   "authorization_id": "exact-class-J22-independent-4h-20261016-v1",
-  "run_id": "exact-class-J22-independent-20261016T080123Z-g22",
-  "lease_generation": 22,
+  "run_id": "exact-class-J22-independent-20261016T083000Z-g23",
+  "lease_generation": 23,
   "confirmed_at_utc": "2026-10-16T08:01:23Z",
   "authorization_start_utc": "2026-10-16T08:01:23Z",
   "delivery_start_utc": "2026-10-16T11:51:23Z",
@@ -17,26 +17,13 @@
     "2026-10-16T11:01:23Z"
   ],
   "status": "running",
-  "phase": "N-character-quotient-and-separate-authors",
+  "phase": "reconcile-author-returns-and-freeze-candidates",
   "research_started": true,
   "math_start_utc": "2026-10-16T08:06:30Z",
   "active_math_elapsed_seconds": 0,
-  "active_workers": [
-    {
-      "id": "BRIDGE-A-AUTHOR-v1",
-      "agent": "/root/bridge_a_author",
-      "recovery_count": 0,
-      "state": "active"
-    },
-    {
-      "id": "CORRECTIONS-AUTHOR-v1",
-      "agent": "/root/corrections_author",
-      "recovery_count": 0,
-      "state": "active"
-    }
-  ],
+  "active_workers": [],
   "epoch": 1,
-  "first_unfinished_action": "Finish independent full-open N quotient, freeze separate bridge/correction candidates, then sequential leakage/hostile/reconstruction/comparison gates with byte-verified outputs.",
+  "first_unfinished_action": "Verify author manifests, freeze bridge/correction packages and persist exact bytes; begin sequential verification and residual torus quotient search.",
   "promotion": "NONE_NEW",
   "global_campaign_status": "unresolved",
   "terminal_delivery_complete": false,
@@ -66,7 +53,7 @@
     "Missing original continuation-5 comparison-report/manifest bytes remain missing; no reconstruction of evidence.",
     "Inherited results retained at exact recorded scope and same-family status."
   ],
-  "last_heartbeat_utc": "2026-10-16T08:21:40.549Z",
+  "last_heartbeat_utc": "2026-10-16T08:30:38.962Z",
   "latest_verified_dropbox_generation": "J22--exact-class-J22-independent-4h-20261016-v1--g22--bootstrap.json",
   "latest_verified_dropbox_generation_sha256": "d62c932dcd2c5d45af01d4e7fe0f867b1d29ca41cb62c8efeb4bb79f0f87f73a",
   "latest_verified_dropbox_capsule": "BREAKTHROUGH--exact-class-breakthrough-recovery-20261015T230900Z-g21--terminal-complete--RESUME_CAPSULE.zip",
@@ -75,5 +62,12 @@
   "supervisor_verification_level": "One-shot regression/startup check PASS; enabled hourly recovery is actual ongoing cadence",
   "math_segment_start_utc": "2026-10-16T08:06:30Z",
   "supervisor_actions_run_id": 38871431091,
-  "supervisor_job_id": 116876186779
+  "supervisor_job_id": 116876186779,
+  "ownership_incident": {
+    "expired_utc": "2026-10-16T08:29:08.960Z",
+    "accidental_renewal_utc": "2026-10-16T08:29:12.246Z",
+    "corrected_generation": 23,
+    "no_substantive_work_during_lapse": true
+  },
+  "recovery_count": 1
 }
