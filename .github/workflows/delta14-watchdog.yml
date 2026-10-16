@@ -1,4 +1,4 @@
-name: Delta14 watchdog
+name: Delta14 watchdog - quota saver
 
 on:
   push:
@@ -8,6 +8,10 @@ on:
       - "watchdog/supervisor.py"
       - "watchdog/test_supervisor.py"
       - ".github/workflows/delta14-watchdog.yml"
+  schedule:
+    # Coarse independent backstop while private Actions minutes are scarce.
+    # Fast periodic monitoring is provided by the standing ChatGPT hourly watchdog.
+    - cron: "37 0,12 * * *"
   workflow_dispatch:
 
 permissions:
@@ -21,7 +25,7 @@ concurrency:
 jobs:
   supervise:
     runs-on: ubuntu-latest
-    timeout-minutes: 240
+    timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
         with:
@@ -30,7 +34,7 @@ jobs:
           persist-credentials: false
       - name: Regression tests (no network or mutations)
         run: python3 -m unittest discover -s watchdog -p 'test_supervisor.py' -v
-      - name: Supervise coherent heartbeat and ownership snapshots
+      - name: One-shot recovery check
         env:
           GH_TOKEN: ${{ github.token }}
-        run: python3 watchdog/supervisor.py
+        run: python3 watchdog/supervisor.py --once
