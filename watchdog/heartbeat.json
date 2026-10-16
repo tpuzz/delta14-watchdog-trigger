@@ -11,18 +11,18 @@
   "hard_deadline_utc": "2026-10-16T16:51:27Z",
   "delivery_start_utc": "2026-10-16T16:41:27Z",
   "status": "running",
-  "phase": "proof-blind-reconstruction-running",
+  "phase": "fresh-comparison-running",
   "research_started": true,
   "active_workers": [
     {
-      "assignment_id": "LTC-v1-RECONSTRUCTION",
-      "agent": "/root/ltc_reconstruction_g26",
+      "assignment_id": "LTC-v1-COMPARISON",
+      "agent": "/root/ltc_comparison_g26",
       "status": "running",
-      "isolation": "fresh no inherited conversation; exact allowlist only"
+      "isolation": "fresh no inherited conversation; exact candidate/reconstruction allowlist only"
     }
   ],
-  "last_heartbeat_utc": "2026-10-16T15:15:10.633Z",
-  "first_unfinished_action": "Complete fresh proof-blind reconstruction of LTC-v1 from the accepted brief and claim contract; persist and raw-byte verify the full return before comparison.",
+  "last_heartbeat_utc": "2026-10-16T15:18:54.074Z",
+  "first_unfinished_action": "Complete fresh comparison of frozen LTC-v1 candidate and proof-blind reconstruction; persist and raw-byte verify return; promote only on exact PASS.",
   "watchdog_recovery_armed": true,
   "coordination": "Fresh reconstruction role healthy and writing complete bounded return; no other worker active.",
   "recovery_ack": true,
@@ -43,7 +43,7 @@
     "PARITY-EXACT": 2
   },
   "second_wave_credit": "L8-W2 and PARITY-W2 complete returns recovered, reconciled, persisted to Dropbox, and raw-byte verified; independent wave counts now 2/2. Their claims remain candidate.",
-  "latest_verified_local_gate": "LTC-v1 hostile PASS at exact six-conclusion contract; report, manifest, and full return archive externally persisted and raw-byte verified. Reconstruction running.",
+  "latest_verified_local_gate": "LTC-v1 leakage PASS; hostile PASS; proof-blind reconstruction COMPLETE/PASS and externally raw-byte verified; comparison running.",
   "latest_verified_gate_archive": "LATTICE--exact-class-lattice-torsion-4h-20261016-v1--lattice-20261016T125259Z--LTC-v1-LEAKAGE.zip",
   "latest_verified_gate_archive_sha256": "f273aabe8d82e40ca1d80e70d5a4cb38d481872dc58a7aaf0b8235d0b10beb86",
   "artifact_recovery_warning": "Worker-reported identities are not proof bytes; do not recreate missing reports from summaries.",
@@ -64,5 +64,11 @@
       "manifest_sha256": "3eb0ba48f5e5fa4c05d0ebf0224202e9fcff795c4d6fa6c8d17824491045d05a",
       "archive_sha256": "eac1deb12a720017a7e06d14033a5c0a48efd114378d2fd681b3bf4fec7ae729"
     }
+  },
+  "reconstruction_artifacts": {
+    "report_sha256": "2924af10219096e7105c4961796037a9eda8d94e4ae1667abf43d536ce3a0e05",
+    "manifest_sha256": "3b5a8482a9a92175d904880bdb7cc666371aaf161647b00a4365ad3ea8ea3315",
+    "archive_sha256": "0f1d105ba7ddebbb4c6f3af9e1b9ee2af0e1c5af4a5dc65e5ad0cca563dbe44d",
+    "status": "COMPLETE/PASS at reconstruction scope; no global Delta14 conclusion"
   }
 }
