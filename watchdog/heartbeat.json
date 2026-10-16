@@ -60,7 +60,7 @@
     "Missing original continuation-5 comparison-report/manifest bytes remain missing; no reconstruction of evidence.",
     "Inherited results retained at exact recorded scope and same-family status."
   ],
-  "last_heartbeat_utc": "2026-10-16T11:15:44.468Z",
+  "last_heartbeat_utc": "2026-10-16T11:19:38.140Z",
   "latest_verified_dropbox_generation": "J22--exact-class-J22-independent-4h-20261016-v1--g24--state-0001-recovery-bootstrap.json",
   "latest_verified_dropbox_generation_sha256": "6b67703c48f09631f2c372a4cf8e4d70855bca822839a50725a87439f8727d9b",
   "latest_verified_dropbox_capsule": "J22--exact-class-J22-independent-4h-20261016-v1--g23--runtime-interrupted-v2--RESUME_CAPSULE.zip",
@@ -86,13 +86,14 @@
     "sha256": "93483fd2deb8755fafbe9036d51926681ab168d70d5c6b28a557ca852351d65b",
     "externally_byte_verified": true
   },
-  "epoch_health": "Recovery ACK complete; fresh proof-blind bridge reconstruction replacement1 running under original allowlist",
+  "epoch_health": "Recovery ACK complete; fresh proof-blind bridge reconstruction replacement1 running under original allowlist; central-product curve packet reconciled as complete candidate-only return",
   "completed_returns": [
     "BRIDGE-A-AUTHOR-v1",
     "CORRECTIONS-AUTHOR-v1",
     "BRIDGE-A-v1-LEAKAGE",
     "BRIDGE-A-v1-HOSTILE",
-    "J22-TORIC-CONTINUATION-v1"
+    "J22-TORIC-CONTINUATION-v1",
+    "CENTRAL-PRODUCT-CURVE-W1-candidate-return-reconciled"
   ],
   "current_correction_candidate": "corrections-v3",
   "latest_reassessment": "REASSESSMENTS/HOUR-1.md",
@@ -109,12 +110,6 @@
   },
   "interrupted_assignments": [
     {
-      "id": "CENTRAL-PRODUCT-CURVE-W1",
-      "agent": "/root/central_product_curve_w1",
-      "recovery_count": 0,
-      "status": "interrupted; preserve actual partial files only; no wave credit"
-    },
-    {
       "id": "BRIDGE-A-v1-RECONSTRUCTION",
       "state": "reported complete; report present, actual manifest missing",
       "recovery_count": 0
@@ -129,8 +124,7 @@
   "execution_checkpoint_complete": true,
   "recovery_eligible": false,
   "received_unreconciled": [
-    "BRIDGE-A-v1-RECONSTRUCTION text present; actual manifest missing",
-    "CENTRAL-PRODUCT-CURVE-W1 actual packet present; assignment interrupted before completed return"
+    "BRIDGE-A-v1-RECONSTRUCTION text present; actual manifest missing"
   ],
   "recovered_from": {
     "run_id": "exact-class-J22-independent-20261016T083000Z-g23",
@@ -141,5 +135,13 @@
     "no_live_worker_confirmed": true
   },
   "supervisor_actions_run_id": 38892444998,
-  "supervisor_job_id": null
+  "supervisor_job_id": null,
+  "curve_candidate": {
+    "id": "central-product-curve-v1",
+    "status": "candidate_only_unverified",
+    "report_sha256": "7dab39bbea359835210960051122c948ba3e3ab0aa439df17e685e53c8db49cb",
+    "contract_sha256": "a87ec3bef359d17d7ba1fb1d539d833bdd742dbd7052244498799efe18057905",
+    "exact_gap": "FM_c(5): evaluate the explicit finite-monodromy stack B_Gm M_s; the candidate identifies its defect as a unit multiple of d-1 but does not evaluate it",
+    "promotion": "NONE"
+  }
 }
