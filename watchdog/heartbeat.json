@@ -21,10 +21,10 @@
       "isolation": "fresh no inherited conversation; exact allowlist only"
     }
   ],
-  "last_heartbeat_utc": "2026-10-16T15:11:19.892Z",
+  "last_heartbeat_utc": "2026-10-16T15:15:10.633Z",
   "first_unfinished_action": "Complete fresh proof-blind reconstruction of LTC-v1 from the accepted brief and claim contract; persist and raw-byte verify the full return before comparison.",
   "watchdog_recovery_armed": true,
-  "coordination": "Generation 26 ownership claimed atomically; Dropbox recovery bootstrap uploaded and raw-byte read back.",
+  "coordination": "Fresh reconstruction role healthy and writing complete bounded return; no other worker active.",
   "recovery_ack": true,
   "recovery_ack_artifact": "LATTICE--exact-class-lattice-torsion-4h-20261016-v1--lattice-recovery-20261016T150144Z-g26--recovery-bootstrap.json",
   "recovery_ack_artifact_sha256": "dedd8cc61483b79acdfa9bd2b473c1f3fc3e1cfa90c8fb2dc9fd5cf2cc343b26",
