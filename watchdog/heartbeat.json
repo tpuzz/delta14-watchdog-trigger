@@ -6,8 +6,8 @@
   "owner_run_id": "exact-class-continuation-20261018T214140Z-g32",
   "generation": 32,
   "status": "running",
-  "last_renewed_utc": "2026-10-18T21:43:30Z",
-  "lease_expires_utc": "2026-10-18T21:55:30Z",
+  "last_renewed_utc": "2026-10-18T22:05:15.063Z",
+  "lease_expires_utc": "2026-10-18T22:17:15.063Z",
   "authorization_start_utc": "2026-10-18T21:41:40Z",
   "hard_deadline_utc": "2026-10-19T01:41:40Z",
   "delivery_start_utc": "2026-10-19T01:31:40Z",
@@ -16,13 +16,13 @@
   "authorization_amendment": "User attachment Pasted text(20261018-213932).txt",
   "run_id": "exact-class-continuation-20261018T214140Z-g32",
   "lease_generation": 32,
-  "phase": "absolute-search-and-verification",
+  "phase": "research-and-isolated-verification",
   "research_started": true,
   "old_authorization_status": "closed/incomplete by explicit user directive",
   "recovery_mode": "DIRECT-RESUME",
   "source_integrity": "All three user-pinned predecessor hashes matched actual downloaded bytes",
   "newer_successor_check": "Complete direct Dropbox listing and live owner/heartbeat: no newer successor",
-  "first_unfinished_action": "Global reassessment comparing J22 full quotient, RHO-NORM, prepared cyclic screen, and exposed exact-class mechanisms",
+  "first_unfinished_action": "Complete current isolated roles and persist verified returns",
   "inherited_state": "recovered/RUN_STATE.json, source-bound and unchanged",
   "inherited_promotions": [
     "LTC-v1",
@@ -40,15 +40,15 @@
   },
   "active_workers": [
     {
-      "id": "j22_absolute",
+      "id": "rho_basemix",
       "state": "active"
     },
     {
-      "id": "minrep_leakage",
-      "state": "complete awaiting external reconciliation"
+      "id": "minrep_reconstruction",
+      "state": "active"
     }
   ],
-  "last_heartbeat_utc": "2026-10-18T21:58:00Z",
+  "last_heartbeat_utc": "2026-10-18T22:05:53.761Z",
   "watchdog_recovery_armed": true,
   "authorization_complete": false,
   "terminal_delivery_complete": false,
