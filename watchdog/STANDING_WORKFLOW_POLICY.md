@@ -2,13 +2,25 @@
 
 Campaign: `delta14-mixed-tate-20261012T210157Z`
 
+## Low-usage monitoring amendment - 2026-10-18
+
+The user explicitly approved replacing frequent ChatGPT monitoring with a lower-usage setup. This amendment supersedes ALL older hourly-backup and mutual-reenable instructions in this repository, prior repair documents, checkpoints and launch prompts. It changes monitoring only, not research authorization, deadlines, ownership, verification or privacy.
+
+The ONLY routine ChatGPT polling task is now the combined **Research Recovery Backup**, ID `6ace34e619e08191a0fafff81fa8714c`, once every SIX HOURS for both Delta14 and Log Gabriel. It reuses the former Delta14 backup task; do not restore its hourly schedule. The separate Log Gabriel Recovery Backup, ID `6ad1c59191c48191a496c802f7e99f72`, is intentionally retired. Never re-enable it, recreate separate campaign polling tasks, or treat this retirement as an infrastructure fault. Respect any later explicit user changes. Report a genuinely unexpected monitoring fault; do not silently change schedules or enable disabled tasks.
+
+The existing event-triggered Delta14 Recovery and Results task remains enabled, as does the separate Log Gabriel event consumer. Event consumers act only on relevant events; they do not perform routine periodic checks. The combined backup's healthy path reads only heartbeat.json and owner.json from each of the two repositories, normally four small reads. No proof/archive/Dropbox loading, subagents, research, wait loops, repeated polling or routine automation-list inspection is needed when healthy. Load full recovery policy and private artifacts only for a genuine actionable incident. Deduplicate incidents and do not repeatedly retry unchanged known capability failures.
+
+Keep the existing external GitHub supervisor deployment and its bounded event checks; do not increase GitHub polling frequency or restore long-lived private CI jobs as part of this change. Preserve controlled-failure signaling through recovery.signal as described below. If a run dies without signaling and external detection is unavailable, the ChatGPT backstop may take about six hours plus scheduler delay; it does NOT guarantee recovery within a short research authorization. Never extend a research clock to compensate.
+
+Do not modify a live research owner, heartbeat, checkpoint, mathematical statement or authorization merely to implement this monitoring policy. Do not launch research while configuring monitoring. Future launches/recoveries must preserve this low-usage configuration instead of re-enabling old hourly monitors.
+
 ## Current recovery/deployment amendment - 2026-10-18
 
 Read `watchdog/RECOVERY_REPAIR_20261018.md` together with this policy. It records the user's explicit instruction to repair and recover the failed generation-29 execution under its SAME original authorization and unchanged deadline. It does not authorize a successor or additional time. For that exact authorization, apply the narrow correction in that document to the old execution-local finalize-only fields. A later explicit user stop, cancellation, private source-integrity restriction or safety restriction always controls.
 
 An ordinary coordinator/runtime outage ends the broken EXECUTION, not automatically the still-live mathematical AUTHORIZATION. Preserve interrupted/unverified assignments without credit, and record whether a genuinely fresh capable execution may resume before the original delivery reserve. Do not manufacture `further_mathematics_authorized=false` merely because one environment is offline. At/after reserve, or after an explicit user stop, only administrative finalization is allowed.
 
-The actual deployed monitor is quota-saving `watchdog/oneshot.py`, not a continuously polling job. It performs bounded checks, retains attempt history through deterministic recovery PRs, waits at least the acknowledgement threshold before another attempt when next invoked, and emits one infrastructure-failure signal after three unacknowledged attempts. The twice-daily GitHub schedule is only a coarse backstop; the existing ChatGPT hourly watchdog supplies the independent hourly check. Neither implies minute-level detection. Do not restore long-running private CI jobs without explicit approval.
+The actual deployed monitor is quota-saving `watchdog/oneshot.py`, not a continuously polling job. It performs bounded checks, retains attempt history through deterministic recovery PRs, waits at least the acknowledgement threshold before another attempt when next invoked, and emits one infrastructure-failure signal after three unacknowledged attempts. The twice-daily GitHub schedule is only a coarse backstop; the combined ChatGPT six-hourly Research Recovery Backup supplies the independent periodic check. Neither implies minute-level detection. Do not restore long-running private CI jobs without explicit approval.
 
 When connector control survives an interruption: stop all substantive work; preserve/read back the exact frontier; publish truthful interrupted state; conditionally release only this execution's own current lease; then update `watchdog/recovery.signal` once with the run, generation and incident timestamp to request an immediate bounded check. Never release a changed/competing owner. If control is lost entirely, leave the old lease to expire and rely on the independent backup. Ordinary heartbeats must not repeatedly touch the recovery signal.
 
@@ -70,17 +82,17 @@ Do NOT re-download/re-hash already verified static predecessor artifacts, rebuil
 
 ## Monitoring and persistence
 
-Reuse the existing GitHub/Dropbox ownership, heartbeat, supervisor and recovery/results task. Do not create duplicates. The two standing recovery consumers are infrastructure: if one is found disabled while the campaign is active or recoverable, the other may re-enable that existing task and must report the incident.
+Reuse the existing GitHub/Dropbox ownership, heartbeat, supervisor, event-triggered recovery/results task and combined six-hourly Research Recovery Backup. Do not create duplicates, restore hourly polling, or automatically re-enable retired/disabled tasks. The low-usage amendment above supersedes the former mutual-reenable rule.
 
 - heartbeat target: about 5 minutes while control is available;
 - cooperative ownership lease: 12 minutes;
-- active supervisor polling: 60 seconds;
+- active supervisor polling: 60 seconds ONLY while a continuous supervisor is actually running;
 - silent-running recovery threshold: 20-minute stale heartbeat AND matching expired lease;
 - explicit interrupted/blocked incomplete-delivery recovery: matching lease expiry, with no extra 20-minute wait.
 - recovery request acknowledgement: opening a recovery PR is NOT recovery success; success requires a coherent successor owner generation plus matching fresh heartbeat under the same authorization/deadline.
-- acknowledgement timeout: about 6 minutes; while the original authorization remains recoverable, retry the wake-up with a distinct attempt identifier, at most three attempts.
+- acknowledgement timeout: about 6 minutes; while the original authorization remains recoverable, retry the wake-up with a distinct attempt identifier, at most three attempts, when the external checker is next invoked.
 - after repeated unacknowledged wake-ups, emit a dedicated infrastructure-failure signal rather than silently stopping.
-- the event-triggered recovery/results task and hourly backup are standing infrastructure. A disabled recovery consumer during an active/recoverable campaign is an infrastructure fault, not a reason to abandon recovery.
+- the event-triggered recovery/results task and shared six-hourly backup are the intended configuration. Intentional retirement of the separate hourly tasks is not a recovery fault.
 
 The cooperative lease is not a server-side fence on Dropbox writes. Recheck ownership before advancing a shared current-state pointer and after long operations.
 
