@@ -2,6 +2,20 @@
 
 Campaign: `delta14-mixed-tate-20261012T210157Z`
 
+## Current recovery/deployment amendment - 2026-10-18
+
+Read `watchdog/RECOVERY_REPAIR_20261018.md` together with this policy. It records the user's explicit instruction to repair and recover the failed generation-29 execution under its SAME original authorization and unchanged deadline. It does not authorize a successor or additional time. For that exact authorization, apply the narrow correction in that document to the old execution-local finalize-only fields. A later explicit user stop, cancellation, private source-integrity restriction or safety restriction always controls.
+
+An ordinary coordinator/runtime outage ends the broken EXECUTION, not automatically the still-live mathematical AUTHORIZATION. Preserve interrupted/unverified assignments without credit, and record whether a genuinely fresh capable execution may resume before the original delivery reserve. Do not manufacture `further_mathematics_authorized=false` merely because one environment is offline. At/after reserve, or after an explicit user stop, only administrative finalization is allowed.
+
+The actual deployed monitor is quota-saving `watchdog/oneshot.py`, not a continuously polling job. It performs bounded checks, retains attempt history through deterministic recovery PRs, waits at least the acknowledgement threshold before another attempt when next invoked, and emits one infrastructure-failure signal after three unacknowledged attempts. The twice-daily GitHub schedule is only a coarse backstop; the existing ChatGPT hourly watchdog supplies the independent hourly check. Neither implies minute-level detection. Do not restore long-running private CI jobs without explicit approval.
+
+When connector control survives an interruption: stop all substantive work; preserve/read back the exact frontier; publish truthful interrupted state; conditionally release only this execution's own current lease; then update `watchdog/recovery.signal` once with the run, generation and incident timestamp to request an immediate bounded check. Never release a changed/competing owner. If control is lost entirely, leave the old lease to expire and rely on the independent backup. Ordinary heartbeats must not repeatedly touch the recovery signal.
+
+A recovery request, green launch check or matching takeover heartbeat is not evidence of mathematical progress. Report separately: request issued, ownership acknowledged, source/capability verification, and actual resumed substantive work. If the fresh environment lacks required source-byte access, persistence or role isolation, record the exact blocker once and preserve a faithful handoff rather than claiming success or looping launches.
+
+The historical continuous-polling intervals below apply ONLY while such a supervisor is actually running. This amendment supersedes any inference that the current quota-saving deployment polls every minute or retries six minutes later without another trigger. The original scope, immutable clocks, source verification, ownership protection and mathematical verification rules below remain in force.
+
 Standing user directive: always use the campaign's automatic recovery mechanism for every future explicitly authorized Work launch or continuation.
 
 ## Mandatory but lightweight launch bootstrap
