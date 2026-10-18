@@ -11,14 +11,14 @@
   "delivery_start_utc": "2026-10-18T20:53:52Z",
   "hard_deadline_utc": "2026-10-18T21:03:52Z",
   "status": "running",
-  "phase": "abs-w2-revision-2",
+  "phase": "j22-adjoint-running",
   "research_started": true,
   "active_workers": [
-    "abs_w2"
+    "j22_adjoint"
   ],
-  "active_math_elapsed_seconds": 0,
-  "last_heartbeat_utc": "2026-10-18T18:26:20.235Z",
-  "first_unfinished_action": "Complete isolated ABS-W2 revision 2; synthesize and continue global value-producing search under new authorization.",
+  "active_math_elapsed_seconds": 994,
+  "last_heartbeat_utc": "2026-10-18T18:33:56.448Z",
+  "first_unfinished_action": "Complete isolated J22-ADJOINT return by 18:59:30Z, persist/readback, reassess at 19:03:52Z and continue value-producing global research.",
   "watchdog_recovery_armed": true,
   "source_generation_sha256": "f63347440d8ea9a67315fc131e4652cbd643be4ddca8598612b855218f638520",
   "source_capsule_sha256": "f0f9e24519610d8bcacf929cc92a6be2426632488a9764f6c3404da0f3aae5b1",
@@ -27,7 +27,7 @@
     "L8-TORUS": 2,
     "PARITY-EXACT": 2,
     "ORB-INVERSION": 2,
-    "ABS-MIXED": 1
+    "ABS-MIXED": 2
   },
   "inherited_promotions": [
     "LTC-v1",
@@ -37,16 +37,21 @@
   "authorization_complete": false,
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
-  "latest_verified_dropbox_generation": "FINISH3H--exact-class-finish-3h-20261018-v1--exact-class-finish-20261018T180352Z--bootstrap-0002.json",
-  "latest_verified_dropbox_generation_sha256": "e49633876d5acad99d239d65ee66bf67b2ba1930e4370cfb2c83e2c0e572d0bb",
+  "latest_verified_dropbox_generation": "FINISH3H--exact-class-finish-3h-20261018-v1--exact-class-finish-20261018T180352Z--abs-complete-j22-prepared-0004.json",
+  "latest_verified_dropbox_generation_sha256": "dece1a31ef83c229654c50bff2935af8a182c054770a416b4d299a499f12d788",
   "source_capsule": "ABSOLUTE-QUOTIENT--exact-class-absolute-quotient-4h-20261016-v1--absolute-quotient-recovery-20261016T175413Z-g28--orb-w2-complete-0002.zip",
   "assignment_capsule": "ABSOLUTE-QUOTIENT--exact-class-absolute-quotient-4h-20261016-v1--absolute-quotient-20261016T161847Z--interrupted-0007.zip",
   "coordination": "Generation 29 lease verified. Supervisor one-shot regression/check passed; standing event recovery enabled and hourly backup re-enabled. No continuous GitHub polling claimed.",
   "math_start_utc": "2026-10-18T18:09:57.210Z",
-  "math_segment_start_utc": "2026-10-18T18:09:57.210Z",
+  "math_segment_start_utc": "2026-10-18T18:33:56.448Z",
   "supervisor_run_id": 39152779497,
   "supervisor_kind": "one-shot launch check; hourly recovery backup enabled",
   "hourly_backup_enabled": true,
-  "latest_verified_dropbox_capsule": "FINISH3H--exact-class-finish-3h-20261018-v1--exact-class-finish-20261018T180352Z--bootstrap-0002.zip",
-  "latest_verified_dropbox_capsule_sha256": "a5e06998bc65679c3664eb50c49d1ef1e199fad2b390f4ef91d1506c367d8acc"
+  "latest_verified_dropbox_capsule": "FINISH3H--exact-class-finish-3h-20261018-v1--exact-class-finish-20261018T180352Z--abs-complete-j22-prepared-0004.zip",
+  "latest_verified_dropbox_capsule_sha256": "409850cd5b00a8a45e72893751a825311270d0df589693f812d1f689cad33465",
+  "abs_w2_status": "complete; self-audited candidate only; externally raw-byte verified",
+  "last_safe_frontier": "ABS-W2 complete; both ABS waves matured; no promotion; J22 adjoint-summand pivot screened and prepared",
+  "abs_w2_return_file": "FINISH3H--exact-class-finish-3h-20261018-v1--exact-class-finish-20261018T180352Z--abs-w2-return-0003.zip",
+  "abs_w2_return_sha256": "4ec2d131905718aa514e71012bfe66191309f49928cdc523224b4ee5d7d096a8",
+  "parent_mechanism_gate": "No local result or diagnostic bound completes this parent authorization; full user instructions control."
 }
