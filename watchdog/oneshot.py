@@ -76,7 +76,11 @@ def check_once(api, driver, now, dry_run=False):
     if kind == "alert":
         driver.emit_infrastructure_failure(api, fresh, attempt)
         return "alert"
-    driver.emit_recovery(api, fresh, current, attempt)
+    result = driver.emit_recovery(api, fresh, current, attempt)
+    if result == "changed":
+        return "changed"
+    if result != "done":
+        raise ValueError("Unexpected recovery emitter result")
     print("Request emitted, NOT recovery acknowledgement", flush=True)
     return "requested"
 
