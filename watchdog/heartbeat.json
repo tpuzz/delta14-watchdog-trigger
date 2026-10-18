@@ -17,7 +17,7 @@
     "/root/rho_wave2"
   ],
   "active_math_elapsed_seconds": 2172,
-  "last_heartbeat_utc": "2026-10-18T19:57:52Z",
+  "last_heartbeat_utc": "2026-10-18T20:00:49Z",
   "first_unfinished_action": "Independent second RHO total-comparison wave under RHO_W2_BRIEF.md, source-only isolation, no W1 proof exposure; complete report/manifest and externally verify before credit.",
   "watchdog_recovery_armed": true,
   "source_generation_sha256": "f63347440d8ea9a67315fc131e4652cbd643be4ddca8598612b855218f638520",
@@ -39,13 +39,13 @@
   "authorization_complete": false,
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
-  "latest_verified_dropbox_generation": "FINISH3H--exact-class-finish-3h-20261018-v1--exact-class-finish-recovery-20261018T194230Z-g30--rho-w2-launched-0007.json",
-  "latest_verified_dropbox_generation_sha256": "d1f5bb490064910acaeb0d12220f66b6988faa5fdba7e702014264d79c586ce7",
+  "latest_verified_dropbox_generation": "FINISH3H--exact-class-finish-3h-20261018-v1--exact-class-finish-recovery-20261018T194230Z-g30--rho-w2-control-0008.json",
+  "latest_verified_dropbox_generation_sha256": "04d5bc66a6579d385e90b30fc79f7fb9021546c27f359604cb98ddc91cf5cb0b",
   "source_capsule": "ABSOLUTE-QUOTIENT--exact-class-absolute-quotient-4h-20261016-v1--absolute-quotient-recovery-20261016T175413Z-g28--orb-w2-complete-0002.zip",
   "assignment_capsule": "ABSOLUTE-QUOTIENT--exact-class-absolute-quotient-4h-20261016-v1--absolute-quotient-20261016T161847Z--interrupted-0007.zip",
   "coordination": "Generation30 owner, private bootstrap, matching heartbeat and start.signal read back. Actual one-shot supervisor regression and durable check succeeded. Hourly backup enabled.",
   "math_start_utc": "2026-10-18T18:09:57.210Z",
-  "math_segment_start_utc": null,
+  "math_segment_start_utc": "2026-10-18T19:58:22Z",
   "supervisor_run_id": 39160063095,
   "supervisor_kind": "verified successful one-shot check, not continuous polling",
   "hourly_backup_enabled": true,
@@ -97,5 +97,7 @@
     "verified": true
   },
   "rho_norm_w1_report_sha256": "804e0a03cf4560d453d61cd2ae3dadf3f8ce6490b07939fbebe83faebec2c2db",
-  "wave2_launch_utc": "2026-10-18T19:57:52Z"
+  "wave2_launch_utc": "2026-10-18T19:57:52Z",
+  "rho_wave2_start_utc": "2026-10-18T19:58:22Z",
+  "rho_wave2_mechanism_gate_utc": "2026-10-18T20:18:22Z"
 }
