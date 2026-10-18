@@ -16,8 +16,8 @@
   "authorization_amendment": "User attachment Pasted text(20261018-213932).txt",
   "run_id": "exact-class-continuation-20261018T214140Z-g32",
   "lease_generation": 32,
-  "phase": "recovered-pre-reassessment",
-  "research_started": false,
+  "phase": "mathematical-screen-active",
+  "research_started": true,
   "old_authorization_status": "closed/incomplete by explicit user directive",
   "recovery_mode": "DIRECT-RESUME",
   "source_integrity": "All three user-pinned predecessor hashes matched actual downloaded bytes",
@@ -38,13 +38,23 @@
     "RHO-NORM": 2,
     "J22-MONOMIAL": 2
   },
-  "active_workers": [],
-  "last_heartbeat_utc": "2026-10-18T21:44:10Z",
+  "active_workers": [
+    {
+      "id": "rotation_order",
+      "state": "running"
+    }
+  ],
+  "last_heartbeat_utc": "2026-10-18T21:50:10Z",
   "watchdog_recovery_armed": true,
   "authorization_complete": false,
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
   "latest_verified_dropbox_generation": "CONT4H--g32--AUTHORIZATION-0001.json",
-  "latest_verified_dropbox_capsule": "FINISH3H--exact-class-finish-recovery-20261018T205400Z-g31--INCOMPLETE-CAPSULE.zip",
-  "latest_verified_dropbox_capsule_sha256": "6912383b91a4c56c5d6660cd11e91fb880af8867b26d39641efb9c6752b6db74"
+  "latest_verified_dropbox_capsule": "CONT4H--g32--CHECKPOINT-0003.zip",
+  "latest_verified_dropbox_capsule_sha256": "12a84148b9f567dea9ba03064faa190d8405c9b9809e7a598df7380e4b6b0d5a",
+  "mathematical_execution_resumed": true,
+  "source_verified": true,
+  "supervisor_run_id": 39169180489,
+  "supervisor_job_id": 117798471139,
+  "latest_verified_dropbox_generation_sha256": "8538b77a2233e644dd0916050ed31112c70189fd6441b0f30f841d36883b3928"
 }
