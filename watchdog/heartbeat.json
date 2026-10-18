@@ -16,7 +16,7 @@
   "authorization_amendment": "User attachment Pasted text(20261018-213932).txt",
   "run_id": "exact-class-continuation-20261018T214140Z-g32",
   "lease_generation": 32,
-  "phase": "mathematical-screen-active",
+  "phase": "absolute-search-and-verification",
   "research_started": true,
   "old_authorization_status": "closed/incomplete by explicit user directive",
   "recovery_mode": "DIRECT-RESUME",
@@ -40,21 +40,25 @@
   },
   "active_workers": [
     {
-      "id": "rotation_order",
-      "state": "running"
+      "id": "j22_absolute",
+      "state": "active"
+    },
+    {
+      "id": "minrep_leakage",
+      "state": "complete awaiting external reconciliation"
     }
   ],
-  "last_heartbeat_utc": "2026-10-18T21:50:10Z",
+  "last_heartbeat_utc": "2026-10-18T21:58:00Z",
   "watchdog_recovery_armed": true,
   "authorization_complete": false,
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
-  "latest_verified_dropbox_generation": "CONT4H--g32--AUTHORIZATION-0001.json",
+  "latest_verified_dropbox_generation": "CONT4H--g32--STATE-0005.json",
   "latest_verified_dropbox_capsule": "CONT4H--g32--CHECKPOINT-0003.zip",
   "latest_verified_dropbox_capsule_sha256": "12a84148b9f567dea9ba03064faa190d8405c9b9809e7a598df7380e4b6b0d5a",
   "mathematical_execution_resumed": true,
   "source_verified": true,
   "supervisor_run_id": 39169180489,
   "supervisor_job_id": 117798471139,
-  "latest_verified_dropbox_generation_sha256": "8538b77a2233e644dd0916050ed31112c70189fd6441b0f30f841d36883b3928"
+  "latest_verified_dropbox_generation_sha256": "db88e62a5d0becd5219103b49c222a15a7871e57fbdf5957b13d9eecfd498015"
 }
