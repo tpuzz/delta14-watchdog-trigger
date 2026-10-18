@@ -11,14 +11,14 @@
   "delivery_start_utc": "2026-10-18T20:53:52Z",
   "hard_deadline_utc": "2026-10-18T21:03:52Z",
   "status": "running",
-  "phase": "j22-adjoint-running",
+  "phase": "rho-norm-w1-running",
   "research_started": true,
   "active_workers": [
-    "j22_adjoint"
+    "rho_norm_w1"
   ],
-  "active_math_elapsed_seconds": 994,
-  "last_heartbeat_utc": "2026-10-18T18:43:07.377Z",
-  "first_unfinished_action": "Complete isolated J22-ADJOINT return by 18:59:30Z, persist/readback, reassess at 19:03:52Z and continue value-producing global research.",
+  "active_math_elapsed_seconds": 1717,
+  "last_heartbeat_utc": "2026-10-18T18:52:38.160Z",
+  "first_unfinished_action": "Complete isolated RHO-NORM-W1 by19:18:00Z; perform first-hour global checkpoint at19:03:52Z without interrupting authorized work; preserve/readback the complete return before synthesis.",
   "watchdog_recovery_armed": true,
   "source_generation_sha256": "f63347440d8ea9a67315fc131e4652cbd643be4ddca8598612b855218f638520",
   "source_capsule_sha256": "f0f9e24519610d8bcacf929cc92a6be2426632488a9764f6c3404da0f3aae5b1",
@@ -27,7 +27,9 @@
     "L8-TORUS": 2,
     "PARITY-EXACT": 2,
     "ORB-INVERSION": 2,
-    "ABS-MIXED": 2
+    "ABS-MIXED": 2,
+    "J22-ADJOINT": 1,
+    "RHO-NORM": 0
   },
   "inherited_promotions": [
     "LTC-v1",
@@ -37,21 +39,25 @@
   "authorization_complete": false,
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
-  "latest_verified_dropbox_generation": "FINISH3H--exact-class-finish-3h-20261018-v1--exact-class-finish-20261018T180352Z--j22-partial-source-ready-0005.json",
-  "latest_verified_dropbox_generation_sha256": "31d7f7a24ef8214a567c611980fb06821a0bcc3669222c6370faf6ed53b98d80",
+  "latest_verified_dropbox_generation": "FINISH3H--exact-class-finish-3h-20261018-v1--exact-class-finish-20261018T180352Z--j22-complete-rho-running-0007.json",
+  "latest_verified_dropbox_generation_sha256": "092d83273b7824545c3215ef83a93541803eb9e01f202502892ff7608a97ffbb",
   "source_capsule": "ABSOLUTE-QUOTIENT--exact-class-absolute-quotient-4h-20261016-v1--absolute-quotient-recovery-20261016T175413Z-g28--orb-w2-complete-0002.zip",
   "assignment_capsule": "ABSOLUTE-QUOTIENT--exact-class-absolute-quotient-4h-20261016-v1--absolute-quotient-20261016T161847Z--interrupted-0007.zip",
   "coordination": "Generation 29 lease verified. Supervisor one-shot regression/check passed; standing event recovery enabled and hourly backup re-enabled. No continuous GitHub polling claimed.",
   "math_start_utc": "2026-10-18T18:09:57.210Z",
-  "math_segment_start_utc": "2026-10-18T18:33:56.448Z",
+  "math_segment_start_utc": "2026-10-18T18:50:37.759Z",
   "supervisor_run_id": 39152779497,
   "supervisor_kind": "one-shot launch check; hourly recovery backup enabled",
   "hourly_backup_enabled": true,
-  "latest_verified_dropbox_capsule": "FINISH3H--exact-class-finish-3h-20261018-v1--exact-class-finish-20261018T180352Z--j22-partial-source-ready-0005.zip",
-  "latest_verified_dropbox_capsule_sha256": "47fce41593dfab73e05c877b8849275cdc02305a7e7d07e5034add4b0b08c392",
+  "latest_verified_dropbox_capsule": "FINISH3H--exact-class-finish-3h-20261018-v1--exact-class-finish-20261018T180352Z--j22-complete-rho-running-0007.zip",
+  "latest_verified_dropbox_capsule_sha256": "14f93046fbb0a7fedbdc05daa1e994814d09f0b3a06c36a17ef886ad1ba90320",
   "abs_w2_status": "complete; self-audited candidate only; externally raw-byte verified",
-  "last_safe_frontier": "ABS-W2 complete and verified; J22 adjoint worker running, first local checkpoint candidate only",
+  "last_safe_frontier": "ABS-W2 and J22-ADJOINT complete and externally byte-verified; no new promotion; RHO-NORM-W1 started from exact source definitions.",
   "abs_w2_return_file": "FINISH3H--exact-class-finish-3h-20261018-v1--exact-class-finish-20261018T180352Z--abs-w2-return-0003.zip",
   "abs_w2_return_sha256": "4ec2d131905718aa514e71012bfe66191309f49928cdc523224b4ee5d7d096a8",
-  "parent_mechanism_gate": "No local result or diagnostic bound completes this parent authorization; full user instructions control."
+  "parent_mechanism_gate": "No local result or diagnostic bound completes this parent authorization; full user instructions control.",
+  "active_math_timing_qualification": "Sum of completed isolated-worker intervals only; root screening and coordination not continuously instrumented. Immutable wall clock controls authorization.",
+  "j22_adjoint_status": "complete; candidate only; externally raw-byte verified",
+  "j22_adjoint_return_file": "FINISH3H--exact-class-finish-3h-20261018-v1--exact-class-finish-20261018T180352Z--j22-adjoint-return-0006.zip",
+  "j22_adjoint_return_sha256": "c58a3200c80496cfaca89e6c4c3d55c80ff6414ed750b5b11e016d923d9d82fa"
 }
