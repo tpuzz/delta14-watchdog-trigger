@@ -3,14 +3,15 @@
   "supervision_campaign_id": "delta14-mixed-tate-20261012T210157Z",
   "mathematical_campaign_id": "delta14-exact-class-20261015T182114Z",
   "authorization_id": "exact-class-finish-3h-20261018-v1",
-  "owner_run_id": "exact-class-finish-recovery-20261018T194230Z-g30",
-  "generation": 30,
+  "owner_run_id": "exact-class-finish-recovery-20261018T205400Z-g31",
+  "generation": 31,
   "status": "active",
-  "last_renewed_utc": "2026-10-18T20:07:10Z",
-  "lease_expires_utc": "2026-10-18T20:19:10.000Z",
+  "last_renewed_utc": "2026-10-18T20:51:31Z",
+  "lease_expires_utc": "2026-10-18T21:03:31.000Z",
   "authorization_start_utc": "2026-10-18T18:03:52Z",
-  "hard_deadline_utc": "2026-10-18T21:03:52Z",
-  "delivery_start_utc": "2026-10-18T20:53:52Z",
-  "predecessor_run_id": "exact-class-finish-20261018T180352Z",
-  "new_authorization": false
+  "hard_deadline_utc": "2026-10-18T23:03:52Z",
+  "delivery_start_utc": "2026-10-18T22:53:52Z",
+  "predecessor_run_id": "exact-class-finish-recovery-20261018T194230Z-g30",
+  "new_authorization": false,
+  "authorization_amendment": "watchdog/AUTH_EXTENSION_20261018_2H.md"
 }
