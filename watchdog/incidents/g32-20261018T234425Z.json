@@ -1,0 +1,27 @@
+{
+  "run_id": "exact-class-continuation-20261018T214140Z-g32",
+  "generation": 32,
+  "authorization_id": "exact-class-finish-continuation-4h-20261018-v1",
+  "incident_utc": "2026-10-18T23:44:25.383Z",
+  "error": "exec-server transport closed",
+  "lease_released": true,
+  "recovery_request_pr": 25,
+  "supervisor_run_id": 39177810223,
+  "supervisor_job_id": 117824005205,
+  "newest_authoritative_capsule": "CONT4H--g32--CHECKPOINT-0018.zip",
+  "uncommitted_preservation_only": {
+    "path": "CONT4H--g32--UNCOMMITTED-RECOVERY.zip",
+    "sha256": "eead3f606b511fc46822622828a3be2d0aa26bf39cd7a965659209fed270e13f",
+    "actual_downloaded_bytes_verified": true,
+    "includes": "complete local return and input manifest for one assignment; partial second assignment; execution interruption diagnostic",
+    "credit": "none; successor must reconcile, no shared frontier advance"
+  },
+  "private_diagnostic": {
+    "path": "CONT4H--g32--EXECUTION-INTERRUPTED.md",
+    "sha256": "ce3bd24fd0245865340c17751ca066f7208f0f9ec1e3b29ec03b1406287a0513"
+  },
+  "hard_deadline_utc": "2026-10-19T01:41:40Z",
+  "delivery_start_utc": "2026-10-19T01:31:40Z",
+  "authorization_complete": false,
+  "terminal_delivery_complete": false
+}
