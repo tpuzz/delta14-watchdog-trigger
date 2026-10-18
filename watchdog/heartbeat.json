@@ -11,12 +11,14 @@
   "delivery_start_utc": "2026-10-18T20:53:52Z",
   "hard_deadline_utc": "2026-10-18T21:03:52Z",
   "status": "running",
-  "phase": "rho-norm-w1-complete-global-reassessment",
+  "phase": "rho-wave2-running",
   "research_started": true,
-  "active_workers": [],
+  "active_workers": [
+    "/root/rho_wave2"
+  ],
   "active_math_elapsed_seconds": 2172,
-  "last_heartbeat_utc": "2026-10-18T19:54:19Z",
-  "first_unfinished_action": "Global reassessment after RHO-NORM-W1; no local result ends the parent authorization. Determine a distinct remaining actual-value test within the inherited private task.",
+  "last_heartbeat_utc": "2026-10-18T19:57:52Z",
+  "first_unfinished_action": "Independent second RHO total-comparison wave under RHO_W2_BRIEF.md, source-only isolation, no W1 proof exposure; complete report/manifest and externally verify before credit.",
   "watchdog_recovery_armed": true,
   "source_generation_sha256": "f63347440d8ea9a67315fc131e4652cbd643be4ddca8598612b855218f638520",
   "source_capsule_sha256": "f0f9e24519610d8bcacf929cc92a6be2426632488a9764f6c3404da0f3aae5b1",
@@ -37,8 +39,8 @@
   "authorization_complete": false,
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
-  "latest_verified_dropbox_generation": "FINISH3H--exact-class-finish-3h-20261018-v1--exact-class-finish-recovery-20261018T194230Z-g30--rho-w1-complete-0006.json",
-  "latest_verified_dropbox_generation_sha256": "ae00372a8ec49b8ff892021e23c0c94aef6ac7b0cb1866546f58dee2aee39792",
+  "latest_verified_dropbox_generation": "FINISH3H--exact-class-finish-3h-20261018-v1--exact-class-finish-recovery-20261018T194230Z-g30--rho-w2-launched-0007.json",
+  "latest_verified_dropbox_generation_sha256": "d1f5bb490064910acaeb0d12220f66b6988faa5fdba7e702014264d79c586ce7",
   "source_capsule": "ABSOLUTE-QUOTIENT--exact-class-absolute-quotient-4h-20261016-v1--absolute-quotient-recovery-20261016T175413Z-g28--orb-w2-complete-0002.zip",
   "assignment_capsule": "ABSOLUTE-QUOTIENT--exact-class-absolute-quotient-4h-20261016-v1--absolute-quotient-20261016T161847Z--interrupted-0007.zip",
   "coordination": "Generation30 owner, private bootstrap, matching heartbeat and start.signal read back. Actual one-shot supervisor regression and durable check succeeded. Hourly backup enabled.",
@@ -94,5 +96,6 @@
     "sha256": "1655b356582e257196e2fc6a9be0446fab660bd727338e3a56c1ea29be2155d2",
     "verified": true
   },
-  "rho_norm_w1_report_sha256": "804e0a03cf4560d453d61cd2ae3dadf3f8ce6490b07939fbebe83faebec2c2db"
+  "rho_norm_w1_report_sha256": "804e0a03cf4560d453d61cd2ae3dadf3f8ce6490b07939fbebe83faebec2c2db",
+  "wave2_launch_utc": "2026-10-18T19:57:52Z"
 }
