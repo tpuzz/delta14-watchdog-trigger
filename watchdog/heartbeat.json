@@ -6,8 +6,8 @@
   "owner_run_id": "exact-class-continuation-20261018T214140Z-g32",
   "generation": 32,
   "status": "running",
-  "last_renewed_utc": "2026-10-18T23:05:59.845Z",
-  "lease_expires_utc": "2026-10-18T23:17:59.845Z",
+  "last_renewed_utc": "2026-10-18T23:13:52.302Z",
+  "lease_expires_utc": "2026-10-18T23:25:52.302Z",
   "authorization_start_utc": "2026-10-18T21:41:40Z",
   "hard_deadline_utc": "2026-10-19T01:41:40Z",
   "delivery_start_utc": "2026-10-19T01:31:40Z",
@@ -22,7 +22,7 @@
   "recovery_mode": "DIRECT-RESUME",
   "source_integrity": "All three user-pinned predecessor hashes matched actual downloaded bytes",
   "newer_successor_check": "Complete direct Dropbox listing and live owner/heartbeat: no newer successor",
-  "first_unfinished_action": "Complete isolated verification and fresh concrete search",
+  "first_unfinished_action": "Finish two isolated concrete value searches; reconcile reports and manifests",
   "inherited_state": "recovered/RUN_STATE.json, source-bound and unchanged",
   "inherited_promotions": [
     "LTC-v1",
@@ -40,15 +40,15 @@
   },
   "active_workers": [
     {
-      "id": "axis_reconstruction",
+      "id": "symplectic_value_w2",
       "state": "active"
     },
     {
-      "id": "symplectic_value_w1",
+      "id": "degeneration_value_w1",
       "state": "active"
     }
   ],
-  "last_heartbeat_utc": "2026-10-18T23:07:59.945Z",
+  "last_heartbeat_utc": "2026-10-18T23:17:26.970Z",
   "watchdog_recovery_armed": true,
   "authorization_complete": false,
   "terminal_delivery_complete": false,
