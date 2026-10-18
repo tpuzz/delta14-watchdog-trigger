@@ -11,13 +11,15 @@
   "delivery_start_utc": "2026-10-18T20:53:52Z",
   "hard_deadline_utc": "2026-10-18T21:03:52Z",
   "status": "running",
-  "phase": "bootstrap-verified-inputs",
-  "research_started": false,
-  "active_workers": [],
+  "phase": "abs-w2-revision-2",
+  "research_started": true,
+  "active_workers": [
+    "abs_w2"
+  ],
   "active_math_elapsed_seconds": 0,
-  "last_heartbeat_utc": "2026-10-18T18:08:04.476Z",
+  "last_heartbeat_utc": "2026-10-18T18:09:57.210Z",
   "first_unfinished_action": "Complete isolated ABS-W2 revision 2; synthesize and continue global value-producing search under new authorization.",
-  "watchdog_recovery_armed": false,
+  "watchdog_recovery_armed": true,
   "source_generation_sha256": "f63347440d8ea9a67315fc131e4652cbd643be4ddca8598612b855218f638520",
   "source_capsule_sha256": "f0f9e24519610d8bcacf929cc92a6be2426632488a9764f6c3404da0f3aae5b1",
   "assignment_capsule_sha256": "d15e451bfa41f30ba3a1dacf0a1ada44656cea367b7d21d697fb9801c3972e2a",
@@ -39,5 +41,10 @@
   "latest_verified_dropbox_generation_sha256": "152d4a2285d46dda791d855b6743126f44ac45bfbbec2ce63c54b5bdce205e2c",
   "source_capsule": "ABSOLUTE-QUOTIENT--exact-class-absolute-quotient-4h-20261016-v1--absolute-quotient-recovery-20261016T175413Z-g28--orb-w2-complete-0002.zip",
   "assignment_capsule": "ABSOLUTE-QUOTIENT--exact-class-absolute-quotient-4h-20261016-v1--absolute-quotient-20261016T161847Z--interrupted-0007.zip",
-  "coordination": "Generation 29 new authorization ownership verified; supervisor start pending; all exact assignment inputs hash-verified."
+  "coordination": "Generation 29 lease verified. Supervisor one-shot regression/check passed; standing event recovery enabled and hourly backup re-enabled. No continuous GitHub polling claimed.",
+  "math_start_utc": "2026-10-18T18:09:57.210Z",
+  "math_segment_start_utc": "2026-10-18T18:09:57.210Z",
+  "supervisor_run_id": 39152779497,
+  "supervisor_kind": "one-shot launch check; hourly recovery backup enabled",
+  "hourly_backup_enabled": true
 }
