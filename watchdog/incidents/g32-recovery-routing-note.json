@@ -1,0 +1,15 @@
+{
+  "incident": "g32-20261018T234425Z",
+  "observed_utc": "2026-10-18T23:49:46.977Z",
+  "finding": "Existing Delta14 event consumer prompt still hard-codes the prior authorization and amended prior clocks; do not apply those clocks to the current distinct four-hour authorization.",
+  "current_authorization_id": "exact-class-finish-continuation-4h-20261018-v1",
+  "immutable_start": "2026-10-18T21:41:40Z",
+  "reserve": "2026-10-19T01:31:40Z",
+  "deadline": "2026-10-19T01:41:40Z",
+  "action": "One immediate run requested of existing generic Research Recovery Backup 6ace34e619e08191a0fafff81fa8714c, which reads current private authorization. Schedule unchanged; no duplicates or old authorization reopened.",
+  "status": "request accepted; actual takeover not yet verified",
+  "late_preservation": {
+    "share_bundle": "CONT4H--g32--SHARE-INTERRUPTED.zip",
+    "sha256": "0cf16cf1c90c7cdf2a7b846d99f78ea3f36a0dd55e0630f9575a12b2969edb48"
+  }
+}
