@@ -5,9 +5,9 @@
   "authorization_id": "exact-class-finish-continuation-4h-20261018-v1",
   "owner_run_id": "exact-class-continuation-20261018T214140Z-g32",
   "generation": 32,
-  "status": "running",
-  "last_renewed_utc": "2026-10-18T23:35:10.439Z",
-  "lease_expires_utc": "2026-10-18T23:47:10.439Z",
+  "status": "interrupted",
+  "last_renewed_utc": "2026-10-18T23:41:10.342Z",
+  "lease_expires_utc": "2026-10-18T23:53:10.342Z",
   "authorization_start_utc": "2026-10-18T21:41:40Z",
   "hard_deadline_utc": "2026-10-19T01:41:40Z",
   "delivery_start_utc": "2026-10-19T01:31:40Z",
@@ -16,13 +16,13 @@
   "authorization_amendment": "User attachment Pasted text(20261018-213932).txt",
   "run_id": "exact-class-continuation-20261018T214140Z-g32",
   "lease_generation": 32,
-  "phase": "epoch3-directed-value-tests",
+  "phase": "coordinator-runtime-distress-recovery-required",
   "research_started": true,
   "old_authorization_status": "closed/incomplete by explicit user directive",
-  "recovery_mode": "DIRECT-RESUME",
+  "recovery_mode": "resume_same_authorization_before_reserve",
   "source_integrity": "All three user-pinned predecessor hashes matched actual downloaded bytes",
   "newer_successor_check": "Complete direct Dropbox listing and live owner/heartbeat: no newer successor",
-  "first_unfinished_action": "Complete two directed value tests and reconcile their complete returns",
+  "first_unfinished_action": "Recover healthy filesystem; reconcile two completed or partially preserved local returns before any further research. Latest actual-byte verified capsule0018 remains authoritative; no new gate credit.",
   "inherited_state": "recovered/RUN_STATE.json, source-bound and unchanged",
   "inherited_promotions": [
     "LTC-v1",
@@ -41,14 +41,14 @@
   "active_workers": [
     {
       "id": "j22_curve_gerbe",
-      "state": "active"
+      "state": "mathematics stopped; report local; manifest creation tool pending; external credit incomplete"
     },
     {
       "id": "degeneration_pureline",
-      "state": "active"
+      "state": "complete local report and manifest read; attempted external upload errored; no durable credit"
     }
   ],
-  "last_heartbeat_utc": "2026-10-18T23:36:27.402Z",
+  "last_heartbeat_utc": "2026-10-18T23:44:25.383Z",
   "watchdog_recovery_armed": true,
   "authorization_complete": false,
   "terminal_delivery_complete": false,
@@ -62,5 +62,33 @@
   "supervisor_job_id": 117798471139,
   "latest_verified_dropbox_generation_sha256": "9991e8000f1f2744eee54f76b5a776e9c4d3765e40354f11fe0656b1ab70702b",
   "epoch": 3,
-  "epoch_health": "healthy; complete current capsule externally byte-verified"
+  "epoch_health": "unhealthy: root and worker filesystem tools are stalled; upload returned an error",
+  "further_mathematics_authorized": true,
+  "interruption": {
+    "observed_utc": "2026-10-18T23:44:25.383Z",
+    "root_cells": [
+      "215",
+      "217"
+    ],
+    "worker_cells": [
+      "j22_curve_gerbe:10",
+      "j22_curve_gerbe:11"
+    ],
+    "error": "Filesystem execution calls stalled in both root and worker. Upload reported isError=true; detailed error remains in pending root cell215. Not classified as approval rejection.",
+    "last_safe_capsule": "CONT4H--g32--CHECKPOINT-0018.zip",
+    "last_safe_sha256": "9991e8000f1f2744eee54f76b5a776e9c4d3765e40354f11fe0656b1ab70702b",
+    "local_frontier_directory": "/workspace/scratch/6c1622629f7f",
+    "unverified_new_files": [
+      "degeneration-pureline-followup/REPORT.md",
+      "degeneration-pureline-followup/ACTUAL_MANIFEST.json",
+      "j22-curve-gerbe/REPORT.md",
+      "j22-curve-gerbe/CHECKPOINT.md"
+    ],
+    "unverified_local_bundle": {
+      "path": "CONT4H--g32--DEGENERATION-PURELINE.zip",
+      "sha256": "e8f62be132a3bdffbd01fa08b97351820331e7fecbd7e8104512c1e1fe24950e"
+    },
+    "additional_saved_not_byte_verified": "CONT4H--g32--REASSESSMENT-0019.md",
+    "prepared_unlaunched": "GLOBAL_SYNTHESIS_DIRECTED_BRIEF.md creation pending; not launched; do not count as work"
+  }
 }
