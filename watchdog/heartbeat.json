@@ -11,14 +11,12 @@
   "delivery_start_utc": "2026-10-18T20:53:52Z",
   "hard_deadline_utc": "2026-10-18T21:03:52Z",
   "status": "running",
-  "phase": "rho-norm-w1-replacement1",
+  "phase": "rho-norm-w1-complete-global-reassessment",
   "research_started": true,
-  "active_workers": [
-    "/root/rho_replacement1"
-  ],
-  "active_math_elapsed_seconds": 1717,
+  "active_workers": [],
+  "active_math_elapsed_seconds": 2172,
   "last_heartbeat_utc": "2026-10-18T19:54:19Z",
-  "first_unfinished_action": "Resume interrupted RHO-NORM-W1, replacement 1 of at most 2, from its eight hash-verified allowlisted inputs; no completed-wave credit until complete report and actual manifest are externally byte-verified.",
+  "first_unfinished_action": "Global reassessment after RHO-NORM-W1; no local result ends the parent authorization. Determine a distinct remaining actual-value test within the inherited private task.",
   "watchdog_recovery_armed": true,
   "source_generation_sha256": "f63347440d8ea9a67315fc131e4652cbd643be4ddca8598612b855218f638520",
   "source_capsule_sha256": "f0f9e24519610d8bcacf929cc92a6be2426632488a9764f6c3404da0f3aae5b1",
@@ -29,7 +27,7 @@
     "ORB-INVERSION": 2,
     "ABS-MIXED": 2,
     "J22-ADJOINT": 1,
-    "RHO-NORM": 0
+    "RHO-NORM": 1
   },
   "inherited_promotions": [
     "LTC-v1",
@@ -39,20 +37,20 @@
   "authorization_complete": false,
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
-  "latest_verified_dropbox_generation": "FINISH3H--exact-class-finish-3h-20261018-v1--exact-class-finish-recovery-20261018T194230Z-g30--control-0005.json",
-  "latest_verified_dropbox_generation_sha256": "cf290e4c76f9293c9bd7701abab84c0fa2e1e23b1ebe27df3339e6645fd471a5",
+  "latest_verified_dropbox_generation": "FINISH3H--exact-class-finish-3h-20261018-v1--exact-class-finish-recovery-20261018T194230Z-g30--rho-w1-complete-0006.json",
+  "latest_verified_dropbox_generation_sha256": "ae00372a8ec49b8ff892021e23c0c94aef6ac7b0cb1866546f58dee2aee39792",
   "source_capsule": "ABSOLUTE-QUOTIENT--exact-class-absolute-quotient-4h-20261016-v1--absolute-quotient-recovery-20261016T175413Z-g28--orb-w2-complete-0002.zip",
   "assignment_capsule": "ABSOLUTE-QUOTIENT--exact-class-absolute-quotient-4h-20261016-v1--absolute-quotient-20261016T161847Z--interrupted-0007.zip",
   "coordination": "Generation30 owner, private bootstrap, matching heartbeat and start.signal read back. Actual one-shot supervisor regression and durable check succeeded. Hourly backup enabled.",
   "math_start_utc": "2026-10-18T18:09:57.210Z",
-  "math_segment_start_utc": "2026-10-18T19:45:01Z",
+  "math_segment_start_utc": null,
   "supervisor_run_id": 39160063095,
   "supervisor_kind": "verified successful one-shot check, not continuous polling",
   "hourly_backup_enabled": true,
   "latest_verified_dropbox_capsule": "FINISH3H--exact-class-finish-recovery-20261018T194230Z-g30--recovery-checkpoint-0004.zip",
   "latest_verified_dropbox_capsule_sha256": "524a5f0c0483c8f298a58d1bdd65f149f4df2c6f66a91a9ea66e6664eef35abe",
   "abs_w2_status": "complete; self-audited candidate only; externally raw-byte verified",
-  "last_safe_frontier": "ABS-W2 and J22-ADJOINT complete and externally verified. RHO-NORM-W1 interrupted: local checkpoint and initial manifest only; further candidate text returned in conversation, no complete written report.",
+  "last_safe_frontier": "ABS-W2, J22-ADJOINT and RHO-NORM-W1 complete and externally byte-verified, all new results candidate-only. Global exact class unresolved; no new promotion.",
   "abs_w2_return_file": "FINISH3H--exact-class-finish-3h-20261018-v1--exact-class-finish-20261018T180352Z--abs-w2-return-0003.zip",
   "abs_w2_return_sha256": "4ec2d131905718aa514e71012bfe66191309f49928cdc523224b4ee5d7d096a8",
   "parent_mechanism_gate": "No local result or diagnostic bound completes this parent authorization; full user instructions control.",
@@ -60,7 +58,7 @@
   "j22_adjoint_status": "complete; candidate only; externally raw-byte verified",
   "j22_adjoint_return_file": "FINISH3H--exact-class-finish-3h-20261018-v1--exact-class-finish-20261018T180352Z--j22-adjoint-return-0006.zip",
   "j22_adjoint_return_sha256": "c58a3200c80496cfaca89e6c4c3d55c80ff6414ed750b5b11e016d923d9d82fa",
-  "rho_norm_w1_status": "interrupted due environment_offline; zero completed-wave credit",
+  "rho_norm_w1_status": "complete replacement1; candidate only; report and actual manifest externally raw-byte verified; first wave credited once",
   "runtime_boundary": {
     "observed_at_utc": "2026-10-18T19:02:00Z",
     "confirmed_at_utc": "2026-10-18T19:05:38Z",
@@ -89,5 +87,12 @@
   "worker_launch_utc": "2026-10-18T19:44:37Z",
   "recovery_math_start_utc": "2026-10-18T19:45:01Z",
   "isolated_role_capability": "Fresh fork_turns=none RHO-NORM-W1 replacement verified eight frozen input hashes and checkpoint write; no sibling or predecessor proof exposure.",
-  "first_mathematical_checkpoint": "rho-replacement1/CHECKPOINT.md; candidate partial only; no completed return"
+  "first_mathematical_checkpoint": "rho-replacement1/CHECKPOINT.md; candidate partial only; no completed return",
+  "math_segment_end_utc": "2026-10-18T19:52:36Z",
+  "rho_norm_w1_return": {
+    "path": "/ChatGPT-Research-State/delta14-mixed-tate/FINISH3H--exact-class-finish-recovery-20261018T194230Z-g30--RHO-W1-COMPLETE.zip",
+    "sha256": "1655b356582e257196e2fc6a9be0446fab660bd727338e3a56c1ea29be2155d2",
+    "verified": true
+  },
+  "rho_norm_w1_report_sha256": "804e0a03cf4560d453d61cd2ae3dadf3f8ce6490b07939fbebe83faebec2c2db"
 }
