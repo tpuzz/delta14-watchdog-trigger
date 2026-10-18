@@ -45,6 +45,7 @@ class DriverTests(unittest.TestCase):
         driver = Mock(MAX_RECOVERY_ATTEMPTS=3, ACK_TIMEOUT_SECONDS=360)
         driver.decide.return_value = SimpleNamespace(action="trigger", reason="stale", mode="resume_within_original_scope")
         driver.incident_identity.return_value = "incident"
+        driver.emit_recovery.return_value = "done"
         driver.timestamp.side_effect = lambda s: datetime.fromisoformat(s.replace("Z", "+00:00"))
         return api, driver
 
@@ -85,6 +86,11 @@ class DriverTests(unittest.TestCase):
         api.request.side_effect = history
         self.assertEqual(check_once(api, driver, NOW), "requested")
         self.assertEqual(driver.emit_recovery.call_args.args[-1], 2)
+
+    def test_final_emitter_race_does_not_claim_request(self):
+        api, driver = self.fixtures()
+        driver.emit_recovery.return_value = "changed"
+        self.assertEqual(check_once(api, driver, NOW), "changed")
 
     def test_mismatched_pr_rejected(self):
         api, driver = self.fixtures()
