@@ -6,8 +6,8 @@
   "owner_run_id": "exact-class-continuation-20261018T214140Z-g32",
   "generation": 32,
   "status": "running",
-  "last_renewed_utc": "2026-10-18T22:38:25.460Z",
-  "lease_expires_utc": "2026-10-18T22:50:25.460Z",
+  "last_renewed_utc": "2026-10-18T22:44:40.603Z",
+  "lease_expires_utc": "2026-10-18T22:56:40.603Z",
   "authorization_start_utc": "2026-10-18T21:41:40Z",
   "hard_deadline_utc": "2026-10-19T01:41:40Z",
   "delivery_start_utc": "2026-10-19T01:31:40Z",
@@ -22,7 +22,7 @@
   "recovery_mode": "DIRECT-RESUME",
   "source_integrity": "All three user-pinned predecessor hashes matched actual downloaded bytes",
   "newer_successor_check": "Complete direct Dropbox listing and live owner/heartbeat: no newer successor",
-  "first_unfinished_action": "Complete isolated current feasibility search; reconcile full report and manifest",
+  "first_unfinished_action": "Continue isolated second global feasibility wave; previous full return externally reconciled",
   "inherited_state": "recovered/RUN_STATE.json, source-bound and unchanged",
   "inherited_promotions": [
     "LTC-v1",
@@ -40,11 +40,11 @@
   },
   "active_workers": [
     {
-      "id": "global_value_w1",
+      "id": "global_value_w2",
       "state": "active"
     }
   ],
-  "last_heartbeat_utc": "2026-10-18T22:39:14.922Z",
+  "last_heartbeat_utc": "2026-10-18T22:44:57.718Z",
   "watchdog_recovery_armed": true,
   "authorization_complete": false,
   "terminal_delivery_complete": false,
