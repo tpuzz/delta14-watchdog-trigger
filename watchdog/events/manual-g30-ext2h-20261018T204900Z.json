@@ -1,0 +1,14 @@
+{
+  "campaign_id": "delta14-mixed-tate-20261012T210157Z",
+  "mathematical_campaign_id": "delta14-exact-class-20261015T182114Z",
+  "authorization_id": "exact-class-finish-3h-20261018-v1",
+  "source_run_id": "exact-class-finish-recovery-20261018T194230Z-g30",
+  "source_generation": 30,
+  "extension_directive": "watchdog/AUTH_EXTENSION_20261018_2H.md",
+  "reason": "generation 30 heartbeat stale >20m; matching lease expired; RHO-W2-COMPLETE.zip persisted but unreconciled",
+  "requested_mode": "resume_within_amended_scope",
+  "authorization_start_utc": "2026-10-18T18:03:52Z",
+  "amended_delivery_start_utc": "2026-10-18T22:53:52Z",
+  "amended_hard_deadline_utc": "2026-10-18T23:03:52Z",
+  "requested_at_utc": "2026-10-18T20:49:00Z"
+}
