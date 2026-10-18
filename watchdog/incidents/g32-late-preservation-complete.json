@@ -1,0 +1,18 @@
+{
+  "run_id": "exact-class-continuation-20261018T214140Z-g32",
+  "generation": 32,
+  "kind": "immutable late evidence preservation; not a shared current-state update",
+  "successor_observed": "exact-class-recovery-20261018T234859Z-g33",
+  "successor_matching_heartbeat": true,
+  "mathematical_resumption_not_yet_verified": true,
+  "preserved_capsule": "CONT4H--g32--INTERRUPTED-CAPSULE.zip",
+  "sha256": "454a9f403366f2f7bed9c86a2a1dc1b2eccc058ea73fd7e2f25ae4c46d4e346e",
+  "actual_downloaded_bytes_verified": true,
+  "contains": "complete late reports and actual manifests for both directed assignments, with exact-text restoration provenance for one; interrupted local state and unchanged promoted records; see LATE-PRESERVATION inside",
+  "credit": "candidate only, zero new independent waves or gates; successor must reconcile",
+  "share_bundle": "CONT4H--g32--SHARE-INTERRUPTED.zip",
+  "share_sha256": "0cf16cf1c90c7cdf2a7b846d99f78ea3f36a0dd55e0630f9575a12b2969edb48",
+  "authorization_complete": false,
+  "terminal_delivery_complete": false,
+  "old_execution_mathematics_stopped": true
+}
