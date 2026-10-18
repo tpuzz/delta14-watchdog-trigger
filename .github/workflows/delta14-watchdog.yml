@@ -5,12 +5,15 @@ on:
     branches: [main]
     paths:
       - "watchdog/start.signal"
+      - "watchdog/recovery.signal"
       - "watchdog/supervisor.py"
       - "watchdog/test_supervisor.py"
+      - "watchdog/oneshot.py"
+      - "watchdog/test_oneshot.py"
       - ".github/workflows/delta14-watchdog.yml"
   schedule:
-    # Coarse independent backstop while private Actions minutes are scarce.
-    # Fast periodic monitoring is provided by the standing ChatGPT hourly watchdog.
+    # Coarse backstop only. Silent failures are also checked by the existing
+    # ChatGPT hourly watchdog. There is no continuous private CI runner.
     - cron: "37 0,12 * * *"
   workflow_dispatch:
 
@@ -20,7 +23,7 @@ permissions:
 
 concurrency:
   group: delta14-watchdog
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   supervise:
@@ -33,8 +36,8 @@ jobs:
           fetch-depth: 1
           persist-credentials: false
       - name: Regression tests (no network or mutations)
-        run: python3 -m unittest discover -s watchdog -p 'test_supervisor.py' -v
-      - name: One-shot recovery check
+        run: python3 -m unittest discover -s watchdog -p 'test_*.py' -v
+      - name: Durable one-shot recovery check
         env:
           GH_TOKEN: ${{ github.token }}
-        run: python3 watchdog/supervisor.py --once
+        run: python3 watchdog/oneshot.py
