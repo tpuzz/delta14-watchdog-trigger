@@ -6,8 +6,8 @@
   "owner_run_id": "exact-class-birational-recovery-20261019T120243Z-g35",
   "generation": 35,
   "status": "running",
-  "last_renewed_utc": "2026-10-19T12:18:25Z",
-  "lease_expires_utc": "2026-10-19T12:30:25.000Z",
+  "last_renewed_utc": "2026-10-19T12:23:34Z",
+  "lease_expires_utc": "2026-10-19T12:35:34.000Z",
   "authorization_start_utc": "2026-10-19T09:44:48Z",
   "hard_deadline_utc": "2026-10-19T13:44:48Z",
   "delivery_start_utc": "2026-10-19T13:34:48Z",
@@ -16,50 +16,29 @@
   "authorization_amendment": "User submitted Pasted text(20261019-094437).txt; new bounded continuation; predecessor remains closed",
   "run_id": "exact-class-birational-recovery-20261019T120243Z-g35",
   "lease_generation": 35,
-  "phase": "proof-blind-reconstruction-and-bounded-norm-test",
+  "phase": "comparison-ready",
   "source_capsule": "CONT4H--exact-class-recovery-20261018T234859Z-g33--TERMINAL_CAPSULE.zip",
   "source_capsule_sha256": "86ded5cb40280e8ecc23724e6f6303902b762ab8c6fb770bdccc5696a740a7e2",
   "source_final_status": "FINAL_STATUS--exact-class-finish-continuation-4h-20261018-v1--exact-class-recovery-20261018T234859Z-g33--g33.md",
   "source_final_status_sha256": "dca4edf3dec68315a18da3c584f78387fde63cc856fa1a5e0c65dd01d1020c14",
   "source_verified": true,
   "research_started": true,
-  "first_unfinished_action": "Fresh proof-blind CONIC-INDEX-v2 reconstruction; hostile PASS durable. Norm test remains active.",
+  "first_unfinished_action": "Fresh CONIC-INDEX-v2 comparison of exact candidate and complete proof-blind reconstruction.",
   "authorization_complete": false,
   "further_mathematics_authorized": true,
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
-  "active_workers": [
-    {
-      "assignment": "ABSOLUTE-NORM-MIX",
-      "worker": "g35_norm_mix",
-      "status": "active",
-      "math_segment_start_utc": "2026-10-19T12:07:49Z",
-      "active_math_elapsed_seconds": 0,
-      "mechanism_gate_seconds": 1200,
-      "independence_wave_credit": 0
-    },
-    {
-      "assignment": "CONIC-INDEX-v2-RECONSTRUCTION",
-      "worker": "g35_conic_reconstruction",
-      "state": "active",
-      "allowed_inputs": [
-        "STATEMENT.md",
-        "CONIC-INDEX-v2/CONTRACT.md",
-        "CONIC-INDEX-v2/RECONSTRUCTION-BRIEF.md"
-      ],
-      "proof_blind": true
-    }
-  ],
+  "active_workers": [],
   "epoch": 3,
   "watchdog_recovery_armed": true,
   "coordination": "g35 active lease; bootstrap raw-byte verified; start.signal readback; one-shot regression and check successful; not continuous polling",
   "prior_authorization_closed": true,
   "t0_rule": "User submission / launch-intake timestamp; conservative immutable start",
-  "last_heartbeat_utc": "2026-10-19T12:18:25Z",
-  "latest_verified_dropbox_generation": "BIR4H--exact-class-birational-recovery-20261019T120243Z-g35--CHECKPOINT-0002.zip",
-  "latest_verified_dropbox_generation_sha256": "b74cdb54dba01a2de298019f855a759bf5b0848de5fbd6b74a503aedc88b5a3e",
-  "latest_verified_dropbox_capsule": "BIR4H--exact-class-birational-recovery-20261019T120243Z-g35--CHECKPOINT-0002.zip",
-  "latest_verified_dropbox_capsule_sha256": "b74cdb54dba01a2de298019f855a759bf5b0848de5fbd6b74a503aedc88b5a3e",
+  "last_heartbeat_utc": "2026-10-19T12:23:34Z",
+  "latest_verified_dropbox_generation": "BIR4H--exact-class-birational-recovery-20261019T120243Z-g35--CHECKPOINT-0003.zip",
+  "latest_verified_dropbox_generation_sha256": "0327ca0eb6d5f106defb61c88a8668520bc96e79f31485ba5131094135aa02d5",
+  "latest_verified_dropbox_capsule": "BIR4H--exact-class-birational-recovery-20261019T120243Z-g35--CHECKPOINT-0003.zip",
+  "latest_verified_dropbox_capsule_sha256": "0327ca0eb6d5f106defb61c88a8668520bc96e79f31485ba5131094135aa02d5",
   "recovery_eligible": true,
   "notification_key": null,
   "math_start_utc": "2026-10-19T09:49:32.979Z",
@@ -141,10 +120,28 @@
       "hostile": "PASS; complete report and actual manifest externally raw-byte verified in g35 checkpoint0002",
       "hostile_report_sha256": "c972f8a3313f508d2fc3e7a8359eaf78dd52204d4bf327444fa8f27f791f04dd",
       "hostile_manifest_sha256": "f63f246d8751f0154850fb84af58e517280e8ebf81c8206e8cbfc52ad3148b52",
-      "reconstruction": "pending",
+      "reconstruction": "complete; externally raw-byte verified in checkpoint0003",
       "comparison": "pending",
       "promotion": false,
-      "supplementary_computation_credit": 0
+      "supplementary_computation_credit": 0,
+      "reconstruction_sha256": "92010396a808177acdfb7b07aa6e21078da4b899a91e34ac2f5fd590e635814d",
+      "reconstruction_manifest_sha256": "abd35092af6c9cac822a622f6911588cdb3db8abee125d91b933089a8757bb03"
     }
+  },
+  "norm_mix": {
+    "status": "complete candidate; externally raw-byte verified in checkpoint0003",
+    "report_sha256": "6187d22aac09717d22718b61984a045bd4e7e4478749b80bd29ed714008e435d",
+    "manifest_sha256": "abc90290c4d2877905805bd376a7b3dc75c1898b979275458a62a65066c121ff",
+    "active_math_elapsed_seconds": 697,
+    "math_segments": [
+      {
+        "start": "2026-10-19T12:07:49Z",
+        "end": "2026-10-19T12:19:26Z",
+        "seconds": 697
+      }
+    ],
+    "wave_credit": 0,
+    "promotion": false,
+    "result": "Exact normal-intermediate rationalization retains quaternion inner form and full residual action; no independent deciding class equation."
   }
 }
