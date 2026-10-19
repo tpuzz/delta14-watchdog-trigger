@@ -6,8 +6,8 @@
   "owner_run_id": "exact-class-quaternion-20261019T142501Z-g36",
   "generation": 36,
   "status": "running",
-  "last_renewed_utc": "2026-10-19T14:27:41.039Z",
-  "lease_expires_utc": "2026-10-19T14:39:41.039Z",
+  "last_renewed_utc": "2026-10-19T14:35:42.608Z",
+  "lease_expires_utc": "2026-10-19T14:47:42.608Z",
   "authorization_start_utc": "2026-10-19T14:25:01Z",
   "delivery_start_utc": "2026-10-19T18:15:01Z",
   "hard_deadline_utc": "2026-10-19T18:25:01Z",
@@ -16,25 +16,38 @@
   "authorization_amendment": "User submitted Pasted text(20261019-142408).txt; new bounded continuation; prior authorization remains closed",
   "run_id": "exact-class-quaternion-20261019T142501Z-g36",
   "lease_generation": 36,
-  "phase": "bootstrap",
+  "phase": "search-wave-1",
   "t0_rule": "Conservative actual intake at user submission 2026-10-19T14:25:01Z; immutable",
   "source_capsule": "BIR4H--exact-class-birational-recovery-20261019T120243Z-g35--TERMINAL_CAPSULE.zip",
   "source_capsule_sha256": "45d472d3c3feec7377f685229e7d3f1d8a4dcc93af45f30e82d297a953313b1e",
   "source_final_status": "FINAL_STATUS--exact-class-birational-cancellation-4h-20261019-v1--exact-class-birational-recovery-20261019T120243Z-g35--g35.md",
   "source_final_status_sha256": "6c104b812383ebf10e946a883cab2b2adf11d5e5b1278329281d48f20eee9153",
   "source_verified": true,
-  "research_started": false,
-  "math_start_utc": null,
+  "research_started": true,
+  "math_start_utc": "2026-10-19T14:31:05.666Z",
   "active_math_elapsed_seconds": 0,
   "epoch": 1,
-  "active_workers": [],
+  "active_workers": [
+    {
+      "assignment": "NORMCHANGE-W1",
+      "worker": "/root/normchange_w1",
+      "state": "active",
+      "automatic_replacement_attempts": 0
+    },
+    {
+      "assignment": "NORMCHANGE-KILL",
+      "worker": "/root/normchange_kill",
+      "state": "active",
+      "automatic_replacement_attempts": 0
+    }
+  ],
   "authorization_complete": false,
   "further_mathematics_authorized": true,
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
-  "watchdog_recovery_armed": false,
+  "watchdog_recovery_armed": true,
   "prior_authorization_closed": true,
-  "first_unfinished_action": "Verify H7 moduli-description provenance and route novelty; construct actual two-factor quaternion norm-change correspondence with all descent and boundaries.",
+  "first_unfinished_action": "Complete active isolated construction and adversarial-test assignments; preserve all reports and manifests.",
   "last_safe_frontier": "Pinned g35 source verified; no new mathematics yet.",
   "monitoring": "Existing event task and combined six-hourly backup unchanged; one-shot supervisor verification pending.",
   "persistent_goal": "Unavailable (inherited; no registration possible)",
@@ -46,6 +59,13 @@
   "latest_verified_dropbox_generation_sha256": "6f8b06c8b4600d0bb99c44bd61e193fcd0cb41eda1a5a8ab48a4c003e3c4b682",
   "latest_verified_dropbox_capsule": "QUAT4H--exact-class-quaternion-20261019T142501Z-g36--BOOTSTRAP.zip",
   "latest_verified_dropbox_capsule_sha256": "6f8b06c8b4600d0bb99c44bd61e193fcd0cb41eda1a5a8ab48a4c003e3c4b682",
-  "last_heartbeat_utc": "2026-10-19T14:30:04.206Z",
-  "coordination": "g36 active lease readback verified; bootstrap externally raw-byte verified; supervisor check pending"
+  "last_heartbeat_utc": "2026-10-19T14:35:42.608Z",
+  "coordination": "g36 lease readback; minimal bootstrap raw-byte verified; start signal verified; actual one-shot regression and recovery check successful (not continuous polling)",
+  "supervisor_run_id": 39269535634,
+  "supervisor_job_id": 118117882940,
+  "epoch_start_utc": "2026-10-19T14:31:05.666Z",
+  "math_segment_start_utc": "2026-10-19T14:31:05.666Z",
+  "baseline_revisions": {
+    "NORMCHANGE": "g36-intake-r1; exact hashes in ROUTES/*/INPUT_ALLOWLIST.json"
+  }
 }
