@@ -6,8 +6,8 @@
   "owner_run_id": "exact-class-birational-recovery-20261019T120243Z-g35",
   "generation": 35,
   "status": "running",
-  "last_renewed_utc": "2026-10-19T12:40:52Z",
-  "lease_expires_utc": "2026-10-19T12:52:52.000Z",
+  "last_renewed_utc": "2026-10-19T12:43:04Z",
+  "lease_expires_utc": "2026-10-19T12:55:04.000Z",
   "authorization_start_utc": "2026-10-19T09:44:48Z",
   "hard_deadline_utc": "2026-10-19T13:44:48Z",
   "delivery_start_utc": "2026-10-19T13:34:48Z",
@@ -40,7 +40,7 @@
   "coordination": "g35 active lease; bootstrap raw-byte verified; start.signal readback; one-shot regression and check successful; not continuous polling",
   "prior_authorization_closed": true,
   "t0_rule": "User submission / launch-intake timestamp; conservative immutable start",
-  "last_heartbeat_utc": "2026-10-19T12:40:52Z",
+  "last_heartbeat_utc": "2026-10-19T12:43:04Z",
   "latest_verified_dropbox_generation": "BIR4H--exact-class-birational-recovery-20261019T120243Z-g35--CHECKPOINT-0006.zip",
   "latest_verified_dropbox_generation_sha256": "4f04d31ac658fe6638cd20043deebc73c079ca25728178c7f08bc3dd17ee02cc",
   "latest_verified_dropbox_capsule": "BIR4H--exact-class-birational-recovery-20261019T120243Z-g35--CHECKPOINT-0006.zip",
@@ -51,7 +51,7 @@
   "supervisor_run_id": 39249190928,
   "supervisor_job_id": 118048501424,
   "epoch_start_utc": "2026-10-19T12:05:01Z",
-  "last_health_check_utc": "2026-10-19T12:41:00Z",
+  "last_health_check_utc": "2026-10-19T12:42:55Z",
   "epoch_health": "Coordinator and fresh hostile role healthy; sequential completed returns externally raw-byte verified; no transport errors.",
   "execution_complete": false,
   "environment_failure": null,
@@ -161,5 +161,14 @@
     "wave_credit": 0,
     "promotion": false,
     "result": "Exact normal-intermediate rationalization retains quaternion inner form and full residual action; no independent deciding class equation."
+  },
+  "coordination_status_correction": {
+    "utc": "2026-10-19T12:42:55Z",
+    "old_status": "running",
+    "correct_status": "active",
+    "same_run": true,
+    "same_generation": 35,
+    "conditional_sha": "dae129e62dc3f188d45f822bc9d63f320ce7a2dd",
+    "readback": true
   }
 }
