@@ -1,13 +1,14 @@
 {
   "campaign_id": "delta14-mixed-tate-20261012T210157Z",
-  "authorization_id": "exact-class-finish-continuation-4h-20261018-v1",
-  "run_id": "exact-class-continuation-20261018T214140Z-g32",
-  "generation": 32,
+  "mathematical_campaign_id": "delta14-exact-class-20261015T182114Z",
+  "authorization_id": "exact-class-birational-cancellation-4h-20261019-v1",
+  "run_id": "exact-class-birational-20261019T094448Z-g34",
+  "generation": 34,
   "status": "interrupted",
-  "incident_utc": "2026-10-18T23:44:25.383Z",
-  "signal_utc": "2026-10-18T23:44:55.956Z",
-  "reason": "Coordinator and worker filesystem calls stalled; latest actual-byte verified private checkpoint0018 remains available; newest local returns require reconciliation.",
-  "recovery_mode": "resume_same_authorization_before_reserve",
-  "delivery_start_utc": "2026-10-19T01:31:40Z",
-  "hard_deadline_utc": "2026-10-19T01:41:40Z"
+  "incident_utc": "2026-10-19T10:51:00Z",
+  "signal_utc": "2026-10-19T11:57:20.493Z",
+  "reason": "Coordinator transport failure; released/inactive owner. Recover from CHECKPOINT-0008 if SHA256/content integrity can be verified, then fresh isolated CONIC-INDEX-v2 hostile. No role credit for interrupted audit.",
+  "delivery_start_utc": "2026-10-19T13:34:48Z",
+  "hard_deadline_utc": "2026-10-19T13:44:48Z",
+  "recovery_mode": "resume_same_authorization_before_reserve"
 }
