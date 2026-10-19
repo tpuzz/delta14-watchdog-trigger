@@ -25,14 +25,21 @@
   "source_raw_bytes_verified": true,
   "source_file_bindings_verified": 74,
   "assignment_input_bindings_verified": 14,
-  "first_unfinished_action": "PAIRDECOMP-W1-R1: exact frozen own-family interrupted first-wave assignment; replacement1; not launched in g37.",
+  "first_unfinished_action": "Execute PAIRDECOMP-W1-R1 same first wave, replacement1; no new wave from recovery",
   "authorization_complete": false,
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
   "recovery_eligible": true,
-  "research_resumed": false,
+  "research_resumed": true,
   "active_math_elapsed_seconds": 1435,
-  "active_workers": [],
+  "active_workers": [
+    {
+      "assignment": "PAIRDECOMP-W1-R1",
+      "status": "launching",
+      "replacement_attempt": 1,
+      "scope": "Own-family14 input bindings only"
+    }
+  ],
   "prior_startup_check": {
     "run_id": 39279004513,
     "job_id": 118149734831,
@@ -40,13 +47,16 @@
     "steps_endpoint": "stale inconsistent in_progress/pending",
     "actual_logs": "Runner15:34:13Z;45 regression tests OK;oneshot completed15:34:15Z;cleanup15:34:16Z. No need for queued exception."
   },
-  "new_supervisor_verified": false,
-  "phase": "recovery-bootstrap-before-math",
-  "last_heartbeat_utc": "2026-10-19T15:55:54.000Z",
+  "new_supervisor_verified": true,
+  "phase": "PAIRDECOMP-W1-R1",
+  "last_heartbeat_utc": "2026-10-19T15:58:46Z",
   "latest_verified_dropbox_generation": "QUAT--exact-class-quaternion-recovery-20261019T155554Z-g38--BOOTSTRAP.json",
   "latest_verified_dropbox_generation_sha256": "4e5179f04fee2413c367bdf3be2be1587387918b1e2647ccebc16d5389f14a8b",
   "latest_verified_dropbox_capsule": "QUAT--exact-class-quaternion-recovery-20261019T153103Z-g37--STARTUP_BLOCKED_CAPSULE.zip",
   "latest_verified_dropbox_capsule_sha256": "111b7868dfc9ec02ceb90a342bd53738be225eb5b9765b1737abfd498450a3be",
   "watchdog_recovery_armed": true,
-  "private_heartbeat_path": "QUAT--exact-class-quaternion-recovery-20261019T155554Z-g38--BOOTSTRAP.json"
+  "private_heartbeat_path": "QUAT--exact-class-quaternion-recovery-20261019T155554Z-g38--BOOTSTRAP.json",
+  "supervisor_run_id": 39281786520,
+  "supervisor_job_id": 118157336067,
+  "math_segment_start_utc": "2026-10-19T15:58:46Z"
 }
