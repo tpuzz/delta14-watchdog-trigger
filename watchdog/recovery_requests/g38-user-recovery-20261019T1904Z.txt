@@ -1,0 +1,1 @@
+Wake-up only for recovery of exact-class-quaternion-decomposition-4h-20261019-v1 from interrupted generation 38. Preserve start 2026-10-19T14:25:01Z, reserve 2026-10-19T21:15:01Z, deadline 2026-10-19T21:25:01Z. Resume from the verified g38 interruption capsule and first unfinished TRIALITY8 boundary/Ncal calculation. No new scope or clock reset.
