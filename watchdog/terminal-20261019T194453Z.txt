@@ -1,0 +1,6 @@
+DELTA14_WORKFLOW_TERMINAL
+campaign=delta14-mixed-tate-20261012T210157Z
+run_id=exact-class-quaternion-recovery-20261019T190518Z-g39
+status=blocked
+last_heartbeat_utc=2026-10-19T19:43:32Z
+detected_utc=2026-10-19T19:44:53Z
