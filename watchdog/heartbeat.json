@@ -6,8 +6,8 @@
   "owner_run_id": "exact-class-quaternion-recovery-20261019T155554Z-g38",
   "generation": 38,
   "status": "running",
-  "last_renewed_utc": "2026-10-19T16:15:23Z",
-  "lease_expires_utc": "2026-10-19T16:27:23.000Z",
+  "last_renewed_utc": "2026-10-19T16:19:50Z",
+  "lease_expires_utc": "2026-10-19T16:31:50.000Z",
   "authorization_start_utc": "2026-10-19T14:25:01Z",
   "original_delivery_start_utc": "2026-10-19T18:15:01Z",
   "original_hard_deadline_utc": "2026-10-19T18:25:01Z",
@@ -25,14 +25,29 @@
   "source_raw_bytes_verified": true,
   "source_file_bindings_verified": 74,
   "assignment_input_bindings_verified": 14,
-  "first_unfinished_action": "Select next materially distinct own-family assignment; no repeat of pair first wave",
+  "first_unfinished_action": "Reconcile NORMCHANGE-W2 and PAIRDECOMP-W2 complete returns with external byte verification before credit; strategic reassessment16:25:01Z",
   "authorization_complete": false,
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
   "recovery_eligible": true,
   "research_resumed": true,
   "active_math_elapsed_seconds": 1888,
-  "active_workers": [],
+  "active_workers": [
+    {
+      "assignment": "NORMCHANGE-W2",
+      "worker": "/root/g38_normchange_w2",
+      "state": "active",
+      "automatic_replacements": 0,
+      "wave_credit": 0
+    },
+    {
+      "assignment": "PAIRDECOMP-W2",
+      "worker": "/root/g38_pairdecomp_w2",
+      "state": "active",
+      "automatic_replacements": 0,
+      "wave_credit": 0
+    }
+  ],
   "prior_startup_check": {
     "run_id": 39279004513,
     "job_id": 118149734831,
@@ -41,16 +56,16 @@
     "actual_logs": "Runner15:34:13Z;45 regression tests OK;oneshot completed15:34:15Z;cleanup15:34:16Z. No need for queued exception."
   },
   "new_supervisor_verified": true,
-  "phase": "first-wave-synthesis",
-  "last_heartbeat_utc": "2026-10-19T16:15:23Z",
+  "phase": "two-isolated-second-waves",
+  "last_heartbeat_utc": "2026-10-19T16:19:50Z",
   "latest_verified_dropbox_generation": "QUAT--exact-class-quaternion-recovery-20261019T155554Z-g38--CHECKPOINT-0001-PAIR-W1.zip",
   "latest_verified_dropbox_generation_sha256": "5fbcf805227156b28bf2bf66bbeb8a494a523053ce5652a191f4c47220487154",
   "latest_verified_dropbox_capsule": "QUAT--exact-class-quaternion-recovery-20261019T155554Z-g38--CHECKPOINT-0001-PAIR-W1.zip",
   "latest_verified_dropbox_capsule_sha256": "5fbcf805227156b28bf2bf66bbeb8a494a523053ce5652a191f4c47220487154",
   "watchdog_recovery_armed": true,
-  "private_heartbeat_path": "QUAT--exact-class-quaternion-recovery-20261019T155554Z-g38--HEARTBEAT-20261019T161523Z.json",
+  "private_heartbeat_path": "QUAT--exact-class-quaternion-recovery-20261019T155554Z-g38--HEARTBEAT-20261019T161950Z.json",
   "supervisor_run_id": 39281786520,
   "supervisor_job_id": 118157336067,
-  "math_segment_start_utc": null,
-  "private_heartbeat_sha256": "fe2903efbb0db87cd44367a10124eebe9817e81d89460076c0112f429b428d43"
+  "math_segment_start_utc": "2026-10-19T16:16:47Z",
+  "private_heartbeat_sha256": "d9fb832e670ad70c6819a8fbb44de7a8d11d4ebf838f4328daf71fe1b3ccc26a"
 }
