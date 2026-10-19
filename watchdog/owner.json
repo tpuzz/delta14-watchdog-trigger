@@ -5,9 +5,9 @@
   "authorization_id": "exact-class-quaternion-decomposition-4h-20261019-v1",
   "owner_run_id": "exact-class-quaternion-recovery-20261019T155554Z-g38",
   "generation": 38,
-  "status": "active",
-  "last_renewed_utc": "2026-10-19T17:08:46Z",
-  "lease_expires_utc": "2026-10-19T17:20:46.000Z",
+  "status": "inactive",
+  "last_renewed_utc": "2026-10-19T17:15:48Z",
+  "lease_expires_utc": "2026-10-19T17:15:48Z",
   "authorization_start_utc": "2026-10-19T14:25:01Z",
   "original_delivery_start_utc": "2026-10-19T18:15:01Z",
   "original_hard_deadline_utc": "2026-10-19T18:25:01Z",
@@ -17,5 +17,6 @@
   "new_authorization": false,
   "authorization_amendment": "User requested three-hour extension in project conversation; original start and all earned gates preserved.",
   "public_metadata_publication_approved": true,
-  "publication_approval_utc": "2026-10-19T15:29:31Z"
+  "publication_approval_utc": "2026-10-19T15:29:31Z",
+  "release_reason": "coordinator internal error; verified resumable incomplete frontier"
 }
