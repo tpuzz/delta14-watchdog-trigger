@@ -6,8 +6,8 @@
   "owner_run_id": "exact-class-birational-recovery-20261019T120243Z-g35",
   "generation": 35,
   "status": "running",
-  "last_renewed_utc": "2026-10-19T12:43:04Z",
-  "lease_expires_utc": "2026-10-19T12:55:04.000Z",
+  "last_renewed_utc": "2026-10-19T12:46:37Z",
+  "lease_expires_utc": "2026-10-19T12:58:37.000Z",
   "authorization_start_utc": "2026-10-19T09:44:48Z",
   "hard_deadline_utc": "2026-10-19T13:44:48Z",
   "delivery_start_utc": "2026-10-19T13:34:48Z",
@@ -16,35 +16,29 @@
   "authorization_amendment": "User submitted Pasted text(20261019-094437).txt; new bounded continuation; predecessor remains closed",
   "run_id": "exact-class-birational-recovery-20261019T120243Z-g35",
   "lease_generation": 35,
-  "phase": "degree4-hostile",
+  "phase": "degree4-reconstruction",
   "source_capsule": "CONT4H--exact-class-recovery-20261018T234859Z-g33--TERMINAL_CAPSULE.zip",
   "source_capsule_sha256": "86ded5cb40280e8ecc23724e6f6303902b762ab8c6fb770bdccc5696a740a7e2",
   "source_final_status": "FINAL_STATUS--exact-class-finish-continuation-4h-20261018-v1--exact-class-recovery-20261018T234859Z-g33--g33.md",
   "source_final_status_sha256": "dca4edf3dec68315a18da3c584f78387fde63cc856fa1a5e0c65dd01d1020c14",
   "source_verified": true,
   "research_started": true,
-  "first_unfinished_action": "Fresh isolated hostile audit of unchanged DEGREE4-VALUES-v1 against checklist revision7.",
+  "first_unfinished_action": "Fresh proof-blind reconstruction of DEGREE4-VALUES-v1 contract from accepted brief; no proof/audit exposure.",
   "authorization_complete": false,
   "further_mathematics_authorized": true,
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
-  "active_workers": [
-    {
-      "assignment": "DEGREE4-VALUES-v1-HOSTILE",
-      "worker": "g35_degree4_hostile",
-      "state": "active"
-    }
-  ],
+  "active_workers": [],
   "epoch": 3,
   "watchdog_recovery_armed": true,
   "coordination": "g35 active lease; bootstrap raw-byte verified; start.signal readback; one-shot regression and check successful; not continuous polling",
   "prior_authorization_closed": true,
   "t0_rule": "User submission / launch-intake timestamp; conservative immutable start",
-  "last_heartbeat_utc": "2026-10-19T12:43:04Z",
-  "latest_verified_dropbox_generation": "BIR4H--exact-class-birational-recovery-20261019T120243Z-g35--CHECKPOINT-0006.zip",
-  "latest_verified_dropbox_generation_sha256": "4f04d31ac658fe6638cd20043deebc73c079ca25728178c7f08bc3dd17ee02cc",
-  "latest_verified_dropbox_capsule": "BIR4H--exact-class-birational-recovery-20261019T120243Z-g35--CHECKPOINT-0006.zip",
-  "latest_verified_dropbox_capsule_sha256": "4f04d31ac658fe6638cd20043deebc73c079ca25728178c7f08bc3dd17ee02cc",
+  "last_heartbeat_utc": "2026-10-19T12:46:37Z",
+  "latest_verified_dropbox_generation": "BIR4H--exact-class-birational-recovery-20261019T120243Z-g35--CHECKPOINT-0007.zip",
+  "latest_verified_dropbox_generation_sha256": "bea007ac64cf1c923bafd6df33b02af39d5e97d5b72d67dceedcc3007ed2705e",
+  "latest_verified_dropbox_capsule": "BIR4H--exact-class-birational-recovery-20261019T120243Z-g35--CHECKPOINT-0007.zip",
+  "latest_verified_dropbox_capsule_sha256": "bea007ac64cf1c923bafd6df33b02af39d5e97d5b72d67dceedcc3007ed2705e",
   "recovery_eligible": true,
   "notification_key": null,
   "math_start_utc": "2026-10-19T09:49:32.979Z",
@@ -138,12 +132,14 @@
     },
     "degree4_values_v1": {
       "leakage": "PASS; complete report and manifest externally byte-verified in checkpoint0006",
-      "hostile": "unlaunched",
+      "hostile": "PASS; full report and actual manifest externally raw-byte verified in checkpoint0007",
       "reconstruction": "unlaunched",
       "comparison": "unlaunched",
       "promotion": false,
       "leakage_sha256": "c97491ab42c3f3d59e309a4d2aea9083df4344df860cb3b63015a9d3f9881f36",
-      "leakage_manifest_sha256": "8656d83ff0a6722654504002039e928edecd962bfdda2777829280ce63405ee3"
+      "leakage_manifest_sha256": "8656d83ff0a6722654504002039e928edecd962bfdda2777829280ce63405ee3",
+      "hostile_sha256": "607f0adda22d1c3bb7fc4acb3ab6ab4fecd6f17c5c6ea4812fb62736a7b40aaa",
+      "hostile_manifest_sha256": "b5b9a703876d908655d6143e84e0c41befcee8bc62d40c957bb345120437e83c"
     }
   },
   "norm_mix": {
@@ -170,5 +166,6 @@
     "same_generation": 35,
     "conditional_sha": "dae129e62dc3f188d45f822bc9d63f320ce7a2dd",
     "readback": true
-  }
+  },
+  "last_reassessment_utc": "2026-10-19T12:45:36Z"
 }
