@@ -58,5 +58,9 @@
   "execution_stopped_utc": "2026-10-19T19:35:01Z",
   "environment_failure": "Standard speed cannot be selected or attested with exposed controls. Actual Fast/Ultrafast use is not established. New substantive work paused conservatively under user's speed policy.",
   "final_status_path": "/ChatGPT-Research-State/delta14-mixed-tate/FINAL_STATUS--exact-class-quaternion-decomposition-4h-20261019-v1--exact-class-quaternion-recovery-20261019T190518Z-g39--g39.md",
-  "final_status_sha256": "f5a9189b0489aab65fe61dad9481126c901e72477d5b86212ced1921c499d5d9"
+  "final_status_sha256": "f5a9189b0489aab65fe61dad9481126c901e72477d5b86212ced1921c499d5d9",
+  "current_execution_report_delivery_complete": true,
+  "recovery_requires_standard_speed": true,
+  "do_not_retry_unchanged_capability_failure": true,
+  "recovery_conditions": "Only if Standard-speed compliance can be established, no fresh competitor exists, and original amended reserve remains live. Do not retry unchanged speed capability failure or relaunch merely from a PR."
 }
