@@ -5,7 +5,7 @@
   "authorization_id": "exact-class-quaternion-decomposition-4h-20261019-v1",
   "owner_run_id": "exact-class-quaternion-recovery-20261019T155554Z-g38",
   "generation": 38,
-  "status": "running",
+  "status": "interrupted",
   "last_renewed_utc": "2026-10-19T17:08:46Z",
   "lease_expires_utc": "2026-10-19T17:20:46.000Z",
   "authorization_start_utc": "2026-10-19T14:25:01Z",
@@ -25,23 +25,14 @@
   "source_raw_bytes_verified": true,
   "source_file_bindings_verified": 74,
   "assignment_input_bindings_verified": 14,
-  "first_unfinished_action": "Finish TRIALITY8-SCREEN exact rank8 Clifford-descent feasibility test; no prior report rerun",
+  "first_unfinished_action": "Fresh checked recovery before21:15:01Z: preserve verified TRIALITY8-SCREEN; perform first substantial TRIALITY8 own-family search on exact isotropic boundary Bpartial and nonzero-Q incidence Ncal, with actual opposite projection and full equation. No assignment launched; do not rerun completed open construction.",
   "authorization_complete": false,
   "terminal_delivery_complete": false,
-  "dropbox_final_status_verified": false,
+  "dropbox_final_status_verified": true,
   "recovery_eligible": true,
   "research_resumed": true,
-  "active_math_elapsed_seconds": 4099,
-  "active_workers": [
-    {
-      "assignment": "TRIALITY8-SCREEN",
-      "worker": "/root/g38_triality8_screen",
-      "state": "active",
-      "automatic_replacements": 0,
-      "wave_credit": 0,
-      "math_start_utc": "2026-10-19T16:57:24Z"
-    }
-  ],
+  "active_math_elapsed_seconds": 4688,
+  "active_workers": [],
   "prior_startup_check": {
     "run_id": 39279004513,
     "job_id": 118149734831,
@@ -50,16 +41,36 @@
     "actual_logs": "Runner15:34:13Z;45 regression tests OK;oneshot completed15:34:15Z;cleanup15:34:16Z. No need for queued exception."
   },
   "new_supervisor_verified": true,
-  "phase": "TRIALITY8-SCREEN-active",
-  "last_heartbeat_utc": "2026-10-19T17:08:46Z",
-  "latest_verified_dropbox_generation": "QUAT--exact-class-quaternion-recovery-20261019T155554Z-g38--CHECKPOINT-0005-PAIR-W3-SPIN5.zip",
-  "latest_verified_dropbox_generation_sha256": "dcb0be1aa1a8d992c4ece8477e7f94fb9876b4b9745085f22f67511f572d421a",
-  "latest_verified_dropbox_capsule": "QUAT--exact-class-quaternion-recovery-20261019T155554Z-g38--CHECKPOINT-0005-PAIR-W3-SPIN5.zip",
-  "latest_verified_dropbox_capsule_sha256": "dcb0be1aa1a8d992c4ece8477e7f94fb9876b4b9745085f22f67511f572d421a",
+  "phase": "coordinator-internal-error-stop",
+  "last_heartbeat_utc": "2026-10-19T17:15:42Z",
+  "latest_verified_dropbox_generation": "QUAT--exact-class-quaternion-recovery-20261019T155554Z-g38--INTERRUPTED_CAPSULE.zip",
+  "latest_verified_dropbox_generation_sha256": "b0d77e668bb43acf22870bc05d2952dd0411f94353b674ed1297c57c74c838ef",
+  "latest_verified_dropbox_capsule": "QUAT--exact-class-quaternion-recovery-20261019T155554Z-g38--INTERRUPTED_CAPSULE.zip",
+  "latest_verified_dropbox_capsule_sha256": "b0d77e668bb43acf22870bc05d2952dd0411f94353b674ed1297c57c74c838ef",
   "watchdog_recovery_armed": true,
-  "private_heartbeat_path": "QUAT--exact-class-quaternion-recovery-20261019T155554Z-g38--HEARTBEAT-20261019T170846Z.json",
+  "private_heartbeat_path": "QUAT--exact-class-quaternion-recovery-20261019T155554Z-g38--INTERRUPTED_STATE.json",
   "supervisor_run_id": 39281786520,
   "supervisor_job_id": 118157336067,
-  "math_segment_start_utc": "2026-10-19T16:57:24Z",
-  "private_heartbeat_sha256": "19c7d4b59f951bdfd1a248fc4011a521cbcf6ee80f19188e5c02adccb67594e5"
+  "math_segment_start_utc": null,
+  "private_heartbeat_sha256": "804cc1e28b74324e4c89f804cd8ba2d9db78a96cea797f9b53289d3f40bbe473",
+  "last_safe_frontier": "Checkpoint6 raw-byte verified; complete candidate TRIALITY8 Clifford/corner/all-units lower open,16bindings checked. NORMCHANGE andPAIRDECOMP each3candidate searchwaves, no independent target equation or promoted result.",
+  "further_mathematics_authorized": true,
+  "execution_stopped_utc": "2026-10-19T17:11:40Z",
+  "environment_failure": {
+    "incident_id": "g38-github-renew-internal-error-20261019T171140Z",
+    "operation": "github.update_file watchdog/owner.json renewal",
+    "structured_error": {
+      "content": [
+        {
+          "type": "text",
+          "text": "tool call error: tool call failed for `codex_apps/github.update_file`\n\nCaused by:\n    Mcp error: -32603: Internal error"
+        }
+      ],
+      "isError": true
+    },
+    "classification": "coordinator-level connector internal error; one cleanup only; failed renewal not retried",
+    "readback": "owner unchanged active generation38 lease expires17:20:46Z; no competitor"
+  },
+  "final_status_path": "/ChatGPT-Research-State/delta14-mixed-tate/FINAL_STATUS--exact-class-quaternion-decomposition-4h-20261019-v1--exact-class-quaternion-recovery-20261019T155554Z-g38--g38.md",
+  "final_status_sha256": "5a2f021f775b04ebfce53341b7572a068514361684bc59dc365be34c8d68cf86"
 }
