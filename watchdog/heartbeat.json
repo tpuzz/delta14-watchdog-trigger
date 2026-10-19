@@ -6,8 +6,8 @@
   "owner_run_id": "exact-class-quaternion-recovery-20261019T153103Z-g37",
   "generation": 37,
   "status": "running",
-  "last_renewed_utc": "2026-10-19T15:36:30.010Z",
-  "lease_expires_utc": "2026-10-19T15:48:30.010Z",
+  "last_renewed_utc": "2026-10-19T15:42:28.272Z",
+  "lease_expires_utc": "2026-10-19T15:54:28.272Z",
   "authorization_start_utc": "2026-10-19T14:25:01Z",
   "original_delivery_start_utc": "2026-10-19T18:15:01Z",
   "original_hard_deadline_utc": "2026-10-19T18:25:01Z",
@@ -26,7 +26,9 @@
   "latest_verified_dropbox_capsule_sha256": "83709ccbb7eb5b1767d6c4043d12d8a0ec3cf4c53b13016cfab621228b78369d",
   "public_metadata_publication_approved": true,
   "publication_approval_utc": "2026-10-19T15:29:31Z",
-  "last_heartbeat_utc": "2026-10-19T15:37:32.105Z",
+  "last_heartbeat_utc": "2026-10-19T15:44:06.363Z",
   "phase": "recovery-supervisor-queued",
-  "predecessor_run_id": "exact-class-quaternion-20261019T142501Z-g36"
+  "predecessor_run_id": "exact-class-quaternion-20261019T142501Z-g36",
+  "supervisor_run_id": 39279004513,
+  "supervisor_job_id": 118149734831
 }
