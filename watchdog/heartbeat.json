@@ -6,8 +6,8 @@
   "owner_run_id": "exact-class-birational-recovery-20261019T120243Z-g35",
   "generation": 35,
   "status": "running",
-  "last_renewed_utc": "2026-10-19T12:08:58Z",
-  "lease_expires_utc": "2026-10-19T12:20:58.000Z",
+  "last_renewed_utc": "2026-10-19T12:13:53Z",
+  "lease_expires_utc": "2026-10-19T12:25:53.000Z",
   "authorization_start_utc": "2026-10-19T09:44:48Z",
   "hard_deadline_utc": "2026-10-19T13:44:48Z",
   "delivery_start_utc": "2026-10-19T13:34:48Z",
@@ -23,18 +23,12 @@
   "source_final_status_sha256": "dca4edf3dec68315a18da3c584f78387fde63cc856fa1a5e0c65dd01d1020c14",
   "source_verified": true,
   "research_started": true,
-  "first_unfinished_action": "Restart CONIC-INDEX-v2 hostile audit with exact four pinned inputs in fresh isolated role, replacement 1; HILB2-W2 complete preserved candidate.",
+  "first_unfinished_action": "Fresh proof-blind CONIC-INDEX-v2 reconstruction; hostile PASS durable. Norm test remains active.",
   "authorization_complete": false,
   "further_mathematics_authorized": true,
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
   "active_workers": [
-    {
-      "assignment": "CONIC-INDEX-v2-HOSTILE",
-      "worker": "g35_conic_hostile_r1",
-      "state": "active",
-      "replacement_attempt": 1
-    },
     {
       "assignment": "ABSOLUTE-NORM-MIX",
       "worker": "g35_norm_mix",
@@ -50,11 +44,11 @@
   "coordination": "g35 active lease; bootstrap raw-byte verified; start.signal readback; one-shot regression and check successful; not continuous polling",
   "prior_authorization_closed": true,
   "t0_rule": "User submission / launch-intake timestamp; conservative immutable start",
-  "last_heartbeat_utc": "2026-10-19T12:08:58Z",
-  "latest_verified_dropbox_generation": "BIR4H--exact-class-birational-recovery-20261019T120243Z-g35--CHECKPOINT-0001.zip",
-  "latest_verified_dropbox_generation_sha256": "59a63d01be4943c93bdaba42afa6fcc6071630bda3ce97e39fa23eabf83a42b6",
-  "latest_verified_dropbox_capsule": "BIR4H--exact-class-birational-recovery-20261019T120243Z-g35--CHECKPOINT-0001.zip",
-  "latest_verified_dropbox_capsule_sha256": "59a63d01be4943c93bdaba42afa6fcc6071630bda3ce97e39fa23eabf83a42b6",
+  "last_heartbeat_utc": "2026-10-19T12:13:53Z",
+  "latest_verified_dropbox_generation": "BIR4H--exact-class-birational-recovery-20261019T120243Z-g35--CHECKPOINT-0002.zip",
+  "latest_verified_dropbox_generation_sha256": "b74cdb54dba01a2de298019f855a759bf5b0848de5fbd6b74a503aedc88b5a3e",
+  "latest_verified_dropbox_capsule": "BIR4H--exact-class-birational-recovery-20261019T120243Z-g35--CHECKPOINT-0002.zip",
+  "latest_verified_dropbox_capsule_sha256": "b74cdb54dba01a2de298019f855a759bf5b0848de5fbd6b74a503aedc88b5a3e",
   "recovery_eligible": true,
   "notification_key": null,
   "math_start_utc": "2026-10-19T09:49:32.979Z",
@@ -129,5 +123,17 @@
       "automatic_replacement_attempts": 0
     }
   ],
-  "automatic_replacement_attempts": 1
+  "automatic_replacement_attempts": 1,
+  "gates": {
+    "conic_index_v2": {
+      "leakage": "PASS inherited durable",
+      "hostile": "PASS; complete report and actual manifest externally raw-byte verified in g35 checkpoint0002",
+      "hostile_report_sha256": "c972f8a3313f508d2fc3e7a8359eaf78dd52204d4bf327444fa8f27f791f04dd",
+      "hostile_manifest_sha256": "f63f246d8751f0154850fb84af58e517280e8ebf81c8206e8cbfc52ad3148b52",
+      "reconstruction": "pending",
+      "comparison": "pending",
+      "promotion": false,
+      "supplementary_computation_credit": 0
+    }
+  }
 }
