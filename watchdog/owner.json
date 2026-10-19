@@ -5,14 +5,14 @@
   "authorization_id": "exact-class-birational-cancellation-4h-20261019-v1",
   "owner_run_id": "exact-class-birational-recovery-20261019T120243Z-g35",
   "generation": 35,
-  "status": "active",
-  "last_renewed_utc": "2026-10-19T13:11:08Z",
-  "lease_expires_utc": "2026-10-19T13:23:08.000Z",
+  "status": "inactive",
+  "last_renewed_utc": "2026-10-19T13:12:24Z",
+  "lease_expires_utc": "2026-10-19T13:12:24Z",
   "authorization_start_utc": "2026-10-19T09:44:48Z",
   "hard_deadline_utc": "2026-10-19T13:44:48Z",
   "delivery_start_utc": "2026-10-19T13:34:48Z",
   "predecessor_run_id": "exact-class-birational-20261019T094448Z-g34",
   "new_authorization": false,
   "authorization_amendment": "User submitted Pasted text(20261019-094437).txt; new bounded continuation; predecessor remains closed",
-  "release_reason": null
+  "release_reason": "Verified terminal result delivered; deliberate bounded completion without exact-class decision; no automatic successor."
 }
