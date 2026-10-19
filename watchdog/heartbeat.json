@@ -6,8 +6,8 @@
   "owner_run_id": "exact-class-quaternion-recovery-20261019T155554Z-g38",
   "generation": 38,
   "status": "running",
-  "last_renewed_utc": "2026-10-19T16:31:20Z",
-  "lease_expires_utc": "2026-10-19T16:43:20.000Z",
+  "last_renewed_utc": "2026-10-19T16:36:29Z",
+  "lease_expires_utc": "2026-10-19T16:48:29.000Z",
   "authorization_start_utc": "2026-10-19T14:25:01Z",
   "original_delivery_start_utc": "2026-10-19T18:15:01Z",
   "original_hard_deadline_utc": "2026-10-19T18:25:01Z",
@@ -25,7 +25,7 @@
   "source_raw_bytes_verified": true,
   "source_file_bindings_verified": 74,
   "assignment_input_bindings_verified": 14,
-  "first_unfinished_action": "Reconcile PAIRDECOMP-W2; screen exact mixed-incidence target-fiber calculation before any further NORMCHANGE assignment",
+  "first_unfinished_action": "Finish and externally verify PAIRDECOMP-W2 plus NORMCHANGE-W3 target-fiber analysis; no cross-route exposure yet",
   "authorization_complete": false,
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
@@ -39,6 +39,13 @@
       "state": "active",
       "automatic_replacements": 0,
       "wave_credit": 0
+    },
+    {
+      "assignment": "NORMCHANGE-W3",
+      "worker": "/root/g38_normchange_w3",
+      "state": "active",
+      "automatic_replacements": 0,
+      "wave_credit": 0
     }
   ],
   "prior_startup_check": {
@@ -49,16 +56,16 @@
     "actual_logs": "Runner15:34:13Z;45 regression tests OK;oneshot completed15:34:15Z;cleanup15:34:16Z. No need for queued exception."
   },
   "new_supervisor_verified": true,
-  "phase": "PAIRDECOMP-W2-active;NORMCHANGE-matured",
-  "last_heartbeat_utc": "2026-10-19T16:31:20Z",
+  "phase": "PAIRDECOMP-W2-and-NORMCHANGE-W3",
+  "last_heartbeat_utc": "2026-10-19T16:36:29Z",
   "latest_verified_dropbox_generation": "QUAT--exact-class-quaternion-recovery-20261019T155554Z-g38--CHECKPOINT-0002-NORM-W2.zip",
   "latest_verified_dropbox_generation_sha256": "6bf0ba4f05cb4fe5ac365305ee352cb03203ca9b09b4b0ecafee094af0745ef4",
   "latest_verified_dropbox_capsule": "QUAT--exact-class-quaternion-recovery-20261019T155554Z-g38--CHECKPOINT-0002-NORM-W2.zip",
   "latest_verified_dropbox_capsule_sha256": "6bf0ba4f05cb4fe5ac365305ee352cb03203ca9b09b4b0ecafee094af0745ef4",
   "watchdog_recovery_armed": true,
-  "private_heartbeat_path": "QUAT--exact-class-quaternion-recovery-20261019T155554Z-g38--HEARTBEAT-20261019T163120Z.json",
+  "private_heartbeat_path": "QUAT--exact-class-quaternion-recovery-20261019T155554Z-g38--HEARTBEAT-20261019T163629Z.json",
   "supervisor_run_id": 39281786520,
   "supervisor_job_id": 118157336067,
   "math_segment_start_utc": "2026-10-19T16:17:45Z",
-  "private_heartbeat_sha256": "97a84ff3fb818e03ef4b4c9b39fe0f0430bed9baf477707c717fcb465c0a6130"
+  "private_heartbeat_sha256": "cc1070be4fceaaf37fcdc16c2e0bda381e14eb6bc3f81abcf73d0361e8786061"
 }
