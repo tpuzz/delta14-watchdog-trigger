@@ -6,8 +6,8 @@
   "owner_run_id": "exact-class-birational-recovery-20261019T120243Z-g35",
   "generation": 35,
   "status": "running",
-  "last_renewed_utc": "2026-10-19T12:52:29Z",
-  "lease_expires_utc": "2026-10-19T13:04:29.000Z",
+  "last_renewed_utc": "2026-10-19T12:55:31Z",
+  "lease_expires_utc": "2026-10-19T13:07:31.000Z",
   "authorization_start_utc": "2026-10-19T09:44:48Z",
   "hard_deadline_utc": "2026-10-19T13:44:48Z",
   "delivery_start_utc": "2026-10-19T13:34:48Z",
@@ -40,7 +40,7 @@
   "coordination": "g35 active lease; bootstrap raw-byte verified; start.signal readback; one-shot regression and check successful; not continuous polling",
   "prior_authorization_closed": true,
   "t0_rule": "User submission / launch-intake timestamp; conservative immutable start",
-  "last_heartbeat_utc": "2026-10-19T12:52:29Z",
+  "last_heartbeat_utc": "2026-10-19T12:55:31Z",
   "latest_verified_dropbox_generation": "BIR4H--exact-class-birational-recovery-20261019T120243Z-g35--CHECKPOINT-0008.zip",
   "latest_verified_dropbox_generation_sha256": "0fe392cf328f363aa38d8bfbdcd2d3f3d8d223b8cad1a4aa642f4984dc741d03",
   "latest_verified_dropbox_capsule": "BIR4H--exact-class-birational-recovery-20261019T120243Z-g35--CHECKPOINT-0008.zip",
@@ -173,5 +173,8 @@
     "conditional_sha": "dae129e62dc3f188d45f822bc9d63f320ce7a2dd",
     "readback": true
   },
-  "last_reassessment_utc": "2026-10-19T12:45:36Z"
+  "last_reassessment_utc": "2026-10-19T12:45:36Z",
+  "private_control_heartbeat_utc": "2026-10-19T12:54:58Z",
+  "latest_private_control_heartbeat": "BIR4H--exact-class-birational-recovery-20261019T120243Z-g35--HEARTBEAT-20261019T125458Z.json",
+  "latest_private_control_heartbeat_sha256": "eb276d5d48e9518116f66ee268bf502f07a127d8a89b6d7f2030896f4416307b"
 }
