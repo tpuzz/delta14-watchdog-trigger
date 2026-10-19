@@ -6,8 +6,8 @@
   "owner_run_id": "exact-class-quaternion-recovery-20261019T155554Z-g38",
   "generation": 38,
   "status": "running",
-  "last_renewed_utc": "2026-10-19T16:27:48Z",
-  "lease_expires_utc": "2026-10-19T16:39:48.000Z",
+  "last_renewed_utc": "2026-10-19T16:31:20Z",
+  "lease_expires_utc": "2026-10-19T16:43:20.000Z",
   "authorization_start_utc": "2026-10-19T14:25:01Z",
   "original_delivery_start_utc": "2026-10-19T18:15:01Z",
   "original_hard_deadline_utc": "2026-10-19T18:25:01Z",
@@ -25,7 +25,7 @@
   "source_raw_bytes_verified": true,
   "source_file_bindings_verified": 74,
   "assignment_input_bindings_verified": 14,
-  "first_unfinished_action": "Reconcile NORMCHANGE-W2 and PAIRDECOMP-W2 complete returns with external byte verification before credit; strategic reassessment16:25:01Z",
+  "first_unfinished_action": "Reconcile PAIRDECOMP-W2; screen exact mixed-incidence target-fiber calculation before any further NORMCHANGE assignment",
   "authorization_complete": false,
   "terminal_delivery_complete": false,
   "dropbox_final_status_verified": false,
@@ -33,13 +33,6 @@
   "research_resumed": true,
   "active_math_elapsed_seconds": 1888,
   "active_workers": [
-    {
-      "assignment": "NORMCHANGE-W2",
-      "worker": "/root/g38_normchange_w2",
-      "state": "active",
-      "automatic_replacements": 0,
-      "wave_credit": 0
-    },
     {
       "assignment": "PAIRDECOMP-W2",
       "worker": "/root/g38_pairdecomp_w2",
@@ -56,16 +49,16 @@
     "actual_logs": "Runner15:34:13Z;45 regression tests OK;oneshot completed15:34:15Z;cleanup15:34:16Z. No need for queued exception."
   },
   "new_supervisor_verified": true,
-  "phase": "two-isolated-second-waves",
-  "last_heartbeat_utc": "2026-10-19T16:27:48Z",
-  "latest_verified_dropbox_generation": "QUAT--exact-class-quaternion-recovery-20261019T155554Z-g38--CHECKPOINT-0001-PAIR-W1.zip",
-  "latest_verified_dropbox_generation_sha256": "5fbcf805227156b28bf2bf66bbeb8a494a523053ce5652a191f4c47220487154",
-  "latest_verified_dropbox_capsule": "QUAT--exact-class-quaternion-recovery-20261019T155554Z-g38--CHECKPOINT-0001-PAIR-W1.zip",
-  "latest_verified_dropbox_capsule_sha256": "5fbcf805227156b28bf2bf66bbeb8a494a523053ce5652a191f4c47220487154",
+  "phase": "PAIRDECOMP-W2-active;NORMCHANGE-matured",
+  "last_heartbeat_utc": "2026-10-19T16:31:20Z",
+  "latest_verified_dropbox_generation": "QUAT--exact-class-quaternion-recovery-20261019T155554Z-g38--CHECKPOINT-0002-NORM-W2.zip",
+  "latest_verified_dropbox_generation_sha256": "6bf0ba4f05cb4fe5ac365305ee352cb03203ca9b09b4b0ecafee094af0745ef4",
+  "latest_verified_dropbox_capsule": "QUAT--exact-class-quaternion-recovery-20261019T155554Z-g38--CHECKPOINT-0002-NORM-W2.zip",
+  "latest_verified_dropbox_capsule_sha256": "6bf0ba4f05cb4fe5ac365305ee352cb03203ca9b09b4b0ecafee094af0745ef4",
   "watchdog_recovery_armed": true,
-  "private_heartbeat_path": "QUAT--exact-class-quaternion-recovery-20261019T155554Z-g38--HEARTBEAT-20261019T162748Z.json",
+  "private_heartbeat_path": "QUAT--exact-class-quaternion-recovery-20261019T155554Z-g38--HEARTBEAT-20261019T163120Z.json",
   "supervisor_run_id": 39281786520,
   "supervisor_job_id": 118157336067,
   "math_segment_start_utc": "2026-10-19T16:17:45Z",
-  "private_heartbeat_sha256": "6423448c73ebd4b5356fe73cb7f137f17656fbbe9265d78168562b13ea25d5a5"
+  "private_heartbeat_sha256": "97a84ff3fb818e03ef4b4c9b39fe0f0430bed9baf477707c717fcb465c0a6130"
 }
