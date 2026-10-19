@@ -1,16 +1,1 @@
-{
-  "campaign_id": "delta14-mixed-tate-20261012T210157Z",
-  "mathematical_campaign_id": "delta14-exact-class-20261015T182114Z",
-  "authorization_id": "exact-class-quaternion-decomposition-4h-20261019-v1",
-  "run_id": "exact-class-quaternion-recovery-20261019T153103Z-g37",
-  "generation": 37,
-  "status": "blocked",
-  "incident_utc": "2026-10-19T15:50:07Z",
-  "signal_utc": "2026-10-19T15:52:43.505Z",
-  "reason": "Required supervisor startup check remained queued without a runner; public metadata approval applied; ownership released after verified private checkpoint.",
-  "delivery_start_utc": "2026-10-19T21:15:01Z",
-  "hard_deadline_utc": "2026-10-19T21:25:01Z",
-  "latest_verified_dropbox_generation": "QUAT--exact-class-quaternion-recovery-20261019T153103Z-g37--STARTUP_BLOCKED_CAPSULE.zip",
-  "latest_verified_dropbox_generation_sha256": "111b7868dfc9ec02ceb90a342bd53738be225eb5b9765b1737abfd498450a3be",
-  "recovery_mode": "resume_same_authorization_before_reserve_only_after_supervisor_startup_or_explicit_queued_check_exception"
-}
+exact-class-quaternion-recovery-20261019T155554Z-g38 generation=38 status=interrupted 2026-10-19T17:15:48Z authorization_id=exact-class-quaternion-decomposition-4h-20261019-v1 incident_id=g38-github-renew-internal-error-20261019T171140Z recovery_eligible=true terminal_delivery_complete=false
