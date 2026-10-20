@@ -5,7 +5,7 @@
   "authorization_id": "exact-class-quaternion-decomposition-4h-20261019-v1",
   "owner_run_id": "exact-class-quaternion-finalization-20261020T012047Z-g40",
   "generation": 40,
-  "status": "finalizing",
+  "status": "running",
   "last_renewed_utc": "2026-10-20T01:20:47Z",
   "lease_expires_utc": "2026-10-20T01:32:47.000Z",
   "authorization_start_utc": "2026-10-19T14:25:01Z",
@@ -48,5 +48,5 @@
   },
   "incident_id": "45a9b3f2c6196adf50a5cb2c",
   "trigger_pr": 31,
-  "watchdog_recovery_armed": false
+  "watchdog_recovery_armed": true
 }
