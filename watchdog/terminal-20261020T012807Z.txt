@@ -1,0 +1,6 @@
+DELTA14_WORKFLOW_TERMINAL
+campaign=delta14-mixed-tate-20261012T210157Z
+run_id=exact-class-quaternion-finalization-20261020T012047Z-g40
+status=completed
+last_heartbeat_utc=2026-10-20T01:27:50Z
+detected_utc=2026-10-20T01:28:07Z
